@@ -4,7 +4,8 @@
   "description": "cowork web of progressbar",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "push-dir --dir=/ --branch=gh-pages --cleanup"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/yangwao/progressbar_web_revival/issues"
   },
-  "homepage": "https://github.com/yangwao/progressbar_web_revival#readme"
+  "homepage": "https://github.com/yangwao/progressbar_web_revival#readme",
+  "dependencies": {
+    "push-dir": "^0.4.1"
+  }
 }
