@@ -1,0 +1,19 @@
+{
+  "name": "progressbar_web_revival",
+  "version": "1.0.0",
+  "description": "cowork web of progressbar",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yangwao/progressbar_web_revival.git"
+  },
+  "author": "matej nemcek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yangwao/progressbar_web_revival/issues"
+  },
+  "homepage": "https://github.com/yangwao/progressbar_web_revival#readme"
+}
