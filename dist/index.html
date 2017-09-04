@@ -23,6 +23,9 @@
         <img id="sechelt" crossorigin="anonymous" src="img/foaje.jpg">
 
         <!-- Image link template to be reused. -->
+
+
+
         <script id="link" type="text/html">
           <a-entity class="link"
             geometry="primitive: plane; height: 1; width: 1"
@@ -36,6 +39,7 @@
         </script>
       </a-assets>
 
+      <a-entity link="href: index.html; title: My Homepage; image: #city-thumb"></a-entity>
       <!-- 360-degree image. -->
       <a-sky id="image-360" radius="10" src="#city"></a-sky>
 
@@ -52,7 +56,7 @@
           animation__click="property: scale; startEvents: click; from: 0.1 0.1 0.1; to: 1 1 1; dur: 150"
           animation__fusing="property: fusing; startEvents: fusing; from: 1 1 1; to: 0.1 0.1 0.1; dur: 1500"
           event-set__1="_event: mouseenter; color: springgreen"
-          event-set__2="_event: mouseleave; color: black"
+          event-set__2="_event: mouseleave; color: white"
           fuse="true"
           raycaster="objects: .link"></a-cursor>
       </a-entity>
