@@ -4,3 +4,4 @@
 - [ ] coworker.com
 - [ ] sharedesk.com
 - [ ] workfrom.co
+- [ ] https://nomadlist.com/bratislava-slovakia
