@@ -11,17 +11,10 @@ admin.initializeApp({
 
 const db = admin.database();
 const ref = db.ref("server")
-
-let uuidgen = uuid.v4()
-let sub = {
-  [uuidgen]: {
-    email: 'ybdaba@gmail.com',
-    subAt: 12344385216,
-    credit: 0
-  }
-}
-
 const subscribersRef = ref.child("subscribers")
-// subscribersRef.update(sub)
 
-subscribersRef.update(sub)
+ref.on("value", function(snapshot) {
+  console.log(snapshot.val());
+}, function (errorObject) {
+  console.log("The read failed: " + errorObject.code);
+});
