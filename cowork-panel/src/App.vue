@@ -1,13 +1,21 @@
 <template>
-  <div id="app">
-    <header>
-      <span>Progressbar cowork panel</span>
-    </header>
-    <main>
-      <status></status>
-      <router-view></router-view>
-    </main>
-  </div>
+<div id="app">
+      <header>
+            <div class="columns">
+                  <div class="column">
+                        <div class="crop">
+                              <a href="https://progressbar.sk">
+                                    <img src="./assets/progressbar-logo.svg" alt="progressbar logo">
+                              </a>
+                        </div>
+                  </div>
+            </div>
+      </header>
+      <main>
+            <status></status>
+            <router-view></router-view>
+      </main>
+</div>
 </template>
 
 <script>
@@ -22,5 +30,15 @@ export default {
 
 html {
     background-color: #000
+}
+
+.crop {
+    height: 150px;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.crop img {
+    margin: -150px 0 0 -10px;
 }
 </style>

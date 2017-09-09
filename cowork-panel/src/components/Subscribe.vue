@@ -2,16 +2,12 @@
 <div class="subscribe">
     <div class="columns is-mobile">
       <div class="column is-narrow">
-        <nav class="breadcrumb has-dot-separator is-large" aria-label="breadcrumbs">
-          <ul>
-            <li><a class="button is-outlined is-success" href="#">{{this.counts.free}} free seats</a></li>
-            <li><a class="button is-outlined is-primary" href="#">{{this.counts.waitlist}} in waitlist</a></li>
-            <li><a class="button is-outlined is-info" href="#">Capacity {{this.counts.capacity}} seats</a></li>
-          </ul>
-        </nav>
+          <a class="button is-outlined is-success" href="#">{{this.counts.free}} free seats</a>
+          <a class="button is-outlined is-primary" href="#">{{this.counts.waitlist}} on waitlist</a>
+          <a class="button is-outlined is-info" href="#">Capacity {{this.counts.capacity}} seats</a>
       </div>
     </div>
-      <div class="columns is-mobile">
+      <div class="columns">
             <div class="column is-narrow">
                   <div class="control has-icons-left has-icons-right">
                         <input class="input is-medium is-white" type="email" placeholder="Email">
@@ -24,7 +20,7 @@
                   </div>
             </div>
             <div class="column is-narrow">
-              <a class="button is-warning is-medium is-outlined">Subscribe me</a>
+              <a class="button is-warning is-medium is-outlined">Subscribe me to the queue</a>
             </div>
       </div>
 <div class="columns">
@@ -47,7 +43,10 @@
               7am - 10pm access
             </li>
             <li>
-              <a href="https://www.google.com/maps/place/Progressbar+hackerspace/@48.1442331,17.1066804,17z/">Hotdesk in downtown</a>
+              <a href="https://www.google.com/maps/place/Progressbar+hackerspace/@48.1442331,17.1066804,17z/">Place for work in downtown</a>
+            </li>
+            <li>
+              Hotdesk (optional)
             </li>
             <li>
               250/20 high-speed internet
@@ -62,7 +61,7 @@
       <footer class="card-footer">
         <p class="card-footer-item">
           <span>
-            <a class="button is-medium is-outlined">I Want this</a>
+            <a class="button is-medium is-outlined" disabled>I Want this</a>
           </span>
         </p>
       </footer>
@@ -87,7 +86,10 @@
               24/7 access
             </li>
             <li>
-              <a href="https://www.google.com/maps/place/Progressbar+hackerspace/@48.1442331,17.1066804,17z/">Hotdesk in downtown</a>
+              <a href="https://www.google.com/maps/place/Progressbar+hackerspace/@48.1442331,17.1066804,17z/">Place for work in downtown</a>
+            </li>
+            <li>
+              HotDesk
             </li>
             <li>
               250/20 high-speed internet
@@ -102,7 +104,7 @@
       <footer class="card-footer">
         <p class="card-footer-item">
           <span>
-            <a class="button is-medium is-outlined">I Want this</a>
+            <a class="button is-medium is-outlined" disabled>I Want this</a>
           </span>
         </p>
       </footer>
@@ -127,7 +129,10 @@
               24/7 access
             </li>
             <li>
-              <a href="https://www.google.com/maps/place/Progressbar+hackerspace/@48.1442331,17.1066804,17z/">Hotdesk in downtown</a>
+              <a href="https://www.google.com/maps/place/Progressbar+hackerspace/@48.1442331,17.1066804,17z/">Place for work in downtown</a>
+            </li>
+            <li>
+              Fixdesk
             </li>
             <li>
               250/20 high-speed internet
