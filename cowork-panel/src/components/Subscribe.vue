@@ -40,10 +40,10 @@
         <div class="content">
           <ul>
             <li>
-              <a href="https://www.google.com/maps/place/Progressbar+hackerspace/@48.1442331,17.1066804,17z/">Place for work in downtown</a>
+              <a href="https://www.google.com/maps/place/Progressbar+hackerspace/@48.1442331,17.1066804,17z/">Place for your work in downtown</a>
             </li>
             <li>
-              High-speed internet (250/20)
+              <a href="http://beta.speedtest.net/result/6614462229">High-speed Internet (250/20)</a>
             </li>
             <li>
               Standing desk (shared)
@@ -51,6 +51,35 @@
             <li>
               Place to call (Foyer)
             </li>
+            <li>
+              Access to
+            </li>
+            <ul>
+              <li>
+                Kitchen
+              </li>
+              <li>
+                Softdrinks
+                <ul>
+                  <li>
+                    Club-Mate
+                  </li>
+                  <li>
+                    Flora-power
+                  </li>
+                  <li>
+                    other Maté-like
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Twenny Bars (& Soylents)
+              </li>
+              <li>
+                Hardware Lab
+              </li>
+            </ul>
+
           </ul>
           <br>
         </div>
