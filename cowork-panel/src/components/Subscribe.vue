@@ -43,7 +43,7 @@
               <a href="https://www.google.com/maps/place/Progressbar+hackerspace/@48.1442331,17.1066804,17z/">Place for your work in downtown</a>
             </li>
             <li>
-              <a href="http://beta.speedtest.net/result/6614462229">High-speed Internet (250/20)</a>
+              <a href="http://beta.speedtest.net/result/6614494632">High-speed Internet (250/20)</a>
             </li>
             <li>
               Standing desk (shared)
@@ -84,13 +84,6 @@
           <br>
         </div>
       </div>
-      <!-- <footer class="card-footer">
-        <p class="card-footer-item">
-          <span>
-            <a class="button is-medium is-outlined" disabled>I Want this</a>
-          </span>
-        </p>
-      </footer> -->
     </div>
   </div>
   <div class="column is-narrow">
