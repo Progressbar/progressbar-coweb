@@ -46,6 +46,9 @@
               <a href="http://beta.speedtest.net/result/6614494632">High-speed Internet (250/20)</a>
             </li>
             <li>
+              🖥 External monitor (optional)
+            </li>
+            <li>
               Standing desk (shared)
             </li>
             <li>
@@ -59,7 +62,7 @@
                 Kitchen
               </li>
               <li>
-                Softdrinks
+                🍹 Softdrinks
                 <ul>
                   <li>
                     Club-Mate
