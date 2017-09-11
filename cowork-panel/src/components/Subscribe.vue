@@ -200,7 +200,7 @@
 </div>
 <div class="columns is-mobile">
   <div class="column is-narrow">
-    <a class="button is-large is-outlined is-light" href="#">I want to see the workspace (VR)</a>
+    <a class="button is-medium is-outlined is-light" href="#">I want to see the workspace (VR)</a>
   </div>
 </div>
 </div>
