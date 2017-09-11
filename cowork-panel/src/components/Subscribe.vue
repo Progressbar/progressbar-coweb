@@ -28,6 +28,46 @@
     <div class="card">
       <header class="card-header">
         <p class="card-header-title">
+          Every package incl.
+        </p>
+        <a href="#" class="card-header-icon" aria-label="more options">
+          <span class="icon">
+            <i class="fa fa-headphones" aria-hidden="true"></i>
+          </span>
+        </a>
+      </header>
+      <div class="card-content">
+        <div class="content">
+          <ul>
+            <li>
+              <a href="https://www.google.com/maps/place/Progressbar+hackerspace/@48.1442331,17.1066804,17z/">Place for work in downtown</a>
+            </li>
+            <li>
+              High-speed internet (250/20)
+            </li>
+            <li>
+              Standing desk (shared)
+            </li>
+            <li>
+              Place to call (Foyer)
+            </li>
+          </ul>
+          <br>
+        </div>
+      </div>
+      <!-- <footer class="card-footer">
+        <p class="card-footer-item">
+          <span>
+            <a class="button is-medium is-outlined" disabled>I Want this</a>
+          </span>
+        </p>
+      </footer> -->
+    </div>
+  </div>
+  <div class="column is-narrow">
+    <div class="card">
+      <header class="card-header">
+        <p class="card-header-title">
           Daypass
         </p>
         <a href="#" class="card-header-icon" aria-label="more options">
@@ -43,13 +83,7 @@
               7am - 10pm access
             </li>
             <li>
-              <a href="https://www.google.com/maps/place/Progressbar+hackerspace/@48.1442331,17.1066804,17z/">Place for work in downtown</a>
-            </li>
-            <li>
-              Hotdesk (optional)
-            </li>
-            <li>
-              250/20 high-speed internet
+              HotDesk (shared)
             </li>
             <li>
               5€ / day
@@ -61,7 +95,7 @@
       <footer class="card-footer">
         <p class="card-footer-item">
           <span>
-            <a class="button is-medium is-outlined" disabled>I Want this</a>
+            <a class="button is-medium is-outlined" disabled>Order</a>
           </span>
         </p>
       </footer>
@@ -86,13 +120,7 @@
               24/7 access
             </li>
             <li>
-              <a href="https://www.google.com/maps/place/Progressbar+hackerspace/@48.1442331,17.1066804,17z/">Place for work in downtown</a>
-            </li>
-            <li>
               HotDesk
-            </li>
-            <li>
-              250/20 high-speed internet
             </li>
             <li>
               60€ / month
@@ -104,7 +132,7 @@
       <footer class="card-footer">
         <p class="card-footer-item">
           <span>
-            <a class="button is-medium is-outlined" disabled>I Want this</a>
+            <a class="button is-medium is-outlined" disabled>Order</a>
           </span>
         </p>
       </footer>
@@ -129,13 +157,7 @@
               24/7 access
             </li>
             <li>
-              <a href="https://www.google.com/maps/place/Progressbar+hackerspace/@48.1442331,17.1066804,17z/">Place for work in downtown</a>
-            </li>
-            <li>
               Fixdesk
-            </li>
-            <li>
-              250/20 high-speed internet
             </li>
             <li>
               100€ / month
@@ -147,7 +169,7 @@
       <footer class="card-footer">
         <p class="card-footer-item">
           <span>
-            <a class="button is-medium is-outlined" disabled>I Want this</a>
+            <a class="button is-medium is-outlined" disabled>Order</a>
           </span>
         </p>
       </footer>
