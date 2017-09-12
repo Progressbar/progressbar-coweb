@@ -2,9 +2,9 @@
 <div class="subscribe">
     <div class="columns is-mobile">
       <div class="column is-narrow">
-          <a class="button is-outlined is-success" href="#">{{this.counts.free}} free seats</a>
-          <a class="button is-outlined is-primary" href="#">{{this.counts.waitlist}} on waitlist</a>
-          <a class="button is-outlined is-info" href="#">Capacity {{this.counts.capacity}} seats</a>
+          <a class="button is-outlined is-success" href="#">{{this.seats.free}} free seats</a>
+          <a class="button is-outlined is-primary" href="#">{{this.seats.waitlist}} on waitlist</a>
+          <a class="button is-outlined is-info" href="#">Capacity {{this.seats.capacity}} seats</a>
       </div>
     </div>
       <div class="columns">
@@ -20,7 +20,7 @@
                   </div>
             </div>
             <div class="column is-narrow">
-              <a class="button is-warning is-medium is-outlined">Subscribe me to the queue</a>
+              <a class="button is-warning is-medium is-outlined" disabled>Subscribe me to the queue</a>
             </div>
       </div>
 <div class="columns">
@@ -203,7 +203,7 @@
 </div>
 <div class="columns is-mobile">
   <div class="column is-narrow">
-    <a class="button is-medium is-outlined is-light" href="#">See the workspace (VR)</a>
+    <a class="button is-medium is-outlined is-light" href="#" disabled>See the workspace (VR)</a>
   </div>
 </div>
 </div>
@@ -216,9 +216,9 @@ export default {
   name: 'subscribe',
   data() {
     return {
-      counts: {
-        free: 6,
-        waitlist: 4,
+      seats: {
+        free: 5,
+        waitlist: 7,
         capacity: 12
       }
 
