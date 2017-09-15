@@ -2,8 +2,9 @@
 <div class="subscribe">
     <div class="columns is-mobile">
       <div class="column is-narrow">
+          <a class="button is-outlined is-danger" @click="subscribers()" href="#">{{this.seats.subscribers}} 📩 subscribers</a>
+          <a class="button is-outlined is-primary" @click="subscribers()" href="#">{{this.seats.waitlist}} 👨‍💻 on waitlist</a>
           <a class="button is-outlined is-success" href="#">{{this.seats.free}} free 💺</a>
-          <a class="button is-outlined is-primary" href="#">{{this.seats.waitlist}} 👨‍💻 on waitlist</a>
           <a class="button is-outlined is-info" href="#">capacity {{this.seats.capacity}} 💺</a>
       </div>
     </div>
@@ -201,19 +202,41 @@
 
 <script>
 import Status from '@/components/Status'
+import axios from 'axios'
 
 export default {
   name: 'subscribe',
   data() {
     return {
       seats: {
-        free: 5,
-        waitlist: 7,
-        capacity: 12
-      }
-
+        free: 99,
+        subscribers: 99,
+        waitlist: 99,
+        capacity: 99,
+        allocatedDay: 99
+      },
+      api: {
+        base: 'https://us-central1-coweb-bc478.cloudfunctions.net/',
+        subscribers: 'subscribers/'
+      },
+      cowork: 0
     }
-  }
+  },
+  methods: {
+    subscribers() {
+        axios({
+            method: 'get',
+            url: this.api.base + this.api.subscribers
+          })
+          .then(response => {
+            console.log(response)
+            this.seats = response.data.seats
+          })
+          .catch(e => {
+            console.log(e)
+          })
+      }
+    }
 }
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
