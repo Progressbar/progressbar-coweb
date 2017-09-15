@@ -2,10 +2,10 @@
 <div class="subscribe">
     <div class="columns is-mobile">
       <div class="column is-narrow">
-          <a class="button is-outlined is-danger" @click="subscribers()" href="#">{{this.seats.subscribers}} 📩 subscribers</a>
-          <a class="button is-outlined is-primary" @click="subscribers()" href="#">{{this.seats.waitlist}} 👨‍💻 on waitlist</a>
+          <a class="button is-outlined is-danger" @click="getSubscribers()" href="#">{{this.seats.subscribers}} 📩 subscribers</a>
+          <a class="button is-outlined is-primary" @click="getSubscribers()" href="#">{{this.seats.waitlist}} 👨‍💻 on waitlist</a>
           <a class="button is-outlined is-success" href="#">{{this.seats.free}} free 💺</a>
-          <a class="button is-outlined is-info" href="#">capacity {{this.seats.capacity}} 💺</a>
+          <a class="button is-outlined is-info" v-on:onload="subscribers()" href="#">capacity {{this.seats.capacity}} 💺</a>
       </div>
     </div>
       <div class="columns">
@@ -209,11 +209,11 @@ export default {
   data() {
     return {
       seats: {
-        free: 99,
-        subscribers: 99,
-        waitlist: 99,
-        capacity: 99,
-        allocatedDay: 99
+        free: 9,
+        subscribers: 9,
+        waitlist: 9,
+        capacity: 9,
+        allocatedDay: 9
       },
       api: {
         base: 'https://us-central1-coweb-bc478.cloudfunctions.net/',
@@ -222,8 +222,11 @@ export default {
       cowork: 0
     }
   },
+  mounted: function() {
+    this.getSubscribers()
+  },
   methods: {
-    subscribers() {
+    getSubscribers() {
         axios({
             method: 'get',
             url: this.api.base + this.api.subscribers
