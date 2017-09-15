@@ -17,9 +17,11 @@ const subscribersRef = ref.child("subscribers")
 let subs
 
 const app1 = express()
-getAllSubs.use(cors({ origin: true }))
-getAllSubs.get("*", (request, response) => {
-  ref.on("value", function(snapshot) {
+app1.use(cors({
+  origin: true
+}))
+app1.get("*", (request, response) => {
+  ref.on("value", function (snapshot) {
     subs = snapshot.val()
     response.send(subs)
   }, function (errorObject) {
@@ -30,11 +32,21 @@ getAllSubs.get("*", (request, response) => {
 export let getAllSubs = functions.https.onRequest(app1)
 
 const app2 = express()
-subscribers.use(cors({ origin: true }))
-subscribers.get("*", (req, res) => {
-  ref.on("value", function(snapshot) {
+app2.use(cors({
+  origin: true
+}))
+app2.get("*", (req, res) => {
+  ref.on("value", function (snapshot) {
     subs = snapshot.val()
-    res.json({subscribers: Object.keys(subs.subscribers).length})
+    res.json({
+      seats: {
+        subscribers: Object.keys(subs.subscribers).length,
+        free: 10,
+        waitlist: 2,
+        capacity: 12,
+        allocatedDay: 0
+      }
+    })
   }, function (errorObject) {
     console.log("The read failed: " + errorObject.code)
   })
