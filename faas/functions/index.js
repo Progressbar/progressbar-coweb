@@ -3,8 +3,8 @@ const uuid = require('uuid')
 const cors = require('cors')
 const express = require('express')
 
-var admin = require("firebase-admin")
-var serviceAccount = require("./pKey.json")
+const admin = require("firebase-admin")
+const serviceAccount = require("./pKey.json")
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
@@ -16,19 +16,19 @@ const ref = db.ref("server")
 const subscribersRef = ref.child("subscribers")
 let subs
 
-const app4 = express()
-app4.use(cors({ origin: true }))
-app4.get("*", (request, response) => {
+const getAllSubs = express()
+getAllSubs.use(cors({ origin: true }))
+getAllSubs.get("*", (request, response) => {
   ref.on("value", function(snapshot) {
     subs = snapshot.val()
     response.send(subs)
   }, function (errorObject) {
     console.log("The read failed: " + errorObject.code)
   })
-  // response.send("Hello from Express on Firebase with CORS!")
 })
 
-exports.api4 = functions.https.onRequest(app4)
+
+exports.getAllSubs = functions.https.onRequest(getAllSubs)
 
 // ref.on("child_changed", function(snapshot) {
 //   let changedObj = snapshot.val();
