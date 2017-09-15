@@ -10,7 +10,7 @@
       <div class="columns">
             <div class="column is-narrow">
                   <div class="control has-icons-left has-icons-right">
-                        <input class="input is-medium is-white" type="email" placeholder="Email">
+                        <input class="input is-medium is-white" type="email" placeholder="Enter your email">
                         <span class="icon is-medium is-left">
                               <i class="fa fa-envelope"></i>
                         </span>
