@@ -1,10 +1,16 @@
 <template>
 <div class="subscribe">
-    <div class="columns is-mobile">
+    <div class="columns">
       <div class="column is-narrow">
           <a class="button is-outlined is-danger" @click="getSubscribers()" href="#">{{this.seats.subscribers}} 📩 subscribers</a>
+      </div>
+      <div class="column is-narrow">
           <a class="button is-outlined is-primary" @click="getSubscribers()" href="#">{{this.seats.waitlist}} 👨‍💻 on waitlist</a>
+      </div>
+      <div class="column is-narrow">
           <a class="button is-outlined is-success" href="#">{{this.seats.free}} free 💺</a>
+      </div>
+      <div class="column is-narrow">
           <a class="button is-outlined is-info" v-on:onload="subscribers()" href="#">capacity {{this.seats.capacity}} 💺</a>
       </div>
     </div>
