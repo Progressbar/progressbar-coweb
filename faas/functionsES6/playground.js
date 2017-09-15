@@ -15,3 +15,9 @@ const db = admin.database();
 const ref = db.ref("server")
 const subscribersRef = ref.child("subscribers")
 let subs
+ref.on("value", function(snapshot) {
+  subs = snapshot.val()
+  console.log(Object.keys(subs.subscribers).length);
+}, function (errorObject) {
+  console.log("The read failed: " + errorObject.code)
+})

@@ -16,7 +16,7 @@ const ref = db.ref("server")
 const subscribersRef = ref.child("subscribers")
 let subs
 
-const getAllSubs = express()
+const app1 = express()
 getAllSubs.use(cors({ origin: true }))
 getAllSubs.get("*", (request, response) => {
   ref.on("value", function(snapshot) {
@@ -27,7 +27,20 @@ getAllSubs.get("*", (request, response) => {
   })
 })
 
-exports.getAllSubs = functions.https.onRequest(getAllSubs)
+export let getAllSubs = functions.https.onRequest(app1)
+
+const app2 = express()
+subscribers.use(cors({ origin: true }))
+subscribers.get("*", (req, res) => {
+  ref.on("value", function(snapshot) {
+    subs = snapshot.val()
+    res.json({subscribers: Object.keys(subs.subscribers).length})
+  }, function (errorObject) {
+    console.log("The read failed: " + errorObject.code)
+  })
+})
+
+export let subscribers = functions.https.onRequest(app2)
 
 // ref.on("child_changed", function(snapshot) {
 //   let changedObj = snapshot.val();
