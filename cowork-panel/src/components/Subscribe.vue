@@ -2,9 +2,9 @@
 <div class="subscribe">
     <div class="columns is-mobile">
       <div class="column is-narrow">
-          <a class="button is-outlined is-success" href="#">{{this.seats.free}} free seats</a>
-          <a class="button is-outlined is-primary" href="#">{{this.seats.waitlist}} on waitlist</a>
-          <a class="button is-outlined is-info" href="#">Capacity {{this.seats.capacity}} seats</a>
+          <a class="button is-outlined is-success" href="#">{{this.seats.free}} free 💺</a>
+          <a class="button is-outlined is-primary" href="#">{{this.seats.waitlist}} 👨‍💻 on waitlist</a>
+          <a class="button is-outlined is-info" href="#">capacity {{this.seats.capacity}} 💺</a>
       </div>
     </div>
       <div class="columns">
@@ -14,28 +14,24 @@
                         <span class="icon is-medium is-left">
                               <i class="fa fa-envelope"></i>
                         </span>
-                        <!-- <span class="icon is-medium is-right">
-                      <i class="fa fa-check"></i>
-                </span> -->
                   </div>
             </div>
             <div class="column is-narrow">
-              <a class="button is-warning is-medium is-outlined" disabled>Subscribe me to the queue</a>
+              <a class="button is-warning is-medium is-outlined" disabled>Subscribe to the queue</a>
             </div>
       </div>
 <div class="columns">
   <div class="column is-narrow">
     <div class="card">
+
+    </div>
+    <div class="card">
       <header class="card-header">
         <p class="card-header-title">
-          Every package incl.
+          Every package includes
         </p>
-        <a href="#" class="card-header-icon" aria-label="more options">
-          <span class="icon">
-            <i class="fa fa-headphones" aria-hidden="true"></i>
-          </span>
-        </a>
       </header>
+
       <div class="card-content">
         <div class="content">
           <ul>
@@ -49,40 +45,34 @@
               🖥 External monitor (optional)
             </li>
             <li>
-              Standing desk (shared)
+              <a href="http://www.ikea.com/sk/sk/catalog/products/S29084966/">Standing desk</a> (shared)
             </li>
             <li>
-              Place to call (Foyer)
+              Place to 🗣📞 call (@Foyer)
             </li>
             <li>
-              Access to
+              Kitchen
             </li>
-            <ul>
-              <li>
-                Kitchen
-              </li>
-              <li>
-                🍹 Softdrinks
-                <ul>
-                  <li>
-                    Club-Mate
-                  </li>
-                  <li>
-                    Flora-power
-                  </li>
-                  <li>
-                    other Maté-like
-                  </li>
-                </ul>
-              </li>
-              <li>
-                Twenny Bars (& Soylents)
-              </li>
-              <li>
-                Hardware Lab
-              </li>
-            </ul>
-
+            <li>
+              🍹 <a href="https://www.facebook.com/progressbar/photos/a.946997141982895.1073741833.140864112596206/1933082956707637/?type=3" alt="drink in fridge">Softdrinks</a>
+              <ul>
+                <li>
+                  Club-Mate
+                </li>
+                <li>
+                  Flora-power
+                </li>
+                <li>
+                  other Maté-like
+                </li>
+              </ul>
+            </li>
+            <li>
+              Twenny Bars (& Soylents)
+            </li>
+            <li>
+              Hardware Lab
+            </li>
           </ul>
           <br>
         </div>
@@ -97,7 +87,7 @@
         </p>
         <a href="#" class="card-header-icon" aria-label="more options">
           <span class="icon">
-            <i class="fa fa-headphones" aria-hidden="true"></i>
+            🎧
           </span>
         </a>
       </header>
@@ -105,13 +95,13 @@
         <div class="content">
           <ul>
             <li>
-              7am - 10pm access
+              7am - 10pm
             </li>
             <li>
               HotDesk (shared)
             </li>
             <li>
-              5€ / day
+              5€ per day
             </li>
           </ul>
           <br>
@@ -130,11 +120,11 @@
     <div class="card">
       <header class="card-header">
         <p class="card-header-title">
-          HotDesk
+          Worker
         </p>
         <a href="#" class="card-header-icon" aria-label="more options">
           <span class="icon">
-            <i class="fa fa-headphones" aria-hidden="true"></i>
+            🎧
           </span>
         </a>
       </header>
@@ -142,13 +132,13 @@
         <div class="content">
           <ul>
             <li>
-              24/7 access
+              24/7
             </li>
             <li>
               HotDesk
             </li>
             <li>
-              60€ / month
+              60€ per month
             </li>
           </ul>
           <br>
@@ -167,11 +157,11 @@
     <div class="card">
       <header class="card-header">
         <p class="card-header-title">
-          FixDesk
+          Homie
         </p>
         <a href="#" class="card-header-icon" aria-label="more options">
           <span class="icon">
-            <i class="fa fa-headphones" aria-hidden="true"></i>
+            🎧
           </span>
         </a>
       </header>
@@ -179,13 +169,13 @@
         <div class="content">
           <ul>
             <li>
-              24/7 access
+              24/7
             </li>
             <li>
               Fixdesk
             </li>
             <li>
-              100€ / month
+              140€ per month
             </li>
           </ul>
           <br>
