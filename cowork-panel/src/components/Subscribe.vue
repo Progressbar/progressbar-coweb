@@ -46,7 +46,7 @@
               <a href="https://www.google.com/maps/place/Progressbar+hackerspace/@48.1442331,17.1066804,17z/">Place for your work in downtown</a>
             </li>
             <li>
-              <a href="http://beta.speedtest.net/result/6614494632">High-speed Internet (250/20)</a>
+              <a href="http://beta.speedtest.net/result/6614494632">High-speed Internet (250/20)</a><a href="http://www.speedtest.net/my-result/a/3202628412">📱</a>
             </li>
             <li>
               🖥 External monitor (optional)
