@@ -46,10 +46,10 @@
               <a href="https://www.google.com/maps/place/Progressbar+hackerspace/@48.1442331,17.1066804,17z/">Place for your work in downtown</a>
             </li>
             <li>
-              <a href="http://beta.speedtest.net/result/6614494632">High-speed Internet (250/20)</a><a href="http://www.speedtest.net/my-result/a/3202628412">📱</a>
+              <a href="https://beta.speedtest.net/result/6614494632">High-speed Internet (250/20)</a><a href="https://beta.speedtest.net/result/a/3202628412">📱</a>
             </li>
             <li>
-              🖥 External monitor (optional)
+              🖥 External monitor (shared)
             </li>
             <li>
               <a href="http://www.ikea.com/sk/sk/catalog/products/S29084966/">Standing desk</a> (shared)
@@ -71,6 +71,9 @@
                 </li>
                 <li>
                   other Maté-like
+                </li>
+                <li>
+                  Pragomošt
                 </li>
               </ul>
             </li>
@@ -108,7 +111,7 @@
               HotDesk (shared)
             </li>
             <li>
-              5€ per day
+              6€ per day
             </li>
           </ul>
           <br>
@@ -127,7 +130,7 @@
     <div class="card">
       <header class="card-header">
         <p class="card-header-title">
-          Worker
+          Flex
         </p>
         <a href="#" class="card-header-icon" aria-label="more options">
           <span class="icon">
