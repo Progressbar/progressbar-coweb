@@ -24,6 +24,7 @@
     </div>
   </div>
   <div class="columns">
+
         <div class="column is-narrow">
               <div class="control has-icons-left has-icons-right">
                     <input class="input is-medium is-white" type="email" placeholder="Enter your email">
@@ -33,7 +34,7 @@
               </div>
         </div>
         <div class="column is-narrow">
-          <a class="button is-warning is-medium is-outlined" disabled>Subscribe to the queue</a>
+          <a @click="subscribeMe()" class="button is-warning is-medium is-outlined" disabled>Subscribe to the queue</a>
         </div>
   </div>
   <div class="columns">
@@ -299,7 +300,8 @@ export default {
       },
       api: {
         base: 'https://us-central1-coweb-bc478.cloudfunctions.net/',
-        subscribers: 'subscribers/'
+        subscribers: 'subscribers/',
+        newSub: 'newSub/'
       },
       cowork: 0
     }
@@ -323,6 +325,9 @@ export default {
           .catch(e => {
             console.log(e)
           })
+      },
+      subscribeMe(email) {
+        
       }
     }
 }

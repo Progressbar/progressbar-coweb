@@ -54,6 +54,17 @@ app2.get("*", (req, res) => {
 
 export let subscribers = functions.https.onRequest(app2)
 
+const app3 = express()
+app3.use(cors({
+  origin: true
+}))
+app3.get("/:email", (req, res) => {
+  // mailgun success
+  res.json({newSub: req.params.email, code: 'email sent'})
+})
+
+export let newSub = functions.https.onRequest(app3)
+
 // ref.on("child_changed", function(snapshot) {
 //   let changedObj = snapshot.val();
 //   console.log("updated entry" + JSON.stringify(changedObj));
