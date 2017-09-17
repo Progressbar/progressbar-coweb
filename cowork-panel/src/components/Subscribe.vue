@@ -11,19 +11,18 @@
   </div>
   <div class="columns">
     <div class="column is-narrow">
-        <a class="button is-outlined is-danger" @click="getSubscribers()" href="#">{{this.seats.subscribers}} 📩 subscribers</a>
+        <a class="button is-outlined is-danger" href="#">{{this.seats.subscribers}} 📩 subscribers</a>
     </div>
     <div class="column is-narrow">
-        <a class="button is-outlined is-primary" @click="getSubscribers()" href="#">{{this.seats.waitlist}} 👨‍💻 on waitlist</a>
+        <a class="button is-outlined is-primary" href="#">{{this.seats.waitlist}} 👨‍💻 on waitlist</a>
     </div>
     <div class="column is-narrow">
         <a class="button is-outlined is-success" href="#">{{this.seats.free}} free 💺</a>
     </div>
     <div class="column is-narrow">
-        <a class="button is-outlined is-info" v-on:onload="subscribers()" href="#">capacity {{this.seats.capacity}} 💺</a>
+        <a class="button is-outlined is-info" href="#">capacity {{this.seats.capacity}} 💺</a>
     </div>
   </div>
-
   <div class="columns">
         <div class="column is-narrow">
               <div class="control has-icons-left has-icons-right">
@@ -305,9 +304,12 @@ export default {
       cowork: 0
     }
   },
-  mounted: function() {
+  created() {
     this.getSubscribers()
   },
+  // mounted: function() {
+  //   this.getSubscribers()
+  // },
   methods: {
     getSubscribers() {
         axios({
