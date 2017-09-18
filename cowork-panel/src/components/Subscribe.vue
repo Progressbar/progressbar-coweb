@@ -1,10 +1,10 @@
 <template>
 <div class="subscribe">
   <div class="columns is-mobile">
-    <div class="column is-6">
+    <div class="column is-8">
       <article class="message is-small is-info">
         <div class="message-body">
-          We plan to open Cowork in our Progressbar hackerspace in upcoming weeks. Cowork system is in development and will be soon available for closed testing. Before production-ready, you can subscribe to the queue and we will keep you posted.
+          We plan to open co-work in our Progressbar hackerspace in upcoming weeks. Co-work system is in development and will be soon available for closed testing. Before it's production-ready, you can subscribe to the queue and we will keep you updated.
         </div>
       </article>
     </div>
@@ -40,8 +40,6 @@
   <div class="columns">
     <div class="column is-narrow">
       <div class="card">
-      </div>
-      <div class="card">
         <header class="card-header">
           <p class="card-header-title">
             Every package includes
@@ -51,25 +49,38 @@
           <div class="content">
             <ul>
               <li>
-                <a href="https://www.google.com/maps/place/Progressbar+hackerspace/@48.1442331,17.1066804,17z/">Place for your work in downtown</a>
+                <a href="https://www.google.com/maps/place/Progressbar+hackerspace/@48.1442331,17.1066804,17z/" title="Michalska 3, Bratislava">Place for your work in downtown</a>
               </li>
               <li>
                 <a href="https://beta.speedtest.net/result/6614494632">High-speed Internet (250/20)</a><a href="https://beta.speedtest.net/result/a/3202628412">📱</a>
               </li>
               <li>
-                🖥 External monitor (shared)
+                <a href="#" title="1080p HDMI/DVI mostly">🖥 External monitor (shared)</a>
               </li>
               <li>
-                <a href="http://www.ikea.com/sk/sk/catalog/products/S29084966/">Standing desk</a> (shared)
+                <a href="http://www.ikea.com/sk/sk/catalog/products/S29084966/" title="IKEA SKARSTA">Standing desk (shared)</a>
               </li>
               <li>
                 Place to 🗣📞 call (@Foyer)
               </li>
+            </ul>
+            <br>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column is-narrow">
+      <div class="card">
+        <header class="card-header">
+          <p class="card-header-title">
+            Our Kitchen
+          </p>
+        </header>
+        <div class="card-content">
+          <div class="content">
+            <ul>
               <li>
-                Kitchen
-              </li>
-              <li>
-                🍹 <a href="https://www.facebook.com/progressbar/photos/a.946997141982895.1073741833.140864112596206/1933082956707637/?type=3" alt="drink in fridge">Softdrinks</a>
+                <a href="https://www.facebook.com/progressbar/photos/a.946997141982895.1073741833.140864112596206/1933082956707637/?type=3" title="drinks in fridge">🍹 Softdrinks ❄️ </a>
                 <ul>
                   <li>
                     Club-Mate
@@ -88,11 +99,7 @@
               <li>
                 Twenny Bars (& Soylents)
               </li>
-              <li>
-                Hardware Lab
-              </li>
             </ul>
-            <br>
           </div>
         </div>
       </div>
@@ -118,7 +125,7 @@
                 9am - 8pm
               </li>
               <li>
-                ♨️Desk (shared)
+                ♨️ Desk (shared)
               </li>
               <li>
                 6€ per day
@@ -155,7 +162,7 @@
                 6am - 10pm
               </li>
               <li>
-                ♨️Desk
+                ♨️ Desk
               </li>
               <li>
                 60€ per month
@@ -195,7 +202,7 @@
                 Fixdesk
               </li>
               <li>
-                140€ per month
+                160€ per month
               </li>
             </ul>
             <br>
@@ -327,7 +334,7 @@ export default {
           })
       },
       subscribeMe(email) {
-        
+
       }
     }
 }
