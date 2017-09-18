@@ -17,7 +17,7 @@ const serviceAccount = require("./pKey.json")
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
   databaseURL: "https://coweb-bc478.firebaseio.com"
-});
+})
 
 const db = admin.database();
 const ref = db.ref("server")
