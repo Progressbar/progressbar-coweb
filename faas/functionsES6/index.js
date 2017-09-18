@@ -3,6 +3,14 @@ const uuid = require('uuid')
 const cors = require('cors')
 const express = require('express')
 
+const secrets = require('./secrets.json')
+const api_key = secrets.mailgun.apiKey
+const domain = secrets.mailgun.domain
+const mailgun = require('mailgun-js')({
+  apiKey: api_key,
+  domain: domain
+});
+
 const admin = require("firebase-admin")
 const serviceAccount = require("./pKey.json")
 
@@ -59,11 +67,46 @@ app3.use(cors({
   origin: true
 }))
 app3.get("/:email", (req, res) => {
-  // mailgun success
-  res.json({newSub: req.params.email, code: 'email sent'})
+
+  const data = {
+    from: 'Progressbar Cowork noreply <no-reply@sandboxbf294a2369e74c3298b11770143c5d4a.mailgun.org>',
+    to: 'ybdaba@gmail.com',
+    subject: 'Progressbar Cowork e-mail verification',
+    text: 'Hello, please confirm your email address'
+  }
+
+  mailgun.messages().send(data, function (error, body) {
+    if (error) {
+      res.json({
+        newSub: req.params.email,
+        code: 'email not sent'
+      })
+    }
+    if (!error) {
+      res.json({
+        newSub: req.params.email,
+        code: 'email sent'
+      })
+    }
+  })
+
 })
 
 export let newSub = functions.https.onRequest(app3)
+
+const app4 = express()
+app4.use(cors({
+  origin: true
+}))
+app4.get("/:verificationHash", (req, res) => {
+
+  res.json({
+    verificationHash: req.params.verificationHash,
+    code: 'confirmed'
+  })
+})
+
+export let verify = functions.https.onRequest(app4)
 
 // ref.on("child_changed", function(snapshot) {
 //   let changedObj = snapshot.val();
