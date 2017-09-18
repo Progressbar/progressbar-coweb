@@ -79,6 +79,7 @@ app3.get("/:email", (req, res) => {
     if (error) {
       res.json({
         newSub: req.params.email,
+        error: error,
         code: 'email not sent'
       })
     }
