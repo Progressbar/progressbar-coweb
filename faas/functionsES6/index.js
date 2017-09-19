@@ -4,15 +4,31 @@ const cors = require('cors')
 const express = require('express')
 
 const secrets = require('./secrets.json')
+const api_key = secrets.mailgun.apiKey
+const domain = secrets.mailgun.domain
+const mailgun = require('mailgun-js')({
+  apiKey: api_key,
+  domain: domain
+});
 
 const admin = require("firebase-admin")
 const serviceAccount = require("./pKey.json")
 
-const nodemailer = require('nodemailer')
-const gmailEmail = secrets.gmail.email
-const gmailPassword = secrets.gmail.pass
-const mailTransport = nodemailer.createTransport(
-    `smtps://${gmailEmail}:${gmailPassword}@smtp.gmail.com`);
+// const nodemailer = require('nodemailer')
+// const gmailEmail = encodeURIComponent(functions.config().gmail.email);
+// const gmailPassword = encodeURIComponent(functions.config().gmail.password);
+// const gmailEmail = secrets.gmail.email
+// const gmailPassword = secrets.gmail.pass
+// const mailTransport = nodemailer.createTransport(
+//     `smtps://${gmailEmail}:${gmailPassword}@smtp.gmail.com`);
+// const mailOptions = {
+//   from: '"Spammy Corp." <ybdaba@gmail.com>',
+//   to: 'ybdaba@gmail.com',
+//   subject: ''
+// }
+// mailOptions.subject = 'Thanks and Welcome!'
+// mailOptions.text = 'Thanks you for subscribing to our newsletter. You will receive our next weekly newsletter.'
+
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
@@ -62,6 +78,39 @@ app2.get("*", (req, res) => {
 
 export let subscribers = functions.https.onRequest(app2)
 
+const app3 = express()
+app3.use(cors({
+  origin: true
+}))
+app3.get("/:email", (req, res) => {
+
+  const data = {
+    from: 'Progressbar Cowork noreply <no-reply@sandboxbf294a2369e74c3298b11770143c5d4a.mailgun.org>',
+    to: 'ybdaba@gmail.com',
+    subject: 'Progressbar Cowork e-mail verification',
+    text: 'Hello, please confirm your email address'
+  }
+
+  mailgun.messages().send(data, function (error, body) {
+    if (error) {
+      res.json({
+        newSub: req.params.email,
+        error: error,
+        code: 'email not sent'
+      })
+    }
+    if (!error) {
+      res.json({
+        newSub: req.params.email,
+        code: 'email sent'
+      })
+    }
+  })
+
+})
+
+export let newSub = functions.https.onRequest(app3)
+
 const app4 = express()
 app4.use(cors({
   origin: true
@@ -76,29 +125,27 @@ app4.get("/:verificationHash", (req, res) => {
 
 export let verify = functions.https.onRequest(app4)
 
-const app5 = express()
-app5.use(cors({ origin: true}))
+// const app5 = express()
+// app5.use(cors({ origin: true}))
+//
+// app5.get("/:email", (req,res) => {
+//   mailTransport.sendMail(mailOptions).then(() => {
+//       res.json({
+//         newSub: req.params.email,
+//         code: 'email sent'
+//       })
+//     }).catch(error => {
+//       res.json({
+//         newSub: req.params.email,
+//         code: 'email not sent'
+//         error: error
+//       })
+//     })
+// })
+//
+// export let newSub2 = functions.https.onRequest(app5)
 
-app5.get("/:email", (req,res) => {
-  let mailOpts = {
-    from: '"Progressbar Cowork noreply" <ybdaba+noreply@gmail.com>',
-    to: 'ybdaba@gmail.com',
-    subject: 'Progressbar Cowork e-mail verification',
-    text: 'Hello, please confirm your email address at'
-  }
-
-  mailTransport.sendMail(mailOpts).then(() => {
-      res.json({
-        newSub: req.params.email,
-        code: 'email sent'
-      })
-    }).catch(error => {
-      res.json({
-        newSub: req.params.email,
-        code: 'email not sent'
-        error: error
-      })
-    })
-})
-
-export let newSub = functions.https.onRequest(app5)
+// ref.on("child_changed", function(snapshot) {
+//   let changedObj = snapshot.val();
+//   console.log("updated entry" + JSON.stringify(changedObj));
+// });
