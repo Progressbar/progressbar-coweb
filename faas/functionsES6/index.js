@@ -116,8 +116,11 @@ app4.use(cors({
   origin: true
 }))
 app4.get("/:verificationHash", (req, res) => {
+  ref.on("value", function (snapshot) {
 
+  })
   res.json({
+    subscribersRef,
     verificationHash: req.params.verificationHash,
     code: 'confirmed'
   })
