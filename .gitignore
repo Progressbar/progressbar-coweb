@@ -1,7 +1,9 @@
 # We are using the functionsES6 folder to code and translating at deploy time, so ignore the generated code folder
 #
-#faas/functions/
-secrets.json
+# faas
+faas/functions/
+faas/functionsES6/secrets.json
+faas/functionsES6/pKey.json
 
 # Logs
 logs
@@ -61,5 +63,3 @@ typings/
 
 # dotenv environment variables file
 .env
-
-pKey.json
