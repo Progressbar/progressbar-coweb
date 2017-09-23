@@ -1,7 +1,7 @@
 {
-  "name": "firebase-es6",
+  "name": "cowork-progressbar-behind-scene-faas",
   "version": "1.0.0",
-  "description": "Cloud Functions for Firebase with ES6",
+  "description": "faas-friendly progressbar cowork system",
   "author": "Matej Nemcek <ybdaba@gmail.com>",
   "license": "MIT",
   "devDependencies": {
@@ -14,9 +14,11 @@
     "prepackage-functions": "rimraf functions",
     "package-functions": "babel 'functionsES6' --out-dir 'functions' --presets=es2015 --copy-files --ignore 'node_modules'",
     "postpackage-functions": "cd functions && yarn",
-    "deploy": "yarn run package-functions && firebase deploy"
+    "deploy": "yarn run package-functions && firebase deploy",
+    "serve": "firebase serve --only functions"
   },
   "dependencies": {
     "standard": "*"
-  }
+  },
+  "repository": "https://github.com/yangwao/progressbar-coweb/"
 }

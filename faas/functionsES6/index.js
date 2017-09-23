@@ -1,34 +1,20 @@
-import * as functions from "firebase-functions"
-const uuid = require('uuid')
+const functions = require('firebase-functions')
+const uuidv4 = require('uuid/v4');
 const cors = require('cors')
 const express = require('express')
 
 const secrets = require('./secrets.json')
-const api_key = secrets.mailgun.apiKey
-const domain = secrets.mailgun.domain
 const mailgun = require('mailgun-js')({
-  apiKey: api_key,
-  domain: domain
-});
+  apiKey: secrets.mailgun.apiKey,
+  domain: secrets.mailgun.domain
+})
 
-const admin = require("firebase-admin")
-const serviceAccount = require("./pKey.json")
-
-// const nodemailer = require('nodemailer')
-// const gmailEmail = encodeURIComponent(functions.config().gmail.email);
-// const gmailPassword = encodeURIComponent(functions.config().gmail.password);
-// const gmailEmail = secrets.gmail.email
-// const gmailPassword = secrets.gmail.pass
-// const mailTransport = nodemailer.createTransport(
-//     `smtps://${gmailEmail}:${gmailPassword}@smtp.gmail.com`);
-// const mailOptions = {
-//   from: '"Spammy Corp." <ybdaba@gmail.com>',
-//   to: 'ybdaba@gmail.com',
-//   subject: ''
-// }
-// mailOptions.subject = 'Thanks and Welcome!'
-// mailOptions.text = 'Thanks you for subscribing to our newsletter. You will receive our next weekly newsletter.'
-
+const config = {
+  baseWebUrl: "https://progressbar-cowork.netlify.com/",
+  baseFaasUrl: "https://us-central1-coweb-bc478.cloudfunctions.net/"
+}
+const admin = require('firebase-admin')
+const serviceAccount = require('./pKey.json')
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
@@ -84,11 +70,12 @@ app3.use(cors({
 }))
 app3.get("/:email", (req, res) => {
 
+  const hash = uuidv4()
   const data = {
-    from: 'Progressbar Cowork noreply <no-reply@sandboxbf294a2369e74c3298b11770143c5d4a.mailgun.org>',
+    from: `Progressbar Cowork noreply <no-reply@${secrets.mailgun.domain}>`,
     to: 'ybdaba@gmail.com',
     subject: 'Progressbar Cowork e-mail verification',
-    text: 'Hello, please confirm your email address'
+    text: `Hello, please confirm your email address ${req.params.email} by clicking on link ${config.baseFaasUrl}/verify/${hash}`
   }
 
   mailgun.messages().send(data, function (error, body) {
@@ -106,10 +93,9 @@ app3.get("/:email", (req, res) => {
       })
     }
   })
-
 })
 
-export let newSub = functions.https.onRequest(app3)
+export let newSubcriber = functions.https.onRequest(app3)
 
 const app4 = express()
 app4.use(cors({
