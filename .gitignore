@@ -5,6 +5,8 @@
 faas/functions/
 faas/functionsES6/secrets.json
 faas/functionsES6/pKey.json
+faas/playground/pKey.json
+faas/playground/secrets.json
 # StdLib
 .stdlib
 

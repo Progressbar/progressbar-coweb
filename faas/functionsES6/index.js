@@ -1,7 +1,9 @@
 const functions = require('firebase-functions')
-const uuidv4 = require('uuid/v4');
+const uuidv4 = require('uuid/v4')
 const cors = require('cors')
 const express = require('express')
+import isEmail from 'validator/lib/isEmail'
+import normalizeEmail from 'validator/lib/normalizeEmail'
 
 const secrets = require('./secrets.json')
 const mailgun = require('mailgun-js')({
@@ -13,15 +15,15 @@ const config = {
   baseWebUrl: "https://progressbar-cowork.netlify.com/",
   baseFaasUrl: "https://us-central1-coweb-bc478.cloudfunctions.net/"
 }
-const admin = require('firebase-admin')
+const firebase = require('firebase-admin')
 const serviceAccount = require('./pKey.json')
 
-admin.initializeApp({
-  credential: admin.credential.cert(serviceAccount),
+firebase.initializeApp({
+  credential: firebase.credential.cert(serviceAccount),
   databaseURL: "https://coweb-bc478.firebaseio.com"
 })
 
-const db = admin.database();
+const db = firebase.database();
 const ref = db.ref("server")
 const subscribersRef = ref.child("subscribers")
 let subs
@@ -70,32 +72,85 @@ app3.use(cors({
 }))
 app3.get("/:email", (req, res) => {
 
+  if (!isEmail(req.params.email)) {
+    res.json({
+      error: 'not an email',
+      code: 'not an email'
+    })
+  }
+
+  let normalizedEmail = normalizeEmail(req.params.email)
   const hash = uuidv4()
   const data = {
     from: `Progressbar Cowork noreply <no-reply@${secrets.mailgun.domain}>`,
     to: 'ybdaba@gmail.com',
-    subject: 'Progressbar Cowork e-mail verification',
-    text: `Hello, please confirm your email address ${req.params.email} by clicking on link ${config.baseFaasUrl}/verify/${hash}`
+    subject: 'Progressbar Cowork Email Verification',
+    text: `Hello,
+      looks like somebody tried use your email as subscriber mail.
+      If it was you, please confirm your email address ${normalizedEmail}
+      by clicking on link ${config.baseFaasUrl}verify/${hash}
+
+      If you did not request this email, please ignore it.
+
+      [Humanoid] @ ${config.baseWebUrl}`
   }
 
-  mailgun.messages().send(data, function (error, body) {
-    if (error) {
+  let newSub = {
+    [uuidv4()]: {
+      email: normalizedEmail,
+      createdAt: Date.now(),
+      hash: uuidv4(),
+    }
+  }
+
+  let emails = []
+  subscribersRef.on('value', function (data) {
+    let dataRef = data.val()
+    for (let uid of Object.keys(dataRef)) {
+      emails.push(dataRef[uid].email)
+    }
+
+    let seenEmail = emails.find(x => x == normalizedEmail)
+
+    if (seenEmail) {
       res.json({
-        newSub: req.params.email,
-        error: error,
-        code: 'email not sent'
+        newSubscriberEmail: normalizedEmail,
+        error: 'already requested mail',
+        code: 'already requested mail'
       })
     }
-    if (!error) {
-      res.json({
-        newSub: req.params.email,
-        code: 'email sent'
+
+    if (seenEmail === undefined) {
+      subscribersRef.update(newSub, function (error) {
+        if (error) {
+          res.json({
+            newSubscriberEmail: normalizedEmail,
+            error: error,
+            code: 'email not sent'
+          })
+        } else {
+          // mailgun.messages().send(data, function (error, body) {
+          //   if (error) {
+          //     res.json({
+          //       newSubscriberEmail: normalizedEmail,
+          //       error: error,
+          //       code: 'email not sent'
+          //     })
+          //   }
+          //   if (!error) {
+          res.json({
+            newSubscriberEmail: normalizedEmail,
+            code: 'email sent',
+          })
+          //   }
+          // })
+        }
       })
     }
   })
 })
 
-export let newSubcriber = functions.https.onRequest(app3)
+export let newSubscriber = functions.https.onRequest(app3)
 
 const app4 = express()
 app4.use(cors({
@@ -106,33 +161,12 @@ app4.get("/:verificationHash", (req, res) => {
 
   })
   res.json({
-    subscribersRef,
     verificationHash: req.params.verificationHash,
     code: 'confirmed'
   })
 })
 
 export let verify = functions.https.onRequest(app4)
-
-// const app5 = express()
-// app5.use(cors({ origin: true}))
-//
-// app5.get("/:email", (req,res) => {
-//   mailTransport.sendMail(mailOptions).then(() => {
-//       res.json({
-//         newSub: req.params.email,
-//         code: 'email sent'
-//       })
-//     }).catch(error => {
-//       res.json({
-//         newSub: req.params.email,
-//         code: 'email not sent'
-//         error: error
-//       })
-//     })
-// })
-//
-// export let newSub2 = functions.https.onRequest(app5)
 
 // ref.on("child_changed", function(snapshot) {
 //   let changedObj = snapshot.val();

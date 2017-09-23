@@ -13,7 +13,7 @@
     "test": "standard",
     "prepackage-functions": "rimraf functions",
     "package-functions": "babel 'functionsES6' --out-dir 'functions' --presets=es2015 --copy-files --ignore 'node_modules'",
-    "postpackage-functions": "cd functions && yarn",
+    "postpackage-functions": "cd functions && npm i",
     "deploy": "yarn run package-functions && firebase deploy",
     "serve": "firebase serve --only functions"
   },
