@@ -34,7 +34,7 @@
               </div>
         </div>
         <div class="column is-narrow">
-          <a @click="subscribeMe(subEmail)" class="button is-warning is-medium is-outlined" >Subscribe to the queue</a>
+          <a @click="subscribeMe(subEmail)" class="button is-warning is-medium is-outlined" disabled>Subscribe to the queue</a>
         </div>
   </div>
   <div class="columns">
