@@ -56,7 +56,7 @@ app2.get("*", (req, res) => {
         free: 10,
         waitlist: 2,
         capacity: 14,
-        allocatedDay: 0
+        allocatedToday: 0
       }
     })
   }, function (errorObject) {

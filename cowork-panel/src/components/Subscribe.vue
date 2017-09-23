@@ -27,14 +27,14 @@
 
         <div class="column is-narrow">
               <div class="control has-icons-left has-icons-right">
-                    <input class="input is-medium is-white" type="email" placeholder="Enter your email">
+                    <input v-model="subEmail" class="input is-medium is-white" type="email" placeholder="Enter your email">
                     <span class="icon is-medium is-left">
                           <i class="fa fa-envelope"></i>
                     </span>
               </div>
         </div>
         <div class="column is-narrow">
-          <a @click="subscribeMe()" class="button is-warning is-medium is-outlined" disabled>Subscribe to the queue</a>
+          <a @click="subscribeMe(subEmail)" class="button is-warning is-medium is-outlined" >Subscribe to the queue</a>
         </div>
   </div>
   <div class="columns">
@@ -306,14 +306,18 @@ export default {
         subscribers: 9,
         waitlist: 9,
         capacity: 9,
-        allocatedDay: 9
+        allocatedToday: 9
       },
       api: {
         base: 'https://us-central1-coweb-bc478.cloudfunctions.net/',
         subscribers: 'subscribers/',
-        newSub: 'newSubscriber/'
+        newSubscriber: 'newSubscriber/'
       },
-      cowork: 0
+      cowork: 0,
+      newSubscriber: {
+        email: ''
+      }
+
     }
   },
   created() {
@@ -337,7 +341,16 @@ export default {
           })
       },
       subscribeMe(email) {
-
+        axios({
+          method: 'get',
+          url: this.api.base + this.api.newSubscriber + email
+        })
+        .then(response => {
+          console.log(response)
+        })
+        .catch(e => {
+          console.log(e)
+        })
       }
     }
 }
