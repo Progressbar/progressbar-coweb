@@ -42,7 +42,7 @@
       <div class="card">
         <header class="card-header">
           <p class="card-header-title">
-            Every package includes
+            In space we have
           </p>
         </header>
         <div class="card-content">
@@ -59,6 +59,9 @@
               </li>
               <li>
                 <a href="http://www.ikea.com/sk/sk/catalog/products/S29084966/" title="IKEA SKARSTA">Standing desk (shared)</a>
+              </li>
+              <li>
+                <a href="https://scontent-vie1-1.xx.fbcdn.net/v/t31.0-8/21765459_1941520825863850_876389467015918658_o.jpg?oh=7de68da52211a7304d10a3298d7e02fc&oe=5A538F7E">Lot of ⚡️ electric 🔌 sockets </a>
               </li>
               <li>
                 Place to 🗣📞 call (@Foyer)
