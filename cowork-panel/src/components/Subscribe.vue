@@ -311,7 +311,7 @@ export default {
       api: {
         base: 'https://us-central1-coweb-bc478.cloudfunctions.net/',
         subscribers: 'subscribers/',
-        newSub: 'newSub/'
+        newSub: 'newSubscriber/'
       },
       cowork: 0
     }

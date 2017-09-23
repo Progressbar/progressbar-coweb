@@ -129,21 +129,21 @@ app3.get("/:email", (req, res) => {
             code: 'email not sent'
           })
         } else {
-          // mailgun.messages().send(data, function (error, body) {
-          //   if (error) {
-          //     res.json({
-          //       newSubscriberEmail: normalizedEmail,
-          //       error: error,
-          //       code: 'email not sent'
-          //     })
-          //   }
-          //   if (!error) {
-          res.json({
-            newSubscriberEmail: normalizedEmail,
-            code: 'email sent',
+          mailgun.messages().send(data, function (error, body) {
+            if (error) {
+              res.json({
+                newSubscriberEmail: normalizedEmail,
+                error: error,
+                code: 'email not sent'
+              })
+            }
+            if (!error) {
+              res.json({
+                newSubscriberEmail: normalizedEmail,
+                code: 'email sent',
+              })
+            }
           })
-          //   }
-          // })
         }
       })
     }
