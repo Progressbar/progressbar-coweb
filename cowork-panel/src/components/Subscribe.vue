@@ -52,7 +52,7 @@
                 <a href="https://www.google.com/maps/place/Progressbar+hackerspace/@48.1442331,17.1066804,17z/" title="Michalska 3, Bratislava">Place for your work in downtown</a>
               </li>
               <li>
-                <a href="https://beta.speedtest.net/result/6614494632">High-speed Internet (250/20)</a><a href="https://beta.speedtest.net/result/a/3202628412">📱</a>
+                <a href="https://beta.speedtest.net/result/6614494632">High-speed Internet (250/20)</a><a href="https://beta.speedtest.net/result/a/3234065616">📱</a>
               </li>
               <li>
                 <a href="#" title="1080p HDMI/DVI mostly">🖥 External monitor (shared)</a>

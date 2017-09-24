@@ -1,0 +1,22 @@
+{
+  "name": "verify",
+  "version": "0.0.0",
+  "description": "",
+  "author": "yangwao <ybdaba@gmail.com>",
+  "main": "functions/__main__.js",
+  "dependencies": {
+    "firebase-admin": "^5.2.1",
+    "uuid": "^3.1.0"
+  },
+  "private": true,
+  "stdlib": {
+    "build": "faaslang",
+    "name": "yangwao/verify",
+    "timeout": 10000,
+    "publish": false,
+    "personalize": {
+      "keys": [],
+      "user": []
+    }
+  }
+}

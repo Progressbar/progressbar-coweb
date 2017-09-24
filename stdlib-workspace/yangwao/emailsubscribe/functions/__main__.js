@@ -32,11 +32,8 @@ module.exports = (email = 'noemail', context, callback) => {
     email,
     subscribedAt: Date.now()
   }
+
   callback(null, `${subscriber.email} ${subscriber.subscribedAt}
-  remoteAddr ${context.remoteAddress}
-  http ${context.http.url} ${context.http.headers}
-  url ${context.url}
-  params ${context.params}
   player ${game} result was ${rnd}
   btc_eth rate ${btc_eth}`);
 };

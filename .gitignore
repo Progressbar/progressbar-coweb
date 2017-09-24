@@ -9,6 +9,7 @@ faas/playground/pKey.json
 faas/playground/secrets.json
 # StdLib
 .stdlib
+stdlib-workspace/yangwao/pKey.json
 
 # Logs
 logs

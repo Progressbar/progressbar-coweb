@@ -169,9 +169,6 @@ app4.get("/:verificationHash", (req, res) => {
     let confirmSubCredArr = Object.entries(dataRef)
     let confirmSubCred = confirmSubCredArr.find(x => x[1].hash === req.params.verificationHash)[1]
 
-    res.json({
-      out: [confirmSubIdArr, confirmSubId, confirmSubCred, confirmSubCredArr]
-    })
     if (!confirmSubId) {
       res.json({
         code: 'nope'
