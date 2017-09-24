@@ -1,9 +1,10 @@
+require('core-js/fn/object/entries')
 const functions = require('firebase-functions')
 const uuidv4 = require('uuid/v4')
 const cors = require('cors')
 const express = require('express')
-import isEmail from 'validator/lib/isEmail'
-import normalizeEmail from 'validator/lib/normalizeEmail'
+const isEmail = require('validator/lib/isEmail')
+const normalizeEmail = require('validator/lib/normalizeEmail')
 
 const secrets = require('./secrets.json')
 const mailgun = require('mailgun-js')({
@@ -48,7 +49,7 @@ app2.use(cors({
   origin: true
 }))
 app2.get("*", (req, res) => {
-  ref.on("value", function (snapshot) {
+  ref.once("value", function (snapshot) {
     subs = snapshot.val()
     res.json({
       seats: {
@@ -104,29 +105,31 @@ app3.get("/:email", (req, res) => {
   }
 
   let emails = []
-  subscribersRef.on('value', function (data) {
+  subscribersRef.once('value', function (data) {
     let dataRef = data.val()
     for (let uid of Object.keys(dataRef)) {
       emails.push(dataRef[uid].email)
     }
 
-    let seenEmail = emails.find(x => x == normalizedEmail)
+    let seenEmail = emails.find(x => x === normalizedEmail)
 
-    if (seenEmail) {
+    if (seenEmail === normalizedEmail) {
       res.json({
         newSubscriberEmail: normalizedEmail,
         error: 'already requested mail',
-        code: 'already requested mail'
+        at: 0,
+        code: 'Please confirm your email'
       })
     }
 
     if (seenEmail === undefined) {
-      subscribersRef.update(newSub, function (error) {
-        if (error) {
+      subscribersRef.update(newSub, function (err) {
+        if (err) {
           res.json({
             newSubscriberEmail: normalizedEmail,
-            error: error,
-            code: 'email not sent'
+            error: err,
+            at: 1,
+            code: 'Error occured, try later'
           })
         } else {
           mailgun.messages().send(data, function (error, body) {
@@ -134,13 +137,15 @@ app3.get("/:email", (req, res) => {
               res.json({
                 newSubscriberEmail: normalizedEmail,
                 error: error,
-                code: 'email not sent'
+                at: 2,
+                code: 'Error occured, try later'
               })
             }
             if (!error) {
               res.json({
                 newSubscriberEmail: normalizedEmail,
-                code: 'email sent',
+                at: 3,
+                code: 'Email has been sent',
               })
             }
           })
@@ -157,18 +162,47 @@ app4.use(cors({
   origin: true
 }))
 app4.get("/:verificationHash", (req, res) => {
-  ref.on("value", function (snapshot) {
+  subscribersRef.once('value', function (data) {
+    let dataRef = data.val()
+    let confirmSubIdArr = Object.entries(dataRef)
+    let confirmSubId = confirmSubIdArr.find(x => x[1].hash === req.params.verificationHash)[0]
+    let confirmSubCredArr = Object.entries(dataRef)
+    let confirmSubCred = confirmSubCredArr.find(x => x[1].hash === req.params.verificationHash)[1]
 
-  })
-  res.json({
-    verificationHash: req.params.verificationHash,
-    code: 'confirmed'
+    res.json({
+      out: [confirmSubIdArr, confirmSubId, confirmSubCred, confirmSubCredArr]
+    })
+    if (!confirmSubId) {
+      res.json({
+        code: 'nope'
+      })
+    }
+
+    // if (confirmSubId.length === 36) {
+    if (confirmSubId) {
+      let confirmedSub = {
+        [confirmSubId]: {
+          email: confirmSubCred.email,
+          confirmed: confirmSubCred.confirmed = true,
+          createdAt: confirmSubCred.createdAt
+        }
+      }
+
+      subscribersRef.update(confirmedSub, function (error) {
+        if (error) {
+          res.json({
+            error: error,
+            code: 'error'
+          })
+        } else {
+          res.json({
+            verificationHash: req.params.verificationHash,
+            code: 'confirmed'
+          })
+        }
+      })
+    }
   })
 })
 
 export let verify = functions.https.onRequest(app4)
-
-// ref.on("child_changed", function(snapshot) {
-//   let changedObj = snapshot.val();
-//   console.log("updated entry" + JSON.stringify(changedObj));
-// });

@@ -18,7 +18,21 @@
     "serve": "firebase serve --only functions"
   },
   "dependencies": {
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-es2017": "^6.24.1",
+    "babel-preset-latest-node": "^0.4.0",
+    "babel-runtime": "^6.26.0",
+    "core-js": "^2.5.1",
     "standard": "*"
+  },
+  "babel": {
+    "presets": [
+      "es2017"
+    ],
+    "plugins": [
+      "transform-runtime"
+    ]
   },
   "repository": "https://github.com/yangwao/progressbar-coweb/"
 }
