@@ -39,6 +39,14 @@ module.exports = (name = 'world', context, callback) => {
     }
     let status = {
       seats,
+      actions: {
+        subscribtion: 0,
+        orderDaypass: 0,
+        orderFlex: 0,
+        orderHomie: 0,
+        orderLocker: 0,
+        order247: 0
+      }
     }
     callback(null, status);
   })

@@ -7,7 +7,6 @@
 module.exports = (hash = 'non', context, callback) => {
   const uuidv4 = require('uuid/v4')
   const firebase = require('firebase-admin')
-
   const firebaseConfig = {
     type: process.env.firebase_type,
     project_id: process.env.firebase_project_id,
@@ -20,7 +19,6 @@ module.exports = (hash = 'non', context, callback) => {
     auth_provider_x509_cert_url: process.env.firebase_auth_provider_x509_cert_url,
     client_x509_cert_url: process.env.firebase_client_x509_cert_url
   }
-
   if (firebase.apps.length === 0) {
     firebase.initializeApp({
       credential: firebase.credential.cert(firebaseConfig),
