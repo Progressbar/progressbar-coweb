@@ -302,11 +302,11 @@ export default {
   data() {
     return {
       seats: {
-        free: 9,
-        subscribers: 9,
-        waitlist: 9,
-        capacity: 9,
-        allocatedToday: 9
+        free: '_',
+        subscribers: '_',
+        waitlist: '_',
+        capacity: '_',
+        allocatedToday: '_'
       },
       api: {
         base: 'https://us-central1-coweb-bc478.cloudfunctions.net/',

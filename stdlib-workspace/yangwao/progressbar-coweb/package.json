@@ -1,18 +1,22 @@
 {
-  "name": "status",
+  "name": "progressbar-coweb",
   "version": "0.0.0",
   "description": "",
   "author": "yangwao <ybdaba@gmail.com>",
   "main": "functions/__main__.js",
   "dependencies": {
-    "firebase-admin": "^5.2.1"
+    "firebase-admin": "^5.2.1",
+    "mailgun-js": "^0.13.1",
+    "standard": "^10.0.3",
+    "uuid": "^3.1.0",
+    "validator": "^9.0.0"
   },
   "private": true,
   "stdlib": {
     "build": "faaslang",
-    "name": "yangwao/status",
+    "name": "yangwao/progressbar-coweb",
     "timeout": 10000,
-    "publish": true,
+    "publish": false,
     "personalize": {
       "keys": [],
       "user": []

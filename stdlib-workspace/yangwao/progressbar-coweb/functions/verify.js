@@ -5,7 +5,6 @@
  @ @returns {object}
  */
 module.exports = (hash = 'non', context, callback) => {
-  const uuidv4 = require('uuid/v4')
   const firebase = require('firebase-admin')
   const firebaseConfig = {
     type: process.env.firebase_type,
@@ -22,7 +21,7 @@ module.exports = (hash = 'non', context, callback) => {
   if (firebase.apps.length === 0) {
     firebase.initializeApp({
       credential: firebase.credential.cert(firebaseConfig),
-      databaseURL: "https://coweb-bc478.firebaseio.com"
+      databaseURL: 'https://coweb-bc478.firebaseio.com'
     })
   }
 
@@ -33,9 +32,9 @@ module.exports = (hash = 'non', context, callback) => {
   }
 
   if (hash !== 'non') {
-    const db = firebase.database();
-    const ref = db.ref("server")
-    const subscribersRef = ref.child("subscribers")
+    const db = firebase.database()
+    const ref = db.ref('server')
+    const subscribersRef = ref.child('subscribers')
 
     subscribersRef.once('value', function (data) {
       let dataRef = data.val()
@@ -44,12 +43,11 @@ module.exports = (hash = 'non', context, callback) => {
       if (confirmSub === undefined) {
         callback(null, {
           code: 'nope',
-          hash,
+          hash
         })
       }
 
       if (confirmSub && confirmSub[0].length === 36) {
-
         let confirmedSub = {
           [confirmSub[0]]: {
             email: confirmSub[1].email,

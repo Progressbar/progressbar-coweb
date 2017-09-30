@@ -1,5 +1,5 @@
 /**
-* A basic Hello World function
+* A basic status of progresssbar-cowork
 * @param {string} name Who you're saying hello to
 * @returns {object}
 */
