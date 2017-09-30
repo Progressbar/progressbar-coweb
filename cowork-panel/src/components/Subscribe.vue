@@ -24,7 +24,6 @@
     </div>
   </div>
   <div class="columns">
-
         <div class="column is-narrow">
               <div class="control has-icons-left has-icons-right">
                     <input v-model="subEmail" class="input is-medium is-white" type="email" placeholder="Enter your email">
@@ -34,7 +33,7 @@
               </div>
         </div>
         <div class="column is-narrow">
-          <a @click="subscribeMe(subEmail)" class="button is-warning is-medium is-outlined" disabled>Subscribe to the queue</a>
+          <a @click="subscribeMe(subEmail)" class="button is-warning is-medium is-outlined">{{ this.button.subscribe }}</a>
         </div>
   </div>
   <div class="columns">
@@ -309,15 +308,17 @@ export default {
         allocatedToday: '_'
       },
       api: {
-        base: 'https://us-central1-coweb-bc478.cloudfunctions.net/',
-        subscribers: 'subscribers/',
-        newSubscriber: 'newSubscriber/'
+        base: 'https://yangwao.lib.id/progressbar-coweb@dev/',
+        subscribers: '',
+        newSubscriber: 'emailSubscribe/'
       },
       cowork: 0,
       newSubscriber: {
         email: ''
+      },
+      button: {
+        subscribe: 'Subscribe to the queue'
       }
-
     }
   },
   created() {
@@ -343,10 +344,14 @@ export default {
       subscribeMe(email) {
         axios({
           method: 'get',
-          url: this.api.base + this.api.newSubscriber + email
+          url: this.api.base + this.api.newSubscriber,
+          params: {
+            email
+          }
         })
         .then(response => {
           console.log(response)
+          this.button.subscribe = response.data.code
         })
         .catch(e => {
           console.log(e)
