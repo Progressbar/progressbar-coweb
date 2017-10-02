@@ -11,21 +11,21 @@
   </div>
   <div class="columns">
     <div class="column is-narrow">
-        <a class="button is-outlined is-danger" href="#">{{this.seats.subscribers}} 📩 subscribers</a>
+        <a class="button is-outlined is-danger" href="#">📩 {{this.seats.subscribers}} subscribers</a>
     </div>
     <div class="column is-narrow">
-        <a class="button is-outlined is-primary" href="#">{{this.seats.waitlist}} 👨‍💻 on waitlist</a>
+        <a class="button is-outlined is-primary" href="#">👨‍💻 {{this.seats.waitlist}} on waitlist</a>
     </div>
     <div class="column is-narrow">
         <a class="button is-outlined is-success" href="#">{{this.seats.free}} free 💺</a>
     </div>
     <div class="column is-narrow">
-        <a class="button is-outlined is-info" href="#">capacity {{this.seats.capacity}} 💺</a>
+        <a class="button is-outlined is-info" href="#">{{this.seats.capacity}} booked 💺</a>
     </div>
   </div>
   <div class="columns">
         <div class="column is-narrow">
-              <div class="control has-icons-left has-icons-right">
+              <div class="control has-icons-left">
                     <input v-model="subEmail" class="input is-medium is-white" type="email" placeholder="Enter your email">
                     <span class="icon is-medium is-left">
                           <i class="fa fa-envelope"></i>
@@ -57,7 +57,7 @@
                 <a href="#" title="1080p HDMI/DVI mostly">🖥 External monitor (shared)</a>
               </li>
               <li>
-                <a href="http://www.ikea.com/sk/sk/catalog/products/S29084966/" title="IKEA SKARSTA">Standing desk (shared)</a>
+                <a href="http://www.ikea.com/sk/sk/catalog/products/S29084966/" title="IKEA SKARSTA">Standing desks (shared)</a>
               </li>
               <li>
                 <a href="https://scontent-vie1-1.xx.fbcdn.net/v/t31.0-8/21765459_1941520825863850_876389467015918658_o.jpg?oh=7de68da52211a7304d10a3298d7e02fc&oe=5A538F7E">Lot of ⚡️ electric 🔌 sockets </a>
@@ -91,15 +91,15 @@
                     Flora-power
                   </li>
                   <li>
-                    other Maté-like
+                    Pragomošt
                   </li>
                   <li>
-                    Pragomošt
+                    <s>Mate-mate</s>
                   </li>
                 </ul>
               </li>
               <li>
-                Twenny Bars (& Soylents)
+                <s>Twenny Bars (& Soylents)</s>
               </li>
             </ul>
           </div>
@@ -115,16 +115,13 @@
             Daypass
           </p>
           <a href="#" class="card-header-icon" aria-label="more options">
-            <span class="icon">
-              🎧
-            </span>
           </a>
         </header>
         <div class="card-content">
           <div class="content">
             <ul>
               <li>
-                9am - 8pm
+                9am - 6pm
               </li>
               <li>
                 ♨️ Desk (shared)
@@ -152,9 +149,6 @@
             Flex
           </p>
           <a href="#" class="card-header-icon" aria-label="more options">
-            <span class="icon">
-              🎧
-            </span>
           </a>
         </header>
         <div class="card-content">
@@ -189,9 +183,6 @@
             Homie
           </p>
           <a href="#" class="card-header-icon" aria-label="more options">
-            <span class="icon">
-              🎧
-            </span>
           </a>
         </header>
         <div class="card-content">
@@ -228,9 +219,6 @@
             Locker
           </p>
           <a href="#" class="card-header-icon" aria-label="more options">
-            <span class="icon">
-              🎧
-            </span>
           </a>
         </header>
         <div class="card-content">
@@ -259,9 +247,6 @@
             24/7 access
           </p>
           <a href="#" class="card-header-icon" aria-label="more options">
-            <span class="icon">
-              🎧
-            </span>
           </a>
         </header>
         <div class="card-content">
@@ -287,13 +272,13 @@
   <div class="columns is-mobile">
     <div class="column is-narrow">
       <a class="button is-medium is-outlined is-white" href="#" disabled>See the workspace (VR)</a>
+      <a @click="confirmMail($route.params.verificationCode)" class="button is-medium is-outlined is-dark">{{ $route.params.verificationCode }}</a>
     </div>
   </div>
 </div>
 </template>
 
 <script>
-import Status from '@/components/Status'
 import axios from 'axios'
 
 export default {
@@ -310,22 +295,26 @@ export default {
       api: {
         base: 'https://yangwao.lib.id/progressbar-coweb@dev/',
         subscribers: '',
-        newSubscriber: 'emailSubscribe/'
+        newSubscriber: 'emailSubscribe/',
+        verify: 'verify/'
       },
       cowork: 0,
       newSubscriber: {
         email: ''
       },
       button: {
-        subscribe: 'Subscribe to the queue'
+        subscribe: 'Subscribe to the queue',
+        verify: '__'
       }
     }
   },
   created() {
     this.getSubscribers()
   },
-  // mounted: function() {
-  //   this.getSubscribers()
+  // mounted() {
+  //   this.$nextTick(function () {
+  //     this.confirmMail($route.params.verificationCode)
+  //   })
   // },
   methods: {
     getSubscribers() {
@@ -352,6 +341,22 @@ export default {
         .then(response => {
           console.log(response)
           this.button.subscribe = response.data.code
+        })
+        .catch(e => {
+          console.log(e)
+        })
+      },
+      confirmMail(hash) {
+        axios({
+          method: 'get',
+          url: this.api.base + this.api.verify,
+          params: {
+            hash
+          }
+        })
+        .then(response => {
+          console.log(response)
+          this.button.verify = response.data.code
         })
         .catch(e => {
           console.log(e)

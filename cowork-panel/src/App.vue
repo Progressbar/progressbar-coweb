@@ -12,7 +12,6 @@
             </div>
       </header>
       <main>
-            <status></status>
             <router-view></router-view>
       </main>
 </div>

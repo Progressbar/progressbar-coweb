@@ -55,10 +55,6 @@ module.exports = (hash = 'non', context, callback) => {
             createdAt: confirmSub[1].createdAt
           }
         }
-        // {
-        //   'Set-Cookie': 'uuid=thisismynumber333; auth=thisismysecretcookie333; date=thisismysecretcookiedate333'
-        //
-        // }
         subscribersRef.update(confirmedSub, function (error) {
           if (error) {
             callback(null, {
@@ -69,7 +65,9 @@ module.exports = (hash = 'non', context, callback) => {
 
           if (!error) {
             confirmedSub.code = 'Email has been confirmed'
-            callback(null, confirmedSub)
+            callback(null, confirmedSub, {
+              'Set-Cookie': 'uuid=thisismynumber333; auth=thisismysecretcookie333; date=thisismysecretcookiedate333'
+            })
           }
         })
       }

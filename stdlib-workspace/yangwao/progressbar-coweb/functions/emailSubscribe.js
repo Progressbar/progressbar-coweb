@@ -52,7 +52,7 @@ module.exports = (email = 'non', context, callback) => {
   if (!isEmail(email)) {
     callback(null, {
       error: 'not an email',
-      code: 'not an email'
+      code: 'Not an email'
     })
   }
 
@@ -65,7 +65,7 @@ module.exports = (email = 'non', context, callback) => {
     text:
     `Hello,
 looks like somebody tried use your email as registration mail. If it was you, please confirm your email address ${normalizedEmail}
-by clicking on link ${config.baseFaasUrl}verify/?hash=${hash}
+by clicking on link ${config.baseFaasUrl}email/${hash}
 If you did not request this email, please ignore it.
 Humanoid from ${config.baseWebUrl}`
   }
