@@ -9,12 +9,6 @@ module.exports = (email = 'non', context, callback) => {
   const firebase = require('firebase-admin')
   const normalizeEmail = require('validator/lib/normalizeEmail')
   const isEmail = require('validator/lib/isEmail')
-
-  const config = {
-    baseWebUrl: 'https://progressbar-cowork.netlify.com/',
-    baseFaasUrl: 'https://yangwao.lib.id/progressbar-coweb@dev/'
-  }
-
   const mailgun = require('mailgun-js')({
     apiKey: process.env.mailgun_apiKey,
     domain: process.env.mailgun_domain
@@ -65,9 +59,9 @@ module.exports = (email = 'non', context, callback) => {
     text:
     `Hello,
 looks like somebody tried use your email as registration mail. If it was you, please confirm your email address ${normalizedEmail}
-by clicking on link ${config.baseFaasUrl}email/${hash}
+by clicking on link ${this.$api.baseWebUrl}#/email/${hash}
 If you did not request this email, please ignore it.
-Humanoid from ${config.baseWebUrl}`
+Humanoid from ${this.$api.baseWebUrl}`
   }
 
   let newSub = {
