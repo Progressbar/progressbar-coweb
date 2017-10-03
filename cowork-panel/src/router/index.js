@@ -1,5 +1,4 @@
 import Vue from 'vue'
-import Vuex from 'vuex'
 import Router from 'vue-router'
 import Subscribe from '@/components/Subscribe'
 import emailVerification from '@/components/emailVerification'
@@ -11,7 +10,6 @@ var options = {
 };
 
 Vue.use(VueLocalStorage, options);
-Vue.use(Vuex)
 Vue.use(Router)
 
 export default new Router({

@@ -133,13 +133,6 @@
             <br>
           </div>
         </div>
-        <footer class="card-footer">
-          <p class="card-footer-item">
-            <span>
-              <a class="button is-medium is-outlined" disabled>Order</a>
-            </span>
-          </p>
-        </footer>
       </div>
     </div>
     <div class="column is-narrow">
@@ -167,13 +160,6 @@
             <br>
           </div>
         </div>
-        <footer class="card-footer">
-          <p class="card-footer-item">
-            <span>
-              <a class="button is-medium is-outlined" disabled>Order</a>
-            </span>
-          </p>
-        </footer>
       </div>
     </div>
     <div class="column is-narrow">
@@ -201,13 +187,6 @@
             <br>
           </div>
         </div>
-        <footer class="card-footer">
-          <p class="card-footer-item">
-            <span>
-              <a class="button is-medium is-outlined" disabled>Order</a>
-            </span>
-          </p>
-        </footer>
       </div>
     </div>
   </div>
@@ -231,13 +210,6 @@
             <br>
           </div>
         </div>
-        <footer class="card-footer">
-          <p class="card-footer-item">
-            <span>
-              <a class="button is-medium is-outlined" disabled>Order</a>
-            </span>
-          </p>
-        </footer>
       </div>
     </div>
     <div class="column is-narrow">
@@ -259,20 +231,12 @@
             <br>
           </div>
         </div>
-        <footer class="card-footer">
-          <p class="card-footer-item">
-            <span>
-              <a class="button is-medium is-outlined" disabled>Order</a>
-            </span>
-          </p>
-        </footer>
       </div>
     </div>
   </div>
   <div class="columns is-mobile">
     <div class="column is-narrow">
       <a class="button is-medium is-outlined is-white" href="#" disabled>See the workspace (VR)</a>
-      <a @click="confirmMail($route.params.verificationCode)" class="button is-medium is-outlined is-dark">{{ $route.params.verificationCode }}</a>
     </div>
   </div>
 </div>
@@ -292,12 +256,6 @@ export default {
         capacity: '_',
         allocatedToday: '_'
       },
-      api: {
-        base: 'https://yangwao.lib.id/progressbar-coweb@dev/',
-        subscribers: '',
-        newSubscriber: 'emailSubscribe/',
-        verify: 'verify/'
-      },
       cowork: 0,
       newSubscriber: {
         email: ''
@@ -311,16 +269,11 @@ export default {
   created() {
     this.getSubscribers()
   },
-  // mounted() {
-  //   this.$nextTick(function () {
-  //     this.confirmMail($route.params.verificationCode)
-  //   })
-  // },
   methods: {
     getSubscribers() {
         axios({
             method: 'get',
-            url: this.api.base + this.api.subscribers
+            url: this.$api.base + this.$api.subscribers
           })
           .then(response => {
             console.log(response)
@@ -333,7 +286,7 @@ export default {
       subscribeMe(email) {
         axios({
           method: 'get',
-          url: this.api.base + this.api.newSubscriber,
+          url: this.$api.base + this.$api.newSubscriber,
           params: {
             email
           }
@@ -341,22 +294,6 @@ export default {
         .then(response => {
           console.log(response)
           this.button.subscribe = response.data.code
-        })
-        .catch(e => {
-          console.log(e)
-        })
-      },
-      confirmMail(hash) {
-        axios({
-          method: 'get',
-          url: this.api.base + this.api.verify,
-          params: {
-            hash
-          }
-        })
-        .then(response => {
-          console.log(response)
-          this.button.verify = response.data.code
         })
         .catch(e => {
           console.log(e)

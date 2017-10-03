@@ -5,6 +5,13 @@ import App from './App'
 import router from './router'
 
 Vue.config.productionTip = false
+Vue.prototype.$api = {
+  base: 'https://yangwao.lib.id/progressbar-coweb@dev/',
+  subscribers: '',
+  newSubscriber: 'emailSubscribe/',
+  verify: 'verify/',
+  order: 'order/'
+}
 
 /* eslint-disable no-new */
 new Vue({

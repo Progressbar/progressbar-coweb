@@ -15,12 +15,13 @@
 <script>
 import axios from 'axios'
 
+
 export default {
-  name: 'status',
+  name: 'emailVerification',
   data() {
     return {
       api: {
-        base: 'https://yangwao.lib.id/progressbar-coweb@dev/',
+        base: 'http://localhost:8170/yangwao/progressbar-coweb/',
         subscribers: '',
         newSubscriber: 'emailSubscribe/',
         verify: 'verify/'
