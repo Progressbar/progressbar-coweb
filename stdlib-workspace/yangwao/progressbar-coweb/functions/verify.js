@@ -5,6 +5,8 @@
  @ @returns {object}
  */
 module.exports = (hash = 'non', context, callback) => {
+  const crypto = require('crypto')
+  const cryptoHash = crypto.createHash('sha512')
   const firebase = require('firebase-admin')
   const firebaseConfig = {
     type: process.env.firebase_type,
@@ -48,11 +50,13 @@ module.exports = (hash = 'non', context, callback) => {
       }
 
       if (confirmSub && confirmSub[0].length === 36) {
+        cryptoHash.update(confirmSub[1].email + confirmSub[1].createdAt)
         let confirmedSub = {
           [confirmSub[0]]: {
             email: confirmSub[1].email,
             confirmed: true,
-            createdAt: confirmSub[1].createdAt
+            createdAt: confirmSub[1].createdAt,
+            authToken: cryptoHash.digest('hex')
           }
         }
         subscribersRef.update(confirmedSub, function (error) {
@@ -65,9 +69,7 @@ module.exports = (hash = 'non', context, callback) => {
 
           if (!error) {
             confirmedSub.code = 'Email has been confirmed'
-            callback(null, confirmedSub, {
-              'Set-Cookie': 'uuid=thisismynumber333; auth=thisismysecretcookie333; date=thisismysecretcookiedate333'
-            })
+            callback(null, confirmedSub)
           }
         })
       }
