@@ -2,10 +2,20 @@
 <div class="order">
     <div class="columns">
           <div class="column is-narrow">
-                <a class="button is-light is-medium is-outlined">{{ this.button.order }}</a>
+                <a class="button is-light is-medium is-outlined" disabled>{{ this.button.order }}</a>
+          </div>
+    </div>
+    <div class="columns is-mobile">
+          <div class="column is-narrow">
+                <a class="button is-light is-medium is-outlined" disabled>Credit {{ this.button.credit }}</a>
           </div>
           <div class="column is-narrow">
-                <a class="button is-light is-medium is-outlined">Credit {{ this.button.credit }}</a>
+                <a class="button is-light is-medium is-outlined" disabled>Fuel credit</a>
+          </div>
+    </div>
+    <div class="columns">
+          <div class="column is-narrow">
+                <a class="button is-primary is-medium is-outlined">Unlock doors</a>
           </div>
     </div>
     <div class="columns">

@@ -49,7 +49,7 @@ module.exports = (authToken = 'non', context, callback) => {
       if (authSub) {
         callback(null, {
           code: 'Welcome ' + authSub[1].email,
-          credit: 60
+          credit: 66
         })
       }
     })
