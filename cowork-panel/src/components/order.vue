@@ -188,9 +188,10 @@ export default {
       auth: {
         user: '',
         authToken: '',
-        gotCredit: true,
+        gotCredit: false,
         isUser: false
-      }
+      },
+      credit: 0
     }
   },
   created() {
@@ -211,6 +212,10 @@ export default {
           console.log(response)
           this.button.order = response.data.code
           this.button.credit = response.data.credit
+          this.credit = response.data.credit
+          if (response.data.credit > 0) {
+            this.auth.gotCredit = true
+          }
         })
         .catch(e => {
           console.log(e)

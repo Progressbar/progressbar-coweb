@@ -1,14 +1,15 @@
 <template>
 <div class="emailVerification">
       <div class="columns">
-            <div class="column is-narrow">
-                <a @click="confirmMail($route.params.verificationCode)" class="button is-light is-medium is-outlined">{{ $route.params.verificationCode }}</a>
+            <div v-if="!this.confirmed" class="column is-narrow">
+                <a class="button is-light is-medium is-outlined" disabled>{{ $route.params.verificationCode }}</a>
             </div>
             <div class="column is-narrow">
-                <a @click="confirmMail($route.params.verificationCode)" class="button is-light is-medium is-outlined">{{ this.button.verify }}</a>
+                <a v-if="!this.confirmed" @click="confirmMail($route.params.verificationCode)" class="button is-light is-medium is-outlined">{{ this.button.verify }}</a>
+                <a v-if="this.confirmed" class="button is-light is-medium is-outlined" disabled>{{ this.button.verify }}</a>
             </div>
             <div v-if="this.confirmed" class="column is-narrow">
-                <a v-link="'/order'">{{ this.$api.base + this.$api.order }}</a>
+                <router-link to="../order"><a class="button is-light is-medium is-outlined">{{ this.button.continue }}</a></router-link>
             </div>
       </div>
 </div>
@@ -24,7 +25,8 @@ export default {
     return {
       button: {
         subscribe: 'Subscribe to the queue',
-        verify: 'Confirm my email'
+        verify: 'Confirm my email',
+        continue:'Continue to Order screen'
       },
       confirmed: false
     }
@@ -42,8 +44,10 @@ export default {
           console.log(response)
           this.button.verify = response.data.code
           this.confirmed = response.data[Object.keys(response.data)[0]].confirmed
-          this.$ls.set('user', Object.keys(response.data)[0])
-          this.$ls.set('authToken', response.data[Object.keys(response.data)[0]].authToken)
+          if (response.data[Object.keys(response.data)[0]].authToken) {
+            this.$ls.set('user', Object.keys(response.data)[0])
+            this.$ls.set('authToken', response.data[Object.keys(response.data)[0]].authToken)
+          }
         })
         .catch(e => {
           console.log(e)
