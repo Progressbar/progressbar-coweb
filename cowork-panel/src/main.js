@@ -12,7 +12,8 @@ Vue.prototype.$api = {
   newSubscriber: 'emailSubscribe/',
   verify: 'verify/',
   order: 'order/',
-  login: 'login/'
+  login: 'login/',
+  logmein: 'logmein/'
 }
 if (process.env.NODE_ENV === 'development') {
   Vue.prototype.$api.base = 'http://localhost:8170/yangwao/progressbar-coweb/'

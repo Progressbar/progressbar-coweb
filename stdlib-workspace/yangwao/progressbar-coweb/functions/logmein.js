@@ -55,7 +55,7 @@ module.exports = (loginCode = 'non', context, callback) => {
       }
 
       if (authSub && authSub[0].length === 36) {
-        authSub[1].loginCode = ''
+        authSub[1].loginCode = null
 
         let authedSub = {
           [authSub[0]]: authSub[1]
