@@ -6,7 +6,6 @@
  */
 module.exports = (email = 'non', context, callback) => {
   const uuidv4 = require('uuid/v4')
-  const firebase = require('firebase-admin')
   const normalizeEmail = require('validator/lib/normalizeEmail')
   const isEmail = require('validator/lib/isEmail')
   const mailgun = require('mailgun-js')({
@@ -14,6 +13,7 @@ module.exports = (email = 'non', context, callback) => {
     domain: process.env.mailgun_domain
   })
 
+  const firebase = require('firebase-admin')
   const firebaseConfig = {
     type: process.env.firebase_type,
     project_id: process.env.firebase_project_id,

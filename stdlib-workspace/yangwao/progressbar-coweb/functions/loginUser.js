@@ -1,12 +1,10 @@
 /**
  * A basic email verification
  * @bg info
- * @param {string} hash came in email
+ * @param {string} loginCode came in email
  @ @returns {object}
  */
-module.exports = (hash = 'non', context, callback) => {
-  const crypto = require('crypto')
-  const cryptoHash = crypto.createHash('sha512')
+module.exports = (loginCode = 'non', context, callback) => {
   const validator = require('validator')
   const firebase = require('firebase-admin')
   const firebaseConfig = {
@@ -28,19 +26,19 @@ module.exports = (hash = 'non', context, callback) => {
     })
   }
 
-  if (hash === 'non') {
+  if (loginCode === 'non') {
     callback(null, {
       code: 'non'
     })
   }
 
-  if (!validator.isUUID(hash, 4)) {
+  if (!validator.isUUID(loginCode, 4)) {
     callback(null, {
       code: 'nope'
     })
   }
 
-  if (hash !== 'non') {
+  if (loginCode !== 'non') {
     const db = firebase.database()
     const ref = db.ref('server')
     const subscribersRef = ref.child('subscribers')
@@ -48,25 +46,21 @@ module.exports = (hash = 'non', context, callback) => {
     subscribersRef.once('value', function (data) {
       let dataRef = data.val()
       let confirmSubArr = Object.entries(dataRef)
-      let confirmSub = confirmSubArr.find(x => x[1].hash === hash)
-      if (confirmSub === undefined) {
+      let authSub = confirmSubArr.find(x => x[1].loginCode === loginCode)
+      if (authSub === undefined) {
         callback(null, {
-          code: 'Probably already confirmed email',
-          hash
+          code: 'Probably already logged user',
+          loginCode
         })
       }
 
-      if (confirmSub && confirmSub[0].length === 36) {
-        cryptoHash.update(confirmSub[1].email + confirmSub[1].createdAt)
-        let confirmedSub = {
-          [confirmSub[0]]: {
-            email: confirmSub[1].email,
-            confirmed: true,
-            createdAt: confirmSub[1].createdAt,
-            authToken: cryptoHash.digest('hex')
-          }
+      if (authSub && authSub[0].length === 36) {
+        authSub[1].loginCode = ''
+
+        let authedSub = {
+          [authSub[0]]: authSub[1]
         }
-        subscribersRef.update(confirmedSub, function (error) {
+        subscribersRef.update(authedSub, function (error) {
           if (error) {
             callback(null, {
               error: error,
@@ -75,8 +69,8 @@ module.exports = (hash = 'non', context, callback) => {
           }
 
           if (!error) {
-            confirmedSub.code = 'Email has been confirmed'
-            callback(null, confirmedSub)
+            authedSub.code = 'You should be logged now'
+            callback(null, authedSub)
           }
         })
       }

@@ -1,8 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Subscribe from '@/components/Subscribe'
-import emailVerification from '@/components/emailVerification'
-import order from '@/components/order'
+import EmailVerification from '@/components/EmailVerification'
+import Order from '@/components/Order'
+import Login from '@/components/Login'
 import VueLocalStorage from 'vue-ls'
 
 var options = {
@@ -21,11 +22,19 @@ export default new Router({
     },
     {
       path: '/email/:verificationCode',
-      component: emailVerification
+      component: EmailVerification
     },
     {
       path: '/order',
-      component: order
+      component: Order
+    },
+    {
+      path: '/login',
+      component: Login
+    },
+    {
+      path: '/login/:loginCode',
+      component: Login
     }
   ]
 })
