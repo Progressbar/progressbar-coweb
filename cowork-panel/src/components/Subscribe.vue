@@ -304,8 +304,6 @@ export default {
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
-@import '~font-awesome/css/font-awesome.css';
-/*@import '~bulma/css/bulma.css';*/
 input {
   background-color: #000
 }

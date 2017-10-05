@@ -5,6 +5,11 @@
  @ @returns {object}
  */
 module.exports = (email = 'non', context, callback) => {
+  const config = {
+    api: {
+      baseWebUrl: 'https://progressbar-cowork.netlify.com/'
+    }
+  }
   const uuidv4 = require('uuid/v4')
   const normalizeEmail = require('validator/lib/normalizeEmail')
   const isEmail = require('validator/lib/isEmail')
@@ -59,9 +64,9 @@ module.exports = (email = 'non', context, callback) => {
     text:
     `Hello,
 looks like somebody tried use your email as registration mail. If it was you, please confirm your email address ${normalizedEmail}
-by clicking on link ${this.$api.baseWebUrl}#/email/${hash}
+by clicking on link ${config.api.baseWebUrl}#/email/${hash}
 If you did not request this email, please ignore it.
-Humanoid from ${this.$api.baseWebUrl}`
+Humanoid from ${config.api.baseWebUrl}`
   }
 
   let newSub = {

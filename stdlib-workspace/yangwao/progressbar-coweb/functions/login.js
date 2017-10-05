@@ -5,6 +5,11 @@
  @ @returns {object}
  */
 module.exports = (email = 'non', context, callback) => {
+  const config = {
+    api: {
+      baseWebUrl: 'https://progressbar-cowork.netlify.com/'
+    }
+  }
   const isEmail = require('validator/lib/isEmail')
   const normalizeEmail = require('validator/lib/normalizeEmail')
   const uuidv4 = require('uuid/v4')
@@ -79,9 +84,9 @@ module.exports = (email = 'non', context, callback) => {
               from: `Progressbar Cowork noreply <no-reply@${process.env.mailgun_domain}>`,
               to: `ybdaba@gmail.com`,
               subject: 'Progressbar Cowork Email login',
-              text: `Someone just requested login with this email, if it was you, click here #/login/${authSub[1].loginCode}`
+              text: `Someone just requested login with this email, if it was you, click here ${config.api.baseWebUrl}#/login/${authSub[1].loginCode}`
             }
-
+            console.log(mailmsg)
             mailgun.messages().send(mailmsg, function (error, body) {
               if (error) {
                 console.log('mailgunErr', error)

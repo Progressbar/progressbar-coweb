@@ -50,7 +50,8 @@ module.exports = (loginCode = 'non', context, callback) => {
       if (authSub === undefined) {
         callback(null, {
           code: 'Probably already logged user',
-          loginCode
+          loginCode,
+          logged: true
         })
       }
 
@@ -70,6 +71,7 @@ module.exports = (loginCode = 'non', context, callback) => {
 
           if (!error) {
             authedSub.code = 'You should be logged now'
+            authedSub.logged = true
             callback(null, authedSub)
           }
         })
