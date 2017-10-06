@@ -11,7 +11,7 @@
   </div>
   <div class="columns">
     <div class="column is-narrow">
-        <a class="button is-outlined is-danger">📩 {{this.seats.subscribers}} subscribers</a>
+        <a class="button is-outlined is-danger">{{this.seats.subscribers}} 📩 subscribers</a>
     </div>
     <div class="column is-narrow">
         <a class="button is-outlined is-primary">{{this.credited}} 👨‍💻💰 </a>
@@ -22,7 +22,8 @@
   </div>
   <div class="columns">
     <div class="column is-narrow">
-      <a v-for="item in orderSum" class="button is-outlined is-info">📅 {{ item[1] }}/{{item[2]}} 👨‍💻 {{ item[0] }} 🆓 {{ seats.capacity-item[0] }}</a>
+      <a v-for="item in orderSum" class="button is-outlined is-info">
+        📅 {{ item[1]+1 }}/{{item[2]+1}} 👨‍💻 {{ item[0] }} 🆓 {{ seats.capacity-item[0] }}</a>
     </div>
   </div>
   <div class="columns">
@@ -252,17 +253,17 @@ export default {
   data() {
     return {
       seats: {
-        free: '_',
-        subscribers: '_',
+        free: '0',
+        subscribers: '0',
         capacity: '0',
-        allocatedToday: '_'
+        allocatedToday: '0'
       },
       credited: 0,
       orderSum: {
-        1507154400000: [ 6, 10, 5 ],
-        1507068000000: [ 7, 10, 4 ],
-        1506981600000: [ 8, 10, 3 ],
-        1506895200000: [ 9, 10, 2 ] },
+        1507154400000: [ 6, 9, 5 ],
+        1507068000000: [ 7, 9, 4 ],
+        1506981600000: [ 8, 9, 3 ],
+        1506895200000: [ 9, 9, 2 ] },
       cowork: 0,
       newSubscriber: {
         email: ''
