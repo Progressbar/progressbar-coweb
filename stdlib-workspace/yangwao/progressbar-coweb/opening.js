@@ -8,11 +8,12 @@ let orderSum = {}
 for (let n of ordersArr) {
   let month = new Date(parseInt(n[0])).getMonth()
   let day = new Date(parseInt(n[0])).getDate()
-  Object.assign(orderSum, {[n[0]]: [n[1].length, month, day]})
+  if (Object.keys(orderSum).length < 3) {
+    Object.assign(orderSum, {[n[0]]: [n[1].length, month, day]})
+  }
 }
 
 console.log(orderSum)
-
 
 // Match request for coworker open
 // let requestedcoworker = '3a5c5a17-a351-4dba-94e0-99073bb23a1b'

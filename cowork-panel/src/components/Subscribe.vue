@@ -11,13 +11,13 @@
   </div>
   <div class="columns">
     <div class="column is-narrow">
-        <a class="button is-outlined is-danger">{{this.seats.subscribers}} 📩 subscribers</a>
+        <a class="button is-outlined is-white">{{this.seats.subscribers}} 📩👨‍💻⚙</a>
     </div>
     <div class="column is-narrow">
-        <a class="button is-outlined is-primary">{{this.credited}} 👨‍💻💰 </a>
+        <a class="button is-outlined is-white">{{this.credited}} 👨‍💻💰 </a>
     </div>
     <div class="column is-narrow">
-        <a class="button is-outlined is-info">{{this.seats.capacity}} 💺 capacity</a>
+        <a class="button is-outlined is-white">{{this.seats.capacity}} 💺 capacity</a>
     </div>
   </div>
   <div class="columns">
@@ -51,7 +51,7 @@
           <div class="content">
             <ul>
               <li>
-                <a href="https://www.google.com/maps/place/Progressbar+hackerspace/@48.1442331,17.1066804,17z/" title="Michalska 3, Bratislava">Place for your work in downtown</a>
+                <a href="https://www.google.com/maps/place/Progressbar+hackerspace/@48.1442259,17.1055539,17z/data=!4m8!1m2!3m1!2sProgressbar+hackerspace!3m4!1s0x0:0x72ac0b6fccaf66fd!8m2!3d48.1442778!4d17.1065933" title="Michalska 3, Bratislava">Place for your work in downtown</a>
               </li>
               <li>
                 <a href="https://beta.speedtest.net/result/6614494632">High-speed Internet (250/20)</a><a href="https://beta.speedtest.net/result/a/3234065616">📱</a>
@@ -127,10 +127,10 @@
                 9am - 6pm
               </li>
               <li>
-                ♨️ Desk (shared)
+                ♨️ Desk
               </li>
               <li>
-                6€ per day
+                6€ / day
               </li>
             </ul>
             <br>
@@ -151,13 +151,13 @@
           <div class="content">
             <ul>
               <li>
-                6am - 10pm
+                7am - 9pm
               </li>
               <li>
                 ♨️ Desk
               </li>
               <li>
-                60€ per month
+                60€ / month
               </li>
             </ul>
             <br>
@@ -184,7 +184,7 @@
                 Fixdesk
               </li>
               <li>
-                160€ per month
+                160€ / month
               </li>
             </ul>
             <br>
@@ -207,7 +207,7 @@
           <div class="content">
             <ul>
               <li>
-                10€ per month
+                10€ / month
               </li>
             </ul>
             <br>
@@ -228,7 +228,7 @@
           <div class="content">
             <ul>
               <li>
-                40€ per month
+                40€ / month
               </li>
             </ul>
             <br>

@@ -35,10 +35,10 @@
                   9am - 6pm
                 </li>
                 <li>
-                  ♨️ Desk (shared)
+                  ♨️ Desk
                 </li>
                 <li>
-                  6€ per day
+                  6€ / day
                 </li>
               </ul>
               <br>
@@ -66,13 +66,13 @@
             <div class="content">
               <ul>
                 <li>
-                  6am - 10pm
+                  7am - 9pm
                 </li>
                 <li>
                   ♨️ Desk
                 </li>
                 <li>
-                  60€ per month
+                  60€ / month
                 </li>
               </ul>
               <br>
@@ -106,7 +106,7 @@
                   Fixdesk
                 </li>
                 <li>
-                  160€ per month
+                  160€ / month
                 </li>
               </ul>
               <br>
@@ -136,7 +136,7 @@
             <div class="content">
               <ul>
                 <li>
-                  10€ per month
+                  10€ / month
                 </li>
               </ul>
               <br>
@@ -164,7 +164,7 @@
             <div class="content">
               <ul>
                 <li>
-                  40€ per month
+                  40€ / month
                 </li>
               </ul>
               <br>

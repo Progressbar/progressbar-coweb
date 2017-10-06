@@ -20,11 +20,11 @@ module.exports = (name = 'world', context, callback) => {
   if (firebase.apps.length === 0) {
     firebase.initializeApp({
       credential: firebase.credential.cert(firebaseConfig),
-      databaseURL: "https://coweb-bc478.firebaseio.com"
+      databaseURL: 'https://coweb-bc478.firebaseio.com'
     })
   }
 
-  const db = firebase.database();
+  const db = firebase.database()
   const ref = db.ref('server')
   // const subscribersRef = ref.child('subscribers')
 
@@ -43,7 +43,9 @@ module.exports = (name = 'world', context, callback) => {
     for (let n of ordersArr) {
       let month = new Date(parseInt(n[0])).getMonth()
       let day = new Date(parseInt(n[0])).getDate()
-      Object.assign(orderSum, {[n[0]]: [n[1].length, month, day]})
+      if (Object.keys(orderSum).length < 3) {
+        Object.assign(orderSum, {[n[0]]: [n[1].length, month, day]})
+      }
     }
     let status = {
       orderSum,
@@ -59,6 +61,6 @@ module.exports = (name = 'world', context, callback) => {
         order247: 0
       }
     }
-    callback(null, status);
+    callback(null, status)
   })
-};
+}
