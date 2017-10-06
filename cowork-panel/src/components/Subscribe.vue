@@ -11,16 +11,18 @@
   </div>
   <div class="columns">
     <div class="column is-narrow">
-        <a class="button is-outlined is-danger" href="#">📩 {{this.seats.subscribers}} subscribers</a>
+        <a class="button is-outlined is-danger">📩 {{this.seats.subscribers}} subscribers</a>
     </div>
     <div class="column is-narrow">
-        <a class="button is-outlined is-primary" href="#">👨‍💻 {{this.seats.waitlist}} on waitlist</a>
+        <a class="button is-outlined is-primary">{{this.credited}} 👨‍💻💰 </a>
     </div>
     <div class="column is-narrow">
-        <a class="button is-outlined is-success" href="#">{{this.seats.free}} free 💺</a>
+        <a class="button is-outlined is-info">{{this.seats.capacity}} 💺 capacity</a>
     </div>
+  </div>
+  <div class="columns">
     <div class="column is-narrow">
-        <a class="button is-outlined is-info" href="#">{{this.seats.capacity}} booked 💺</a>
+      <a v-for="item in orderSum" class="button is-outlined is-info">📅 {{ item[1] }}/{{item[2]}} 👨‍💻 {{ item[0] }} 🆓 {{ seats.capacity-item[0] }}</a>
     </div>
   </div>
   <div class="columns">
@@ -252,10 +254,15 @@ export default {
       seats: {
         free: '_',
         subscribers: '_',
-        waitlist: '_',
-        capacity: '_',
+        capacity: '0',
         allocatedToday: '_'
       },
+      credited: 0,
+      orderSum: {
+        1507154400000: [ 6, 10, 5 ],
+        1507068000000: [ 7, 10, 4 ],
+        1506981600000: [ 8, 10, 3 ],
+        1506895200000: [ 9, 10, 2 ] },
       cowork: 0,
       newSubscriber: {
         email: ''
@@ -278,6 +285,7 @@ export default {
           .then(response => {
             console.log(response)
             this.seats = response.data.seats
+            this.orderSum = response.data.orderSum
           })
           .catch(e => {
             console.log(e)

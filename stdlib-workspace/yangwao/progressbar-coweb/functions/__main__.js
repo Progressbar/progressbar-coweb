@@ -33,10 +33,10 @@ module.exports = (name = 'world', context, callback) => {
     let seats = {
       subscribers: Object.keys(server.subscribers).length,
       free: 10,
-      waitlist: 2,
-      capacity: 14,
+      capacity: 10,
       allocatedToday: 0
     }
+    let credited = 0
     let daysBooked = Object.keys(server.orders).length
     let orderSum = {}
     let ordersArr = Object.entries(server.orders)
@@ -47,6 +47,7 @@ module.exports = (name = 'world', context, callback) => {
     }
     let status = {
       orderSum,
+      credited,
       daysBooked,
       seats,
       actions: {
