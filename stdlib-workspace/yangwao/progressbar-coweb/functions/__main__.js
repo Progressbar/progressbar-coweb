@@ -25,8 +25,8 @@ module.exports = (name = 'world', context, callback) => {
   }
 
   const db = firebase.database();
-  const ref = db.ref("server")
-  const subscribersRef = ref.child("subscribers")
+  const ref = db.ref('server')
+  // const subscribersRef = ref.child('subscribers')
 
   ref.once('value', function (data) {
     let server = data.val()
@@ -37,7 +37,17 @@ module.exports = (name = 'world', context, callback) => {
       capacity: 14,
       allocatedToday: 0
     }
+    let daysBooked = Object.keys(server.orders).length
+    let orderSum = {}
+    let ordersArr = Object.entries(server.orders)
+    for (let n of ordersArr) {
+      let month = new Date(parseInt(n[0])).getMonth()
+      let day = new Date(parseInt(n[0])).getDate()
+      Object.assign(orderSum, {[n[0]]: [n[1].length, month, day]})
+    }
     let status = {
+      orderSum,
+      daysBooked,
       seats,
       actions: {
         subscribtion: 0,
