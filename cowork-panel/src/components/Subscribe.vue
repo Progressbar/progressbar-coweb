@@ -11,18 +11,18 @@
   </div>
   <div class="columns">
     <div class="column is-narrow">
-        <a class="button is-outlined is-white">{{this.seats.subscribers}} 📩👨‍💻⚙</a>
+        <a class="button is-outlined is-info" disabled>{{this.seats.subscribers}} 📩👨‍💻⚙</a>
     </div>
     <div class="column is-narrow">
-        <a class="button is-outlined is-white">{{this.credited}} 👨‍💻💰 </a>
+        <a class="button is-outlined is-info" disabled>{{this.credited}} 👨‍💻💰 </a>
     </div>
     <div class="column is-narrow">
-        <a class="button is-outlined is-white">{{this.seats.capacity}} 💺 capacity</a>
+        <a class="button is-outlined is-info" disabled>{{this.seats.capacity}} 💺 capacity</a>
     </div>
   </div>
   <div class="columns">
     <div class="column is-narrow">
-      <a v-for="item in orderSum" class="button is-outlined is-info">
+      <a v-for="item in orderSum" class="button is-outlined is-white" disabled>
         📅 {{ item[1]+1 }}/{{item[2]+1}} 👨‍💻 {{ item[0] }} 🆓 {{ seats.capacity-item[0] }}</a>
     </div>
   </div>
