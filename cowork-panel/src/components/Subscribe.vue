@@ -36,7 +36,8 @@
               </div>
         </div>
         <div class="column is-narrow">
-          <a @click="subscribeMe(subEmail)" class="button is-warning is-medium is-outlined">{{ this.button.subscribe }}</a>
+          <a v-if="this.coworkSubscribe" @click="subscribeMe(subEmail)" class="button is-warning is-medium is-outlined">{{ this.button.subscribe }}</a>
+          <a v-if="!this.coworkSubscribe" @click="subscribeMe(subEmail)" class="button is-warning is-medium is-outlined" disabled>{{ this.button.subscribe }}</a>
         </div>
   </div>
   <div class="columns">
@@ -264,14 +265,15 @@ export default {
         1507068000000: [ 7, 9, 4 ],
         1506981600000: [ 8, 9, 3 ],
         1506895200000: [ 9, 9, 2 ] },
-      cowork: 0,
+      coworkSubscribe: false,
       newSubscriber: {
         email: ''
       },
       button: {
         subscribe: 'Subscribe to the queue',
         verify: '__'
-      }
+      },
+      subEmail: ''
     }
   },
   created() {

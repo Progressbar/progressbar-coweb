@@ -5,7 +5,7 @@
   "author": "yangwao <ybdaba@gmail.com>",
   "main": "functions/__main__.js",
   "dependencies": {
-    "firebase-admin": "^5.2.1",
+    "firebase-admin": "5.3.0",
     "mailgun-js": "^0.13.1",
     "standard": "^10.0.3",
     "uuid": "^3.1.0",
