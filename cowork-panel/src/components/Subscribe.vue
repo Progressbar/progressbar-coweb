@@ -44,7 +44,7 @@
       <div class="card">
         <header class="card-header">
           <p class="card-header-title">
-            In space we have
+            In 🌌 space we have
           </p>
         </header>
         <div class="card-content">
@@ -57,7 +57,7 @@
                 <a href="https://beta.speedtest.net/result/6614494632">High-speed Internet (250/20)</a><a href="https://beta.speedtest.net/result/a/3234065616">📱</a>
               </li>
               <li>
-                <a href="#" title="1080p HDMI/DVI mostly">🖥 External monitor (shared)</a>
+                <a href="#" title="1080p HDMI/DVI mostly">🖥 External monitors (shared)</a>
               </li>
               <li>
                 <a href="http://www.ikea.com/sk/sk/catalog/products/S29084966/" title="IKEA SKARSTA">Standing desks (shared)</a>

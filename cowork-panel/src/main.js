@@ -8,7 +8,7 @@ Vue.config.productionTip = false
 
 Vue.prototype.$api = {
   baseWebUrl: 'https://progressbar-cowork.netlify.com/',
-  subscribers: '',
+  subscribers: 'status/',
   newSubscriber: 'emailSubscribe/',
   verify: 'verify/',
   order: 'order/',
