@@ -10,23 +10,6 @@
     </div>
   </div>
   <div class="columns">
-    <div class="column is-narrow">
-        <a class="button is-outlined is-info" disabled>{{this.seats.subscribers}} 📩👨‍💻⚙</a>
-    </div>
-    <div class="column is-narrow">
-        <a class="button is-outlined is-info" disabled>{{this.credited}} 👨‍💻💰 </a>
-    </div>
-    <div class="column is-narrow">
-        <a class="button is-outlined is-info" disabled>{{this.seats.capacity}} 💺 capacity</a>
-    </div>
-  </div>
-  <div class="columns">
-    <div class="column is-narrow">
-      <a v-for="item in orderSum" class="button is-outlined is-white" disabled>
-        📅 {{ item[1]+1 }}/{{item[2]+1}} 👨‍💻 {{ item[0] }} 🆓 {{ seats.capacity-item[0] }}</a>
-    </div>
-  </div>
-  <div class="columns">
         <div class="column is-narrow">
               <div class="control has-icons-left">
                     <input v-model="subEmail" class="input is-medium is-white" type="email" placeholder="Enter your email">
@@ -38,6 +21,8 @@
         <div class="column is-narrow">
           <a v-if="this.coworkSubscribe" @click="subscribeMe(subEmail)" class="button is-warning is-medium is-outlined">{{ this.button.subscribe }}</a>
           <a v-if="!this.coworkSubscribe" @click="subscribeMe(subEmail)" class="button is-warning is-medium is-outlined" disabled>{{ this.button.subscribe }}</a>
+          <a v-if="this.coworkLogin" class="button is-primary is-medium is-outlined">{{ this.button.login }}</a>
+          <a v-if="!this.coworkLogin" class="button is-primary is-medium is-outlined" disabled>{{ this.button.login }}</a>
         </div>
   </div>
   <div class="columns">
@@ -45,7 +30,7 @@
       <div class="card">
         <header class="card-header">
           <p class="card-header-title">
-            In 🌌 space we have
+            In 🌌  space we have
           </p>
         </header>
         <div class="card-content">
@@ -58,7 +43,7 @@
                 <a href="https://beta.speedtest.net/result/6614494632">High-speed Internet (250/20)</a><a href="https://beta.speedtest.net/result/a/3234065616">📱</a>
               </li>
               <li>
-                <a href="#" title="1080p HDMI/DVI mostly">🖥 External monitors (shared)</a>
+                <a href="#" title="1080p HDMI/DVI mostly">External 🖥  monitors (shared)</a>
               </li>
               <li>
                 <a href="http://www.ikea.com/sk/sk/catalog/products/S29084966/" title="IKEA SKARSTA">Standing desks (shared)</a>
@@ -238,6 +223,23 @@
       </div>
     </div>
   </div>
+  <div class="columns">
+    <div class="column is-narrow">
+        <a class="button is-outlined is-info" disabled>{{this.seats.subscribers}} 📩👨‍💻⚙</a>
+    </div>
+    <div class="column is-narrow">
+        <a class="button is-outlined is-info" disabled>{{this.credited}} 👨‍💻💰 </a>
+    </div>
+    <div class="column is-narrow">
+        <a class="button is-outlined is-info" disabled>{{this.seats.capacity}} 💺 capacity</a>
+    </div>
+  </div>
+  <div class="columns">
+    <div class="column is-narrow">
+      <a v-for="item in orderSum" class="button is-outlined is-white" disabled>
+        📅 {{ item[1]+1 }}/{{item[2]+1}} 👨‍💻 {{ item[0] }} 🆓 {{ seats.capacity-item[0] }}</a>
+    </div>
+  </div>
   <div class="columns is-mobile">
     <div class="column is-narrow">
       <a class="button is-medium is-outlined is-white" href="#" disabled>See the workspace (VR)</a>
@@ -263,15 +265,16 @@ export default {
       orderSum: {
         1507154400000: [ 6, 9, 5 ],
         1507068000000: [ 7, 9, 4 ],
-        1506981600000: [ 8, 9, 3 ],
-        1506895200000: [ 9, 9, 2 ] },
+        1506981600000: [ 8, 9, 3 ] },
       coworkSubscribe: false,
+      coworkLogin: false,
       newSubscriber: {
         email: ''
       },
       button: {
         subscribe: 'Subscribe to the queue',
-        verify: '__'
+        verify: '__',
+        login: 'Send login link'
       },
       subEmail: ''
     }
