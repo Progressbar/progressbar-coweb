@@ -11,6 +11,9 @@ faas/playground/secrets.json
 .stdlib
 stdlib-workspace/yangwao/pKey.json
 
+# localdoor
+localdoor/pKey.json
+
 # Logs
 logs
 *.log

@@ -1,0 +1,16 @@
+{
+  "name": "localdoor",
+  "version": "1.0.0",
+  "description": "local door opener",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon open.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "matej nemcek",
+  "license": "ISC",
+  "dependencies": {
+    "firebase-admin": "^5.4.2",
+    "nodemon": "^1.12.1"
+  }
+}
