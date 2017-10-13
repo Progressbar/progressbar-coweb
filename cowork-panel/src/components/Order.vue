@@ -15,7 +15,7 @@
     </div>
     <div class="columns">
           <div class="column is-narrow">
-                <a class="button is-primary is-medium is-outlined">Unlock doors</a>
+                <a @click="unlockDoors()" class="button is-primary is-medium is-outlined">{{ this.button.unlockdoor }}</a>
           </div>
     </div>
     <div class="columns">
@@ -193,7 +193,8 @@ export default {
     return {
       button: {
         order: '',
-        credit: ''
+        credit: '',
+        unlockdoor: 'Unlock doors'
       },
       auth: {
         user: '',
@@ -230,6 +231,22 @@ export default {
         .catch(e => {
           console.log(e)
         })
+    },
+    unlockDoors(authToken) {
+      axios({
+        method: 'get',
+        url: this.$api.base + this.$api.openDoor,
+        params: {
+          authToken: this.auth.authToken
+        }
+      })
+      .then(response => {
+        console.log(response)
+        this.button.unlockdoor = response.data.code
+      })
+      .catch (e => {
+        console.log(e)
+      })
     }
   }
 }
