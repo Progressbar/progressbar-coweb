@@ -25,5 +25,5 @@ function openDoor() {
   setTimeout(function () {
     console.log(`closing door pin`)
     doorLock = true
-  }, 1000);
+  }, 3000);
 }
