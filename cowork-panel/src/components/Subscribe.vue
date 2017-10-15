@@ -280,7 +280,28 @@ export default {
         login: 'Send login link'
       },
       subEmail: '',
-      config: {}
+      config: {
+        baseWebUrl: 'https://progressbar-cowork.netlify.com/',
+        orderPrices: {
+          day: 6,
+          month: 80,
+          fix: 160,
+          locker: 10,
+          nonstop: 40
+        },
+        openHours: {
+          monthPass: {
+            start: 6,
+            end: 18
+          },
+          dayPass: {
+            start: 9,
+            end: 18
+          }
+        },
+        coworkLogin: true,
+        coworkSubscribe: false
+      }
     }
   },
   created() {
