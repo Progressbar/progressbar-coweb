@@ -56,32 +56,39 @@ module.exports = (authToken = 'non', context, callback) => {
           let month = new Date(now).getMonth()
           let day = new Date(now).getDate()
           let dateToday = new Date(year, month, day).getTime()
-
-          let orderDateToday = ordersRef[dateToday]
-          let openDoor = orderDateToday.find(x => x === authSub[0])
-
-          if (openDoor === undefined) {
+          if (!ordersRef[dateToday]) {
             callback(null, {
-              code: 'Probably you are missing access rights for this day'
+              code: 'Not booked yet'
             })
           }
 
-          if (openDoor) {
-            let openEvent = { [Date.now()]: authSub[0] }
-            localdoor.update(openEvent, function (errorDoor) {
-              if (errorDoor) {
-                callback(null, {
-                  error: errorDoor,
-                  code: 'whatever'
-                })
-              }
+          if (ordersRef[dateToday]) {
+            let orderDateToday = ordersRef[dateToday]
+            let openDoor = orderDateToday.find(x => x === authSub[0])
 
-              if (!errorDoor) {
-                callback(null, {
-                  code: 'Smash the level'
-                })
-              }
-            })
+            if (openDoor === undefined) {
+              callback(null, {
+                code: 'Missing access rights for this day'
+              })
+            }
+
+            if (openDoor) {
+              let openEvent = { [Date.now()]: authSub[0] }
+              localdoor.update(openEvent, function (errorDoor) {
+                if (errorDoor) {
+                  callback(null, {
+                    error: errorDoor,
+                    code: 'whatever'
+                  })
+                }
+
+                if (!errorDoor) {
+                  callback(null, {
+                    code: 'Smash the level'
+                  })
+                }
+              })
+            }
           }
         })
       }
