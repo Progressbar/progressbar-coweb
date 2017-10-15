@@ -80,6 +80,9 @@
                     Flora-power
                   </li>
                   <li>
+                    Mana Roots
+                  </li>
+                  <li>
                     Pragomošt
                   </li>
                   <li>
@@ -110,13 +113,13 @@
           <div class="content">
             <ul>
               <li>
-                9am - 6pm
+                {{ this.config.openHours.dayPass.start }} - {{ this.config.openHours.dayPass.end }}
               </li>
               <li>
-                ♨️ Desk
+                ♨️ desk
               </li>
               <li>
-                6€ / day
+                {{ this.config.orderPrices.day }}€ / day
               </li>
             </ul>
             <br>
@@ -137,13 +140,13 @@
           <div class="content">
             <ul>
               <li>
-                7am - 9pm
+                {{ this.config.openHours.monthPass.start }} - {{ this.config.openHours.monthPass.end }}
               </li>
               <li>
-                ♨️ Desk
+                ♨️  desk
               </li>
               <li>
-                60€ / month
+                {{ this.config.orderPrices.month }}€ / month
               </li>
             </ul>
             <br>
@@ -170,7 +173,7 @@
                 Fixdesk
               </li>
               <li>
-                160€ / month
+                {{ this.config.orderPrices.fix }}€ / month
               </li>
             </ul>
             <br>
@@ -193,7 +196,7 @@
           <div class="content">
             <ul>
               <li>
-                10€ / month
+                {{ this.config.orderPrices.locker}}€ / month
               </li>
             </ul>
             <br>
@@ -214,7 +217,7 @@
           <div class="content">
             <ul>
               <li>
-                40€ / month
+                {{ this.config.orderPrices.nonstop}}€ / month
               </li>
             </ul>
             <br>
@@ -276,7 +279,8 @@ export default {
         verify: '__',
         login: 'Send login link'
       },
-      subEmail: ''
+      subEmail: '',
+      config: {}
     }
   },
   created() {
@@ -292,6 +296,7 @@ export default {
             console.log(response)
             this.seats = response.data.seats
             this.orderSum = response.data.orderSum
+            this.config = response.data.config
           })
           .catch(e => {
             console.log(e)

@@ -1,8 +1,10 @@
 /**
-* A basic status of progresssbar-cowork
-* @param {string} n Who you're saying hello to
-* @returns {object}
-*/
+ * A basic status of progresssbar-cowork
+ * @param {string} n Who you're saying hello to
+ * @returns {object}
+ */
+const lib = require('lib');
+
 module.exports = (n = 'non', context, callback) => {
   const firebase = require('firebase-admin')
   const firebaseConfig = {
@@ -24,45 +26,56 @@ module.exports = (n = 'non', context, callback) => {
     })
   }
 
-  if (n !== 'non') {
-    callback(null, {t2: 'illbeback'})
-  }
-  const db = firebase.database()
-  const ref = db.ref('server')
+  return lib[`${context.service.identifier}.config`]((err, config) => {
+    if (err) {
+      callback(null, { code: 'Config error' })
+    }
 
-  ref.once('value', function (data) {
-    let server = data.val()
-    let seats = {
-      subscribers: Object.keys(server.subscribers).length,
-      free: 10,
-      capacity: 10,
-      allocatedToday: 0
+    if (n !== 'non') {
+      callback(null, {
+        t2: 'illbeback'
+      })
     }
-    let credited = 0
-    let daysBooked = Object.keys(server.orders).length
-    let orderSum = {}
-    let ordersArr = Object.entries(server.orders)
-    for (let n of ordersArr) {
-      let month = new Date(parseInt(n[0])).getMonth()
-      let day = new Date(parseInt(n[0])).getDate()
-      if (Object.keys(orderSum).length < 3) {
-        Object.assign(orderSum, {[n[0]]: [n[1].length, month, day]})
+    const db = firebase.database()
+    const ref = db.ref('server')
+
+    ref.once('value', function (data) {
+      let server = data.val()
+      let seats = {
+        subscribers: Object.keys(server.subscribers).length,
+        free: 10,
+        capacity: 10,
+        allocatedToday: 0
       }
-    }
-    let status = {
-      orderSum,
-      credited,
-      daysBooked,
-      seats,
-      actions: {
-        subscribtion: 0,
-        orderDaypass: 0,
-        orderFlex: 0,
-        orderHomie: 0,
-        orderLocker: 0,
-        order247: 0
+      let credited = 0
+      let daysBooked = Object.keys(server.orders).length
+      let orderSum = {}
+      let ordersArr = Object.entries(server.orders)
+      for (let n of ordersArr) {
+        let month = new Date(parseInt(n[0])).getMonth()
+        let day = new Date(parseInt(n[0])).getDate()
+        if (Object.keys(orderSum).length < 3) {
+          Object.assign(orderSum, {
+            [n[0]]: [n[1].length, month, day]
+          })
+        }
       }
-    }
-    callback(null, status)
+      let status = {
+        orderSum,
+        credited,
+        daysBooked,
+        seats,
+        actions: {
+          subscribtion: 0,
+          orderDaypass: 0,
+          orderFlex: 0,
+          orderHomie: 0,
+          orderLocker: 0,
+          order247: 0
+        },
+        config
+      }
+      callback(null, status)
+    })
   })
 }
