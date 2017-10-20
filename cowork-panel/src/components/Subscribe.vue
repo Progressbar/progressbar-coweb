@@ -19,10 +19,10 @@
               </div>
         </div>
         <div class="column is-narrow">
-          <a v-if="this.coworkSubscribe" @click="subscribeMe(subEmail)" class="button is-warning is-medium is-outlined">{{ this.button.subscribe }}</a>
-          <a v-if="!this.coworkSubscribe" @click="subscribeMe(subEmail)" class="button is-warning is-medium is-outlined" disabled>{{ this.button.subscribe }}</a>
-          <a v-if="this.coworkLogin" @click="sendLoginLink(subEmail)" class="button is-primary is-medium is-outlined">{{ this.button.login }}</a>
-          <a v-if="!this.coworkLogin" @click="sendLoginLink(subEmail)" class="button is-primary is-medium is-outlined" disabled>{{ this.button.login }}</a>
+          <a v-if="this.config.coworkSubscribe" @click="subscribeMe(subEmail)" class="button is-warning is-medium is-outlined">{{ this.button.subscribe }}</a>
+          <a v-if="!this.config.coworkSubscribe" @click="subscribeMe(subEmail)" class="button is-warning is-medium is-outlined" disabled>{{ this.button.subscribe }}</a>
+          <a v-if="this.config.coworkLogin" @click="sendLoginLink(subEmail)" class="button is-primary is-medium is-outlined">{{ this.button.login }}</a>
+          <a v-if="!this.config.coworkLogin" @click="sendLoginLink(subEmail)" class="button is-primary is-medium is-outlined" disabled>{{ this.button.login }}</a>
         </div>
   </div>
   <div class="columns">
@@ -269,8 +269,6 @@ export default {
         1507154400000: [ 6, 9, 5 ],
         1507068000000: [ 7, 9, 4 ],
         1506981600000: [ 8, 9, 3 ] },
-      coworkSubscribe: false,
-      coworkLogin: true,
       newSubscriber: {
         email: ''
       },
