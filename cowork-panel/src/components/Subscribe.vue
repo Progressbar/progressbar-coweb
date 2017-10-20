@@ -131,7 +131,7 @@
       <div class="card">
         <header class="card-header">
           <p class="card-header-title">
-            Flex
+            Flex (30 days)
           </p>
           <a href="#" class="card-header-icon" aria-label="more options">
           </a>
@@ -297,7 +297,7 @@ export default {
             end: 18
           }
         },
-        coworkLogin: true,
+        coworkLogin: false,
         coworkSubscribe: false
       }
     }
