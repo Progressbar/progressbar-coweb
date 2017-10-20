@@ -52,10 +52,10 @@ module.exports = (authToken = 'non', context, callback) => {
         orders.once('value', function (data) {
           let ordersRef = data.val()
           let now = Date.now()
-          let year = new Date(now).getFullYear()
-          let month = new Date(now).getMonth()
-          let day = new Date(now).getDate()
-          let dateToday = new Date(year, month, day).getTime()
+          let year = new Date(now).getUTCFullYear()
+          let month = new Date(now).getUTCMonth()
+          let day = new Date(now).getUTCDate()
+          let dateToday = new Date(Date.UTC(year, month, day)).getTime()
           if (!ordersRef[dateToday]) {
             callback(null, {
               code: 'Not booked yet'
