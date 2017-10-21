@@ -240,7 +240,7 @@
   <div class="columns">
     <div class="column is-narrow">
       <a v-for="item in orderSum" class="button is-outlined is-white" disabled>
-        📅 {{ item[1]+1 }}/{{item[2]}} 👩‍💻 {{ item[0] }} 🆓 {{ seats.capacity-item[0] }}</a>
+        📅 {{ item[1]+1 }}/{{item[2]}} 👩‍💻 {{ item[0] }} 🆓 {{ seats.capacity - item[0] }}</a>
     </div>
   </div>
   <div class="columns is-mobile">
@@ -259,7 +259,6 @@ export default {
   data() {
     return {
       seats: {
-        free: '0',
         subscribers: '0',
         capacity: '0'
       },

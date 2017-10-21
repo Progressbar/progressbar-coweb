@@ -43,7 +43,6 @@ module.exports = (n = 'non', context, callback) => {
       let server = data.val()
       let seats = {
         subscribers: Object.keys(server.subscribers).length,
-        free: 10,
         capacity: config.seatCapacity
       }
       let credited = 0
