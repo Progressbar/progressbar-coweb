@@ -22,7 +22,7 @@
     <div class="columns is-mobile">
           <div class="column is-narrow">
             <div class="select is-primary is-medium is-outlined">
-              <select v-model="orderCalc.program">
+              <select @change="orderCalculate()" v-model="orderCalc.program">
                 <option disabled value="">Choose program</option>
                 <option v-for="(item, index) in config.orderPrices" v-bind:item="item" v-bind:index="index">
                   {{ index }}
@@ -31,17 +31,10 @@
             </div>
           </div>
           <div class="column is-narrow">
-            <div class="select is-medium">
-              <select @change="orderCalculate()" v-model="orderCalc.date">
-                <option disabled value="">Choose day</option>
-                <option v-for="item in orderCalc.dateRange">
-                  {{ item.date }}
-                </option>
-              </select>
-            </div>
+            <input @change="orderCalculate()" v-model="orderCalc.date" type="date"/>
           </div>
           <div class="column is-narrow">
-                <a @click="" class="button is-primary is-medium is-outlined">{{ this.button.order + ' for ' + this.orderCalc.total + ' €'}}</a>
+                <a @click="orderCowork()" class="button is-primary is-medium is-outlined">{{ this.button.order + ' for ' + this.orderCalc.total + ' €'}}</a>
           </div>
     </div>
 
@@ -220,7 +213,7 @@ export default {
       orderCalc: {
         program: '',
         date: '',
-        dateRange: [{ date: 20170923 }, { date: 20170924 }, { date: 20170925 }, { date: 20170926 }],
+        dateTimestamp: '',
         total: 0
       }
     }
@@ -269,10 +262,31 @@ export default {
           })
     },
     orderCalculate() {
-      console.log(this.orderCalc.program + this.orderCalc.date)
-      this.orderCalc.total = 6
+      this.orderCalc.dateTimestamp = new Date(this.orderCalc.date).getTime()
+      if (this.orderCalc.program === 'day') {
+        this.orderCalc.total = this.config.orderPrices.day
+      }
+      if (this.orderCalc.program === 'month') {
+        this.orderCalc.total = this.config.orderPrices.month
+      }
     },
-    generateDateRange() {
+    orderCowork() {
+      axios({
+        method: 'get',
+        url: this.$api.base + this.$api.orderCowork,
+        params: {
+          authToken: this.auth.authToken,
+          date: this.orderCalc.dateTimestamp,
+          plan: this.orderCalc.program
+        }
+      })
+      .then(response => {
+        console.log(response)
+        this.button.order = response.data.code
+      })
+      .catch(e => {
+        console.log(e)
+      })
     },
     unlockDoors(authToken) {
       axios({

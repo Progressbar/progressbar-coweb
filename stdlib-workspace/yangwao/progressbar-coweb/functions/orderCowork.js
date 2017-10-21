@@ -34,7 +34,24 @@ module.exports = (authToken = 'non', date = 'non', plan = 'non', context, callba
     })
   }
 
-  if (authToken !== 'non') {
+  let now = Date.now()
+  let today = new Date(Date.UTC(new Date(now).getUTCFullYear(), new Date(now).getUTCMonth(), new Date(now).getUTCDate())).getTime()
+  let isBadTimestamp = (isNaN(new Date(parseInt(date))) || date < today)
+  let allowedPlans = ['day', 'month']
+  let validPlan = allowedPlans.find(x => x === plan)
+  if (isBadTimestamp) {
+    callback(null, {
+      code: 'badass'
+    })
+  }
+
+  if (validPlan === undefined) {
+    callback(null, {
+      code: 'disabled'
+    })
+  }
+
+  if (authToken !== 'non' && !isBadTimestamp && validPlan) {
     const db = firebase.database()
     const ref = db.ref('server')
     const orders = ref.child('orders')
@@ -60,18 +77,11 @@ module.exports = (authToken = 'non', date = 'non', plan = 'non', context, callba
 
         if (authSub[1].credit > 0 && authSub[1].canOrder) {
           orders.once('value', function (data) {
-            let d = {
-              year: parseInt(date.substr(0, 4)),
-              month: parseInt(date.substr(4, 2)),
-              day: parseInt(date.substr(6, 2))
-            }
             let ordersBulk = data.val()
-            let ordersRef = Object.entries(data.val())
-            let orderDate = new Date(Date.UTC(d.year, d.month, d.day)).getTime()
+            let orderDate = date
 
             console.log('orderDate', orderDate)
             let orderDay = ordersBulk[orderDate]
-
 
             if (ordersBulk[orderDate] && ordersBulk[orderDate].find(x => x === authSub[0])) {
               callback(null, {

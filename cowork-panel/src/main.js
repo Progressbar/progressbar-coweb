@@ -12,6 +12,7 @@ Vue.prototype.$api = {
   newSubscriber: 'emailSubscribe/',
   verify: 'verify/',
   order: 'order/',
+  orderCowork: 'orderCowork/',
   login: 'login/',
   logmein: 'logmein/',
   openDoor: 'openDoor/'
