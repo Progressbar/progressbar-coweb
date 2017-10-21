@@ -2,7 +2,7 @@
 <div class="order">
     <div class="columns">
           <div class="column is-narrow">
-                <a class="button is-light is-medium is-outlined" disabled>{{ this.button.order }}</a>
+                <a class="button is-light is-medium is-outlined" disabled>{{ this.button.welcome }}</a>
           </div>
     </div>
     <div class="columns is-mobile">
@@ -10,14 +10,41 @@
                 <a class="button is-light is-medium is-outlined" disabled>Credit {{ this.button.credit }}</a>
           </div>
           <div class="column is-narrow">
-                <a class="button is-light is-medium is-outlined" disabled>Fuel credit</a>
+                <a class="button is-light is-medium is-outlined" disabled>⛽ credit</a>
           </div>
     </div>
-    <div class="columns">
+    <div class="columns is-mobile">
           <div class="column is-narrow">
                 <a @click="unlockDoors()" class="button is-primary is-medium is-outlined">{{ this.button.unlockdoor }}</a>
           </div>
+
     </div>
+    <div class="columns is-mobile">
+          <div class="column is-narrow">
+            <div class="select is-primary is-medium is-outlined">
+              <select v-model="orderCalc.program">
+                <option disabled value="">Choose program</option>
+                <option v-for="(item, index) in config.orderPrices" v-bind:item="item" v-bind:index="index">
+                  {{ index }}
+                </option>
+              </select>
+            </div>
+          </div>
+          <div class="column is-narrow">
+            <div class="select is-medium">
+              <select @change="orderCalculate()" v-model="orderCalc.date">
+                <option disabled value="">Choose day</option>
+                <option v-for="item in orderCalc.dateRange">
+                  {{ item.date }}
+                </option>
+              </select>
+            </div>
+          </div>
+          <div class="column is-narrow">
+                <a @click="" class="button is-primary is-medium is-outlined">{{ this.button.order + ' for ' + this.orderCalc.total + ' €'}}</a>
+          </div>
+    </div>
+
     <div class="columns">
       <div class="column is-narrow">
         <div class="card">
@@ -32,32 +59,25 @@
             <div class="content">
               <ul>
                 <li>
-                  9am - 6pm
+                  {{ this.config.openHours.dayPass.start }} - {{ this.config.openHours.dayPass.end }}
                 </li>
                 <li>
-                  ♨️ Desk
+                  ♨️ desk
                 </li>
                 <li>
-                  6€ / day
+                  {{ this.config.orderPrices.day }}€ / day
                 </li>
               </ul>
               <br>
             </div>
           </div>
-          <footer v-if="this.auth.gotCredit" class="card-footer">
-            <p class="card-footer-item">
-              <span>
-                <a class="button is-medium is-outlined">Order</a>
-              </span>
-            </p>
-          </footer>
         </div>
       </div>
       <div class="column is-narrow">
         <div class="card">
           <header class="card-header">
             <p class="card-header-title">
-              Flex
+              Flex (30 Days)
             </p>
             <a href="#" class="card-header-icon" aria-label="more options">
             </a>
@@ -66,25 +86,18 @@
             <div class="content">
               <ul>
                 <li>
-                  7am - 9pm
+                  {{ this.config.openHours.monthPass.start }} - {{ this.config.openHours.monthPass.end }}
                 </li>
                 <li>
-                  ♨️ Desk
+                  ♨️ desk
                 </li>
                 <li>
-                  60€ / month
+                  {{ this.config.orderPrices.month }}€ / month
                 </li>
               </ul>
               <br>
             </div>
           </div>
-          <footer  v-if="this.auth.gotCredit" class="card-footer">
-            <p class="card-footer-item">
-              <span>
-                <a class="button is-medium is-outlined">Order</a>
-              </span>
-            </p>
-          </footer>
         </div>
       </div>
       <div class="column is-narrow">
@@ -106,19 +119,12 @@
                   Fixdesk
                 </li>
                 <li>
-                  160€ / month
+                  {{ this.config.orderPrices.fix }}€ / month
                 </li>
               </ul>
               <br>
             </div>
           </div>
-          <footer v-if="this.auth.gotCredit" class="card-footer">
-            <p class="card-footer-item">
-              <span>
-                <a class="button is-medium is-outlined" disabled>Order</a>
-              </span>
-            </p>
-          </footer>
         </div>
       </div>
     </div>
@@ -142,13 +148,6 @@
               <br>
             </div>
           </div>
-          <footer v-if="this.auth.gotCredit" class="card-footer">
-            <p class="card-footer-item">
-              <span>
-                <a class="button is-medium is-outlined" disabled>Order</a>
-              </span>
-            </p>
-          </footer>
         </div>
       </div>
       <div class="column is-narrow">
@@ -170,13 +169,6 @@
               <br>
             </div>
           </div>
-          <footer v-if="this.auth.gotCredit" class="card-footer">
-            <p class="card-footer-item">
-              <span>
-                <a class="button is-medium is-outlined" disabled>Order</a>
-              </span>
-            </p>
-          </footer>
         </div>
       </div>
     </div>
@@ -192,7 +184,8 @@ export default {
   data() {
     return {
       button: {
-        order: '',
+        welcome: '',
+        order: 'Book',
         credit: '',
         unlockdoor: 'Unlock doors'
       },
@@ -202,11 +195,39 @@ export default {
         gotCredit: false,
         isUser: false
       },
-      credit: 0
+      config: {
+        baseWebUrl: 'https://progressbar-cowork.netlify.com/',
+        orderPrices: {
+          day: 6,
+          month: 80,
+          fix: 160,
+          locker: 10,
+          nonstop: 40
+        },
+        openHours: {
+          monthPass: {
+            start: 6,
+            end: 18
+          },
+          dayPass: {
+            start: 9,
+            end: 18
+          }
+        },
+        coworkLogin: false,
+        coworkSubscribe: false
+      },
+      orderCalc: {
+        program: '',
+        date: '',
+        dateRange: [{ date: 20170923 }, { date: 20170924 }, { date: 20170925 }, { date: 20170926 }],
+        total: 0
+      }
     }
   },
   created() {
     this.enableOrder()
+    this.getSubscribers()
   },
   methods: {
     enableOrder(authToken) {
@@ -221,7 +242,7 @@ export default {
         })
         .then(response => {
           console.log(response)
-          this.button.order = response.data.code
+          this.button.welcome = response.data.code
           this.button.credit = response.data.credit
           this.credit = response.data.credit
           if (response.data.credit > 0) {
@@ -231,6 +252,27 @@ export default {
         .catch(e => {
           console.log(e)
         })
+    },
+    getSubscribers() {
+        axios({
+            method: 'get',
+            url: this.$api.base + this.$api.subscribers
+          })
+          .then(response => {
+            console.log(response)
+            this.seats = response.data.seats
+            this.orderSum = response.data.orderSum
+            this.config = response.data.config
+          })
+          .catch(e => {
+            console.log(e)
+          })
+    },
+    orderCalculate() {
+      console.log(this.orderCalc.program + this.orderCalc.date)
+      this.orderCalc.total = 6
+    },
+    generateDateRange() {
     },
     unlockDoors(authToken) {
       axios({
