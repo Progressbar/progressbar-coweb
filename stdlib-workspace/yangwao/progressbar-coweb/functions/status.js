@@ -50,13 +50,21 @@ module.exports = (n = 'non', context, callback) => {
       let daysBooked = Object.keys(server.orders).length
       let orderSum = {}
       let ordersArr = Object.entries(server.orders)
+      let now = Date.now()
+      let year = new Date(now).getUTCFullYear()
+      let month = new Date(now).getUTCMonth()
+      let day = new Date(now).getUTCDate()
+      let dateToday = new Date(Date.UTC(year, month, day)).getTime()
+
       for (let n of ordersArr) {
-        let month = new Date(parseInt(n[0])).getMonth()
-        let day = new Date(parseInt(n[0])).getDate()
-        if (Object.keys(orderSum).length < 3) {
-          Object.assign(orderSum, {
-            [n[0]]: [n[1].length, month, day]
-          })
+        if (n[0] >= dateToday) {
+          if (Object.keys(orderSum).length < 4) {
+            let month = new Date(parseInt(n[0])).getMonth()
+            let day = new Date(parseInt(n[0])).getDate()
+            Object.assign(orderSum, {
+              [n[0]]: [n[1].length, month, day]
+            })
+          }
         }
       }
       let status = {
