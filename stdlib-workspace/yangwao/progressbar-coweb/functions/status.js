@@ -3,7 +3,7 @@
  * @param {string} n Who you're saying hello to
  * @returns {object}
  */
-const lib = require('lib');
+const lib = require('lib')
 
 module.exports = (n = 'non', context, callback) => {
   const firebase = require('firebase-admin')
@@ -50,13 +50,10 @@ module.exports = (n = 'non', context, callback) => {
       let orderSum = {}
       let ordersArr = Object.entries(server.orders)
       let now = Date.now()
-      let year = new Date(now).getUTCFullYear()
-      let month = new Date(now).getUTCMonth()
-      let day = new Date(now).getUTCDate()
-      let dateToday = new Date(Date.UTC(year, month, day)).getTime()
+      let today = new Date(Date.UTC(new Date(now).getUTCFullYear(), new Date(now).getUTCMonth(), new Date(now).getUTCDate())).getTime()
 
       for (let n of ordersArr) {
-        if (n[0] >= dateToday) {
+        if (n[0] >= today) {
           if (Object.keys(orderSum).length < 4) {
             let month = new Date(parseInt(n[0])).getMonth()
             let day = new Date(parseInt(n[0])).getDate()

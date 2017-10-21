@@ -231,6 +231,9 @@
         <a class="button is-outlined is-info" disabled>{{this.seats.subscribers}} 📩👨‍💻⚙</a>
     </div>
     <div class="column is-narrow">
+        <a class="button is-outlined is-info" disabled>{{this.daysBooked}} 📅 👨‍💻💰 </a>
+    </div>
+    <div class="column is-narrow">
         <a class="button is-outlined is-info" disabled>{{this.credited}} 👨‍💻💰 </a>
     </div>
     <div class="column is-narrow">
@@ -272,6 +275,7 @@ export default {
         verify: '__',
         login: 'Send login link'
       },
+      daysBooked: '',
       subEmail: '',
       config: {
         baseWebUrl: 'https://progressbar-cowork.netlify.com/',
@@ -310,6 +314,7 @@ export default {
             console.log(response)
             this.seats = response.data.seats
             this.orderSum = response.data.orderSum
+            this.daysBooked = response.data.daysBooked
             this.config = response.data.config
           })
           .catch(e => {

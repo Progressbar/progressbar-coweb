@@ -17,7 +17,6 @@
           <div class="column is-narrow">
                 <a @click="unlockDoors()" class="button is-primary is-medium is-outlined">{{ this.button.unlockdoor }}</a>
           </div>
-
     </div>
     <div class="columns is-mobile">
           <div class="column is-narrow">
@@ -33,9 +32,11 @@
           <div class="column is-narrow">
             <input @change="orderCalculate()" v-model="orderCalc.date" type="date"/>
           </div>
-          <div class="column is-narrow">
-                <a @click="orderCowork()" class="button is-primary is-medium is-outlined">{{ this.button.order + ' for ' + this.orderCalc.total + ' €'}}</a>
-          </div>
+    </div>
+    <div class="columns is-mobile">
+        <div class="column is-narrow">
+              <a @click="orderCowork()" class="button is-primary is-medium is-outlined">{{ this.button.order + ' for ' + this.orderCalc.total + ' €'}}</a>
+        </div>
     </div>
 
     <div class="columns">
