@@ -261,8 +261,7 @@ export default {
       seats: {
         free: '0',
         subscribers: '0',
-        capacity: '0',
-        allocatedToday: '0'
+        capacity: '0'
       },
       credited: 0,
       orderSum: {

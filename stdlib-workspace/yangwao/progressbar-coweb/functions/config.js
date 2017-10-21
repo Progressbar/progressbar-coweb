@@ -24,6 +24,7 @@ module.exports = (conf = 'non', context, callback) => {
         end: 18
       }
     },
+    seatCapacity: 10,
     coworkLogin: true,
     coworkSubscribe: false
   }
