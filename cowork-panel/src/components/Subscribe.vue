@@ -158,7 +158,7 @@
       <div class="card">
         <header class="card-header">
           <p class="card-header-title">
-            Homie
+            <s>Homie</s>
           </p>
           <a href="#" class="card-header-icon" aria-label="more options">
           </a>
@@ -187,7 +187,7 @@
       <div class="card">
         <header class="card-header">
           <p class="card-header-title">
-            Locker
+            <s>Locker</s>
           </p>
           <a href="#" class="card-header-icon" aria-label="more options">
           </a>
@@ -208,7 +208,7 @@
       <div class="card">
         <header class="card-header">
           <p class="card-header-title">
-            24/7 access
+            <s>24/7 access</s>
           </p>
           <a href="#" class="card-header-icon" aria-label="more options">
           </a>

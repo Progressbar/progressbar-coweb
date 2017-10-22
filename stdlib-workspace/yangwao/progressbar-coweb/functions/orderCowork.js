@@ -114,6 +114,11 @@ module.exports = (authToken = 'non', date = 'non', plan = 'non', context, callba
                 }
 
                 if (!errorOrder) {
+
+                  authSub[1].credit = authSub[1].credit - 6
+                  subscribersRef.update({[authSub[0]]: authSub[1]}, function(errorUpd) {
+                  })
+
                   callback(null, {
                     code: 'Order confirmed'
                   })
@@ -122,10 +127,12 @@ module.exports = (authToken = 'non', date = 'non', plan = 'non', context, callba
             }
           })
         }
-        // TODO noCredit or can not order
-        // if () {
-        //
-        // } 
+
+        if (!authSub[1].canOrder) {
+          callback(null, {
+            code: 'Can\'t order'
+          })
+        }
       }
     })
   }

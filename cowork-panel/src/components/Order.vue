@@ -2,15 +2,15 @@
 <div class="order">
     <div class="columns">
           <div class="column is-narrow">
-                <a class="button is-light is-medium is-outlined" disabled>{{ this.button.welcome }}</a>
+                <a class="button is-light is-outlined" disabled>{{ this.button.welcome }}</a>
           </div>
     </div>
-    <div class="columns is-mobile">
+    <div class="columns">
           <div class="column is-narrow">
-                <a class="button is-light is-medium is-outlined" disabled>Credit {{ this.button.credit }}</a>
+                <a class="button is-light is-outlined" disabled>Credit {{ this.button.credit }}</a>
           </div>
           <div class="column is-narrow">
-                <a class="button is-light is-medium is-outlined" disabled>⛽ credit</a>
+                <a class="button is-light is-outlined" disabled>⛽ credit</a>
           </div>
     </div>
     <div class="columns is-mobile">
@@ -18,9 +18,9 @@
                 <a @click="unlockDoors()" class="button is-primary is-medium is-outlined">{{ this.button.unlockdoor }}</a>
           </div>
     </div>
-    <div class="columns is-mobile">
+    <div class="columns">
           <div class="column is-narrow">
-            <div class="select is-primary is-medium is-outlined">
+            <div class="select is-primary">
               <select @change="orderCalculate()" v-model="orderCalc.program">
                 <option disabled value="">Choose program</option>
                 <option v-for="(item, index) in config.orderPrices" v-bind:item="item" v-bind:index="index">
@@ -34,6 +34,7 @@
           </div>
     </div>
     <div class="columns is-mobile">
+
         <div class="column is-narrow">
               <a @click="orderCowork()" class="button is-primary is-medium is-outlined">{{ this.button.order + ' for ' + this.orderCalc.total + ' €'}}</a>
         </div>
@@ -98,7 +99,7 @@
         <div class="card">
           <header class="card-header">
             <p class="card-header-title">
-              Homie
+              <s>Homie</s>
             </p>
             <a href="#" class="card-header-icon" aria-label="more options">
             </a>
@@ -127,7 +128,7 @@
         <div class="card">
           <header class="card-header">
             <p class="card-header-title">
-              Locker
+              <s>Locker</s>
             </p>
             <a href="#" class="card-header-icon" aria-label="more options">
             </a>
@@ -148,7 +149,7 @@
         <div class="card">
           <header class="card-header">
             <p class="card-header-title">
-              24/7 access
+              <s>24/7 access</s>
             </p>
             <a href="#" class="card-header-icon" aria-label="more options">
             </a>

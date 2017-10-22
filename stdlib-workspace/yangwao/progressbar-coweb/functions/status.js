@@ -54,7 +54,7 @@ module.exports = (n = 'non', context, callback) => {
 
       for (let n of ordersArr) {
         if (n[0] >= today) {
-          if (Object.keys(orderSum).length < 4) {
+          if (Object.keys(orderSum).length < 6) {
             let month = new Date(parseInt(n[0])).getMonth()
             let day = new Date(parseInt(n[0])).getDate()
             Object.assign(orderSum, {
@@ -68,14 +68,6 @@ module.exports = (n = 'non', context, callback) => {
         credited,
         daysBooked,
         seats,
-        actions: {
-          subscribtion: 0,
-          orderDaypass: 0,
-          orderFlex: 0,
-          orderHomie: 0,
-          orderLocker: 0,
-          order247: 0
-        },
         config
       }
       callback(null, status)
