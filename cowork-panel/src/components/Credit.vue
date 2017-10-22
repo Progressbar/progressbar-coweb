@@ -53,11 +53,11 @@ export default {
           amount: 10
         },
         bitcoin: {
-          address: '1pbarBA4zP1bbCRydBUxweQxVfsaAHqDo',
+          address: '1PbZsxCh5GVwvaPkvXeFNH6sh6TzggJfXJ',
           explorer: 'https://blockchain.info/address/'
         },
         litecoin: {
-          address: 'LSDNJopkWAgEuhrD1ucKiFD6ybhoEeTRWH',
+          address: 'LKWvZG5oeq2bW9k5nnym2PCGTDaN7BedDN',
           explorer: 'https://live.blockcypher.com/ltc/address/'
         }
       },
