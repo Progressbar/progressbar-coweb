@@ -1,14 +1,14 @@
 {
-  "name": "cowork Progressbar",
-  "short_name": "cowork-progressbar",
+  "name": "cowork.Progressbar",
+  "short_name": "cowork.progressbar",
   "icons": [
     {
-      "src": "/static/img/icons/android-chrome-192x192.png",
+      "src": "/static/img/icons/progressbar-chrome-192x192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/static/img/icons/android-chrome-512x512.png",
+      "src": "/static/img/icons/progressbar-chrome-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
@@ -16,5 +16,5 @@
   "start_url": "/index.html",
   "display": "standalone",
   "background_color": "#000000",
-  "theme_color": "#7c00a7"
+  "theme_color": "#000000"
 }
