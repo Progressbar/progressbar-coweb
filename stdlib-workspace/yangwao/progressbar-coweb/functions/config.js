@@ -26,7 +26,7 @@ module.exports = (conf = 'non', context, callback) => {
     },
     seatCapacity: 10,
     coworkLogin: true,
-    coworkSubscribe: false
+    coworkSubscribe: true
   }
   callback(null, config)
 }
