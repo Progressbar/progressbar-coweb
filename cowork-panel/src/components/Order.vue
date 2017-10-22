@@ -7,7 +7,7 @@
     </div>
     <div class="columns">
           <div class="column is-narrow">
-                <a class="button is-light is-outlined" disabled>Credit {{ this.button.credit }}</a>
+                <a class="button is-light is-outlined" disabled>💳 Credit {{ this.button.credit }}</a>
           </div>
           <div class="column is-narrow">
                 <a class="button is-light is-outlined" disabled>⛽ credit</a>
@@ -181,9 +181,9 @@ export default {
     return {
       button: {
         welcome: '',
-        order: 'Book',
+        order: '📙 Book',
         credit: '',
-        unlockdoor: 'Unlock doors'
+        unlockdoor: 'Unlock 🚪 doors'
       },
       auth: {
         user: '',
