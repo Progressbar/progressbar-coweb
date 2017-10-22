@@ -24,6 +24,7 @@ module.exports = (conf = 'non', context, callback) => {
         end: 18
       }
     },
+    allowedPlans: ['day'],
     seatCapacity: 9,
     coworkLogin: true,
     coworkSubscribe: true

@@ -43,8 +43,7 @@ module.exports = (authToken = 'non', date = 'non', plan = 'non', context, callba
     let now = Date.now()
     let today = new Date(Date.UTC(new Date(now).getUTCFullYear(), new Date(now).getUTCMonth(), new Date(now).getUTCDate())).getTime()
     let isBadTimestamp = (isNaN(new Date(parseInt(date))) || date < today)
-    let allowedPlans = ['day', 'month']
-    let validPlan = allowedPlans.find(x => x === plan)
+    let validPlan = config.allowedPlans.find(x => x === plan)
     if (isBadTimestamp) {
       callback(null, {
         code: 'badass'
