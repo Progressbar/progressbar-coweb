@@ -59,11 +59,12 @@ module.exports = (email = 'non', context, callback) => {
   const hash = uuidv4()
   const mailmsg = {
     from: `Progressbar Cowork noreply <no-reply@${process.env.mailgun_domain}>`,
-    to: 'ybdaba@gmail.com',
+    to: normalizedEmail,
     subject: 'Progressbar Cowork Email Verification',
     text:
     `Hello,
-looks like somebody tried use your email as registration mail. If it was you, please confirm your email address ${normalizedEmail}
+looks like somebody tried use your email as registration mail.
+If it was you, please confirm your email address ${normalizedEmail}
 by clicking on link ${config.api.baseWebUrl}#/email/${hash}
 If you did not request this email, please ignore it.
 Humanoid from ${config.api.baseWebUrl}`
