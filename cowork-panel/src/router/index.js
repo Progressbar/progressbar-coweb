@@ -4,6 +4,7 @@ import Subscribe from '@/components/Subscribe'
 import EmailVerify from '@/components/EmailVerify'
 import Order from '@/components/Order'
 import Login from '@/components/Login'
+import Credit from '@/components/Credit'
 import VueLocalStorage from 'vue-ls'
 
 var options = {
@@ -35,6 +36,10 @@ export default new Router({
     {
       path: '/login/:loginCode',
       component: Login
+    },
+    {
+      path: '/credit',
+      component: Credit
     }
   ]
 })
