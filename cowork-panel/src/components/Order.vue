@@ -2,7 +2,7 @@
 <div class="order">
     <div class="columns">
           <div class="column is-narrow">
-                <a class="button is-light is-outlined" disabled>{{ this.button.welcome }}</a>
+                <a class="button is-light is-outlined" disabled>👋 {{ this.button.welcome }}</a>
           </div>
     </div>
     <div class="columns">
