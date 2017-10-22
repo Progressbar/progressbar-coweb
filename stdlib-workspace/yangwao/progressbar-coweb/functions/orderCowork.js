@@ -124,7 +124,7 @@ module.exports = (authToken = 'non', date = 'non', plan = 'non', context, callba
                   }
 
                   if (!errorOrder) {
-                    authSub[1].credit = authSub[1].credit - 6
+                    authSub[1].credit = authSub[1].credit - config.orderPrices.day
                     subscribersRef.update({[authSub[0]]: authSub[1]}, function (errorUpd) {
                     })
 
