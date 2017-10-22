@@ -87,7 +87,7 @@ module.exports = (authToken = 'non', date = 'non', plan = 'non', context, callba
 
               console.log('orderDate', orderDate)
               let orderDay = ordersBulk[orderDate]
-              let isFull = (orderDay.length >= config.seatCapacity)
+              let isFull = (orderDay && orderDay.length >= config.seatCapacity)
 
               if (isFull) {
                 callback(null, {

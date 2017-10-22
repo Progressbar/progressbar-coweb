@@ -230,7 +230,7 @@ export default {
   },
   created() {
     this.enableOrder()
-    // this.getSubscribers()
+    this.getSubscribers()
   },
   methods: {
     enableOrder(authToken) {

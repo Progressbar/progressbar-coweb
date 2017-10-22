@@ -41,7 +41,6 @@
 <script>
 import axios from 'axios'
 
-
 export default {
   name: 'order',
   data() {
@@ -72,8 +71,6 @@ export default {
   },
   created() {
     this.getPaymentInfo()
-    // this.enableOrder()
-    // this.getSubscribers()
   },
   methods: {
     getPaymentInfo() {
