@@ -35,6 +35,7 @@ module.exports = (authToken = 'non', context, callback) => {
     const db = firebase.database()
     const ref = db.ref('server')
     const subscribersRef = ref.child('subscribers')
+    const orders = ref.child('orders')
 
     subscribersRef.once('value', function (data) {
       let dataRef = data.val()
@@ -46,12 +47,23 @@ module.exports = (authToken = 'non', context, callback) => {
         })
       }
 
-      if (authSub) {
-        callback(null, {
-          code: 'Welcome ' + authSub[1].email,
-          credit: authSub[1].credit
-        })
-      }
+      orders.once('value', function (orders) {
+        let ordersBulk = orders.val()
+        let now = Date.now()
+        let today = new Date(Date.UTC(new Date(now).getUTCFullYear(), new Date(now).getUTCMonth(), new Date(now).getUTCDate())).getTime()
+        let gotOrderToday = null
+        if (ordersBulk[today].find(x => x === authSub[0])) {
+          gotOrderToday = true
+        }
+
+        if (authSub) {
+          callback(null, {
+            code: 'Welcome ' + authSub[1].email,
+            credit: authSub[1].credit,
+            gotOrderToday
+          })
+        }
+      })
     })
   }
 }

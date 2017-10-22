@@ -15,12 +15,12 @@
     </div>
     <div class="columns is-mobile">
           <div class="column is-narrow">
-                <a v-if="!this.auth.gotCredit" @click="unlockDoors()" class="button is-primary is-medium is-outlined" disabled>{{ this.button.unlockdoor }}</a>
-                <a v-if="this.auth.gotCredit" @click="unlockDoors()" class="button is-primary is-medium is-outlined">{{ this.button.unlockdoor }}</a>
+                <a v-if="!this.auth.gotOrderToday" @click="unlockDoors()" class="button is-primary is-medium is-outlined" disabled>{{ this.button.unlockdoor }}</a>
+                <a v-if="this.auth.gotOrderToday" @click="unlockDoors()" class="button is-primary is-medium is-outlined">{{ this.button.unlockdoor }}</a>
           </div>
           <div class="column is-narrow">
-                <a v-if="!this.auth.gotCredit" href="http://hq-bar.netlify.com" class="button is-primary is-medium is-outlined" disabled>Open Black 🚪 </a>
-                <a v-if="this.auth.gotCredit" href="http://hq-bar.netlify.com" class="button is-primary is-medium is-outlined">Open Black 🚪 </a>
+                <a v-if="!this.auth.gotOrderToday" href="http://hq-bar.netlify.com" class="button is-primary is-medium is-outlined" disabled>Open Black 🚪 </a>
+                <a v-if="this.auth.gotOrderToday" href="http://hq-bar.netlify.com" class="button is-primary is-medium is-outlined">Open Black 🚪 </a>
           </div>
     </div>
     <div class="columns">
@@ -194,6 +194,7 @@ export default {
         user: '',
         authToken: '',
         gotCredit: false,
+        gotOrderToday: false,
         isUser: false,
         credit: 0
       },
@@ -247,6 +248,7 @@ export default {
           this.button.welcome = response.data.code
           this.button.credit = response.data.credit
           this.auth.credit = response.data.credit
+          this.auth.gotOrderToday = response.data.gotOrderToday
           if (response.data.credit > 0) {
             this.auth.gotCredit = true
           }
