@@ -15,10 +15,12 @@
     </div>
     <div class="columns is-mobile">
           <div class="column is-narrow">
-                <a @click="unlockDoors()" class="button is-primary is-medium is-outlined">{{ this.button.unlockdoor }}</a>
+                <a v-if="!this.auth.gotCredit" @click="unlockDoors()" class="button is-primary is-medium is-outlined" disabled>{{ this.button.unlockdoor }}</a>
+                <a v-if="this.auth.gotCredit" @click="unlockDoors()" class="button is-primary is-medium is-outlined">{{ this.button.unlockdoor }}</a>
           </div>
           <div class="column is-narrow">
-                <a href="http://hq-bar.netlify.com" class="button is-primary is-medium is-outlined">Open Black 🚪 </a>
+                <a v-if="!this.auth.gotCredit" href="http://hq-bar.netlify.com" class="button is-primary is-medium is-outlined" disabled>Open Black 🚪 </a>
+                <a v-if="this.auth.gotCredit" href="http://hq-bar.netlify.com" class="button is-primary is-medium is-outlined">Open Black 🚪 </a>
           </div>
     </div>
     <div class="columns">
@@ -38,7 +40,8 @@
     </div>
     <div class="columns is-mobile">
         <div class="column is-narrow">
-              <a @click="orderCowork()" class="button is-success is-medium is-outlined">{{ this.button.order }}</a>
+              <a v-if="!this.auth.gotCredit" @click="orderCowork()" class="button is-success is-medium is-outlined" disabled>{{ this.button.order }}</a>
+              <a v-if="this.auth.gotCredit" @click="orderCowork()" class="button is-success is-medium is-outlined">{{ this.button.order }}</a>
               <a class="button is-success is-medium is-outlined" disabled>{{ 'Price ' + this.orderCalc.total + ' €' }}</a>
         </div>
     </div>
@@ -184,14 +187,15 @@ export default {
       button: {
         welcome: '',
         order: '📙 Book',
-        credit: '',
+        credit: 0,
         unlockdoor: 'Unlock 🚪 doors'
       },
       auth: {
         user: '',
         authToken: '',
         gotCredit: false,
-        isUser: false
+        isUser: false,
+        credit: 0
       },
       config: {
         baseWebUrl: 'https://progressbar-cowork.netlify.com/',
@@ -225,7 +229,7 @@ export default {
   },
   created() {
     this.enableOrder()
-    this.getSubscribers()
+    // this.getSubscribers()
   },
   methods: {
     enableOrder(authToken) {
@@ -242,7 +246,7 @@ export default {
           console.log(response)
           this.button.welcome = response.data.code
           this.button.credit = response.data.credit
-          this.credit = response.data.credit
+          this.auth.credit = response.data.credit
           if (response.data.credit > 0) {
             this.auth.gotCredit = true
           }
