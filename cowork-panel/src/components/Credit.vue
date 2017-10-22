@@ -2,7 +2,7 @@
 <div class="order">
     <div class="columns">
           <div class="column">
-                <article class="message is-large">
+                <article class="message">
                   <div class="message-header">
                     <p>FIAT (€)</p>
                   </div>
@@ -13,7 +13,7 @@
                 </article>
           </div>
           <div class="column">
-                <article class="message is-large">
+                <article class="message">
                   <div class="message-header">
                     <p>Bitcoin (BTC)</p>
                   </div>
@@ -24,7 +24,7 @@
                 </article>
           </div>
           <div class="column">
-                <article class="message is-large">
+                <article class="message">
                   <div class="message-header">
                     <p>Litecoin (LTC)</p>
                   </div>

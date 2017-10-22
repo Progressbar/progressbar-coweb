@@ -10,7 +10,7 @@
                 <a class="button is-light is-outlined" disabled>💳 Credit {{ this.button.credit }}</a>
           </div>
           <div class="column is-narrow">
-                <a class="button is-light is-outlined" disabled>⛽ ⬆️ credit</a>
+                <a href="./#/credit" class="button is-light is-outlined">⛽ ⬆️ credit</a>
           </div>
     </div>
     <div class="columns is-mobile">
