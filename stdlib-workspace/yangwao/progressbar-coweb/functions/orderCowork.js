@@ -6,6 +6,7 @@
  * @param {string} plan
  @ @returns {object}
  */
+const lib = require('lib')
 module.exports = (authToken = 'non', date = 'non', plan = 'non', context, callback) => {
   const firebase = require('firebase-admin')
   const firebaseConfig = {
@@ -34,106 +35,116 @@ module.exports = (authToken = 'non', date = 'non', plan = 'non', context, callba
     })
   }
 
-  let now = Date.now()
-  let today = new Date(Date.UTC(new Date(now).getUTCFullYear(), new Date(now).getUTCMonth(), new Date(now).getUTCDate())).getTime()
-  let isBadTimestamp = (isNaN(new Date(parseInt(date))) || date < today)
-  let allowedPlans = ['day', 'month']
-  let validPlan = allowedPlans.find(x => x === plan)
-  if (isBadTimestamp) {
-    callback(null, {
-      code: 'badass'
-    })
-  }
+  return lib[`${context.service.identifier}.config`]((err, config) => {
+    if (err) {
+      callback(null, { code: 'Config error' })
+    }
 
-  if (validPlan === undefined) {
-    callback(null, {
-      code: 'disabled'
-    })
-  }
+    let now = Date.now()
+    let today = new Date(Date.UTC(new Date(now).getUTCFullYear(), new Date(now).getUTCMonth(), new Date(now).getUTCDate())).getTime()
+    let isBadTimestamp = (isNaN(new Date(parseInt(date))) || date < today)
+    let allowedPlans = ['day', 'month']
+    let validPlan = allowedPlans.find(x => x === plan)
+    if (isBadTimestamp) {
+      callback(null, {
+        code: 'badass'
+      })
+    }
 
-  if (authToken !== 'non' && !isBadTimestamp && validPlan) {
-    const db = firebase.database()
-    const ref = db.ref('server')
-    const orders = ref.child('orders')
-    const subscribersRef = ref.child('subscribers')
+    if (validPlan === undefined) {
+      callback(null, {
+        code: 'disabled'
+      })
+    }
 
-    subscribersRef.once('value', function (data) {
-      let dataRef = data.val()
-      let confirmSubArr = Object.entries(dataRef)
-      let authSub = confirmSubArr.find(x => x[1].authToken === authToken)
-      if (authSub === undefined) {
-        callback(null, {
-          code: 'Probably you are missing access rights'
-        })
-      }
+    if (authToken !== 'non' && !isBadTimestamp && validPlan) {
+      const db = firebase.database()
+      const ref = db.ref('server')
+      const orders = ref.child('orders')
+      const subscribersRef = ref.child('subscribers')
 
-      if (authSub) {
-        console.log(authSub[1])
-        if (!authSub[1].credit === 0) {
+      subscribersRef.once('value', function (data) {
+        let dataRef = data.val()
+        let confirmSubArr = Object.entries(dataRef)
+        let authSub = confirmSubArr.find(x => x[1].authToken === authToken)
+        if (authSub === undefined) {
           callback(null, {
-            code: 'Not enough credit'
+            code: 'Probably you are missing access rights'
           })
         }
 
-        if (authSub[1].credit > 0 && authSub[1].canOrder) {
-          orders.once('value', function (data) {
-            let ordersBulk = data.val()
-            let orderDate = date
+        if (authSub) {
+          console.log(authSub[1])
+          if (!authSub[1].credit === 0) {
+            callback(null, {
+              code: 'Not enough credit'
+            })
+          }
 
-            console.log('orderDate', orderDate)
-            let orderDay = ordersBulk[orderDate]
+          if (authSub[1].credit > 0 && authSub[1].canOrder) {
+            orders.once('value', function (data) {
+              let ordersBulk = data.val()
+              let orderDate = date
 
-            if (ordersBulk[orderDate] && ordersBulk[orderDate].find(x => x === authSub[0])) {
-              callback(null, {
-                code: 'Already got order for this date'
-              })
-              orderDay = null
-            }
+              console.log('orderDate', orderDate)
+              let orderDay = ordersBulk[orderDate]
+              let isFull = (orderDay.length >= config.seatCapacity)
 
-            if (ordersBulk[orderDate] && !ordersBulk[orderDate].find(x => x === authSub[0])) {
-              orderDay.push(authSub[0])
-            }
-
-            if (ordersBulk[orderDate] === undefined) {
-              orderDay = []
-              orderDay.push(authSub[0])
-            }
-
-            if (orderDay) {
-              let updOrder = {
-                [orderDate]: orderDay
+              if (isFull) {
+                callback(null, {
+                  code: 'Can\'t book, we are full'
+                })
               }
 
-              // TODO
-              // credit subtract fn
-              orders.update(updOrder, function (errorOrder) {
-                if (errorOrder) {
-                  callback(null, {
-                    code: 'Something with order went wrong'
-                  })
+              if (!isFull && ordersBulk[orderDate] && ordersBulk[orderDate].find(x => x === authSub[0])) {
+                callback(null, {
+                  code: 'Already got order for this date'
+                })
+                orderDay = null
+              }
+
+              if (!isFull && ordersBulk[orderDate] && !ordersBulk[orderDate].find(x => x === authSub[0])) {
+                orderDay.push(authSub[0])
+              }
+
+              if (!isFull && ordersBulk[orderDate] === undefined) {
+                orderDay = []
+                orderDay.push(authSub[0])
+              }
+
+              if (orderDay) {
+                let updOrder = {
+                  [orderDate]: orderDay
                 }
 
-                if (!errorOrder) {
+                orders.update(updOrder, function (errorOrder) {
+                  if (errorOrder) {
+                    callback(null, {
+                      code: 'Something with order went wrong'
+                    })
+                  }
 
-                  authSub[1].credit = authSub[1].credit - 6
-                  subscribersRef.update({[authSub[0]]: authSub[1]}, function(errorUpd) {
-                  })
+                  if (!errorOrder) {
+                    authSub[1].credit = authSub[1].credit - 6
+                    subscribersRef.update({[authSub[0]]: authSub[1]}, function (errorUpd) {
+                    })
 
-                  callback(null, {
-                    code: 'Order confirmed'
-                  })
-                }
-              })
-            }
-          })
+                    callback(null, {
+                      code: 'Order confirmed'
+                    })
+                  }
+                })
+              }
+            })
+          }
+
+          if (!authSub[1].canOrder) {
+            callback(null, {
+              code: 'Can\'t order'
+            })
+          }
         }
-
-        if (!authSub[1].canOrder) {
-          callback(null, {
-            code: 'Can\'t order'
-          })
-        }
-      }
-    })
-  }
+      })
+    }
+  })
 }

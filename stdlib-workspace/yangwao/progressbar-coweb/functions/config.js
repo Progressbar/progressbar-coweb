@@ -8,7 +8,7 @@ module.exports = (conf = 'non', context, callback) => {
   const config = {
     baseWebUrl: 'https://progressbar-cowork.netlify.com/',
     orderPrices: {
-      day: 6,
+      day: 4,
       month: 80,
       fix: 160,
       locker: 10,
@@ -24,7 +24,7 @@ module.exports = (conf = 'non', context, callback) => {
         end: 18
       }
     },
-    seatCapacity: 10,
+    seatCapacity: 9,
     coworkLogin: true,
     coworkSubscribe: true
   }

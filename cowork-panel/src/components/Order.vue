@@ -36,7 +36,8 @@
     <div class="columns is-mobile">
 
         <div class="column is-narrow">
-              <a @click="orderCowork()" class="button is-primary is-medium is-outlined">{{ this.button.order + ' for ' + this.orderCalc.total + ' €'}}</a>
+              <a @click="orderCowork()" class="button is-primary is-medium is-outlined">{{ this.button.order }}</a>
+              <a class="button is-info is-medium is-outlined" disabled>{{ 'Price ' + this.orderCalc.total + ' €' }}</a>
         </div>
     </div>
 
