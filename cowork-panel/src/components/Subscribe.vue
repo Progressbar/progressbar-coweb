@@ -4,7 +4,7 @@
     <div class="column is-8">
       <article class="message is-small is-info">
         <div class="message-body">
-          We plan to open co-work in our Progressbar hackerspace in upcoming weeks. Co-work system is in development and will be soon available for closed testing. Before it's production-ready, you can subscribe to the queue and we will keep you updated.
+          We plan to open co-work in our Progressbar hackerspace in upcoming weeks. Co-work system is in development and will be soon available for closed testing.
         </div>
       </article>
     </div>
@@ -249,6 +249,7 @@
   <div class="columns is-mobile">
     <div class="column is-narrow">
       <a class="button is-medium is-outlined is-white" href="#" disabled>See the workspace (VR)</a>
+      <a href="/#/order" class="button is-medium is-outlined is-black">Order</a>
     </div>
   </div>
 </div>
