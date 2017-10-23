@@ -19,8 +19,8 @@
                 <a v-if="this.auth.gotOrderToday" @click="unlockDoors()" class="button is-primary is-medium is-outlined">{{ this.button.unlockdoor }}</a>
           </div>
           <div class="column is-narrow">
-                <a v-if="!this.auth.gotOrderToday" href="http://hq-bar.netlify.com" class="button is-primary is-medium is-outlined" disabled>Open Black 🚪 </a>
-                <a v-if="this.auth.gotOrderToday" href="http://hq-bar.netlify.com" class="button is-primary is-medium is-outlined">Open Black 🚪 </a>
+                <a v-if="!this.auth.gotOrderToday" @click="unlockBlackDoors()" class="button is-primary is-medium is-outlined" disabled>{{ this.button.blackdoor }}</a>
+                <a v-if="this.auth.gotOrderToday" @click="unlockBlackDoors()" class="button is-primary is-medium is-outlined">{{ this.button.blackdoor }}</a>
           </div>
     </div>
     <div class="columns">
@@ -188,7 +188,8 @@ export default {
         welcome: '',
         order: '📙 Book',
         credit: 0,
-        unlockdoor: 'Unlock 🚪 doors'
+        unlockdoor: 'White 🚪 doors',
+        blackdoor: 'Black 🚪 doors'
       },
       auth: {
         user: '',
@@ -315,15 +316,19 @@ export default {
         console.log(e)
       })
     },
-    openBlackDoors() {
+    unlockBlackDoors(authToken) {
       axios({
         method: 'get',
-        url: 'http://door.bar/outsidedoor',
+        url: this.$api.base + this.$api.openBlackDoor,
+        params: {
+          authToken: this.auth.authToken
+        }
       })
       .then(response => {
         console.log(response)
+        this.button.blackdoor = response.data.code
       })
-      .catch(e => {
+      .catch (e => {
         console.log(e)
       })
     }

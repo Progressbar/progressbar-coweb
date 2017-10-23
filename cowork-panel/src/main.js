@@ -15,8 +15,10 @@ Vue.prototype.$api = {
   orderCowork: 'orderCowork/',
   login: 'login/',
   logmein: 'logmein/',
-  openDoor: 'openDoor/'
+  openDoor: 'openDoor/',
+  openBlackDoor: 'openBlackDoor/'
 }
+
 if (process.env.NODE_ENV === 'development') {
   Vue.prototype.$api.base = 'http://localhost:8170/yangwao/progressbar-coweb/'
 }
