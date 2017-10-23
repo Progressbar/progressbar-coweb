@@ -9,7 +9,12 @@
       </article>
     </div>
   </div>
-  <div class="columns">
+  <div v-if="this.isUser" class="columns">
+    <div class="column">
+        <a href="./#/order" class="button is-warning is-medium is-outlined">{{ this.button.order }}</a>
+    </div>
+  </div>
+  <div v-if="!this.isUser" class="columns">
         <div class="column is-narrow">
               <div class="control has-icons-left">
                     <input v-model="subEmail" class="input is-medium is-white" type="email" placeholder="Enter your email">
@@ -274,10 +279,12 @@ export default {
       button: {
         subscribe: 'Subscribe to the queue',
         verify: '__',
-        login: 'Send login link'
+        login: 'Send login link',
+        order: 'Go to Dashboard'
       },
       daysBooked: '',
       subEmail: '',
+      isUser: false,
       config: {
         baseWebUrl: 'https://progressbar-cowork.netlify.com/',
         orderPrices: {
@@ -304,57 +311,63 @@ export default {
   },
   created() {
     this.getSubscribers()
+    this.alreadyUser()
   },
   methods: {
-    getSubscribers() {
-        axios({
-            method: 'get',
-            url: this.$api.base + this.$api.subscribers
-          })
-          .then(response => {
-            console.log(response)
-            this.seats = response.data.seats
-            this.orderSum = response.data.orderSum
-            this.daysBooked = response.data.daysBooked
-            this.config = response.data.config
-          })
-          .catch(e => {
-            console.log(e)
-          })
-      },
-      subscribeMe(email) {
-        axios({
-          method: 'get',
-          url: this.$api.base + this.$api.newSubscriber,
-          params: {
-            email
-          }
-        })
-        .then(response => {
-          console.log(response)
-          this.button.subscribe = response.data.code
-        })
-        .catch(e => {
-          console.log(e)
-        })
-      },
-      sendLoginLink(email) {
-        axios({
-          method: 'get',
-          url: this.$api.base + this.$api.login,
-          params: {
-            email
-          }
-        })
-        .then(response => {
-          console.log(response)
-          this.button.subscribe = response.data.code
-        })
-        .catch(e => {
-          console.log(e)
-        })
+    alreadyUser() {
+      if (this.$ls.get('user')) {
+        this.isUser = true
       }
+    },
+    getSubscribers() {
+      axios({
+        method: 'get',
+        url: this.$api.base + this.$api.subscribers
+      })
+      .then(response => {
+        console.log(response)
+        this.seats = response.data.seats
+        this.orderSum = response.data.orderSum
+        this.daysBooked = response.data.daysBooked
+        this.config = response.data.config
+      })
+      .catch(e => {
+        console.log(e)
+      })
+    },
+    subscribeMe(email) {
+      axios({
+        method: 'get',
+        url: this.$api.base + this.$api.newSubscriber,
+        params: {
+          email
+        }
+      })
+      .then(response => {
+        console.log(response)
+        this.button.subscribe = response.data.code
+      })
+      .catch(e => {
+        console.log(e)
+      })
+    },
+    sendLoginLink(email) {
+      axios({
+        method: 'get',
+        url: this.$api.base + this.$api.login,
+        params: {
+          email
+        }
+      })
+      .then(response => {
+        console.log(response)
+        this.button.subscribe = response.data.code
+      })
+      .catch(e => {
+        console.log(e)
+      })
     }
+  }
 }
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
