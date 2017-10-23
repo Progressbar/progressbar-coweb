@@ -13,6 +13,7 @@
   "dependencies": {
     "firebase-admin": "^5.4.2",
     "nodemon": "^1.12.1",
-    "onoff": "^1.1.8"
+    "onoff": "^1.1.8",
+    "r2": "^2.0.0"
   }
 }
