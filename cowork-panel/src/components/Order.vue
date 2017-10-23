@@ -13,24 +13,26 @@
                 <a href="./#/credit" class="button is-light is-outlined">⛽ ⬆️ credit</a>
           </div>
     </div>
-    <div class="columns is-mobile">
+    <div v-if="this.auth.gotOrderToday" class="columns is-mobile">
           <div class="column is-narrow">
-                <a v-if="!this.auth.gotOrderToday" @click="unlockDoors()" class="button is-primary is-medium is-outlined" disabled>{{ this.button.unlockdoor }}</a>
-                <a v-if="this.auth.gotOrderToday" @click="unlockDoors()" class="button is-primary is-medium is-outlined">{{ this.button.unlockdoor }}</a>
+                <a @click="unlockDoors()" class="button is-primary is-medium is-outlined">{{ this.button.unlockdoor }}</a>
           </div>
           <div class="column is-narrow">
-                <a v-if="!this.auth.gotOrderToday" @click="unlockBlackDoors()" class="button is-primary is-medium is-outlined" disabled>{{ this.button.blackdoor }}</a>
-                <a v-if="this.auth.gotOrderToday" @click="unlockBlackDoors()" class="button is-primary is-medium is-outlined">{{ this.button.blackdoor }}</a>
+                <a @click="unlockBlackDoors()" class="button is-primary is-medium is-outlined">{{ this.button.blackdoor }}</a>
           </div>
     </div>
-    <div class="columns">
+    <div v-if="this.auth.gotCredit" class="columns">
           <div class="column is-narrow">
             <div class="select is-primary">
-              <select @change="orderCalculate()" v-model="orderCalc.program">
+              <!-- <select @change="orderCalculate()" v-model="orderCalc.program" >
                 <option disabled value="">Choose program</option>
                 <option v-for="(item, index) in config.orderPrices" v-bind:item="item" v-bind:index="index">
                   {{ index }}
                 </option>
+              </select> -->
+              <select @change="orderCalculate()" v-model="orderCalc.program" >
+                <option disabled value="">Choose program</option>
+                <option value="day">Daypass</option>
               </select>
             </div>
           </div>
@@ -38,10 +40,9 @@
             <input @change="orderCalculate()" v-model="orderCalc.date" type="date"/>
           </div>
     </div>
-    <div class="columns is-mobile">
+    <div v-if="this.auth.gotCredit" class="columns is-mobile">
         <div class="column is-narrow">
-              <a v-if="!this.auth.gotCredit" @click="orderCowork()" class="button is-success is-medium is-outlined" disabled>{{ this.button.order }}</a>
-              <a v-if="this.auth.gotCredit" @click="orderCowork()" class="button is-success is-medium is-outlined">{{ this.button.order }}</a>
+              <a @click="orderCowork()" class="button is-success is-medium is-outlined">{{ this.button.order }}</a>
               <a class="button is-success is-medium is-outlined" disabled>{{ 'Price ' + this.orderCalc.total + ' €' }}</a>
         </div>
     </div>
