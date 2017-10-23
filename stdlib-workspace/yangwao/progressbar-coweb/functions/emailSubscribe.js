@@ -48,81 +48,81 @@ module.exports = (email = 'non', context, callback) => {
     })
   }
 
-  if (!isEmail(email)) {
+  if (!isEmail(email) || email.length <= 10) {
     callback(null, {
-      error: 'not an email',
       code: 'Not an email'
     })
   }
 
-  let normalizedEmail = normalizeEmail(email)
-  const hash = uuidv4()
-  const mailmsg = {
-    from: `Progressbar Cowork noreply <no-reply@${process.env.mailgun_domain}>`,
-    to: normalizedEmail,
-    subject: 'Progressbar Cowork Email Verification',
-    text:
-    `Hello,
-looks like somebody tried use your email as registration mail.
+  if (isEmail(email) && email.length > 10) {
+    let normalizedEmail = normalizeEmail(email)
+    const hash = uuidv4()
+    const mailmsg = {
+      from: `Progressbar Cowork noreply <no-reply@${process.env.mailgun_domain}>`,
+      to: normalizedEmail,
+      subject: 'Progressbar Cowork Email Verification',
+      text:
+`Hello, looks like somebody tried use your email as registration mail.
 If it was you, please confirm your email address ${normalizedEmail}
 by clicking on link ${config.api.baseWebUrl}#/email/${hash}
 If you did not request this email, please ignore it.
 Humanoid from ${config.api.baseWebUrl}`
+    }
+
+    let newSub = {
+      [uuidv4()]: {
+        email: normalizedEmail,
+        createdAt: Date.now(),
+        hash
+      }
+    }
+
+    let emails = []
+    subscribersRef.once('value', function (data) {
+      let dataRef = data.val()
+      for (let uid of Object.keys(dataRef)) {
+        emails.push(dataRef[uid].email)
+      }
+
+      let seenEmail = emails.find(x => x === normalizedEmail)
+
+      if (seenEmail === normalizedEmail) {
+        callback(null, {
+          newSubscriberEmail: normalizedEmail,
+          error: 'already requested mail',
+          code: 'Please confirm your email'
+        })
+      }
+
+      if (seenEmail === undefined) {
+        subscribersRef.update(newSub, function (err) {
+          if (err) {
+            console.log('err', err)
+            callback(null, {
+              newSubscriberEmail: normalizedEmail,
+              at: 1,
+              code: 'Error occured, try later'
+            })
+          } else {
+            mailgun.messages().send(mailmsg, function (error, body) {
+              if (error) {
+                console.log('mailgunErr', error)
+                callback(null, {
+                  newSubscriberEmail: normalizedEmail,
+                  at: 2,
+                  code: 'Error occured, try later'
+                })
+              }
+              if (!error) {
+                callback(null, {
+                  newSubscriberEmail: normalizedEmail,
+                  code: 'Email has been sent'
+                })
+              }
+            })
+          }
+        })
+      }
+    })
   }
-
-  let newSub = {
-    [uuidv4()]: {
-      email: normalizedEmail,
-      createdAt: Date.now(),
-      hash
-    }
-  }
-
-  let emails = []
-  subscribersRef.once('value', function (data) {
-    let dataRef = data.val()
-    for (let uid of Object.keys(dataRef)) {
-      emails.push(dataRef[uid].email)
-    }
-
-    let seenEmail = emails.find(x => x === normalizedEmail)
-
-    if (seenEmail === normalizedEmail) {
-      callback(null, {
-        newSubscriberEmail: normalizedEmail,
-        error: 'already requested mail',
-        code: 'Please confirm your email'
-      })
-    }
-
-    if (seenEmail === undefined) {
-      subscribersRef.update(newSub, function (err) {
-        if (err) {
-          console.log('err', err)
-          callback(null, {
-            newSubscriberEmail: normalizedEmail,
-            at: 1,
-            code: 'Error occured, try later'
-          })
-        } else {
-          mailgun.messages().send(mailmsg, function (error, body) {
-            if (error) {
-              console.log('mailgunErr', error)
-              callback(null, {
-                newSubscriberEmail: normalizedEmail,
-                at: 2,
-                code: 'Error occured, try later'
-              })
-            }
-            if (!error) {
-              callback(null, {
-                newSubscriberEmail: normalizedEmail,
-                code: 'Email has been sent'
-              })
-            }
-          })
-        }
-      })
-    }
-  })
 }
