@@ -6,7 +6,7 @@
  */
 module.exports = (conf = 'non', context, callback) => {
   const config = {
-    baseWebUrl: 'https://progressbar-cowork.netlify.com/',
+    baseWebUrl: 'https://cowork.progressbar.sk/',
     orderPrices: {
       day: 4,
       month: 80,
