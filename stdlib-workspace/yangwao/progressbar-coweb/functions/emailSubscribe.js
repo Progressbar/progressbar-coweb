@@ -13,6 +13,7 @@ module.exports = (email = 'non', context, callback) => {
   const uuidv4 = require('uuid/v4')
   const normalizeEmail = require('validator/lib/normalizeEmail')
   const isEmail = require('validator/lib/isEmail')
+  const blacklist = require('validator/lib/blacklist')
   const mailgun = require('mailgun-js')({
     apiKey: process.env.mailgun_apiKey,
     domain: process.env.mailgun_domain
@@ -47,6 +48,8 @@ module.exports = (email = 'non', context, callback) => {
       code: 'non'
     })
   }
+
+  email = blacklist(email, '\',/')
 
   if (!isEmail(email) || email.length <= 10) {
     callback(null, {
