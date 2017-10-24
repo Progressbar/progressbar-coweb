@@ -37,7 +37,7 @@
             </div>
           </div>
           <div class="column is-narrow">
-            <input @change="orderCalculate()" v-model="orderCalc.date" type="date"/>
+            <flat-pickr @change="orderCalculate()" v-model="orderCalcDate" placeholder="Select date"></flat-pickr>
           </div>
     </div>
     <div v-if="this.auth.gotCredit" class="columns is-mobile">
@@ -179,9 +179,15 @@
 
 <script>
 import axios from 'axios'
+import flatPickr from 'vue-flatpickr-component'
+import 'flatpickr/dist/flatpickr.css'
+import 'flatpickr/dist/themes/dark.css'
 
 export default {
   name: 'order',
+  components: {
+      flatPickr
+  },
   data() {
     return {
       button: {
@@ -226,12 +232,21 @@ export default {
         date: '',
         dateTimestamp: '',
         total: 0
-      }
+      },
+      orderCalcDate: ''
     }
   },
   created() {
     this.enableOrder()
     this.getSubscribers()
+  },
+  watch: {
+    orderCalcDate: function() {
+      this.orderCalc.dateTimestamp = new Date(this.orderCalcDate).getTime()
+      if (this.orderCalc.program === 'day') {
+        this.orderCalc.total = this.config.orderPrices.day
+      }
+    }
   },
   methods: {
     enableOrder(authToken) {
