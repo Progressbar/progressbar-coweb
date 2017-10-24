@@ -286,7 +286,7 @@ export default {
       subEmail: '',
       isUser: false,
       config: {
-        baseWebUrl: 'https://progressbar-cowork.netlify.com/',
+        baseWebUrl: 'https://cowork.progressbar.sk/',
         orderPrices: {
           day: 6,
           month: 80,

@@ -13,7 +13,7 @@ const mailgun = require('mailgun-js')({
 })
 
 const config = {
-  baseWebUrl: "https://progressbar-cowork.netlify.com/",
+  baseWebUrl: "https://cowork.progressbar.sk/",
   baseFaasUrl: "https://us-central1-coweb-bc478.cloudfunctions.net/"
 }
 const firebase = require('firebase-admin')

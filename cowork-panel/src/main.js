@@ -7,7 +7,7 @@ import router from './router'
 Vue.config.productionTip = false
 
 Vue.prototype.$api = {
-  baseWebUrl: 'https://progressbar-cowork.netlify.com/',
+  baseWebUrl: 'https://cowork.progressbar.sk/',
   subscribers: 'status/',
   newSubscriber: 'emailSubscribe/',
   verify: 'verify/',

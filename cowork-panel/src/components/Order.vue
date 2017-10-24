@@ -200,7 +200,7 @@ export default {
         credit: 0
       },
       config: {
-        baseWebUrl: 'https://progressbar-cowork.netlify.com/',
+        baseWebUrl: 'https://cowork.progressbar.sk/',
         orderPrices: {
           day: 6,
           month: 80,

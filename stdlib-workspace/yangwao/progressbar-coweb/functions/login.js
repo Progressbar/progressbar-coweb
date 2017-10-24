@@ -7,7 +7,7 @@
 module.exports = (email = 'non', context, callback) => {
   const config = {
     api: {
-      baseWebUrl: 'https://progressbar-cowork.netlify.com/'
+      baseWebUrl: 'https://cowork.progressbar.sk/'
     }
   }
   const isEmail = require('validator/lib/isEmail')
