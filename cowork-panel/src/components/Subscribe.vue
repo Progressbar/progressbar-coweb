@@ -1,7 +1,7 @@
 <template>
 <div class="subscribe">
-  <div class="columns is-mobile">
-    <div class="column is-8">
+  <div class="columns">
+    <div class="column is-4">
       <article class="message is-small is-info">
         <div class="message-body">
           We plan to open co-work in our Progressbar hackerspace in upcoming weeks. Co-work system is in development and will be soon available for closed testing.
