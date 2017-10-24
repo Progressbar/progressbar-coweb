@@ -35,6 +35,15 @@
                 </article>
           </div>
     </div>
+    <div class="columns">
+      <div class="column">
+        <article class="message is-info is-small">
+          <div class="message-body">
+            If you just made payment, let me know via messenger at <a href="m.me/matej.wao.nemcek">m.me/matej.wao.nemcek</a> and I can just pair it and credit you in system. In future this will be automated, no-humans.
+          </div>
+        </article>
+      </div>
+    </div>
 </div>
 </template>
 
