@@ -277,7 +277,7 @@ export default {
         email: ''
       },
       button: {
-        subscribe: 'Subscribe to the queue',
+        subscribe: 'Register for cowork',
         verify: '__',
         login: 'Send login link',
         order: 'Go to Dashboard'
