@@ -1,6 +1,6 @@
 <template>
 <div class="subscribe">
-  <div class="columns">
+  <!-- <div class="columns">
     <div class="column is-4">
       <article class="message is-small is-info">
         <div class="message-body">
@@ -8,7 +8,7 @@
         </div>
       </article>
     </div>
-  </div>
+  </div> -->
   <div v-if="this.isUser" class="columns">
     <div class="column">
         <a href="./#/order" class="button is-warning is-medium is-outlined">{{ this.button.order }}</a>
@@ -31,11 +31,16 @@
         </div>
   </div>
   <div class="columns">
+    <div class="column">
+      <h1 id="blackh1">cowork Bratislava</h1>
+    </div>
+  </div>
+  <div class="columns">
     <div class="column is-narrow">
       <div class="card">
         <header class="card-header">
           <p class="card-header-title">
-            In 🌌  space we have
+            In 🌌 our space we have
           </p>
         </header>
         <div class="card-content">
@@ -375,4 +380,7 @@ export default {
 /*input {
   background-color: #000
 }*/
+h1#blackh1 {
+  color:black;
+}
 </style>
