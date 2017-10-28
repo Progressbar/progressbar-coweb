@@ -83,7 +83,9 @@ export default {
   },
   methods: {
     getPaymentInfo() {
-      this.button.fiat.paymentReference = this.$ls.get('user').slice(-12)
+      if (this.$ls.get('user')) {
+        this.button.fiat.paymentReference = this.$ls.get('user').slice(-12)
+      }
     }
   }
 }
