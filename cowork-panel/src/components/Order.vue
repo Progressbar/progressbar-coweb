@@ -1,6 +1,6 @@
 <template>
 <div class="order">
-    <div class="columns is-centered">
+    <div class="columns is-mobile is-centered">
           <div class="column is-narrow">
                 <a class="button is-light is-outlined" disabled>👋 {{ this.button.welcome }}</a>
           </div>
@@ -42,10 +42,10 @@
     </div>
     <div v-if="this.auth.gotOrderToday" class="columns is-mobile is-centered">
       <div class="column is-narrow">
-        <a @click="unlockDoors()" class="button is-primary is-outlined">{{ this.button.unlockdoor }}</a>
+        <a @click="unlockBlackDoors()" class="button is-primary is-outlined">{{ this.button.blackdoor }}</a>
       </div>
       <div class="column is-narrow">
-        <a @click="unlockBlackDoors()" class="button is-primary is-outlined">{{ this.button.blackdoor }}</a>
+        <a @click="unlockDoors()" class="button is-primary is-outlined">{{ this.button.unlockdoor }}</a>
       </div>
     </div>
 
