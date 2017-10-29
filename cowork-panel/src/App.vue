@@ -1,8 +1,8 @@
 <template>
 <div id="app">
       <header>
-            <div class="columns">
-                  <div class="column">
+            <div class="columns is-centered">
+                  <div class="column is-narrow">
                         <div class="crop">
                               <a href="https://progressbar.sk">
                                     <img src="./assets/progressbar-logo.svg" alt="progressbar logo">

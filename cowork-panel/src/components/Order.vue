@@ -1,11 +1,11 @@
 <template>
 <div class="order">
-    <div class="columns">
+    <div class="columns is-centered">
           <div class="column is-narrow">
                 <a class="button is-light is-outlined" disabled>👋 {{ this.button.welcome }}</a>
           </div>
     </div>
-    <div class="columns is-mobile">
+    <div class="columns is-mobile is-centered">
           <div class="column is-narrow">
                 <a class="button is-light is-outlined" disabled>💳 Credit {{ this.button.credit }}</a>
           </div>
@@ -13,15 +13,7 @@
                 <a href="./#/credit" class="button is-light is-outlined">⛽ ⬆️ credit</a>
           </div>
     </div>
-    <div v-if="this.auth.gotOrderToday" class="columns is-mobile">
-          <div class="column is-narrow">
-                <a @click="unlockDoors()" class="button is-primary is-outlined">{{ this.button.unlockdoor }}</a>
-          </div>
-          <div class="column is-narrow">
-                <a @click="unlockBlackDoors()" class="button is-primary is-outlined">{{ this.button.blackdoor }}</a>
-          </div>
-    </div>
-    <div v-if="this.auth.gotCredit" class="columns">
+    <div v-if="this.auth.gotCredit" class="columns is-centered">
           <div class="column is-narrow">
             <div class="select is-primary">
               <!-- <select @change="orderCalculate()" v-model="orderCalc.program" >
@@ -40,14 +32,24 @@
             <flat-pickr @change="orderCalculate()" v-model="orderCalcDate" placeholder="Select date"></flat-pickr>
           </div>
     </div>
-    <div v-if="this.auth.gotCredit" class="columns is-mobile">
+    <div v-if="this.auth.gotCredit" class="columns is-mobile is-centered">
         <div class="column is-narrow">
-              <a @click="orderCowork()" class="button is-success is-medium is-outlined">{{ this.button.order }}</a>
-              <a class="button is-success is-medium is-outlined" disabled>{{ 'Price ' + this.orderCalc.total + ' €' }}</a>
+          <a @click="orderCowork()" class="button is-success is-outlined">{{ this.button.order }}</a>
+        </div>
+        <div class="column is-narrow">
+          <a class="button is-success is-outlined" disabled>{{ 'Price ' + this.orderCalc.total + ' €' }}</a>
         </div>
     </div>
+    <div v-if="this.auth.gotOrderToday" class="columns is-mobile is-centered">
+      <div class="column is-narrow">
+        <a @click="unlockDoors()" class="button is-primary is-outlined">{{ this.button.unlockdoor }}</a>
+      </div>
+      <div class="column is-narrow">
+        <a @click="unlockBlackDoors()" class="button is-primary is-outlined">{{ this.button.blackdoor }}</a>
+      </div>
+    </div>
 
-    <div class="columns">
+    <div class="columns is-centered">
       <div class="column is-narrow">
         <div class="card">
           <header class="card-header">
@@ -130,7 +132,7 @@
         </div>
       </div>
     </div>
-    <div class="columns">
+    <div class="columns is-centered">
       <div class="column is-narrow">
         <div class="card">
           <header class="card-header">
