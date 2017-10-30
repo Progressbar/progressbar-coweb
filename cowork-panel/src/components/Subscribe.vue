@@ -64,6 +64,9 @@
               <li>
                 Place to 🗣📞 (@Foyer)
               </li>
+              <li>
+                Coding 👩🏽‍💻 girls have 50% discount
+              </li>
             </ul>
             <br>
           </div>
