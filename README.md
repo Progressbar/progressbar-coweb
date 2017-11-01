@@ -1,8 +1,8 @@
 # some glitchy rgb shift webie for new shiny site
 
-- [ ] register to https://placestowork.net/
-- [ ] coworker.com
+- [x] register to https://placestowork.net/
+- [x] workfrom.co
+- [x] coworker.com
+- [x] https://nomadlist.com/bratislava-slovakia
 - [ ] sharedesk.com
 - [ ] sharedesk.net
-- [ ] workfrom.co
-- [ ] https://nomadlist.com/bratislava-slovakia
