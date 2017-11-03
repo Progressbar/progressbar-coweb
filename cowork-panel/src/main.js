@@ -8,6 +8,7 @@ Vue.config.productionTip = false
 
 Vue.prototype.$api = {
   baseWebUrl: 'https://cowork.progressbar.sk/',
+  pubConfig: 'pubConfig/',
   subscribers: 'status/',
   newSubscriber: 'emailSubscribe/',
   verify: 'verify/',

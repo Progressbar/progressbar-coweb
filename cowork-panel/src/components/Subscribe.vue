@@ -249,16 +249,16 @@
   </div>
   <div class="columns is-centered">
     <div class="column is-narrow">
-        <a class="button is-outlined is-info" disabled>{{this.seats.subscribers}} 📩👨‍💻⚙</a>
+      <a class="button is-outlined is-dark" disabled>{{this.seats.capacity}} 💺 capacity</a>
     </div>
     <div class="column is-narrow">
-        <a class="button is-outlined is-info" disabled>{{this.daysBooked}} 📅 👨‍💻💰 </a>
+        <a @click="getSubscribers()" class="button is-outlined is-dark">{{this.seats.subscribers}} 📩👨‍💻⚙</a>
     </div>
     <div class="column is-narrow">
-        <a class="button is-outlined is-info" disabled>{{this.credited}} 👨‍💻💰 </a>
+        <a class="button is-outlined is-dark" disabled>{{this.daysBooked}} 📅 👨‍💻💰 </a>
     </div>
     <div class="column is-narrow">
-        <a class="button is-outlined is-info" disabled>{{this.seats.capacity}} 💺 capacity</a>
+        <a class="button is-outlined is-dark" disabled>{{this.credited}} 👨‍💻💰 </a>
     </div>
   </div>
   <div class="columns is-centered">
@@ -320,14 +320,29 @@ export default {
     }
   },
   created() {
-    this.getSubscribers()
     this.alreadyUser()
+    this.getConfig()
+    // this.getSubscribers()
   },
   methods: {
     alreadyUser() {
       if (this.$ls.get('user')) {
         this.isUser = true
       }
+    },
+    getConfig() {
+      axios({
+        method: 'get',
+        url: this.$api.base + this.$api.pubConfig
+      })
+      .then(response => {
+        console.log(response)
+        this.config = response.data
+        this.seats.capacity = response.data.seatCapacity
+      })
+      .catch(e => {
+        console.log(e)
+      })
     },
     getSubscribers() {
       axios({
