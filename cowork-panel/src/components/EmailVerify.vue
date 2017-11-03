@@ -1,15 +1,15 @@
 <template>
 <div class="emailVerification">
-      <div class="columns">
+      <div class="columns is-mobile is-centered">
             <div v-if="!this.confirmed" class="column is-narrow">
                 <a class="button is-light is-small is-outlined" disabled>{{ $route.params.verificationCode }}</a>
             </div>
             <div class="column is-narrow">
-                <a v-if="!this.confirmed" @click="confirmMail($route.params.verificationCode)" class="button is-light is-large is-outlined">{{ this.button.verify }}</a>
-                <a v-if="this.confirmed" class="button is-light is-medium is-outlined" disabled>{{ this.button.verify }}</a>
+                <a v-if="!this.confirmed" @click="confirmMail($route.params.verificationCode)" class="button is-warning is-large is-outlined">{{ this.button.verify }}</a>
+                <a v-if="this.confirmed" class="button is-warning is-medium is-outlined" disabled>{{ this.button.verify }}</a>
             </div>
             <div v-if="this.confirmed" class="column is-narrow">
-                <router-link to="../order"><a class="button is-light is-large is-outlined">{{ this.button.continue }}</a></router-link>
+                <router-link to="../order"><a class="button is-warning is-medium is-outlined">{{ this.button.continue }}</a></router-link>
             </div>
       </div>
 </div>
