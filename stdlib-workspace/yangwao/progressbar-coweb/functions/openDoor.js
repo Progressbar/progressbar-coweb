@@ -84,7 +84,7 @@ module.exports = (authToken = 'non', context, callback) => {
 
                 if (!errorDoor) {
                   callback(null, {
-                    code: 'Smash the level'
+                    code: 'Smash the lever'
                   })
                 }
               })

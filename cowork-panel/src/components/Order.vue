@@ -240,7 +240,7 @@ export default {
   },
   created() {
     this.enableOrder()
-    this.getSubscribers()
+    // this.getSubscribers()
   },
   watch: {
     orderCalcDate: function() {
@@ -267,6 +267,7 @@ export default {
           this.button.credit = response.data.credit
           this.auth.credit = response.data.credit
           this.auth.gotOrderToday = response.data.gotOrderToday
+          this.config = response.data.config
           if (response.data.credit > 0) {
             this.auth.gotCredit = true
           }
