@@ -39,7 +39,7 @@ export default {
       button: {
         logmein: 'Log me in',
         login: 'Send login link',
-        continue: 'Continue to Order'
+        continue: 'Continue to Dashboard'
       },
       loginEmail: '',
       logged: false

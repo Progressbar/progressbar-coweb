@@ -6,12 +6,20 @@
           </div>
     </div>
     <div class="columns is-mobile is-centered">
-          <div class="column is-narrow">
-                <a class="button is-light is-outlined" disabled>💳 Credit {{ this.button.credit }}</a>
-          </div>
-          <div class="column is-narrow">
-                <a href="./#/credit" class="button is-light is-outlined">⛽ ⬆️ credit</a>
-          </div>
+      <div class="column is-narrow">
+        <a class="button is-light is-outlined" disabled>💳 Credit {{ this.button.credit }}</a>
+      </div>
+      <div class="column is-narrow">
+        <a href="./#/credit" class="button is-light is-outlined">⛽ ⬆️ credit</a>
+      </div>
+    </div>
+    <div v-if="this.auth.gotOrderToday" class="columns is-mobile is-centered">
+      <div class="column is-narrow">
+        <a @click="unlockBlackDoors()" class="button is-primary is-outlined">{{ this.button.blackdoor }}</a>
+      </div>
+      <div class="column is-narrow">
+        <a @click="unlockDoors()" class="button is-primary is-outlined">{{ this.button.unlockdoor }}</a>
+      </div>
     </div>
     <div v-if="this.auth.gotCredit" class="columns is-centered">
           <div class="column is-narrow">
@@ -39,14 +47,6 @@
         <div class="column is-narrow">
           <a class="button is-success is-outlined" disabled>{{ 'Price ' + this.orderCalc.total + ' €' }}</a>
         </div>
-    </div>
-    <div v-if="this.auth.gotOrderToday" class="columns is-mobile is-centered">
-      <div class="column is-narrow">
-        <a @click="unlockBlackDoors()" class="button is-primary is-outlined">{{ this.button.blackdoor }}</a>
-      </div>
-      <div class="column is-narrow">
-        <a @click="unlockDoors()" class="button is-primary is-outlined">{{ this.button.unlockdoor }}</a>
-      </div>
     </div>
 
     <div class="columns is-centered">

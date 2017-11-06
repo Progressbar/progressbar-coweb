@@ -26,7 +26,7 @@ export default {
       button: {
         subscribe: 'Subscribe to the queue',
         verify: 'Confirm my email',
-        continue:'Continue to Order'
+        continue:'Continue to Dashboard'
       },
       confirmed: false
     }
