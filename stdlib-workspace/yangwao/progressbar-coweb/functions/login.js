@@ -84,7 +84,7 @@ module.exports = (email = 'non', context, callback) => {
               from: `Progressbar Cowork noreply <no-reply@${process.env.mailgun_domain}>`,
               to: normalizedEmail,
               subject: 'Progressbar Cowork Email Login',
-              text: `Someone just requested login with this email ${normalizedEmail}, if it was you, click here ${config.api.baseWebUrl}#/login/${authSub[1].loginCode}`
+              text: `Someone just requested login with this email ${normalizedEmail}, if it was you, click on link to login ${config.api.baseWebUrl}#/login/${authSub[1].loginCode}`
             }
             console.log(mailmsg)
             mailgun.messages().send(mailmsg, function (error, body) {

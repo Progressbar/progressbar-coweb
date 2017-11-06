@@ -2,15 +2,15 @@
 <div class="order">
     <div class="columns is-mobile is-centered">
           <div class="column is-narrow">
-                <a class="button is-light is-outlined" disabled>👋 {{ this.button.welcome }}</a>
+                <a class="button is-white is-outlined" disabled>👋 {{ this.button.welcome }}</a>
           </div>
     </div>
     <div class="columns is-mobile is-centered">
       <div class="column is-narrow">
-        <a class="button is-light is-outlined" disabled>💳 Credit {{ this.button.credit }}</a>
+        <a class="button is-white is-outlined" disabled>💳 Credit {{ this.button.credit }}</a>
       </div>
       <div class="column is-narrow">
-        <a href="./#/credit" class="button is-light is-outlined">⛽ ⬆️ credit</a>
+        <a href="./#/credit" class="button is-white is-outlined">Fuel ⛽ ⬆️ credit</a>
       </div>
     </div>
     <div v-if="this.auth.gotOrderToday" class="columns is-mobile is-centered">
@@ -41,14 +41,13 @@
           </div>
     </div>
     <div v-if="this.auth.gotCredit" class="columns is-mobile is-centered">
-        <div class="column is-narrow">
-          <a @click="orderCowork()" class="button is-success is-outlined">{{ this.button.order }}</a>
-        </div>
-        <div class="column is-narrow">
-          <a class="button is-success is-outlined" disabled>{{ 'Price ' + this.orderCalc.total + ' €' }}</a>
-        </div>
+      <div class="column is-narrow">
+        <a class="button is-success is-outlined" disabled>{{ 'Price ' + this.orderCalc.total + ' €' }}</a>
+      </div>
+      <div class="column is-narrow">
+        <a @click="orderCowork()" class="button is-success is-outlined">{{ this.button.order }}</a>
+      </div>
     </div>
-
     <div class="columns is-centered">
       <div class="column is-narrow">
         <div class="card">
@@ -194,7 +193,7 @@ export default {
     return {
       button: {
         welcome: '',
-        order: '📙 Book',
+        order: '📅📙 Book',
         credit: 0,
         unlockdoor: 'White 🚪 doors',
         blackdoor: 'Black 🚪 doors'
