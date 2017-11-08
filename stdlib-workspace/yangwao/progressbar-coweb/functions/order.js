@@ -67,7 +67,7 @@ module.exports = (authToken = 'non', context, callback) => {
 
           if (authSub) {
             callback(null, {
-              code: 'Welcome ' + authSub[1].email,
+              code: authSub[1].email,
               credit: authSub[1].credit,
               gotOrderToday,
               config
