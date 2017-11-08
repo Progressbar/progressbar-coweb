@@ -1,14 +1,5 @@
 <template>
 <div class="subscribe">
-  <!-- <div class="columns">
-    <div class="column is-4">
-      <article class="message is-small is-info">
-        <div class="message-body">
-          We plan to open co-work in our Progressbar hackerspace in upcoming weeks. Co-work system is in development and will be soon available for closed testing.
-        </div>
-      </article>
-    </div>
-  </div> -->
   <div v-if="this.isUser" class="columns is-mobile is-centered">
     <div class="column is-narrow">
         <a href="./#/order" class="button is-warning is-large is-outlined">{{ this.button.order }}</a>
@@ -30,8 +21,8 @@
           <a v-if="!this.config.coworkLogin" @click="sendLoginLink(subEmail)" class="button is-primary is-medium is-outlined" disabled>{{ this.button.login }}</a>
         </div>
   </div>
-  <div class="columns">
-    <div class="column">
+  <div class="columns is-centered">
+    <div class="column is-narrow">
       <h1 id="blackh1">cowork Bratislava</h1>
     </div>
   </div>
@@ -67,6 +58,9 @@
               <li>
                 Coding 👩🏽‍💻 girls have 50% discount
               </li>
+              <li>
+                Bitcoin & Litecoin accepted
+              </li>
             </ul>
             <br>
           </div>
@@ -83,6 +77,9 @@
         <div class="card-content">
           <div class="content">
             <ul>
+              <li>
+                🍵 Tea
+              </li>
               <li>
                 <a href="https://www.facebook.com/progressbar/photos/a.946997141982895.1073741833.140864112596206/1933082956707637/?type=3" title="drinks in fridge">🍹 Softdrinks ❄️ </a>
                 <ul>
@@ -323,7 +320,6 @@ export default {
   created() {
     this.alreadyUser()
     this.getConfig()
-    // this.getSubscribers()
   },
   methods: {
     alreadyUser() {
@@ -337,7 +333,7 @@ export default {
         url: this.$api.base + this.$api.pubConfig
       })
       .then(response => {
-        console.log(response)
+        // console.log(response)
         this.config = response.data
         this.seats.capacity = response.data.seatCapacity
       })
@@ -351,7 +347,7 @@ export default {
         url: this.$api.base + this.$api.subscribers
       })
       .then(response => {
-        console.log(response)
+        // console.log(response)
         this.seats = response.data.seats
         this.orderSum = response.data.orderSum
         this.daysBooked = response.data.daysBooked
@@ -370,7 +366,7 @@ export default {
         }
       })
       .then(response => {
-        console.log(response)
+        // console.log(response)
         this.button.subscribe = response.data.code
       })
       .catch(e => {
@@ -386,7 +382,7 @@ export default {
         }
       })
       .then(response => {
-        console.log(response)
+        // console.log(response)
         this.button.subscribe = response.data.code
       })
       .catch(e => {

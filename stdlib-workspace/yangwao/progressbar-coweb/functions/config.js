@@ -12,7 +12,7 @@ module.exports = (conf = 'non', context, callback) => {
       month: 80,
       fix: 160,
       locker: 10,
-      nonstop: 40
+      nonstop: 20
     },
     openHours: {
       monthPass: {
@@ -25,7 +25,7 @@ module.exports = (conf = 'non', context, callback) => {
       }
     },
     allowedPlans: ['day'],
-    seatCapacity: 9,
+    seatCapacity: 11,
     coworkLogin: true,
     coworkSubscribe: true
   }
