@@ -78,6 +78,9 @@
           <div class="content">
             <ul>
               <li>
+                ☕️ Specialty Coffee
+              </li>
+              <li>
                 🍵 Tea
               </li>
               <li>
@@ -95,9 +98,9 @@
                   <li>
                     Pragomošt
                   </li>
-                  <li>
+                  <!-- <li>
                     <s>Mate-mate</s>
-                  </li>
+                  </li> -->
                 </ul>
               </li>
               <li>
