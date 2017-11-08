@@ -71,7 +71,7 @@
       <div class="card">
         <header class="card-header">
           <p class="card-header-title">
-            Our ☕️ Kitchen
+            Our 🍳 Kitchen
           </p>
         </header>
         <div class="card-content">
