@@ -23,7 +23,7 @@
   </div>
   <div class="columns is-centered">
     <div class="column is-narrow">
-      <h1 id="blackh1">cowork Bratislava</h1>
+      <h1 id="blackh1">Tech Cowork Progressbar in Bratislava</h1>
     </div>
   </div>
   <div class="columns is-centered">
