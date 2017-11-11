@@ -5,7 +5,7 @@
                   <div class="column is-narrow">
                         <div class="crop">
                               <a href="https://progressbar.sk">
-                                    <img src="./assets/progressbar-logo.svg" alt="progressbar logo">
+                                    <img src="/static/img/progressbar-logo.svg" alt="progressbar logo">
                               </a>
                         </div>
                   </div>
