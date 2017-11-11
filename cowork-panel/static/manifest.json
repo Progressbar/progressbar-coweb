@@ -1,6 +1,6 @@
 {
-  "name": "cowork.Progressbar",
-  "short_name": "cowork.progressbar",
+  "name": "cowork.progressbar.sk",
+  "short_name": "cowork.progressbar.sk",
   "icons": [
     {
       "src": "/static/img/icons/progressbar-chrome-192x192.png",
