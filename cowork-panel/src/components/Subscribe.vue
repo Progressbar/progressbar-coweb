@@ -121,6 +121,11 @@
       <iframe src="https://www.google.com/maps/embed?pb=!1m0!4v1510323406618!6m8!1m7!1sCAoSLEFGMVFpcE9TMTVpQnZ0cDFvU0xYZzZudW9yTTI4MllDNjRwam9ydkEyTFZr!2m2!1d48.1442769!2d17.1065927!3f56.55411849549628!4f-28.5293173380876!5f0.4000000000000002" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
   </div>
+  <div class="columns">
+    <div class="column">
+      <img src="../assets/PANO_20171111_100131_web.jpeg" alt="progressbar cowork bratislava">
+    </div>
+  </div>
   <div class="columns is-centered">
     <div class="column is-narrow">
       <div class="card">
