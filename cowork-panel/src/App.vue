@@ -1,19 +1,19 @@
 <template>
 <div id="app">
-      <header>
-            <div class="columns is-centered">
-                  <div class="column is-narrow">
-                        <div class="crop">
-                              <a href="https://progressbar.sk">
-                                    <img src="/static/img/progressbar-logo.svg" alt="progressbar logo">
-                              </a>
-                        </div>
-                  </div>
-            </div>
-      </header>
-      <main>
-            <router-view></router-view>
-      </main>
+  <header>
+    <div class="columns is-centered">
+      <div class="column is-narrow">
+        <div class="crop">
+          <a href="https://progressbar.sk">
+            <img src="/static/img/progressbar-logo_sw.svg" alt="progressbar logo">
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <router-view></router-view>
+  </main>
 </div>
 </template>
 
