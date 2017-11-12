@@ -46,13 +46,13 @@ module.exports = (authToken = 'non', date = 'non', plan = 'non', context, callba
     let validPlan = config.allowedPlans.find(x => x === plan)
     if (isBadTimestamp) {
       callback(null, {
-        code: 'badass'
+        code: 'Badass'
       })
     }
 
     if (validPlan === undefined) {
       callback(null, {
-        code: 'disabled'
+        code: 'Disabled'
       })
     }
 

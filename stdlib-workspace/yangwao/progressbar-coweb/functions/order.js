@@ -61,7 +61,7 @@ module.exports = (authToken = 'non', context, callback) => {
           let now = Date.now()
           let today = new Date(Date.UTC(new Date(now).getUTCFullYear(), new Date(now).getUTCMonth(), new Date(now).getUTCDate())).getTime()
           let gotOrderToday = null
-          if (ordersBulk[today].find(x => x === authSub[0])) {
+          if (ordersBulk[today] && ordersBulk[today].find(x => x === authSub[0])) {
             gotOrderToday = true
           }
 
