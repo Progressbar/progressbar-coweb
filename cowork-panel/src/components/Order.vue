@@ -209,11 +209,11 @@ export default {
       config: {
         baseWebUrl: 'https://cowork.progressbar.sk/',
         orderPrices: {
-          day: 6,
+          day: 4,
           month: 80,
           fix: 160,
           locker: 10,
-          nonstop: 40
+          nonstop: 20
         },
         openHours: {
           monthPass: {
