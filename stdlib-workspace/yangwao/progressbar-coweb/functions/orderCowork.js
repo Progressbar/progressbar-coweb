@@ -97,7 +97,7 @@ module.exports = (authToken = 'non', date = 'non', plan = 'non', context, callba
 
               if (!isFull && ordersBulk[orderDate] && ordersBulk[orderDate].find(x => x === authSub[0])) {
                 callback(null, {
-                  code: 'Already got order for this date'
+                  code: 'You booked this date'
                 })
                 orderDay = null
               }
@@ -129,7 +129,7 @@ module.exports = (authToken = 'non', date = 'non', plan = 'non', context, callba
                     })
 
                     callback(null, {
-                      code: 'Order confirmed'
+                      code: 'Cowork booking confirmed'
                     })
                   }
                 })
