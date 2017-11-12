@@ -145,7 +145,7 @@
             <div class="content">
               <ul>
                 <li>
-                  10€ / month
+                  {{ this.config.orderPrices.locker}}€ / month
                 </li>
               </ul>
               <br>
@@ -166,7 +166,7 @@
             <div class="content">
               <ul>
                 <li>
-                  40€ / month
+                  {{ this.config.orderPrices.nonstop}}€ / month
                 </li>
               </ul>
               <br>
