@@ -301,7 +301,7 @@
   </div>
   <div class="columns is-centered">
     <div class="column is-narrow">
-      <h2 id="blackh2">Tech Coworking Progressbar in Bratislava where we accept</h2>
+      <h2 id="blackh2">Tech Cowork Progressbar in Bratislava where we accept Bitcoin and Litecoin for coworking. Daypass starts from {{ this.config.orderPrices.day }}€ </h2>
     </div>
   </div>
 </div>
