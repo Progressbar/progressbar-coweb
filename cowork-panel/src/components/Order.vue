@@ -175,6 +175,26 @@
         </div>
       </div>
     </div>
+    <div class="columns is-centered">
+      <div class="column is-narrow">
+        <a class="button is-outlined is-light" disabled>{{this.seats.capacity}} 💺 capacity</a>
+      </div>
+      <div class="column is-narrow">
+          <a @click="getSubscribers()" class="button is-outlined is-light">{{this.seats.subscribers}} 📩👨‍💻⚙</a>
+      </div>
+      <div class="column is-narrow">
+          <a class="button is-outlined is-light" disabled>{{this.daysBooked}} 📅 👨‍💻💰 </a>
+      </div>
+      <div class="column is-narrow">
+          <a class="button is-outlined is-dark" disabled>{{this.credited}} 👨‍💻💰 </a>
+      </div>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-narrow">
+        <a v-for="item in orderSum" class="button is-outlined is-light" disabled>
+          {{ item[1]+1 }}/{{item[2]}} 📅: {{ item[0] }} 👩‍💻: {{ seats.capacity - item[0] }} 🆓 </a>
+        </div>
+    </div>
 </div>
 </template>
 
@@ -234,7 +254,14 @@ export default {
         dateTimestamp: '',
         total: 0
       },
-      orderCalcDate: ''
+      orderCalcDate: '',
+      seats: {
+        subscribers: 0,
+        capacity: 0
+      },
+      daysBooked: 0,
+      credited: 0,
+      orderSum: {}
     }
   },
   created() {
@@ -261,12 +288,13 @@ export default {
           }
         })
         .then(response => {
-          console.log(response)
+          // console.log(response)
           this.button.welcome = response.data.code
           this.button.credit = response.data.credit
           this.auth.credit = response.data.credit
           this.auth.gotOrderToday = response.data.gotOrderToday
           this.config = response.data.config
+          this.seats.capacity = response.data.config.seatCapacity
           if (response.data.credit > 0) {
             this.auth.gotCredit = true
           }
@@ -281,9 +309,10 @@ export default {
             url: this.$api.base + this.$api.subscribers
           })
           .then(response => {
-            console.log(response)
+            // console.log(response)
             this.seats = response.data.seats
             this.orderSum = response.data.orderSum
+            this.daysBooked = response.data.daysBooked
             this.config = response.data.config
           })
           .catch(e => {
@@ -310,7 +339,7 @@ export default {
         }
       })
       .then(response => {
-        console.log(response)
+        // console.log(response)
         this.button.order = response.data.code
       })
       .catch(e => {
@@ -326,7 +355,7 @@ export default {
         }
       })
       .then(response => {
-        console.log(response)
+        // console.log(response)
         this.button.unlockdoor = response.data.code
       })
       .catch (e => {
@@ -342,7 +371,7 @@ export default {
         }
       })
       .then(response => {
-        console.log(response)
+        // console.log(response)
         this.button.blackdoor = response.data.code
       })
       .catch (e => {

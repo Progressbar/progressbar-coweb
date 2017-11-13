@@ -32,7 +32,7 @@
                 <a href="http://www.ikea.com/sk/sk/catalog/products/S29084966/" title="IKEA SKARSTA">Standing desks</a>
               </li>
               <li>
-                Room for calls 🗣📞 (@Foyer)
+                Room for calls 🗣📞
               </li>
               <li>
                 Coding 👩🏽‍💻 girls have 50% discount
@@ -41,7 +41,6 @@
                 Bitcoin & Litecoin accepted
               </li>
             </ul>
-
           </div>
         </div>
       </div>
@@ -251,7 +250,7 @@
     <div class="column is-8">
       <article class="message">
         <div class="message-body">
-          We started as <a href="https://progressbar.sk">first Slovak hackerspace</a> back in June 2010, this is our 3rd place as we went through expansion and <a href="https://progressbar.sk/calendar">held more and biggers meetups</a>. In September 2018 we considered to keep up our 💸 cashflow up & running our rent and think about daily utilization. We came up with idea to open <strong>coworking</strong> in our hackerspace Progressbar in Bratislava. Now we are looking to move in new space to double our meetup space and increase cowork size. If you think we are doing great thing, <a href="https://donate.progressbar.sk">you can support us at https://donate.progressbar.sk</a> or signup for our <a href="https://cowork.progressbar.sk">cowork in Bratislava</a>. 👋🏼 You are welcome 🤗
+          We started as <a href="https://progressbar.sk">first Slovak hackerspace</a> back in June 2010, this is our 3rd place as we went through expansion and <a href="https://progressbar.sk/calendar">held more and biggers meetups</a>. In September 2017 we considered to keep up our 💸 cashflow & our existence and started thinking about daily utilization. We came up with idea to open <strong>coworking</strong> in our hackerspace Progressbar in Bratislava. Now we are looking to move in new space to double our meetup space and increase cowork size. If you think we are doing great thing, <a href="https://donate.progressbar.sk">you can support us at https://donate.progressbar.sk</a> or signup for our <a href="https://cowork.progressbar.sk">cowork in Bratislava</a>. 👋🏼 You are welcome 🤗
         </div>
       </article>
     </div>
@@ -276,26 +275,6 @@
   </div>
   <div class="columns is-centered">
     <div class="column is-narrow">
-      <a class="button is-outlined is-dark" disabled>{{this.seats.capacity}} 💺 capacity</a>
-    </div>
-    <div class="column is-narrow">
-        <a @click="getSubscribers()" class="button is-outlined is-dark">{{this.seats.subscribers}} 📩👨‍💻⚙</a>
-    </div>
-    <div class="column is-narrow">
-        <a class="button is-outlined is-dark" disabled>{{this.daysBooked}} 📅 👨‍💻💰 </a>
-    </div>
-    <div class="column is-narrow">
-        <a class="button is-outlined is-dark" disabled>{{this.credited}} 👨‍💻💰 </a>
-    </div>
-  </div>
-  <div class="columns is-centered">
-    <div class="column is-narrow">
-      <a v-for="item in orderSum" class="button is-outlined is-info" disabled>
-        {{ item[1]+1 }}/{{item[2]}} 📅 {{ item[0] }} 👩‍💻 {{ seats.capacity - item[0] }} 🆓 </a>
-      </div>
-  </div>
-  <div class="columns is-centered">
-    <div class="column is-narrow">
       <h1 id="blackh1">Tech Cowork Progressbar in Bratislava</h1>
     </div>
   </div>
@@ -315,8 +294,8 @@ export default {
   data() {
     return {
       seats: {
-        subscribers: '0',
-        capacity: '0'
+        subscribers: 0,
+        capacity: 0
       },
       credited: 0,
       orderSum: {},
@@ -329,7 +308,7 @@ export default {
         login: 'Send login link',
         order: 'Go to Dashboard'
       },
-      daysBooked: '',
+      daysBooked: 0,
       subEmail: '',
       isUser: false,
       config: {
