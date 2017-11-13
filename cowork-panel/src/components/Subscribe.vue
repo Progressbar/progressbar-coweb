@@ -5,27 +5,6 @@
         <a href="./#/order" class="button is-warning is-large is-outlined">{{ this.button.order }}</a>
     </div>
   </div>
-  <div v-if="!this.isUser" class="columns is-centered">
-        <div class="column is-narrow">
-              <div class="control has-icons-left">
-                    <input v-model="subEmail" class="input is-medium is-white" type="email" placeholder="Enter your email">
-                    <span class="icon is-medium is-left">
-                          <i class="fa fa-envelope"></i>
-                    </span>
-              </div>
-        </div>
-        <div class="column is-narrow">
-          <a v-if="this.config.coworkSubscribe" @click="subscribeMe(subEmail)" class="button is-warning is-medium is-outlined">{{ this.button.subscribe }}</a>
-          <a v-if="!this.config.coworkSubscribe" @click="subscribeMe(subEmail)" class="button is-warning is-medium is-outlined" disabled>{{ this.button.subscribe }}</a>
-          <a v-if="this.config.coworkLogin" @click="sendLoginLink(subEmail)" class="button is-primary is-medium is-outlined">{{ this.button.login }}</a>
-          <a v-if="!this.config.coworkLogin" @click="sendLoginLink(subEmail)" class="button is-primary is-medium is-outlined" disabled>{{ this.button.login }}</a>
-        </div>
-  </div>
-  <div class="columns is-centered">
-    <div class="column is-narrow">
-      <h1 id="blackh1">Tech Cowork Progressbar in Bratislava</h1>
-    </div>
-  </div>
   <div class="columns is-centered">
     <div class="column is-narrow">
       <div class="card">
@@ -62,7 +41,7 @@
                 Bitcoin & Litecoin accepted
               </li>
             </ul>
-            <br>
+
           </div>
         </div>
       </div>
@@ -107,7 +86,6 @@
                 <s>Twenny Bars (& Soylents)</s>
               </li>
             </ul>
-            <br>
           </div>
         </div>
       </div>
@@ -124,6 +102,22 @@
     </div>
     <div class="column is-narrow">
       <iframe src="https://www.google.com/maps/embed?pb=!1m0!4v1510323406618!6m8!1m7!1sCAoSLEFGMVFpcE9TMTVpQnZ0cDFvU0xYZzZudW9yTTI4MllDNjRwam9ydkEyTFZr!2m2!1d48.1442769!2d17.1065927!3f56.55411849549628!4f-28.5293173380876!5f0.4000000000000002" width="360" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+  </div>
+  <div v-if="!this.isUser" class="columns is-centered">
+    <div class="column is-narrow">
+      <div class="control has-icons-left">
+        <input v-model="subEmail" class="input is-medium is-white" type="email" placeholder="Enter your email">
+        <span class="icon is-medium is-left">
+          <i class="fa fa-envelope"></i>
+        </span>
+      </div>
+    </div>
+    <div class="column is-narrow">
+      <a v-if="this.config.coworkSubscribe" @click="subscribeMe(subEmail)" class="button is-warning is-medium is-outlined">{{ this.button.subscribe }}</a>
+      <a v-if="!this.config.coworkSubscribe" @click="subscribeMe(subEmail)" class="button is-warning is-medium is-outlined" disabled>{{ this.button.subscribe }}</a>
+      <a v-if="this.config.coworkLogin" @click="sendLoginLink(subEmail)" class="button is-primary is-medium is-outlined">{{ this.button.login }}</a>
+      <a v-if="!this.config.coworkLogin" @click="sendLoginLink(subEmail)" class="button is-primary is-medium is-outlined" disabled>{{ this.button.login }}</a>
     </div>
   </div>
   <div class="columns is-centered">
@@ -290,7 +284,12 @@
       <a v-for="item in orderSum" class="button is-outlined is-info" disabled>
         {{ item[1]+1 }}/{{item[2]}} 📅 {{ item[0] }} 👩‍💻 {{ seats.capacity - item[0] }} 🆓 </a>
       </div>
+  </div>
+  <div class="columns is-centered">
+    <div class="column is-narrow">
+      <h1 id="blackh1">Tech Cowork Progressbar in Bratislava</h1>
     </div>
+  </div>
 </div>
 </template>
 
