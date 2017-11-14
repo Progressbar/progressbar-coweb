@@ -192,7 +192,7 @@
     <div class="columns is-centered">
       <div class="column is-narrow">
         <a v-for="item in orderSum" class="button is-outlined is-light" disabled>
-          {{ item[1]+1 }}/{{item[2]}} 📅: {{ item[0] }} 👩‍💻: {{ seats.capacity - item[0] }} 🆓 </a>
+          {{ item[1]+1 }}/{{item[2]}} | {{ item[0] }} 👩‍💻 {{ seats.capacity - item[0] }} 🆓 </a>
         </div>
     </div>
 </div>
