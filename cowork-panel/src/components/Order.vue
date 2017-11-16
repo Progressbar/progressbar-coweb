@@ -130,8 +130,6 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="columns is-centered">
       <div class="column is-narrow">
         <div class="card">
           <header class="card-header">
