@@ -142,7 +142,7 @@
                 {{ this.config.orderPrices.day }}€ / day
               </li>
             </ul>
-            <br>
+            <!-- <br> -->
           </div>
         </div>
       </div>
@@ -169,7 +169,7 @@
                 {{ this.config.orderPrices.month }}€ / month
               </li>
             </ul>
-            <br>
+            <!-- <br> -->
           </div>
         </div>
       </div>
@@ -196,7 +196,7 @@
                 {{ this.config.orderPrices.fix }}€ / month
               </li>
             </ul>
-            <br>
+            <!-- <br> -->
           </div>
         </div>
       </div>
@@ -214,10 +214,13 @@
           <div class="content">
             <ul>
               <li>
+                Lock your 💻
+              </li>
+              <li>
                 {{ this.config.orderPrices.locker}}€ / month
               </li>
             </ul>
-            <br>
+            <!-- <br> -->
           </div>
         </div>
       </div>
@@ -235,10 +238,13 @@
           <div class="content">
             <ul>
               <li>
+                Work any 🕙
+              </li>
+              <li>
                 {{ this.config.orderPrices.nonstop}}€ / month
               </li>
             </ul>
-            <br>
+            <!-- <br> -->
           </div>
         </div>
       </div>
