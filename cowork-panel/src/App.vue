@@ -31,7 +31,7 @@ html {
     background-color: #000
 }
 
-.crop {
+/*.crop {
     height: 150px;
     overflow: hidden;
     padding: 10px;
@@ -39,5 +39,19 @@ html {
 
 .crop img {
     margin: -150px 0 0 -10px;
+}*/
+
+.crop {
+    /*width: 200px;*/
+    height: 90px;
+    overflow: hidden;
+    padding: 10px;
 }
+
+.crop img {
+    /*width: 400px;*/
+    height: 200px;
+    margin: -110px 0 0 -10px;
+}
+
 </style>
