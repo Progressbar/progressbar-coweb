@@ -20,7 +20,7 @@ module.exports = (conf = 'non', context, callback) => {
         end: 18
       },
       dayPass: {
-        start: 9,
+        start: 8,
         end: 18
       }
     },
