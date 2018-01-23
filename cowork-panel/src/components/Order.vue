@@ -49,6 +49,31 @@
       </div>
     </div>
     <div class="columns is-centered">
+      <div class="column is-narrow is-10">
+        <article class="message is-info is-small">
+          <div class="message-body">
+            <ol>
+              <li>
+                You need top up your credit.
+              </li>
+              <li>
+                When you already done that, contact <a href="https://m.me/matej.wao.nemcek">m.me/matej.wao.nemcek</a> to credit you in system
+              </li>
+              <li>
+                When you will see credit in system, you can pick program (daypass) and choose your desired date
+              </li>
+              <li>
+                When you done that, you will see two buttons for opening doors
+              </li>
+              <li>
+                Black doors is for doors at street level and white doors will open doors at entrance into our space
+              </li>
+            </ol>
+          </div>
+        </article>
+      </div>
+    </div>
+    <div class="columns is-centered">
       <div class="column is-narrow">
         <div class="card">
           <header class="card-header">
