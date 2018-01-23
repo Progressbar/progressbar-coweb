@@ -183,9 +183,9 @@
       <div class="column is-narrow">
           <a class="button is-outlined is-light" disabled>{{this.daysBooked}} 📅 👨‍💻💰 </a>
       </div>
-      <div class="column is-narrow">
+      <!-- <div class="column is-narrow">
           <a class="button is-outlined is-dark" disabled>{{this.credited}} 👨‍💻💰 </a>
-      </div>
+      </div> -->
     </div>
     <div class="columns is-centered">
       <div class="column is-narrow">
