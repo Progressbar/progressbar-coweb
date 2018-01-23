@@ -271,6 +271,14 @@
   </div>
   <div class="columns is-centered">
     <div class="column is-narrow">
+      <a class="button is-outlined is-white" href="https://progressbar.sk/calendar">Upcoming meetups</a>
+    </div>
+    <div class="column is-narrow">
+      <a class="button is-outlined is-white" href="https://www.facebook.com/progressbar">Progressbar at Facebook</a>
+    </div>
+  </div>
+  <div class="columns is-centered">
+    <div class="column is-narrow">
       <a class="button is-outlined is-white" href="https://www.google.com/maps/place/Progressbar+hackerspace/@48.1442841,17.1065927,3a,75y,183.19h,75.08t/data=!3m8!1e1!3m6!1sAF1QipNt1o7jntatkvtpLmds5x7K4MHG_NCLMSfjSnyR!2e10!3e11!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipNt1o7jntatkvtpLmds5x7K4MHG_NCLMSfjSnyR%3Dw203-h100-k-no-pi0-ya261.5-ro-0-fo100!7i8000!8i4000!4m5!3m4!1s0x476c8946152ff129:0x72ac0b6fccaf66fd!8m2!3d48.1442784!4d17.1065933" >Workspace Deck (360)</a>
     </div>
     <div class="column is-narrow">
