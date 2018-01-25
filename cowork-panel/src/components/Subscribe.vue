@@ -49,7 +49,7 @@
       <div class="card">
         <header class="card-header">
           <p class="card-header-title">
-            Our 🍳 Kitchen
+            Our 🍳 Kitchen & Drink bar
           </p>
         </header>
         <div class="card-content">
@@ -71,18 +71,15 @@
                     Flora-power
                   </li>
                   <li>
+                    Fritz-kola
+                  </li>
+                  <li>
                     Mana Roots
                   </li>
                   <li>
-                    Pragomošt
+                    Thomas Henry Maté Maté
                   </li>
-                  <!-- <li>
-                    <s>Mate-mate</s>
-                  </li> -->
                 </ul>
-              </li>
-              <li>
-                <s>Twenny Bars (& Soylents)</s>
               </li>
             </ul>
           </div>
@@ -251,10 +248,56 @@
     </div>
   </div>
   <div class="columns is-centered">
-    <div class="column is-8">
-      <article class="message">
+    <div class="column is-4">
+      <article class="message is-dark">
+        <div class="message-header">
+          <p>Our story</p>
+        </div>
         <div class="message-body">
-          We started as <a href="https://progressbar.sk">first Slovak hackerspace</a> back in June 2010, this is our 3rd place as we went through expansion and <a href="https://progressbar.sk/calendar">held more and biggers meetups</a>. In September 2017 we considered to keep up our 💸 cashflow & our existence and started thinking about daily utilization. We came up with idea to open <strong>coworking</strong> in our hackerspace Progressbar in Bratislava. Now we are looking to move in new space to double our meetup space and increase coworking size. If you think we are doing great thing, <a href="https://donate.progressbar.sk">you can support us at https://donate.progressbar.sk</a> or signup for our <a href="https://cowork.progressbar.sk">coworking in Bratislava</a>. 👋🏼 You are welcome 🤗
+          <div class="content">
+            <ul>
+              <li>
+                We started as <a href="https://progressbar.sk">first Slovak hackerspace</a> back in June 2010, this is our 3rd place as we went through expansion and <a href="https://progressbar.sk/calendar">held more and biggers meetups</a>.
+              </li>
+              <li>
+                In September 2017 we considered to keep up our 💸 cashflow & our existence and started thinking about daily utilization. We came up with idea to open <strong>coworking</strong> in our hackerspace Progressbar in Bratislava.
+              </li>
+              <li>
+                Now we are looking to move in new space to double our meetup space and increase coworking size. If you think we are doing great thing, <a href="https://donate.progressbar.sk">you can support us at https://donate.progressbar.sk</a> or signup for our <a href="https://cowork.progressbar.sk">coworking in Bratislava</a>. 👋🏼 You are welcome 🤗
+              </li>
+            </ul>
+          </div>
+        </div>
+      </article>
+    </div>
+    <div class="column is-4">
+      <article class="message is-dark">
+        <div class="message-header">
+          <p>Our coworkers are ~</p>
+        </div>
+        <div class="message-body">
+          <div class="content">
+            <ul>
+              <li>
+                Blockchain startups
+              </li>
+              <li>
+                Cryptocurrency techies & fanatics
+              </li>
+              <li>
+                Backend & Frontend programmers
+              </li>
+              <li>
+                Machine learning programmers
+              </li>
+              <li>
+                Hardware tinkers
+              </li>
+              <li>
+                Opensource coders
+              </li>
+            </ul>
+          </div>
         </div>
       </article>
     </div>
@@ -275,6 +318,9 @@
     </div>
     <div class="column is-narrow">
       <a class="button is-outlined is-white" href="https://www.facebook.com/progressbar">Progressbar at Facebook</a>
+    </div>
+    <div class="column is-narrow">
+      <a class="button is-outlined is-white" href="https://donate.progressbar.sk">💰 Donate Progressbar</a>
     </div>
   </div>
   <div class="columns is-centered">
