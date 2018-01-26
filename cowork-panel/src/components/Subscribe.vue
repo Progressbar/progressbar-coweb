@@ -333,6 +333,9 @@
     <div class="column is-narrow">
       <router-link to="/coworking-bratislava"><a class="button is-outlined is-white" href="/#/coworking-bratislava">Coworking Bratislava</a></router-link>
     </div>
+    <div class="column is-narrow">
+      <router-link to="/cowork-bratislava-photos"><a class="button is-outlined is-white" href="/#/cowork-bratislava-photos">Coworking Bratislava Meetup Photos</a></router-link>
+    </div>
   </div>
   <div class="columns is-centered">
     <div class="column is-narrow">
