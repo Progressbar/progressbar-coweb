@@ -22,6 +22,10 @@ export default new Router({
       component: Subscribe
     },
     {
+      path: '/coworking-bratislava',
+      component: Subscribe
+    },
+    {
       path: '/email/:verificationCode',
       component: EmailVerify
     },
