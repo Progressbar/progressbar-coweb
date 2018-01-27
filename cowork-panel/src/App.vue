@@ -28,7 +28,7 @@ export default {
 @import '~font-awesome/css/font-awesome.css';
 
 html {
-    background-color: #000
+  background-color: #000;
 }
 
 /*.crop {
@@ -42,16 +42,15 @@ html {
 }*/
 
 .crop {
-    /*width: 200px;*/
-    height: 90px;
-    overflow: hidden;
-    padding: 10px;
+  /*width: 200px;*/
+  height: 90px;
+  overflow: hidden;
+  padding: 10px;
 }
 
 .crop img {
-    /*width: 400px;*/
-    height: 200px;
-    margin: -110px 0 0 -10px;
+  /*width: 400px;*/
+  height: 200px;
+  margin: -110px 0 0 -10px;
 }
-
 </style>

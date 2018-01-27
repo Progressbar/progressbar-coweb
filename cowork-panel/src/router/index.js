@@ -10,9 +10,9 @@ import VueLocalStorage from 'vue-ls'
 
 var options = {
   namespace: 'pgbcowork_'
-};
+}
 
-Vue.use(VueLocalStorage, options);
+Vue.use(VueLocalStorage, options)
 Vue.use(Router)
 
 export default new Router({

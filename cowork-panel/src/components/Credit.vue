@@ -74,8 +74,7 @@ export default {
         authToken: '',
         gotCredit: false,
         isUser: false
-      },
-
+      }
     }
   },
   created() {
@@ -93,6 +92,6 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
 input {
-  background-color: #ffffff
+  background-color: #ffffff;
 }
 </style>

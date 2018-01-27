@@ -48,12 +48,12 @@ export default {
   methods: {
     sendLoginCode(email) {
       axios({
-          method: 'get',
-          url: this.$api.base + this.$api.login,
-          params: {
-            email
-          }
-        })
+        method: 'get',
+        url: this.$api.base + this.$api.login,
+        params: {
+          email
+        }
+      })
         .then(response => {
           console.log(response)
           this.button.login = response.data.code
@@ -70,22 +70,26 @@ export default {
           loginCode
         }
       })
-      .then(response => {
-        console.log(response)
-        this.button.logmein = response.data.code
-        this.logged = response.data.logged
-        if (response.data[Object.keys(response.data)[0]].authToken) {
-          this.$ls.set('user', Object.keys(response.data)[0])
-          this.$ls.set('authToken', response.data[Object.keys(response.data)[0]].authToken)
-        }
-      })
-      .catch(e => {
-        console.log(e)
-      })
+        .then(response => {
+          console.log(response)
+          this.button.logmein = response.data.code
+          this.logged = response.data.logged
+          if (response.data[Object.keys(response.data)[0]].authToken) {
+            this.$ls.set('user', Object.keys(response.data)[0])
+            this.$ls.set(
+              'authToken',
+              response.data[Object.keys(response.data)[0]].authToken
+            )
+          }
+        })
+        .catch(e => {
+          console.log(e)
+        })
     }
   }
 }
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
+
 </style>

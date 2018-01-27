@@ -18,7 +18,6 @@
 <script>
 import axios from 'axios'
 
-
 export default {
   name: 'emailVerification',
   data() {
@@ -26,7 +25,7 @@ export default {
       button: {
         subscribe: 'Subscribe to the queue',
         verify: 'Confirm my email',
-        continue:'Continue to Dashboard'
+        continue: 'Continue to Dashboard'
       },
       confirmed: false
     }
@@ -34,19 +33,23 @@ export default {
   methods: {
     confirmMail(hash) {
       axios({
-          method: 'get',
-          url: this.$api.base + this.$api.verify,
-          params: {
-            hash
-          }
-        })
+        method: 'get',
+        url: this.$api.base + this.$api.verify,
+        params: {
+          hash
+        }
+      })
         .then(response => {
           console.log(response)
           this.button.verify = response.data.code
-          this.confirmed = response.data[Object.keys(response.data)[0]].confirmed
+          this.confirmed =
+            response.data[Object.keys(response.data)[0]].confirmed
           if (response.data[Object.keys(response.data)[0]].authToken) {
             this.$ls.set('user', Object.keys(response.data)[0])
-            this.$ls.set('authToken', response.data[Object.keys(response.data)[0]].authToken)
+            this.$ls.set(
+              'authToken',
+              response.data[Object.keys(response.data)[0]].authToken
+            )
           }
         })
         .catch(e => {
@@ -58,4 +61,5 @@ export default {
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
+
 </style>
