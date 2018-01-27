@@ -280,7 +280,10 @@
           <div class="content">
             <ul>
               <li>
-                Blockchain startups & decentralization specialists
+                Blockchain startups
+              </li>
+              <li>
+                Decentralization technology specialists
               </li>
               <li>
                 Cryptocurrency techies & fanatics
@@ -420,30 +423,30 @@ export default {
         method: 'get',
         url: this.$api.base + this.$api.pubConfig
       })
-      .then(response => {
-        // console.log(response)
-        this.config = response.data
-        this.seats.capacity = response.data.seatCapacity
-      })
-      .catch(e => {
-        console.log(e)
-      })
+        .then(response => {
+          // console.log(response)
+          this.config = response.data
+          this.seats.capacity = response.data.seatCapacity
+        })
+        .catch(e => {
+          console.log(e)
+        })
     },
     getSubscribers() {
       axios({
         method: 'get',
         url: this.$api.base + this.$api.subscribers
       })
-      .then(response => {
-        // console.log(response)
-        this.seats = response.data.seats
-        this.orderSum = response.data.orderSum
-        this.daysBooked = response.data.daysBooked
-        this.config = response.data.config
-      })
-      .catch(e => {
-        console.log(e)
-      })
+        .then(response => {
+          // console.log(response)
+          this.seats = response.data.seats
+          this.orderSum = response.data.orderSum
+          this.daysBooked = response.data.daysBooked
+          this.config = response.data.config
+        })
+        .catch(e => {
+          console.log(e)
+        })
     },
     subscribeMe(email) {
       axios({
@@ -453,13 +456,13 @@ export default {
           email
         }
       })
-      .then(response => {
-        // console.log(response)
-        this.button.subscribe = response.data.code
-      })
-      .catch(e => {
-        console.log(e)
-      })
+        .then(response => {
+          // console.log(response)
+          this.button.subscribe = response.data.code
+        })
+        .catch(e => {
+          console.log(e)
+        })
     },
     sendLoginLink(email) {
       axios({
@@ -469,13 +472,13 @@ export default {
           email
         }
       })
-      .then(response => {
-        // console.log(response)
-        this.button.subscribe = response.data.code
-      })
-      .catch(e => {
-        console.log(e)
-      })
+        .then(response => {
+          // console.log(response)
+          this.button.subscribe = response.data.code
+        })
+        .catch(e => {
+          console.log(e)
+        })
     }
   }
 }
@@ -486,9 +489,9 @@ export default {
   background-color: #000
 }*/
 h1#blackh1 {
-  color:black;
+  color: black;
 }
 h2#blackh2 {
-  color:black;
+  color: black;
 }
 </style>
