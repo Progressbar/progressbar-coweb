@@ -7,6 +7,11 @@
   </div>
   <div class="columns is-centered">
     <div class="column is-narrow">
+      <img src="/static/img/PANO_20171111_100131.jpg" alt="progressbar cowork bratislava">
+    </div>
+  </div>
+  <div class="columns is-centered">
+    <div class="column is-narrow">
       <div class="card">
         <header class="card-header">
           <p class="card-header-title">
@@ -85,11 +90,6 @@
           </div>
         </div>
       </div>
-    </div>
-  </div>
-  <div class="columns is-centered">
-    <div class="column is-narrow">
-      <img src="/static/img/PANO_20171111_100131.jpg" alt="progressbar cowork bratislava">
     </div>
   </div>
   <div class="columns is-centered">
