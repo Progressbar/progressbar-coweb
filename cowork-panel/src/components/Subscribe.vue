@@ -134,7 +134,7 @@
                 {{ this.config.openHours.dayPass.start }} - {{ this.config.openHours.dayPass.end }}
               </li>
               <li>
-                ♨️ hotdesk
+                ♨️ Hotdesk
               </li>
               <li>
                 {{ this.config.orderPrices.day }}€ / day
@@ -161,7 +161,7 @@
                 {{ this.config.openHours.monthPass.start }} - {{ this.config.openHours.monthPass.end }}
               </li>
               <li>
-                ♨️ hotdesk
+                ♨️ Hotdesk
               </li>
               <li>
                 {{ this.config.orderPrices.month }}€ / month
@@ -321,10 +321,10 @@
       <a class="button is-outlined is-white" href="https://progressbar.sk/calendar">Upcoming meetups</a>
     </div>
     <div class="column is-narrow">
-      <a class="button is-outlined is-white" href="https://www.facebook.com/progressbar">Progressbar at Facebook</a>
+      <a class="button is-outlined is-white" href="https://donate.progressbar.sk">💰 Donate Progressbar</a>
     </div>
     <div class="column is-narrow">
-      <a class="button is-outlined is-white" href="https://donate.progressbar.sk">💰 Donate Progressbar</a>
+      <a class="button is-outlined is-white" href="https://www.facebook.com/progressbar">Progressbar at Facebook</a>
     </div>
   </div>
   <div class="columns is-centered">
