@@ -47,7 +47,7 @@ export default new Router({
       component: Credit
     },
     {
-      path: '/cowork-bratislava-photos',
+      path: '/coworking-progressbar-bratislava-photos',
       component: Photos
     }
   ]

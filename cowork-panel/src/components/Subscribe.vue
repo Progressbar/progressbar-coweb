@@ -10,7 +10,7 @@
       <div class="card">
         <header class="card-header">
           <p class="card-header-title">
-            At Our 🏢 Coworking 👩‍🚀 Space We Have
+           🏢 Coworking 👩‍🚀 Space Offers
           </p>
         </header>
         <div class="card-content">
@@ -49,7 +49,7 @@
       <div class="card">
         <header class="card-header">
           <p class="card-header-title">
-            Our 🍳 Kitchen & Drink bar
+            🍳 Kitchen & Drink 🥤 bar
           </p>
         </header>
         <div class="card-content">
@@ -77,7 +77,7 @@
                     Mana Roots
                   </li>
                   <li>
-                    Thomas Henry Maté Maté
+                    Thomas Henry Mate-Mate
                   </li>
                 </ul>
               </li>
@@ -114,6 +114,7 @@
       <a v-if="!this.config.coworkSubscribe" @click="subscribeMe(subEmail)" class="button is-warning is-medium is-outlined" disabled>{{ this.button.subscribe }}</a>
       <a v-if="this.config.coworkLogin" @click="sendLoginLink(subEmail)" class="button is-primary is-medium is-outlined">{{ this.button.login }}</a>
       <a v-if="!this.config.coworkLogin" @click="sendLoginLink(subEmail)" class="button is-primary is-medium is-outlined" disabled>{{ this.button.login }}</a>
+      <a class="button is-info is-medium is-outlined" href="https://m.me/progressbar">Contact us via ⚡️Messenger</a>
     </div>
   </div>
   <div class="columns is-centered">
@@ -133,7 +134,7 @@
                 {{ this.config.openHours.dayPass.start }} - {{ this.config.openHours.dayPass.end }}
               </li>
               <li>
-                ♨️ desk
+                ♨️ hotdesk
               </li>
               <li>
                 {{ this.config.orderPrices.day }}€ / day
@@ -160,7 +161,7 @@
                 {{ this.config.openHours.monthPass.start }} - {{ this.config.openHours.monthPass.end }}
               </li>
               <li>
-                ♨️  desk
+                ♨️ hotdesk
               </li>
               <li>
                 {{ this.config.orderPrices.month }}€ / month
@@ -175,7 +176,7 @@
       <div class="card">
         <header class="card-header">
           <p class="card-header-title">
-            <s>Homie</s>
+            Homie
           </p>
           <a href="#" class="card-header-icon" aria-label="more options">
           </a>
@@ -279,28 +280,25 @@
           <div class="content">
             <ul>
               <li>
-                Blockchain startups
+                Blockchain startups & decentralization specialists
               </li>
               <li>
                 Cryptocurrency techies & fanatics
               </li>
               <li>
-                Backend & Frontend programmers
+                Backend & Frontend developers
               </li>
               <li>
-                Machine learning programmers
+                Machine learning developers
               </li>
               <li>
                 Hardware tinkers
               </li>
               <li>
-                Opensource coders
+                Opensource developers
               </li>
               <li>
-                Cyberpunks
-              </li>
-              <li>
-                Cypherpunks
+                Cyberpunks & Cypherpunks
               </li>
             </ul>
           </div>
@@ -331,16 +329,18 @@
   </div>
   <div class="columns is-centered">
     <div class="column is-narrow">
+      <router-link to="/coworking-bratislava"><a class="button is-outlined is-white" href="/#/coworking-bratislava">Coworking Bratislava</a></router-link>
+    </div>
+    <div class="column is-narrow">
+      <router-link to="/coworking-progressbar-bratislava-photos"><a class="button is-outlined is-white" href="/#/coworking-progressbar-bratislava-photos">Coworking Bratislava Meetup Photos</a></router-link>
+    </div>
+  </div>
+  <div class="columns is-centered">
+    <div class="column is-narrow">
       <a class="button is-outlined is-white" href="https://www.google.com/maps/place/Progressbar+hackerspace/@48.1442841,17.1065927,3a,75y,183.19h,75.08t/data=!3m8!1e1!3m6!1sAF1QipNt1o7jntatkvtpLmds5x7K4MHG_NCLMSfjSnyR!2e10!3e11!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipNt1o7jntatkvtpLmds5x7K4MHG_NCLMSfjSnyR%3Dw203-h100-k-no-pi0-ya261.5-ro-0-fo100!7i8000!8i4000!4m5!3m4!1s0x476c8946152ff129:0x72ac0b6fccaf66fd!8m2!3d48.1442784!4d17.1065933" >Workspace Deck (360)</a>
     </div>
     <div class="column is-narrow">
       <a class="button is-outlined is-white" href="https://www.google.com/maps/place/Progressbar+hackerspace/@48.1442769,17.1065927,3a,75y,68.38h,60.45t/data=!3m8!1e1!3m6!1sAF1QipOS15iBvtp1oSLXg6nuorM282YC64pjorvA2LVk!2e10!3e11!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipOS15iBvtp1oSLXg6nuorM282YC64pjorvA2LVk%3Dw203-h100-k-no-pi-0-ya6.500005-ro-0-fo100!7i8000!8i4000!4m5!3m4!1s0x476c8946152ff129:0x72ac0b6fccaf66fd!8m2!3d48.1442784!4d17.1065933">Workspace Cowork (360)</a>
-    </div>
-    <div class="column is-narrow">
-      <router-link to="/coworking-bratislava"><a class="button is-outlined is-white" href="/#/coworking-bratislava">Coworking Bratislava</a></router-link>
-    </div>
-    <div class="column is-narrow">
-      <router-link to="/cowork-bratislava-photos"><a class="button is-outlined is-white" href="/#/cowork-bratislava-photos">Coworking Bratislava Meetup Photos</a></router-link>
     </div>
   </div>
   <div class="columns is-centered">
