@@ -230,7 +230,7 @@ import 'flatpickr/dist/themes/dark.css'
 export default {
   name: 'order',
   components: {
-      flatPickr
+    flatPickr
   },
   data() {
     return {
@@ -304,12 +304,12 @@ export default {
       this.auth.user = this.$ls.get('user')
       this.auth.authToken = this.$ls.get('authToken')
       axios({
-          method: 'get',
-          url: this.$api.base + this.$api.order,
-          params: {
-            authToken: this.auth.authToken
-          }
-        })
+        method: 'get',
+        url: this.$api.base + this.$api.order,
+        params: {
+          authToken: this.auth.authToken
+        }
+      })
         .then(response => {
           // console.log(response)
           this.button.welcome = response.data.code
@@ -327,20 +327,20 @@ export default {
         })
     },
     getSubscribers() {
-        axios({
-            method: 'get',
-            url: this.$api.base + this.$api.subscribers
-          })
-          .then(response => {
-            // console.log(response)
-            this.seats = response.data.seats
-            this.orderSum = response.data.orderSum
-            this.daysBooked = response.data.daysBooked
-            this.config = response.data.config
-          })
-          .catch(e => {
-            console.log(e)
-          })
+      axios({
+        method: 'get',
+        url: this.$api.base + this.$api.subscribers
+      })
+        .then(response => {
+          // console.log(response)
+          this.seats = response.data.seats
+          this.orderSum = response.data.orderSum
+          this.daysBooked = response.data.daysBooked
+          this.config = response.data.config
+        })
+        .catch(e => {
+          console.log(e)
+        })
     },
     orderCalculate() {
       this.orderCalc.dateTimestamp = new Date(this.orderCalc.date).getTime()
@@ -361,13 +361,13 @@ export default {
           plan: this.orderCalc.program
         }
       })
-      .then(response => {
-        // console.log(response)
-        this.button.order = response.data.code
-      })
-      .catch(e => {
-        console.log(e)
-      })
+        .then(response => {
+          // console.log(response)
+          this.button.order = response.data.code
+        })
+        .catch(e => {
+          console.log(e)
+        })
     },
     unlockDoors(authToken) {
       axios({
@@ -377,13 +377,13 @@ export default {
           authToken: this.auth.authToken
         }
       })
-      .then(response => {
-        // console.log(response)
-        this.button.unlockdoor = response.data.code
-      })
-      .catch (e => {
-        console.log(e)
-      })
+        .then(response => {
+          // console.log(response)
+          this.button.unlockdoor = response.data.code
+        })
+        .catch(e => {
+          console.log(e)
+        })
     },
     unlockBlackDoors(authToken) {
       axios({
@@ -393,13 +393,13 @@ export default {
           authToken: this.auth.authToken
         }
       })
-      .then(response => {
-        // console.log(response)
-        this.button.blackdoor = response.data.code
-      })
-      .catch (e => {
-        console.log(e)
-      })
+        .then(response => {
+          // console.log(response)
+          this.button.blackdoor = response.data.code
+        })
+        .catch(e => {
+          console.log(e)
+        })
     }
   }
 }
@@ -407,6 +407,6 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
 input {
-  background-color: #ffffff
+  background-color: #ffffff;
 }
 </style>
