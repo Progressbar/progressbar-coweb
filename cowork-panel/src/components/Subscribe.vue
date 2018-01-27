@@ -176,7 +176,7 @@
       <div class="card">
         <header class="card-header">
           <p class="card-header-title">
-            Homie
+            Fixdesk
           </p>
           <a href="#" class="card-header-icon" aria-label="more options">
           </a>
@@ -185,7 +185,7 @@
           <div class="content">
             <ul>
               <li>
-                24/7
+                6 - 18
               </li>
               <li>
                 Fixdesk
@@ -203,31 +203,7 @@
       <div class="card">
         <header class="card-header">
           <p class="card-header-title">
-            <s>Locker</s>
-          </p>
-          <a href="#" class="card-header-icon" aria-label="more options">
-          </a>
-        </header>
-        <div class="card-content">
-          <div class="content">
-            <ul>
-              <li>
-                Lock your 💻
-              </li>
-              <li>
-                {{ this.config.orderPrices.locker}}€ / month
-              </li>
-            </ul>
-            <!-- <br> -->
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="column is-narrow">
-      <div class="card">
-        <header class="card-header">
-          <p class="card-header-title">
-            <s>24/7 access</s>
+            24/7 access (addon)
           </p>
           <a href="#" class="card-header-icon" aria-label="more options">
           </a>
@@ -240,6 +216,30 @@
               </li>
               <li>
                 {{ this.config.orderPrices.nonstop}}€ / month
+              </li>
+            </ul>
+            <!-- <br> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column is-narrow">
+      <div class="card">
+        <header class="card-header">
+          <p class="card-header-title">
+            <s>Locker (addon)</s>
+          </p>
+          <a href="#" class="card-header-icon" aria-label="more options">
+          </a>
+        </header>
+        <div class="card-content">
+          <div class="content">
+            <ul>
+              <li>
+                Lock your 💎 💻
+              </li>
+              <li>
+                {{ this.config.orderPrices.locker}}€ / month
               </li>
             </ul>
             <!-- <br> -->
