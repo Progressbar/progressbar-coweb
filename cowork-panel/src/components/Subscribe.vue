@@ -249,7 +249,7 @@
     </div>
   </div>
   <div class="columns is-centered">
-    <div class="column is-4">
+    <div class="column is-3">
       <article class="message is-dark">
         <div class="message-header">
           <p>Our story</p>
@@ -271,7 +271,7 @@
         </div>
       </article>
     </div>
-    <div class="column is-4">
+    <div class="column is-3">
       <article class="message is-dark">
         <div class="message-header">
           <p>Our coworkers are ~</p>
