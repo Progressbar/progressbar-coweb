@@ -1,6 +1,6 @@
 <template>
 <div class="login">
-      <div v-if="!$route.params.loginCode && !this.logged" class="columns is-mobile is-centered">
+      <div v-if="!$route.params.loginCode && !this.logged" class="columns is-centered">
             <div class="column is-narrow">
                   <div class="control has-icons-left">
                         <input v-model="loginEmail" class="input is-medium is-white" type="email" placeholder="Enter your email">
@@ -10,7 +10,7 @@
                   </div>
             </div>
             <div class="column is-narrow">
-              <a @click="sendLoginCode(loginEmail)" class="button is-primary is-medium is-outlined">{{ this.button.login }}</a>
+              <a @click="sendLoginCode(loginEmail)" class="button is-primary is-large is-outlined">{{ this.button.login }}</a>
             </div>
       </div>
       <div v-if="$route.params.loginCode && !this.logged" class="columns is-centered">
@@ -18,12 +18,12 @@
             <a class="button is-light is-small is-outlined" disabled>{{ $route.params.loginCode }}</a>
         </div>
         <div v-if="!this.logged" class="column is-narrow">
-          <a @click="logMeIn($route.params.loginCode)" class="button is-warning is-medium is-outlined">{{ this.button.logmein }}</a>
+          <a @click="logMeIn($route.params.loginCode)" class="button is-warning is-large is-outlined">{{ this.button.logmein }}</a>
         </div>
       </div>
       <div v-if="this.logged" class="columns is-centered">
           <div class="column is-narrow">
-            <router-link to="../order"><a class="button is-warning is-medium is-outlined">{{ this.button.continue }}</a></router-link>
+            <router-link to="../order"><a class="button is-warning is-large is-outlined">{{ this.button.continue }}</a></router-link>
           </div>
       </div>
 </div>
