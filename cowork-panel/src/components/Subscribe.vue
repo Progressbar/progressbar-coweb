@@ -332,6 +332,9 @@
   </div>
   <div class="columns is-centered">
     <div class="column is-narrow">
+      <router-link to="/sponsors"><a class="button is-outlined is-white" href="/#/sponsors">Call for the Sponsors</a></router-link>
+    </div>
+    <div class="column is-narrow">
       <router-link to="/coworking-bratislava"><a class="button is-outlined is-white" href="/#/coworking-bratislava">Coworking Bratislava</a></router-link>
     </div>
     <div class="column is-narrow">
