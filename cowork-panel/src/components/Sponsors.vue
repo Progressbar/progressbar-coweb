@@ -17,7 +17,7 @@
               We are in need to cover the costs of coworking equipment and sound-proof glass meeting room.</br>
               The lab will be kept as hackerspace component.</br></br>
               The space capacity is about 80 people for meetups. Meetup organizators, contact us.
-              Tech meetups are preffered.</br></br>
+              Tech meetups are preferred.</br></br>
               We are also looking for Cryptocurrency ATM operator with own vending machine</br></br>
 
               We can offer you to place your banner/rollup in our space.</br>
