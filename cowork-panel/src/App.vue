@@ -4,7 +4,7 @@
     <div class="columns is-centered">
       <div class="column is-narrow">
         <div class="crop">
-          <a href="https://progressbar.sk">
+          <a href="https://cowork.progressbar.sk">
             <img src="/static/img/progressbar-logo_sw.svg" alt="progressbar logo">
           </a>
         </div>
