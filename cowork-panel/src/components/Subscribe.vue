@@ -249,7 +249,7 @@
     </div>
   </div>
   <div class="columns is-centered">
-    <div class="column is-3">
+    <div class="column is-4">
       <article class="message is-dark">
         <div class="message-header">
           <p>Our story</p>
@@ -264,7 +264,24 @@
                 In September 2017 we considered to keep up our 💸 cashflow & our existence and started thinking about daily utilization. We came up with idea to open <strong>coworking</strong> in our hackerspace Progressbar in Bratislava.
               </li>
               <li>
-                Now we are looking to move in new space to double our meetup space and increase coworking size. If you think we are doing great thing, <a href="https://donate.progressbar.sk">you can support us at https://donate.progressbar.sk</a> or signup for our <a href="https://cowork.progressbar.sk">coworking in Bratislava</a>. 👋🏼 You are welcome 🤗
+                Now we are looking to move in new space to double our meetup space and increase coworking size.
+              </li>
+              <li>
+                If you think we are doing great thing
+                <ul>
+                  <li>
+                    <a href="https://donate.progressbar.sk">you can support us at donate.progressbar.sk</a>
+                  </li>
+                  <li>
+                     signup for our <a href="https://cowork.progressbar.sk">coworking in Bratislava</a>
+                  </li>
+                  <li>
+                    <router-link to="/sponsors"><a href="/#/sponsors">be our proud sponsor</a></router-link>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                👋🏼 You are welcome 🤗
               </li>
             </ul>
           </div>
