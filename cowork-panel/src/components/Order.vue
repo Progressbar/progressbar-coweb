@@ -109,7 +109,7 @@ import 'flatpickr/dist/themes/dark.css'
 export default {
   name: 'order',
   components: {
-    flatPickr
+    flatPickr, Offer
   },
   data() {
     return {
@@ -165,9 +165,6 @@ export default {
       credited: 0,
       orderSum: {}
     }
-  },
-  components: {
-    Offer
   },
   created() {
     this.enableOrder()
