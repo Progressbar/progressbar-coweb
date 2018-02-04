@@ -1,223 +1,223 @@
 <template>
 <div class="order">
-    <div class="columns is-mobile is-centered">
-          <div class="column is-narrow">
-                <a class="button is-white is-outlined" disabled>👋 {{ this.button.welcome }}</a>
-          </div>
+  <div class="columns is-mobile is-centered">
+    <div class="column is-narrow">
+      <a class="button is-white is-outlined" disabled>👋 {{ this.button.welcome }}</a>
     </div>
-    <div class="columns is-mobile is-centered">
-      <div class="column is-narrow">
-        <a class="button is-white is-outlined" disabled>💳 Credit {{ this.button.credit }}</a>
-      </div>
-      <div class="column is-narrow">
-        <a href="./#/credit" class="button is-white is-outlined">Fuel ⛽ ⬆️ credit</a>
-      </div>
+  </div>
+  <div class="columns is-mobile is-centered">
+    <div class="column is-narrow">
+      <a class="button is-white is-outlined" disabled>💳 Credit {{ this.button.credit }}</a>
     </div>
-    <div v-if="this.auth.gotOrderToday" class="columns is-mobile is-centered">
-      <div class="column is-narrow">
-        <a @click="unlockBlackDoors()" class="button is-primary is-outlined">{{ this.button.blackdoor }}</a>
-      </div>
-      <div class="column is-narrow">
-        <a @click="unlockDoors()" class="button is-primary is-outlined">{{ this.button.unlockdoor }}</a>
-      </div>
+    <div class="column is-narrow">
+      <a href="./#/credit" class="button is-white is-outlined">Fuel ⛽ ⬆️ credit</a>
     </div>
-    <div v-if="this.auth.gotCredit" class="columns is-centered">
-          <div class="column is-narrow">
-            <div class="select is-primary">
-              <!-- <select @change="orderCalculate()" v-model="orderCalc.program" >
+  </div>
+  <div v-if="this.auth.gotOrderToday" class="columns is-mobile is-centered">
+    <div class="column is-narrow">
+      <a @click="unlockBlackDoors()" class="button is-primary is-outlined">{{ this.button.blackdoor }}</a>
+    </div>
+    <div class="column is-narrow">
+      <a @click="unlockDoors()" class="button is-primary is-outlined">{{ this.button.unlockdoor }}</a>
+    </div>
+  </div>
+  <div v-if="this.auth.gotCredit" class="columns is-centered">
+    <div class="column is-narrow">
+      <div class="select is-primary">
+        <!-- <select @change="orderCalculate()" v-model="orderCalc.program" >
                 <option disabled value="">Choose program</option>
                 <option v-for="(item, index) in config.orderPrices" v-bind:item="item" v-bind:index="index">
                   {{ index }}
                 </option>
               </select> -->
-              <select @change="orderCalculate()" v-model="orderCalc.program" >
+        <select @change="orderCalculate()" v-model="orderCalc.program">
                 <option disabled value="">Choose program</option>
                 <option value="day">Daypass</option>
               </select>
-            </div>
-          </div>
-          <div class="column is-narrow">
-            <flat-pickr @change="orderCalculate()" v-model="orderCalcDate" placeholder="Select date"></flat-pickr>
-          </div>
-    </div>
-    <div v-if="this.auth.gotCredit" class="columns is-mobile is-centered">
-      <div class="column is-narrow">
-        <a class="button is-success is-outlined" disabled>{{ 'Price ' + this.orderCalc.total + ' €' }}</a>
-      </div>
-      <div class="column is-narrow">
-        <a @click="orderCowork()" class="button is-success is-outlined">{{ this.button.order }}</a>
       </div>
     </div>
-    <div class="columns is-centered">
-      <div class="column is-narrow is-10">
-        <article class="message is-info is-small">
-          <div class="message-body">
-            <ol>
-              <li>
-                You need top up your credit.
-              </li>
-              <li>
-                When you already done that, contact <a href="https://m.me/matej.wao.nemcek">m.me/matej.wao.nemcek</a> to credit you in system
-              </li>
-              <li>
-                When you will see credit in system, you can pick program (daypass) and choose your desired date
-              </li>
-              <li>
-                When you done that, you will see two buttons for opening doors
-              </li>
-              <li>
-                Black doors is for doors at street level and white doors will open doors at entrance into our space
-              </li>
-            </ol>
-          </div>
-        </article>
-      </div>
+    <div class="column is-narrow">
+      <flat-pickr @change="orderCalculate()" v-model="orderCalcDate" placeholder="Select date"></flat-pickr>
     </div>
-    <div class="columns is-centered">
-      <div class="column is-narrow">
-        <div class="card">
-          <header class="card-header">
-            <p class="card-header-title">
-              Daypass
-            </p>
-            <a href="#" class="card-header-icon" aria-label="more options">
-            </a>
-          </header>
-          <div class="card-content">
-            <div class="content">
-              <ul>
-                <li>
-                  {{ this.config.openHours.dayPass.start }} - {{ this.config.openHours.dayPass.end }}
-                </li>
-                <li>
-                  ♨️ desk
-                </li>
-                <li>
-                  {{ this.config.orderPrices.day }}€ / day
-                </li>
-              </ul>
-              <!-- <br> -->
-            </div>
-          </div>
+  </div>
+  <div v-if="this.auth.gotCredit" class="columns is-mobile is-centered">
+    <div class="column is-narrow">
+      <a class="button is-success is-outlined" disabled>{{ 'Price ' + this.orderCalc.total + ' €' }}</a>
+    </div>
+    <div class="column is-narrow">
+      <a @click="orderCowork()" class="button is-success is-outlined">{{ this.button.order }}</a>
+    </div>
+  </div>
+  <div class="columns is-centered">
+    <div class="column is-6">
+      <article class="message is-info is-small">
+        <div class="message-body">
+          <ol>
+            <li>
+              You need top up your <router-link to="/credit"><a href="/#/credit">credit.</a></router-link>
+            </li>
+            <li>
+              When you already done that, contact <a href="https://m.me/matej.wao.nemcek">m.me/matej.wao.nemcek</a> to credit you in system
+            </li>
+            <li>
+              When you will see credit in system, you can pick program (daypass) and book your desired date for coworking
+            </li>
+            <li>
+              When you done that, you will see two buttons for opening doors
+            </li>
+            <li>
+              Black doors are doors at street level and white doors will open doors at entrance into our space
+            </li>
+          </ol>
         </div>
-      </div>
-      <div class="column is-narrow">
-        <div class="card">
-          <header class="card-header">
-            <p class="card-header-title">
-              Flex (30 Days)
-            </p>
-            <a href="#" class="card-header-icon" aria-label="more options">
+      </article>
+    </div>
+  </div>
+  <div class="columns is-centered">
+    <div class="column is-narrow">
+      <div class="card">
+        <header class="card-header">
+          <p class="card-header-title">
+            Daypass
+          </p>
+          <a href="#" class="card-header-icon" aria-label="more options">
             </a>
-          </header>
-          <div class="card-content">
-            <div class="content">
-              <ul>
-                <li>
-                  {{ this.config.openHours.monthPass.start }} - {{ this.config.openHours.monthPass.end }}
-                </li>
-                <li>
-                  ♨️ desk
-                </li>
-                <li>
-                  {{ this.config.orderPrices.month }}€ / month
-                </li>
-              </ul>
-              <!-- <br> -->
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="column is-narrow">
-        <div class="card">
-          <header class="card-header">
-            <p class="card-header-title">
-              <s>Homie</s>
-            </p>
-            <a href="#" class="card-header-icon" aria-label="more options">
-            </a>
-          </header>
-          <div class="card-content">
-            <div class="content">
-              <ul>
-                <li>
-                  24/7
-                </li>
-                <li>
-                  Fixdesk
-                </li>
-                <li>
-                  {{ this.config.orderPrices.fix }}€ / month
-                </li>
-              </ul>
-              <!-- <br> -->
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="column is-narrow">
-        <div class="card">
-          <header class="card-header">
-            <p class="card-header-title">
-              <s>Locker</s>
-            </p>
-            <a href="#" class="card-header-icon" aria-label="more options">
-            </a>
-          </header>
-          <div class="card-content">
-            <div class="content">
-              <ul>
-                <li>
-                  {{ this.config.orderPrices.locker}}€ / month
-                </li>
-              </ul>
-              <!-- <br> -->
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="column is-narrow">
-        <div class="card">
-          <header class="card-header">
-            <p class="card-header-title">
-              <s>24/7 access</s>
-            </p>
-            <a href="#" class="card-header-icon" aria-label="more options">
-            </a>
-          </header>
-          <div class="card-content">
-            <div class="content">
-              <ul>
-                <li>
-                  {{ this.config.orderPrices.nonstop}}€ / month
-                </li>
-              </ul>
-              <!-- <br> -->
-            </div>
+        </header>
+        <div class="card-content">
+          <div class="content">
+            <ul>
+              <li>
+                {{ this.config.openHours.dayPass.start }} - {{ this.config.openHours.dayPass.end }}
+              </li>
+              <li>
+                ♨️ desk
+              </li>
+              <li>
+                {{ this.config.orderPrices.day }}€ / day
+              </li>
+            </ul>
+            <!-- <br> -->
           </div>
         </div>
       </div>
     </div>
-    <div class="columns is-centered">
-      <div class="column is-narrow">
-        <a class="button is-outlined is-light" disabled>{{this.seats.capacity}} 💺 capacity</a>
+    <div class="column is-narrow">
+      <div class="card">
+        <header class="card-header">
+          <p class="card-header-title">
+            Flex (30 Days)
+          </p>
+          <a href="#" class="card-header-icon" aria-label="more options">
+            </a>
+        </header>
+        <div class="card-content">
+          <div class="content">
+            <ul>
+              <li>
+                {{ this.config.openHours.monthPass.start }} - {{ this.config.openHours.monthPass.end }}
+              </li>
+              <li>
+                ♨️ desk
+              </li>
+              <li>
+                {{ this.config.orderPrices.month }}€ / month
+              </li>
+            </ul>
+            <!-- <br> -->
+          </div>
+        </div>
       </div>
-      <div class="column is-narrow">
-          <a @click="getSubscribers()" class="button is-outlined is-light">{{this.seats.subscribers}} 📩👨‍💻⚙</a>
+    </div>
+    <div class="column is-narrow">
+      <div class="card">
+        <header class="card-header">
+          <p class="card-header-title">
+            <s>Homie</s>
+          </p>
+          <a href="#" class="card-header-icon" aria-label="more options">
+            </a>
+        </header>
+        <div class="card-content">
+          <div class="content">
+            <ul>
+              <li>
+                24/7
+              </li>
+              <li>
+                Fixdesk
+              </li>
+              <li>
+                {{ this.config.orderPrices.fix }}€ / month
+              </li>
+            </ul>
+            <!-- <br> -->
+          </div>
+        </div>
       </div>
-      <div class="column is-narrow">
-          <a class="button is-outlined is-light" disabled>{{this.daysBooked}} 📅 👨‍💻💰 </a>
+    </div>
+    <div class="column is-narrow">
+      <div class="card">
+        <header class="card-header">
+          <p class="card-header-title">
+            <s>Locker</s>
+          </p>
+          <a href="#" class="card-header-icon" aria-label="more options">
+            </a>
+        </header>
+        <div class="card-content">
+          <div class="content">
+            <ul>
+              <li>
+                {{ this.config.orderPrices.locker}}€ / month
+              </li>
+            </ul>
+            <!-- <br> -->
+          </div>
+        </div>
       </div>
-      <!-- <div class="column is-narrow">
+    </div>
+    <div class="column is-narrow">
+      <div class="card">
+        <header class="card-header">
+          <p class="card-header-title">
+            <s>24/7 access</s>
+          </p>
+          <a href="#" class="card-header-icon" aria-label="more options">
+            </a>
+        </header>
+        <div class="card-content">
+          <div class="content">
+            <ul>
+              <li>
+                {{ this.config.orderPrices.nonstop}}€ / month
+              </li>
+            </ul>
+            <!-- <br> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="columns is-centered">
+    <div class="column is-narrow">
+      <a class="button is-outlined is-light" disabled>{{this.seats.capacity}} 💺 capacity</a>
+    </div>
+    <div class="column is-narrow">
+      <a @click="getSubscribers()" class="button is-outlined is-light">{{this.seats.subscribers}} 📩👨‍💻⚙</a>
+    </div>
+    <div class="column is-narrow">
+      <a class="button is-outlined is-light" disabled>{{this.daysBooked}} 📅 👨‍💻💰 </a>
+    </div>
+    <!-- <div class="column is-narrow">
           <a class="button is-outlined is-dark" disabled>{{this.credited}} 👨‍💻💰 </a>
       </div> -->
-    </div>
-    <div class="columns is-centered">
-      <div class="column is-narrow">
-        <a v-for="item in orderSum" class="button is-outlined is-light" disabled>
+  </div>
+  <div class="columns is-centered">
+    <div class="column is-narrow">
+      <a v-for="item in orderSum" class="button is-outlined is-light" disabled>
           {{ item[1]+1 }}/{{item[2]}} | {{ item[0] }} 👩‍💻 {{ seats.capacity - item[0] }} 🆓 </a>
-        </div>
     </div>
+  </div>
 </div>
 </template>
 
@@ -304,12 +304,12 @@ export default {
       this.auth.user = this.$ls.get('user')
       this.auth.authToken = this.$ls.get('authToken')
       axios({
-        method: 'get',
-        url: this.$api.base + this.$api.order,
-        params: {
-          authToken: this.auth.authToken
-        }
-      })
+          method: 'get',
+          url: this.$api.base + this.$api.order,
+          params: {
+            authToken: this.auth.authToken
+          }
+        })
         .then(response => {
           // console.log(response)
           this.button.welcome = response.data.code
@@ -328,9 +328,9 @@ export default {
     },
     getSubscribers() {
       axios({
-        method: 'get',
-        url: this.$api.base + this.$api.subscribers
-      })
+          method: 'get',
+          url: this.$api.base + this.$api.subscribers
+        })
         .then(response => {
           // console.log(response)
           this.seats = response.data.seats
@@ -353,14 +353,14 @@ export default {
     },
     orderCowork() {
       axios({
-        method: 'get',
-        url: this.$api.base + this.$api.orderCowork,
-        params: {
-          authToken: this.auth.authToken,
-          date: this.orderCalc.dateTimestamp,
-          plan: this.orderCalc.program
-        }
-      })
+          method: 'get',
+          url: this.$api.base + this.$api.orderCowork,
+          params: {
+            authToken: this.auth.authToken,
+            date: this.orderCalc.dateTimestamp,
+            plan: this.orderCalc.program
+          }
+        })
         .then(response => {
           // console.log(response)
           this.button.order = response.data.code
@@ -371,12 +371,12 @@ export default {
     },
     unlockDoors(authToken) {
       axios({
-        method: 'get',
-        url: this.$api.base + this.$api.openDoor,
-        params: {
-          authToken: this.auth.authToken
-        }
-      })
+          method: 'get',
+          url: this.$api.base + this.$api.openDoor,
+          params: {
+            authToken: this.auth.authToken
+          }
+        })
         .then(response => {
           // console.log(response)
           this.button.unlockdoor = response.data.code
@@ -387,12 +387,12 @@ export default {
     },
     unlockBlackDoors(authToken) {
       axios({
-        method: 'get',
-        url: this.$api.base + this.$api.openBlackDoor,
-        params: {
-          authToken: this.auth.authToken
-        }
-      })
+          method: 'get',
+          url: this.$api.base + this.$api.openBlackDoor,
+          params: {
+            authToken: this.auth.authToken
+          }
+        })
         .then(response => {
           // console.log(response)
           this.button.blackdoor = response.data.code
