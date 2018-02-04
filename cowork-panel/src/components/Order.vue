@@ -74,129 +74,7 @@
     </div>
   </div>
   <div class="columns is-centered">
-    <div class="column is-narrow">
-      <div class="card">
-        <header class="card-header">
-          <p class="card-header-title">
-            Daypass
-          </p>
-          <a href="#" class="card-header-icon" aria-label="more options">
-            </a>
-        </header>
-        <div class="card-content">
-          <div class="content">
-            <ul>
-              <li>
-                {{ this.config.openHours.dayPass.start }} - {{ this.config.openHours.dayPass.end }}
-              </li>
-              <li>
-                ♨️ desk
-              </li>
-              <li>
-                {{ this.config.orderPrices.day }}€ / day
-              </li>
-            </ul>
-            <!-- <br> -->
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="column is-narrow">
-      <div class="card">
-        <header class="card-header">
-          <p class="card-header-title">
-            Flex (30 Days)
-          </p>
-          <a href="#" class="card-header-icon" aria-label="more options">
-            </a>
-        </header>
-        <div class="card-content">
-          <div class="content">
-            <ul>
-              <li>
-                {{ this.config.openHours.monthPass.start }} - {{ this.config.openHours.monthPass.end }}
-              </li>
-              <li>
-                ♨️ desk
-              </li>
-              <li>
-                {{ this.config.orderPrices.month }}€ / month
-              </li>
-            </ul>
-            <!-- <br> -->
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="column is-narrow">
-      <div class="card">
-        <header class="card-header">
-          <p class="card-header-title">
-            <s>Homie</s>
-          </p>
-          <a href="#" class="card-header-icon" aria-label="more options">
-            </a>
-        </header>
-        <div class="card-content">
-          <div class="content">
-            <ul>
-              <li>
-                24/7
-              </li>
-              <li>
-                Fixdesk
-              </li>
-              <li>
-                {{ this.config.orderPrices.fix }}€ / month
-              </li>
-            </ul>
-            <!-- <br> -->
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="column is-narrow">
-      <div class="card">
-        <header class="card-header">
-          <p class="card-header-title">
-            <s>Locker</s>
-          </p>
-          <a href="#" class="card-header-icon" aria-label="more options">
-            </a>
-        </header>
-        <div class="card-content">
-          <div class="content">
-            <ul>
-              <li>
-                {{ this.config.orderPrices.locker}}€ / month
-              </li>
-            </ul>
-            <!-- <br> -->
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="column is-narrow">
-      <div class="card">
-        <header class="card-header">
-          <p class="card-header-title">
-            <s>24/7 access</s>
-          </p>
-          <a href="#" class="card-header-icon" aria-label="more options">
-            </a>
-        </header>
-        <div class="card-content">
-          <div class="content">
-            <ul>
-              <li>
-                {{ this.config.orderPrices.nonstop}}€ / month
-              </li>
-            </ul>
-            <!-- <br> -->
-          </div>
-        </div>
-      </div>
-    </div>
+    <Offer></Offer>
   </div>
   <div class="columns is-centered">
     <div class="column is-narrow">
@@ -223,6 +101,7 @@
 
 <script>
 import axios from 'axios'
+import Offer from './Offer.vue'
 import flatPickr from 'vue-flatpickr-component'
 import 'flatpickr/dist/flatpickr.css'
 import 'flatpickr/dist/themes/dark.css'
@@ -286,6 +165,9 @@ export default {
       credited: 0,
       orderSum: {}
     }
+  },
+  components: {
+    Offer
   },
   created() {
     this.enableOrder()

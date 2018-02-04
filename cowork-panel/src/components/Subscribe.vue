@@ -118,135 +118,7 @@
     </div>
   </div>
   <div class="columns is-centered">
-    <div class="column is-narrow">
-      <div class="card">
-        <header class="card-header">
-          <p class="card-header-title">
-            Daypass
-          </p>
-          <a href="#" class="card-header-icon" aria-label="more options">
-          </a>
-        </header>
-        <div class="card-content">
-          <div class="content">
-            <ul>
-              <li>
-                {{ this.config.openHours.dayPass.start }} - {{ this.config.openHours.dayPass.end }}
-              </li>
-              <li>
-                Hotdesk ♨️
-              </li>
-              <li>
-                {{ this.config.orderPrices.day }}€ / day
-              </li>
-            </ul>
-            <!-- <br> -->
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="column is-narrow">
-      <div class="card">
-        <header class="card-header">
-          <p class="card-header-title">
-            Flex (30 days)
-          </p>
-          <a href="#" class="card-header-icon" aria-label="more options">
-          </a>
-        </header>
-        <div class="card-content">
-          <div class="content">
-            <ul>
-              <li>
-                {{ this.config.openHours.monthPass.start }} - {{ this.config.openHours.monthPass.end }}
-              </li>
-              <li>
-                Hotdesk ♨️
-              </li>
-              <li>
-                {{ this.config.orderPrices.month }}€ / month
-              </li>
-            </ul>
-            <!-- <br> -->
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="column is-narrow">
-      <div class="card">
-        <header class="card-header">
-          <p class="card-header-title">
-            Fixdesk
-          </p>
-          <a href="#" class="card-header-icon" aria-label="more options">
-          </a>
-        </header>
-        <div class="card-content">
-          <div class="content">
-            <ul>
-              <li>
-                6 - 18
-              </li>
-              <li>
-                Fixdesk
-              </li>
-              <li>
-                {{ this.config.orderPrices.fix }}€ / month
-              </li>
-            </ul>
-            <!-- <br> -->
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="column is-narrow">
-      <div class="card">
-        <header class="card-header">
-          <p class="card-header-title">
-            24/7 access (addon)
-          </p>
-          <a href="#" class="card-header-icon" aria-label="more options">
-          </a>
-        </header>
-        <div class="card-content">
-          <div class="content">
-            <ul>
-              <li>
-                Work any 🕙
-              </li>
-              <li>
-                {{ this.config.orderPrices.nonstop}}€ / month
-              </li>
-            </ul>
-            <!-- <br> -->
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="column is-narrow">
-      <div class="card">
-        <header class="card-header">
-          <p class="card-header-title">
-            <s>Locker (addon)</s>
-          </p>
-          <a href="#" class="card-header-icon" aria-label="more options">
-          </a>
-        </header>
-        <div class="card-content">
-          <div class="content">
-            <ul>
-              <li>
-                Lock your 💎 💻
-              </li>
-              <li>
-                {{ this.config.orderPrices.locker}}€ / month
-              </li>
-            </ul>
-            <!-- <br> -->
-          </div>
-        </div>
-      </div>
-    </div>
+    <Offer></Offer>
   </div>
   <div class="columns is-centered">
     <div class="column is-4">
@@ -381,6 +253,7 @@
 
 <script>
 import axios from 'axios'
+import Offer from './Offer.vue'
 
 export default {
   name: 'subscribe',
@@ -428,6 +301,7 @@ export default {
       }
     }
   },
+  components: { Offer },
   created() {
     this.alreadyUser()
     this.getConfig()

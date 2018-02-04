@@ -1,5 +1,5 @@
 <template>
-<div class="order">
+<div class="credit">
     <div class="columns">
           <div class="column">
                 <article class="message">
