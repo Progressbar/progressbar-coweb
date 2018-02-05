@@ -10,6 +10,7 @@ Vue.prototype.$api = {
   baseWebUrl: 'https://cowork.progressbar.sk/',
   pubConfig: 'pubConfig/',
   subscribers: 'status/',
+  daydetails: 'daydetails/',
   newSubscriber: 'emailSubscribe/',
   verify: 'verify/',
   order: 'order/',

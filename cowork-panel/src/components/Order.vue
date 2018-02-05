@@ -86,6 +86,9 @@
     <div class="column is-narrow">
       <a class="button is-outlined is-light" disabled>{{this.daysBooked}} 📅 👨‍💻💰 </a>
     </div>
+    <div class="column is-narrow">
+      <a @click="getDayDetails()" class="button is-outlined is-light">Day details</a>
+    </div>
     <!-- <div class="column is-narrow">
           <a class="button is-outlined is-dark" disabled>{{this.credited}} 👨‍💻💰 </a>
       </div> -->
@@ -94,6 +97,12 @@
     <div class="column is-narrow">
       <a v-for="item in orderSum" class="button is-outlined is-light" disabled>
           {{ item[1]+1 }}/{{item[2]}} | {{ item[0] }} 👩‍💻 {{ seats.capacity - item[0] }} 🆓 </a>
+    </div>
+  </div>
+  <div class="columns is-centered">
+    <div class="column is-narrow">
+      <a v-for="item in dayDetail" class="button is-outlined is-light" disabled>
+          {{ item }}</a>
     </div>
   </div>
 </div>
@@ -163,7 +172,8 @@ export default {
       },
       daysBooked: 0,
       credited: 0,
-      orderSum: {}
+      orderSum: {},
+      dayDetail: {}
     }
   },
   created() {
@@ -220,6 +230,17 @@ export default {
         .catch(e => {
           console.log(e)
         })
+    },
+    getDayDetails() {
+      const now = Date.now()
+      const today = new Date(Date.UTC(new Date(now).getUTCFullYear(), new Date(now).getUTCMonth(), new Date(now).getUTCDate())).getTime()
+      axios({
+        method: 'get',
+        url: this.$api.base + this.$api.daydetails + `?day=${today}`
+      })
+      .then(response => {
+        this.dayDetail = response.data.dayDetail
+      })
     },
     orderCalculate() {
       this.orderCalc.dateTimestamp = new Date(this.orderCalc.date).getTime()
