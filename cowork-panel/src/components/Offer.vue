@@ -182,16 +182,6 @@ export default {
         coworkSubscribe: false
       }
     }
-  },
-  created() {
-    this.getPaymentInfo()
-  },
-  methods: {
-    getPaymentInfo() {
-      if (this.$ls.get('user')) {
-        this.button.fiat.paymentReference = this.$ls.get('user').slice(-12)
-      }
-    }
   }
 }
 </script>
