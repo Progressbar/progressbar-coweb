@@ -37,7 +37,7 @@
       </div>
     </div>
     <div class="column is-narrow">
-      <flat-pickr @change="orderCalculate()" v-model="orderCalcDate" placeholder="Select date"></flat-pickr>
+      <flat-pickr @change="orderCalculate()" v-model="orderCalcDate" placeholder="Select date" name="date"></flat-pickr>
     </div>
   </div>
   <div v-if="this.auth.gotCredit" class="columns is-mobile is-centered">
