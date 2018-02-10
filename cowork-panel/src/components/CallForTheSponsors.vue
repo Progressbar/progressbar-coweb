@@ -6,26 +6,23 @@
         <div class="columns is-centered">
           <div class="column is-6">
             <h1 class="title">
-              Beloved & Brave Sponsors of our hackerspace Progressbar & Cowork Progressbar
+              Call for Sponsors & Partners
             </h1>
             <h2 class="subtitle">
-              <uL>
-                <li>
-                  <a href="https://www.bitpanther.com/">BitPanther</a> - BitPanther is a European financial technology platform focused on helping people to get access to digital currencies. BitPanther is a registered Slovakian company, compliant with Slovak and EU regulations.
-                </li>
-                <li>
-                  <a href="https://wy.sk/">wy</a> - We are your dream hoster, and your best choice for doing business on internet. We provide hosting to company websites, e-shops, blogs, huge portals or private presentations. We welcome individuals and freelancers, small teams and running businesses.
-                </li>
-                <li>
-                  <a href="https://cowork.progressbar.sk">your favourite company</a>
-                </li>
-              </uL>
+              <br />
+              Progressbar hackerspace is looking for sponsors & partners to help us with the space.
+              We can offer to give our sponsors marketing push.</br></br>
+              The plan is to raise at least 2000€ to cover the monthly cashflow, mostly rent.
+              The new space will be 231 squares meters big.</br></br>
+              We are in need to cover the costs of coworking equipment and sound-proof glass meeting room.</br>
+              The lab will be kept as hackerspace component.</br></br>
+              The space capacity is about 80 people for meetups. Meetup organizators, contact us.
+              Tech meetups are preferred.</br></br>
+              We are also looking for Cryptocurrency ATM operator with own vending machine</br></br>
+
+              We can offer you to place your banner/rollup in our space.</br>
+              We can put your company logo on our page.</br>
             </h2>
-            <p>
-              Want to sponsor us? Your name will be known in our hackerspace & cowork. We hosted 300+ technical and technological events so far.
-              We can give you huge marketing push or find you geeks, engineers, software developers you are searching for.
-              We are their daily place, where their come hangout on evenings or work during day
-            </p>
             <p>
               You can contact us via email or messenger
             </p>

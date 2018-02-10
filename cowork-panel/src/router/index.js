@@ -6,6 +6,7 @@ import Order from '@/components/Order'
 import Login from '@/components/Login'
 import Credit from '@/components/Credit'
 import Photos from '@/components/Photos'
+import CallForTheSponsors from '@/components/CallForTheSponsors'
 import Sponsors from '@/components/Sponsors'
 import VueLocalStorage from 'vue-ls'
 
@@ -50,6 +51,10 @@ export default new Router({
     {
       path: '/coworking-progressbar-bratislava-photos',
       component: Photos
+    },
+    {
+      path: '/call-for-the-sponsors',
+      component: CallForTheSponsors
     },
     {
       path: '/sponsors',
