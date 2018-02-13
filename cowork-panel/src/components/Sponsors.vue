@@ -11,7 +11,10 @@
             <h2 class="subtitle">
               <ul>
                 <li>
-                  <a href="https://decent.ch">DECENT</a> & <a href="https://dcore.decent.ch">DCore</a><br />Components are the fundamental building blocks of DCore which can be customized and combined to build blockchain solutions and applications for businesses and small projects alike. Here are just some of the things DCore can do!
+                   <a href="https://dcore.decent.ch">DCore</a><br />Blockchain you can actually build on. Innovative and customizable adaptation of blockchain technology allows you to mix and match DCore components to further your own projects.
+                </li>
+                <li>
+                  <a href="https://decent.ch">DECENT</a><br /> is a Blockchain Content Distribution Platform that is Open-Source and utilizes Blockchain to ensure trust and security. Our intention is to revolutionize data distribution on the Internet.
                 </li>
                 <li>
                   <a href="https://www.bitpanther.com">BitPanther</a><br /> is a European financial technology platform focused on helping people to get access to digital currencies. BitPanther is a registered Slovakian company, compliant with Slovak and EU regulations.
