@@ -9,17 +9,20 @@
               Beloved & Brave Sponsors of our hackerspace Progressbar & Cowork Progressbar
             </h1>
             <h2 class="subtitle">
-              <uL>
+              <ul>
                 <li>
-                  <a href="https://www.bitpanther.com/">BitPanther</a> - BitPanther is a European financial technology platform focused on helping people to get access to digital currencies. BitPanther is a registered Slovakian company, compliant with Slovak and EU regulations.
+                  <a href="https://decent.ch">DECENT</a> & <a href="https://dcore.decent.ch">DCore</a><br />Components are the fundamental building blocks of DCore which can be customized and combined to build blockchain solutions and applications for businesses and small projects alike. Here are just some of the things DCore can do!
                 </li>
                 <li>
-                  <a href="https://wy.sk/">wy</a> - We are your dream hoster, and your best choice for doing business on internet. We provide hosting to company websites, e-shops, blogs, huge portals or private presentations. We welcome individuals and freelancers, small teams and running businesses.
+                  <a href="https://www.bitpanther.com">BitPanther</a><br /> is a European financial technology platform focused on helping people to get access to digital currencies. BitPanther is a registered Slovakian company, compliant with Slovak and EU regulations.
+                </li>
+                <li>
+                  <a href="https://wy.sk">wy</a><br /> We are your dream hoster, and your best choice for doing business on internet. We provide hosting to company websites, e-shops, blogs, huge portals or private presentations. We welcome individuals and freelancers, small teams and running businesses.
                 </li>
                 <li>
                   <a href="https://cowork.progressbar.sk">your favourite company</a>
                 </li>
-              </uL>
+              </ul>
             </h2>
             <p>
               Want to sponsor us? Your name will be known in our hackerspace & cowork. We hosted 300+ technical and technological events so far.
