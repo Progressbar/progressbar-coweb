@@ -48,10 +48,8 @@
 </div>
 </template>
 <script>
-import axios from 'axios'
-
 export default {
-  name: 'photos',
+  name: 'sponsors',
   data() {
     return {
       seats: {

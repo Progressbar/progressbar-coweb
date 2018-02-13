@@ -8,6 +8,7 @@ import Credit from '@/components/Credit'
 import Photos from '@/components/Photos'
 import CallForTheSponsors from '@/components/CallForTheSponsors'
 import Sponsors from '@/components/Sponsors'
+import D14 from '@/components/D14'
 import VueLocalStorage from 'vue-ls'
 
 var options = {
@@ -59,6 +60,10 @@ export default new Router({
     {
       path: '/sponsors',
       component: Sponsors
+    },
+    {
+      path: '/d14',
+      component: D14
     }
   ]
 })
