@@ -15,6 +15,11 @@
     <img src="/static/img/d14/d14_c.png" alt=""/>
   </div>
 </div>
+<div class="columns">
+  <div class="column">
+    <img src="/static/img/d14/d14_d.png" alt=""/>
+  </div>
+</div>
 </div>
 </template>
 <script>
