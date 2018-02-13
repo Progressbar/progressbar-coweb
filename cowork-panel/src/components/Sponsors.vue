@@ -6,7 +6,7 @@
         <div class="columns is-centered">
           <div class="column is-6">
             <h1 class="title">
-              Beloved & Brave Sponsors of our hackerspace Progressbar & Cowork Progressbar
+              Beloved & Brave Sponsors of our <a href="https://progressbar.sk"> hackerspace Progressbar</a> & <a href="https://cowork.progressbar.sk"> Cowork Progressbar</a>
             </h1>
             <h2 class="subtitle">
               <ul>
