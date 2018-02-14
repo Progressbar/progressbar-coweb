@@ -19,13 +19,8 @@
 </template>
 
 <script>
-import CookieLaw from 'vue-cookie-law';
-
 export default {
-  name: 'app',
-  components: {
-    CookieLaw 
-  }
+  name: 'app'
 }
 </script>
 
