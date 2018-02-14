@@ -14,12 +14,18 @@
   <main>
     <router-view></router-view>
   </main>
+  <cookie-law />
 </div>
 </template>
 
 <script>
+import CookieLaw from 'vue-cookie-law';
+
 export default {
-  name: 'app'
+  name: 'app',
+  components: {
+    CookieLaw 
+  }
 }
 </script>
 
