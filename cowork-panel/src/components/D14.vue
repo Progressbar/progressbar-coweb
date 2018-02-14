@@ -1,22 +1,22 @@
 <template>
 <div class="d14">
-<div class="columns">
-  <div class="column">
+<div class="columns is-centered">
+  <div class="column is-narrow">
     <img src="/static/img/d14/d14_a.png" alt=""/>
   </div>
 </div>
-<div class="columns">
-  <div class="column">
+<div class="columns is-centered">
+  <div class="column is-narrow">
     <img src="/static/img/d14/d14_b.png" alt=""/>
   </div>
 </div>
-<div class="columns">
-  <div class="column">
+<div class="columns is-centered">
+  <div class="column is-narrow">
     <img src="/static/img/d14/d14_c.png" alt=""/>
   </div>
 </div>
-<div class="columns">
-  <div class="column">
+<div class="columns is-centered">
+  <div class="column is-narrow">
     <img src="/static/img/d14/d14_d.png" alt=""/>
   </div>
 </div>
