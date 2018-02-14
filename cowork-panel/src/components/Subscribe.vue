@@ -21,7 +21,8 @@
         <div class="card-content">
           <div class="content">
             <ul>
-              <li> <a href="https://www.google.com/maps/place/Progressbar+hackerspace/@48.1442259,17.1055539,17z/data=!4m8!1m2!3m1!2sProgressbar+hackerspace!3m4!1s0x0:0x72ac0b6fccaf66fd!8m2!3d48.1442778!4d17.1065933" title="Michalska 3, Bratislava">Place for your work in downtown</a>
+              <li>
+                <a href="https://www.google.com/maps/place/Progressbar+hackerspace/@48.1442259,17.1055539,17z/data=!4m8!1m2!3m1!2sProgressbar+hackerspace!3m4!1s0x0:0x72ac0b6fccaf66fd!8m2!3d48.1442778!4d17.1065933" title="Michalska 3, Bratislava">Place for your work in downtown</a>
               </li>
               <li>
                 <a href="https://beta.speedtest.net/result/6614494632">High-speed Internet ~ 250/20</a><a href="http://www.speedtest.net/my-result/a/3374894584">📱</a>
