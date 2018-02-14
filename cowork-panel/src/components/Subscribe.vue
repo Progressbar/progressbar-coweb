@@ -253,9 +253,9 @@
 </template>
 
 <script>
+import CookieLaw from 'vue-cookie-law'
 import axios from 'axios'
 import Offer from './Offer.vue'
-import CookieLaw from 'vue-cookie-law'
 
 export default {
   name: 'subscribe',
