@@ -248,7 +248,10 @@
       <h2 id="blackh2">Tech Cowork Progressbar in Bratislava where we accept Bitcoin and Litecoin for coworking. Daypass starts from {{ this.config.orderPrices.day }}€ </h2>
     </div>
   </div>
-  <cookie-law theme="dark-lime"/>
+  <cookie-law transitionName="fade"
+   position="bottom"
+   theme="dark-lime"
+   buttonText="I understand"></cookie-law>
 </div>
 </template>
 
@@ -303,7 +306,7 @@ export default {
       }
     }
   },
-  components: { 
+  components: {
     Offer,
     CookieLaw
   },
