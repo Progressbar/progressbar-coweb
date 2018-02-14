@@ -89,6 +89,9 @@
     <div class="column is-narrow">
       <a @click="getDayDetails()" class="button is-outlined is-light">Day details</a>
     </div>
+    <div class="column is-narrow">
+      <router-link to="/d14"><a class="button is-outlined is-white">D14</a> </router-link>
+    </div>
     <!-- <div class="column is-narrow">
           <a class="button is-outlined is-dark" disabled>{{this.credited}} 👨‍💻💰 </a>
       </div> -->
