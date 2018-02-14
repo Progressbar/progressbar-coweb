@@ -14,7 +14,6 @@
   <main>
     <router-view></router-view>
   </main>
-  <cookie-law />
 </div>
 </template>
 

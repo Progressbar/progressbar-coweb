@@ -248,13 +248,13 @@
       <h2 id="blackh2">Tech Cowork Progressbar in Bratislava where we accept Bitcoin and Litecoin for coworking. Daypass starts from {{ this.config.orderPrices.day }}€ </h2>
     </div>
   </div>
-  <cookie-law />
+  <cookie-law></cookie-law>
 </div>
 </template>
 
 <script>
-import CookieLaw from 'vue-cookie-law'
 import axios from 'axios'
+import CookieLaw from 'vue-cookie-law'
 import Offer from './Offer.vue'
 
 export default {
