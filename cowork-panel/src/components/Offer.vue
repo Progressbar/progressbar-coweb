@@ -162,9 +162,9 @@ export default {
       config: {
         baseWebUrl: 'https://cowork.progressbar.sk/',
         orderPrices: {
-          day: 4,
-          month: 80,
-          fix: 160,
+          day: 5,
+          month: 100,
+          fix: 180,
           locker: 10,
           nonstop: 20
         },
