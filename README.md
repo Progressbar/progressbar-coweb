@@ -1,5 +1,5 @@
 ### At Our 🏢 Coworking 👩‍🚀 Space We Have
-* Place for your work in downtown
+* Place for your work in downtown at [Dunajská 7495/14, 811 08 Bratislava](https://goo.gl/maps/MbUuRgPPHQz)
 * High-speed Internet (250/20)📱
 * Lot of ⚡️ Electric 🔌 Sockets
 * 🖥  External Monitors - shared
