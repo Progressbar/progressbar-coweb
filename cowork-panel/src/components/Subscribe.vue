@@ -94,10 +94,7 @@
   </div>
   <div class="columns is-centered">
     <div class="column is-narrow">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m0!4v1510323201819!6m8!1m7!1sCAoSLEFGMVFpcE50MW83am50YXRrdnRwTG1kczV4N0s0TUhHX05DTE1TZmpTbnlS!2m2!1d48.1442841!2d17.1065927!3f92.18082033085125!4f-19.784725182968003!5f0.4000000000000002" width="360" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-    </div>
-    <div class="column is-narrow">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m0!4v1510323406618!6m8!1m7!1sCAoSLEFGMVFpcE9TMTVpQnZ0cDFvU0xYZzZudW9yTTI4MllDNjRwam9ydkEyTFZr!2m2!1d48.1442769!2d17.1065927!3f56.55411849549628!4f-28.5293173380876!5f0.4000000000000002" width="360" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!4v1520687181290!6m8!1m7!1sCAoSLEFGMVFpcE5DTFo1VDhUcXI3QkUtYjd2N2ZySmZWMGp4QjU2Y2poNC1qWXVW!2m2!1d48.144557!2d17.1154906!3f93.6033215859847!4f-8.0060330138093!5f0.7820865974627469" width="360" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
   </div>
   <div v-if="!this.isUser" class="columns is-centered">
