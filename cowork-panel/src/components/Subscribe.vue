@@ -7,7 +7,7 @@
   </div>
   <div class="columns is-centered">
     <div class="column is-narrow">
-      <img src="/static/img/PANO_20171111_100131.jpg" alt="progressbar cowork bratislava">
+      <img src="/static/img/IMG_20180308_161328_HDR.jpg" alt="progressbar cowork bratislava">
     </div>
   </div>
   <div class="columns is-centered">
