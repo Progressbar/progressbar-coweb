@@ -59,6 +59,6 @@ html {
 .crop img {
   /*width: 400px;*/
   height: 200px;
-  margin: -98px 0 0 -10px;
+  margin: -105px 0 0 -10px;
 }
 </style>
