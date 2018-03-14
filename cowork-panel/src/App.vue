@@ -1,18 +1,26 @@
 <template>
 <div id="app">
   <header>
-    <div class="columns is-centered">
-      <div class="column is-narrow">
-        <div class="crop">
-          <a href="https://cowork.progressbar.sk">
-            <img src="/static/img/progressbar-logo_sw.svg" alt="progressbar logo">
-          </a>
+    <section class="section">
+      <div class="container is-fluid">
+        <div class="columns is-centered">
+          <div class="column is-narrow">
+            <div class="crop">
+              <a href="https://cowork.progressbar.sk">
+                <img src="/static/img/progressbar-logo_sw.svg" alt="progressbar logo">
+              </a>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   </header>
   <main>
-    <router-view></router-view>
+    <section class="section">
+      <div class="container is-fluid">
+        <router-view></router-view>
+      </div>
+    </section>
   </main>
 </div>
 </template>
@@ -45,12 +53,12 @@ html {
   /*width: 200px;*/
   height: 90px;
   overflow: hidden;
-  padding: 10px;
+  padding: 0px 10px 0px 50px;
 }
 
 .crop img {
   /*width: 400px;*/
   height: 200px;
-  margin: -110px 0 0 -10px;
+  margin: -98px 0 0 -10px;
 }
 </style>
