@@ -37,7 +37,7 @@
                 <a href="http://www.ikea.com/sk/sk/catalog/products/S29084966/" title="IKEA SKARSTA">Standing desks</a>
               </li>
               <li>
-                Room for calls 🗣📞
+                Meeting room 🤝
               </li>
               <li>
                 Coding women have 50% off 👩🏽‍💻
