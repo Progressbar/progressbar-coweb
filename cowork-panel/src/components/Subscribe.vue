@@ -7,7 +7,7 @@
   </div>
   <div class="columns is-centered">
     <div class="column is-narrow">
-      <img src="/static/img/IMG_20180308_161328_HDR.jpg" alt="progressbar cowork bratislava">
+      <img src="/static/img/IMG_20180307_154802_HDR.jpg" alt="progressbar cowork bratislava">
     </div>
   </div>
   <div class="columns is-centered">
@@ -200,12 +200,7 @@
   </div>
   <div class="columns is-centered">
     <div class="column is-narrow">
-      <img src="/static/img/P71108-200741.jpg" alt="progressbar cowork bratislava blockchain meetup">
-    </div>
-  </div>
-  <div class="columns is-centered">
-    <div class="column is-narrow">
-      <img src="/static/img/P71108-222854.jpg" alt="progressbar tech cowork bratislava bitcoin accepted">
+      <img src="/static/img/IMG_20180302_201641_HDR.jpg" alt="progressbar cowork bratislava blockchain meetup">
     </div>
   </div>
   <div class="columns is-centered">
