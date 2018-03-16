@@ -4,42 +4,11 @@
     <div class="hero-body">
       <div class="container">
         <div class="columns is-centered">
-          <div class="column is-6">
+          <div class="column is-6 content">
             <h1 class="title">
               Space for Rent & Events
             </h1>
-            <h2 class="subtitle">
-              <ul>
-                <li>
-                  <p>
-                    We are 231 meters square space at Dunajska 14, Bratislava where we have meetup area for 80 people.
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    We are non-profit organization, we mostly giving space for technical and technological meetups for free.
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    But some small financial support for our running costs are welcome and it will help us with rent in next month.
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    We appreaciate if you can donate us for three hours evening event from 20€ to 60€+
-                  </p>
-                </li>
-                <li>
-
-                </li>
-              </ul>
-
-
-
-
-
-            </h2>
+            <p v-for="line of content">{{line}}</p>
             <p>
               You can contact us via email or messenger
             </p>
@@ -61,46 +30,18 @@ export default {
   name: 'SpaceForRent',
   data() {
     return {
-      seats: {
-        subscribers: 0,
-        capacity: 0
-      },
-      credited: 0,
-      orderSum: {},
-      newSubscriber: {
-        email: ''
-      },
-      button: {
-        subscribe: 'Register for cowork',
-        verify: '__',
-        login: 'Send login link',
-        order: 'Go to Dashboard'
-      },
-      daysBooked: 0,
-      subEmail: '',
-      isUser: false,
-      config: {
-        baseWebUrl: 'https://cowork.progressbar.sk/',
-        orderPrices: {
-          day: 4,
-          month: 80,
-          fix: 160,
-          locker: 10,
-          nonstop: 20
-        },
-        openHours: {
-          monthPass: {
-            start: 6,
-            end: 18
-          },
-          dayPass: {
-            start: 9,
-            end: 18
-          }
-        },
-        coworkLogin: false,
-        coworkSubscribe: false
-      }
+      content: `
+        Our venue is 231 m² in Dunajska 14, at the heart of Bratislava. The space can comfortably accomodate 80 people, but it can be expanded to up to 160 thanks to the bar right below.
+
+        As a non-profit that cares about technology, we try to incentivize tech communities in Bratislava, by allowing them to use the venue for free for their events.
+        As a non-profit that needs to pay rent and bills, we also need funding! Any donations are welcome. Without donations, we won't be able too keep the familiar hackerspace spirit a lot of people in Bratislava are seeking, and offer these kinds of services
+
+        Our suggestion is a voluntary donation of 20-60€ for every evening, depending on what you/your community can afford and how much you'll be using the space
+        Thanks for the help!
+      `
+      .trim()
+      .split('\n')
+      .map((line) => line.trim()),
     }
   }
 }
