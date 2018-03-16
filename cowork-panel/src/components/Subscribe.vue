@@ -226,6 +226,9 @@
     <div class="column is-narrow">
       <router-link to="/call-for-the-sponsors"><a class="button is-outlined is-white">Call for the Sponsors</a></router-link>
     </div>
+    <div class="column is-narrow">
+      <router-link to="/space-for-rent"><a class="button is-outlined is-white">Space for Rent & Events</a></router-link>
+    </div>
   </div>
   <div class="columns is-centered">
     <div class="column is-narrow">
