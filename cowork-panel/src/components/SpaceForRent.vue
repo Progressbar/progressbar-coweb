@@ -1,26 +1,44 @@
 <template>
-<div class="sponsors">
+<div class="SpaceForRent">
   <section class="hero is-dark is-fullheight">
     <div class="hero-body">
       <div class="container">
         <div class="columns is-centered">
           <div class="column is-6">
             <h1 class="title">
-              Call for Sponsors & Partners
+              Space for Rent & Events
             </h1>
             <h2 class="subtitle">
-              <br />
-              Progressbar hackerspace is looking for sponsors & partners to help us with the space.
-              We can offer to give our sponsors marketing push.</br></br>
-              The plan is to raise at least 2000€ to cover the monthly cashflow, mostly rent.
-              The new space will be 231 squares meters big.</br></br>
-              We are in need to cover the costs of coworking equipment and sound-proof glass meeting room.</br>
-              The lab will be kept as hackerspace component.</br></br>
-              The space capacity is about 80 people for meetups. Meetup organizators, contact us.
-              Tech meetups are preferred.</br></br>
+              <ul>
+                <li>
+                  <p>
+                    We are 231 meters square space at Dunajska 14, Bratislava where we have meetup area for 80 people.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    We are non-profit organization, we mostly giving space for technical and technological meetups for free.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    But some small financial support for our running costs are welcome and it will help us with rent in next month.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    We appreaciate if you can donate us for three hours evening event from 20€ to 60€+
+                  </p>
+                </li>
+                <li>
 
-              We can offer you to place your banner/rollup in our space.</br>
-              We can put your company logo on our page.</br>
+                </li>
+              </ul>
+
+
+
+
+
             </h2>
             <p>
               You can contact us via email or messenger
@@ -40,7 +58,7 @@
 import axios from 'axios'
 
 export default {
-  name: 'CallForTheSponsors',
+  name: 'SpaceForRent',
   data() {
     return {
       seats: {
