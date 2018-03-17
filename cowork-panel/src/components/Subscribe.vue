@@ -130,13 +130,10 @@
           <div class="content">
             <ul>
               <li>
-                We started as <a href="https://progressbar.sk">first Slovak hackerspace</a> back in June 2010, this is our 3rd place as we went through expansion and <a href="https://progressbar.sk/calendar">held more and biggers meetups</a>.
+                We started as <a href="https://progressbar.sk">first Slovak hackerspace</a> back in June 2010, this is our 4th place as we went through expansion and <a href="https://progressbar.sk/calendar">held more and biggers meetups</a>.
               </li>
               <li>
                 In September 2017 we considered to keep up our 💸 cashflow & our existence and started thinking about daily utilization. We came up with idea to open <strong>coworking</strong> in our hackerspace Progressbar in Bratislava.
-              </li>
-              <li>
-                Now we are looking to move in new space to double our meetup space and increase coworking size.
               </li>
               <li>
                 If you think we are doing great thing
