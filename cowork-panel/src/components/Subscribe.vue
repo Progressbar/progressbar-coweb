@@ -92,14 +92,17 @@
       </div>
     </div>
   </div>
-  <div class="columns is-centered">
-    <div class="column is-narrow">
-      <iframe src="https://www.google.com/maps/embed?pb=!4v1521036389001!6m8!1m7!1sCAoSLEFGMVFpcE5VUktvSEtOdUtjRmZ2dHliRm95c0F2dHNRODcwaGhHRUd4eXFo!2m2!1d48.144557!2d17.1154906!3f0.9038775948851594!4f-3.1346220537675435!5f0.7820865974627469" width="360" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+
+    <div class="columns is-centered">
+      <div class="column is-narrow">
+        <iframe src="https://www.google.com/maps/embed?pb=!4v1521036389001!6m8!1m7!1sCAoSLEFGMVFpcE5VUktvSEtOdUtjRmZ2dHliRm95c0F2dHNRODcwaGhHRUd4eXFo!2m2!1d48.144557!2d17.1154906!3f0.9038775948851594!4f-3.1346220537675435!5f0.7820865974627469" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+      <div class="column is-narrow">
+        <iframe src="https://www.google.com/maps/embed?pb=!4v1520687181290!6m8!1m7!1sCAoSLEFGMVFpcE5DTFo1VDhUcXI3QkUtYjd2N2ZySmZWMGp4QjU2Y2poNC1qWXVW!2m2!1d48.144557!2d17.1154906!3f93.6033215859847!4f-8.0060330138093!5f0.7820865974627469" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
     </div>
-    <div class="column is-narrow">
-      <iframe src="https://www.google.com/maps/embed?pb=!4v1520687181290!6m8!1m7!1sCAoSLEFGMVFpcE5DTFo1VDhUcXI3QkUtYjd2N2ZySmZWMGp4QjU2Y2poNC1qWXVW!2m2!1d48.144557!2d17.1154906!3f93.6033215859847!4f-8.0060330138093!5f0.7820865974627469" width="360" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-    </div>
-  </div>
+
   <div v-if="!this.isUser" class="columns is-centered">
     <div class="column is-narrow">
       <div class="control has-icons-left">
@@ -117,9 +120,9 @@
       <a class="button is-info is-medium is-outlined" href="https://m.me/progressbar">Contact us via ⚡️Messenger</a>
     </div>
   </div>
-  <div class="columns is-centered">
+
     <Offer></Offer>
-  </div>
+
   <div class="columns is-centered">
     <div class="column is-4">
       <article class="message is-dark">
