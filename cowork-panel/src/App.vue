@@ -35,6 +35,8 @@
                 Space for Rent & Events</a></router-link>
               <router-link to="/call-for-the-sponsors"><a class="dropdown-item">
                 Call for the Sponsors</a></router-link>
+              <router-link to="/running-costs"><a class="dropdown-item">
+                Running costs</a></router-link>
                 <hr class="navbar-divider">
               <a class="dropdown-item" href="https://www.google.com/maps/place/Progressbar+hackerspace/@48.144557,17.1154906,3a,75y,0.9h,86.87t/data=!3m8!1e1!3m6!1sAF1QipNURKoHKNuKcFfvtybFoysAvtsQ870hhGEGxyqh!2e10!3e11!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipNURKoHKNuKcFfvtybFoysAvtsQ870hhGEGxyqh%3Dw203-h100-k-no-pi-0-ya31.000006-ro-0-fo100!7i8000!8i4000!4m5!3m4!1s0x476c8946152ff129:0x72ac0b6fccaf66fd!8m2!3d48.144557!4d17.1154906" >
                 Workspace VR Daylight (360)</a>

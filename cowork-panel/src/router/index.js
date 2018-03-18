@@ -8,6 +8,7 @@ import Credit from '@/components/Credit'
 import Photos from '@/components/Photos'
 import CallForTheSponsors from '@/components/CallForTheSponsors'
 import SpaceForRent from '@/components/SpaceForRent'
+import RunningCosts from '@/components/RunningCosts'
 import Sponsors from '@/components/Sponsors'
 import D14 from '@/components/D14'
 import VueLocalStorage from 'vue-ls'
@@ -61,6 +62,10 @@ export default new Router({
     {
       path: '/space-for-rent',
       component: SpaceForRent
+    },
+    {
+      path: '/running-costs',
+      component: RunningCosts
     },
     {
       path: '/sponsors',
