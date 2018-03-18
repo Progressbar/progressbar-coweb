@@ -3,8 +3,9 @@
   <header>
     <nav class="navbar is-black" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
-        <a class="navbar-item" href="https://cowork.progressbar.sk">
-          <img class="navbar-logo" src="/static/img/progressbar-logo_sw.svg" alt="progressbar logo">
+        <a class="navbar-item progressbar-logo-container" href="https://cowork.progressbar.sk">
+          <div class="navbar-logo progressbar-logo" alt="progressbar logo">
+          </div>
         </a>
         <div @click="showNav = !showNav" v-bind:class="{ 'is-active': showNav }" class="navbar-burger">
           <span></span>
@@ -95,6 +96,19 @@ export default {
 
 html {
   background-color: black;
+}
+
+.progressbar-logo-container {
+  padding: 10px;
+}
+.progressbar-logo {
+  width: 96px;
+  height: 37px;
+  mix-blend-mode: lighten;
+  background-image: url('/static/img/progressbar-logo_sw.svg');
+  background-position: 0 -141px;
+  background-size: 96px 96px;
+  
 }
 
 </style>
