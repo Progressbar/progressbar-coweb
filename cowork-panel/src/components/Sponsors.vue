@@ -10,27 +10,39 @@
             </h1>
             <h2 class="subtitle">
               <ul>
+                <br />
                 <li>
                    <a href="https://dcore.decent.ch">DCore</a><br />Blockchain you can actually build on. Innovative and customizable adaptation of blockchain technology allows you to mix and match DCore components to further your own projects.
                 </li>
+                <br />
                 <li>
                   <a href="https://decent.ch">DECENT</a><br /> is a Blockchain Content Distribution Platform that is Open-Source and utilizes Blockchain to ensure trust and security. Our intention is to revolutionize data distribution on the Internet.
                 </li>
+                <br />
                 <li>
                   <a href="https://www.bitpanther.com">BitPanther</a><br /> is a European financial technology platform focused on helping people to get access to digital currencies. BitPanther is a registered Slovakian company, compliant with Slovak and EU regulations.
                 </li>
+                <br />
+                <li>
+                  <a href="http://www.hosu.sk/en/home.html">HOSU | Office Solutions is a specialist in complex office solutions.</a>
+                    We deal with analysis, design and furnishing of administrative spaces.
+                    Our aim is to effectively use the space of an organization and create a friendly workspace in which people work more efficiently and enthusiastically. Our approach focuses primarily on proper acoustics, ergonomics and sustainability.
+                    The result of our work is a functional design and comfortable workplace.
+                </li>
+                <br />
                 <li>
                   <a href="https://wy.sk">wy</a><br /> We are your dream hoster, and your best choice for doing business on internet. We provide hosting to company websites, e-shops, blogs, huge portals or private presentations. We welcome individuals and freelancers, small teams and running businesses.
                 </li>
+                <br />
                 <li>
-                  <a href="https://cowork.progressbar.sk">your favourite company</a>
+                  <a href="https://cowork.progressbar.sk">your favourite company can be here</a>
                 </li>
               </ul>
             </h2>
             <p>
-              Want to sponsor us? Your name will be known in our hackerspace & cowork. We hosted 300+ technical and technological events so far.
+              Want to sponsor us? Your name will be known in our hackerspace & cowork. We hosted 700+ technical and technological events so far.
               We can give you huge marketing push or find you geeks, engineers, software developers you are searching for.
-              We are their daily place, where their come hangout on evenings or work during day
+              We are their daily place, where their come hangout on evenings or work during day.
             </p>
             <p>
               You can contact us via email or messenger
