@@ -13,14 +13,14 @@
       <a href="./#/credit" class="button is-white is-outlined">Fuel ⛽ ⬆️ credit</a>
     </div>
   </div>
-  <div v-if="this.auth.gotOrderToday" class="columns is-mobile is-centered">
+  <!-- <div v-if="this.auth.gotOrderToday" class="columns is-mobile is-centered">
     <div class="column is-narrow">
       <a @click="unlockBlackDoors()" class="button is-primary is-outlined">{{ this.button.blackdoor }}</a>
     </div>
     <div class="column is-narrow">
       <a @click="unlockDoors()" class="button is-primary is-outlined">{{ this.button.unlockdoor }}</a>
     </div>
-  </div>
+  </div> -->
   <div v-if="this.auth.gotCredit" class="columns is-centered">
     <div class="column is-narrow">
       <div class="select is-primary">
@@ -54,19 +54,28 @@
         <div class="message-body">
           <ol>
             <li>
+              Join our <a href="https://t.me/coworkprogressbar">coworker public channel for official announcements</a>
+            </li>
+            <li>
               You need top up your <router-link to="/credit"><a href="/#/credit">credit.</a></router-link>
             </li>
             <li>
-              When you already done that, contact <a href="https://m.me/matej.wao.nemcek">m.me/matej.wao.nemcek</a> to credit you in system
+              When you already done that, contact <a href="https://m.me/matej.wao.nemcek">m.me/matej.wao.nemcek</a> or <a href="https://t.me/yangwao">@yangwao</a> with your email to credit you in system
             </li>
             <li>
               When you will see credit in system, you can pick program (daypass) and book your desired date for coworking
             </li>
             <li>
-              When you done that, you will see two buttons for opening doors
+              <strike>When you done that, you will see two buttons for opening doors</strike>
             </li>
             <li>
-              Black doors are doors at street level and white doors will open doors at entrance into our space
+              Street level doors will be opening around 15 seconds after you clicked button and fire doors are at first floor
+            </li>
+            <li>
+              We just moved into new space so some things does not work perfectly
+            </li>
+            <li>
+              Thank you, we will try improve 🤗😇
             </li>
           </ol>
         </div>
