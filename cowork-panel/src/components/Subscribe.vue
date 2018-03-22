@@ -200,7 +200,7 @@
   </div>
   <div class="columns is-centered">
     <div class="column is-narrow">
-      <img src="/static/img/IMG_20180302_201641_HDR.jpg" alt="progressbar cowork bratislava blockchain meetup">
+      <img src="/static/img/IMG_20180321_181247_HDR.jpg" alt="progressbar cowork bratislava blockchain meetup">
     </div>
   </div>
   <div class="columns is-centered">
