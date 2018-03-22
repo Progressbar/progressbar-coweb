@@ -8,7 +8,9 @@
             <h1 class="title">
               Running costs
             </h1>
+            <img src="/static/img/tribune.png" alt="tribune" />
             <p v-for="line of content">{{line}}</p>
+            <img src="/static/img/meeting_room.png" alt="meeting room" />
             <p>
               You can support us by sending funds via <a href="https://donate.progressbar.sk">donate.progressbar.sk</a>
             </p>

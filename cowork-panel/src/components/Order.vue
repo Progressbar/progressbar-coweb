@@ -49,12 +49,12 @@
     </div>
   </div>
   <div class="columns is-centered">
-    <div class="column is-6">
+    <div class="column is-8">
       <article class="message is-info is-small">
         <div class="message-body">
           <ol>
             <li>
-              Join our <a href="https://t.me/coworkprogressbar">coworker public channel for official announcements</a>
+              Join our <a href="https://t.me/coworkprogressbar">coworker public channel for official announcements & support</a>
             </li>
             <li>
               You need top up your <router-link to="/credit"><a href="/#/credit">credit.</a></router-link>
