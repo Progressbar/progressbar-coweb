@@ -16,6 +16,27 @@
               <a class="button is-info is-medium is-outlined" href="mailto:info@progressbar.sk">info@progressbar.sk</a>
               <a class="button is-info is-medium is-outlined" href="https://m.me/progressbar">Contact us via ⚡️Messenger</a>
             </p>
+            <p>
+              <article class="message is-info">
+                <div class="message-body">
+                  <p>
+                    <strong>For organizers of events at our space</strong>
+                  </p>
+                  <p>
+                    1. please include this text in your event description:
+                  </p>
+                  <p>
+                    You can support Progressbar via <a href="https://donate.progressbar.sk">https://donate.progressbar.sk</a>
+                  </p>
+                  <p>
+                    You can try out cowork at Progressbar <a href="https://cowork.progressbar.sk">https://cowork.progressbar.sk</a>
+                  </p>
+                  <p>
+                    2. if you have Facebook event, send co-host request to Progressbar and we can share it as well 🤗
+                  </p>
+                </div>
+              </article>
+            </p>
           </div>
         </div>
       </div>
