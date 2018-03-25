@@ -1,6 +1,6 @@
 <template>
 <div class="SpaceForRent">
-  <section class="hero is-dark is-fullheight">
+  <section class="hero is-dark">
     <div class="hero-body">
       <div class="container">
         <div class="columns is-centered">
@@ -16,27 +16,37 @@
               <a class="button is-info is-medium is-outlined" href="mailto:info@progressbar.sk">info@progressbar.sk</a>
               <a class="button is-info is-medium is-outlined" href="https://m.me/progressbar">Contact us via ⚡️Messenger</a>
             </p>
-            <p>
-              <article class="message is-info">
-                <div class="message-body">
-                  <p>
-                    <strong>For organizers of events at our space</strong>
-                  </p>
-                  <p>
-                    1. please include this text in your event description:
-                  </p>
-                  <p>
-                    You can support Progressbar via <a href="https://donate.progressbar.sk">https://donate.progressbar.sk</a>
-                  </p>
-                  <p>
-                    You can try out cowork at Progressbar <a href="https://cowork.progressbar.sk">https://cowork.progressbar.sk</a>
-                  </p>
-                  <p>
-                    2. if you have Facebook event, send co-host request to Progressbar and we can share it as well 🤗
-                  </p>
-                </div>
-              </article>
-            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="hero is-dark">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column is-6 content">
+            <h1 class="title">
+              If you're organizing an event in our space
+            </h1>
+            <ol>
+              <li>
+                <p>
+                  consider including this text in the description of your event:
+                </p>
+                <p>
+                  <blockquote class="quote-to-include-in-event">
+                    You can support Progressbar through <a class="quote-link" href="https://donate.progressbar.sk">donate.progressbar.sk</a>,
+                    and check their cowork through <a class="quote-link" href="https://cowork.progressbar.sk">cowork.progressbar.sk</a>
+                  </blockquote>
+                </p>
+              </li>
+              <li>
+                <p>
+                if your event is on Facebook, send a "co-host" request to <a href="https://www.facebook.com/progressbar/">Progressbar</a> for greater pull and easier administration 🤗
+                </p>
+              </li>
+            </ol>
           </div>
         </div>
       </div>
@@ -67,6 +77,15 @@ export default {
   }
 }
 </script>
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style>
+<style scoped>
+.pull-down {
+  margin-top: 100px;
+}
+.quote-to-include-in-event {
+  border-color: #29e;
+  background-color: #0003;
+} 
+.quote-link {
+  text-decoration: underline;
+}
 </style>
