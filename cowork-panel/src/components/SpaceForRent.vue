@@ -36,8 +36,8 @@
                 </p>
                 <p>
                   <blockquote class="quote-to-include-in-event">
-                    You can support Progressbar through <a class="quote-link" href="https://donate.progressbar.sk">donate.progressbar.sk</a>,
-                    and check their cowork through <a class="quote-link" href="https://cowork.progressbar.sk">cowork.progressbar.sk</a>
+                    You can support Progressbar through <a class="quote-link" href="https://donate.progressbar.sk">https://donate.progressbar.sk</a>,
+                    and check their cowork through <a class="quote-link" href="https://cowork.progressbar.sk">https://cowork.progressbar.sk</a>
                   </blockquote>
                 </p>
               </li>
@@ -84,7 +84,7 @@ export default {
 .quote-to-include-in-event {
   border-color: #29e;
   background-color: #0003;
-} 
+}
 .quote-link {
   text-decoration: underline;
 }
