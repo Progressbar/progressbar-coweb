@@ -120,12 +120,15 @@
       <a class="button is-info is-medium is-outlined" href="https://m.me/progressbar">Contact us via ⚡️Messenger</a>
     </div>
   </div>
-
     <Offer></Offer>
-
   <div class="columns is-centered">
-    <div class="column is-4">
-      <article class="message is-dark">
+    <div class="column is-narrow">
+      <img src="/static/img/wide.jpg" alt="progressbar technology cowork bratislava">
+    </div>
+  </div>
+  <div class="columns is-centered">
+    <div class="column is-5">
+      <article class="message is-black">
         <div class="message-header">
           <p>Our story</p>
         </div>
