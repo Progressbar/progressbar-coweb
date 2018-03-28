@@ -25,7 +25,7 @@
                 <a href="https://www.google.com/maps/place/Progressbar+hackerspace/@48.144557,17.1133019,17z/data=!3m1!4b1!4m5!3m4!1s0x476c8946152ff129:0x72ac0b6fccaf66fd!8m2!3d48.144557!4d17.1154906" title="Dunajská 7495/14, 811 08 Bratislava, Slovakia">Place for your work in downtown</a>
               </li>
               <li>
-                <a href="https://beta.speedtest.net/result/6614494632">High-speed Internet ~ 250/20</a><a href="http://www.speedtest.net/my-result/a/3374894584">📱</a>
+                <a href="http://www.speedtest.net/result/7179888517">High-speed Internet ~ 250/20</a><a href="http://www.speedtest.net/my-result/a/3374894584">📱</a>
               </li>
               <li>
                 <a href="https://scontent-vie1-1.xx.fbcdn.net/v/t31.0-8/21765459_1941520825863850_876389467015918658_o.jpg?oh=7de68da52211a7304d10a3298d7e02fc&oe=5A538F7E">Lot of Electric Sockets ⚡️🔌</a>
