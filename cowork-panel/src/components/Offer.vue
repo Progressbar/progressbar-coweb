@@ -23,7 +23,6 @@
                 {{ this.config.orderPrices.day }}€ / day
               </li>
             </ul>
-            <!-- <br> -->
           </div>
         </div>
       </div>
@@ -50,7 +49,6 @@
                 {{ this.config.orderPrices.month }}€ / month
               </li>
             </ul>
-            <!-- <br> -->
           </div>
         </div>
       </div>
@@ -77,7 +75,6 @@
                 {{ this.config.orderPrices.fix }}€ / month
               </li>
             </ul>
-            <!-- <br> -->
           </div>
         </div>
       </div>
@@ -101,12 +98,11 @@
                 {{ this.config.orderPrices.nonstop}}€ / month
               </li>
             </ul>
-            <!-- <br> -->
           </div>
         </div>
       </div>
     </div>
-    <div class="column is-narrow">
+    <!-- <div class="column is-narrow">
       <div class="card">
         <header class="card-header">
           <p class="card-header-title">
@@ -125,11 +121,10 @@
                 {{ this.config.orderPrices.locker}}€ / month
               </li>
             </ul>
-            <!-- <br> -->
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </div>
 </template>
