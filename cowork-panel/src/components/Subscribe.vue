@@ -92,8 +92,6 @@
       </div>
     </div>
   </div>
-
-
     <div class="columns is-centered">
       <div class="column is-narrow contains-iframe-to-center">
         <iframe src="https://www.google.com/maps/embed?pb=!4v1521036389001!6m8!1m7!1sCAoSLEFGMVFpcE5VUktvSEtOdUtjRmZ2dHliRm95c0F2dHNRODcwaGhHRUd4eXFo!2m2!1d48.144557!2d17.1154906!3f0.9038775948851594!4f-3.1346220537675435!5f0.7820865974627469" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -145,7 +143,7 @@
                 If you think we are doing great thing
                 <ul>
                   <li>
-                    <a href="https://donate.progressbar.sk">you can support us at donate.progressbar.sk</a>
+                    you can support us at <a href="https://donate.progressbar.sk">donate.progressbar.sk</a>
                   </li>
                   <li>
                      signup for our <a href="https://cowork.progressbar.sk">coworking in Bratislava</a>
@@ -164,7 +162,7 @@
       </article>
     </div>
     <div class="column is-3">
-      <article class="message is-dark">
+      <article class="message is-black">
         <div class="message-header">
           <p>Our coworkers are ~</p>
         </div>
@@ -204,33 +202,6 @@
   <div class="columns is-centered">
     <div class="column is-narrow">
       <img src="/static/img/IMG_20180321_181247_HDR.jpg" alt="progressbar cowork bratislava blockchain meetup">
-    </div>
-  </div>
-  <div class="columns is-centered">
-    <div class="column is-narrow">
-      <a class="button is-outlined is-white" href="https://progressbar.sk/calendar">Upcoming meetups</a>
-    </div>
-    <div class="column is-narrow">
-      <router-link to="/coworking-progressbar-bratislava-photos"><a class="button is-outlined is-white">Coworking Bratislava Meetup Photos</a></router-link>
-    </div>
-  </div>
-  <div class="columns is-centered">
-    <div class="column is-narrow">
-      <a class="button is-outlined is-link" href="https://www.facebook.com/progressbar">Progressbar at Facebook</a>
-    </div>
-    <div class="column is-narrow">
-      <a class="button is-outlined is-info" href="https://t.me/coworkprogressbar">Cowork Progressbar at Telegram</a>
-    </div>
-  </div>
-  <div class="columns is-centered">
-    <div class="column is-narrow">
-      <a class="button is-outlined is-white" href="https://donate.progressbar.sk">💰 Donate Progressbar</a>
-    </div>
-    <div class="column is-narrow">
-      <router-link to="/call-for-the-sponsors"><a class="button is-outlined is-white">Call for the Sponsors</a></router-link>
-    </div>
-    <div class="column is-narrow">
-      <router-link to="/space-for-rent"><a class="button is-outlined is-white">Space for Rent & Events</a></router-link>
     </div>
   </div>
   <div class="columns is-centered">
