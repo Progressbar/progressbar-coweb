@@ -10,6 +10,9 @@
             </h1>
             <img src="/static/img/tribune.png" alt="tribune" />
             <p v-for="line of content">{{line}}</p>
+            <p><strong>Our running costs are following:</strong></p>
+            <p v-for="line of costs">{{line}}</p>
+            </p>
             <img src="/static/img/meeting_room.png" alt="meeting room" />
             <p>
               You can support us by sending funds via <a href="https://donate.progressbar.sk">donate.progressbar.sk</a>
@@ -41,7 +44,12 @@ export default {
         As a non-profit that cares about technology, we try to incentivize tech communities in Bratislava, by allowing them to use the venue for free for their events.
         As a non-profit that needs to pay rent and bills, we also need funding! Any donations are welcome. Without donations, we won't be able too keep the familiar hackerspace spirit a lot of people in Bratislava are seeking, and offer these kinds of services
 
-        Our running costs are following:
+
+      `
+      .trim()
+      .split('\n')
+      .map((line) => line.trim()),
+      costs: `
         Space Rent is ~ 3600€ / mo
         Lemonades & Drinks ~ 800€ /mo
         Planned host costs ~ 800€ /mo
@@ -55,7 +63,7 @@ export default {
       `
       .trim()
       .split('\n')
-      .map((line) => line.trim()),
+      .map((line) => line.trim())
     }
   }
 }
