@@ -1,57 +1,49 @@
 <template>
 <div class="SpaceForRent">
-  <section class="hero is-dark">
-    <div class="hero-body">
-      <div class="container">
-        <div class="columns is-centered">
-          <div class="column is-6 content">
-            <h1 class="title">
-              Space for Rent & Events
-            </h1>
-            <p v-for="line of content">{{line}}</p>
-            <p>
-              You can contact us via email or messenger
-            </p>
-            <p><br />
-              <a class="button is-info is-medium is-outlined" href="mailto:info@progressbar.sk">info@progressbar.sk</a>
-              <a class="button is-info is-medium is-outlined" href="https://m.me/progressbar">Contact us via ⚡️Messenger</a>
-            </p>
-          </div>
-        </div>
+  <div class="container is-fluid">
+    <div class="columns is-centered">
+      <div class="column is-6 content">
+        <h1 class="title has-text-grey-light">
+          Space for Rent & Events
+        </h1>
+        <img src="/static/img/tribune.jpg" alt="tribune" />
+        <p class="has-text-grey-light" v-for="line of content">{{line}}</p>
+        <p class="has-text-white">
+          You can support us by sending funds via <a href="https://donate.progressbar.sk">donate.progressbar.sk</a>
+          <br /> You can contact us via email or messenger
+        </p>
+        <p><br />
+          <a class="button is-info is-medium is-outlined" href="mailto:info@progressbar.sk">info@progressbar.sk</a>
+          <a class="button is-info is-medium is-outlined" href="https://m.me/progressbar">Contact us via ⚡️Messenger</a>
+        </p>
       </div>
     </div>
-  </section>
-  <section class="hero is-dark">
-    <div class="hero-body">
-      <div class="container">
-        <div class="columns is-centered">
-          <div class="column is-6 content">
-            <h1 class="title">
-              If you're organizing an event in our space
-            </h1>
-            <ol>
-              <li>
-                <p>
-                  consider including this text in the description of your event:
-                </p>
-                <p>
-                  <blockquote class="quote-to-include-in-event">
-                    You can support Progressbar through <a class="quote-link" href="https://donate.progressbar.sk">https://donate.progressbar.sk</a>,
-                    and check their cowork through <a class="quote-link" href="https://cowork.progressbar.sk">https://cowork.progressbar.sk</a>
-                  </blockquote>
-                </p>
-              </li>
-              <li>
-                <p>
-                if your event is on Facebook, send a "co-host" request to <a href="https://www.facebook.com/progressbar/">Progressbar</a> for greater pull and easier administration 🤗
-                </p>
-              </li>
-            </ol>
-          </div>
-        </div>
-      </div>
+  </div>
+  <div class="columns is-centered">
+    <div class="column is-6 content">
+      <h1 class="title has-text-grey-light">
+        If you're organizing an event in our space
+      </h1>
+      <ol class="has-text-grey-light">
+        <li>
+          <p>
+            consider including this text in the description of your event:
+          </p>
+          <p>
+            <blockquote class="quote-to-include-in-event has-text-grey-light">
+              You can support Progressbar through <a class="quote-link" href="https://donate.progressbar.sk">https://donate.progressbar.sk</a>,
+              and check their cowork through <a class="quote-link" href="https://cowork.progressbar.sk">https://cowork.progressbar.sk</a>
+            </blockquote>
+          </p>
+        </li>
+        <li>
+          <p>
+          if your event is on Facebook, send a "co-host" request to <a href="https://www.facebook.com/progressbar/">Progressbar</a> for greater pull and easier administration 🤗
+          </p>
+        </li>
+      </ol>
     </div>
-  </section>
+  </div>
 </div>
 </template>
 <script>

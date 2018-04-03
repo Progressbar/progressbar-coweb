@@ -8,7 +8,7 @@
             <h1 class="title">
               Work In Progress
             </h1>
-            <img src="/static/img/tribune.png" alt="tribune" />
+            <img src="/static/img/tribune.jpg" alt="tribune" />
             <h2 class="title">Behind the scenes</h2>
             <p>Whiteboards - in upcoming days</p>
             <p>Bike stands on street - 🤞June</p>
@@ -24,7 +24,8 @@
             <p>Cryptocurrency ATM - paid, general bytes lack of communications</p>
             <p>Shower 🛀🚿 - n/a</p>
             <p>Kitchen 🥒 - n/a</p>
-            <img src="/static/img/meeting_room.png" alt="meeting room" />
+            <p>Spa & InfraSauna ??? - n/a</p>
+            <img src="/static/img/meeting_room.jpg" alt="meeting room" />
             <p>
               You can support us by sending funds via <a href="https://donate.progressbar.sk">donate.progressbar.sk</a>
             </p>

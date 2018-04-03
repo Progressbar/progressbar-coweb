@@ -1,34 +1,28 @@
 <template>
 <div class="RunningCosts">
-  <section class="hero is-dark is-fullheight">
-    <div class="hero-body">
-      <div class="container">
-        <div class="columns is-centered">
-          <div class="column is-6 content">
-            <h1 class="title">
-              Running costs
-            </h1>
-            <img src="/static/img/tribune.png" alt="tribune" />
-            <p v-for="line of content">{{line}}</p>
-            <p><strong>Our running costs are following:</strong></p>
-            <p v-for="line of costs">{{line}}</p>
-            </p>
-            <img src="/static/img/meeting_room.png" alt="meeting room" />
-            <p>
-              You can support us by sending funds via <a href="https://donate.progressbar.sk">donate.progressbar.sk</a>
-            </p>
-            <p>
-              You can contact us via email or messenger
-            </p>
-            <p><br />
-              <a class="button is-info is-medium is-outlined" href="mailto:info@progressbar.sk">info@progressbar.sk</a>
-              <a class="button is-info is-medium is-outlined" href="https://m.me/progressbar">Contact us via ⚡️Messenger</a>
-            </p>
-          </div>
-        </div>
+  <div class="container is-fluid">
+    <div class="columns is-centered">
+      <div class="column is-6">
+        <h1 class="title has-text-grey-light">
+          Running costs
+        </h1>
+        <img src="/static/img/tribune.jpg" alt="tribune" />
+        <p class="has-text-grey-light" v-for="line of content">{{line}}</p>
+        <p class="has-text-grey-light is-uppercase">Our running costs are following:</p>
+        <p class="has-text-grey-light" v-for="line of costs">{{line}}</p>
+        </p>
+        <img src="/static/img/meeting_room.jpg" alt="meeting room" />
+        <p class="has-text-white">
+          You can support us by sending funds via <a href="https://donate.progressbar.sk">donate.progressbar.sk</a>
+          <br /> You can contact us via email or messenger
+        </p>
+        <p><br />
+          <a class="button is-info is-medium is-outlined" href="mailto:info@progressbar.sk">info@progressbar.sk</a>
+          <a class="button is-info is-medium is-outlined" href="https://m.me/progressbar">Contact us via ⚡️Messenger</a>
+        </p>
       </div>
     </div>
-  </section>
+  </div>
 </div>
 </template>
 <script>
