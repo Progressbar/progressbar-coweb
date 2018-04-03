@@ -15,6 +15,7 @@
             <p>Bike stands next to doors - 🤞 end of April</p>
             <p>Air Intake - distribution of direct air current into room - 🤞mid-April</p>
             <p>Window mechanism - waiting for dates</p>
+            <p>New electrical circuits & sockets on wall - waiting for dates & price offer </p>
             <p>New tables - waiting for price offer (mid May)</p>
             <p>Tribune - looking for new architect and static (end of May)</p>
             <p>Glass Meeting room - waiting for price offer</p>
