@@ -9,12 +9,17 @@
               Work In Progress
             </h1>
             <img src="/static/img/tribune.png" alt="tribune" />
+            <h2 class="title">Behind the scenes</h2>
             <p>Whiteboards - in upcoming days</p>
-            <p>Air Intake - distribution of direct air current into room (🤞mid-April)</p>
+            <p>Bike stands on street - 🤞 June</p>
+            <p>Bike stands next to doors - 🤞 end of April</p>
+            <p>Air Intake - distribution of direct air current into room - 🤞mid-April</p>
             <p>Window mechanism - waiting for dates</p>
             <p>New tables - waiting for price offer (mid May)</p>
             <p>Tribune - looking for new architect and static (end of May)</p>
             <p>Glass Meeting room - waiting for price offer</p>
+            <p>Hipster 🍰 Cakes in Black King Bar - mid April</p>
+            <p>Hipster coffe in Black King Bar - end of April</p>
             <p>Shower 🛀🚿 - n/a</p>
             <p>Kitchen 🥒 - n/a</p>
             <img src="/static/img/meeting_room.png" alt="meeting room" />
