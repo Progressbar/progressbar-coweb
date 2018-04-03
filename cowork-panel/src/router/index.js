@@ -11,6 +11,7 @@ import SpaceForRent from '@/components/SpaceForRent'
 import RunningCosts from '@/components/RunningCosts'
 import Sponsors from '@/components/Sponsors'
 import D14 from '@/components/D14'
+import WorkInProgress from '@/components/WorkInProgress'
 import VueLocalStorage from 'vue-ls'
 
 var options = {
@@ -70,6 +71,10 @@ export default new Router({
     {
       path: '/sponsors',
       component: Sponsors
+    },
+    {
+      path: '/work-in-progress',
+      component: WorkInProgress
     },
     {
       path: '/d14',

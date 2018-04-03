@@ -1,5 +1,5 @@
 <template>
-<div class="SpaceForRent">
+<div class="RunningCosts">
   <section class="hero is-dark is-fullheight">
     <div class="hero-body">
       <div class="container">
@@ -35,7 +35,7 @@
 import axios from 'axios'
 
 export default {
-  name: 'SpaceForRent',
+  name: 'RunningCosts',
   data() {
     return {
       content: `
