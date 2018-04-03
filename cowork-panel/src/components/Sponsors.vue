@@ -43,8 +43,9 @@
           We can give you huge marketing push or find you geeks, engineers, software developers you are searching for.
           We are their daily place, where their come hangout on evenings or work during day.
         </p>
-        <p>
-          You can contact us via email or messenger
+        <p class="has-text-white">
+          You can support us by sending funds via <a href="https://donate.progressbar.sk">donate.progressbar.sk</a>
+          <br /> You can contact us via email or messenger
         </p>
         <p><br />
           <a class="button is-info is-medium is-outlined" href="mailto:info@progressbar.sk">info@progressbar.sk</a>
