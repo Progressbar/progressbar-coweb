@@ -21,6 +21,7 @@
             <p>Glass Meeting room - waiting for price offer</p>
             <p>Hipster 🍰 Cakes in Black King Bar - mid April</p>
             <p>Hipster coffe in Black King Bar - end of April</p>
+            <p>Cryptocurrency ATM - paid, general bytes lack of communications</p>
             <p>Shower 🛀🚿 - n/a</p>
             <p>Kitchen 🥒 - n/a</p>
             <img src="/static/img/meeting_room.png" alt="meeting room" />
