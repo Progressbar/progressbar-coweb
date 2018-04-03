@@ -11,8 +11,8 @@
             <img src="/static/img/tribune.png" alt="tribune" />
             <h2 class="title">Behind the scenes</h2>
             <p>Whiteboards - in upcoming days</p>
-            <p>Bike stands on street - 🤞 June</p>
-            <p>Bike stands next to doors - 🤞 end of April</p>
+            <p>Bike stands on street - 🤞June</p>
+            <p>Bike stands next to doors - 🤞end of April</p>
             <p>Air Intake - distribution of direct air current into room - 🤞mid-April</p>
             <p>Window mechanism - waiting for dates</p>
             <p>New electrical circuits & sockets on wall - waiting for dates & price offer </p>
@@ -20,7 +20,7 @@
             <p>Tribune - looking for new architect and static (end of May)</p>
             <p>Glass Meeting room - waiting for price offer</p>
             <p>Hipster 🍰 Cakes in Black King Bar - mid April</p>
-            <p>Hipster coffe in Black King Bar - end of April</p>
+            <p>Hipster ☕️ coffe in Black King Bar - end of April</p>
             <p>Cryptocurrency ATM - paid, general bytes lack of communications</p>
             <p>Shower 🛀🚿 - n/a</p>
             <p>Kitchen 🥒 - n/a</p>
