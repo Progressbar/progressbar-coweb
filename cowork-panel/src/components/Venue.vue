@@ -4,9 +4,8 @@
     <div class="columns is-centered">
       <div class="column is-12 content">
         <p class="has-text-white">
-          We are located over Black King Bar on first floor. You can access our space through doors next to Black King Bar. During event, ring bell Progressbar and probably somebody will open to you.
+          We are located over  Black King Bar on the first floor. You can access our space through doors next to Black King Bar. During event, ring bell (on the left side) Progressbar and probably somebody will open to you.
         </p>
-
         <iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=17.113958001136783%2C48.143727459609195%2C17.116854786872867%2C48.14537578584775&amp;layer=mapnik&amp;marker=48.14455162934517%2C17.115406394004822"
           style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=48.14455&amp;mlon=17.11541#map=19/48.14455/17.11541&amp;layers=N">View Larger Map</a></small>
         <p><a href="https://www.openstreetmap.org/node/1096120193">Progressbar at Openstreetmap</a></p>
