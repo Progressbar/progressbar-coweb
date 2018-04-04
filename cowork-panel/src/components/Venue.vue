@@ -16,8 +16,11 @@
           <div class="column is-3">
             <img src="/static/img/IMG_20180403_185405_1.jpg" alt="dunajska 14 progressbar" />
           </div>
-          <div class="column is-8">
+          <div class="column is-6">
             <img src="/static/img/IMG_20180403_185456_HDR.jpg" alt="dunajska 14 progressbar" />
+          </div>
+          <div class="column is-3">
+            <img src="/static/img/IMG_20180404_125147_1.jpg" alt="dunajska 14 progressbar" />
           </div>
         </div>
         <p class="has-text-white">
