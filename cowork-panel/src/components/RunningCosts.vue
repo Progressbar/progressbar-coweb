@@ -2,14 +2,14 @@
 <div class="RunningCosts">
   <div class="container is-fluid">
     <div class="columns is-centered">
-      <div class="column is-6">
+      <div class="column is-6 content">
         <h1 class="title has-text-grey-light">
           Running costs
         </h1>
         <img src="/static/img/tribune.jpg" alt="tribune" />
         <p class="has-text-grey-light" v-for="line of content">{{line}}</p>
-        <p class="has-text-grey-light is-uppercase">Our running costs are following:</p>
-        <p class="has-text-grey-light" v-for="line of costs">{{line}}</p>
+        <h2 class="has-text-grey-light is-uppercase">Our running costs are following:</h2>
+        <h4 class="has-text-grey-light" v-for="line of costs">{{line}}</h4>
         </p>
         <img src="/static/img/meeting_room.jpg" alt="meeting room" />
         <p class="has-text-white">

@@ -2,7 +2,7 @@
 <div class="sponsors">
   <div class="container">
     <div class="columns is-centered">
-      <div class="column is-6">
+      <div class="column is-6 content">
         <h1 class="title has-text-grey-light">
           Call for Sponsors & Partners
         </h1>

@@ -6,8 +6,9 @@
         <h1 class="title has-text-grey-light">
           Space for Rent & Events
         </h1>
-        <img src="/static/img/tribune.jpg" alt="tribune" />
+        <img src="/static/img/IMG_20180324_092514_HDR.jpg" alt="nodeschool bratislava women edition" />
         <p class="has-text-grey-light" v-for="line of content">{{line}}</p>
+        <img src="/static/img/PANO_20180324_103055.jpg" alt="nodeschool bratislava women edition" />
         <p class="has-text-white">
           You can support us by sending funds via <a href="https://donate.progressbar.sk">donate.progressbar.sk</a>
           <br /> You can contact us via email or messenger
@@ -19,6 +20,7 @@
       </div>
     </div>
   </div>
+
   <div class="columns is-centered">
     <div class="column is-6 content">
       <h1 class="title has-text-grey-light">
