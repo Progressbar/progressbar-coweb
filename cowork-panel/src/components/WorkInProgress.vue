@@ -14,16 +14,6 @@
           </li>
         </ul>
         <img src="/static/img/meeting_room.jpg" alt="meeting room" />
-        <p>
-          You can support us by sending funds via <a href="https://donate.progressbar.sk">donate.progressbar.sk</a>
-        </p>
-        <p>
-          You can contact us via email or messenger
-        </p>
-        <p><br />
-          <a class="button is-info is-medium is-outlined" href="mailto:info@progressbar.sk">info@progressbar.sk</a>
-          <a class="button is-info is-medium is-outlined" href="https://m.me/progressbar">Contact us via ⚡️Messenger</a>
-        </p>
       </div>
     </div>
   </div>

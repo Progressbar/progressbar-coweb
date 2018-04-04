@@ -52,21 +52,6 @@
         </div>
       </div>
     </nav>
-
-    <!-- <section class="section">
-      <div class="container is-fluid">
-        <div class="columns is-centered">
-          <div class="column is-narrow">
-            <div class="crop">
-              <a href="https://cowork.progressbar.sk">
-                <img src="/static/img/progressbar-logo_sw.svg" alt="progressbar logo">
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-
   </header>
   <main>
     <section class="section">
@@ -75,12 +60,22 @@
       </div>
     </section>
   </main>
+  <footer>
+    <section class="section">
+      <div class="container is-fluid">
+        <SupportUs></SupportUs>
+      </div>
+    </section>
+  </footer>
 </div>
 </template>
-
 <script>
+import SupportUs from '@/components/SupportUs'
 export default {
   name: 'app',
+  components: {
+    SupportUs
+  },
   data () {
     return {
       showNav: false,

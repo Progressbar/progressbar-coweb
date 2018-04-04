@@ -23,22 +23,12 @@
             <img src="/static/img/IMG_20180404_125147_1.jpg" alt="dunajska 14 progressbar" />
           </div>
         </div>
-        <p class="has-text-white">
-          You can support us by sending funds via <a href="https://donate.progressbar.sk">donate.progressbar.sk</a>
-          <br /> You can contact us via email or messenger
-        </p>
-        <p><br />
-          <a class="button is-info is-medium is-outlined" href="mailto:info@progressbar.sk">info@progressbar.sk</a>
-          <a class="button is-info is-medium is-outlined" href="https://m.me/progressbar">Contact us via ⚡️Messenger</a>
-        </p>
       </div>
     </div>
   </div>
 </div>
 </template>
 <script>
-import axios from 'axios'
-
 export default {
   name: 'Venue',
   data() {

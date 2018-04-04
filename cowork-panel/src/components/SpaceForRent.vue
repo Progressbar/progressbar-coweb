@@ -2,25 +2,16 @@
 <div class="SpaceForRent">
   <div class="container is-fluid">
     <div class="columns is-centered">
-      <div class="column is-6 content">
+      <div class="column is-8 content">
         <h1 class="title has-text-grey-light">
           Space for Rent & Events
         </h1>
         <img src="/static/img/IMG_20180324_092514_HDR.jpg" alt="nodeschool bratislava women edition" />
         <p class="has-text-grey-light" v-for="line of content">{{line}}</p>
         <img src="/static/img/PANO_20180324_103055.jpg" alt="nodeschool bratislava women edition" />
-        <p class="has-text-white">
-          You can support us by sending funds via <a href="https://donate.progressbar.sk">donate.progressbar.sk</a>
-          <br /> You can contact us via email or messenger
-        </p>
-        <p><br />
-          <a class="button is-info is-medium is-outlined" href="mailto:info@progressbar.sk">info@progressbar.sk</a>
-          <a class="button is-info is-medium is-outlined" href="https://m.me/progressbar">Contact us via ⚡️Messenger</a>
-        </p>
       </div>
     </div>
   </div>
-
   <div class="columns is-centered">
     <div class="column is-6 content">
       <h1 class="title has-text-grey-light">

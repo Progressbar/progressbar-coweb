@@ -2,7 +2,7 @@
 <div class="RunningCosts">
   <div class="container is-fluid">
     <div class="columns is-centered">
-      <div class="column is-6 content">
+      <div class="column is-8 content">
         <h1 class="title has-text-grey-light">
           Running costs
         </h1>
@@ -12,14 +12,6 @@
         <h4 class="has-text-grey-light" v-for="line of costs">{{line}}</h4>
         </p>
         <img src="/static/img/meeting_room.jpg" alt="meeting room" />
-        <p class="has-text-white">
-          You can support us by sending funds via <a href="https://donate.progressbar.sk">donate.progressbar.sk</a>
-          <br /> You can contact us via email or messenger
-        </p>
-        <p><br />
-          <a class="button is-info is-medium is-outlined" href="mailto:info@progressbar.sk">info@progressbar.sk</a>
-          <a class="button is-info is-medium is-outlined" href="https://m.me/progressbar">Contact us via ⚡️Messenger</a>
-        </p>
       </div>
     </div>
   </div>
