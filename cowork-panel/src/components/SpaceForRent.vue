@@ -34,6 +34,16 @@
           if your event is on Facebook, send a "co-host" request to <a href="https://www.facebook.com/progressbar/">Progressbar</a> for greater pull and easier administration 🤗
           </p>
         </li>
+        <li>
+          <p>
+            we have for you fullHD (1080p) projector w/ HDMI and Chromecast
+          </p>
+        </li>
+        <li>
+          <p>
+            we have headmicrophone and 🎤 hand microphone with mix
+          </p>
+        </li>
       </ol>
     </div>
   </div>
