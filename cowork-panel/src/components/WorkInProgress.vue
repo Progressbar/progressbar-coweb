@@ -27,20 +27,21 @@ export default {
   data() {
     return {
       wipItems: `
-        Bike stands on street - 🤞June
-        Bike stands next to doors - 🤞end of April
-        Air Intake - distribution of direct air current into room - 🤞mid-May
+        Bike stands on street - 🤞 June
+        4 bike stands (resolves to 8 slots) next to the doors - 23th April || 24th April
+        Spread distribution of air intake into space (next to the wall & windows) - 🤞first week of May
+        Air Condition // Cold Air distribution - first week of May
         Window mechanism - waiting for dates
         New electrical circuits & sockets on wall - waiting for price offer & for dates
         New tables - waiting for price offer (mid May)
         Tribune - price offer & dates (🤞end of May)
         Glass Meeting room - waiting for price offer & dates
-        Hipster 🍰 Cakes in Black King Bar - mid April
+        Hipster 🍰 Cakes in Black King Bar - end of April (ask for 🥕🍰, we already tasted it)
         Hipster ☕️ coffe in Black King Bar - end of April
-        Cryptocurrency ATM - paid, general bytes missing bank note dispenser (🤞beginning of May)
+        Cryptocurrency ATM - General Bytes missing bank note dispenser (🤞beginning of May)
         Shower 🛀🚿 - n/a
         Kitchen 🥒 - n/a
-        Spa & InfraSauna ??? - n/a
+        Spa ♨️ & 🧖‍♀️ InfraSauna - n/a (who wants this, write @yangwao)
       `
       .trim()
       .split('\n')
