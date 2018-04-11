@@ -27,18 +27,17 @@ export default {
   data() {
     return {
       wipItems: `
-        Whiteboards - in upcoming days
         Bike stands on street - 🤞June
         Bike stands next to doors - 🤞end of April
-        Air Intake - distribution of direct air current into room - 🤞mid-April
+        Air Intake - distribution of direct air current into room - 🤞mid-May
         Window mechanism - waiting for dates
-        New electrical circuits & sockets on wall - waiting for dates & price offer
+        New electrical circuits & sockets on wall - waiting for price offer & for dates
         New tables - waiting for price offer (mid May)
-        Tribune - looking for new architect and static (end of May)
-        Glass Meeting room - waiting for price offer
+        Tribune - price offer & dates (🤞end of May)
+        Glass Meeting room - waiting for price offer & dates
         Hipster 🍰 Cakes in Black King Bar - mid April
         Hipster ☕️ coffe in Black King Bar - end of April
-        Cryptocurrency ATM - paid, general bytes lack of communications
+        Cryptocurrency ATM - paid, general bytes missing bank note dispenser (🤞beginning of May)
         Shower 🛀🚿 - n/a
         Kitchen 🥒 - n/a
         Spa & InfraSauna ??? - n/a
