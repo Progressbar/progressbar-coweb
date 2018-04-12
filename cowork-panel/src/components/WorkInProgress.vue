@@ -35,7 +35,8 @@ export default {
         New electrical circuits & sockets on wall - waiting for price offer & for dates
         New tables - waiting for price offer (mid May)
         Tribune - price offer & dates (🤞end of May)
-        Glass Meeting room - waiting for price offer & dates
+        Glass Meeting room - waiting for price offer & 3-5wks from confirmation
+        Big Fridge from FritzKola - 🤞 mid May
         Hipster 🍰 Cakes in Black King Bar - end of April (ask for 🥕🍰, we already tasted it)
         Hipster ☕️ coffe in Black King Bar - end of April
         Cryptocurrency ATM - General Bytes missing bank note dispenser (🤞beginning of May)
