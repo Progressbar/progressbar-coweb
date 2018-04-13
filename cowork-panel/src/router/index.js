@@ -13,6 +13,7 @@ import Sponsors from '@/components/Sponsors'
 import D14 from '@/components/D14'
 import WorkInProgress from '@/components/WorkInProgress'
 import Venue from '@/components/Venue'
+import CallForHost from '@/components/CallForHost'
 import VueLocalStorage from 'vue-ls'
 
 var options = {
@@ -80,6 +81,10 @@ export default new Router({
     {
       path: '/venue',
       component: Venue
+    },
+    {
+      path: '/call-for-a-host',
+      component: CallForHost
     },
     {
       path: '/d14',
