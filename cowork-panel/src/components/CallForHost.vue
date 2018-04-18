@@ -8,32 +8,39 @@
         </h1>
         <img src="/static/img/IMG_20180324_092514_HDR.jpg" alt="nodeschool bratislava women edition" />
         <h3 class="has-text-grey-light">
-          We are looking for kind and responsible host into our space.
-          We are tech focused cowork with lot of interesting people around tech, space, crypto and other stuff<br />
+          Progressbar is looking for a kind and responsible host to help us take care of our space.
+          We are a tech focused cowork where you will be meeting a lot of interesting people around tech, space, crypto,... on a daily basis.<br />
           <br />
-          We are doing a lot technical & technological meetups, lookup for our past meetups.<br />
-          If you are student || !student you are free to do your work in our space while helping others.<br />
-          List of actions which are need to fullfill their dreams:
+          We are organising many technical & technological meetups as well.<br />
+          You are free to do your work or study in our space while helping others as you will have a lot of free time here.<br />
+          List of actions which are going to be your duty:
           <ul>
             <li>
               Filling fridge with drinks
             </li>
             <li>
-              Clean 🥛 glasses (we are looking for bigger dishwasher for the future)
-            </li>
-            <li>
               Onboarding new 👩‍💻 coworkers
             </li>
             <li>
-              Helping with Audio/Video during meetups
+              Cleaning 🥛 glasses (we are planning to use a dishwasher in the future)
             </li>
             <li>
-              Handle curious requests 😯🤔🙌
+              Helping during meetups, like setup presentation equip (audio/video), prepare chairs, etc
+            </li>
+            <li>
+              Watering our plants 🌵🌷
+            </li>
+            <li>
+              Taking out trash from time to time 😱
+            </li>
+            <li>
+              Handling curious requests 😯🤔🙌
             </li>
           </ul>
-          🌟Bonus🌟points🌟 if you are into technical stuff and if you want to learn to code 👩‍💻<br /><br />
+          
+          🌟Bonus🌟points🌟 if you are into technical stuff and want to learn to code 👩‍💻.<br /><br />
           We can donate you by 💶 cash or ⛓💰 crypto, whatever works for you.<br /><br />
-          Contact us via <a href="https://t.me/coworkprogressbar">Telegram channel</a>  or <a href="https://facebook.com/progressbar">facebook.com/progressbar</a>
+          Contact us via <a href="https://t.me/coworkprogressbar">Telegram channel</a>  or <a href="https://facebook.com/progressbar">facebook.com/progressbar</a> if you are interested 🤙.
         </h3>
         <img src="/static/img/wide.jpg" alt="progressbar technology cowork bratislava">
       </div>
