@@ -30,8 +30,6 @@ export default {
         Bike stands on street - 🤞 June
         4 bike stands (resolves to 8 slots) next to the doors - 23th April || 24th April
         Spread distribution of air intake into space (next to the wall & windows) - 🤞first week of May
-        Air Condition // Cold Air distribution - first week of May
-        Window mechanism - waiting for dates
         New electrical circuits & sockets on wall - waiting for price offer & for dates
         New tables - waiting for price offer (mid May)
         Tribune - price offer & dates (🤞end of May)
