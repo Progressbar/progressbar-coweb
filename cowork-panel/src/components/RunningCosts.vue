@@ -40,7 +40,7 @@ export default {
 
         One time costs:
         New tables will cost us ~ 4000€.
-        Tribune (cover over stairs) will cost us ~ 6000€.
+        Cinema-seating (cover over stairs) will cost us ~ 6000€.
         Glass meeting room will costs us ~ 4000€.
         Kitchen will costs us ~ 2000€.
         Shower will costs us ~ 1000€.
