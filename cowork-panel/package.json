@@ -13,6 +13,7 @@
     "axios": "^0.16.2",
     "bulma": "^0.6.2",
     "font-awesome": "^4.7.0",
+    "prerender-spa-plugin": "^3.1.0",
     "vue": "^2.3.3",
     "vue-cookie-law": "^1.4.0",
     "vue-flatpickr-component": "^4.0.0",

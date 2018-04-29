@@ -10,6 +10,7 @@ var HtmlWebpackPlugin = require('html-webpack-plugin')
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
 var OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
 var SWPrecacheWebpackPlugin = require('sw-precache-webpack-plugin')
+const PrerenderSPAPlugin = require('prerender-spa-plugin')
 var loadMinified = require('./load-minified')
 
 var env = config.build.env
@@ -103,7 +104,14 @@ var webpackConfig = merge(baseWebpackConfig, {
       staticFileGlobs: ['dist/**/*.{js,html,css,svg,jpg}'],
       minify: true,
       stripPrefix: 'dist/'
-    })
+    }),
+    new PrerenderSPAPlugin({
+        // Required - The path to the webpack-outputted app to prerender.
+        staticDir: config.build.assetsRoot,
+        // Required - Routes to render.
+        routes: [ '/venue', '/space-for-rent', '/sponsors',
+          '/call-for-the-sponsors', '/call-for-a-host' ]
+      })
   ]
 })
 
