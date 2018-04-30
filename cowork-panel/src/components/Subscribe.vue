@@ -45,6 +45,9 @@
               <li>
                 Bitcoin & Litecoin accepted
               </li>
+              <li>
+                Private offices (WiP - ask)
+              </li>
             </ul>
           </div>
         </div>
@@ -54,7 +57,7 @@
       <div class="card">
         <header class="card-header">
           <p class="card-header-title">
-            🍳 Kitchen & Drink 🥤 bar
+            Drink 🥤 bar
           </p>
         </header>
         <div class="card-content">
@@ -76,10 +79,13 @@
                     Flora-power
                   </li>
                   <li>
-                    Fritz-kola
+                    Mana Roots
                   </li>
                   <li>
-                    Mana Roots
+                    Pragomost
+                  </li>
+                  <li>
+                    Fritz-kola
                   </li>
                   <li>
                     Thomas Henry Mate-Mate
