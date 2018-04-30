@@ -27,17 +27,15 @@ export default {
   data() {
     return {
       wipItems: `
-        Bike stands on street - 🤞 June
-        4 bike stands (resolves to 8 slots) next to the doors - 23th April || 24th April
-        Spread distribution of air intake into space (next to the wall & windows) - 🤞first week of May
-        New electrical circuits & sockets on wall - waiting for price offer & for dates
+        New electrical circuits & sockets on wall - waiting for dates
+        Glass Meeting room - 3-5wks from confirmation (some complications occured)
+        Cinema seating - price offer & dates (🤞end of May)
         New tables - waiting for price offer (mid May)
-        Tribune - price offer & dates (🤞end of May)
-        Glass Meeting room - waiting for price offer & 3-5wks from confirmation
+        Spread distribution of air intake into space (next to the wall & windows) - 🤞first week of May
+        Bike stands on street - 🤞 June
         Big Fridge from FritzKola - 🤞 mid May
         Hipster 🍰 Cakes in Black King Bar - end of April (ask for 🥕🍰, we already tasted it)
         Hipster ☕️ coffe in Black King Bar - end of April
-        Cryptocurrency ATM - General Bytes missing bank note dispenser (🤞beginning of May)
         Shower 🛀🚿 - n/a
         Kitchen 🥒 - n/a
         Spa ♨️ & 🧖‍♀️ InfraSauna - n/a (who wants this, write @yangwao)
