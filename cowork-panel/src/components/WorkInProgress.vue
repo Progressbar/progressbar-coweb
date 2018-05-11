@@ -27,13 +27,12 @@ export default {
   data() {
     return {
       wipItems: `
-        New electrical circuits & sockets on wall - waiting for dates
-        Glass Meeting room - 3-5wks from confirmation (some complications occured)
-        Cinema seating - price offer & dates (🤞end of May)
-        New tables - waiting for price offer (mid May)
-        Spread distribution of air intake into space (next to the wall & windows) - 🤞first week of May
-        Bike stands on street - 🤞 June
+        Glass Meeting room - confirmed! (🤞end of May)
+        Cinema seating - price offer & dates (🤞half of June)
+        New Electrical circuits & sockets on pillars - waiting for dates
+        New Tables - waiting for price offer (mid May)
         Big Fridge from FritzKola - 🤞 mid May
+        Bike stands on street - 🤞 June
         Hipster 🍰 Cakes in Black King Bar - end of April (ask for 🥕🍰, we already tasted it)
         Hipster ☕️ coffe in Black King Bar - end of April
         Shower 🛀🚿 - n/a

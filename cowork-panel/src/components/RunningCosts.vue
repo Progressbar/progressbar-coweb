@@ -34,14 +34,14 @@ export default {
       .split('\n')
       .map((line) => line.trim()),
       costs: `
-        Space Rent is ~ 3600€ / mo
-        Lemonades & Drinks ~ 800€ /mo
-        Planned host costs ~ 800€ /mo
+        Space Rent & Maintenance ~ 3600€ / mo
+        Lemonades & Drinks ~ 900€ /mo
+        Planned Hosts payroll ~ 800€ /mo
 
         One time costs:
+        Glass Meeting Room (for 12 people) will costs us ~ 5000€.
+        Cinema-seating (cover over stairs) will cost us ~ 7000€.
         New tables will cost us ~ 4000€.
-        Cinema-seating (cover over stairs) will cost us ~ 6000€.
-        Glass meeting room will costs us ~ 4000€.
         Kitchen will costs us ~ 2000€.
         Shower will costs us ~ 1000€.
       `
