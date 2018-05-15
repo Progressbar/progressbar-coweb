@@ -37,16 +37,19 @@
                 <a href="http://www.ikea.com/sk/sk/catalog/products/S29084966/" title="IKEA SKARSTA">Standing desks</a>
               </li>
               <li>
-                Meeting room 🤝
+                Meeting room 🤝 (soon for rent)
+              </li>
+              <li>
+                Private offices (WiP - ask)
+              </li>
+              <li>
+                A/C ❄️
               </li>
               <li>
                 Coding women have 50% off 👩🏽‍💻
               </li>
               <li>
                 Bitcoin & Litecoin accepted
-              </li>
-              <li>
-                Private offices (WiP - ask)
               </li>
             </ul>
           </div>
