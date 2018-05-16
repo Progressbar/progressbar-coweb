@@ -25,15 +25,14 @@
             <a href="https://t.me/coworkprogressbar">Telegram</a>
           </div>
           <div class="navbar-item">
-            <a href="https://donate.progressbar.sk">💰 Donate Progressbar</a>
+            <router-link to="/space-for-rent"><a>Space for Rent & Events</a></router-link>
           </div>
           <div v-bind:class="{ 'is-active': MiscButtonIsActive }" class="navbar-item has-dropdown">
-            <a  @click='MiscButtonToggle()' class="navbar-link">
-              Misc
+            <a @click='MiscButtonToggle()' class="navbar-link">
+              Others
             </a>
             <div class="navbar-dropdown is-right">
-              <router-link to="/space-for-rent" @click.native="showNav = !showNav"><a class="dropdown-item">
-                Space for Rent & Events</a></router-link>
+              <a class="dropdown-item" href="https://donate.progressbar.sk">💰 Donate Progressbar</a>
               <router-link to="/running-costs" @click.native="showNav = !showNav"><a class="dropdown-item">
                 Running costs</a></router-link>
               <router-link to="/sponsors" @click.native="showNav = !showNav"><a class="dropdown-item">
