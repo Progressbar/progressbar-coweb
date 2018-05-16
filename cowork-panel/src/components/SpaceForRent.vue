@@ -34,6 +34,15 @@
           if your event is on Facebook, send a "co-host" request to <a href="https://www.facebook.com/progressbar/">Progressbar</a> for greater pull and easier administration 🤗
           </p>
         </li>
+      </ol>
+    </div>
+  </div>
+  <div class="columns is-centered">
+    <div class="column is-6 content">
+      <h1 class="title has-text-grey-light">
+        Equipment in our space for your event
+      </h1>
+      <ul class="has-text-grey-light">
         <li>
           <p>
             we have for you fullHD (1080p) projector w/ HDMI and Chromecast
@@ -41,10 +50,20 @@
         </li>
         <li>
           <p>
-            we have headmicrophone and 🎤 hand microphone with mix
+            we have 🗣🎤 headmicrophone and 🎤 hand microphone with mix (Bluetooh input)
           </p>
         </li>
-      </ol>
+        <li>
+          <p>
+            we have 2x 1000W 🔊💥🙉
+          </p>
+        </li>
+        <li>
+          <p>
+            for chill we have ChromeCast Audio (play directly your Spotify playlist)
+          </p>
+        </li>
+      </ul>
     </div>
   </div>
 </div>
