@@ -27,6 +27,9 @@
           <div class="navbar-item">
             <router-link to="/space-for-rent"><a>Space for Rent & Events</a></router-link>
           </div>
+          <div class="navbar-item">
+            <a href="https://m.me/progressbar">Contact us via ⚡️Messenger</a>
+          </div>
           <div v-bind:class="{ 'is-active': MiscButtonIsActive }" class="navbar-item has-dropdown">
             <a @click='MiscButtonToggle()' class="navbar-link">
               Others
@@ -35,12 +38,12 @@
               <a class="dropdown-item" href="https://donate.progressbar.sk">💰 Donate Progressbar</a>
               <router-link to="/running-costs" @click.native="showNav = !showNav"><a class="dropdown-item">
                 Running costs</a></router-link>
+              <router-link to="/venue" @click.native="showNav = !showNav"><a class="dropdown-item">
+                Venue</a></router-link>
               <router-link to="/sponsors" @click.native="showNav = !showNav"><a class="dropdown-item">
                 Sponsors</a></router-link>
               <router-link to="/call-for-the-sponsors" @click.native="showNav = !showNav"><a class="dropdown-item">
                 Call for the Sponsors</a></router-link>
-              <router-link to="/venue" @click.native="showNav = !showNav"><a class="dropdown-item">
-                Venue</a></router-link>
               <router-link to="/call-for-a-host" @click.native="showNav = !showNav"><a class="dropdown-item">
                 Call for a Host</a></router-link>
                 <hr class="navbar-divider">
@@ -108,7 +111,12 @@ html {
   background-image: url('/static/img/progressbar-logo_sw.svg');
   background-position: 0 -141px;
   background-size: 96px 96px;
-
+}
+.navbar-item a {
+  color: white;
+}
+a.dropdown-item {
+  color: black;
 }
 
 </style>
