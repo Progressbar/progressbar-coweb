@@ -25,7 +25,7 @@
             <a href="https://t.me/coworkprogressbar">Telegram</a>
           </div>
           <div class="navbar-item">
-            <router-link to="/space-for-rent"><a>Space for Rent & Events</a></router-link>
+            <router-link to="/space-for-rent">Space for Rent & Events</router-link>
           </div>
           <div class="navbar-item">
             <a href="https://m.me/progressbar">Contact us via ⚡️Messenger</a>
@@ -112,11 +112,13 @@ html {
   background-position: 0 -141px;
   background-size: 96px 96px;
 }
-.navbar-item a {
+
+div.navbar-item a {
   color: white;
 }
-a.dropdown-item {
-  color: black;
+
+div.navbar-dropdown.is-right {
+  background-color: black
 }
 
 </style>
