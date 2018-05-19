@@ -118,7 +118,11 @@ div.navbar-item a {
 }
 
 div.navbar-dropdown.is-right {
-  background-color: black
+  background-color: black;
+}
+
+div.navbar-menu.is-active {
+  background-color: black;
 }
 
 </style>
