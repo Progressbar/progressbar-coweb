@@ -60,15 +60,12 @@
       <div class="card">
         <header class="card-header">
           <p class="card-header-title">
-            Drink 🥤 bar
+            🍻 Beverages 🥤
           </p>
         </header>
         <div class="card-content">
           <div class="content">
             <ul>
-              <li>
-                ☕️ Specialty Coffee
-              </li>
               <li>
                 🍵 Tea
               </li>
@@ -82,18 +79,21 @@
                     Flora-power
                   </li>
                   <li>
+                    Fritz-kola
+                  </li>
+                  <li>
                     Mana Roots
                   </li>
                   <li>
                     Pragomost
                   </li>
                   <li>
-                    Fritz-kola
-                  </li>
-                  <li>
                     Thomas Henry Mate-Mate
                   </li>
                 </ul>
+              </li>
+              <li>
+                ☕️ <s>Specialty Coffee</s>
               </li>
             </ul>
           </div>
