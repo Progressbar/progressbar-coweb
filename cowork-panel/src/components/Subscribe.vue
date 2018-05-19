@@ -40,7 +40,7 @@
                 Meeting room 🤝 (soon for rent)
               </li>
               <li>
-                Private offices (WiP - ask)
+                Private offices
               </li>
               <li>
                 A/C ❄️
