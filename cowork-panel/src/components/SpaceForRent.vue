@@ -2,7 +2,7 @@
 <div class="SpaceForRent">
   <div class="container is-fluid">
     <div class="columns is-centered">
-      <div class="column is-8 content">
+      <div class="column is-6 content">
         <h1 class="title has-text-grey-light">
           Space for Rent & Events
         </h1>
@@ -62,6 +62,14 @@
           <p>
             for chill we have ChromeCast Audio (play directly your Spotify playlist)
           </p>
+        </li>
+        <li>
+          <p>
+            we have 30 IKEA wooden foldable chairs, 25 office chairs, 10 other various chairs. We can scale up to 70 sitting spots
+          </p>
+        </li>
+        <li>
+          <s>sitting on podium for 20 people</s> (not done yet)
         </li>
       </ul>
     </div>
