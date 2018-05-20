@@ -25,7 +25,7 @@
             <a href="https://t.me/coworkprogressbar">Telegram</a>
           </div>
           <div class="navbar-item">
-            <router-link to="/space-for-rent">Space for Rent & Events</router-link>
+            <router-link to="/space-for-rent" @click.native="showNav = !showNav">Space for Rent & Events</router-link>
           </div>
           <div class="navbar-item">
             <a href="https://m.me/progressbar">Contact us via ⚡️Messenger</a>
