@@ -133,10 +133,10 @@
     </div>
   </div>
   <div class="columns is-centered">
-    <div class="column is-5">
+    <div class="column is-4">
       <article class="message is-black">
         <div class="message-header">
-          <p>Our story</p>
+          <p>Our backlog story</p>
         </div>
         <div class="message-body">
           <div class="content">
@@ -172,7 +172,7 @@
     <div class="column is-3">
       <article class="message is-black">
         <div class="message-header">
-          <p>Our coworkers are ~</p>
+          <p>Our coworkers are ~ 😎</p>
         </div>
         <div class="message-body">
           <div class="content">
