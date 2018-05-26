@@ -37,7 +37,7 @@
                 <a href="http://www.ikea.com/sk/sk/catalog/products/S29084966/" title="IKEA SKARSTA">Standing desks</a>
               </li>
               <li>
-                Meeting room 🤝 (soon for rent)
+                Meeting room 🤝
               </li>
               <li>
                 Private offices

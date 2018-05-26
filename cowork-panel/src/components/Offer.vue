@@ -83,6 +83,32 @@
       <div class="card">
         <header class="card-header">
           <p class="card-header-title">
+            Meeting room 🤝
+          </p>
+          <a href="#" class="card-header-icon" aria-label="more options">
+          </a>
+        </header>
+        <div class="card-content">
+          <div class="content">
+            <ul>
+              <li>
+                10 chairs
+              </li>
+              <li>
+                Whiteboard
+              </li>
+              <li>
+                5€ / hour
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column is-narrow">
+      <div class="card">
+        <header class="card-header">
+          <p class="card-header-title">
             24/7 access (addon)
           </p>
           <a href="#" class="card-header-icon" aria-label="more options">
