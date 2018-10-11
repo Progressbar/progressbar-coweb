@@ -69,7 +69,7 @@
                 6 - 18
               </li>
               <li>
-                Fixdesk
+                Fixdesk (180cm desk)
               </li>
               <li>
                 {{ this.config.orderPrices.fix }}€ / month
