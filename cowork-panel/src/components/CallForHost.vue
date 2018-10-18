@@ -37,10 +37,10 @@
               Handling curious requests 😯🤔🙌
             </li>
           </ul>
-          
+
           🌟Bonus🌟points🌟 if you are into technical stuff and want to learn to code 👩‍💻.<br /><br />
           We can donate you by 💶 cash or ⛓💰 crypto, whatever works for you.<br /><br />
-          Contact us via <a href="https://t.me/coworkprogressbar">Telegram channel</a>  or <a href="https://facebook.com/progressbar">facebook.com/progressbar</a> if you are interested 🤙.
+          Contact us via <a href="https://t.me/coworkprogressbar" target="_blank">Telegram channel</a>  or <a href="https://facebook.com/progressbar" target="_blank">facebook.com/progressbar</a> if you are interested 🤙.
         </h3>
         <img src="/static/img/wide.jpg" alt="progressbar technology cowork bratislava">
       </div>

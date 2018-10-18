@@ -91,12 +91,14 @@
         <div class="card-content">
           <div class="content">
             <ul>
+              <li>Glass sealed</li>
               <li>
                 10 chairs
               </li>
               <li>
                 Whiteboard
               </li>
+              <li>Projector</li>
               <li>
                 5€ / hour
               </li>
@@ -123,6 +125,7 @@
               <li>
                 {{ this.config.orderPrices.nonstop}}€ / month
               </li>
+              <li>Play your own music (if it doesn't disturb anyone)</li>
             </ul>
           </div>
         </div>

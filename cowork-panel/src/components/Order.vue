@@ -54,13 +54,13 @@
         <div class="message-body">
           <ol>
             <li>
-              Join our <a href="https://t.me/coworkprogressbar">coworker public channel for official announcements & support</a>
+              Join our <a href="https://t.me/coworkprogressbar" target="_blank">coworker public channel for official announcements & support</a>
             </li>
             <li>
               You need top up your <router-link to="/credit"><a href="/#/credit">credit.</a></router-link>
             </li>
             <li>
-              When you already done that, contact <a href="https://m.me/matej.wao.nemcek">m.me/matej.wao.nemcek</a> or <a href="https://t.me/yangwao">@yangwao</a> with your email to credit you in system
+              When you already done that, contact <a href="https://m.me/matej.wao.nemcek" target="_blank">m.me/matej.wao.nemcek</a> or <a href="https://t.me/yangwao">@yangwao</a> with your email to credit you in system
             </li>
             <li>
               When you will see credit in system, you can pick program (daypass) and book your desired date for coworking
