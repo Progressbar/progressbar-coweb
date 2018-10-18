@@ -16,22 +16,16 @@
       <div v-bind:class="{ 'is-active': showNav }" class="navbar-menu">
         <div class="navbar-end">
           <div class="navbar-item">
-            <a href="https://www.facebook.com/progressbar/events">Upcoming Meetups</a>
+            <a href="https://www.facebook.com/progressbar/events" target="_blank">Upcoming Meetups</a>
           </div>
           <div class="navbar-item">
-            <a href="https://www.facebook.com/progressbar">Facebook</a>
+            <a href="https://t.me/coworkprogressbar" target="_blank">Telegram</a>
           </div>
           <div class="navbar-item">
-            <a href="https://t.me/coworkprogressbar">Telegram</a>
+            <router-link to="/space-for-rent" @click.native="showNav = !showNav">Rent our space</router-link>
           </div>
           <div class="navbar-item">
-            <a href="https://www.instagram.com/progressbar_sk/">Instagram</a>
-          </div>
-          <div class="navbar-item">
-            <router-link to="/space-for-rent" @click.native="showNav = !showNav">Space for Rent & Events</router-link>
-          </div>
-          <div class="navbar-item">
-            <a href="https://m.me/progressbar">Contact us via ⚡️Messenger</a>
+            <a href="https://m.me/progressbar" target="_blank">Contact us via ⚡️Messenger</a>
           </div>
           <div v-bind:class="{ 'is-active': MiscButtonIsActive }" class="navbar-item has-dropdown">
             <a @click='MiscButtonToggle()' class="navbar-link">
@@ -40,11 +34,11 @@
             <div class="navbar-dropdown is-right">
               <a class="dropdown-item" href="https://donate.progressbar.sk" target="_blank">💰 Donate to Progressbar</a>
               <router-link to="/running-costs" @click.native="showNav = !showNav"><a class="dropdown-item">
-                Running costs</a></router-link>
+                📒 Running costs</a></router-link>
               <router-link to="/venue" @click.native="showNav = !showNav"><a class="dropdown-item">
                 Venue</a></router-link>
               <router-link to="/sponsors" @click.native="showNav = !showNav"><a class="dropdown-item">
-                Sponsors</a></router-link>
+                😇 Sponsors</a></router-link>
               <router-link to="/call-for-the-sponsors" @click.native="showNav = !showNav"><a class="dropdown-item">
                 Call for the Sponsors</a></router-link>
               <router-link to="/call-for-a-host" @click.native="showNav = !showNav"><a class="dropdown-item">
@@ -67,21 +61,15 @@
       </div>
     </section>
   </main>
-  <footer>
-    <section class="section">
-      <div class="container is-fluid">
-        <SupportUs></SupportUs>
-      </div>
-    </section>
-  </footer>
+  <AppFooter></AppFooter>
 </div>
 </template>
 <script>
-import SupportUs from '@/components/SupportUs'
+import AppFooter from '@/components/AppFooter'
 export default {
   name: 'app',
   components: {
-    SupportUs
+    AppFooter
   },
   data () {
     return {
@@ -104,6 +92,12 @@ html {
   background-color: black;
 }
 
+html,
+body {
+  font-family: "Open Sans", sans-serif;
+  font-family: "Titillium Web", sans-serif;
+}
+
 .progressbar-logo-container {
   padding: 10px;
 }
@@ -111,7 +105,8 @@ html {
   width: 96px;
   height: 37px;
   mix-blend-mode: lighten;
-  background-image: url('/static/img/progressbar-logo-refresh.svg');
+  background-image: url('/static/img/progressbar-logo_sw.svg');
+  /* background-image: url('/static/img/progressbar-logo-refresh.svg'); */
   background-position: 0 -141px;
   background-size: 96px 96px;
 }

@@ -220,16 +220,16 @@
       <img src="/static/img/IMG_20180321_181247_HDR.jpg" alt="progressbar cowork bratislava blockchain meetup">
     </div>
   </div>
-  <div class="columns is-centered">
+  <!-- <div class="columns is-centered">
     <div class="column is-narrow">
       <h1 id="blackh1">Tech Cowork Progressbar in Bratislava</h1>
     </div>
-  </div>
-  <div class="columns is-centered">
+  </div> -->
+  <!-- <div class="columns is-centered">
     <div class="column is-narrow">
       <h2 id="blackh2">Tech Cowork Progressbar in Bratislava where we accept Bitcoin, Ethereum & Litecoin for coworking. Daypass starts from {{ this.config.orderPrices.day }}€ </h2>
     </div>
-  </div>
+  </div> -->
   <cookie-law transitionName="fade"
    position="bottom"
    theme="dark-lime"
