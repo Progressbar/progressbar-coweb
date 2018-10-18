@@ -16,16 +16,16 @@
       <div v-bind:class="{ 'is-active': showNav }" class="navbar-menu">
         <div class="navbar-end">
           <div class="navbar-item">
-            <a href="https://www.facebook.com/progressbar/events" target="_blank">Upcoming Meetups</a>
-          </div>
-          <div class="navbar-item">
-            <a href="https://t.me/coworkprogressbar" target="_blank">Telegram</a>
+            <a href="https://www.facebook.com/progressbar/events" target="_blank">Events</a>
           </div>
           <div class="navbar-item">
             <router-link to="/space-for-rent" @click.native="showNav = !showNav">Rent our space</router-link>
           </div>
           <div class="navbar-item">
-            <a href="https://m.me/progressbar" target="_blank">Contact us via ⚡️Messenger</a>
+            <a href="https://t.me/coworkprogressbar" target="_blank">Telegram</a>
+          </div>
+          <div class="navbar-item">
+            <router-link to="/contact">️️️️Contact</router-link>
           </div>
           <div v-bind:class="{ 'is-active': MiscButtonIsActive }" class="navbar-item has-dropdown">
             <a @click='MiscButtonToggle()' class="navbar-link">
@@ -61,7 +61,7 @@
       </div>
     </section>
   </main>
-  <AppFooter></AppFooter>
+  <AppFooter />
 </div>
 </template>
 <script>
