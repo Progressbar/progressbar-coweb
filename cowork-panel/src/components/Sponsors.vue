@@ -4,7 +4,7 @@
     <div class="columns is-centered">
       <div class="column is-8">
         <h1 class="title has-text-grey-light">
-          Beloved & Brave Sponsors of our <a href="https://progressbar.sk"> hackerspace Progressbar</a> & <a href="https://cowork.progressbar.sk"> Cowork Progressbar</a>
+          Beloved & Brave Sponsors of our <a href="https://progressbar.sk"> hackerspace Progressbar</a> & <a href="https://progressbar.sk"> Cowork Progressbar</a>
         </h1>
         <img src="/static/img/tribune.jpg" alt="tribune" />
         <h2 class="subtitle">
@@ -34,7 +34,7 @@
             </li>
             <br />
             <li>
-              <a href="https://cowork.progressbar.sk">your favourite company can be here</a>
+              <a href="https://progressbar.sk">your favourite company can be here</a>
             </li>
           </ul>
         </h2>
@@ -72,7 +72,7 @@ export default {
       subEmail: '',
       isUser: false,
       config: {
-        baseWebUrl: 'https://cowork.progressbar.sk/',
+        baseWebUrl: 'https://progressbar.sk/',
         orderPrices: {
           day: 4,
           month: 80,

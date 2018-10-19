@@ -1,7 +1,7 @@
 <template>
 <div class="offer">
-  <div class="columns is-centered">
-    <div class="column is-narrow">
+  <div class="columns">
+    <div class="column">
       <div class="card">
         <header class="card-header">
           <p class="card-header-title">
@@ -14,20 +14,20 @@
           <div class="content">
             <ul>
               <li>
-                {{ this.config.openHours.dayPass.start }} - {{ this.config.openHours.dayPass.end }}
+                ⏰  {{ openHours.dayPass.start }} - {{ openHours.dayPass.end }}
               </li>
               <li>
                 Hotdesk ♨️
               </li>
               <li>
-                {{ this.config.orderPrices.day }}€ / day
+                {{ orderPrices.day }}€ / day
               </li>
             </ul>
           </div>
         </div>
       </div>
     </div>
-    <div class="column is-narrow">
+    <div class="column">
       <div class="card">
         <header class="card-header">
           <p class="card-header-title">
@@ -40,20 +40,20 @@
           <div class="content">
             <ul>
               <li>
-                {{ this.config.openHours.monthPass.start }} - {{ this.config.openHours.monthPass.end }}
+                ⏰  {{ openHours.monthPass.start }} - {{ openHours.monthPass.end }}
               </li>
               <li>
                 Hotdesk ♨️
               </li>
               <li>
-                {{ this.config.orderPrices.month }}€ / month
+                {{ orderPrices.month }}€ / month
               </li>
             </ul>
           </div>
         </div>
       </div>
     </div>
-    <div class="column is-narrow">
+    <div class="column">
       <div class="card">
         <header class="card-header">
           <p class="card-header-title">
@@ -66,20 +66,20 @@
           <div class="content">
             <ul>
               <li>
-                6 - 18
+                ⏰ {{ openHours.fixdesk.start }} - {{ openHours.fixdesk.end }}
               </li>
               <li>
                 Fixdesk (180cm desk)
               </li>
               <li>
-                {{ this.config.orderPrices.fix }}€ / month
+                {{ orderPrices.fix }}€ / month
               </li>
             </ul>
           </div>
         </div>
       </div>
     </div>
-    <div class="column is-narrow">
+    <div class="column">
       <div class="card">
         <header class="card-header">
           <p class="card-header-title">
@@ -98,7 +98,7 @@
               <li>
                 Whiteboard
               </li>
-              <li>Projector</li>
+              <li>Separate projector</li>
               <li>
                 5€ / hour
               </li>
@@ -107,7 +107,7 @@
         </div>
       </div>
     </div>
-    <div class="column is-narrow">
+    <div class="column">
       <div class="card">
         <header class="card-header">
           <p class="card-header-title">
@@ -123,7 +123,7 @@
                 Work any 🕙
               </li>
               <li>
-                {{ this.config.orderPrices.nonstop}}€ / month
+                {{ orderPrices.nonstop}}€ / month
               </li>
               <li>Play your own music (if it doesn't disturb anyone)</li>
             </ul>
@@ -131,7 +131,7 @@
         </div>
       </div>
     </div>
-    <!-- <div class="column is-narrow">
+    <!-- <div class="column">
       <div class="card">
         <header class="card-header">
           <p class="card-header-title">
@@ -147,7 +147,7 @@
                 Lock your 💎 💻
               </li>
               <li>
-                {{ this.config.orderPrices.locker}}€ / month
+                {{ orderPrices.locker}}€ / month
               </li>
             </ul>
           </div>
@@ -159,58 +159,37 @@
 </template>
 
 <script>
-import axios from 'axios'
-
 export default {
   name: 'offer',
   data() {
     return {
-      seats: {
-        subscribers: 0,
-        capacity: 0
+      orderPrices: {
+        day: 8,
+        month: 100,
+        fix: 180,
+        locker: 10,
+        nonstop: 20
       },
-      credited: 0,
-      orderSum: {},
-      newSubscriber: {
-        email: ''
-      },
-      button: {
-        subscribe: 'Register for cowork',
-        verify: '__',
-        login: 'Send login link',
-        order: 'Go to Dashboard'
-      },
-      daysBooked: 0,
-      subEmail: '',
-      isUser: false,
-      config: {
-        baseWebUrl: 'https://cowork.progressbar.sk/',
-        orderPrices: {
-          day: 8,
-          month: 100,
-          fix: 180,
-          locker: 10,
-          nonstop: 20
+      openHours: {
+        monthPass: {
+          start: '06:00',
+          end: '18:00'
         },
-        openHours: {
-          monthPass: {
-            start: 6,
-            end: 18
-          },
-          dayPass: {
-            start: 9,
-            end: 18
-          }
+        dayPass: {
+          start: '09:00',
+          end: '18:00'
         },
-        coworkLogin: false,
-        coworkSubscribe: false
-      }
+        fixdesk: {
+          start: '06:00',
+          end: '18:00'
+        }
+      },
     }
   }
 }
 </script>
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style>
+
+<style scoped>
 input {
   background-color: #ffffff;
 }

@@ -14,6 +14,8 @@ import D14 from '@/components/D14'
 import WorkInProgress from '@/components/WorkInProgress'
 import Venue from '@/components/Venue'
 import CallForHost from '@/components/CallForHost'
+import ContactPage from '@/components/ContactPage'
+import Page404 from '@/components/Page404'
 import VueLocalStorage from 'vue-ls'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
@@ -92,6 +94,14 @@ export default new Router({
     {
       path: '/d14',
       component: D14
+    },
+    {
+      path: '/contact',
+      component: ContactPage
+    },
+    {
+      path: '*',
+      component: Page404
     }
   ]
 })

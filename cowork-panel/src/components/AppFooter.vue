@@ -5,9 +5,9 @@
       <div class="column is-3">
         <h1>Internals</h1>
         <ul>
-          <li v-for="internal in internals">
-            <a :href="internal.url" target="_blank">
-              {{internal.title}}
+          <li v-for="item in internals" :key="item.url">
+            <a :href="item.url" target="_blank">
+              <font-awesome-icon v-if="item.icon" :icon="item.icon" /> {{item.title}}
             </a>
           </li>
         </ul>
@@ -15,9 +15,9 @@
       <div class="column is-3">
         <h1>Social</h1>
         <ul>
-          <li v-for="social in socials">
-            <a :href="social.url" target="_blank">
-              <font-awesome-icon v-if="social.icon" :icon="social.icon" /> {{social.title}}
+          <li v-for="item in socials" :key="item.url">
+            <a :href="item.url" target="_blank">
+              <font-awesome-icon v-if="item.icon" :icon="item.icon" /> {{item.title}}
             </a>
           </li>
         </ul>
@@ -25,17 +25,17 @@
       <div class="column is-3">
         <h1>Projects</h1>
         <ul>
-          <li v-for="project in projects">
-            <a :href="project.url" target="_blank">{{project.title}}</a>
+          <li v-for="item in projects" :key="item.url">
+            <a :href="item.url" target="_blank">{{item.title}}</a>
           </li>
         </ul>
       </div>
       <div class="column is-3">
         <h1>Contact</h1>
         <ul>
-          <li v-for="contact in contacts">
-            <a :href="contact.url" target="_blank">
-              <font-awesome-icon v-if="contact.icon" :icon="contact.icon" /> {{contact.title}}
+          <li v-for="item in contacts" :key="item.url">
+            <a :href="item.url" target="_blank">
+              <font-awesome-icon v-if="item.icon" :icon="item.icon" /> {{item.title}}
             </a>
           </li>
         </ul>
@@ -45,10 +45,8 @@
   <div class="container">
     <div class="columns">
       <div class="column is-12">
-        <small>
-          Dunajská 7495/14, Bratislava, 811 08, Slovakia
-          (<a href="https://www.google.com/maps/place/Progressbar+hackerspace/@48.144557,17.1133019,17z/data=!3m1!4b1!4m5!3m4!1s0x476c8946152ff129:0x72ac0b6fccaf66fd!8m2!3d48.144557!4d17.1154906" target="_blank">Google Maps</a>, )
-        </small>
+        Dunajská 7495/14, Bratislava, 811 08, Slovakia
+        (<a href="https://www.openstreetmap.org/node/1096120193" target="_blank">OSM</a>, <a href="https://goo.gl/maps/piJwx6AAB762" target="_blank">Google Maps</a>)
       </div>
     </div>
   </div>
@@ -72,6 +70,7 @@ import {
   faFacebook,
   faTelegram,
   faFacebookMessenger,
+faGit,
 } from '@fortawesome/free-brands-svg-icons'
 export default {
   name: 'AppFooter',
@@ -92,20 +91,20 @@ export default {
         { url: 'https://github.com/Progressbar', title: 'Github', icon: faGithub }
       ],
       internals: [
-        { url: 'https://github.com/Progressbar/Progressbar-Improvement-Proposal/issues', title: 'Progressbar Improvement Proposal', icon: '' },
-        { url: 'https://github.com/Progressbar/space-map/blob/master/map.png', title: 'Blueprint', icon: '' },
-        { url: 'https://github.com/Progressbar/culture', title: 'Culture', icon: '' },
-        { url: 'https://github.com/Progressbar/presskit', title: 'Presskit', icon: '' },
+        { url: 'https://github.com/Progressbar/Progressbar-Improvement-Proposal/issues', title: 'Progressbar Improvement Proposal', icon: faGithub },
+        { url: 'https://github.com/Progressbar/space-map/blob/master/map.png', title: 'Blueprint', icon: faGithub },
+        { url: 'https://github.com/Progressbar/culture', title: 'Culture', icon: faGithub },
+        { url: 'https://github.com/Progressbar/presskit', title: 'Presskit', icon: faGithub },
       ],
       projects: [
         { url: 'https://github.com/Progressbar/diybiobratislava', title: 'DIYBio Bratislava', icon: '' },
-        { url: 'http://noodles.digital', title: 'Noodles Digital', icon: '' }
+        { url: 'https://noodles.digital', title: 'Noodles Digital', icon: '' }
       ]
     }
   }
 }
 </script>
-<style>
+<style scoped>
 .footer {
   background-color: inherit;
   color: white;

@@ -7,7 +7,7 @@ import router from './router'
 Vue.config.productionTip = false
 
 Vue.prototype.$api = {
-  baseWebUrl: 'https://cowork.progressbar.sk/',
+  baseWebUrl: 'https://progressbar.sk/',
   pubConfig: 'pubConfig/',
   subscribers: 'status/',
   daydetails: 'daydetails/',

@@ -150,7 +150,7 @@ export default {
         credit: 0
       },
       config: {
-        baseWebUrl: 'https://cowork.progressbar.sk/',
+        baseWebUrl: 'https://progressbar.sk/',
         orderPrices: {
           day: 8,
           month: 100,

@@ -2,20 +2,15 @@
 <div class="subscribe">
   <div v-if="this.isUser" class="columns is-mobile is-centered">
     <div class="column is-narrow">
-        <a href="./#/order" class="button is-warning is-large is-outlined">{{ this.button.order }}</a>
+      <a href="./#/order" class="button is-warning is-large is-outlined">{{ this.button.order }}</a>
     </div>
   </div>
-  <div class="columns is-centered">
-    <div class="column is-narrow">
-      <img src="/static/img/PANO_20180324_103055.jpg" alt="nodeschool bratislava women edition" />
-    </div>
-  </div>
-  <div class="columns is-centered">
-    <div class="column is-narrow">
+  <div class="columns">
+    <div class="column">
       <div class="card">
         <header class="card-header">
           <p class="card-header-title">
-           🏢 Coworking 👩‍🚀 Space Offers
+           🏢 Coworking Space Offers 👩‍🚀
           </p>
         </header>
         <div class="card-content">
@@ -62,11 +57,11 @@
         </div>
       </div>
     </div>
-    <div class="column is-narrow">
+    <div class="column">
       <div class="card">
         <header class="card-header">
           <p class="card-header-title">
-            🍻 Beverages 🥤
+            🍻 Drinks 🥤
           </p>
         </header>
         <div class="card-content">
@@ -76,45 +71,63 @@
                 🍵 Tea
               </li>
               <li>
-                <a href="https://www.facebook.com/progressbar/photos/a.946997141982895.1073741833.140864112596206/1933082956707637/?type=3" target="_blank" title="drinks in fridge">🍹 Softdrinks ❄️ </a>
+                <a href="https://www.facebook.com/progressbar/photos/a.946997141982895.1073741833.140864112596206/1933082956707637/?type=3" target="_blank" title="drinks in fridge">🍼 Bottled drinks </a> (cooled ️️❄️)
                 <ul>
-                  <li>
-                    Club-Mate
-                  </li>
-                  <li>
-                    Flora-power
-                  </li>
-                  <li>
-                    Fritz-kola
-                  </li>
-                  <li>
-                    Mana Roots
-                  </li>
-                  <li>
-                    Pragomost
-                  </li>
-                  <li>
-                    Thomas Henry Mate-Mate
+                  <li v-for="item in bottledDrinks" :key="item.name">
+                    {{item.name}}
                   </li>
                 </ul>
               </li>
               <li>
-                ☕️ Specialty Coffee, Frenchpress, Coffe Machine
+                ☕️ Specialty Coffee
+                <ul>
+                  <li>Frenchpress</li>
+                  <li>Coffee Machine</li>
+                </ul>
               </li>
             </ul>
           </div>
         </div>
       </div>
     </div>
-  </div>
-    <div class="columns is-centered">
-      <div class="column is-narrow contains-iframe-to-center">
-        <iframe src="https://www.google.com/maps/embed?pb=!4v1521036389001!6m8!1m7!1sCAoSLEFGMVFpcE5VUktvSEtOdUtjRmZ2dHliRm95c0F2dHNRODcwaGhHRUd4eXFo!2m2!1d48.144557!2d17.1154906!3f0.9038775948851594!4f-3.1346220537675435!5f0.7820865974627469" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-      </div>
-      <div class="column is-narrow contains-iframe-to-center">
-        <iframe src="https://www.google.com/maps/embed?pb=!4v1520687181290!6m8!1m7!1sCAoSLEFGMVFpcE5DTFo1VDhUcXI3QkUtYjd2N2ZySmZWMGp4QjU2Y2poNC1qWXVW!2m2!1d48.144557!2d17.1154906!3f93.6033215859847!4f-8.0060330138093!5f0.7820865974627469" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <div class="column">
+      <div class="card">
+        <header class="card-header">
+          <p class="card-header-title">
+            📅 Upcoming Events ⚡️
+          </p>
+        </header>
+        <div class="card-content">
+          <div class="content">
+            Work in Progress(bar) 😉
+          </div>
+        </div>
       </div>
     </div>
+    <div class="column">
+      <div class="card">
+        <header class="card-header">
+          <p class="card-header-title">
+            💡 Progressbar Improvement Proposal 🔧
+          </p>
+        </header>
+        <div class="card-content">
+          <div class="content">
+            TODO use github api
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="columns is-centered">
+    <div class="column is-narrow contains-iframe-to-center">
+      <iframe src="https://www.google.com/maps/embed?pb=!4v1521036389001!6m8!1m7!1sCAoSLEFGMVFpcE5VUktvSEtOdUtjRmZ2dHliRm95c0F2dHNRODcwaGhHRUd4eXFo!2m2!1d48.144557!2d17.1154906!3f0.9038775948851594!4f-3.1346220537675435!5f0.7820865974627469" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+    <div class="column is-narrow contains-iframe-to-center">
+      <iframe src="https://www.google.com/maps/embed?pb=!4v1520687181290!6m8!1m7!1sCAoSLEFGMVFpcE5DTFo1VDhUcXI3QkUtYjd2N2ZySmZWMGp4QjU2Y2poNC1qWXVW!2m2!1d48.144557!2d17.1154906!3f93.6033215859847!4f-8.0060330138093!5f0.7820865974627469" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+  </div>
 
   <div v-if="!this.isUser" class="columns is-centered">
     <div class="column is-narrow">
@@ -160,7 +173,7 @@
                     you can support us at <a href="https://donate.progressbar.sk" target="_blank">donate.progressbar.sk</a>
                   </li>
                   <li>
-                     signup for our <a href="https://cowork.progressbar.sk">coworking in Bratislava</a>
+                     signup for our <a href="https://progressbar.sk">coworking in Bratislava</a>
                   </li>
                   <li>
                     <router-link to="/sponsors"><a href="/#/sponsors">be our proud sponsor</a></router-link>
@@ -220,16 +233,6 @@
       <img src="/static/img/IMG_20180321_181247_HDR.jpg" alt="progressbar cowork bratislava blockchain meetup">
     </div>
   </div>
-  <!-- <div class="columns is-centered">
-    <div class="column is-narrow">
-      <h1 id="blackh1">Tech Cowork Progressbar in Bratislava</h1>
-    </div>
-  </div> -->
-  <!-- <div class="columns is-centered">
-    <div class="column is-narrow">
-      <h2 id="blackh2">Tech Cowork Progressbar in Bratislava where we accept Bitcoin, Ethereum & Litecoin for coworking. Daypass starts from {{ this.config.orderPrices.day }}€ </h2>
-    </div>
-  </div> -->
   <cookie-law transitionName="fade"
    position="bottom"
    theme="dark-lime"
@@ -250,6 +253,15 @@ export default {
         subscribers: 0,
         capacity: 0
       },
+      bottledDrinks: [
+        { name: 'Club-Mate', image: '', url: '' },
+        { name: 'Club-Mate', image: '', url: '' },
+        { name: 'Flora-Power', image: '', url: '' },
+        { name: 'Fritz-kola', image: '', url: '' },
+        { name: 'Mana Roots', image: '', url: '' },
+        { name: 'Thomas Henry Mate-Mate', image: '', url: '' },
+        { name: 'Pragomost', image: '', url: '' },
+      ],
       credited: 0,
       orderSum: {},
       newSubscriber: {
@@ -265,7 +277,7 @@ export default {
       subEmail: "",
       isUser: false,
       config: {
-        baseWebUrl: "https://cowork.progressbar.sk/",
+        baseWebUrl: "https://progressbar.sk/",
         orderPrices: {
           day: 8,
           month: 100,
@@ -366,11 +378,8 @@ export default {
   }
 };
 </script>
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style>
-/*input {
-  background-color: #000
-}*/
+
+<style scoped>
 h1#blackh1 {
   color: black;
 }
