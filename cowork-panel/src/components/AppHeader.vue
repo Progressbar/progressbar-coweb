@@ -14,6 +14,13 @@
       </div>
       <div class="navbar-menu">
         <div class="navbar-end">
+          <router-link
+              tag="div"
+              class="navbar-item"
+              exact-active-class="is-active"
+              to="/membership">
+            Membership
+          </router-link>
           <div class="navbar-item">
             <a
               href="https://www.facebook.com/progressbar/events"
@@ -65,6 +72,13 @@
                 Workspace VR Evening (360)</a>
             </div>
           </div>
+          <router-link
+              tag="div"
+              class="navbar-item"
+              exact-active-class="is-active"
+              to="/membership">
+            Join us
+          </router-link>
         </div>
       </div>
     </div>

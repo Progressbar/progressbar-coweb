@@ -4,6 +4,9 @@
   <main>
     <section class="hero">
       <img src="/static/img/PANO_20180324_103055.jpg" alt="nodeschool bratislava women edition" />
+      <div class="hero-body">
+        Progressbar
+      </div>
     </section>
     <section class="section">
       <div class="container">

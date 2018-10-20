@@ -1,5 +1,8 @@
 <template>
 <div class="RunningCosts">
+  <div class="container">
+    <pb-financial-report />
+  </div>
   <div class="container is-fluid">
     <div class="columns is-centered">
       <div class="column is-8 content">
@@ -19,9 +22,13 @@
 </template>
 <script>
 import axios from 'axios'
+import PbFinancialReport from '@/components/PbFinancialReport.vue'
 
 export default {
   name: 'RunningCosts',
+  components: {
+    PbFinancialReport
+  },
   data() {
     return {
       content: `
@@ -52,6 +59,5 @@ export default {
   }
 }
 </script>
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style>
+<style scoped>
 </style>
