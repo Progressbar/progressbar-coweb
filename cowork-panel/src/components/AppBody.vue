@@ -16,7 +16,7 @@
               <div class="content has-text-centered">
                 <p>
                   <router-link
-                    class="button is-black is-large is-uppercase"
+                    class="button is-black is-large is-uppercase has-text-weight-bold"
                     to="/membership">
                     Join our coworking 🔥
                   </router-link>
@@ -81,10 +81,15 @@ export default {
 
 .subtitle {
   font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .hero-body .title, .subtitle {
   color: white;
+}
+
+a.button {
+  /* font-weight: bold; */
 }
 
 a.button, a.button:hover {
