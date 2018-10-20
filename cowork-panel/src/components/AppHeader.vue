@@ -1,6 +1,6 @@
 <template>
 <header>
-  <nav class="navbar is-black is-fixed-top" role="navigation" aria-label="main navigation">
+  <nav class="navbar is-black is-fixed-top has-shadow" role="navigation" aria-label="main navigation">
     <div class="container">
       <div class="navbar-brand">
         <a class="navbar-item progressbar-logo-container" href="https://progressbar.sk">
@@ -74,10 +74,10 @@
           </div>
           <router-link
               tag="div"
-              class="navbar-item"
+              class="navbar-item is-uppercase"
               exact-active-class="is-active"
               to="/membership">
-            Join us
+            Join us 🔥
           </router-link>
         </div>
       </div>
@@ -88,10 +88,17 @@
 
 <script>
 import ProgressbarLogoRefresh from '@/components/ProgressbarLogoRefresh.vue'
+
 export default {
-  name: 'AppHeader',
+  name: 'app-header',
   components: {
     ProgressbarLogoRefresh,
+  },
+  props: {
+    showLogo: {
+      type: Boolean,
+      default: false,
+    },
   },
   data () {
     return {
@@ -124,13 +131,18 @@ div.navbar-item a {
   color: white;
 }
 
-div.navbar-item:hover, div.navbar-item.is-active {
+div.navbar-item:hover {
+  background-color: black;
+  text-decoration: underline
+}
+
+div.navbar-item.is-active {
   background-color: black;
 }
 
-.navbar-item a:hover {
+/* .navbar-item a:hover {
   text-decoration: underline;
-}
+} */
 
 div.navbar-dropdown.is-right {
   background-color: black;

@@ -73,7 +73,7 @@ import {
 faGit,
 } from '@fortawesome/free-brands-svg-icons'
 export default {
-  name: 'AppFooter',
+  name: 'app-footer',
   components: {
     SupportUs
   },

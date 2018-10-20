@@ -1,5 +1,5 @@
 <template>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 328.5 123" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-label="Progressbar logo" alt="Progressbar logo" viewBox="0 0 328.5 123" width="100%" height="100%">
     <title>Progressbar logo</title>
     <g>
       <path d=" M 11 120 L 2 111 L 2 48 L 29 48 L 29 66 L 20 75 L 11 75" fill="none" stroke-width="4" stroke="currentColor" stroke-linejoin="miter" stroke-linecap="square"  />

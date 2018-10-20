@@ -1,31 +1,22 @@
 <template>
 <div id="app">
-  <AppHeader />
-  <main>
-    <section class="hero">
-      <img src="/static/img/PANO_20180324_103055.jpg" alt="nodeschool bratislava women edition" />
-      <div class="hero-body">
-        Progressbar
-      </div>
-    </section>
-    <section class="section">
-      <div class="container">
-        <router-view></router-view>
-      </div>
-    </section>
-  </main>
-  <AppFooter />
+  <app-header />
+  <app-body />
+  <app-footer />
 </div>
 </template>
 
 <script>
 import AppFooter from '@/components/AppFooter'
 import AppHeader from '@/components/AppHeader'
+import AppBody from '@/components/AppBody'
+
 export default {
   name: 'app',
   components: {
     AppFooter,
-    AppHeader
+    AppBody,
+    AppHeader,
   },
   data () {
     return {

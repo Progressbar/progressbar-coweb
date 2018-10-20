@@ -1,5 +1,5 @@
 <template>
-<div>
+<div class="pb-financial-report">
   <div>
   </div>
   <div>
@@ -36,6 +36,10 @@ export default {
   name: 'pb-financial-report',
   data() {
     return {
+      urls: {
+        ticker: `https://api.coinmarketcap.com/v1/ticker/?limit=20&convert=EUR`,
+        fio: `https://wt-34a1f88c4cf6274a39c74828d3dc1719-0.sandbox.auth0-extend.com/pb-fio`,
+      },
       keys: {
         etherscan: '9HCNXKIYG9KYCCZ74RWHMREUF2HFMFYETD'
       },
@@ -69,9 +73,7 @@ export default {
   },
   methods: {
     async fetchTicker() {
-      const { data } = await axios({
-        url: `https://api.coinmarketcap.com/v1/ticker/?limit=20&convert=EUR`
-      })
+      const { data } = await axios({ url: this.urls.ticker })
       this.ticker = data
     },
     getExchangeRate(mySymbol) {
@@ -99,9 +101,7 @@ export default {
       return new Number(data)
     },
     async getFioBalance() {
-      const { data } = await axios({
-        url: `https://wt-34a1f88c4cf6274a39c74828d3dc1719-0.sandbox.auth0-extend.com/pb-fio`
-      })
+      const { data } = await axios({ url: this.urls.fio })
 
       return new Number(data)
     },
@@ -171,4 +171,6 @@ export default {
 </script>
 
 <style scoped>
+.pb-financial-report {
+}
 </style>
