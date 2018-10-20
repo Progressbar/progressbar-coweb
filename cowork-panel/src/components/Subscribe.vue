@@ -6,11 +6,11 @@
     </div>
   </div>
   <div class="columns">
-    <div class="column">
+    <div class="column is-4">
       <div class="card">
         <header class="card-header">
           <p class="card-header-title">
-           🏢 Coworking Space Offers 👩‍🚀
+           🏢 Coworking 👩‍🚀
           </p>
         </header>
         <div class="card-content">
@@ -21,11 +21,11 @@
                 <a href="https://www.google.com/maps/place/Progressbar+hackerspace/@48.144557,17.1133019,17z/data=!3m1!4b1!4m5!3m4!1s0x476c8946152ff129:0x72ac0b6fccaf66fd!8m2!3d48.144557!4d17.1154906" title="Dunajská 7495/14, 811 08 Bratislava, Slovakia" target="_blank">Place for your work in downtown</a>
               </li>
               <li>
-                <a href="http://www.speedtest.net/result/7179888517" target="_blank">High-speed Internet ~ 250/20</a><a href="http://www.speedtest.net/my-result/a/3374894584"  target="_blank">📱</a>
+                <a href="http://www.speedtest.net/result/7179888517" target="_blank">Fast Internet ~250/20</a>
               </li>
-              <li>
+              <!-- <li>
                 <a href="https://scontent-vie1-1.xx.fbcdn.net/v/t31.0-8/21765459_1941520825863850_876389467015918658_o.jpg?oh=7de68da52211a7304d10a3298d7e02fc&oe=5A538F7E" target="_blank">Lot of Electric Sockets ⚡️🔌</a>
-              </li>
+              </li> -->
               <li>
                 <a href="https://www.google.com/maps/place/Progressbar+hackerspace/@48.1442769,17.1065927,3a,75y,68.38h,60.45t/data=!3m8!1e1!3m6!1sAF1QipOS15iBvtp1oSLXg6nuorM282YC64pjorvA2LVk!2e10!3e11!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipOS15iBvtp1oSLXg6nuorM282YC64pjorvA2LVk%3Dw203-h100-k-no-pi-0-ya6.500005-ro-0-fo100!7i8000!8i4000!4m5!3m4!1s0x476c8946152ff129:0x72ac0b6fccaf66fd!8m2!3d48.1442784!4d17.1065933" title="1080p HDMI/DVI mostly" target="_blank">External Monitors - shared 🖥</a>
               </li>
@@ -36,18 +36,20 @@
                 Chromecast for projector and music 🎶
               </li>
               <li>
-                Meeting room 🤝
+                <router-link to="/space-for-rent">Meeting room 🤝</router-link>
               </li>
-              <li>
+              <!-- <li>
                 Private offices
+              </li> -->
+              <li>
+                <a href="https://www.instagram.com/p/Bn5zmzJAa01/" target="_blank">Pull-Up bar 💪</a>
               </li>
-              <li>Pull-Up bar 💪</li>
               <li>Call room 📞</li>
               <li>
                 Air Conditioning ❄️ 🔥
               </li>
               <li>
-                Coding women have 50% off 👩🏽‍💻
+                Coding women get 50% off 👩🏽‍💻
               </li>
               <li>
                 Bitcoin, Etherum & Litecoin accepted
@@ -57,7 +59,7 @@
         </div>
       </div>
     </div>
-    <div class="column">
+    <div class="column is-4">
       <div class="card">
         <header class="card-header">
           <p class="card-header-title">
@@ -68,7 +70,7 @@
           <div class="content">
             <ul>
               <li>
-                🍵 Tea
+                🍵 Tea (Matcha as well)
               </li>
               <li>
                 <a href="https://www.facebook.com/progressbar/photos/a.946997141982895.1073741833.140864112596206/1933082956707637/?type=3" target="_blank" title="drinks in fridge">🍼 Bottled drinks </a> (cooled ️️❄️)
@@ -79,7 +81,7 @@
                 </ul>
               </li>
               <li>
-                ☕️ Specialty Coffee
+                ☕️ Specialty Coffee (<a href="https://black.xyz/" target="_blank">black.xyz</a>)
                 <ul>
                   <li>Frenchpress</li>
                   <li>Coffee Machine</li>
@@ -90,7 +92,7 @@
         </div>
       </div>
     </div>
-    <div class="column">
+    <div class="column is-4">
       <div class="card">
         <header class="card-header">
           <p class="card-header-title">
@@ -104,7 +106,7 @@
         </div>
       </div>
     </div>
-    <div class="column">
+    <!-- <div class="column">
       <div class="card">
         <header class="card-header">
           <p class="card-header-title">
@@ -117,7 +119,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 
   <div class="columns is-centered">
@@ -146,13 +148,16 @@
     </div>
   </div>
     <Offer></Offer>
-  <div class="columns is-centered">
-    <div class="column is-narrow">
+  <div class="columns">
+    <div class="column is-6">
       <img src="/static/img/wide.jpg" alt="progressbar technology cowork bratislava">
     </div>
+    <div class="column is-6">
+      <img src="/static/img/IMG_20180321_181247_HDR.jpg" alt="progressbar cowork bratislava blockchain meetup">
+    </div>
   </div>
-  <div class="columns is-centered">
-    <div class="column is-4">
+  <div class="columns">
+    <div class="column is-6">
       <article class="message is-black">
         <div class="message-header">
           <p>Our backlog story</p>
@@ -188,7 +193,7 @@
         </div>
       </article>
     </div>
-    <div class="column is-3">
+    <div class="column is-6">
       <article class="message is-black">
         <div class="message-header">
           <p>Our coworkers are ~ 😎</p>
@@ -228,11 +233,6 @@
       </article>
     </div>
   </div>
-  <div class="columns is-centered">
-    <div class="column is-narrow">
-      <img src="/static/img/IMG_20180321_181247_HDR.jpg" alt="progressbar cowork bratislava blockchain meetup">
-    </div>
-  </div>
   <cookie-law transitionName="fade"
    position="bottom"
    theme="dark-lime"
@@ -254,9 +254,7 @@ export default {
         capacity: 0
       },
       bottledDrinks: [
-        { name: 'Club-Mate', image: '', url: '' },
-        { name: 'Club-Mate', image: '', url: '' },
-        { name: 'Flora-Power', image: '', url: '' },
+        { name: 'Club-Mate, Flora-Power', image: '', url: '' },
         { name: 'Fritz-kola', image: '', url: '' },
         { name: 'Mana Roots', image: '', url: '' },
         { name: 'Thomas Henry Mate-Mate', image: '', url: '' },
@@ -388,5 +386,12 @@ h2#blackh2 {
 }
 .contains-iframe-to-center {
   text-align: center;
+}
+.card-content {
+  padding: 1rem;
+}
+.content ul {
+  list-style-type: square;
+  margin-top: 0;
 }
 </style>

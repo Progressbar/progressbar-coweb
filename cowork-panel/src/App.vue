@@ -35,13 +35,16 @@ export default {
 <style>
 @import '~bulma/css/bulma.css';
 @import '~font-awesome/css/font-awesome.css';
+
 * {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
+
 html {
   background-color: black;
 }
+
 html,
 body {
   /* font-family: "Open Sans", sans-serif; */

@@ -19,10 +19,10 @@
               <li>
                 Hotdesk ♨️
               </li>
-              <li>
-                {{ orderPrices.day }}€ / day
-              </li>
             </ul>
+            <div class="offer-price">
+              {{ orderPrices.day }}€ / day
+            </div>
           </div>
         </div>
       </div>
@@ -45,10 +45,10 @@
               <li>
                 Hotdesk ♨️
               </li>
-              <li>
-                {{ orderPrices.month }}€ / month
-              </li>
             </ul>
+            <div class="offer-price">
+              {{ orderPrices.month }}€ / month
+            </div>
           </div>
         </div>
       </div>
@@ -71,10 +71,10 @@
               <li>
                 Fixdesk (180cm desk)
               </li>
-              <li>
-                {{ orderPrices.fix }}€ / month
-              </li>
             </ul>
+            <div class="offer-price">
+              {{ orderPrices.fix }}€ / month
+            </div>
           </div>
         </div>
       </div>
@@ -99,10 +99,10 @@
                 Whiteboard
               </li>
               <li>Separate projector</li>
-              <li>
-                5€ / hour
-              </li>
             </ul>
+            <div class="offer-price">
+              {{ orderPrices.meetingRoom }}€ / hour
+            </div>
           </div>
         </div>
       </div>
@@ -122,11 +122,11 @@
               <li>
                 Work any 🕙
               </li>
-              <li>
-                {{ orderPrices.nonstop}}€ / month
-              </li>
               <li>Play your own music (if it doesn't disturb anyone)</li>
             </ul>
+            <div class="offer-price">
+              {{ orderPrices.nonstop}}€ / month
+            </div>
           </div>
         </div>
       </div>
@@ -168,7 +168,8 @@ export default {
         month: 100,
         fix: 180,
         locker: 10,
-        nonstop: 20
+        nonstop: 20,
+        meetingRoom: 5,
       },
       openHours: {
         monthPass: {
@@ -192,5 +193,21 @@ export default {
 <style scoped>
 input {
   background-color: #ffffff;
+}
+.content ul {
+  list-style-type: square;
+  margin-top: 0;
+}
+
+.card-content {
+  padding: 1rem;
+}
+
+.offer-price {
+  text-align: center;
+  padding-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  /* border-top: 1px solid black; */
 }
 </style>
