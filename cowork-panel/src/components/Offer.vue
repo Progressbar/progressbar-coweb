@@ -21,7 +21,9 @@
               </li>
             </ul>
             <div class="offer-price">
-              {{ orderPrices.day }}€ / day
+              <router-link to="/membership">
+                {{ orderPrices.day }}€ / day
+              </router-link>
             </div>
           </div>
         </div>
@@ -47,7 +49,9 @@
               </li>
             </ul>
             <div class="offer-price">
-              {{ orderPrices.month }}€ / month
+              <router-link to="/membership">
+                {{ orderPrices.month }}€ / month
+              </router-link>
             </div>
           </div>
         </div>
@@ -73,7 +77,9 @@
               </li>
             </ul>
             <div class="offer-price">
-              {{ orderPrices.fix }}€ / month
+              <router-link to="/membership">
+                {{ orderPrices.fixdesk }}€ / month
+              </router-link>
             </div>
           </div>
         </div>
@@ -101,7 +107,9 @@
               <li>Separate projector</li>
             </ul>
             <div class="offer-price">
-              {{ orderPrices.meetingRoom }}€ / hour
+              <router-link to="/membership">
+                {{ orderPrices.meetingRoom }}€ / hour
+              </router-link>
             </div>
           </div>
         </div>
@@ -125,7 +133,9 @@
               <li>Play your own music (if it doesn't disturb anyone)</li>
             </ul>
             <div class="offer-price">
-              {{ orderPrices.nonstop}}€ / month
+              <router-link to="/membership">
+                {{ orderPrices.nonstop}}€ / month
+              </router-link>
             </div>
           </div>
         </div>
@@ -166,7 +176,7 @@ export default {
       orderPrices: {
         day: 8,
         month: 100,
-        fix: 180,
+        fixdesk: 180,
         locker: 10,
         nonstop: 20,
         meetingRoom: 5,

@@ -5,12 +5,17 @@
       <a href="./#/order" class="button is-warning is-large is-outlined">{{ this.button.order }}</a>
     </div>
   </div>
+
+  <h1 class="title has-text-white">Our space offers 🎁</h1>
+
   <div class="columns">
     <div class="column is-4">
       <div class="card">
         <header class="card-header">
           <p class="card-header-title">
-           🏢 Coworking 👩‍🚀
+            <router-link to="/membership">
+              🏢 Coworking 👩‍🚀
+            </router-link>
           </p>
         </header>
         <div class="card-content">
@@ -96,7 +101,9 @@
       <div class="card">
         <header class="card-header">
           <p class="card-header-title">
-            📅 Upcoming Events ⚡️
+            <router-link to="/events">
+              📅 Upcoming Events ⚡️
+            </router-link>
           </p>
         </header>
         <div class="card-content">
@@ -122,15 +129,6 @@
     </div> -->
   </div>
 
-  <div class="columns is-centered">
-    <div class="column is-narrow contains-iframe-to-center">
-      <iframe src="https://www.google.com/maps/embed?pb=!4v1521036389001!6m8!1m7!1sCAoSLEFGMVFpcE5VUktvSEtOdUtjRmZ2dHliRm95c0F2dHNRODcwaGhHRUd4eXFo!2m2!1d48.144557!2d17.1154906!3f0.9038775948851594!4f-3.1346220537675435!5f0.7820865974627469" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-    </div>
-    <div class="column is-narrow contains-iframe-to-center">
-      <iframe src="https://www.google.com/maps/embed?pb=!4v1520687181290!6m8!1m7!1sCAoSLEFGMVFpcE5DTFo1VDhUcXI3QkUtYjd2N2ZySmZWMGp4QjU2Y2poNC1qWXVW!2m2!1d48.144557!2d17.1154906!3f93.6033215859847!4f-8.0060330138093!5f0.7820865974627469" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-    </div>
-  </div>
-
   <div v-if="!this.isUser" class="columns is-centered">
     <div class="column is-narrow">
       <div class="control has-icons-left">
@@ -147,7 +145,22 @@
       <a v-if="!this.config.coworkLogin" @click="sendLoginLink(subEmail)" class="button is-primary is-medium is-outlined" disabled>{{ this.button.login }}</a>
     </div>
   </div>
-    <Offer></Offer>
+
+  <h1 class="title has-text-white">Coworking 🧠</h1>
+
+  <Offer />
+
+  <h1 class="title has-text-white">Photos 📸</h1>
+
+  <div class="columns is-centered">
+    <div class="column is-narrow contains-iframe-to-center">
+      <iframe src="https://www.google.com/maps/embed?pb=!4v1521036389001!6m8!1m7!1sCAoSLEFGMVFpcE5VUktvSEtOdUtjRmZ2dHliRm95c0F2dHNRODcwaGhHRUd4eXFo!2m2!1d48.144557!2d17.1154906!3f0.9038775948851594!4f-3.1346220537675435!5f0.7820865974627469" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+    <div class="column is-narrow contains-iframe-to-center">
+      <iframe src="https://www.google.com/maps/embed?pb=!4v1520687181290!6m8!1m7!1sCAoSLEFGMVFpcE5DTFo1VDhUcXI3QkUtYjd2N2ZySmZWMGp4QjU2Y2poNC1qWXVW!2m2!1d48.144557!2d17.1154906!3f93.6033215859847!4f-8.0060330138093!5f0.7820865974627469" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+  </div>
+
   <div class="columns">
     <div class="column is-6">
       <img src="/static/img/wide.jpg" alt="progressbar technology cowork bratislava">
@@ -156,6 +169,9 @@
       <img src="/static/img/IMG_20180321_181247_HDR.jpg" alt="progressbar cowork bratislava blockchain meetup">
     </div>
   </div>
+
+  <h1 class="title has-text-white">About Progressbar 🐚</h1>
+
   <div class="columns">
     <div class="column is-6">
       <article class="message is-black">
