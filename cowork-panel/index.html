@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="has-navbar-fixed-top">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,13 +12,13 @@
     <!-- Add to home screen for Android and modern mobile browsers -->
     <link rel="manifest" href="<%= htmlWebpackPlugin.files.publicPath %>static/manifest.json">
     <meta name="theme-color" content="#000000">
-
-    <!-- <base href="https://cowork.progressbar.sk"> -->
-    <meta name="application-name" content="cowork.progressbar.sk">
-    <meta name="description" content="Tech Coworking in Bratislava for your work with high-speed Internet. Starting from 8€/day. Bitcoin and Litecoin accepted">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet" />
+    <!-- <base href="https://progressbar.sk"> -->
+    <meta name="application-name" content="Progressbar">
+    <meta name="description" content="Coworking in Bratislava. Starting from 8€/day. Bitcoin, Ethereum and Litecoin accepted.">
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
-    <!-- <meta property="og:url" content="https://cowork.progressbar.sk/"> -->
+    <!-- <meta property="og:url" content="https://progressbar.sk/"> -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Coworking Progressbar Bratislava">
     <meta property="og:image" content="<%= htmlWebpackPlugin.files.publicPath %>static/img/icons/progressbar_square.png">
@@ -28,7 +28,7 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@progressbarsk">
     <meta name="twitter:creator" content="@yangwao">
-    <meta name="twitter:url" content="https://cowork.progressbar.sk">
+    <meta name="twitter:url" content="https://progressbar.sk">
     <meta name="twitter:title" content="Coworking Progressbar Bratislava">
     <meta name="twitter:description" content="Coworking Progressbar in Bratislava">
     <meta name="twitter:image" content="<%= htmlWebpackPlugin.files.publicPath %>static/img/icons/progressbar_square.png">
@@ -41,6 +41,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="apple-mobile-web-app-title" content="Coworking Progressbar">
     <link rel="apple-touch-icon" href="<%= htmlWebpackPlugin.files.publicPath %>static/img/icons/apple-touch-icon-152x152.png">
+
     <!-- Add to home screen for Windows -->
     <meta name="msapplication-TileImage" content="<%= htmlWebpackPlugin.files.publicPath %>static/img/icons/msapplication-icon-144x144.png">
     <meta name="msapplication-TileColor" content="#000000">
@@ -51,8 +52,8 @@
   </head>
   <body>
     <noscript>
-      Tech Coworking in Bratislava for your work with high-speed Internet. Starting from 8€/day. Bitcoin and Litecoin accepted.
-      We also have Fritz-kola Sugarfrei.
+      Coworking and Hackerspace in Bratislava. Starting from 8€/day. Bitcoin, Ethereum and Litecoin accepted.
+      We also have Fritz-kola Sugarfrei, Club Mate and Specialty Coffee.
     </noscript>
     <div id="app"></div>
     <!-- Todo: only include in production -->

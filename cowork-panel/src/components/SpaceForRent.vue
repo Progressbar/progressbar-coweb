@@ -24,14 +24,14 @@
           </p>
           <p>
             <blockquote class="quote-to-include-in-event has-text-grey-light">
-              You can support Progressbar through <a class="quote-link" href="https://donate.progressbar.sk">https://donate.progressbar.sk</a>,
-              and check their cowork through <a class="quote-link" href="https://cowork.progressbar.sk">https://cowork.progressbar.sk</a>
+              You can support Progressbar through <a class="quote-link" href="https://donate.progressbar.sk" target="_blank">https://donate.progressbar.sk</a>,
+              and check their cowork through <a class="quote-link" href="https://progressbar.sk">https://progressbar.sk</a>
             </blockquote>
           </p>
         </li>
         <li>
           <p>
-          if your event is on Facebook, send a "co-host" request to <a href="https://www.facebook.com/progressbar/">Progressbar</a> for greater pull and easier administration 🤗
+          if your event is on Facebook, send a "co-host" request to <a href="https://www.facebook.com/progressbar/" target="_blank">Progressbar</a> for greater pull and easier administration 🤗
           </p>
         </li>
       </ol>

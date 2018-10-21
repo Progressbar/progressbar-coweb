@@ -14,12 +14,17 @@ import D14 from '@/components/D14'
 import WorkInProgress from '@/components/WorkInProgress'
 import Venue from '@/components/Venue'
 import CallForHost from '@/components/CallForHost'
+import ContactPage from '@/components/ContactPage'
+import Page404 from '@/components/Page404'
+import MembershipPage from '@/components/MembershipPage'
 import VueLocalStorage from 'vue-ls'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 var options = {
   namespace: 'pgbcowork_'
 }
 
+Vue.component('font-awesome-icon', FontAwesomeIcon)
 Vue.use(VueLocalStorage, options)
 Vue.use(Router)
 
@@ -90,6 +95,18 @@ export default new Router({
     {
       path: '/d14',
       component: D14
+    },
+    {
+      path: '/contact',
+      component: ContactPage
+    },
+    {
+      path: '/membership',
+      component: MembershipPage
+    },
+    {
+      path: '*',
+      component: Page404
     }
   ]
 })

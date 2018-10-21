@@ -4,37 +4,37 @@
     <div class="columns is-centered">
       <div class="column is-8">
         <h1 class="title has-text-grey-light">
-          Beloved & Brave Sponsors of our <a href="https://progressbar.sk"> hackerspace Progressbar</a> & <a href="https://cowork.progressbar.sk"> Cowork Progressbar</a>
+          Beloved & Brave Sponsors of our <a href="https://progressbar.sk"> hackerspace Progressbar</a> & <a href="https://progressbar.sk"> Cowork Progressbar</a>
         </h1>
         <img src="/static/img/tribune.jpg" alt="tribune" />
         <h2 class="subtitle">
           <ul class="has-text-grey-light">
             <br />
             <li>
-               <a href="https://dcore.decent.ch">DCore</a><br />Blockchain you can actually build on. Innovative and customizable adaptation of blockchain technology allows you to mix and match DCore components to further your own projects.
+               <a href="https://dcore.decent.ch" target="_blank">DCore</a><br />Blockchain you can actually build on. Innovative and customizable adaptation of blockchain technology allows you to mix and match DCore components to further your own projects.
             </li>
             <br />
             <li>
-              <a href="https://decent.ch">DECENT</a><br /> is a Blockchain Content Distribution Platform that is Open-Source and utilizes Blockchain to ensure trust and security. Our intention is to revolutionize data distribution on the Internet.
+              <a href="https://decent.ch" target="_blank">DECENT</a><br /> is a Blockchain Content Distribution Platform that is Open-Source and utilizes Blockchain to ensure trust and security. Our intention is to revolutionize data distribution on the Internet.
             </li>
             <br />
             <li>
-              <a href="https://www.bitpanther.com">BitPanther</a><br /> is a European financial technology platform focused on helping people to get access to digital currencies. BitPanther is a registered Slovakian company, compliant with Slovak and EU regulations.
+              <a href="https://www.bitpanther.com" target="_blank">BitPanther</a><br /> is a European financial technology platform focused on helping people to get access to digital currencies. BitPanther is a registered Slovakian company, compliant with Slovak and EU regulations.
             </li>
             <br />
             <li>
-              <a href="http://www.hosu.sk/en/home.html">HOSU | Office Solutions is a specialist in complex office solutions.</a>
+              <a href="http://www.hosu.sk/en/home.html" target="_blank">HOSU | Office Solutions is a specialist in complex office solutions.</a>
                 We deal with analysis, design and furnishing of administrative spaces.
                 Our aim is to effectively use the space of an organization and create a friendly workspace in which people work more efficiently and enthusiastically. Our approach focuses primarily on proper acoustics, ergonomics and sustainability.
                 The result of our work is a functional design and comfortable workplace.
             </li>
             <br />
             <li>
-              <a href="https://wy.sk">wy</a><br /> We are your dream hoster, and your best choice for doing business on internet. We provide hosting to company websites, e-shops, blogs, huge portals or private presentations. We welcome individuals and freelancers, small teams and running businesses.
+              <a href="https://wy.sk" target="_blank">wy</a><br /> We are your dream hoster, and your best choice for doing business on internet. We provide hosting to company websites, e-shops, blogs, huge portals or private presentations. We welcome individuals and freelancers, small teams and running businesses.
             </li>
             <br />
             <li>
-              <a href="https://cowork.progressbar.sk">your favourite company can be here</a>
+              <a href="https://progressbar.sk">your favourite company can be here</a>
             </li>
           </ul>
         </h2>
@@ -72,7 +72,7 @@ export default {
       subEmail: '',
       isUser: false,
       config: {
-        baseWebUrl: 'https://cowork.progressbar.sk/',
+        baseWebUrl: 'https://progressbar.sk/',
         orderPrices: {
           day: 4,
           month: 80,

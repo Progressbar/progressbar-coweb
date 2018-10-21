@@ -46,7 +46,7 @@ export default {
       subEmail: '',
       isUser: false,
       config: {
-        baseWebUrl: 'https://cowork.progressbar.sk/',
+        baseWebUrl: 'https://progressbar.sk/',
         orderPrices: {
           day: 4,
           month: 80,
