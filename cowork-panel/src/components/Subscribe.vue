@@ -6,127 +6,57 @@
     </div>
   </div>
 
-  <h1 class="title has-text-white">Our space offers 🎁</h1>
+  <h1 class="title has-text-white has-text-centered">Our space offers 🎁</h1>
 
-  <div class="columns">
-    <div class="column is-4">
-      <div class="card">
-        <header class="card-header">
-          <p class="card-header-title">
-            <router-link to="/membership">
-              🏢 Coworking 👩‍🚀
-            </router-link>
-          </p>
-        </header>
-        <div class="card-content">
-          <div class="content">
-            <ul>
-              <li>View</li>
-              <li>
-                <a href="https://www.google.com/maps/place/Progressbar+hackerspace/@48.144557,17.1133019,17z/data=!3m1!4b1!4m5!3m4!1s0x476c8946152ff129:0x72ac0b6fccaf66fd!8m2!3d48.144557!4d17.1154906" title="Dunajská 7495/14, 811 08 Bratislava, Slovakia" target="_blank">Place for your work in downtown</a>
-              </li>
-              <li>
-                <a href="http://www.speedtest.net/result/7179888517" target="_blank">Fast Internet ~250/20</a>
-              </li>
-              <!-- <li>
-                <a href="https://scontent-vie1-1.xx.fbcdn.net/v/t31.0-8/21765459_1941520825863850_876389467015918658_o.jpg?oh=7de68da52211a7304d10a3298d7e02fc&oe=5A538F7E" target="_blank">Lot of Electric Sockets ⚡️🔌</a>
-              </li> -->
-              <li>
-                <a href="https://www.google.com/maps/place/Progressbar+hackerspace/@48.1442769,17.1065927,3a,75y,68.38h,60.45t/data=!3m8!1e1!3m6!1sAF1QipOS15iBvtp1oSLXg6nuorM282YC64pjorvA2LVk!2e10!3e11!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipOS15iBvtp1oSLXg6nuorM282YC64pjorvA2LVk%3Dw203-h100-k-no-pi-0-ya6.500005-ro-0-fo100!7i8000!8i4000!4m5!3m4!1s0x476c8946152ff129:0x72ac0b6fccaf66fd!8m2!3d48.1442784!4d17.1065933" title="1080p HDMI/DVI mostly" target="_blank">External Monitors - shared 🖥</a>
-              </li>
-              <li>
-                <a href="http://www.ikea.com/sk/sk/catalog/products/S29084966/" title="IKEA SKARSTA">Standing desks</a>
-              </li>
-              <li>
-                Chromecast for projector and music 🎶
-              </li>
-              <li>
-                <router-link to="/space-for-rent">Meeting room 🤝</router-link>
-              </li>
-              <!-- <li>
-                Private offices
-              </li> -->
-              <li>
-                <a href="https://www.instagram.com/p/Bn5zmzJAa01/" target="_blank">Pull-Up bar 💪</a>
-              </li>
-              <li>Call room 📞</li>
-              <li>
-                Air Conditioning ❄️ 🔥
-              </li>
-              <li>
-                Coding women get 50% off 👩🏽‍💻
-              </li>
-              <li>
-                Bitcoin, Etherum & Litecoin accepted
-              </li>
-            </ul>
-          </div>
+  <div class="tile is-ancestor">
+    <div class="tile is-vertical is-8">
+      <div class="tile">
+        <div class="tile is-parent is-vertical">
+          <article class="tile is-child notification is-black">
+            <p class="title">🧠 Coworking</p>
+            <p class="subtitle">Located in downtown Bratislava. We accept Bitcoin, Ethereum & Litecoin!</p>
+            <div class="content">
+              <p>🤝 Meeting room and a call room (todo internal link)</p>
+              <p>👀 Your view (todo addlink)</p>
+              <p>⚡️ We have fast internet <a href="http://www.speedtest.net/result/7179888517" target="_blank">(~250/20)</a>, shared monitors and standing desks</p>
+              <p>❤️ Special offers for minorities</p>
+              <p>🎶 Chromecast for projector and music</p>
+              <p>💪 <a href="https://www.instagram.com/p/Bn5zmzJAa01/" target="_blank">Pull-up bar</a></p>
+              <p>🔧 Makerspace</p>
+            </div>
+          </article>
         </div>
+      </div>
+      <div class="tile is-parent">
+        <article class="tile is-child notification is-black">
+          <p class="title">🥤 Drinks</p>
+          <!-- <p class="subtitle">Aligned with the right tile</p> -->
+          <div class="content">
+            <p>🍵 Tea (Matcha as well)</p>
+            <p>
+              🍼 Bottled and cooled drinks such as
+              <span v-for="item in bottledDrinks" :key="item.name">
+                {{item.name}}
+              </span>
+            </p>
+            <p>
+              ☕️ Specialty Coffee (black.xyz) and also coffee machine and frenchpress
+            </p>
+          </div>
+        </article>
       </div>
     </div>
-    <div class="column is-4">
-      <div class="card">
-        <header class="card-header">
-          <p class="card-header-title">
-            🍻 Drinks 🥤
-          </p>
-        </header>
-        <div class="card-content">
+    <div class="tile is-parent">
+      <article class="tile is-child notification is-black">
+        <div class="content">
+          <p class="title">📅 Events</p>
+          <p class="subtitle">WIP waiting for omaksi</p>
           <div class="content">
-            <ul>
-              <li>
-                🍵 Tea (Matcha as well)
-              </li>
-              <li>
-                <a href="https://www.facebook.com/progressbar/photos/a.946997141982895.1073741833.140864112596206/1933082956707637/?type=3" target="_blank" title="drinks in fridge">🍼 Bottled drinks </a> (cooled ️️❄️)
-                <ul>
-                  <li v-for="item in bottledDrinks" :key="item.name">
-                    {{item.name}}
-                  </li>
-                </ul>
-              </li>
-              <li>
-                ☕️ Specialty Coffee (<a href="https://black.xyz/" target="_blank">black.xyz</a>)
-                <ul>
-                  <li>Frenchpress</li>
-                  <li>Coffee Machine</li>
-                </ul>
-              </li>
-            </ul>
+            <!-- Content -->
           </div>
         </div>
-      </div>
+      </article>
     </div>
-    <div class="column is-4">
-      <div class="card">
-        <header class="card-header">
-          <p class="card-header-title">
-            <router-link to="/events">
-              📅 Upcoming Events ⚡️
-            </router-link>
-          </p>
-        </header>
-        <div class="card-content">
-          <div class="content">
-            Work in Progress(bar) 😉
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- <div class="column">
-      <div class="card">
-        <header class="card-header">
-          <p class="card-header-title">
-            💡 Progressbar Improvement Proposal 🔧
-          </p>
-        </header>
-        <div class="card-content">
-          <div class="content">
-            TODO use github api
-          </div>
-        </div>
-      </div>
-    </div> -->
   </div>
 
   <div v-if="!this.isUser" class="columns is-centered">
@@ -146,11 +76,11 @@
     </div>
   </div>
 
-  <h1 class="title has-text-white">Coworking 🧠</h1>
+  <h1 class="title has-text-white has-text-centered">🧠 Coworking</h1>
 
   <Offer />
 
-  <h1 class="title has-text-white">Photos 📸</h1>
+  <h1 class="title has-text-white has-text-centered">📸 Photos</h1>
 
   <div class="columns is-centered">
     <div class="column is-narrow contains-iframe-to-center">
@@ -170,7 +100,7 @@
     </div>
   </div>
 
-  <h1 class="title has-text-white">About Progressbar 🐚</h1>
+  <h1 class="title has-text-white has-text-centered">🐚 About Progressbar</h1>
 
   <div class="columns">
     <div class="column is-6">
@@ -270,10 +200,10 @@ export default {
         capacity: 0
       },
       bottledDrinks: [
-        { name: 'Club-Mate, Flora-Power', image: '', url: '' },
-        { name: 'Fritz-kola', image: '', url: '' },
-        { name: 'Mana Roots', image: '', url: '' },
-        { name: 'Thomas Henry Mate-Mate', image: '', url: '' },
+        { name: 'Club-Mate, Flora-Power,', image: '', url: '' },
+        { name: 'Fritz-kola,', image: '', url: '' },
+        { name: 'Mana Roots,', image: '', url: '' },
+        { name: 'Mate-Mate,', image: '', url: '' },
         { name: 'Pragomost', image: '', url: '' },
       ],
       credited: 0,

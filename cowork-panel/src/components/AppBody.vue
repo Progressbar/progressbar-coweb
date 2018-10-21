@@ -42,7 +42,7 @@
       </div>
     </div>
   </section>
-  <section class="section">
+  <section class="section section-body">
     <div class="container">
       <router-view></router-view>
     </div>
@@ -81,18 +81,19 @@ export default {
 
 .subtitle {
   font-size: 1.5rem;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 .hero-body .title, .subtitle {
   color: white;
 }
 
-a.button {
-  /* font-weight: bold; */
-}
-
 a.button, a.button:hover {
   border-color: white;
+}
+
+.section-body {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 </style>

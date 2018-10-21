@@ -119,7 +119,7 @@
       <div class="card">
         <header class="card-header">
           <p class="card-header-title">
-            24/7 access (addon)
+            24/7 (addon)
           </p>
           <a href="#" class="card-header-icon" aria-label="more options">
           </a>
@@ -130,7 +130,7 @@
               <li>
                 Work any 🕙
               </li>
-              <li>Play your own music (if it doesn't disturb anyone)</li>
+              <li>Play your own music</li>
             </ul>
             <div class="offer-price">
               <router-link to="/membership">
