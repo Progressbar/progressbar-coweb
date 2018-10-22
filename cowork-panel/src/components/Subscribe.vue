@@ -9,6 +9,17 @@
   <h1 class="title has-text-white has-text-centered">Our space offers 🎁</h1>
 
   <div class="tile is-ancestor">
+    <div class="tile is-parent is-4">
+      <article class="tile is-child notification is-black">
+        <div class="content">
+          <p class="title">📅 Events</p>
+          <p class="subtitle">WIP waiting for omaksi</p>
+          <div class="content">
+            <!-- Content -->
+          </div>
+        </div>
+      </article>
+    </div>
     <div class="tile is-vertical is-8">
       <div class="tile">
         <div class="tile is-parent is-vertical">
@@ -45,17 +56,6 @@
           </div>
         </article>
       </div>
-    </div>
-    <div class="tile is-parent">
-      <article class="tile is-child notification is-black">
-        <div class="content">
-          <p class="title">📅 Events</p>
-          <p class="subtitle">WIP waiting for omaksi</p>
-          <div class="content">
-            <!-- Content -->
-          </div>
-        </div>
-      </article>
     </div>
   </div>
 
