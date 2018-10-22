@@ -1,169 +1,86 @@
 <template>
 <div class="offer">
-  <div class="columns">
-    <div class="column">
-      <div class="card">
-        <header class="card-header">
-          <p class="card-header-title">
-            Daypass
-          </p>
-          <a href="#" class="card-header-icon" aria-label="more options">
-          </a>
-        </header>
-        <div class="card-content">
+  <div class="tile is-ancestor">
+    <div class="tile is-parent">
+      <article class="tile is-child notification is-black">
+        <div class="content">
+          <p class="title">Daypass</p>
           <div class="content">
-            <ul>
-              <li>
-                ⏰  {{ openHours.dayPass.start }} - {{ openHours.dayPass.end }}
-              </li>
-              <li>
-                Hotdesk ♨️
-              </li>
-            </ul>
-            <div class="offer-price">
-              <router-link to="/membership">
-                {{ orderPrices.day }}€ / day
-              </router-link>
-            </div>
+            <p>⏰  {{ openHours.dayPass.start }} - {{ openHours.dayPass.end }}</p>
+            <p>Hotdesk ♨️</p>
+            <p>First takes</p>
+            <p>Enjoy insider view</p>
+          </div>
+          <div class="">
+            <router-link class="button is-black is-block is-large" to="/membership">{{ orderPrices.day }}€ / day</router-link>
           </div>
         </div>
-      </div>
+      </article>
     </div>
-    <div class="column">
-      <div class="card">
-        <header class="card-header">
-          <p class="card-header-title">
-            Flex (30 days)
-          </p>
-          <a href="#" class="card-header-icon" aria-label="more options">
-          </a>
-        </header>
-        <div class="card-content">
+    <div class="tile is-parent">
+      <article class="tile is-child notification is-black">
+        <div class="content">
+          <p class="title">Flex (30 days)</p>
           <div class="content">
-            <ul>
-              <li>
-                ⏰  {{ openHours.monthPass.start }} - {{ openHours.monthPass.end }}
-              </li>
-              <li>
-                Hotdesk ♨️
-              </li>
-            </ul>
-            <div class="offer-price">
-              <router-link to="/membership">
-                {{ orderPrices.month }}€ / month
-              </router-link>
-            </div>
+            <p>⏰  {{ openHours.monthPass.start }} - {{ openHours.monthPass.end }}</p>
+            <p>Hotdesk ♨️</p>
+            <p>Save money</p>
+            <p>Support us even when you're not in the space ❤️</p>
+          </div>
+          <div class="">
+            <router-link class="button is-black is-block is-large" to="/membership">{{ orderPrices.month }}€ / month</router-link>
           </div>
         </div>
-      </div>
+      </article>
     </div>
-    <div class="column">
-      <div class="card">
-        <header class="card-header">
-          <p class="card-header-title">
-            Fixdesk
-          </p>
-          <a href="#" class="card-header-icon" aria-label="more options">
-          </a>
-        </header>
-        <div class="card-content">
+    <div class="tile is-parent">
+      <article class="tile is-child notification is-black">
+        <div class="content">
+          <p class="title">Fixdesk</p>
           <div class="content">
-            <ul>
-              <li>
-                ⏰ {{ openHours.fixdesk.start }} - {{ openHours.fixdesk.end }}
-              </li>
-              <li>
-                Fixdesk (180cm desk)
-              </li>
-            </ul>
-            <div class="offer-price">
-              <router-link to="/membership">
-                {{ orderPrices.fixdesk }}€ / month
-              </router-link>
-            </div>
+            <p>⏰ {{ openHours.fixdesk.start }} - {{ openHours.fixdesk.end }}</p>
+            <p>180cm long desk</p>
+            <p>Enjoy window <router-link to="/view">view</router-link>!</p>
+            <p>Tip: use <router-link to="/membership">24/7 addon</router-link></p>
+          </div>
+          <div class="">
+            <router-link class="button is-black is-block is-large" to="/membership">{{ orderPrices.fixdesk }}€ / month</router-link>
           </div>
         </div>
-      </div>
+      </article>
     </div>
-    <div class="column">
-      <div class="card">
-        <header class="card-header">
-          <p class="card-header-title">
-            Meeting room 🤝
-          </p>
-          <a href="#" class="card-header-icon" aria-label="more options">
-          </a>
-        </header>
-        <div class="card-content">
+    <div class="tile is-parent">
+      <article class="tile is-child notification is-black">
+        <div class="content">
+          <p class="title">Meeting room</p>
           <div class="content">
-            <ul>
-              <li>Glass sealed</li>
-              <li>
-                10 chairs
-              </li>
-              <li>
-                Whiteboard
-              </li>
-              <li>Separate projector</li>
-            </ul>
-            <div class="offer-price">
-              <router-link to="/membership">
-                {{ orderPrices.meetingRoom }}€ / hour
-              </router-link>
-            </div>
+            <p>⏰ Not during events</p>
+            <p>Glass sealed</p>
+            <p>10 chairs</p>
+            <p>Whiteboard</p>
+            <p>Projector</p>
+          </div>
+          <div class="btn-container">
+            <router-link class="button is-black is-block is-large" to="/membership">{{ orderPrices.meetingRoom }}€ / hour</router-link>
           </div>
         </div>
-      </div>
+      </article>
     </div>
-    <div class="column">
-      <div class="card">
-        <header class="card-header">
-          <p class="card-header-title">
-            24/7 (addon)
-          </p>
-          <a href="#" class="card-header-icon" aria-label="more options">
-          </a>
-        </header>
-        <div class="card-content">
+    <div class="tile is-parent">
+      <article class="tile is-child notification is-black">
+        <div class="content">
+          <p class="title">24/7 addon</p>
           <div class="content">
-            <ul>
-              <li>
-                Work any 🕙
-              </li>
-              <li>Play your own music</li>
-            </ul>
-            <div class="offer-price">
-              <router-link to="/membership">
-                {{ orderPrices.nonstop}}€ / month
-              </router-link>
-            </div>
+            <p>Work any 🕙</p>
+            <p>Play your own music</p>
+            <p>Be part of internal events!</p>
+          </div>
+          <div class="">
+            <router-link class="button is-black is-block is-large" to="/membership">{{ orderPrices.nonstop}}€ / month</router-link>
           </div>
         </div>
-      </div>
+      </article>
     </div>
-    <!-- <div class="column">
-      <div class="card">
-        <header class="card-header">
-          <p class="card-header-title">
-            <s>Locker (addon)</s>
-          </p>
-          <a href="#" class="card-header-icon" aria-label="more options">
-          </a>
-        </header>
-        <div class="card-content">
-          <div class="content">
-            <ul>
-              <li>
-                Lock your 💎 💻
-              </li>
-              <li>
-                {{ orderPrices.locker}}€ / month
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div> -->
   </div>
 </div>
 </template>
@@ -219,5 +136,20 @@ input {
   font-size: 1.2rem;
   font-weight: bold;
   /* border-top: 1px solid black; */
+}
+
+.tile article .title {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.tile article a.button.is-black {
+  border: 1px solid white;
+  align-self: flex-end;
+}
+
+.notification {
+  padding: 1.2rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 </style>

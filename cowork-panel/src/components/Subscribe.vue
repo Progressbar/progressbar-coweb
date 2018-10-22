@@ -28,7 +28,7 @@
             <p class="subtitle">Located in downtown Bratislava. We accept Bitcoin, Ethereum & Litecoin!</p>
             <div class="content">
               <p>🤝 Meeting room and a call room (todo internal link)</p>
-              <p>👀 Your view (todo addlink)</p>
+              <p>👀 Your <router-link to="/view">view</router-link></p>
               <p>⚡️ We have fast internet <a href="http://www.speedtest.net/result/7179888517" target="_blank">(~250/20)</a>, shared monitors and standing desks</p>
               <p>❤️ Special offers for minorities</p>
               <p>🎶 Chromecast for projector and music</p>
