@@ -6,8 +6,6 @@
     </div>
   </div>
 
-  <h1 class="title has-text-white has-text-centered">Our space offers 🎁</h1>
-
   <div class="tile is-ancestor">
     <div class="tile is-parent is-4">
       <article class="tile is-child notification is-black">
@@ -76,11 +74,11 @@
     </div>
   </div>
 
-  <h1 class="title has-text-white has-text-centered">🧠 Coworking</h1>
+  <h1 class="section-title title has-text-white has-text-centered">🧠 Coworking</h1>
 
   <Offer />
 
-  <h1 class="title has-text-white has-text-centered">📸 Photos</h1>
+  <h1 class="section-title title has-text-white has-text-centered">📸 Photos</h1>
 
   <div class="columns is-centered">
     <div class="column is-narrow contains-iframe-to-center">
@@ -100,7 +98,7 @@
     </div>
   </div>
 
-  <h1 class="title has-text-white has-text-centered">🐚 About Progressbar</h1>
+  <h1 class="section-title title has-text-white has-text-centered">🐚 About Progressbar</h1>
 
   <div class="tile is-ancestor">
     <div class="tile is-parent is-6">
@@ -331,5 +329,9 @@ h2#blackh2 {
 .content ul {
   list-style-type: square;
   margin-top: 0;
+}
+
+.section-title {
+  margin-top: 1.5rem;
 }
 </style>
