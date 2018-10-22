@@ -18,17 +18,6 @@ export default {
     AppBody,
     AppHeader,
   },
-  data () {
-    return {
-      showNav: false,
-      MiscButtonIsActive: false,
-    }
-  },
-  methods: {
-    MiscButtonToggle: function(){
-      this.MiscButtonIsActive = !this.MiscButtonIsActive
-    }
-  }
 }
 </script>
 
