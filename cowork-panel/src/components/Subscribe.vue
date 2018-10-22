@@ -102,13 +102,11 @@
 
   <h1 class="title has-text-white has-text-centered">🐚 About Progressbar</h1>
 
-  <div class="columns">
-    <div class="column is-6">
-      <article class="message is-black">
-        <div class="message-header">
-          <p>Our backlog story</p>
-        </div>
-        <div class="message-body">
+  <div class="tile is-ancestor">
+    <div class="tile is-parent is-6">
+      <article class="tile is-child notification is-black">
+        <div class="content">
+          <p class="title">Our backlog story</p>
           <div class="content">
             <ul>
               <li>
@@ -124,38 +122,29 @@
                     you can support us at <a href="https://donate.progressbar.sk" target="_blank">donate.progressbar.sk</a>
                   </li>
                   <li>
-                     signup for our <a href="https://progressbar.sk">coworking in Bratislava</a>
+                     signup for our <router-link to="/membership">coworking in Bratislava</router-link>
                   </li>
                   <li>
-                    <router-link to="/sponsors"><a href="/#/sponsors">be our proud sponsor</a></router-link>
+                    <router-link to="/sponsors">be our proud sponsor</router-link>
                   </li>
                 </ul>
-              </li>
-              <li>
-                👋🏼 You are welcome 🤗
               </li>
             </ul>
           </div>
         </div>
       </article>
     </div>
-    <div class="column is-6">
-      <article class="message is-black">
-        <div class="message-header">
-          <p>Our members are ~ 😎</p>
-        </div>
-        <div class="message-body">
+    <div class="tile is-parent is-6">
+      <article class="tile is-child notification is-black">
+        <div class="content">
+          <p class="title">Our members are ~ 😎</p>
           <div class="content">
             <ul>
               <li>
                 Blockchain startups
               </li>
-              <li>
-                Decentralization technology specialists
-              </li>
-              <li>
-                Cryptocurrency techies & fanatics
-              </li>
+              <li>Decentralization technology specialists</li>
+              <li>Cryptocurrency techies & fanatics</li>
               <li>Teachers, educators</li>
               <li>
                 Backend & Frontend developers
@@ -179,10 +168,13 @@
       </article>
     </div>
   </div>
-  <cookie-law transitionName="fade"
-   position="bottom"
-   theme="dark-lime"
-   buttonText="I understand"></cookie-law>
+
+  <cookie-law
+    transitionName="fade"
+    position="bottom"
+    theme="dark-lime"
+    buttonText="I understand"
+  />
 </div>
 </template>
 
