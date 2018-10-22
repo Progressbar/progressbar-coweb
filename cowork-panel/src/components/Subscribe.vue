@@ -142,7 +142,7 @@
     <div class="column is-6">
       <article class="message is-black">
         <div class="message-header">
-          <p>Our coworkers are ~ 😎</p>
+          <p>Our members are ~ 😎</p>
         </div>
         <div class="message-body">
           <div class="content">
