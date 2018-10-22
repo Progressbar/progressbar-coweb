@@ -10,7 +10,7 @@
               <h1 class="title">
                 <progressbar-logo-refresh />
               </h1>
-              <h2 class="subtitle">Your new favorite coworking, hackerspace and hangout zone.</h2>
+              <h2 class="subtitle">Your new favorite coworking, hackerspace and hangout zone in downtown Bratislava.</h2>
             </div>
             <div class="column">
               <div class="content has-text-centered">
