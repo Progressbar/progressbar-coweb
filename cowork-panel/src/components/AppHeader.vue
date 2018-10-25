@@ -7,7 +7,7 @@
   >
     <div class="container">
       <div class="navbar-brand">
-        <a class="navbar-item progressbar-logo-container" href="https://progressbar.sk">
+        <a class="navbar-item progressbar-logo-container" href="https://cowork.progressbar.sk">
           <progressbar-logo-refresh />
         </a>
         <div
