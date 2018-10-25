@@ -20,7 +20,7 @@
 
 <script>
 export default {
-  name: 'offer',
+  name: 'progressbar-logo-refresh',
 }
 </script>
 
