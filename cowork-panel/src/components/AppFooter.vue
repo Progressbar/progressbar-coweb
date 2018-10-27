@@ -56,7 +56,7 @@
         <small><a href="https://github.com/Progressbar/progressbar-coweb" target="_blank">/src</a> (Feel free to help ❤️)</small>
       </div>
       <div class="column is-6 has-text-right">
-        <small aria-label="copyright">{{currentYear}} © Progressbar</small>
+        <small aria-label="copyright">2010 - {{currentYear}} © Progressbar</small>
       </div>
     </div>
   </div>
