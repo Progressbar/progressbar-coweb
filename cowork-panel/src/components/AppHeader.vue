@@ -47,18 +47,18 @@
               to="/space-for-rent">
             Rent our space
           </router-link>
+          <router-link
+              tag="div"
+              class="navbar-item"
+              exact-active-class="is-active"
+              to="/meeting-room-cowork-bratislava">
+            Meeting Room
+          </router-link>
           <div class="navbar-item">
             <a
               href="https://t.me/coworkprogressbar"
               target="_blank">Telegram</a>
           </div>
-          <router-link
-              tag="div"
-              class="navbar-item"
-              exact-active-class="is-active"
-              to="/contact">
-            Contact
-          </router-link>
           <div v-bind:class="{ 'is-active': MiscButtonIsActive }" class="navbar-item has-dropdown">
             <a
               @click='MiscButtonToggle()'
