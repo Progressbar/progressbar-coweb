@@ -3,51 +3,21 @@
   <div class="container">
     <div class="columns">
       <div class="column is-3">
-        <h1>Internals</h1>
-        <ul>
-          <li v-for="item in internals" :key="item.url">
-            <a :href="item.url" target="_blank">
-              <font-awesome-icon v-if="item.icon" :icon="item.icon" /> {{item.title}}
-            </a>
-          </li>
-        </ul>
+        <h1>Add us on ❤️</h1>
+        <span class="social-icons" v-for="item in socials" :key="item.url">
+          <font-awesome-icon v-if="item.icon" :icon="item.icon" />
+        </span>
       </div>
       <div class="column is-3">
-        <h1>Social</h1>
-        <ul>
-          <li v-for="item in socials" :key="item.url">
-            <a :href="item.url" target="_blank">
-              <font-awesome-icon v-if="item.icon" :icon="item.icon" /> {{item.title}}
-            </a>
-          </li>
-        </ul>
+        <h1>You can find us on</h1>
+        <p>Dunajská 7495/14</p>
+        <p>811 08, Bratislava</p>
+        <p>Slovakia 🇸🇰</p>
+        <div v-for="item in mapUrls" :key="item.url">
+          <a :href="item.url" target="_blank">{{item.title}}</a>
+        </div>
       </div>
-      <div class="column is-3">
-        <h1>Projects</h1>
-        <ul>
-          <li v-for="item in projects" :key="item.url">
-            <a :href="item.url" target="_blank">{{item.title}}</a>
-          </li>
-        </ul>
-      </div>
-      <div class="column is-3">
-        <h1>Contact</h1>
-        <ul>
-          <li v-for="item in contacts" :key="item.url">
-            <a :href="item.url" target="_blank">
-              <font-awesome-icon v-if="item.icon" :icon="item.icon" /> {{item.title}}
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="container">
-    <div class="columns">
-      <div class="column is-12">
-        Dunajská 7495/14, Bratislava, 811 08, Slovakia
-        (<a href="https://www.openstreetmap.org/node/1096120193" target="_blank">OSM</a>, <a href="https://goo.gl/maps/piJwx6AAB762" target="_blank">Google Maps</a>)
-      </div>
+      <!-- TODO: ADD GOOGLE MAP LIKE MAP :D -->
     </div>
   </div>
   <div class="container">
@@ -88,7 +58,9 @@ export default {
       socials: [
         { url: 'https://www.facebook.com/progressbar', title: 'Facebook', icon: faFacebook },
         { url: 'https://www.instagram.com/progressbar_sk', title: 'Instagram', icon: faInstagram },
-        { url: 'https://github.com/Progressbar', title: 'Github', icon: faGithub }
+        { url: 'https://github.com/Progressbar', title: 'Github', icon: faGithub },
+        { url: 'https://t.me/coworkprogressbar', title: 'Telegram', icon: faTelegram },
+        { url: 'https://m.me/progressbar', title: 'Messenger', icon: faFacebookMessenger }
       ],
       internals: [
         { url: 'https://github.com/Progressbar/Progressbar-Improvement-Proposal/issues', title: 'Progressbar Improvement Proposal', icon: faGithub },
@@ -99,6 +71,12 @@ export default {
       projects: [
         { url: 'https://github.com/Progressbar/diybiobratislava', title: 'DIYBio Bratislava', icon: '' },
         { url: 'https://noodles.digital', title: 'Noodles Digital', icon: '' }
+      ],
+      // TODO: ADD HERE MAP LINK
+      // TODO: ADD APPLE MAP LINK 
+      mapUrls: [
+        { url: 'https://www.openstreetmap.org/node/1096120193', title: 'Open Street Map', icon: '' },
+        { url: 'https://goo.gl/maps/piJwx6AAB762', title: 'Google Maps', icon: '' }
       ]
     }
   }
@@ -119,7 +97,21 @@ a:hover {
   color: inherit;
   text-decoration: underline;
 }
+
+a {
+  color: hotpink;
+}
 .column h1 {
+  font-weight: bold;
   font-size: 1.3rem;
+}
+
+  .social-icons {
+    font-size: 2.6em;
+    padding: 0.1em;
+  }
+
+.social-icons:hover {
+  cursor: pointer;
 }
 </style>
