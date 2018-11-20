@@ -11,10 +11,10 @@
             <p>First takes</p>
             <p>Enjoy insider view</p>
           </div>
+        </div>
           <div class="">
             <router-link class="button is-black is-block is-large" to="/membership">{{ orderPrices.day }}€ / day</router-link>
           </div>
-        </div>
       </article>
     </div>
     <div class="tile is-parent">
@@ -27,10 +27,10 @@
             <p>Save money</p>
             <p>Support us even when you're not in the space ❤️</p>
           </div>
+        </div>
           <div class="">
             <router-link class="button is-black is-block is-large" to="/membership">{{ orderPrices.month }}€ / month</router-link>
           </div>
-        </div>
       </article>
     </div>
     <div class="tile is-parent">
@@ -43,10 +43,11 @@
             <p>Enjoy window <router-link to="/view">view</router-link>!</p>
             <p>Tip: use <router-link to="/membership">24/7 addon</router-link></p>
           </div>
+        </div>
           <div class="">
             <router-link class="button is-black is-block is-large" to="/membership">{{ orderPrices.fixdesk }}€ / month</router-link>
           </div>
-        </div>
+
       </article>
     </div>
     <div class="tile is-parent">
@@ -60,10 +61,10 @@
             <p>Whiteboard</p>
             <p>Projector</p>
           </div>
+        </div>
           <div class="btn-container">
             <router-link class="button is-black is-block is-large" to="/membership">{{ orderPrices.meetingRoom }}€ / hour</router-link>
           </div>
-        </div>
       </article>
     </div>
     <div class="tile is-parent">
@@ -75,10 +76,10 @@
             <p>Play your own music</p>
             <p>Be part of internal events!</p>
           </div>
+        </div>
           <div class="">
             <router-link class="button is-black is-block is-large" to="/membership">{{ orderPrices.nonstop}}€ / month</router-link>
           </div>
-        </div>
       </article>
     </div>
   </div>
@@ -138,6 +139,12 @@ input {
   /* border-top: 1px solid black; */
 }
 
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .tile article .title {
   font-size: 1rem;
   text-align: center;
@@ -146,6 +153,10 @@ input {
 .tile article a.button.is-black {
   border: 1px solid white;
   align-self: flex-end;
+}
+
+.tile article a.button.is-black:hover {
+  background-image: linear-gradient(to right top, #b60cf6, #9316e5, #711ad4, #4c1ac1, #1e19ae);
 }
 
 .notification {

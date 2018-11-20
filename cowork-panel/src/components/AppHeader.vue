@@ -7,9 +7,9 @@
   >
     <div class="container">
       <div class="navbar-brand">
-        <a class="navbar-item progressbar-logo-container" href="https://cowork.progressbar.sk">
+        <router-link class="navbar-item progressbar-logo-container" to="/">
           <progressbar-logo-refresh />
-        </a>
+        </router-link>
         <div
           role="button"
           @click="toggleNav()"
@@ -74,8 +74,8 @@
               <router-link class="dropdown-item" to="/call-for-the-sponsors" @click.native="toggleNav()">Call for the Sponsors</router-link>
               <router-link class="dropdown-item" to="/call-for-a-host" @click.native="toggleNav()">Call for a Host</router-link>
               <hr class="navbar-divider">
-              <a class="dropdown-item" :href="day360" target="_blank">Workspace VR Daylight (360)</a>
-              <a class="dropdown-item" :href="night360" target="_blank">Workspace VR Evening (360)</a>
+              <a class="dropdown-item" :href="urls.day360" target="_blank">Workspace VR Daylight (360)</a>
+              <a class="dropdown-item" :href="urls.night360" target="_blank">Workspace VR Evening (360)</a>
             </div>
           </div>
           <router-link
@@ -142,7 +142,8 @@ export default {
 }
 
 .navbar-item {
-  color: white
+  color: white;
+  cursor: pointer;
 }
 
 div.navbar-item a {
@@ -150,12 +151,12 @@ div.navbar-item a {
 }
 
 div.navbar-item:hover {
-  background-color: black;
+  background-image: linear-gradient(to right top, #b60cf6, #9316e5, #711ad4, #4c1ac1, #1e19ae);
   /* text-decoration: underline */
 }
 
 div.navbar-item.is-active {
-  background-color: black;
+  background-image: linear-gradient(to right top, #b60cf6, #9316e5, #711ad4, #4c1ac1, #1e19ae);
 }
 
 /* .navbar-item a:hover {
