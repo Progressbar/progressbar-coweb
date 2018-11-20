@@ -156,7 +156,7 @@ article {
 }
 
 .tile article a.button.is-black:hover {
-  background-color: #d71e58;
+  background-image: linear-gradient(to right top, #b60cf6, #9316e5, #711ad4, #4c1ac1, #1e19ae);
 }
 
 .notification {

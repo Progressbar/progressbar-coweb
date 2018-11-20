@@ -151,12 +151,12 @@ div.navbar-item a {
 }
 
 div.navbar-item:hover {
-  background-color: #e91e63;
+  background-image: linear-gradient(to right top, #b60cf6, #9316e5, #711ad4, #4c1ac1, #1e19ae);
   /* text-decoration: underline */
 }
 
 div.navbar-item.is-active {
-  background-color: #e91e63;
+  background-image: linear-gradient(to right top, #b60cf6, #9316e5, #711ad4, #4c1ac1, #1e19ae);
 }
 
 /* .navbar-item a:hover {

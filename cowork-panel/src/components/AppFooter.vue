@@ -73,7 +73,7 @@ export default {
         { url: 'https://noodles.digital', title: 'Noodles Digital', icon: '' }
       ],
       // TODO: ADD HERE MAP LINK
-      // TODO: ADD APPLE MAP LINK 
+      // TODO: ADD APPLE MAP LINK
       mapUrls: [
         { url: 'https://www.openstreetmap.org/node/1096120193', title: 'Open Street Map', icon: '' },
         { url: 'https://goo.gl/maps/piJwx6AAB762', title: 'Google Maps', icon: '' }
