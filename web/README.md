@@ -18,6 +18,8 @@ git checkout hackathon
 cd web
 ```
 2. Install packages & run
+
+Let's stick to yarn for this one
 ```
 yarn && yarn run dev
 ```
