@@ -1,12 +1,14 @@
-# <img src="https://github.com/Progressbar/presskit/blob/master/logo_v1.5/progressbar_logo_black_bg.svg" width="450">
+<img src="https://github.com/Progressbar/presskit/blob/master/logo_v1.5/progressbar_logo_black_transparent_bg.svg" width="450">
 
 # Progressbar web 🥖 🦄
 
-Welcome to the new Progressbar, built with [React](https://reactjs.org/) and [Gatsby](https://www.gatsbyjs.org/) ✨
+Welcome to the new Progressbar, built with [React](https://reactjs.org/) and [Gatsby v2](https://www.gatsbyjs.org/) ✨
 
-We're using https://github.com/Vagr9K/gatsby-advanced-starter for Gatsby v2.
+We're using https://github.com/Vagr9K/gatsby-advanced-starter
 
-## Quick starter pack
+Code is deployed at https://pbhackathon.netlify.com/
+
+## Quick starter 💉
 
 1. Clone the repository and enter it
 ```
@@ -20,3 +22,13 @@ cd web
 yarn && yarn run dev
 ```
 3. It should now be running, open [localhost:8000](http://localhost:8000) to view it. You'll see it in console.
+
+## Contributing 🧚‍
+
+Contributions are welcome!
+
+Checkout [`CONTRIBUTING.md`](CONTRIBUTING.md) 
+
+If you need any help, please contact us at team@hackclub.com or on our [Telegram Hackathon channel](https://t.me/joinchat/Bv6P6xDBFDYdEEyhjpInxQ)
+
+For more info also visit https://github.com/Progressbar/progressbar-coweb/issues/61#issuecomment-445559298
