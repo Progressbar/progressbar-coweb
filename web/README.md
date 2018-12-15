@@ -31,6 +31,6 @@ Checkout [`CONTRIBUTING.md`](CONTRIBUTING.md)
 
 For __hackathon__, make pull requests __against__ the `hackathon` branch, __not against__ `develop`
 
-If you need any help, please contact us at team@hackclub.com or on our [Telegram Hackathon channel](https://t.me/joinchat/Bv6P6xDBFDYdEEyhjpInxQ)
+If you need any help, please contact us at info@progressbar.sk or on our [Telegram Hackathon channel](https://t.me/joinchat/Bv6P6xDBFDYdEEyhjpInxQ)
 
 For more info also visit https://github.com/Progressbar/progressbar-coweb/issues/61#issuecomment-445559298
