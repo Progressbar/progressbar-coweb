@@ -1,20 +1,26 @@
 import React, { Component } from 'react';
 import {
   Button,
-  Container,
   Menu,
   Responsive,
   Segment,
   Visibility
 } from "semantic-ui-react";
 import LandingHero from '../LandingHero';
+import { Link } from "gatsby";
+import pbLogoWhite from "../../../static/logos/pb-logo-white.svg";
+import "./Header.css";
 
 /* Heads up!
  * Neither Semantic UI nor Semantic UI React offer a responsive navbar, however, it can be implemented easily.
  * It can be more complicated, but you can create really flexible markup.
  */
 class DesktopContainer extends Component {
-  state = {};
+  state = {
+    activeItem: ""
+  };
+
+  handleItemClick = (e, { id }) => this.setState({ activeItem: id });
 
   hideFixedMenu = () => this.setState({ fixed: false });
 
@@ -22,7 +28,7 @@ class DesktopContainer extends Component {
 
   render() {
     const { children } = this.props;
-    const { fixed } = this.state;
+    const { fixed, activeItem } = this.state;
 
     return (
       <Responsive minWidth={Responsive.onlyTablet.minWidth}>
@@ -39,6 +45,7 @@ class DesktopContainer extends Component {
             }}
             vertical
           >
+
             <Menu
               fixed={fixed ? "top" : null}
               inverted={!fixed}
@@ -46,27 +53,66 @@ class DesktopContainer extends Component {
               secondary={!fixed}
               size="large"
             >
-              <Container>
-                <Menu.Item as="a" active>
-                  Home
-                </Menu.Item>
-                <Menu.Item as="a">Work</Menu.Item>
-                <Menu.Item as="a">Company</Menu.Item>
-                <Menu.Item as="a">Careers</Menu.Item>
-                <Menu.Item position="right">
-                  <Button as="a" inverted={!fixed}>
-                    Log in
-                  </Button>
-                  <Button
-                    as="a"
-                    inverted={!fixed}
-                    primary={fixed}
-                    style={{ marginLeft: "0.5em" }}
-                  >
-                    Sign Up
-                  </Button>
-                </Menu.Item>
-              </Container>
+              <Menu.Item id='logo'>
+                <img src={pbLogoWhite} alt="pb-logo"/>
+              </Menu.Item>
+              <Menu.Item
+                id='about'
+                as={Link}
+                name='about'
+                to='/about/'
+                activeStyle={{
+                  color: "#00B29A !important"
+                }}
+                onClick={this.handleItemClick}
+                active={activeItem === "about"}
+              />
+              <Menu.Item
+                id='events'
+                as={Link}
+                name='events'
+                to='/events/'
+                activeStyle={{
+                  color: "#EE4D7A"
+                }}
+                // onClick={this.handleItemClick}
+                // active={activeItem === "matches"}
+              />
+              <Menu.Item
+                id='membership'
+                as={Link}
+                name='membership'
+                to='/membership/'
+                activeStyle={{
+                  color: "#A065AA"
+                }}
+                // onClick={this.handleItemClick}
+                // active={activeItem === "matches"}
+              />
+              <Menu.Item
+                id='sponsors'
+                as={Link}
+                name='sponsors'
+                to='/sponsors'
+                activeStyle={{
+                  color: "#6ABB81"
+                }}
+                // onClick={this.handleItemClick}
+                // active={activeItem === "matches"}
+              />
+              <Menu.Item position="right">
+                <Button as="a" inverted={!fixed}>
+                  Log in
+                </Button>
+                <Button
+                  as="a"
+                  inverted={!fixed}
+                  primary={fixed}
+                  style={{ marginLeft: "0.5em" }}
+                >
+                  Sign Up
+                </Button>
+              </Menu.Item>
             </Menu>
             <LandingHero />
           </Segment>
