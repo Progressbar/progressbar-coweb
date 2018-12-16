@@ -5,6 +5,8 @@ import Layout from "../layout";
 import PostListing from "../components/PostListing/PostListing";
 import SEO from "../components/SEO/SEO";
 import config from "../../data/SiteConfig";
+import { Button } from 'semantic-ui-react'
+import 'semantic-ui-css/semantic.min.css'
 
 class Index extends React.Component {
   render() {
@@ -15,6 +17,7 @@ class Index extends React.Component {
           <Helmet title={config.siteTitle} />
           <SEO />
           <PostListing postEdges={postEdges} />
+          <Button>Click Here</Button>
         </div>
       </Layout>
     );

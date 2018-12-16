@@ -34,6 +34,8 @@
     "react-helmet": "^5.2.0",
     "react-share": "^2.0.0",
     "react-twitter-widgets": "^1.7.1",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^0.84.0",
     "url-join": "^4.0.0"
   },
   "devDependencies": {
