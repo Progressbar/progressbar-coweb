@@ -344,4 +344,4 @@ const HomepageLayout = () => (
   </ResponsiveContainer>
 )
 
-export default HomepageLayout
+export default DesktopContainer;

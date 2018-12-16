@@ -1,0 +1,21 @@
+.card-container {
+    background-color: #fff;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.info-card__header {
+    text-align: center;
+}
+
+.info-card__image {
+    height:225px;
+}
+
+/* .card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+} */
