@@ -13,7 +13,6 @@ import pbLogoWhite from "../../../static/logos/pb-logo-white.svg";
 import "./Header.css";
 import config from "../../../data/SiteConfig";
 import JoinUs from '../JoinUs/JoinUs';
-import 'semantic-ui-css/semantic.min.css';
 
 /* Heads up!
  * Neither Semantic UI nor Semantic UI React offer a responsive navbar, however, it can be implemented easily.
