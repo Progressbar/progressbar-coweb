@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Grid, Image } from 'semantic-ui-react'
 import "./IgFeed.css";
 
 class IgFeed extends Component {
