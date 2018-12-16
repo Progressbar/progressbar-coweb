@@ -1,0 +1,78 @@
+.dropdownMenu {
+    margin-top: 22px !important;
+    margin-left: -15px !important;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    -webkit-transition: height 0.35s ease-in-out;
+    transition: height 0.35s ease-in-out;
+}
+
+.visible.sidebar.menu {
+    overflow: visible !important;
+}
+
+@media only screen and (max-width: 767px) {
+    .wrapper {
+        flex-direction: column;
+    }
+}
+
+.wrapper.closed {
+    height: 0;
+    overflow-y: hidden;
+}
+
+.head-title {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.head-title a {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.head-title .bars {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.head-title .bars:hover {
+    color: #f25252;
+}
+
+.heading {
+    display: block;
+    width: 100%;
+    height: 49px;
+    visibility: hidden;
+}
+
+/*a.item:hover,*/
+/*a.item.active {*/
+    /*background-image: linear-gradient(to right top, #b60cf6, #9316e5, #711ad4, #4c1ac1, #1e19ae) !important;*/
+/*}*/
+
+a.item#about:hover {
+    color: #00B29A;
+}
+
+a.item#events:hover {
+    color: #EE4D7A;
+}
+
+a.item#membership:hover {
+    color: #A065AA;
+}
+
+a.item#sponsors:hover {
+    color: #6ABB81;
+}
+
+div.visible.sidebar.menu {
+    background-color: #1C2329;
+}
