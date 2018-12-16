@@ -1,3 +1,10 @@
+// const dcoreLogo = require("../static/logos/logo_dccore.svg");
+// const bitpantherLogo = require("../static/logos/bitpanther-logo.svg");
+// const decentLogo = require("../static/logos/decentlogo.svg");
+// const hosuLogo = require("../static/logos/hosulogo.png");
+// const wyLogo = require("../static/logos/wylogo.svg");
+// const pbLogo = require("../static/logos/pb-logo-white.svg");
+
 module.exports = {
   siteTitle: "Progressbar", // Site title.
   siteTitleShort: "Progressbar", // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
@@ -103,20 +110,34 @@ module.exports = {
     { to: "/sponsors/", name: "sponsors" }
   ],
   sponsors: [
-    { name: "DCore", url: "https://dcore.decent.ch", icon: "", text: "" },
-    { name: "DECENT", url: "https://decent.ch", icon: "", text: "" },
+    {
+      name: "DCore",
+      url: "https://dcore.decent.ch",
+      icon: "https://dcore.decent.ch/_web/img/logo_dccore.svg",
+      text:
+        "Blockchain you can actually build on. Innovative and customizable adaptation of blockchain technology allows you to mix and match DCore components to further your own projects."
+    },
+    {
+      name: "DECENT",
+      url: "https://decent.ch",
+      icon: "https://decent.ch/wp-content/uploads/2018/04/logo-footer.svg",
+      text:
+        "Blockchain Content Distribution Platform that is Open-Source and utilizes Blockchain to ensure trust and security. Our intention is to revolutionize data distribution on the Internet."
+    },
     {
       name: "BitPanther",
       url: "https://www.bitpanther.com",
-      icon: "",
-      text: ""
+      icon: "https://www.bitpanther.com/img/christmas-logo.svg",
+      text:
+        "European financial technology platform focused on helping people to get access to digital currencies. BitPanther is a registered Slovakian company, compliant with Slovak and EU regulations."
     },
     {
       name:
         "HOSU | Office Solutions is a specialist in complex office solutions",
       url: "http://www.hosu.sk/en/home.html",
       icon: "",
-      text: "We deal with analysis, design and furnishing of administrative spaces. Our aim is to effectively use the space of an organization and create a friendly workspace in which people work more efficiently and enthusiastically. Our approach focuses primarily on proper acoustics, ergonomics and sustainability. The result of our work is a functional design and comfortable workplace."
+      text:
+        "We deal with analysis, design and furnishing of administrative spaces. Our aim is to effectively use the space of an organization and create a friendly workspace in which people work more efficiently and enthusiastically. Our approach focuses primarily on proper acoustics, ergonomics and sustainability. The result of our work is a functional design and comfortable workplace."
     },
     {
       name: "wy",

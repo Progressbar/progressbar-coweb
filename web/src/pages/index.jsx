@@ -7,13 +7,17 @@ import InfoCards from "../components/LandingPage/InfoCards";
 import IgFeed from "../components/IgFeed/IgFeed";
 import config from "../../data/SiteConfig";
 import 'semantic-ui-css/semantic.min.css';
+import Sponsor from "../atoms/Sponsor/index";
 
 class Index extends React.Component {
   render() {
+    const { sponsors } = config;
+
     return (
       <LandingPageLayout>
         <Helmet title={config.siteTitle} />
         <SEO />
+
         <Segment style={{ padding: '8em 0em' }} vertical>
           <Grid container stackable verticalAlign='middle'>
             <Grid.Row>
@@ -109,6 +113,13 @@ class Index extends React.Component {
             </Button>
           </Container>
         </Segment>
+
+        <Segment>
+          <Container>
+            {sponsors.map(sponsor => (<Sponsor {...sponsor} />))}
+          </Container>
+        </Segment>
+
       </LandingPageLayout>
     );
   }
