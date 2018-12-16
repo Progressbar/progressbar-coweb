@@ -7,6 +7,7 @@ import {
   Segment,
   Visibility
 } from "semantic-ui-react";
+import LandingHero from '../LandingHero';
 
 /* Heads up!
  * Neither Semantic UI nor Semantic UI React offer a responsive navbar, however, it can be implemented easily.
@@ -33,7 +34,7 @@ class DesktopContainer extends Component {
           <Segment
             inverted
             textAlign="center"
-            style={{ minHeight: 700, padding: "1em 0em" }}
+            // style={{ minHeight: 700, padding: "1em 0em" }}
             vertical
           >
             <Menu
@@ -65,6 +66,7 @@ class DesktopContainer extends Component {
                 </Menu.Item>
               </Container>
             </Menu>
+            <LandingHero />
           </Segment>
         </Visibility>
         {children}

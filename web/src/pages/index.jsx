@@ -1,7 +1,6 @@
 import React from "react";
 import Helmet from "react-helmet";
 import { Button, Segment, Grid, Header, Image, Container, Divider, List } from 'semantic-ui-react';
-
 import LandingPageLayout from "../layouts/LandingPageLayout";
 import SEO from "../components/SEO/SEO";
 import config from "../../data/SiteConfig";
