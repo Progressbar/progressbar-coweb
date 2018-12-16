@@ -3,6 +3,7 @@ import Helmet from "react-helmet";
 
 import DesktopContainer from '../components/DesktopContainer'
 import MobileContainer from '../components/MobileContainer'
+import Footer from '../components/Footer'
 import config from "../../data/SiteConfig";
 
 const ResponsiveContainer = ({ children }) => (
@@ -21,6 +22,7 @@ class LandingPageLayout extends Component {
           <meta name="description" content={config.siteDescription} />
         </Helmet>
         {children}
+        <Footer />
       </ResponsiveContainer>
     )
   }

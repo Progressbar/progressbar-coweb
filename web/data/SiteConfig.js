@@ -45,7 +45,27 @@ module.exports = {
     orange: '#ee650c',
     yellow: '#feb229',
   },
-  copyright: "Copyright © 2017. Advanced User", // Copyright string for the footer of the website and RSS feed.
+  copyright: `2010 - ${new Date().getFullYear()} © Progressbar`, // todo current year
   themeColor: "#c62828", // Used for setting manifest and progress theme colors.
-  backgroundColor: "#e0e0e0" // Used for setting manifest background color.
+  backgroundColor: "#e0e0e0", // Used for setting manifest background color.
+  socialLinks: [
+    { url: 'https://www.facebook.com/progressbar', title: 'Facebook', icon: 'facebook f' },
+    { url: 'https://www.instagram.com/progressbar_sk', title: 'Instagram', icon: 'instagram' },
+    { url: 'https://github.com/Progressbar', title: 'Github', icon: 'github' },
+    { url: 'https://t.me/coworkprogressbar', title: 'Telegram', icon: 'telegram' },
+    { url: 'https://m.me/progressbar', title: 'Messenger', icon: 'facebook messenger' }
+  ],
+  address: {
+    street: 'Dunajská 7495/14',
+    pobox: '811 08',
+    city: 'Bratislava',
+    country: 'Slovakia',
+    osm: 'https://www.openstreetmap.org/node/1096120193',
+    gmaps: 'https://goo.gl/maps/piJwx6AAB762',
+  },
+  contacts: [
+    { url: 'https://t.me/coworkprogressbar', title: 'Telegram', icon: 'telegram' },
+    { url: 'mailto:info@progressbar.sk', title: 'info@progressbar.sk', icon: 'mail' },
+    { url: 'https://m.me/progressbar', title: 'Messenger', icon: 'facebook messenger' }
+  ]
 };
