@@ -3,6 +3,7 @@ import Helmet from "react-helmet";
 import { Button, Segment, Grid, Header, Image, Container, Divider } from 'semantic-ui-react';
 import LandingPageLayout from "../layouts/LandingPageLayout";
 import SEO from "../components/SEO/SEO";
+import InfoCards from "../components/LandingPage/InfoCards";
 import IgFeed from "../components/IgFeed/IgFeed";
 import config from "../../data/SiteConfig";
 import 'semantic-ui-css/semantic.min.css';
@@ -43,6 +44,8 @@ class Index extends React.Component {
             </Grid.Row>
           </Grid>
         </Segment>
+
+        <InfoCards />
 
         <Segment style={{ padding: '0em' }} vertical>
           <Grid celled='internally' columns='equal' stackable>
