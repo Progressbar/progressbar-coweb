@@ -32,3 +32,7 @@ div#logo {
     width: 12em;
 }
 
+.ui.large.inverted.pointing.secondary.menu {
+    margin-bottom: 0;
+}
+
