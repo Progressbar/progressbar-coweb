@@ -3,16 +3,16 @@ import Helmet from "react-helmet";
 import LandingPageLayout from "../layouts/LandingPageLayout";
 import config from "../../data/SiteConfig";
 
-class AboutPage extends Component {
+class EventsPage extends Component {
   render() {
     return (
       <LandingPageLayout>
-        <div className="about-container">
-          <Helmet title={`About | ${config.siteTitle}`} />
+        <div className="events-container">
+          <Helmet title={`Events | ${config.siteTitle}`} />
         </div>
       </LandingPageLayout>
     );
   }
 }
 
-export default AboutPage;
+export default EventsPage;
