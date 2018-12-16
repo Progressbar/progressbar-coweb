@@ -4,7 +4,8 @@ import {
   Menu,
   Responsive,
   Segment,
-  Visibility
+  Visibility,
+  Image
 } from "semantic-ui-react";
 import { Link } from "gatsby";
 import LandingHero from '../LandingHero';
@@ -57,7 +58,7 @@ class DesktopContainer extends Component {
               size="large"
             >
               <Menu.Item id='logo'>
-                <img src={pbLogoWhite} alt="pb-logo" />
+                <Image as={Link} to="/" src={pbLogoWhite} alt="pb-logo" />
               </Menu.Item>
               {navbarLinks.map(({ to, name }) => (
                 <Menu.Item
