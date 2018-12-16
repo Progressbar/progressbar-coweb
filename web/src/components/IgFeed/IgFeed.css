@@ -1,0 +1,27 @@
+.ig_wrapper {
+  width: 100%;
+  position: relative;
+  height: 50vw;
+  padding: 10px;
+
+}
+
+.ig_image {
+  float: left;
+  width: calc(25vw - 45px);
+  height: calc(25vw - 45px);
+  margin: 20px;
+}
+
+@media (max-width: 1000px) {
+  .ig_wrapper {
+    padding: 5px;
+  }
+
+  .ig_image {
+    width: calc(25vw - 22.5px);
+    height: calc(25vw - 22.5px);
+    margin: 10px;
+  }
+
+}
