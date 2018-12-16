@@ -37,6 +37,14 @@ module.exports = {
       iconClassName: "fa fa-envelope"
     }
   ],
+  // https://github.com/Progressbar/Progressbar-Improvement-Proposal/issues/125
+  designTokens: {
+    blue: '#3a10ff',
+    purple: '#a100de',
+    pink: '#fa21d0',
+    orange: '#ee650c',
+    yellow: '#feb229',
+  },
   copyright: "Copyright © 2017. Advanced User", // Copyright string for the footer of the website and RSS feed.
   themeColor: "#c62828", // Used for setting manifest and progress theme colors.
   backgroundColor: "#e0e0e0" // Used for setting manifest background color.
