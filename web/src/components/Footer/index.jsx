@@ -15,7 +15,7 @@ import config from "../../../data/SiteConfig";
 
 class Footer extends Component {
   render() {
-    const { address, contacts } = config;
+    const { address, contacts, copyright } = config;
 
     return (
       <Segment inverted vertical style={{ padding: "4em 0em" }}>
@@ -67,20 +67,9 @@ class Footer extends Component {
           </Grid>
           <Divider inverted section />
           <Image centered size='mini' src={pbLogoWhite} />
-          <List horizontal inverted divided link size='small'>
-            <List.Item as='a' href='#'>
-              Site Map
-            </List.Item>
-            <List.Item as='a' href='#'>
-              Contact Us
-            </List.Item>
-            <List.Item as='a' href='#'>
-              Terms and Conditions
-            </List.Item>
-            <List.Item as='a' href='#'>
-              Privacy Policy
-            </List.Item>
-          </List>
+          <p>
+            <small>{copyright}</small>
+          </p>
         </Container>
       </Segment>
     );
