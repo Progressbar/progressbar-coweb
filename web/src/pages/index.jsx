@@ -6,11 +6,8 @@ import SEO from "../components/SEO/SEO";
 import InfoCards from "../components/LandingPage/InfoCards";
 import IgFeed from "../components/IgFeed/IgFeed";
 import config from "../../data/SiteConfig";
-<<<<<<< Updated upstream
 import 'semantic-ui-css/semantic.min.css';
 import Sponsor from "../atoms/Sponsor/index";
-=======
->>>>>>> Stashed changes
 
 class Index extends React.Component {
   render() {
