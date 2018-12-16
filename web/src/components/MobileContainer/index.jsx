@@ -8,6 +8,7 @@ import {
   Sidebar,
   Icon
 } from "semantic-ui-react";
+import LandingHero from '../LandingHero';
 
 class MobileContainer extends Component {
     state = {}
@@ -62,7 +63,7 @@ class MobileContainer extends Component {
                   </Menu.Item>
                 </Menu>
               </Container>
-              {/* <HomepageHeading mobile /> */}
+              <LandingHero mobile />
             </Segment>
   
             {children}
