@@ -1,13 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {
-  Button,
   Container,
   Header,
-  Icon,
 } from "semantic-ui-react";
 import styled from "styled-components";
 import config from "../../../data/SiteConfig";
+import JoinUs from '../JoinUs/JoinUs';
 
 const LandingHeroWrapper = styled.div`
   background: linear-gradient(${Object.values(config.designTokens).join(',')});
@@ -40,13 +39,11 @@ const LandingHero = ({ mobile }) => (
           marginTop: mobile ? '0.5em' : '1.5em',
         }}
       />
-      <Button primary size='huge'>
-        Join
-        <Icon name='right arrow' />
-      </Button>
+      <JoinUs />
     </Container>
   </LandingHeroWrapper>
 )
+
 
 LandingHero.propTypes = {
   mobile: PropTypes.bool,
