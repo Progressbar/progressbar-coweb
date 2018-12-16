@@ -15,22 +15,25 @@ const LandingHeroWrapper = styled.div`
 
 const LandingHero = ({ mobile }) => (
   <LandingHeroWrapper>
-    <Container text>
+    <Container
+      text
+      style={{
+        paddingTop: mobile ? '1.5em' : '3em',
+        paddingBottom: mobile ? '1.5em' : '3em',
+      }}
+    >
       <Header
         as='h1'
         content='Progressbar'
-        // inverted
         style={{
           fontSize: mobile ? '2em' : '4em',
           fontWeight: 'normal',
           marginBottom: 0,
-          paddingTop: mobile ? '1.5em' : '3em',
         }}
       />
       <Header
         as='h2'
         content='Your new favorite coworking, hackerspace & hangout zone in downtown Bratislava.'
-        // inverted
         style={{
           fontSize: mobile ? '1.5em' : '1.7em',
           fontWeight: 'normal',
