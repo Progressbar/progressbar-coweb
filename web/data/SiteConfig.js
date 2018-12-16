@@ -39,39 +39,98 @@ module.exports = {
   ],
   // https://github.com/Progressbar/Progressbar-Improvement-Proposal/issues/125
   designTokens: {
-    blue: '#3a10ff',
-    purple: '#a100de',
-    pink: '#fa21d0',
-    orange: '#ee650c',
-    yellow: '#feb229',
+    blue: "#3a10ff",
+    purple: "#a100de",
+    pink: "#fa21d0",
+    orange: "#ee650c",
+    yellow: "#feb229"
   },
   copyright: `2010 - ${new Date().getFullYear()} © Progressbar`, // todo current year
   themeColor: "#c62828", // Used for setting manifest and progress theme colors.
   backgroundColor: "#e0e0e0", // Used for setting manifest background color.
   socialLinks: [
-    { url: 'https://www.facebook.com/progressbar', title: 'Facebook', icon: 'facebook f' },
-    { url: 'https://www.instagram.com/progressbar_sk', title: 'Instagram', icon: 'instagram' },
-    { url: 'https://github.com/Progressbar', title: 'Github', icon: 'github' },
-    { url: 'https://t.me/coworkprogressbar', title: 'Telegram', icon: 'telegram' },
-    { url: 'https://m.me/progressbar', title: 'Messenger', icon: 'facebook messenger' }
+    {
+      url: "https://www.facebook.com/progressbar",
+      title: "Facebook",
+      icon: "facebook f"
+    },
+    {
+      url: "https://www.instagram.com/progressbar_sk",
+      title: "Instagram",
+      icon: "instagram"
+    },
+    { url: "https://github.com/Progressbar", title: "Github", icon: "github" },
+    {
+      url: "https://t.me/coworkprogressbar",
+      title: "Telegram",
+      icon: "telegram"
+    },
+    {
+      url: "https://m.me/progressbar",
+      title: "Messenger",
+      icon: "facebook messenger"
+    }
   ],
   address: {
-    street: 'Dunajská 7495/14',
-    pobox: '811 08',
-    city: 'Bratislava',
-    country: 'Slovakia',
-    osm: 'https://www.openstreetmap.org/node/1096120193',
-    gmaps: 'https://goo.gl/maps/piJwx6AAB762',
+    street: "Dunajská 7495/14",
+    pobox: "811 08",
+    city: "Bratislava",
+    country: "Slovakia",
+    osm: "https://www.openstreetmap.org/node/1096120193",
+    gmaps: "https://goo.gl/maps/piJwx6AAB762"
   },
   contacts: [
-    { url: 'https://t.me/coworkprogressbar', title: 'Telegram', icon: 'telegram' },
-    { url: 'mailto:info@progressbar.sk', title: 'info@progressbar.sk', icon: 'mail' },
-    { url: 'https://m.me/progressbar', title: 'Messenger', icon: 'facebook messenger' }
+    {
+      url: "https://t.me/coworkprogressbar",
+      title: "Telegram",
+      icon: "telegram"
+    },
+    {
+      url: "mailto:info@progressbar.sk",
+      title: "info@progressbar.sk",
+      icon: "mail"
+    },
+    {
+      url: "https://m.me/progressbar",
+      title: "Messenger",
+      icon: "facebook messenger"
+    }
   ],
   navbarLinks: [
-    { to: '/about/', name: 'about' },
-    { to: '/events/', name: 'events' },
-    { to: '/membership/', name: 'membership' },
-    { to: '/sponsors/', name: 'sponsors' },
+    { to: "/about/", name: "about" },
+    { to: "/events/", name: "events" },
+    { to: "/membership/", name: "membership" },
+    { to: "/sponsors/", name: "sponsors" }
+  ],
+  sponsors: [
+    { name: "DCore", url: "https://dcore.decent.ch", icon: "", text: "" },
+    { name: "DECENT", url: "https://decent.ch", icon: "", text: "" },
+    {
+      name: "BitPanther",
+      url: "https://www.bitpanther.com",
+      icon: "",
+      text: ""
+    },
+    {
+      name:
+        "HOSU | Office Solutions is a specialist in complex office solutions",
+      url: "http://www.hosu.sk/en/home.html",
+      icon: "",
+      text: "We deal with analysis, design and furnishing of administrative spaces. Our aim is to effectively use the space of an organization and create a friendly workspace in which people work more efficiently and enthusiastically. Our approach focuses primarily on proper acoustics, ergonomics and sustainability. The result of our work is a functional design and comfortable workplace."
+    },
+    {
+      name: "wy",
+      url: "https://wy.sk",
+      icon: "",
+      text:
+        "We are your dream hoster, and your best choice for doing business on internet. We provide hosting to company websites, e-shops, blogs, huge portals or private presentations. We welcome individuals and freelancers, small teams and running businesses."
+    },
+    {
+      name: "Your company can be here",
+      url: "https://progressbar.sk",
+      icon: "",
+      text:
+        "Want to sponsor us? Your name will be known in our hackerspace & cowork. We hosted 700+ technical and technological events so far. We can give you huge marketing push or find you geeks, engineers, software developers you are searching for. We are their daily place, where their come hangout on evenings or work during day."
+    }
   ]
 };
