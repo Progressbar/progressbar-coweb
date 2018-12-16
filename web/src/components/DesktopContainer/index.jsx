@@ -6,10 +6,11 @@ import {
   Segment,
   Visibility
 } from "semantic-ui-react";
-import LandingHero from '../LandingHero';
 import { Link } from "gatsby";
+import LandingHero from '../LandingHero';
 import pbLogoWhite from "../../../static/logos/pb-logo-white.svg";
 import "./Header.css";
+import config from "../../../data/SiteConfig";
 
 /* Heads up!
  * Neither Semantic UI nor Semantic UI React offer a responsive navbar, however, it can be implemented easily.
@@ -29,6 +30,7 @@ class DesktopContainer extends Component {
   render() {
     const { children } = this.props;
     const { fixed, activeItem } = this.state;
+    const { navbarLinks } = config;
 
     return (
       <Responsive minWidth={Responsive.onlyTablet.minWidth}>
@@ -54,52 +56,21 @@ class DesktopContainer extends Component {
               size="large"
             >
               <Menu.Item id='logo'>
-                <img src={pbLogoWhite} alt="pb-logo"/>
+                <img src={pbLogoWhite} alt="pb-logo" />
               </Menu.Item>
-              <Menu.Item
-                id='about'
-                as={Link}
-                name='about'
-                to='/about/'
-                activeStyle={{
-                  color: "#00B29A !important"
-                }}
-                onClick={this.handleItemClick}
-                active={activeItem === "about"}
-              />
-              <Menu.Item
-                id='events'
-                as={Link}
-                name='events'
-                to='/events/'
-                activeStyle={{
-                  color: "#EE4D7A"
-                }}
-                // onClick={this.handleItemClick}
-                // active={activeItem === "matches"}
-              />
-              <Menu.Item
-                id='membership'
-                as={Link}
-                name='membership'
-                to='/membership/'
-                activeStyle={{
-                  color: "#A065AA"
-                }}
-                // onClick={this.handleItemClick}
-                // active={activeItem === "matches"}
-              />
-              <Menu.Item
-                id='sponsors'
-                as={Link}
-                name='sponsors'
-                to='/sponsors'
-                activeStyle={{
-                  color: "#6ABB81"
-                }}
-                // onClick={this.handleItemClick}
-                // active={activeItem === "matches"}
-              />
+              {navbarLinks.map(({ to, name }) => (
+                <Menu.Item
+                  id={name}
+                  as={Link}
+                  name={name}
+                  to={to}
+                  activeStyle={{
+                    color: "#00B29A !important"
+                  }}
+                  onClick={this.handleItemClick}
+                  active={activeItem === name}
+                />
+              ))}
               <Menu.Item position="right">
                 <Button as="a" inverted={!fixed}>
                   Log in

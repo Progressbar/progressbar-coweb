@@ -67,5 +67,11 @@ module.exports = {
     { url: 'https://t.me/coworkprogressbar', title: 'Telegram', icon: 'telegram' },
     { url: 'mailto:info@progressbar.sk', title: 'info@progressbar.sk', icon: 'mail' },
     { url: 'https://m.me/progressbar', title: 'Messenger', icon: 'facebook messenger' }
+  ],
+  navbarLinks: [
+    { to: '/about/', name: 'about' },
+    { to: '/events/', name: 'events' },
+    { to: '/membership/', name: 'membership' },
+    { to: '/sponsors/', name: 'sponsors' },
   ]
 };
