@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
 import Helmet from "react-helmet";
+import 'semantic-ui-css/semantic.min.css'; // todo move to parent
 
 import DesktopContainer from '../components/DesktopContainer'
 import MobileContainer from '../components/MobileContainer'
 import Footer from '../components/Footer'
-import config from "../../data/SiteConfig";
+import config from "../../data/SiteConfig"
 
 const ResponsiveContainer = ({ children }) => (
   <div>
