@@ -1,0 +1,19 @@
+a#about.active.item,
+a.item#about:hover {
+    color: #00B29A !important;
+}
+
+a#events.active.item,
+a#events.item:hover {
+    color: #EE4D7A !important;
+}
+
+a#membership.active.item,
+a#membership.item:hover {
+    color: #A065AA !important;
+}
+
+a#sponsors.active.item,
+a#sponsors.item:hover {
+    color: #6ABB81 !important;
+}
