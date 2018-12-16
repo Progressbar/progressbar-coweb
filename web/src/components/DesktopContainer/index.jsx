@@ -11,6 +11,7 @@ import LandingHero from '../LandingHero';
 import pbLogoWhite from "../../../static/logos/pb-logo-white.svg";
 import "./Header.css";
 import config from "../../../data/SiteConfig";
+import JoinUs from '../JoinUs/JoinUs';
 
 /* Heads up!
  * Neither Semantic UI nor Semantic UI React offer a responsive navbar, however, it can be implemented easily.
@@ -72,17 +73,7 @@ class DesktopContainer extends Component {
                 />
               ))}
               <Menu.Item position="right">
-                <Button as="a" inverted={!fixed}>
-                  Log in
-                </Button>
-                <Button
-                  as="a"
-                  inverted={!fixed}
-                  primary={fixed}
-                  style={{ marginLeft: "0.5em" }}
-                >
-                  Sign Up
-                </Button>
+                <JoinUs fixed={fixed} />
               </Menu.Item>
             </Menu>
             <LandingHero />

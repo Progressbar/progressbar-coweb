@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import {
-  Button,
   Container,
   Menu,
   Responsive,
@@ -9,6 +8,7 @@ import {
   Icon
 } from "semantic-ui-react";
 import LandingHero from '../LandingHero';
+import JoinUs from '../JoinUs/JoinUs';
 
 class MobileContainer extends Component {
     state = {}
@@ -54,12 +54,7 @@ class MobileContainer extends Component {
                     <Icon name='sidebar' />
                   </Menu.Item>
                   <Menu.Item position='right'>
-                    <Button as='a' inverted>
-                      Log in
-                    </Button>
-                    <Button as='a' inverted style={{ marginLeft: '0.5em' }}>
-                      Sign Up
-                    </Button>
+                    <JoinUs />
                   </Menu.Item>
                 </Menu>
               </Container>

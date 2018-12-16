@@ -1,11 +1,12 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { Button, Container, Header, Icon } from "semantic-ui-react";
+import React from 'react';
+import PropTypes from 'prop-types';
+import {
+  Container,
+  Header,
+} from "semantic-ui-react";
 import styled from "styled-components";
-// import config from "../../../data/SiteConfig";
-import pbHeroImg from "../../../static/bigimgs/pbwhenitwasfull.jpg";
-
-// linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5))
+import JoinUs from '../JoinUs/JoinUs';
+import pbHeroImg from "../../../static/bigimgs/pbwhenitwasfull.jpg"
 
 const LandingHeroWrapper = styled.div`
   background-image: url(${pbHeroImg});
@@ -42,13 +43,11 @@ const LandingHero = ({ mobile }) => (
           marginTop: mobile ? "0.5em" : "1.5em"
         }}
       />
-      <Button primary size="huge">
-        Join
-        <Icon name="right arrow" />
-      </Button>
+      <JoinUs />
     </Container>
   </LandingHeroWrapper>
 );
+
 
 LandingHero.propTypes = {
   mobile: PropTypes.bool
