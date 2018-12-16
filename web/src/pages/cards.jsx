@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import Helmet from "react-helmet";
 import InfoCards from "../components/LandingPage/InfoCards";
-import Layout from "../layout";
+import Layout from "../layouts/LandingPageLayout";
 import config from "../../data/SiteConfig";
 
-class SomePage extends Component {
+class CardsPage extends Component {
   render() {
     return (
       <Layout>
@@ -15,4 +15,4 @@ class SomePage extends Component {
   }
 }
 
-export default SomePage;
+export default CardsPage;
