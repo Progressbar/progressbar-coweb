@@ -17,3 +17,18 @@ a#sponsors.active.item,
 a#sponsors.item:hover {
     color: #6ABB81 !important;
 }
+
+div.right.item,
+a.item {
+    margin-bottom: auto !important;
+    margin-top: auto !important;
+}
+
+img {
+    width: 10em !important;
+}
+
+div#logo {
+    width: 12em;
+}
+

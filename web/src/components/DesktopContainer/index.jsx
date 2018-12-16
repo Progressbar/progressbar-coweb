@@ -1,14 +1,7 @@
-import React, { Component } from 'react';
-import {
-  Button,
-  Container,
-  Menu,
-  Responsive,
-  Segment,
-  Visibility
-} from "semantic-ui-react";
+import React, { Component } from "react";
+import { Button, Menu, Responsive, Segment, Visibility } from "semantic-ui-react";
 import { Link } from "gatsby";
-import pbLogoWhite from "../../../static/logos/pb-logo-white.svg"
+import pbLogoWhite from "../../../static/logos/pb-logo-white.svg";
 import "./Header.css";
 
 /* Heads up!
@@ -43,7 +36,7 @@ class DesktopContainer extends Component {
             style={{ minHeight: 700, padding: "1em 0em" }}
             vertical
           >
-            <img src={pbLogoWhite} alt="pb-logo" />
+
             <Menu
               fixed={fixed ? "top" : null}
               inverted={!fixed}
@@ -51,65 +44,66 @@ class DesktopContainer extends Component {
               secondary={!fixed}
               size="large"
             >
-              <Container>
-                <Menu.Item
-                  id='about'
-                  as={Link}
-                  name='about'
-                  to='/about/'
-                  activeStyle={{
-                    color: "#00B29A !important"
-                  }}
-                  onClick={this.handleItemClick}
-                  active={activeItem === "about"}
-                />
-                <Menu.Item
-                  id='events'
-                  as={Link}
-                  name='events'
-                  to='/events/'
-                  activeStyle={{
-                    color: "#EE4D7A"
-                  }}
-                  // onClick={this.handleItemClick}
-                  // active={activeItem === "matches"}
-                />
-                <Menu.Item
-                  id='membership'
-                  as={Link}
-                  name='membership'
-                  to='/membership/'
-                  activeStyle={{
-                    color: "#A065AA"
-                  }}
-                  // onClick={this.handleItemClick}
-                  // active={activeItem === "matches"}
-                />
-                <Menu.Item
-                  id='sponsors'
-                  as={Link}
-                  name='sponsors'
-                  to='/sponsors'
-                  activeStyle={{
-                    color: "#6ABB81"
-                  }}
-                  // onClick={this.handleItemClick}
-                  // active={activeItem === "matches"}
-                />
-                <Menu.Item position="right">
-                  <Button as="a" inverted={!fixed}>
-                    Log in
-                  </Button>
-                  <Button
-                    as="a"
-                    inverted={!fixed}
-                    primary={fixed}
-                    style={{ marginLeft: "0.5em" }}
-                  >
-                    Sign Up
-                  </Button>
-                </Menu.Item>
-              </Container>
+              <Menu.Item id='logo'>
+                <img src={pbLogoWhite} alt="pb-logo"/>
+              </Menu.Item>
+              <Menu.Item
+                id='about'
+                as={Link}
+                name='about'
+                to='/about/'
+                activeStyle={{
+                  color: "#00B29A !important"
+                }}
+                onClick={this.handleItemClick}
+                active={activeItem === "about"}
+              />
+              <Menu.Item
+                id='events'
+                as={Link}
+                name='events'
+                to='/events/'
+                activeStyle={{
+                  color: "#EE4D7A"
+                }}
+                // onClick={this.handleItemClick}
+                // active={activeItem === "matches"}
+              />
+              <Menu.Item
+                id='membership'
+                as={Link}
+                name='membership'
+                to='/membership/'
+                activeStyle={{
+                  color: "#A065AA"
+                }}
+                // onClick={this.handleItemClick}
+                // active={activeItem === "matches"}
+              />
+              <Menu.Item
+                id='sponsors'
+                as={Link}
+                name='sponsors'
+                to='/sponsors'
+                activeStyle={{
+                  color: "#6ABB81"
+                }}
+                // onClick={this.handleItemClick}
+                // active={activeItem === "matches"}
+              />
+              <Menu.Item position="right">
+                <Button as="a" inverted={!fixed}>
+                  Log in
+                </Button>
+                <Button
+                  as="a"
+                  inverted={!fixed}
+                  primary={fixed}
+                  style={{ marginLeft: "0.5em" }}
+                >
+                  Sign Up
+                </Button>
+              </Menu.Item>
             </Menu>
           </Segment>
         </Visibility>
