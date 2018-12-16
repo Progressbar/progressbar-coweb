@@ -25,17 +25,15 @@ class IgFeed extends Component {
   render() {
     const { igPosts } = this.state
     return (
-      <div>
-        <Grid columns={4}>
+      <div className="ig_wrapper">
           {igPosts.map(post => (
-            <Grid.Column>
-              <Image
-                src={post.images.standard_resolution.url}
-                alt={post.tags}
-              />
-            </Grid.Column>
+            <div className="ig_image"
+              style={{
+                background: `url("${post.images.standard_resolution.url}") no-repeat center center`,
+                backgroundSize: 'cover'
+              }}>
+            </div>
           ))}
-        </Grid>
       </div>
     )
   }
