@@ -7,6 +7,7 @@ import SEO from "../components/SEO/SEO";
 import config from "../../data/SiteConfig";
 import { Button } from 'semantic-ui-react'
 import 'semantic-ui-css/semantic.min.css'
+import LandingHero from '../components/LandingHero/LandingHero'
 
 class Index extends React.Component {
   render() {
@@ -16,6 +17,7 @@ class Index extends React.Component {
         <div className="index-container">
           <Helmet title={config.siteTitle} />
           <SEO />
+          <LandingHero />
           <PostListing postEdges={postEdges} />
           <Button>Click Here</Button>
         </div>
