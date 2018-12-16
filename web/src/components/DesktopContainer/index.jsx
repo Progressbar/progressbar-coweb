@@ -8,6 +8,7 @@ import {
   Visibility
 } from "semantic-ui-react";
 import { Link } from "gatsby";
+import pbLogoWhite from "../../../static/logos/pb-logo-white.svg"
 import "./Header.css";
 
 /* Heads up!
@@ -42,6 +43,7 @@ class DesktopContainer extends Component {
             style={{ minHeight: 700, padding: "1em 0em" }}
             vertical
           >
+            <img src={pbLogoWhite} alt="pb-logo" />
             <Menu
               fixed={fixed ? "top" : null}
               inverted={!fixed}
