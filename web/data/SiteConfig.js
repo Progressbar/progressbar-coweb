@@ -1,7 +1,7 @@
 module.exports = {
-  siteTitle: "Gatsby Advanced Starter", // Site title.
-  siteTitleShort: "GA Starter", // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
-  siteTitleAlt: "GatsbyJS Advanced Starter", // Alternative site title for SEO.
+  siteTitle: "Progressbar", // Site title.
+  siteTitleShort: "Progressbar", // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
+  siteTitleAlt: "Progressbar", // Alternative site title for SEO.
   siteLogo: "/logos/logo-1024.png", // Logo used for SEO and manifest.
   siteUrl: "https://vagr9k.github.io", // Domain of your website without pathPrefix.
   pathPrefix: "/gatsby-advanced-starter", // Prefixes all links. For cases when deployed to example.github.io/gatsby-advanced-starter/.
@@ -13,7 +13,7 @@ module.exports = {
   postDefaultCategoryID: "Tech", // Default category for posts.
   dateFromFormat: "YYYY-MM-DD", // Date format used in the frontmatter.
   dateFormat: "DD/MM/YYYY", // Date format for display.
-  userName: "Advanced User", // Username to display in the author segment.
+  userName: "Progressbar", // Username to display in the author segment.
   userTwitter: "", // Optionally renders "Follow Me" in the UserInfo segment.
   userLocation: "North Pole, Earth", // User location to display in the author segment.
   userAvatar: "https://api.adorable.io/avatars/150/test.png", // User avatar to display in the author segment.
@@ -23,7 +23,7 @@ module.exports = {
   userLinks: [
     {
       label: "GitHub",
-      url: "https://github.com/Vagr9K/gatsby-advanced-starter",
+      url: "https://github.com/Progressbar",
       iconClassName: "fa fa-github"
     },
     {
@@ -33,10 +33,18 @@ module.exports = {
     },
     {
       label: "Email",
-      url: "mailto:vagr9k@gmail.com",
+      url: "mailto:info@progressbar.sk",
       iconClassName: "fa fa-envelope"
     }
   ],
+  // https://github.com/Progressbar/Progressbar-Improvement-Proposal/issues/125
+  designTokens: {
+    blue: '#3a10ff',
+    purple: '#a100de',
+    pink: '#fa21d0',
+    orange: '#ee650c',
+    yellow: '#feb229',
+  },
   copyright: "Copyright © 2017. Advanced User", // Copyright string for the footer of the website and RSS feed.
   themeColor: "#c62828", // Used for setting manifest and progress theme colors.
   backgroundColor: "#e0e0e0" // Used for setting manifest background color.

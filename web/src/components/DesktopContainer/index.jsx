@@ -1,5 +1,12 @@
-import React, { Component } from "react";
-import { Button, Menu, Responsive, Segment, Visibility } from "semantic-ui-react";
+import React, { Component } from 'react';
+import {
+  Button,
+  Menu,
+  Responsive,
+  Segment,
+  Visibility
+} from "semantic-ui-react";
+import LandingHero from '../LandingHero';
 import { Link } from "gatsby";
 import pbLogoWhite from "../../../static/logos/pb-logo-white.svg";
 import "./Header.css";
@@ -33,7 +40,9 @@ class DesktopContainer extends Component {
           <Segment
             inverted
             textAlign="center"
-            style={{ minHeight: 700, padding: "1em 0em" }}
+            style={{
+              padding: 0
+            }}
             vertical
           >
 
@@ -105,6 +114,7 @@ class DesktopContainer extends Component {
                 </Button>
               </Menu.Item>
             </Menu>
+            <LandingHero />
           </Segment>
         </Visibility>
         {children}

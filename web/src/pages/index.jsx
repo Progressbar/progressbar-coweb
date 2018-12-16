@@ -1,9 +1,9 @@
 import React from "react";
 import Helmet from "react-helmet";
 import { Button, Segment, Grid, Header, Image, Container, Divider, List } from 'semantic-ui-react';
-
 import LandingPageLayout from "../layouts/LandingPageLayout";
 import SEO from "../components/SEO/SEO";
+import IgFeed from "../components/IgFeed/IgFeed";
 import config from "../../data/SiteConfig";
 import 'semantic-ui-css/semantic.min.css';
 
@@ -64,6 +64,10 @@ class Index extends React.Component {
               </Grid.Column>
             </Grid.Row>
           </Grid>
+        </Segment>
+
+        <Segment style={{ padding: '0em' }} vertical>
+          <IgFeed count={8} />
         </Segment>
 
         <Segment style={{ padding: '8em 0em' }} vertical>
