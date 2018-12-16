@@ -6,39 +6,47 @@ import {
   Header,
   Icon,
 } from "semantic-ui-react";
+import styled from "styled-components";
+import config from "../../../data/SiteConfig";
 
-const HomepageHeading = ({ mobile }) => (
-  <Container text>
-    <Header
-      as='h1'
-      content='Imagine-a-Company'
-      inverted
-      style={{
-        fontSize: mobile ? '2em' : '4em',
-        fontWeight: 'normal',
-        marginBottom: 0,
-        marginTop: mobile ? '1.5em' : '3em',
-      }}
-    />
-    <Header
-      as='h2'
-      content='Do whatever you want when you want to.'
-      inverted
-      style={{
-        fontSize: mobile ? '1.5em' : '1.7em',
-        fontWeight: 'normal',
-        marginTop: mobile ? '0.5em' : '1.5em',
-      }}
-    />
-    <Button primary size='huge'>
-      Get Started
-      <Icon name='right arrow' />
-    </Button>
-  </Container>
+const LandingHeroWrapper = styled.div`
+  background: linear-gradient(${Object.values(config.designTokens).join(',')});
+`
+
+const LandingHero = ({ mobile }) => (
+  <LandingHeroWrapper>
+    <Container text>
+      <Header
+        as='h1'
+        content='Progressbar'
+        // inverted
+        style={{
+          fontSize: mobile ? '2em' : '4em',
+          fontWeight: 'normal',
+          marginBottom: 0,
+          paddingTop: mobile ? '1.5em' : '3em',
+        }}
+      />
+      <Header
+        as='h2'
+        content='Your new favorite coworking, hackerspace & hangout zone in downtown Bratislava.'
+        // inverted
+        style={{
+          fontSize: mobile ? '1.5em' : '1.7em',
+          fontWeight: 'normal',
+          marginTop: mobile ? '0.5em' : '1.5em',
+        }}
+      />
+      <Button primary size='huge'>
+        Join
+        <Icon name='right arrow' />
+      </Button>
+    </Container>
+  </LandingHeroWrapper>
 )
 
-HomepageHeading.propTypes = {
+LandingHero.propTypes = {
   mobile: PropTypes.bool,
 }
 
-export default HomepageHeading;
+export default LandingHero;
