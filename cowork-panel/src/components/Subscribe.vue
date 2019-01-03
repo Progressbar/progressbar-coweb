@@ -5,7 +5,6 @@
       <a href="./#/order" class="button is-warning is-large is-outlined">{{ this.button.order }}</a>
     </div>
   </div>
-
   <div class="tile is-ancestor">
     <div class="tile is-parent is-4">
       <article class="tile is-child notification is-black">
@@ -135,7 +134,7 @@
     <div class="tile is-parent is-6">
       <article class="tile is-child notification is-black">
         <div class="content">
-          <p class="title">Our members are ~ 😎</p>
+          <p class="title">Our members are ~ 👩‍🎤👩‍🔬🦸‍♀️🧙‍♀️👩‍🚀</p>
           <div class="content">
             <ul>
               <li>
