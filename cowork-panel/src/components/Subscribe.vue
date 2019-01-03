@@ -10,10 +10,10 @@
     <div class="tile is-parent is-4">
       <article class="tile is-child notification is-black">
         <div class="content">
-          <p class="title">📅 Events</p>
-          <p class="subtitle">WIP waiting for omaksi</p>
+          <p class="title">💻 Space</p>
           <div class="content">
-            <!-- Content -->
+            <img src="/static/img/meetingroom/IMG_0963.jpg" alt="cowork bratislava meeting room">
+            <img src="/static/img/IMG_1939.jpg" alt="progressbar cowork bratislava blockchain">
           </div>
         </div>
       </article>
@@ -23,11 +23,11 @@
         <div class="tile is-parent is-vertical">
           <article class="tile is-child notification is-black">
             <p class="title">🧠 Coworking</p>
-            <p class="subtitle">Located in downtown Bratislava. We accept Bitcoin, Ethereum & Litecoin!</p>
+            <p class="subtitle">Located in downtown Bratislava. We accept Bitcoin & Ethereum</p>
             <div class="content">
               <p>🤝 Meeting room and a call room (todo internal link)</p>
-              <p>👀 Your <router-link to="/view">view</router-link></p>
-              <p>⚡️ We have fast internet <a href="http://www.speedtest.net/result/7179888517" target="_blank">(~250/20)</a>, shared monitors and standing desks</p>
+              <!-- <p>👀 Your <router-link to="/view">view</router-link></p> -->
+              <p>⚡️ We have fast internet <a href="http://www.speedtest.net/result/7179888517" target="_blank">( 250/20 )</a>, shared 🖥 monitors and standing desks</p>
               <p>❤️ Special offers for minorities</p>
               <p>🎶 Chromecast for projector and music</p>
               <p>💪 <a href="https://www.instagram.com/p/Bn5zmzJAa01/" target="_blank">Pull-up bar</a></p>
@@ -43,13 +43,13 @@
           <div class="content">
             <p>🍵 Tea (Matcha as well)</p>
             <p>
-              🍼 Bottled and cooled drinks such as
+              🍻 Bottled and cooled drinks such as
               <span v-for="item in bottledDrinks" :key="item.name">
                 {{item.name}}
               </span>
             </p>
             <p>
-              ☕️ Specialty Coffee (black.xyz) and also coffee machine and frenchpress
+              ☕️ Specialty Coffee and also coffee machine and frenchpress
             </p>
           </div>
         </article>
@@ -82,10 +82,10 @@
 
   <div class="columns is-centered">
     <div class="column is-narrow contains-iframe-to-center">
-      <iframe src="https://www.google.com/maps/embed?pb=!4v1521036389001!6m8!1m7!1sCAoSLEFGMVFpcE5VUktvSEtOdUtjRmZ2dHliRm95c0F2dHNRODcwaGhHRUd4eXFo!2m2!1d48.144557!2d17.1154906!3f0.9038775948851594!4f-3.1346220537675435!5f0.7820865974627469" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!4v1546547760126!6m8!1m7!1sCAoSLEFGMVFpcE9WZ1JUNXhuUUx3NnV0SzFnR3IzWlFpcldQaGNhS3hmaEdpc1Zt!2m2!1d48.14473611111111!2d17.11536388888889!3f322.7183538152532!4f-11.882300608251754!5f0.7820865974627469" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
     <div class="column is-narrow contains-iframe-to-center">
-      <iframe src="https://www.google.com/maps/embed?pb=!4v1520687181290!6m8!1m7!1sCAoSLEFGMVFpcE5DTFo1VDhUcXI3QkUtYjd2N2ZySmZWMGp4QjU2Y2poNC1qWXVW!2m2!1d48.144557!2d17.1154906!3f93.6033215859847!4f-8.0060330138093!5f0.7820865974627469" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!4v1546547834133!6m8!1m7!1sCAoSLEFGMVFpcFBGblRPNWdUbS1ZV1pLbjZzcE1HM3dFV0puVktQTVJNdWt0SmJn!2m2!1d48.14473611111111!2d17.11536666666667!3f1.0207673756391027!4f-13.53252497058756!5f0.7820865974627469" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
   </div>
 
@@ -94,7 +94,7 @@
       <img src="/static/img/wide.jpg" alt="progressbar technology cowork bratislava">
     </div>
     <div class="column is-6">
-      <img src="/static/img/IMG_20180321_181247_HDR.jpg" alt="progressbar cowork bratislava blockchain meetup">
+      <img src="/static/img/IMG_1951.jpg" alt="progressbar cowork bratislava blockchain meetup">
     </div>
   </div>
 
