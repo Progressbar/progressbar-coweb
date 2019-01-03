@@ -6,9 +6,12 @@
         <h1 class="title has-text-grey-light">
           Space for Rent & Events
         </h1>
-        <img src="/static/img/IMG_20180324_092514_HDR.jpg" alt="nodeschool bratislava women edition" />
+        <img src="/static/img/IMG_1023.jpg" alt="meetup space in bratislava downtown" />
+        <img src="/static/img/IMG_1012.jpg" alt="meetup space in bratislava downtown" />
+
         <p class="has-text-grey-light" v-for="line of content">{{line}}</p>
         <img src="/static/img/PANO_20180324_103055.jpg" alt="nodeschool bratislava women edition" />
+        <img src="/static/img/IMG_20180324_092514_HDR.jpg" alt="nodeschool bratislava women edition" />
       </div>
     </div>
   </div>
@@ -24,8 +27,8 @@
           </p>
           <p>
             <blockquote class="quote-to-include-in-event has-text-grey-light">
-              You can support Progressbar through <a class="quote-link" href="https://donate.progressbar.sk" target="_blank">https://donate.progressbar.sk</a>,
-              and check their cowork through <a class="quote-link" href="https://progressbar.sk">https://progressbar.sk</a>
+              🌈 You can support Progressbar through <a class="quote-link" href="https://donate.progressbar.sk" target="_blank">https://donate.progressbar.sk</a>
+              and check their cowork in downtown <a class="quote-link" href="https://cowork.progressbar.sk">https://cowork.progressbar.sk</a>
             </blockquote>
           </p>
         </li>
@@ -45,31 +48,33 @@
       <ul class="has-text-grey-light">
         <li>
           <p>
-            we have for you fullHD (1080p) projector w/ HDMI and Chromecast
+            We have for you fullHD (1080p) projector w/ HDMI and Chromecast
           </p>
         </li>
         <li>
           <p>
-            we have 🗣🎤 headmicrophone and 🎤 hand microphone with mix (Bluetooh input)
+            We have 🗣🎤 head microphone and 🎤 hand microphone with mixpult (Bluetooh input)
           </p>
         </li>
         <li>
           <p>
-            we have 2x 1000W 🔊💥🙉
+            We have video recording equipment for livestream
           </p>
         </li>
         <li>
           <p>
-            for chill we have ChromeCast Audio (play directly your Spotify playlist)
+            We have 2x 1000W 🔊💥🙉
           </p>
         </li>
         <li>
           <p>
-            we have 30 IKEA wooden foldable chairs, 25 office chairs, 10 other various chairs. We can scale up to 70 sitting spots
+            For chill we have ChromeCast Audio (play directly your Spotify playlist)
           </p>
         </li>
         <li>
-          <s>sitting on podium for 20 people</s> (not done yet)
+          <p>
+            We have 30 IKEA wooden foldable chairs, 25 office chairs, 10 other various chairs. We can scale up to 70 sitting spots
+          </p>
         </li>
       </ul>
     </div>
@@ -89,7 +94,7 @@ export default {
         As a non-profit that cares about technology, we try to incentivize tech communities in Bratislava, by allowing them to use the venue for free for their events.
         As a non-profit that needs to pay rent and bills, we also need funding! Any donations are welcome. Without donations, we won't be able too keep the familiar hackerspace spirit a lot of people in Bratislava are seeking, and offer these kinds of services
 
-        Our suggestion is a voluntary donation of 20-60€ for every evening, depending on what you/your community can afford and how much you'll be using the space
+        Our suggestion is a voluntary donation of 60€-100€ for every evening, depending on what you/your community can afford and how much you'll be using the space
         Thanks for the help!
       `
       .trim()

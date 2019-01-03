@@ -26,7 +26,6 @@
         <div class="content">
           <p class="title">Meeting room</p>
           <div class="content">
-            <p>⏰ Not during events</p>
             <p>Glass sealed</p>
             <p>10 chairs</p>
             <p>Whiteboard</p>
