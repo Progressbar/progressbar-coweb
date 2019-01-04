@@ -1,10 +1,10 @@
 <template>
 <div class="offer">
   <div class="tile is-ancestor">
-    <div class="tile is-parent is-size-3">
+    <div class="tile is-parent is-size-4">
       <article class="tile is-child notification is-black">
         <div class="content">
-          <p class="title">Weekpass</p>
+          <p class="title is-size-4">Weekpass</p>
           <div class="content">
             <p>⏰  {{ openHours.dayPass.start }} - {{ openHours.dayPass.end }}</p>
             <p>Hotdesk ♨️</p>
@@ -17,10 +17,10 @@
           </div>
       </article>
     </div>
-    <div class="tile is-parent is-size-3">
+    <div class="tile is-parent is-size-4">
       <article class="tile is-child notification is-black">
         <div class="content">
-          <p class="title">Flex (30 days)</p>
+          <p class="title is-size-4">Flex</p>
           <div class="content">
             <p>⏰  {{ openHours.monthPass.start }} - {{ openHours.monthPass.end }}</p>
             <p>Hotdesk ♨️</p>
@@ -33,10 +33,10 @@
           </div>
       </article>
     </div>
-    <div class="tile is-parent is-size-3">
+    <div class="tile is-parent is-size-4">
       <article class="tile is-child notification is-black">
         <div class="content">
-          <p class="title">Fixdesk</p>
+          <p class="title is-size-4">Fixdesk</p>
           <div class="content">
             <p>🌃 24/7</p>
             <p>Dedicated desk & chair</p>
@@ -52,10 +52,10 @@
 
       </article>
     </div>
-    <div class="tile is-parent is-size-3">
+    <div class="tile is-parent is-size-4">
       <article class="tile is-child notification is-black">
         <div class="content">
-          <p class="title">🤝 Meeting room</p>
+          <p class="title is-size-4">🤝 Meeting room</p>
           <div class="content">
             <p>10 chairs</p>
             <p>Acoustically isolated</p>
