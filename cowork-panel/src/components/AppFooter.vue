@@ -5,7 +5,7 @@
       <div class="column is-3">
         <h1>Add us on ❤️</h1>
         <span class="social-icons" v-for="item in socials" :key="item.url">
-          <a :href="item.url" target="_blank">
+          <a :href="item.url" target="_blank" class="social-icon">
             <font-awesome-icon v-if="item.icon" :icon="item.icon" />
           </a>
         </span>
@@ -103,6 +103,14 @@ a:hover {
 a {
   color: hotpink;
 }
+
+a.social-icon {
+  color: white;
+}
+a.social-icon:hover {
+  color: hotpink;
+}
+
 .column h1 {
   font-weight: bold;
   font-size: 1.3rem;

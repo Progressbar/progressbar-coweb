@@ -34,7 +34,7 @@
       </article>
     </div>
     <div class="tile is-parent is-size-4">
-      <article class="tile is-child notification is-black">
+      <article class="tile is-child notification is-highlighted is-black">
         <div class="content">
           <p class="title is-size-4">Fixdesk</p>
           <div class="content">
@@ -140,6 +140,10 @@ article {
 }
 
 .tile article a.button.is-black:hover {
+  background-image: linear-gradient(to right top, #b60cf6, #9316e5, #711ad4, #4c1ac1, #1e19ae);
+}
+
+.is-highlighted {
   background-image: linear-gradient(to right top, #b60cf6, #9316e5, #711ad4, #4c1ac1, #1e19ae);
 }
 
