@@ -1,7 +1,7 @@
 <template>
 <div class="offer">
   <div class="tile is-ancestor">
-    <div class="tile is-parent">
+    <div class="tile is-parent is-size-3">
       <article class="tile is-child notification is-black">
         <div class="content">
           <p class="title">Weekpass</p>
@@ -17,7 +17,7 @@
         </div>
       </article>
     </div>
-    <div class="tile is-parent">
+    <div class="tile is-parent is-size-3">
       <article class="tile is-child notification is-black">
         <div class="content">
           <p class="title">Flex (30 days)</p>
@@ -33,7 +33,7 @@
         </div>
       </article>
     </div>
-    <div class="tile is-parent">
+    <div class="tile is-parent is-size-3">
       <article class="tile is-child notification is-black">
         <div class="content">
           <p class="title">Fixdesk</p>
@@ -51,7 +51,7 @@
         </div>
       </article>
     </div>
-    <div class="tile is-parent">
+    <div class="tile is-parent is-size-3">
       <article class="tile is-child notification is-black">
         <div class="content">
           <p class="title">🤝 Meeting room</p>

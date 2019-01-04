@@ -13,39 +13,43 @@
           <div class="content">
             <img src="/static/img/meetingroom/IMG_0963.jpg" alt="cowork bratislava meeting room">
             <img src="/static/img/IMG_1939.jpg" alt="progressbar cowork bratislava blockchain">
+            <img src="/static/img/IMG_1957.jpg" alt="progressbar cowork bratislava blockchain">
           </div>
         </div>
       </article>
     </div>
     <div class="tile is-vertical is-4">
       <div class="tile">
-        <div class="tile is-parent is-vertical">
+        <div class="tile is-parent is-vertical is-size-3">
           <article class="tile is-child notification is-black">
-            <p class="title">🧠 Coworking</p>
-            <p class="subtitle">Located in downtown Bratislava</p>
-            <p class="subtitle">We accept Bitcoin & Ethereum</p>
+            <p class="title is-size-1">🧠 Coworking</p>
             <div class="content">
+              <p>📍 Downtown Bratislava</p>
               <p>🤝 Meeting room for brainstorming and meeting clients</p>
               <p>🤙 Private call room</p></p>
               <!-- <p>👀 Your <router-link to="/view">view</router-link></p> -->
               <p>⚡️  <a href="https://www.speedtest.net/result/7179888517" target="_blank">We have fast internet</a></p>
-              <p>🖥 Shared monitors and standing desks</p>
+              <p>🖥 Shared monitors and </p>
+              <p>👷‍♀️ Standing desks</p>
               <p>🚴‍♀️ Bicycle parking U-rack</p>
               <p>❤️ Special offers for minorities</p>
               <p>🎶 Chromecast for projector and music</p>
               <p>💁‍♀️ On-site support </p>
               <p>🔧 Makerspace</p>
               <p>🏋️‍♂️ <a href="https://www.instagram.com/p/Bn5zmzJAa01/" target="_blank">Pull-up bar for you</a></p>
+              <p>💰 We accept Bitcoin & Ethereum</p>
             </div>
           </article>
         </div>
       </div>
-      <div class="tile is-parent">
+      <div class="tile is-parent is-size-4">
         <article class="tile is-child notification is-black">
-          <p class="title">🥤 Drinks</p>
+          <p class="title is-size-1">🥤 Drinks</p>
           <!-- <p class="subtitle">Aligned with the right tile</p> -->
           <div class="content">
-            <p>🍵 Tea (Matcha as well)</p>
+            <p>
+              🍵 Tea (Matcha as well)
+            </p>
             <p>
               🍻 Bottled and cooled drinks such as
               <span v-for="item in bottledDrinks" :key="item.name">
@@ -137,17 +141,23 @@
       </article>
     </div>
     <div class="tile is-parent is-6">
-      <article class="tile is-child notification is-black">
+      <article class="tile is-child notification is-black is-size-4">
         <div class="content">
-          <p class="title">Our members are ~ 👩‍🎤👩‍🔬🦸‍♀️🧙‍♀️👩‍🚀</p>
+          <p class="title">Our members are 🧝‍♀️👩‍🎨👩‍🎤👩‍🔬🧙‍♀️👩‍🚀</p>
           <div class="content">
             <ul>
               <li>
                 Blockchain startups
               </li>
-              <li>Decentralization technology specialists</li>
-              <li>Cryptocurrency techies & fanatics</li>
-              <li>Teachers, educators</li>
+              <li>
+                Decentralization technology specialists
+              </li>
+              <li>
+                Cryptocurrency techies & fanatics
+              </li>
+              <li>
+                Teachers, educators
+              </li>
               <li>
                 Backend & Frontend developers
               </li>
@@ -163,7 +173,9 @@
               <li>
                 Cyberpunks & Cypherpunks
               </li>
-              <li>DIYBio supporters</li>
+              <li>
+                DIYBio supporters
+              </li>
             </ul>
           </div>
         </div>
