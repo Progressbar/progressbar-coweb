@@ -94,7 +94,7 @@ export default {
         As a non-profit that cares about technology, we try to incentivize tech communities in Bratislava, by allowing them to use the venue for free for their events.
         As a non-profit that needs to pay rent and bills, we also need funding! Any donations are welcome. Without donations, we won't be able too keep the familiar hackerspace spirit a lot of people in Bratislava are seeking, and offer these kinds of services
 
-        Our suggestion is a voluntary donation of 60€-100€ for every evening, depending on what you/your community can afford and how much you'll be using the space
+        Our suggestion is a voluntary donation of 100€-160€ for every evening, depending on what you/your community can afford and how much you'll be using the space
         Thanks for the help!
       `
       .trim()
