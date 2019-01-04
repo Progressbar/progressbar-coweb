@@ -27,7 +27,7 @@
         v-bind:class="{ 'is-active': showNav }"
       >
         <div class="navbar-end">
-          <div class="navbar-item">
+          <div class="navbar-item is-size-4">
             <a
               :href="href.eventsfb"
               target="_blank"
@@ -35,19 +35,19 @@
           </div>
           <router-link
               tag="div"
-              class="navbar-item"
+              class="navbar-item is-size-4"
               exact-active-class="is-active"
               to="/space-for-rent">
             Rent our space
           </router-link>
           <router-link
               tag="div"
-              class="navbar-item"
+              class="navbar-item is-size-4"
               exact-active-class="is-active"
               to="/meeting-room-cowork-bratislava">
             Meeting Room
           </router-link>
-          <div class="navbar-item">
+          <div class="navbar-item is-size-4">
             <a
               :href="href.coworkgroup"
               target="_blank">Telegram</a>
@@ -55,20 +55,20 @@
           <div v-bind:class="{ 'is-active': MiscButtonIsActive }" class="navbar-item has-dropdown">
             <a
               @click='MiscButtonToggle()'
-              class="navbar-link"
+              class="navbar-link is-size-4"
             >
               Others
             </a>
             <div class="navbar-dropdown is-right">
-              <a class="dropdown-item" :href="href.donate" target="_blank">💰 Donate to Progressbar</a>
-              <router-link class="dropdown-item" to="/running-costs" @click.native="toggleNav()">📒 Running costs</router-link>
-              <router-link class="dropdown-item" to="/venue" @click.native="toggleNav()">👽 Venue</router-link>
-              <router-link class="dropdown-item" to="/sponsors" @click.native="toggleNav()">😇 Sponsors</router-link>
-              <router-link class="dropdown-item" to="/call-for-the-sponsors" @click.native="toggleNav()">🌈 Call for the Sponsors</router-link>
-              <router-link class="dropdown-item" to="/call-for-a-host" @click.native="toggleNav()">💜 Call for a Angel</router-link>
+              <a class="dropdown-item is-size-4" :href="href.donate" target="_blank">💰 Donate to Progressbar</a>
+              <router-link class="dropdown-item is-size-4" to="/running-costs" @click.native="toggleNav()">📒 Running costs</router-link>
+              <router-link class="dropdown-item is-size-4" to="/venue" @click.native="toggleNav()">👽 Venue</router-link>
+              <router-link class="dropdown-item is-size-4" to="/sponsors" @click.native="toggleNav()">😇 Sponsors</router-link>
+              <router-link class="dropdown-item is-size-4" to="/call-for-the-sponsors" @click.native="toggleNav()">🌈 Call for the Sponsors</router-link>
+              <router-link class="dropdown-item is-size-4" to="/call-for-a-host" @click.native="toggleNav()">💜 Call for an Angel</router-link>
               <hr class="navbar-divider">
-              <a class="dropdown-item" :href="href.fixdesk" target="_blank">👀 360 Fixdesk</a>
-              <a class="dropdown-item" :href="href.eventspace" target="_blank">👀 360 Eventspace</a>
+              <a class="dropdown-item is-size-4" :href="href.fixdesk" target="_blank">👀 360 Fixdesk</a>
+              <a class="dropdown-item is-size-4" :href="href.eventspace" target="_blank">👀 360 Eventspace</a>
             </div>
           </div>
         </div>

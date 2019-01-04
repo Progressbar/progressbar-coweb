@@ -24,12 +24,12 @@
           <article class="tile is-child notification is-black">
             <p class="title is-size-1">🧠 Coworking</p>
             <div class="content">
-              <p>📍 Downtown Bratislava</p>
+              <p>📍 Downtown, Bratislava</p>
               <p>🤝 Meeting room for brainstorming and meeting clients</p>
               <p>🤙 Private call room</p></p>
               <!-- <p>👀 Your <router-link to="/view">view</router-link></p> -->
               <p>⚡️  <a href="https://www.speedtest.net/result/7179888517" target="_blank">We have fast internet</a></p>
-              <p>🖥 Shared monitors and </p>
+              <p>🖥 Shared monitors</p>
               <p>👷‍♀️ Standing desks</p>
               <p>🚴‍♀️ Bicycle parking U-rack</p>
               <p>❤️ Special offers for minorities</p>
