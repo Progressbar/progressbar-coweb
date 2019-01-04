@@ -88,7 +88,7 @@
 
   <h1 class="section-title title has-text-white has-text-centered">📸 Look inside</h1>
 
-  <div class="columns">
+  <div class="columns is-centered">
     <div class="column is-6 contains-iframe-to-center">
       <iframe src="https://www.google.com/maps/embed?pb=!4v1546547834133!6m8!1m7!1sCAoSLEFGMVFpcFBGblRPNWdUbS1ZV1pLbjZzcE1HM3dFV0puVktQTVJNdWt0SmJn!2m2!1d48.14473611111111!2d17.11536666666667!3f1.0207673756391027!4f-13.53252497058756!5f0.7820865974627469" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
