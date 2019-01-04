@@ -24,9 +24,9 @@
   <div class="tile is-parent">
     <article class="tile is-child notification is-black">
         <div class="content">
-          <p class="title">Meeting room</p>
+          <p class="title">🤝 Meeting room</p>
           <div class="content">
-            <p>⏰ Not during events</p>
+            <p>Perfect for brainstorming and meeting clients</p>
             <p>Glass sealed</p>
             <p>10 chairs</p>
             <p>Whiteboard</p>
@@ -79,7 +79,7 @@ export default {
         fixdesk: 180,
         locker: 10,
         nonstop: 20,
-        meetingRoom: 5,
+        meetingRoom: 10,
       },
       seats: {
         subscribers: 0,

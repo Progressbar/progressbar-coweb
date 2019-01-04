@@ -1,31 +1,31 @@
 <template>
 <div class="offer">
   <div class="tile is-ancestor">
-    <div class="tile is-parent">
+    <div class="tile is-parent is-size-3">
       <article class="tile is-child notification is-black">
         <div class="content">
-          <p class="title">Daypass</p>
+          <p class="title">Weekpass</p>
           <div class="content">
             <p>⏰  {{ openHours.dayPass.start }} - {{ openHours.dayPass.end }}</p>
             <p>Hotdesk ♨️</p>
-            <p>First takes</p>
+            <p>Great for try out</p>
             <p>Enjoy insider view</p>
           </div>
         </div>
           <div class="">
-            <router-link class="button is-black is-block is-large" to="/membership">{{ orderPrices.day }}€ / day</router-link>
+            <router-link class="button is-black is-block is-large" to="/membership">{{ orderPrices.week }}€ / week</router-link>
           </div>
       </article>
     </div>
-    <div class="tile is-parent">
+    <div class="tile is-parent is-size-3">
       <article class="tile is-child notification is-black">
         <div class="content">
           <p class="title">Flex (30 days)</p>
           <div class="content">
             <p>⏰  {{ openHours.monthPass.start }} - {{ openHours.monthPass.end }}</p>
             <p>Hotdesk ♨️</p>
-            <p>Save money</p>
-            <p>Support us even when you're not in the space ❤️</p>
+            <p>Any available desk in Flexi area</p>
+            <p>Support us remotely 💞</p>
           </div>
         </div>
           <div class="">
@@ -33,15 +33,17 @@
           </div>
       </article>
     </div>
-    <div class="tile is-parent">
+    <div class="tile is-parent is-size-3">
       <article class="tile is-child notification is-black">
         <div class="content">
           <p class="title">Fixdesk</p>
           <div class="content">
-            <p>⏰ {{ openHours.fixdesk.start }} - {{ openHours.fixdesk.end }}</p>
+            <p>🌃 24/7</p>
+            <p>Dedicated desk & chair</p>
+            <p>Unlimited meeting room hours</p>
             <p>180cm long desk</p>
-            <p>Enjoy window <router-link to="/view">view</router-link>!</p>
-            <p>Tip: use <router-link to="/membership">24/7 addon</router-link></p>
+            <!-- <p>⏰ {{ openHours.fixdesk.start }} - {{ openHours.fixdesk.end }}</p> -->
+            <!-- <p>Enjoy window <router-link to="/view">view</router-link>!</p> -->
           </div>
         </div>
           <div class="">
@@ -50,35 +52,19 @@
 
       </article>
     </div>
-    <div class="tile is-parent">
+    <div class="tile is-parent is-size-3">
       <article class="tile is-child notification is-black">
         <div class="content">
-          <p class="title">Meeting room</p>
+          <p class="title">🤝 Meeting room</p>
           <div class="content">
-            <p>⏰ Not during events</p>
-            <p>Glass sealed</p>
             <p>10 chairs</p>
+            <p>Acoustically isolated</p>
+            <p>📽 Projector</p>
             <p>Whiteboard</p>
-            <p>Projector</p>
           </div>
         </div>
           <div class="btn-container">
             <router-link class="button is-black is-block is-large" to="/membership">{{ orderPrices.meetingRoom }}€ / hour</router-link>
-          </div>
-      </article>
-    </div>
-    <div class="tile is-parent">
-      <article class="tile is-child notification is-black">
-        <div class="content">
-          <p class="title">24/7 addon</p>
-          <div class="content">
-            <p>Work any 🕙</p>
-            <p>Play your own music</p>
-            <p>Be part of internal events!</p>
-          </div>
-        </div>
-          <div class="">
-            <router-link class="button is-black is-block is-large" to="/membership">{{ orderPrices.nonstop}}€ / month</router-link>
           </div>
       </article>
     </div>
@@ -92,12 +78,10 @@ export default {
   data() {
     return {
       orderPrices: {
-        day: 8,
-        month: 100,
-        fixdesk: 180,
-        locker: 10,
-        nonstop: 20,
-        meetingRoom: 5,
+        week: 50,
+        month: 120,
+        fixdesk: 200,
+        meetingRoom: 10,
       },
       openHours: {
         monthPass: {

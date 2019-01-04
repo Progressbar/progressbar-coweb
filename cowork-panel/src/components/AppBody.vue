@@ -15,11 +15,10 @@
             <div class="column">
               <div class="content has-text-centered">
                 <p>
-                  <router-link
+                  <a
                     class="button is-black is-large is-uppercase has-text-weight-bold"
-                    to="/membership">
-                    Join our coworking 🔥
-                  </router-link>
+                    href="https://t.me/coworkprogressbar"
+                    target="_blank">Join our coworking 🔥</a>
                 </p>
                 <p>
                   <router-link
@@ -29,11 +28,11 @@
                   </router-link>
                 </p>
                 <p>
-                  <router-link
+                  <a
                     class="button is-black is-large"
-                    to="/events">
-                    Upcoming events 📅
-                  </router-link>
+                    href="https://www.facebook.com/progressbar/events"
+                    target="_blank"
+                  >Upcoming events 📅</a>
                 </p>
               </div>
             </div>
