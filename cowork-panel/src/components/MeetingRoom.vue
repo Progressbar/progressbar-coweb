@@ -78,7 +78,7 @@ export default {
         fixdesk: 180,
         locker: 10,
         nonstop: 20,
-        meetingRoom: 5,
+        meetingRoom: 10,
       },
       seats: {
         subscribers: 0,
