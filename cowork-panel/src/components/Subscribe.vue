@@ -24,13 +24,17 @@
             <p class="title">🧠 Coworking</p>
             <p class="subtitle">Located in downtown Bratislava. We accept Bitcoin & Ethereum</p>
             <div class="content">
-              <p>🤝 Meeting room and a call room (todo internal link)</p>
+              <p>🤝 Meeting room for brainstorming and meeting clients</p>
+              <p>🤙 Private call room</p></p>
               <!-- <p>👀 Your <router-link to="/view">view</router-link></p> -->
-              <p>⚡️ We have fast internet <a href="http://www.speedtest.net/result/7179888517" target="_blank">( 250/20 )</a>, shared 🖥 monitors and standing desks</p>
+              <p>⚡️  <a href="http://www.speedtest.net/result/7179888517" target="_blank">We have fast internet</a></p>
+              <p>🖥 Shared monitors and standing desks</p>
+              <p>🚴‍♀️ Bicycle parking U-rack</p>
               <p>❤️ Special offers for minorities</p>
               <p>🎶 Chromecast for projector and music</p>
-              <p>💪 <a href="https://www.instagram.com/p/Bn5zmzJAa01/" target="_blank">Pull-up bar</a></p>
+              <p>💁‍♀️ On-site support </p>
               <p>🔧 Makerspace</p>
+              <p>💪 <a href="https://www.instagram.com/p/Bn5zmzJAa01/" target="_blank">Pull-up bar for you</a></p>
             </div>
           </article>
         </div>

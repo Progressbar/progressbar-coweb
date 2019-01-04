@@ -24,8 +24,9 @@
   <div class="tile is-parent">
     <article class="tile is-child notification is-black">
         <div class="content">
-          <p class="title">Meeting room</p>
+          <p class="title">🤝 Meeting room</p>
           <div class="content">
+            <p>Perfect for brainstorming and meeting clients</p>
             <p>Glass sealed</p>
             <p>10 chairs</p>
             <p>Whiteboard</p>
