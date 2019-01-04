@@ -78,10 +78,8 @@ export default {
     return {
       orderPrices: {
         week: 50,
-        month: 100,
-        fixdesk: 180,
-        locker: 10,
-        nonstop: 20,
+        month: 120,
+        fixdesk: 200,
         meetingRoom: 10,
       },
       openHours: {

@@ -78,18 +78,18 @@
     </div>
   </div>
 
-  <h1 class="section-title title has-text-white has-text-centered">🧠 Coworking</h1>
+  <h1 class="section-title title has-text-white has-text-centered">👩‍💻👨‍💻 Membership</h1>
 
   <Offer />
 
-  <h1 class="section-title title has-text-white has-text-centered">📸 Photos</h1>
+  <h1 class="section-title title has-text-white has-text-centered">📸 Look inside</h1>
 
   <div class="columns is-centered">
     <div class="column is-narrow contains-iframe-to-center">
-      <iframe src="https://www.google.com/maps/embed?pb=!4v1546547760126!6m8!1m7!1sCAoSLEFGMVFpcE9WZ1JUNXhuUUx3NnV0SzFnR3IzWlFpcldQaGNhS3hmaEdpc1Zt!2m2!1d48.14473611111111!2d17.11536388888889!3f322.7183538152532!4f-11.882300608251754!5f0.7820865974627469" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!4v1546547834133!6m8!1m7!1sCAoSLEFGMVFpcFBGblRPNWdUbS1ZV1pLbjZzcE1HM3dFV0puVktQTVJNdWt0SmJn!2m2!1d48.14473611111111!2d17.11536666666667!3f1.0207673756391027!4f-13.53252497058756!5f0.7820865974627469" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
     <div class="column is-narrow contains-iframe-to-center">
-      <iframe src="https://www.google.com/maps/embed?pb=!4v1546547834133!6m8!1m7!1sCAoSLEFGMVFpcFBGblRPNWdUbS1ZV1pLbjZzcE1HM3dFV0puVktQTVJNdWt0SmJn!2m2!1d48.14473611111111!2d17.11536666666667!3f1.0207673756391027!4f-13.53252497058756!5f0.7820865974627469" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!4v1546547760126!6m8!1m7!1sCAoSLEFGMVFpcE9WZ1JUNXhuUUx3NnV0SzFnR3IzWlFpcldQaGNhS3hmaEdpc1Zt!2m2!1d48.14473611111111!2d17.11536388888889!3f322.7183538152532!4f-11.882300608251754!5f0.7820865974627469" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
   </div>
 
