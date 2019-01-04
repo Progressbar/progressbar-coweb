@@ -56,10 +56,10 @@
         <div class="content">
           <p class="title">🤝 Meeting room</p>
           <div class="content">
-            <p>Glass sealed</p>
             <p>10 chairs</p>
-            <p>Whiteboard</p>
+            <p>Acoustically isolated</p>
             <p>📽 Projector</p>
+            <p>Whiteboard</p>
           </div>
           <div class="btn-container">
             <router-link class="button is-black is-block is-large" to="/membership">{{ orderPrices.meetingRoom }}€ / hour</router-link>

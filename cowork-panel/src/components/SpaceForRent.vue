@@ -2,7 +2,7 @@
 <div class="SpaceForRent">
   <div class="container is-fluid">
     <div class="columns is-centered">
-      <div class="column is-6 content">
+      <div class="column is-8 content">
         <h1 class="title has-text-grey-light">
           Space for Rent & Events
         </h1>
@@ -16,7 +16,7 @@
     </div>
   </div>
   <div class="columns is-centered">
-    <div class="column is-6 content">
+    <div class="column is-8 content">
       <h1 class="title has-text-grey-light">
         If you're organizing an event in our space
       </h1>
@@ -41,7 +41,7 @@
     </div>
   </div>
   <div class="columns is-centered">
-    <div class="column is-6 content">
+    <div class="column is-8 content">
       <h1 class="title has-text-grey-light">
         Equipment in our space for your event
       </h1>

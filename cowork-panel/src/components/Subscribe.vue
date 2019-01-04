@@ -6,10 +6,10 @@
     </div>
   </div>
   <div class="tile is-ancestor">
-    <div class="tile is-parent is-4">
+    <div class="tile is-parent is-8">
       <article class="tile is-child notification is-black">
         <div class="content">
-          <p class="title">💻 Space</p>
+          <p class="title">👩‍💻👨‍💻 Work Space</p>
           <div class="content">
             <img src="/static/img/meetingroom/IMG_0963.jpg" alt="cowork bratislava meeting room">
             <img src="/static/img/IMG_1939.jpg" alt="progressbar cowork bratislava blockchain">
@@ -17,24 +17,25 @@
         </div>
       </article>
     </div>
-    <div class="tile is-vertical is-8">
+    <div class="tile is-vertical is-4">
       <div class="tile">
         <div class="tile is-parent is-vertical">
           <article class="tile is-child notification is-black">
             <p class="title">🧠 Coworking</p>
-            <p class="subtitle">Located in downtown Bratislava. We accept Bitcoin & Ethereum</p>
+            <p class="subtitle">Located in downtown Bratislava</p>
+            <p class="subtitle">We accept Bitcoin & Ethereum</p>
             <div class="content">
               <p>🤝 Meeting room for brainstorming and meeting clients</p>
               <p>🤙 Private call room</p></p>
               <!-- <p>👀 Your <router-link to="/view">view</router-link></p> -->
-              <p>⚡️  <a href="http://www.speedtest.net/result/7179888517" target="_blank">We have fast internet</a></p>
+              <p>⚡️  <a href="https://www.speedtest.net/result/7179888517" target="_blank">We have fast internet</a></p>
               <p>🖥 Shared monitors and standing desks</p>
               <p>🚴‍♀️ Bicycle parking U-rack</p>
               <p>❤️ Special offers for minorities</p>
               <p>🎶 Chromecast for projector and music</p>
               <p>💁‍♀️ On-site support </p>
               <p>🔧 Makerspace</p>
-              <p>💪 <a href="https://www.instagram.com/p/Bn5zmzJAa01/" target="_blank">Pull-up bar for you</a></p>
+              <p>🏋️‍♂️ <a href="https://www.instagram.com/p/Bn5zmzJAa01/" target="_blank">Pull-up bar for you</a></p>
             </div>
           </article>
         </div>
