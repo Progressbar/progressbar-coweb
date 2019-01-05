@@ -44,7 +44,8 @@
 
   img {
     height: 22em !important;
-    width: 22em !important;
     margin: 1em;
+    object-fit: cover;
+    width: 22em !important;
   }
 </style>
