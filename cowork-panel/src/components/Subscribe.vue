@@ -26,7 +26,7 @@
             <div class="content">
               <p>📍 Downtown, Bratislava</p>
               <p>🤝 Meeting room for brainstorming and meeting clients</p>
-              <p>🤙 Private call room</p></p>
+              <p>🤙 Private call room</p>
               <!-- <p>👀 Your <router-link to="/view">view</router-link></p> -->
               <p>⚡️  <a href="https://www.speedtest.net/result/7179888517" target="_blank">We have fast internet</a></p>
               <p>🖥 Shared monitors</p>
@@ -341,7 +341,7 @@ h2#blackh2 {
 }
 
 iframe {
-  width: 41vw;
+  width: 100%;
 }
 
 @media only screen and (max-width: 768px) {
