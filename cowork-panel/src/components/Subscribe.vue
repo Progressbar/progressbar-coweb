@@ -26,7 +26,7 @@
             <div class="content">
               <p>📍 Downtown, Bratislava</p>
               <p>🤝 Meeting room for brainstorming and meeting clients</p>
-              <p>🤙 Private call room</p></p>
+              <p>🤙 Private call room</p>
               <!-- <p>👀 Your <router-link to="/view">view</router-link></p> -->
               <p>⚡️  <a href="https://www.speedtest.net/result/7179888517" target="_blank">We have fast internet</a></p>
               <p>🖥 Shared monitors</p>
@@ -96,7 +96,6 @@
       <iframe src="https://www.google.com/maps/embed?pb=!4v1546547760126!6m8!1m7!1sCAoSLEFGMVFpcE9WZ1JUNXhuUUx3NnV0SzFnR3IzWlFpcldQaGNhS3hmaEdpc1Zt!2m2!1d48.14473611111111!2d17.11536388888889!3f322.7183538152532!4f-11.882300608251754!5f0.7820865974627469" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
   </div>
-
   <div class="columns">
     <div class="column is-parent is-8">
       <img src="/static/img/wide.jpg" alt="progressbar technology cowork bratislava">
@@ -160,7 +159,7 @@
       </article>
     </div>
   </div>
-
+  <InstagramFeed />
   <cookie-law
     transitionName="fade"
     position="bottom"
@@ -174,6 +173,7 @@
 import axios from "axios";
 import CookieLaw from "vue-cookie-law";
 import Offer from "./Offer.vue";
+import InstagramFeed from './InstagramFeed';
 
 export default {
   name: "subscribe",
@@ -230,6 +230,7 @@ export default {
     };
   },
   components: {
+    InstagramFeed,
     Offer,
     CookieLaw
   },
@@ -319,7 +320,7 @@ h2#blackh2 {
 }
 
 iframe {
-  width: 41vw;
+  width: 100%;
 }
 
 @media only screen and (max-width: 768px) {
