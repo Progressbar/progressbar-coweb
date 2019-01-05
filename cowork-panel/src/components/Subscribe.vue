@@ -105,8 +105,6 @@
     </div>
   </div>
 
-  <InstagramFeed />
-
   <h1 class="section-title title has-text-white has-text-centered">🐚 About Progressbar</h1>
 
   <div class="tile is-ancestor">
@@ -183,7 +181,7 @@
       </article>
     </div>
   </div>
-
+  <InstagramFeed />
   <cookie-law
     transitionName="fade"
     position="bottom"

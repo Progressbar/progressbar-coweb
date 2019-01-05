@@ -17,7 +17,7 @@
       }
     },
     mounted() {
-      const count = 5;
+      const count = 10;
       const url = `https://wt-4665476769bf9081da4dd878527b9c7d-0.sandbox.auth0-extend.com/pb-web-ig?count=${count}`
       axios({
         method: 'get',
@@ -39,11 +39,13 @@
 <style scoped>
   div.image-holder {
     display: flex;
+    flex-flow: row wrap;
     justify-content: space-between;
   }
 
   img {
     height: 15em !important;
     width: 15em !important;
+    margin: 1em 0;
   }
 </style>
