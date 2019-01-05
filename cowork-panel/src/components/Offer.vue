@@ -13,7 +13,7 @@
           </div>
         </div>
           <div class="">
-            <router-link class="button is-black is-block is-large" to="/membership">{{ orderPrices.week }}€ / week</router-link>
+            <a class="button is-black is-block is-large" :href="href.coworkGroup">{{ orderPrices.week }}€ / week</a>
           </div>
       </article>
     </div>
@@ -29,7 +29,7 @@
           </div>
         </div>
           <div class="">
-            <router-link class="button is-black is-block is-large" to="/membership">{{ orderPrices.month }}€ / month</router-link>
+            <a class="button is-black is-block is-large" :href="href.coworkGroup">{{ orderPrices.month }}€ / month</a>
           </div>
       </article>
     </div>
@@ -47,7 +47,7 @@
           </div>
         </div>
           <div class="">
-            <router-link class="button is-black is-block is-large" to="/membership">{{ orderPrices.fixdesk }}€ / month</router-link>
+            <a class="button is-black is-block is-large" :href="href.coworkGroup">{{ orderPrices.fixdesk }}€ / month</a>
           </div>
 
       </article>
@@ -64,7 +64,7 @@
           </div>
         </div>
           <div class="btn-container">
-            <router-link class="button is-black is-block is-large" to="/membership">{{ orderPrices.meetingRoom }}€ / hour</router-link>
+            <a class="button is-black is-block is-large" :href="href.coworkGroup">{{ orderPrices.meetingRoom }}€ / hour</a>
           </div>
       </article>
     </div>
@@ -77,6 +77,9 @@ export default {
   name: 'offer',
   data() {
     return {
+      href: {
+        coworkGroup: 'https://t.me/coworkprogressbar',
+      },
       orderPrices: {
         week: 50,
         month: 120,
