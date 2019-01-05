@@ -3,7 +3,7 @@
   <div class="container">
     <div class="columns">
       <div class="column is-3">
-        <h1>Add us on ❤️</h1>
+        <h1>Add us on 💜</h1>
         <span class="social-icons" v-for="item in socials" :key="item.url">
           <a :href="item.url" target="_blank" class="social-icon">
             <font-awesome-icon v-if="item.icon" :icon="item.icon" />
@@ -17,6 +17,35 @@
         <p>Slovakia 🇸🇰</p>
         <div v-for="item in mapUrls" :key="item.url">
           <a :href="item.url" target="_blank">{{item.title}}</a>
+        </div>
+      </div>
+      <div class="column is-6">
+        <div class="content">
+        <p class="title has-text-white">🐚 Progressbar narative</p>
+        <ul>
+          <li>
+            We started as <a href="https://progressbar.sk">first Slovak hackerspace</a> back in June 2010,
+            this is our 4th place as we went through expansion and <a href="https://progressbar.sk/calendar">held more than 1000 meetups</a>.
+          </li>
+          <li>
+            In September 2017 we considered to keep up our 💸 cashflow & our existence and started thinking about daily utilization.
+            We came up with idea to open <a href="https://t.me/coworkprogressbar">coworking</a> in our hackerspace Progressbar in Bratislava.
+          </li>
+          <li>
+            If you think we are doing great thing
+            <ul>
+              <li>
+                you can support us at <a href="https://donate.progressbar.sk" target="_blank">donate.progressbar.sk</a>
+              </li>
+              <li>
+                  signup for our <a href="https://t.me/coworkprogressbar">coworking in Bratislava</a>
+              </li>
+              <li>
+                <router-link to="/sponsors">be our proud sponsor</router-link>
+              </li>
+            </ul>
+          </li>
+        </ul>
         </div>
       </div>
       <!-- TODO: ADD GOOGLE MAP LIKE MAP :D -->

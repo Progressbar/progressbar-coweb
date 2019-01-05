@@ -17,10 +17,8 @@
       }
     },
     mounted() {
-      // count set by
       const count = window.innerWidth > 1215 ? 3 : 4;
-      console.log(window.innerWidth);
-      const url = `https://wt-4665476769bf9081da4dd878527b9c7d-0.sandbox.auth0-extend.com/pb-web-ig?count=${count}`
+      const url = `https://wt-4665476769bf9081da4dd878527b9c7d-0.sandbox.auth0-extend.com/pb-web-ig?count=${count}`;
       axios({
         method: 'get',
         url
@@ -28,8 +26,6 @@
         .then(response => {
           console.log('resp', response.data.data)
           this.images = response.data.data;
-          // this.config = response.data;
-          // this.seats.capacity = response.data.seatCapacity;
         })
         .catch(e => {
           console.log(e);
@@ -44,7 +40,6 @@
     flex-flow: row wrap;
     justify-content: center;
   }
-
 
 
   img {

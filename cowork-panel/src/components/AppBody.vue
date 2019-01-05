@@ -18,13 +18,13 @@
                   <a
                     class="button is-black is-large is-uppercase has-text-weight-bold"
                     href="https://t.me/coworkprogressbar"
-                    target="_blank">Join our coworking 🔥</a>
+                    target="_blank">Join our coworking 👩‍🚀</a>
                 </p>
                 <p>
                   <router-link
                     class="button is-black is-large"
                     to="/space-for-rent">
-                    Rent our space 😇
+                    Rent our space 🌈
                   </router-link>
                 </p>
                 <p>

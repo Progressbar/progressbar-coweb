@@ -37,6 +37,6 @@ html {
 html,
 body {
   /* font-family: "Open Sans", sans-serif; */
-  font-family: "Titillium Web", sans-serif;
+  font-family: "Exo 2", sans-serif;
 }
 </style>

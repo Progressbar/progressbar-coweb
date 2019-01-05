@@ -4,7 +4,7 @@
     <div class="tile is-parent is-size-4">
       <article class="tile is-child notification is-black">
         <div class="content">
-          <p class="title is-size-4">Weekpass</p>
+          <p class="title is-size-3">Weekpass</p>
           <div class="content">
             <p>⏰  {{ openHours.dayPass.start }} - {{ openHours.dayPass.end }}</p>
             <p>Hotdesk ♨️</p>
@@ -13,14 +13,14 @@
           </div>
         </div>
           <div class="">
-            <router-link class="button is-black is-block is-large" to="/membership">{{ orderPrices.week }}€ / week</router-link>
+            <a class="button is-black is-block is-large" :href="href.coworkGroup">{{ orderPrices.week }}€ / week</a>
           </div>
       </article>
     </div>
     <div class="tile is-parent is-size-4">
       <article class="tile is-child notification is-black">
         <div class="content">
-          <p class="title is-size-4">Flex</p>
+          <p class="title is-size-3">Flex</p>
           <div class="content">
             <p>⏰  {{ openHours.monthPass.start }} - {{ openHours.monthPass.end }}</p>
             <p>Hotdesk ♨️</p>
@@ -29,14 +29,14 @@
           </div>
         </div>
           <div class="">
-            <router-link class="button is-black is-block is-large" to="/membership">{{ orderPrices.month }}€ / month</router-link>
+            <a class="button is-black is-block is-large" :href="href.coworkGroup">{{ orderPrices.month }}€ / month</a>
           </div>
       </article>
     </div>
     <div class="tile is-parent is-size-4">
       <article class="tile is-child notification is-highlighted is-black">
         <div class="content">
-          <p class="title is-size-4">Fixdesk</p>
+          <p class="title is-size-3">Fixdesk</p>
           <div class="content">
             <p>🌃 24/7</p>
             <p>Dedicated desk & chair</p>
@@ -47,7 +47,7 @@
           </div>
         </div>
           <div class="">
-            <router-link class="button is-black is-block is-large" to="/membership">{{ orderPrices.fixdesk }}€ / month</router-link>
+            <a class="button is-black is-block is-large" :href="href.coworkGroup">{{ orderPrices.fixdesk }}€ / month</a>
           </div>
 
       </article>
@@ -55,7 +55,7 @@
     <div class="tile is-parent is-size-4">
       <article class="tile is-child notification is-black">
         <div class="content">
-          <p class="title is-size-4">🤝 Meeting room</p>
+          <p class="title is-size-3">🤝 Meeting room</p>
           <div class="content">
             <p>10 chairs</p>
             <p>Acoustically isolated</p>
@@ -64,7 +64,7 @@
           </div>
         </div>
           <div class="btn-container">
-            <router-link class="button is-black is-block is-large" to="/membership">{{ orderPrices.meetingRoom }}€ / hour</router-link>
+            <a class="button is-black is-block is-large" :href="href.coworkGroup">{{ orderPrices.meetingRoom }}€ / hour</a>
           </div>
       </article>
     </div>
@@ -77,6 +77,9 @@ export default {
   name: 'offer',
   data() {
     return {
+      href: {
+        coworkGroup: 'https://t.me/coworkprogressbar',
+      },
       orderPrices: {
         week: 50,
         month: 120,
