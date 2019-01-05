@@ -21,7 +21,7 @@
       </div>
       <div class="column is-6">
         <div class="content">
-        <p class="title has-text-white">🐚 Progressbar narative</p>
+        <p class="title has-text-white">🐚 Progressbar narrative</p>
         <ul>
           <li>
             We started as <a href="https://progressbar.sk">first Slovak hackerspace</a> back in June 2010,
