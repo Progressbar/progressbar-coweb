@@ -96,7 +96,6 @@
       <iframe src="https://www.google.com/maps/embed?pb=!4v1546547760126!6m8!1m7!1sCAoSLEFGMVFpcE9WZ1JUNXhuUUx3NnV0SzFnR3IzWlFpcldQaGNhS3hmaEdpc1Zt!2m2!1d48.14473611111111!2d17.11536388888889!3f322.7183538152532!4f-11.882300608251754!5f0.7820865974627469" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
   </div>
-
   <div class="columns">
     <div class="column is-6">
       <img src="/static/img/wide.jpg" alt="progressbar technology cowork bratislava">
@@ -105,6 +104,8 @@
       <img src="/static/img/IMG_1951.jpg" alt="progressbar cowork bratislava blockchain meetup">
     </div>
   </div>
+
+  <InstagramFeed />
 
   <h1 class="section-title title has-text-white has-text-centered">🐚 About Progressbar</h1>
 
@@ -196,6 +197,7 @@
 import axios from "axios";
 import CookieLaw from "vue-cookie-law";
 import Offer from "./Offer.vue";
+import InstagramFeed from './InstagramFeed';
 
 export default {
   name: "subscribe",
@@ -252,6 +254,7 @@ export default {
     };
   },
   components: {
+    InstagramFeed,
     Offer,
     CookieLaw
   },
