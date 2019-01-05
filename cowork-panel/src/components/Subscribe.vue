@@ -20,7 +20,7 @@
     </div>
     <div class="tile is-vertical is-4">
       <div class="tile">
-        <div class="tile is-parent is-vertical is-size-3">
+        <div class="tile is-parent is-vertical is-size-4">
           <article class="tile is-child notification is-black">
             <p class="title is-size-1">🧠 Coworking</p>
             <div class="content">
@@ -48,7 +48,7 @@
           <!-- <p class="subtitle">Aligned with the right tile</p> -->
           <div class="content">
             <p>
-              🍵 Tea (Matcha as well)
+              🍵 Tea
             </p>
             <p>
               🍻 Bottled and cooled drinks such as
@@ -106,7 +106,7 @@
     </div>
   </div>
 
-  <h1 class="section-title title has-text-white has-text-centered">🐚 About Progressbar</h1>
+  <h1 class="section-title title has-text-white has-text-centered">🐚 Progressbar narative</h1>
 
   <div class="tile is-ancestor">
     <div class="tile is-parent is-6">
@@ -143,40 +143,18 @@
     <div class="tile is-parent is-6">
       <article class="tile is-child notification is-black is-size-4">
         <div class="content">
-          <p class="title">Our members are 🧝‍♀️👩‍🎨👩‍🎤👩‍🔬🧙‍♀️👩‍🚀</p>
+          <p class="title">👨‍👩‍👧‍👧 Family Members</p>
           <div class="content">
-            <ul>
-              <li>
-                Blockchain startups
-              </li>
-              <li>
-                Decentralization technology specialists
-              </li>
-              <li>
-                Cryptocurrency techies & fanatics
-              </li>
-              <li>
-                Teachers, educators
-              </li>
-              <li>
-                Backend & Frontend developers
-              </li>
-              <li>
-                Machine learning developers
-              </li>
-              <li>
-                Hardware tinkers
-              </li>
-              <li>
-                Opensource developers
-              </li>
-              <li>
-                Cyberpunks & Cypherpunks
-              </li>
-              <li>
-                DIYBio supporters
-              </li>
-            </ul>
+            <p>👩‍🚀  Blockchain startups</p>
+            <p>🧙‍♀️ Decentralization technology specialists</p>
+            <p>👩‍🔬 Cryptocurrency techies & fanatics</p>
+            <p>🧝‍♀ Teachers, educators</p>
+            <p>👩‍🎤 Backend & Frontend developers</p>
+            <p>👩‍🎨 Machine learning developers</p>
+            <p>🛠 Hardware tinkers</p>
+            <p>🛰 Opensource developers</p>
+            <p>👾 Cyberpunks & Cypherpunks</p>
+            <p>🧬 DIYBio supporters</p>
           </div>
         </div>
       </article>
