@@ -7,9 +7,9 @@
   >
     <div class="container">
       <div class="navbar-brand">
-        <a class="navbar-item progressbar-logo-container" :href="href.homesite">
+        <router-link class="navbar-item progressbar-logo-container" to="/">
           <progressbar-logo-refresh />
-        </a>
+        </router-link>
         <div
           role="button"
           @click="toggleNav()"
@@ -132,7 +132,8 @@ export default {
 }
 
 .navbar-item {
-  color: white
+  color: white;
+  cursor: pointer;
 }
 
 div.navbar-item a {
@@ -140,12 +141,12 @@ div.navbar-item a {
 }
 
 div.navbar-item:hover {
-  background-color: black;
+  background-image: linear-gradient(to right top, #b60cf6, #9316e5, #711ad4, #4c1ac1, #1e19ae);
   /* text-decoration: underline */
 }
 
 div.navbar-item.is-active {
-  background-color: black;
+  background-image: linear-gradient(to right top, #b60cf6, #9316e5, #711ad4, #4c1ac1, #1e19ae);
 }
 
 /* .navbar-item a:hover {

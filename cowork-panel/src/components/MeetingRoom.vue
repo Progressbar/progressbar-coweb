@@ -33,7 +33,7 @@
             <p>Projector</p>
           </div>
           <div class="btn-container">
-            <router-link class="button is-black is-block is-large" to="/membership">{{ orderPrices.meetingRoom }}€ / hour</router-link>
+            <router-link class="button is-black is-block is-large meeting" to="/membership">{{ orderPrices.meetingRoom }}€ / hour</router-link>
           </div>
         </div>
       </article>
@@ -127,4 +127,7 @@ export default {
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
+  .button.is-black.is-block.is-large.meeting {
+    background-image: linear-gradient(to right top, #b60cf6, #9316e5, #711ad4, #4c1ac1, #1e19ae);
+  }
 </style>
