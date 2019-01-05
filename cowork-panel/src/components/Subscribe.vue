@@ -64,8 +64,8 @@
       </div>
     </div>
   </div>
-
-  <div v-if="!this.isUser" class="columns is-centered">
+  <!-- wao will rework this logic, soon™️ -->
+  <!-- <div v-if="!this.isUser" class="columns is-centered">
     <div class="column is-narrow">
       <div class="control has-icons-left">
         <input v-model="subEmail" class="input is-medium is-white" type="email" placeholder="Enter your email">
@@ -80,7 +80,7 @@
       <a v-if="this.config.coworkLogin" @click="sendLoginLink(subEmail)" class="button is-primary is-medium is-outlined">{{ this.button.login }}</a>
       <a v-if="!this.config.coworkLogin" @click="sendLoginLink(subEmail)" class="button is-primary is-medium is-outlined" disabled>{{ this.button.login }}</a>
     </div>
-  </div>
+  </div> -->
 
   <h1 class="section-title title has-text-white has-text-centered">👩‍💻👨‍💻 Membership</h1>
 
