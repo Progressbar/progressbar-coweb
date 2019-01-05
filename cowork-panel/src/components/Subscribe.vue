@@ -9,7 +9,7 @@
     <div class="tile is-parent is-8">
       <article class="tile is-child notification is-black">
         <div class="content">
-          <p class="title">👩‍💻👨‍💻 Work Space</p>
+          <p class="title">👩‍💻👨‍💻 WorkSpace</p>
           <div class="content">
             <img src="/static/img/meetingroom/IMG_0963.jpg" alt="cowork bratislava meeting room">
             <img src="/static/img/IMG_1939.jpg" alt="progressbar cowork bratislava blockchain">
@@ -98,63 +98,63 @@
   </div>
 
   <div class="columns">
-    <div class="column is-6">
+    <div class="column is-parent is-8">
       <img src="/static/img/wide.jpg" alt="progressbar technology cowork bratislava">
     </div>
-    <div class="column is-6">
-      <img src="/static/img/IMG_1951.jpg" alt="progressbar cowork bratislava blockchain meetup">
-    </div>
-  </div>
-
-  <h1 class="section-title title has-text-white has-text-centered">🐚 Progressbar narative</h1>
-
-  <div class="tile is-ancestor">
-    <div class="tile is-parent is-6">
-      <article class="tile is-child notification is-black">
-        <div class="content">
-          <p class="title">Our backlog story</p>
-          <div class="content">
-            <ul>
-              <li>
-                We started as <a href="https://progressbar.sk">first Slovak hackerspace</a> back in June 2010, this is our 4th place as we went through expansion and <a href="https://progressbar.sk/calendar">held more and biggers meetups</a>.
-              </li>
-              <li>
-                In September 2017 we considered to keep up our 💸 cashflow & our existence and started thinking about daily utilization. We came up with idea to open <strong>coworking</strong> in our hackerspace Progressbar in Bratislava.
-              </li>
-              <li>
-                If you think we are doing great thing
-                <ul>
-                  <li>
-                    you can support us at <a href="https://donate.progressbar.sk" target="_blank">donate.progressbar.sk</a>
-                  </li>
-                  <li>
-                     signup for our <router-link to="/membership">coworking in Bratislava</router-link>
-                  </li>
-                  <li>
-                    <router-link to="/sponsors">be our proud sponsor</router-link>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </article>
-    </div>
-    <div class="tile is-parent is-6">
-      <article class="tile is-child notification is-black is-size-4">
+    <div class="column is-parent is-4">
+      <article class="tile is-child notification is-black is-size-5">
         <div class="content">
           <p class="title">👨‍👩‍👧‍👧 Family Members</p>
           <div class="content">
             <p>👩‍🚀  Blockchain startups</p>
             <p>🧙‍♀️ Decentralization technology specialists</p>
             <p>👩‍🔬 Cryptocurrency techies & fanatics</p>
-            <p>🧝‍♀ Teachers, educators</p>
             <p>👩‍🎤 Backend & Frontend developers</p>
             <p>👩‍🎨 Machine learning developers</p>
-            <p>🛠 Hardware tinkers</p>
             <p>🛰 Opensource developers</p>
             <p>👾 Cyberpunks & Cypherpunks</p>
+            <p>🧝‍♀ Teachers, educators</p>
             <p>🧬 DIYBio supporters</p>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+
+  <div class="columns">
+    <div class="column is-parent is-8">
+      <img src="/static/img/IMG_1951.jpg" alt="progressbar cowork bratislava blockchain meetup">
+    </div>
+    <div class="column is-parent is-4">
+      <article class="tile is-child notification is-black is-size-5">
+        <div class="content">
+          <p class="title">🚀 Voyage Facilitation</p>
+          <div class="content">
+            <p></p>
+            <p>Voyages are what we're about and we're ready to sail. If you have a team that would like to spend some time on our ship working towards your goals, please get in touch.
+              We will demonstrate benchmark our success and clearly demonstrate the benefits of teams working on Progressbar.
+              For now we really need to prove ourselves and are ready to offer heavily discounted rates.
+              While your working on a voyage it's really easy to add some media coverage and document your work, or go on team building excursions for very little extra cost.</p>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+
+  <div class="columns">
+    <div class="column is-parent is-8">
+      <img src="/static/img/IMG_0966.jpg" alt="progressbar cowork bratislava blockchain">
+    </div>
+    <div class="column is-parent is-4">
+      <article class="tile is-child notification is-black is-size-5">
+        <div class="content">
+          <p class="title">👽 Solutions Consultancy</p>
+          <div class="content">
+            <p>
+              We have lot of experience of running software and technology projects, and are happy to work with you to put together a team for almost anything.
+              Drop us a line, we can discuss what you want to achieve and may be able to put together a proposal for how Progressbar can get you there.
+              Consider us an a-team of tech wizards and innovation pirates.
+            </p>
           </div>
         </div>
       </article>
