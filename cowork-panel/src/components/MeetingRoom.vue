@@ -21,7 +21,7 @@
       </div>
     </div>
   </div>
-  <div class="tile is-parent">
+  <div class="tile is-parent is-size-4">
     <article class="tile is-child notification is-black">
         <div class="content">
           <p class="title">🤝 Meeting room</p>

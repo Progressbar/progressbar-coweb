@@ -9,7 +9,7 @@
         <img src="/static/img/IMG_1023.jpg" alt="meetup space in bratislava downtown" />
         <img src="/static/img/IMG_1012.jpg" alt="meetup space in bratislava downtown" />
 
-        <p class="has-text-grey-light" v-for="line of content">{{line}}</p>
+        <p class="has-text-grey-light is-size-4" v-for="line of content">{{line}}</p>
         <img src="/static/img/PANO_20180324_103055.jpg" alt="nodeschool bratislava women edition" />
         <img src="/static/img/IMG_20180324_092514_HDR.jpg" alt="nodeschool bratislava women edition" />
       </div>
@@ -20,7 +20,7 @@
       <h1 class="title has-text-grey-light">
         If you're organizing an event in our space
       </h1>
-      <ol class="has-text-grey-light">
+      <ol class="has-text-grey-light is-size-4">
         <li>
           <p>
             consider including this text in the description of your event:
@@ -45,10 +45,10 @@
       <h1 class="title has-text-grey-light">
         Equipment in our space for your event
       </h1>
-      <ul class="has-text-grey-light">
+      <ul class="has-text-grey-light is-size-4">
         <li>
           <p>
-            We have for you fullHD (1080p) projector w/ HDMI and Chromecast
+            We have for you fullHD (1080p) 📽 projector w/ HDMI and Chromecast
           </p>
         </li>
         <li>
@@ -73,7 +73,7 @@
         </li>
         <li>
           <p>
-            We have 30 IKEA wooden foldable chairs, 25 office chairs, 10 other various chairs. We can scale up to 70 sitting spots
+            We have 30 IKEA wooden foldable chairs, 25 office chairs, 10 other various chairs. We can scale up to 80 sitting spots
           </p>
         </li>
       </ul>
