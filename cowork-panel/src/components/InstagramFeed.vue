@@ -17,7 +17,9 @@
       }
     },
     mounted() {
-      const count = 10;
+      // count set by
+      const count = window.innerWidth > 1215 ? 3 : 4;
+      console.log(window.innerWidth);
       const url = `https://wt-4665476769bf9081da4dd878527b9c7d-0.sandbox.auth0-extend.com/pb-web-ig?count=${count}`
       axios({
         method: 'get',
@@ -40,12 +42,14 @@
   div.image-holder {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: center;
   }
 
+
+
   img {
-    height: 15em !important;
-    width: 15em !important;
-    margin: 1em 0;
+    height: 22em !important;
+    width: 22em !important;
+    margin: 1em;
   }
 </style>
