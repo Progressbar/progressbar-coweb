@@ -140,12 +140,11 @@ div.navbar-item a {
   color: white;
 }
 
-div.navbar-item:hover {
+a.navbar-link.is-size-4:hover {
   background-image: linear-gradient(to right top, #b60cf6, #9316e5, #711ad4, #4c1ac1, #1e19ae);
-  /* text-decoration: underline */
 }
 
-div.navbar-item.is-active {
+div.is-active > a {
   background-image: linear-gradient(to right top, #b60cf6, #9316e5, #711ad4, #4c1ac1, #1e19ae);
 }
 
