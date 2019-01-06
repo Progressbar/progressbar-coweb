@@ -9,7 +9,7 @@
     <div class="tile is-parent is-8">
       <article class="tile is-child notification is-black">
         <div class="content">
-          <p class="title">👩‍💻👨‍💻 WorkSpace</p>
+          <p class="title">👩‍💻WorkSpace👨‍💻</p>
           <div class="content">
             <img src="/static/img/meetingroom/IMG_0963.jpg" alt="cowork bratislava meeting room">
             <img src="/static/img/IMG_1939.jpg" alt="progressbar cowork bratislava blockchain">
@@ -82,7 +82,7 @@
     </div>
   </div> -->
 
-  <h1 class="section-title title has-text-white has-text-centered">👩‍💻👨‍💻 Membership</h1>
+  <h1 class="section-title title has-text-white has-text-centered">👩‍💻Membership👨‍💻</h1>
 
   <Offer />
 
@@ -127,7 +127,7 @@
     <div class="column is-parent is-4">
       <article class="tile is-child notification is-black is-size-5">
         <div class="content">
-          <p class="title">🚀 Voyage Facilitation</p>
+          <p class="title">⏳ Voyage Facilitation</p>
           <div class="content">
             <p></p>
             <p>Voyages are what we're about and we're ready to sail. If you have a team that would like to spend some time on our ship working towards your goals, please get in touch.
@@ -184,9 +184,8 @@ export default {
         capacity: 0
       },
       bottledDrinks: [
-        { name: 'Club-Mate, Flora-Power,', image: '', url: '' },
+        { name: 'Club-Mate,', image: '', url: '' },
         { name: 'Fritz-kola,', image: '', url: '' },
-        { name: 'Mana Roots,', image: '', url: '' },
         { name: 'Mate-Mate,', image: '', url: '' },
         { name: 'Pragomost', image: '', url: '' },
       ],

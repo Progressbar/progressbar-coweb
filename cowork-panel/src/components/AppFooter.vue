@@ -3,7 +3,7 @@
   <div class="container">
     <div class="columns">
       <div class="column is-3">
-        <h1>Add us on 💜</h1>
+        <h1>💜 Add us on 💚 </h1>
         <span class="social-icons" v-for="item in socials" :key="item.url">
           <a :href="item.url" target="_blank" class="social-icon">
             <font-awesome-icon v-if="item.icon" :icon="item.icon" />
@@ -21,7 +21,7 @@
       </div>
       <div class="column is-6">
         <div class="content">
-        <p class="title has-text-white">🐚 Progressbar narrative</p>
+        <p class="title has-text-white">🐚 Progressbar story 📜</p>
         <ul>
           <li>
             We started as <a href="https://progressbar.sk">first Slovak hackerspace</a> back in June 2010,
