@@ -48,4 +48,11 @@
     object-fit: cover;
     width: 22em !important;
   }
+
+  @media only screen and (max-width: 768px) {
+    img {
+      margin: 1em 0;
+    }
+  }
+
 </style>
