@@ -22,11 +22,11 @@
       <div class="tile">
         <div class="tile is-parent is-vertical is-size-4">
           <article class="tile is-child notification is-black">
-            <p class="title is-size-1">🧠 Coworking</p>
+            <p class="title is-size-1">🧬 Cowork</p>
             <div class="content">
-              <p>📍 Downtown, Bratislava</p>
-              <p>🤝 Meeting room for brainstorming and meeting clients</p>
-              <p>🤙 Private call room</p>
+              <p>📍 <a href="https://goo.gl/maps/njvuE4mwmpz">Downtown, Bratislava</a></p>
+              <p>🤝 Conferencing room for brainstorming and meeting clients</p>
+              <p>🔐 Private call room</p>
               <!-- <p>👀 Your <router-link to="/view">view</router-link></p> -->
               <p>⚡️  <a href="https://www.speedtest.net/result/7179888517" target="_blank">We have fast internet</a></p>
               <p>🖥 Shared monitors</p>
