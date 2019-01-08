@@ -139,7 +139,6 @@
       </article>
     </div>
   </div>
-
   <div class="columns">
     <div class="column is-parent is-8">
       <img src="/static/img/IMG_0966.jpg" alt="progressbar cowork bratislava blockchain">
@@ -153,6 +152,48 @@
               We have lot of experience of running software and technology projects, and are happy to work with you to put together a team for almost anything.
               Drop us a line, we can discuss what you want to achieve and may be able to put together a proposal for how Progressbar can get you there.
               Consider us an a-team of tech wizards and innovation pirates.
+            </p>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+  <div class="columns">
+    <div class="column is-parent is-8">
+      <div class="columns">
+        <div class="column is-4">
+          <a href="https://loomx.io/"><img src="/static/img/partners/loom_rgb-text-transparent-bg-square@4x.png" alt="loomx network sidechain"></a>
+        </div>
+        <div class="column is-4">
+          <a href="https://ethereum.org"><img src="/static/img/partners/ethereum-logo.png" alt="ethereum blockchain"></a>
+        </div>
+        <div class="column is-4">
+          <a href="https://ipfs.io"><img src="/static/img/partners/ipfs_2016-05-09-ipfs-3d-ice-text.png" alt="ipfs logo"></a>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column is-4">
+          <a href="https://nem.io"><img src="/static/img/partners/NEM-OFFICIAL-LOGO-white.png" alt="NEM foundation blockchain"></a>
+        </div>
+        <div class="column is-4">
+          <a href="https://www.decent.ch"><img src="/static/img/partners/DECENT_logo_vertical_color.png" alt="decent blockchain"></a>
+        </div>
+        <div class="column is-4">
+          <a href="https://www.scuttlebutt.nz"><img src="/static/img/partners/scuttlebutt.png" alt="scuttlebutt decentralized protocol"></a>
+        </div>
+      </div>
+    </div>
+    <div class="column is-parent is-4">
+      <article class="tile is-child notification is-black is-size-5">
+        <div class="content">
+          <p class="title">🦄 Significant other</p>
+          <div class="content">
+            <p>
+              We endorse various blockchain a decentralization projects.
+              We care about community and trying to do best for their growth.
+            </p>
+            <p>We organize workshops and onboarding new people to use their tech.
+              Want to be part of it? Contact us 💞
             </p>
           </div>
         </div>
