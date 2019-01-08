@@ -9,7 +9,7 @@
     <div class="tile is-parent is-8">
       <article class="tile is-child notification is-black">
         <div class="content">
-          <p class="title">👩‍💻WorkSpace👨‍💻</p>
+          <p class="title">👩‍💻workspace👨‍💻</p>
           <div class="content">
             <img src="/static/img/meetingroom/IMG_0963.jpg" alt="cowork bratislava meeting room">
             <img src="/static/img/IMG_1939.jpg" alt="progressbar cowork bratislava blockchain">
@@ -339,4 +339,10 @@ iframe {
 .section-title {
   margin-top: 1.5rem;
 }
+
+.Cookie--dark-lime {
+  background: #0a0a0a;
+  padding: 0 1.250em 0 1.250em;
+}
+
 </style>
