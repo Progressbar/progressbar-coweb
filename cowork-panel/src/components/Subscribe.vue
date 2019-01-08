@@ -141,7 +141,7 @@
   </div>
   <div class="columns">
     <div class="column is-parent is-8">
-      <img src="/static/img/IMG_0966.jpg" alt="progressbar cowork bratislava blockchain">
+      <img src="/static/img/meetingroom/IMG_0966.jpg" alt="progressbar cowork bratislava blockchain">
     </div>
     <div class="column is-parent is-4">
       <article class="tile is-child notification is-black is-size-5">
