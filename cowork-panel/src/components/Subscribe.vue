@@ -24,17 +24,18 @@
           <article class="tile is-child notification is-black">
             <p class="title is-size-1">🧬 Cowork</p>
             <div class="content">
-              <p>📍 <a href="https://goo.gl/maps/njvuE4mwmpz">Downtown, Bratislava</a></p>
+              <p>📍 <a href="https://goo.gl/maps/njvuE4mwmpz" alt="location of cowork">Downtown, Bratislava</a></p>
               <p>🤝 Conferencing room for brainstorming and meeting clients</p>
               <p>🔐 Private call room</p>
               <!-- <p>👀 Your <router-link to="/view">view</router-link></p> -->
-              <p>⚡️  <a href="https://www.speedtest.net/result/7179888517" target="_blank">We have fast internet</a></p>
+              <p>⚡️  <a href="https://www.speedtest.net/result/7179888517" target="_blank">We have ultra-fast internet</a></p>
               <p>🖥 Shared monitors</p>
               <p>👷‍♀️ Standing desks</p>
               <p>🚴‍♀️ Bicycle parking U-rack</p>
               <p>❤️ Special offers for minorities</p>
               <p>🎶 Chromecast for projector and music</p>
               <p>💁‍♀️ On-site support </p>
+              <p>📦 <a href="#" alt="Expecting a delivery while you're out? Don't worry. We can handover package to your table 🥰" > Postal and Package Handling</a></p>
               <p>🔧 Makerspace</p>
               <p>🏋️‍♂️ <a href="https://www.instagram.com/p/Bn5zmzJAa01/" target="_blank">Pull-up bar for you</a></p>
               <p>💰 We accept Bitcoin & Ethereum</p>
@@ -141,7 +142,7 @@
   </div>
   <div class="columns">
     <div class="column is-parent is-8">
-      <img src="/static/img/meetingroom/IMG_0966.jpg" alt="progressbar cowork bratislava blockchain">
+      <img src="/static/img/meetingroom/IMG_0966.jpg" alt="progressbar meeting room cowork bratislava blockchain">
     </div>
     <div class="column is-parent is-4">
       <article class="tile is-child notification is-black is-size-5">
@@ -186,11 +187,11 @@
     <div class="column is-parent is-4">
       <article class="tile is-child notification is-black is-size-5">
         <div class="content">
-          <p class="title">🦄 Significant other</p>
+          <p class="title">🦄 Tech Ambassadors</p>
           <div class="content">
             <p>
               We endorse various blockchain a decentralization projects.
-              We care about community and trying to do best for their growth.
+              We care about their community and trying to do best for their growth.
             </p>
             <p>We organize workshops and onboarding new people to use their tech.
               Want to be part of it? Contact us 💞
