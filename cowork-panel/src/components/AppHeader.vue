@@ -111,7 +111,6 @@ export default {
       this.MiscButtonIsActive = !this.MiscButtonIsActive
     },
     toggleNav: function () {
-      console.log('Toggle nav')
       this.showNav = !this.showNav
     }
   }
@@ -121,10 +120,6 @@ export default {
 <style scoped>
 .progressbar-logo-container {
   color: white;
-}
-
-.progressbar-logo-container:hover {
-  transform: rotate(345deg);
 }
 
 .progressbar-logo-container svg {
