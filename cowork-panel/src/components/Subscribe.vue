@@ -5,64 +5,56 @@
       <a href="./#/order" class="button is-warning is-large is-outlined">{{ this.button.order }}</a>
     </div>
   </div>
-  <div class="tile is-ancestor">
-    <div class="tile is-parent is-8">
-      <article class="tile is-child notification is-black">
-        <div class="content">
-          <p class="title">👩‍💻workspace👨‍💻</p>
+  <div class="columns">
+    <div class="column is-parent is-8">
+      <img src="/static/img/meetingroom/IMG_0963.jpg" alt="tech cowork bratislava meeting room">
+      <img src="/static/img/IMG_1939.jpg" alt="progressbar cowork bratislava blockchain">
+    </div>
+    <div class="column is-parent is-4">
+      <article class="tile is-child notification is-black is-size-4">
+          <p class="title is-size-1">🧬 Cowork</p>
           <div class="content">
-            <img src="/static/img/meetingroom/IMG_0963.jpg" alt="cowork bratislava meeting room">
-            <img src="/static/img/IMG_1939.jpg" alt="progressbar cowork bratislava blockchain">
-            <img src="/static/img/IMG_1957.jpg" alt="progressbar cowork bratislava blockchain">
-          </div>
+          <p>📍 <a href="https://goo.gl/maps/njvuE4mwmpz" alt="location of cowork">Downtown, Bratislava</a></p>
+          <p>🤝 Conferencing room for brainstorming and meeting clients</p>
+          <p>🔐 Private call room</p>
+          <!-- <p>👀 Your <router-link to="/view">view</router-link></p> -->
+          <p>⚡️  <a href="https://www.speedtest.net/result/7179888517" target="_blank">We have ultra-fast internet</a></p>
+          <p>🖥 Shared monitors</p>
+          <p>👷‍♀️ Standing desks</p>
+          <p>🚴‍♀️ Bicycle parking U-rack</p>
+          <p>❤️ Special offers for minorities</p>
+          <p>🎶 Chromecast for projector and music</p>
+          <p>💁‍♀️ On-site support </p>
+          <p>📦 <a href="#" alt="Expecting a delivery while you're out? Don't worry. We can handover package to your table 🥰" > Postal and Package Handling</a></p>
+          <p>🔧 Makerspace</p>
+          <p>🏋️‍♂️ <a href="https://www.instagram.com/p/Bn5zmzJAa01/" target="_blank">Pull-up bar for you</a></p>
+          <p>💰 We accept Bitcoin & Ethereum</p>
         </div>
       </article>
     </div>
-    <div class="tile is-vertical is-4">
-      <div class="tile">
-        <div class="tile is-parent is-vertical is-size-4">
-          <article class="tile is-child notification is-black">
-            <p class="title is-size-1">🧬 Cowork</p>
-            <div class="content">
-              <p>📍 <a href="https://goo.gl/maps/njvuE4mwmpz" alt="location of cowork">Downtown, Bratislava</a></p>
-              <p>🤝 Conferencing room for brainstorming and meeting clients</p>
-              <p>🔐 Private call room</p>
-              <!-- <p>👀 Your <router-link to="/view">view</router-link></p> -->
-              <p>⚡️  <a href="https://www.speedtest.net/result/7179888517" target="_blank">We have ultra-fast internet</a></p>
-              <p>🖥 Shared monitors</p>
-              <p>👷‍♀️ Standing desks</p>
-              <p>🚴‍♀️ Bicycle parking U-rack</p>
-              <p>❤️ Special offers for minorities</p>
-              <p>🎶 Chromecast for projector and music</p>
-              <p>💁‍♀️ On-site support </p>
-              <p>📦 <a href="#" alt="Expecting a delivery while you're out? Don't worry. We can handover package to your table 🥰" > Postal and Package Handling</a></p>
-              <p>🔧 Makerspace</p>
-              <p>🏋️‍♂️ <a href="https://www.instagram.com/p/Bn5zmzJAa01/" target="_blank">Pull-up bar for you</a></p>
-              <p>💰 We accept Bitcoin & Ethereum</p>
-            </div>
-          </article>
+  </div>
+  <div class="columns">
+    <div class="column is-parent is-8">
+      <img src="/static/img/IMG_1957.jpg" alt="progressbar cowork bratislava blockchain streetview">
+    </div>
+    <div class="column is-parent is-4">
+      <article class="tile is-child notification is-black is-size-4">
+        <p class="title is-size-1">🥤 Drinks</p>
+        <div class="content">
+          <p>
+            🍵 Tea
+          </p>
+          <p>
+            🍻 Bottled and cooled drinks such as
+            <span v-for="item in bottledDrinks" :key="item.name">
+              {{item.name}}
+            </span>
+          </p>
+          <p>
+            ☕️ Specialty Coffee and frenchpress
+          </p>
         </div>
-      </div>
-      <div class="tile is-parent is-size-4">
-        <article class="tile is-child notification is-black">
-          <p class="title is-size-1">🥤 Drinks</p>
-          <!-- <p class="subtitle">Aligned with the right tile</p> -->
-          <div class="content">
-            <p>
-              🍵 Tea
-            </p>
-            <p>
-              🍻 Bottled and cooled drinks such as
-              <span v-for="item in bottledDrinks" :key="item.name">
-                {{item.name}}
-              </span>
-            </p>
-            <p>
-              ☕️ Specialty Coffee and also coffee machine and frenchpress
-            </p>
-          </div>
-        </article>
-      </div>
+      </article>
     </div>
   </div>
   <!-- wao will rework this logic, soon™️ -->
@@ -99,7 +91,7 @@
   </div>
   <div class="columns">
     <div class="column is-parent is-8">
-      <img src="/static/img/wide.jpg" alt="progressbar technology cowork bratislava">
+      <img src="/static/img/wide.jpg" alt="progressbar technology blockchain cowork bratislava">
     </div>
     <div class="column is-parent is-4">
       <article class="tile is-child notification is-black is-size-5">
@@ -120,7 +112,6 @@
       </article>
     </div>
   </div>
-
   <div class="columns">
     <div class="column is-parent is-8">
       <img src="/static/img/IMG_1951.jpg" alt="progressbar cowork bratislava blockchain meetup">
@@ -142,7 +133,7 @@
   </div>
   <div class="columns">
     <div class="column is-parent is-8">
-      <img src="/static/img/meetingroom/IMG_0966.jpg" alt="progressbar meeting room cowork bratislava blockchain">
+      <img src="/static/img/meetingroom/IMG_0966.jpg" alt="meeting room cowork bratislava blockchain">
     </div>
     <div class="column is-parent is-4">
       <article class="tile is-child notification is-black is-size-5">
@@ -152,7 +143,7 @@
             <p>
               We have lot of experience of running software and technology projects, and are happy to work with you to put together a team for almost anything.
               Drop us a line, we can discuss what you want to achieve and may be able to put together a proposal for how Progressbar can get you there.
-              Consider us an a-team of tech wizards and innovation pirates.
+              Consider us an A-team of tech wizards and innovation pirates.
             </p>
           </div>
         </div>
