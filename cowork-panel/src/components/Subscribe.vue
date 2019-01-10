@@ -15,7 +15,7 @@
           <p class="title is-size-1">🧬 Cowork</p>
           <div class="content">
           <p>📍 <a href="https://goo.gl/maps/njvuE4mwmpz" alt="location of cowork">Downtown, Bratislava</a></p>
-          <p>🤝 Conferencing room for brainstorming and meeting clients</p>
+          <p>🤝 <router-link to="meeting-room-cowork-bratislava">Conferencing room for brainstorming and meeting clients</router-link> </p>
           <p>🔐 Private call room</p>
           <!-- <p>👀 Your <router-link to="/view">view</router-link></p> -->
           <p>⚡️  <a href="https://www.speedtest.net/result/7179888517" target="_blank">We have ultra-fast internet</a></p>
@@ -23,9 +23,10 @@
           <p>👷‍♀️ Standing desks</p>
           <p>🚴‍♀️ Bicycle parking U-rack</p>
           <p>❤️ Special offers for minorities</p>
-          <p>🎶 Chromecast for projector and music</p>
           <p>💁‍♀️ On-site support </p>
-          <p>📦 <a href="#" alt="Expecting a delivery while you're out? Don't worry. We can handover package to your table 🥰" > Postal and Package Handling</a></p>
+          <!-- <p>📦 <a href="#" alt="Expecting a delivery while you're out? Don't worry. We can handover package to your table 🥰" > Postal and Package Handling</a></p> -->
+          <p>📦 Postal and Package Handling</a></p>
+          <p>🎶 Chromecast for projector and music</p>
           <p>🔧 Makerspace</p>
           <p>🏋️‍♂️ <a href="https://www.instagram.com/p/Bn5zmzJAa01/" target="_blank">Pull-up bar for you</a></p>
           <p>💰 We accept Bitcoin & Ethereum</p>
@@ -42,9 +43,6 @@
         <p class="title is-size-1">🥤 Drinks</p>
         <div class="content">
           <p>
-            🍵 Tea
-          </p>
-          <p>
             🍻 Bottled and cooled drinks such as
             <span v-for="item in bottledDrinks" :key="item.name">
               {{item.name}}
@@ -52,6 +50,9 @@
           </p>
           <p>
             ☕️ Specialty Coffee and frenchpress
+          </p>
+          <p>
+            🍵 Tea
           </p>
         </div>
       </article>
