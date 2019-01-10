@@ -5,7 +5,7 @@
       <div class="column is-3">
         <h1>💜 Add us on 💚 </h1>
         <span class="social-icons" v-for="item in socials" :key="item.url">
-          <a :href="item.url" target="_blank" class="social-icon">
+          <a :href="item.url" target="_blank" class="social-icon" aria-hidden="true">
             <font-awesome-icon v-if="item.icon" :icon="item.icon" />
           </a>
         </span>
