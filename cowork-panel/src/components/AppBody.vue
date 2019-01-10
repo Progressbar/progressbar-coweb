@@ -10,7 +10,7 @@
               <h1 class="title">
                 <progressbar-logo-refresh />
               </h1>
-              <h2 class="subtitle">Your new favorite coworking, hackerspace and hangout zone in downtown Bratislava.</h2>
+              <h2 class="subtitle">Your new favourite cowork, hackerspace and hangout zone in downtown Bratislava.</h2>
             </div>
             <div class="column">
               <div class="content has-text-centered">
@@ -18,7 +18,7 @@
                   <a
                     class="button is-black is-large is-uppercase has-text-weight-bold"
                     href="https://t.me/coworkprogressbar"
-                    target="_blank">Join our coworking 👩‍🚀</a>
+                    target="_blank">Join our cowork 👩‍🚀</a>
                 </p>
                 <p>
                   <router-link
