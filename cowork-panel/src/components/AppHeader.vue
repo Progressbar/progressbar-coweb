@@ -27,11 +27,8 @@
           v-bind:class="{ 'is-active': showNav }"
         >
           <div class="navbar-end">
-            <div class="navbar-item is-size-4">
-              <a
-                :href="href.eventsfb"
-                target="_blank"
-              >Events</a>
+            <div class="navbar-item is-size-4" @click="redirectToUrl(href.eventsfb)">
+              Events
             </div>
             <router-link
               tag="div"
@@ -51,10 +48,8 @@
             >
               Meeting Room
             </router-link>
-            <div class="navbar-item is-size-4">
-              <a
-                :href="href.coworkgroup"
-                target="_blank">Telegram</a>
+            <div class="navbar-item is-size-4" @click="redirectToUrl(href.coworkgroup)">
+              Telegram
             </div>
             <div v-bind:class="{ 'is-active': MiscButtonIsActive }" class="navbar-item has-dropdown">
               <a
