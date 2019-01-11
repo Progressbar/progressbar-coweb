@@ -1,7 +1,7 @@
 <template>
   <div class="image-holder">
     <span v-for="image in images" class="image">
-      <img :src="image.images.standard_resolution.url">
+      <img :src="image.images.standard_resolution.url" :alt="image.caption.text">
     </span>
   </div>
 </template>
@@ -24,6 +24,7 @@
         url
       })
         .then(response => {
+          console.log('res',response);
           this.images = response.data.data;
         })
         .catch(e => {
