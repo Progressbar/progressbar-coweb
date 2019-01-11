@@ -197,7 +197,7 @@
   <cookie-law
     transitionName="fade"
     position="bottom"
-    theme="dark-lime"
+    theme="royal"
     buttonText="I understand"
   />
 </div>
@@ -374,8 +374,9 @@ iframe {
   margin-top: 1.5rem;
 }
 
-.Cookie--dark-lime {
-  background: #0a0a0a;
+.Cookie--royal {
+  color: #fff;
+  background: #000;
   padding: 0 1.250em 0 1.250em;
 }
 
