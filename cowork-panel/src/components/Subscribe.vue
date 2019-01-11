@@ -12,8 +12,8 @@
     </div>
     <div class="column is-parent is-4">
       <article class="tile is-child notification is-black is-size-4">
-          <p class="title is-size-1">🧬 Cowork</p>
-          <div class="content">
+        <p class="title is-size-1">🧬 Cowork</p>
+        <div class="content">
           <p>📍 <a href="https://goo.gl/maps/njvuE4mwmpz" alt="location of cowork">Downtown, Bratislava</a></p>
           <p>🤝 <router-link to="meeting-room-cowork-bratislava">Conferencing room for brainstorming and meeting clients</router-link> </p>
           <p>🔐 Private call room</p>
@@ -372,6 +372,10 @@ iframe {
 
 .section-title {
   margin-top: 1.5rem;
+}
+
+.notification {
+  padding: 0;
 }
 
 .Cookie--royal {
