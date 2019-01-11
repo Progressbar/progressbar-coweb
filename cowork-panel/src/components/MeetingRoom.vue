@@ -28,9 +28,9 @@
           <div class="content">
             <p>Perfect for brainstorming and meeting clients</p>
             <p>Glass sealed</p>
-            <p>10 chairs</p>
-            <p>Whiteboard</p>
+            <p>10 seats</p>
             <p>Projector</p>
+            <p>Whiteboard</p>
             <p>By renting our meeting room you are supporting community 💞</p>
           </div>
           <div class="btn-container">
@@ -130,5 +130,9 @@ export default {
 <style>
   .button.is-black.is-block.is-large.meeting {
     background-image: linear-gradient(to right top, #b60cf6, #9316e5, #711ad4, #4c1ac1, #1e19ae);
+  }
+
+  .notification {
+  padding: 0;
   }
 </style>

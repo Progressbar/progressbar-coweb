@@ -6,15 +6,15 @@
         <div class="content">
           <p class="title is-size-3">Weekpass</p>
           <div class="content">
-            <p>⏰  {{ openHours.dayPass.start }} - {{ openHours.dayPass.end }}</p>
-            <p>Hotdesk ♨️</p>
+            <p>{{ openHours.dayPass.start }} - {{ openHours.dayPass.end }} ⏰</p>
+            <p>Available desk in space</p>
             <p>Great for try out</p>
             <p>Enjoy insider view</p>
           </div>
         </div>
-          <div class="">
-            <a class="button is-black is-block is-large" :href="href.coworkGroup">{{ orderPrices.week }}€ / week</a>
-          </div>
+        <div class="">
+          <a class="button is-black is-block is-large" :href="href.coworkGroup">{{ orderPrices.week }}€ / week</a>
+        </div>
       </article>
     </div>
     <div class="tile is-parent is-size-4">
@@ -22,15 +22,15 @@
         <div class="content">
           <p class="title is-size-3">Flex</p>
           <div class="content">
-            <p>⏰  {{ openHours.monthPass.start }} - {{ openHours.monthPass.end }}</p>
-            <p>Hotdesk ♨️</p>
-            <p>Any available desk in Flexi area</p>
+            <p>{{ openHours.monthPass.start }} - {{ openHours.monthPass.end }} ⏰</p>
+            <p>Available desk in space</p>
+            <p>Great for longer stays</p>
             <p>Support us remotely 💞</p>
           </div>
         </div>
-          <div class="">
-            <a class="button is-black is-block is-large" :href="href.coworkGroup">{{ orderPrices.month }}€ / month</a>
-          </div>
+        <div class="">
+          <a class="button is-black is-block is-large" :href="href.coworkGroup">{{ orderPrices.month }}€ / month</a>
+        </div>
       </article>
     </div>
     <div class="tile is-parent is-size-4">
@@ -38,7 +38,7 @@
         <div class="content">
           <p class="title is-size-3">Fixdesk</p>
           <div class="content">
-            <p>🌃 24/7</p>
+            <p>24/7 🌃 </p>
             <p>Dedicated desk & chair</p>
             <p>Unlimited meeting room hours</p>
             <p>180cm long desk</p>
@@ -46,10 +46,9 @@
             <!-- <p>Enjoy window <router-link to="/view">view</router-link>!</p> -->
           </div>
         </div>
-          <div class="">
-            <a class="button is-black is-block is-large" :href="href.coworkGroup">{{ orderPrices.fixdesk }}€ / month</a>
-          </div>
-
+        <div class="">
+          <a class="button is-black is-block is-large" :href="href.coworkGroup">{{ orderPrices.fixdesk }}€ / month</a>
+        </div>
       </article>
     </div>
     <div class="tile is-parent is-size-4">
@@ -57,15 +56,15 @@
         <div class="content">
           <p class="title is-size-3">🤝 Meeting room</p>
           <div class="content">
-            <p>10 chairs</p>
             <p>Acoustically isolated</p>
-            <p>📽 Projector</p>
+            <p>10 seats</p>
             <p>Whiteboard</p>
+            <p>Projector 📽 </p>
           </div>
         </div>
-          <div class="btn-container">
-            <a class="button is-black is-block is-large" :href="href.coworkGroup">{{ orderPrices.meetingRoom }}€ / hour</a>
-          </div>
+        <div class="btn-container">
+          <a class="button is-black is-block is-large" :href="href.coworkGroup">{{ orderPrices.meetingRoom }}€ / hour</a>
+        </div>
       </article>
     </div>
   </div>
