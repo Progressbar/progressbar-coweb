@@ -49,6 +49,11 @@
     </article>
   </div>
 </div>
+<div class="columns is-centered">
+    <div class="column is-12 contains-iframe-to-center" v-for="frame in href.iframes">
+      <ImageFrame v-bind:url="frame" :key="frame"></ImageFrame>
+    </div>
+</div>
 <div class="tile is-ancestor">
   <div class="tile is-vertical is-12">
     <div class="tile is-parent">
@@ -70,10 +75,20 @@
 </div>
 </template>
 <script>
+import ImageFrame from './ImageFrame';
+
 export default {
+  components: {
+    ImageFrame
+  },
   name: 'meetingroom',
   data() {
     return {
+      href: {
+        iframes: [
+          "https://www.google.com/maps/embed?pb=!4v1547309949111!6m8!1m7!1sCAoSLEFGMVFpcFBxUjZDTVN1Ml95TENfQ29taDFIeWwwT1BBU3k5M3dkLUplWUEz!2m2!1d48.14465277777778!2d17.11530555555556!3f246.4!4f-13.89!5f0.4000000000000002"
+        ],
+      },
       orderPrices: {
         day: 8,
         month: 100,
