@@ -151,25 +151,13 @@
   <div class="columns">
     <div class="column is-parent is-8">
       <div class="columns">
-        <div class="column is-4">
-          <a href="https://loomx.io/"><img src="/static/img/partners/loom_rgb-text-transparent-bg-square@4x.png" alt="loomx network sidechain"></a>
-        </div>
-        <div class="column is-4">
-          <a href="https://ethereum.org"><img src="/static/img/partners/ethereum-logo.png" alt="ethereum blockchain"></a>
-        </div>
-        <div class="column is-4">
-          <a href="https://ipfs.io"><img src="/static/img/partners/ipfs_2016-05-09-ipfs-3d-ice-text.png" alt="ipfs logo"></a>
+        <div class="column is-4" v-for="ambssador in techAmbassadors.slice(0,3)">
+          <a :href="ambssador.url"><img :src="ambssador.src" :alt="ambssador.alt"></a>
         </div>
       </div>
       <div class="columns">
-        <div class="column is-4">
-          <a href="https://nem.io"><img src="/static/img/partners/NEM-OFFICIAL-LOGO-white.png" alt="NEM foundation blockchain"></a>
-        </div>
-        <div class="column is-4">
-          <a href="https://www.decent.ch"><img src="/static/img/partners/DECENT_logo_vertical_color.png" alt="decent blockchain"></a>
-        </div>
-        <div class="column is-4">
-          <a href="https://www.scuttlebutt.nz"><img src="/static/img/partners/scuttlebutt.png" alt="scuttlebutt decentralized protocol"></a>
+        <div class="column is-4" v-for="ambssador in techAmbassadors.slice(3)">
+          <a :href="ambssador.url"><img :src="ambssador.src" :alt="ambssador.alt"></a>
         </div>
       </div>
     </div>
@@ -209,6 +197,12 @@ import ImageFrame from './ImageFrame';
 
 export default {
   name: "subscribe",
+  components: {
+    ImageFrame,
+    InstagramFeed,
+    Offer,
+    CookieLaw
+  },
   data() {
     return {
       seats: {
@@ -263,14 +257,16 @@ export default {
           "https://www.google.com/maps/embed?pb=!4v1547309683887!6m8!1m7!1sCAoSLEFGMVFpcFBfRDIwTE9WUk4zRGNxN3F4Y1hjQXhFbTFQelByZjM3N0ZHdkJx!2m2!1d48.14464166666667!2d17.11531666666667!3f233.42399438900938!4f-2.3943692114223722!5f0.4000000000000002"
         ],
       },
+      techAmbassadors: [
+        { url: 'https://loomx.io/', src: '/static/img/partners/loom_rgb-text-transparent-bg-square@4x.png', alt: 'loomx network sidechain' },
+        { url: 'https://ethereum.org', src: '/static/img/partners/ethereum-logo.png', alt: 'ethereum blockchain' },
+        { url: 'https://ipfs.io', src: '/static/img/partners/ipfs_2016-05-09-ipfs-3d-ice-text.png', alt: 'ipfs logo' },
+        { url: 'https://nem.io', src: '/static/img/partners/NEM-OFFICIAL-LOGO-white.png', alt: 'NEM foundation blockchain' },
+        { url: 'https://www.decent.ch', src: '/static/img/partners/DECENT_logo_vertical_color.png', alt: 'decent blockchain' },
+        { url: 'https://www.scuttlebutt.nz', src: '/static/img/partners/scuttlebutt.png', alt: 'scuttlebutt decentralized protocol' },
+      ],
       isShowingCookieLaw: !CookieLaw.methods.getVisited() === true,
     };
-  },
-  components: {
-    ImageFrame,
-    InstagramFeed,
-    Offer,
-    CookieLaw
   },
   created() {
     this.alreadyUser();
