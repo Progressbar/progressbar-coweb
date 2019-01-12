@@ -102,8 +102,8 @@
     data() {
       return {
         href: {
-          fixdesk: 'https://goo.gl/maps/SRwzooMfwjM2',
-          eventspace: 'https://goo.gl/maps/aPZ3zwTLC4t',
+          fixdesk: 'https://goo.gl/maps/sYsSt6e1uBE2',
+          eventspace: 'https://goo.gl/maps/SghsZJzVPNs',
           donate: 'https://donate.progressbar.sk',
           coworkgroup: 'https://t.me/coworkprogressbar',
           eventsfb: 'https://www.facebook.com/progressbar/events',
