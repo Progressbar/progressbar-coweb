@@ -3,7 +3,7 @@
   <div class="container is-fluid">
     <div class="columns is-centered">
       <div class="column is-8 content">
-        <h1 class="title has-text-grey-light">
+        <h1 class="title has-text-grey-light is-size-1">
           Space for Rent & Events
         </h1>
         <img src="/static/img/IMG_1023.jpg" alt="meetup space in bratislava downtown" />
