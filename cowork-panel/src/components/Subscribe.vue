@@ -231,23 +231,6 @@ export default {
       isUser: false,
       config: {
         baseWebUrl: "https://progressbar.sk/",
-        orderPrices: {
-          day: 8,
-          month: 100,
-          fix: 180,
-          locker: 10,
-          nonstop: 20
-        },
-        openHours: {
-          monthPass: {
-            start: 6,
-            end: 18
-          },
-          dayPass: {
-            start: 9,
-            end: 18
-          }
-        },
         coworkLogin: false,
         coworkSubscribe: false
       },

@@ -24,7 +24,7 @@
   <div class="tile is-parent is-size-4">
     <article class="tile is-child notification is-black">
         <div class="content">
-          <p class="title">🤝 Meeting room</p>
+          <p class="title">Meeting room 🤝</p>
           <div class="content">
             <p>Perfect for brainstorming and meeting clients</p>
             <p>Glass sealed</p>
@@ -90,52 +90,7 @@ export default {
         ],
       },
       orderPrices: {
-        day: 8,
-        month: 100,
-        fixdesk: 180,
-        locker: 10,
-        nonstop: 20,
-        meetingRoom: 10,
-      },
-      seats: {
-        subscribers: 0,
-        capacity: 0
-      },
-      credited: 0,
-      orderSum: {},
-      newSubscriber: {
-        email: ''
-      },
-      button: {
-        subscribe: 'Register for cowork',
-        verify: '__',
-        login: 'Send login link',
-        order: 'Go to Dashboard'
-      },
-      daysBooked: 0,
-      subEmail: '',
-      isUser: false,
-      config: {
-        baseWebUrl: 'https://progressbar.sk/',
-        orderPrices: {
-          day: 4,
-          month: 80,
-          fix: 160,
-          locker: 10,
-          nonstop: 20
-        },
-        openHours: {
-          monthPass: {
-            start: 6,
-            end: 18
-          },
-          dayPass: {
-            start: 9,
-            end: 18
-          }
-        },
-        coworkLogin: false,
-        coworkSubscribe: false
+        meetingRoom: 10
       }
     }
   }
