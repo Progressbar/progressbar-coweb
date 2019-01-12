@@ -12,7 +12,6 @@ import SpaceForRent from '@/components/SpaceForRent'
 import RunningCosts from '@/components/RunningCosts'
 import Sponsors from '@/components/Sponsors'
 import D14 from '@/components/D14'
-import WorkInProgress from '@/components/WorkInProgress'
 import Venue from '@/components/Venue'
 import CallForHost from '@/components/CallForHost'
 import ContactPage from '@/components/ContactPage'
@@ -83,10 +82,6 @@ export default new Router({
     {
       path: '/sponsors',
       component: Sponsors
-    },
-    {
-      path: '/work-in-progress',
-      component: WorkInProgress
     },
     {
       path: '/venue',
