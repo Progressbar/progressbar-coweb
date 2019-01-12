@@ -39,4 +39,8 @@ body {
   /* font-family: "Open Sans", sans-serif; */
   font-family: "Exo 2", sans-serif;
 }
+
+.Cookie--royal .Cookie__button {
+  background: #423DDB !important;
+}
 </style>
