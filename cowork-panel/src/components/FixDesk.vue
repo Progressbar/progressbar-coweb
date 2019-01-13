@@ -51,6 +51,7 @@ export default {
         iframes: [
           "https://www.google.com/maps/embed?pb=!4v1547309751764!6m8!1m7!1sCAoSLEFGMVFpcE9acVB5aEZUVmhySGZIUlFvbkNOSHVDcUlmRzVRWEhfbzR1ZmNo!2m2!1d48.14464166666667!2d17.11531388888889!3f330.8906939338204!4f-0.14140127506290412!5f0.4000000000000002"
         ],
+        coworkGroup: 'https://t.me/coworkprogressbar'
       },
       plans: [
         { name: 'Weekpass', time: '9 am ~ 6 pm ⏰', description:
