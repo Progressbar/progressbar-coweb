@@ -23,9 +23,21 @@
   <div class="columns is-centered">
     <div class="column is-6 content">
       <h1 class="title has-text-grey-light">
+        Equipment in our space for your event
+      </h1>
+      <ul class="has-text-grey-light is-size-4" v-for="eq in equipment">
+        <li>
+          <p>{{eq}}</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="columns is-centered">
+    <div class="column is-6 content">
+      <h1 class="title has-text-grey-light">
         If you're organizing an event in our space
       </h1>
-      <ol class="has-text-grey-light is-size-4">
+      <ul class="has-text-grey-light is-size-6">
         <li>
           <p>
             consider including this text in the description of your event:
@@ -41,18 +53,6 @@
           <p>
           if your event is on Facebook, send a "co-host" request to <a href="https://www.facebook.com/progressbar/" target="_blank">Progressbar</a> for greater pull and easier administration 🤗
           </p>
-        </li>
-      </ol>
-    </div>
-  </div>
-  <div class="columns is-centered">
-    <div class="column is-6 content">
-      <h1 class="title has-text-grey-light">
-        Equipment in our space for your event
-      </h1>
-      <ul class="has-text-grey-light is-size-4" v-for="eq in equipment">
-        <li>
-          <p>{{eq}}</p>
         </li>
       </ul>
     </div>
