@@ -2,12 +2,11 @@
 <div class="sponsors">
   <div class="container is-fluid">
     <div class="columns is-centered">
-      <div class="column is-8">
+      <div class="column is-6">
         <h1 class="title has-text-grey-light">
-          Beloved & Brave Sponsors of our <a href="https://progressbar.sk"> hackerspace Progressbar</a> & <a href="https://progressbar.sk"> Cowork Progressbar</a>
+          Beloved & Brave Sponsors of our <a href="https://cowork.progressbar.sk"> hackerspace Progressbar</a> & <a href="https://cowork.progressbar.sk"> Cowork Progressbar</a>
         </h1>
-        <img src="/static/img/tribune.jpg" alt="tribune" />
-        <h2 class="subtitle">
+        <h2 class="subtitle is-size-4">
           <ul class="has-text-grey-light">
             <br />
             <li>
@@ -30,15 +29,15 @@
             </li>
             <br />
             <li>
-              <a href="https://wy.sk" target="_blank">wy</a><br /> We are your dream hoster, and your best choice for doing business on internet. We provide hosting to company websites, e-shops, blogs, huge portals or private presentations. We welcome individuals and freelancers, small teams and running businesses.
+              <a href="https://wy.sk" target="_blank">wy.sk</a><br /> We are your dream hoster, and your best choice for doing business on internet. We provide hosting to company websites, e-shops, blogs, huge portals or private presentations. We welcome individuals and freelancers, small teams and running businesses.
             </li>
             <br />
             <li>
-              <a href="https://progressbar.sk">your favourite company can be here</a>
+              <a href="https://cowork.progressbar.sk">your favourite company can be here</a>
             </li>
           </ul>
         </h2>
-        <p class="has-text-grey-light">
+        <p class="has-text-grey-light is-size-4">
           Want to sponsor us? Your name will be known in our hackerspace & cowork. We hosted 700+ technical and technological events so far.
           We can give you huge marketing push or find you geeks, engineers, software developers you are searching for.
           We are their daily place, where their come hangout on evenings or work during day.
