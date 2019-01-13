@@ -34,7 +34,7 @@
             <p>By renting our meeting room you are supporting community 💞</p>
           </div>
           <div class="btn-container">
-            <router-link class="button is-black is-block is-large meeting" to="/membership">{{ orderPrices.meetingRoom }}€ / hour</router-link>
+            <a class="button is-black is-block is-large meeting" href="https://t.me/coworkprogressbar">{{ orderPrices.meetingRoom }}€ / hour</a>
           </div>
         </div>
       </article>
