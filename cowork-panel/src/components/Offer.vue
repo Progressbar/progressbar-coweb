@@ -4,7 +4,9 @@
     <div class="tile is-parent is-size-4" v-for="plan in plans">
       <article :class="{'is-highlighted': plan.highlight }" class="tile is-child notification is-black">
         <div class="content">
-          <p class="title is-size-3">{{plan.name}}</p>
+          <p v-if="plan.url" class="title is-size-3"><router-link :to='plan.url'>
+            {{plan.name}}</router-link></p>
+          <p v-else class="title is-size-3">{{plan.name}}</p>
           <div class="content">
             <p>{{plan.time}}</p>
             <p>{{plan.description[0]}}</p>
@@ -13,7 +15,8 @@
           </div>
         </div>
         <div class="">
-          <a class="button is-black is-block is-large" :href="href.coworkGroup">{{ plan.price }}€ / {{plan.period}}</a>
+          <a class="button is-black is-block is-large"
+            :href="href.coworkGroup">{{ plan.price }}€ / {{plan.period}}</a>
         </div>
       </article>
     </div>
@@ -40,7 +43,8 @@ export default {
           ['Dedicated desk & chair', 'Unlimited meeting room hours', '180cm long desk'],
           price: '200', period: 'month', highlight: 'true'},
         { name: 'Meeting Room 🤝', time: 'Acoustically isolated', description:
-          ['10 seats','Whiteboard', 'Projector 📽 '], price: '10', period: 'hour' }
+          ['10 seats','Whiteboard', 'Projector 📽 '], price: '10', period: 'hour',
+          url: '/meeting-room-cowork-bratislava' }
       ],
     }
   }
