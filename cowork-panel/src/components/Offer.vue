@@ -37,11 +37,12 @@ export default {
           ['Available desk in space', 'Great for try out', 'Enjoy insider view'],
           price: '50', period: 'week' },
         { name: 'Flex', time: '6 am ~ 6 pm ⏰', description:
-          ['Available desk in space', 'Great for longer stays', 'Support us remotely 💞'],
+          ['Available desk in space', 'Great for longer stays 🏡', 'Support us remotely 💞'],
           price: '120',  period: 'month' },
         { name: 'Fixdesk', time: '24/7 🌃', description:
-          ['Dedicated desk & chair', 'Unlimited meeting room hours', '180cm long desk'],
-          price: '200', period: 'month', highlight: 'true'},
+          ['Dedicated desk & chair', '♾ meeting room hours', '180cm long desk'],
+          price: '200', period: 'month', highlight: 'true',
+          url: '/fixdesk-cowork-bratislava' },
         { name: 'Meeting Room 🤝', time: 'Acoustically isolated', description:
           ['10 seats','Whiteboard', 'Projector 📽 '], price: '10', period: 'hour',
           url: '/meeting-room-cowork-bratislava' }

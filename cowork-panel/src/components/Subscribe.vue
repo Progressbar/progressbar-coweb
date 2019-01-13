@@ -22,11 +22,11 @@
           <p>🖥 Shared monitors</p>
           <p>👷‍♀️ Standing desks</p>
           <p>🚴‍♀️ Bicycle parking U-rack</p>
+          <p>📦 Postal and Package Handling</a></p>
           <p>❤️ Special offers for minorities</p>
           <p>💁‍♀️ On-site support </p>
           <!-- <p>📦 <a href="#" alt="Expecting a delivery while you're out? Don't worry. We can handover package to your table 🥰" > Postal and Package Handling</a></p> -->
-          <p>📦 Postal and Package Handling</a></p>
-          <p>🎶 Chromecast for projector and music</p>
+
           <p>🔧 Makerspace</p>
           <p>🏋️‍♂️ <a href="https://www.instagram.com/p/Bn5zmzJAa01/" target="_blank">Pull-up bar for you</a></p>
           <p>💰 We accept Bitcoin & Ethereum</p>

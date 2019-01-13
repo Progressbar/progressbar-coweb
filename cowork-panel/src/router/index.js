@@ -7,6 +7,7 @@ import Login from '@/components/Login'
 import Credit from '@/components/Credit'
 import Photos from '@/components/Photos'
 import MeetingRoom from '@/components/MeetingRoom'
+import FixDesk from '@/components/FixDesk'
 import CallForTheSponsors from '@/components/CallForTheSponsors'
 import SpaceForRent from '@/components/SpaceForRent'
 import RunningCosts from '@/components/RunningCosts'
@@ -62,6 +63,10 @@ export default new Router({
     {
       path: '/meeting-room-cowork-bratislava',
       component: MeetingRoom
+    },
+    {
+      path: '/fixdesk-cowork-bratislava',
+      component: FixDesk
     },
     {
       path: '/coworking-progressbar-bratislava-photos',
