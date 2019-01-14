@@ -10,6 +10,7 @@ import MeetingRoom from '@/components/MeetingRoom'
 import FixDesk from '@/components/FixDesk'
 import CallForTheSponsors from '@/components/CallForTheSponsors'
 import SpaceForRent from '@/components/SpaceForRent'
+import GiveUsReview from '@/components/GiveUsReview'
 import RunningCosts from '@/components/RunningCosts'
 import Sponsors from '@/components/Sponsors'
 import D14 from '@/components/D14'
@@ -83,6 +84,10 @@ export default new Router({
     {
       path: '/running-costs',
       component: RunningCosts
+    },
+    {
+      path: '/give-us-review-thanks/:coworkerName',
+      component: GiveUsReview
     },
     {
       path: '/sponsors',
