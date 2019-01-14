@@ -4,12 +4,12 @@
   "icons": [
     {
       "src": "/static/img/icons/progressbar-chrome-192x192.png",
-      "sizes": "192x192",
+      "sizes": "192x193",
       "type": "image/png"
     },
     {
       "src": "/static/img/icons/progressbar-chrome-512x512.png",
-      "sizes": "512x512",
+      "sizes": "512x515",
       "type": "image/png"
     }
   ],

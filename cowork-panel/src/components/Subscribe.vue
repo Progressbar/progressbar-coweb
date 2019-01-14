@@ -241,12 +241,12 @@ export default {
         ],
       },
       techAmbassadors: [
-        { url: 'https://loomx.io/', src: '/static/img/partners/loom_rgb-text-transparent-bg-square@4x.png', alt: 'loomx network sidechain' },
+        { url: 'https://loomx.io/', src: '/static/img/partners/loom_white.svg', alt: 'loomx network sidechain' },
         { url: 'https://ethereum.org', src: '/static/img/partners/ethereum-logo.png', alt: 'ethereum blockchain' },
-        { url: 'https://ipfs.io', src: '/static/img/partners/ipfs_2016-05-09-ipfs-3d-ice-text.png', alt: 'ipfs logo' },
+        { url: 'https://www.scuttlebutt.nz', src: '/static/img/partners/secure_scuttlebutt.png', alt: 'secure scuttlebutt decentralized protocol' },
         { url: 'https://nem.io', src: '/static/img/partners/NEM-OFFICIAL-LOGO-white.png', alt: 'NEM foundation blockchain' },
         { url: 'https://www.decent.ch', src: '/static/img/partners/DECENT_logo_vertical_color.png', alt: 'decent blockchain' },
-        { url: 'https://www.scuttlebutt.nz', src: '/static/img/partners/scuttlebutt.png', alt: 'scuttlebutt decentralized protocol' },
+        { url: 'https://ipfs.io', src: '/static/img/partners/ipfs_2016-05-09-ipfs-3d-ice-text.png', alt: 'ipfs logo' }
       ],
       isShowingCookieLaw: !CookieLaw.methods.getVisited() === true,
     };
