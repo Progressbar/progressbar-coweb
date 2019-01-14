@@ -15,7 +15,12 @@
     </div>
   </div>
   <div class="columns is-centered">
-    <div class="column is-12 content">
+    <div class="column is-10 contains-iframe-to-center" v-for="frame in href.iframes">
+      <ImageFrame v-bind:url="frame" :key="frame"></ImageFrame>
+    </div>
+  </div>
+  <div class="columns is-centered">
+    <div class="column is-10 content">
       <img src="/static/img/PANO_20180324_103055.jpg" alt="nodeschool bratislava women edition" />
       <img src="/static/img/IMG_20180324_092514_HDR.jpg" alt="nodeschool bratislava women edition" />
     </div>
@@ -61,11 +66,20 @@
 </template>
 <script>
 import axios from 'axios'
+import ImageFrame from './ImageFrame'
 
 export default {
   name: 'SpaceForRent',
+  components: {
+    ImageFrame
+  },
   data() {
     return {
+      href: {
+        iframes: [
+          "https://www.google.com/maps/embed?pb=!4v1547477269492!6m8!1m7!1sCAoSLEFGMVFpcFBfRDIwTE9WUk4zRGNxN3F4Y1hjQXhFbTFQelByZjM3N0ZHdkJx!2m2!1d48.14464166666667!2d17.11531666666667!3f325.65868068001004!4f-12.108018640358523!5f0.4000000000000002"
+        ]
+      },
       equipment: [
         'We have for you fullHD (1080p) 📽 projector w/ HDMI and Chromecast',
         'We have 🗣🎤 head microphone and 🎤 hand microphone with mixpult (Bluetooh input)',
