@@ -45,7 +45,7 @@ export default {
         Lemonades & Drinks ~ 600€ /mo
         Planned Hosts payroll ~ 1300€ /mo
 
-        One time costs:
+        One time investments:
         Glass Meeting Room (for 12 people) costed us ~ 6000€.
         Cinema-seating (cover over stairs) will cost us ~ 7000€.
         Kitchen will costs us ~ 1000€.
