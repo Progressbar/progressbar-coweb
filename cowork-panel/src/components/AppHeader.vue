@@ -59,22 +59,22 @@
                 Others
               </a>
               <div class="navbar-dropdown is-right">
-                <a class="dropdown-item is-size-4" :href="href.donate" target="_blank">💸 Donate to Progressbar</a>
-                <router-link class="dropdown-item is-size-4" to="/running-costs" @click.native="toggleNav()">📒 Running
+                <a class="dropdown-item is-size-5" :href="href.donate" target="_blank">💸 Donate to Progressbar</a>
+                <router-link class="dropdown-item is-size-5" to="/running-costs" @click.native="toggleNav()">📒 Running
                   costs
                 </router-link>
-                <router-link class="dropdown-item is-size-4" to="/venue" @click.native="toggleNav()">🛸 Venue
+                <router-link class="dropdown-item is-size-5" to="/venue" @click.native="toggleNav()">🛸 Venue
                 </router-link>
-                <router-link class="dropdown-item is-size-4" to="/sponsors" @click.native="toggleNav()">🛰 Sponsors
+                <router-link class="dropdown-item is-size-5" to="/sponsors" @click.native="toggleNav()">🛰 Sponsors
                 </router-link>
-                <router-link class="dropdown-item is-size-4" to="/call-for-the-sponsors" @click.native="toggleNav()">🌈
+                <router-link class="dropdown-item is-size-5" to="/call-for-the-sponsors" @click.native="toggleNav()">🌈
                   Call for the Sponsors
                 </router-link>
-                <router-link class="dropdown-item is-size-4" to="/call-for-a-host" @click.native="toggleNav()">💜 Call
-                  for an Angel
+                <!-- <router-link class="dropdown-item is-size-5" to="/call-for-a-host" @click.native="toggleNav()">💜 Call
+                  for an Angel -->
                 </router-link>
                 <hr class="navbar-divider">
-                <router-link class="dropdown-item is-size-4" to="/give-us-review-thanks" @click.native="toggleNav()">👼 Give us Review</router-link>
+                <router-link class="dropdown-item is-size-5" to="/give-us-review-thanks" @click.native="toggleNav()">👼 Give us Review</router-link>
               </div>
             </div>
           </div>

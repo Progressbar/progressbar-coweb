@@ -18,7 +18,8 @@
           <p>🤝 <router-link to="meeting-room-cowork-bratislava">Conferencing room for brainstorming and meeting clients</router-link> </p>
           <p>🔐 Private call room</p>
           <!-- <p>👀 Your <router-link to="/view">view</router-link></p> -->
-          <p>⚡️  <a href="https://www.speedtest.net/result/7179888517" target="_blank">We have ultra-fast internet</a></p>
+          <!-- <p>⚡️  <a href="https://www.speedtest.net/result/7179888517" target="_blank">We have ultra-fast internet</a></p> -->
+          <p>⚡️ Ultra-fast Internet</a></p>
           <p>🖥 Shared monitors</p>
           <p>👷‍♀️ Standing desks</p>
           <p>🚴‍♀️ Bicycle parking U-rack</p>
@@ -26,10 +27,9 @@
           <p>❤️ Special offers for minorities</p>
           <p>💁‍♀️ On-site support </p>
           <!-- <p>📦 <a href="#" alt="Expecting a delivery while you're out? Don't worry. We can handover package to your table 🥰" > Postal and Package Handling</a></p> -->
-
           <p>🔧 Makerspace</p>
           <p>🏋️‍♂️ <a href="https://www.instagram.com/p/Bn5zmzJAa01/" target="_blank">Pull-up bar for you</a></p>
-          <p>💰 We accept Bitcoin & Ethereum</p>
+          <p>⛓ Bitcoin & Ethereum positive</p>
         </div>
       </article>
     </div>
