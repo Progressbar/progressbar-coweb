@@ -37,8 +37,8 @@ export default {
           ['Available desk in space', 'Great for try out', 'Enjoy insider view'],
           price: '50', period: 'week' },
         { name: 'Flex', time: '6 am ~ 6 pm ⏰', description:
-          ['Available desk in space', 'Great for longer stays 🏡', 'Support us remotely 💞'],
-          price: '120',  period: 'month' },
+          ['Available desk in space', 'Great for longer stays 🏡', 'You are supporting community 💞'],
+          price: '150',  period: 'month' },
         { name: 'Fixdesk', time: '24/7 🌃', description:
           ['Dedicated desk & chair', '♾ meeting room hours', '180cm long desk'],
           price: '200', period: 'month', highlight: 'true',
