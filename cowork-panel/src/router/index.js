@@ -10,7 +10,8 @@ import MeetingRoom from '@/components/MeetingRoom'
 import FixDesk from '@/components/FixDesk'
 import CallForTheSponsors from '@/components/CallForTheSponsors'
 import SpaceForRent from '@/components/SpaceForRent'
-import GiveUsReview from '@/components/GiveUsReview'
+import GiveUsReviewBooking from '@/components/GiveUsReviewBooking'
+import GiveUsReviewAfterVisit from '@/components/GiveUsReviewAfterVisit'
 import RunningCosts from '@/components/RunningCosts'
 import Sponsors from '@/components/Sponsors'
 import D14 from '@/components/D14'
@@ -86,8 +87,16 @@ export default new Router({
       component: RunningCosts
     },
     {
+      path: '/give-us-review-thanks',
+      component: GiveUsReviewAfterVisit
+    },
+    {
       path: '/give-us-review-thanks/:coworkerName',
-      component: GiveUsReview
+      component: GiveUsReviewAfterVisit
+    },
+    {
+      path: '/free-daypass-thanks/:coworkerName',
+      component: GiveUsReviewBooking
     },
     {
       path: '/sponsors',

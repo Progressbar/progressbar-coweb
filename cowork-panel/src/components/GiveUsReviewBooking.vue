@@ -1,5 +1,5 @@
 <template>
-  <div class="GiveUsReview">
+  <div class="GiveUsReviewBooking">
     <div class="columns is-centered">
       <div class="column is-8 content">
         <p class="has-text-white is-size-4">
@@ -27,7 +27,6 @@
         </p><p class="has-text-white is-size-4">
           Thank you for your time.
         </p>
-        <p></p>
       </div>
     </div>
   </div>
@@ -35,7 +34,7 @@
 
 <script>
     export default {
-        name: 'GiveUsReview',
+        name: 'GiveUsReviewBooking',
         data () {
           return {
             href: {
