@@ -1,30 +1,29 @@
 <template>
   <div class="GiveUsReview">
     <div class="columns is-centered">
-      <div class="column is-6 content">
+      <div class="column is-8 content">
         <p class="has-text-white is-size-4">
           Hey {{$route.params.coworkerName}}
         </p><p class="has-text-white is-size-4">
-          Thanks for booking free day pass to our space.
+          Thank you for booking free day pass to Progressbar.
         </p><p class="has-text-white is-size-4">
-          We have 👼 angels in our space who are there every weekday from 9am to 6pm, so you’re welcome to come over in this timeframe.
+          Our 👼 angels will welcome you, and are ready to help you with anything from 9am to 6pm on workdays.
         </p><p class="has-text-white is-size-4">
-          Before your visit, please add yourself to our <a :href="href.coworkGroup">public cowork channel on Telegram</a>.
+          Before you visit us, please add yourself to our <a :href="href.coworkGroup">public cowork channel on Telegram</a>.
         </p><p class="has-text-white is-size-4">
-          Make sure to text us on Telegram, when you will be downstairs, so we can open the door for you.
+          Please text us when you arrive downstairs, so we can open the door for you.
         </p><p class="has-text-white is-size-4">
           Angel will take you on little tour and show you our space.
-          If you will have any questions, please text us on Telegram to ask angel.
+          If you have any questions, text us on Telegram or ask an angel while on the tour.
         </p><p class="has-text-white is-size-4">
-          By the end of your visit or after, please find a few minutes to write us a review of our space
+          We would be very happy if you find some time before you leave to review our space
           on <a :href="href.googleMapsProgressbar">Google Maps</a>,
           <a :href="href.coworkerProgressbar">Coworker.com</a>
           and our <a :href="href.facebookPageProgressbar">Facebook Page</a> .
-          Also we would be happy, if you follow us on instagram <a href="https://www.instagram.com/progressbar_sk/">@progressbar_sk</a></p>
-        <p class="has-text-white is-size-4">
-          Hope you enjoyed your stay in our space.
         </p><p class="has-text-white is-size-4">
-          Don’t forget - sharing is caring.
+          If you like what we are doing follow us on <a :href="href.instagram">Instagram @progressbar_sk</a></p>
+        </p><p class="has-text-white is-size-4">
+          We hope you’ll enjoy your stay.
         </p><p class="has-text-white is-size-4">
           Thank you for your time.
         </p>
@@ -41,9 +40,10 @@
           return {
             href: {
               coworkGroup: 'https://t.me/coworkprogressbar',
-              googleMapsProgressbar: 'https://bit.ly/2LWUonW',
-              coworkerProgressbar: 'https://bit.ly/2AywQ43',
-              facebookPageProgressbar: 'https://bit.ly/2VwRaMf'
+              googleMapsProgressbar: 'https://goo.gl/maps/5Vgh7SUAL6N2',
+              coworkerProgressbar: 'https://www.coworker.com/slovakia/bratislava/cowork-progressbar',
+              facebookPageProgressbar: 'https://www.facebook.com/pg/progressbar/reviews/',
+              instagram: 'https://www.instagram.com/progressbar_sk/'
             }
         }
       }
