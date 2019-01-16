@@ -253,7 +253,7 @@ export default {
   },
   created() {
     this.alreadyUser();
-    this.getConfig();
+    // this.getConfig();
   },
   methods: {
     alreadyUser() {
