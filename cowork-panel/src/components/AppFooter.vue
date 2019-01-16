@@ -5,7 +5,7 @@
       <div class="column is-3">
         <h1>🥥 Add us on socials 🦠</h1>
         <span class="social-icons" v-for="item in socials" :key="item.url">
-          <a :href="item.url" target="_blank" class="social-icon" aria-hidden="true">
+          <a :href="item.url" target="_blank" rel="noopener" class="social-icon" aria-hidden="true">
             <font-awesome-icon v-if="item.icon" :icon="item.icon" />
           </a>
         </span>
@@ -16,7 +16,7 @@
         <p>811 08, Bratislava</p>
         <p>Slovakia 🇸🇰</p>
         <div v-for="item in mapUrls" :key="item.url">
-          <a :href="item.url" target="_blank">{{item.title}}</a>
+          <a :href="item.url" target="_blank" rel="noopener">{{item.title}}</a>
         </div>
       </div>
       <div class="column is-6">
@@ -35,7 +35,7 @@
             If you think we are doing great thing
             <ul>
               <li>
-                you can support us at <a href="https://donate.progressbar.sk" target="_blank">donate.progressbar.sk</a>
+                you can support us at <a href="https://donate.progressbar.sk" target="_blank" rel="noopener">donate.progressbar.sk</a>
               </li>
               <li>
                   signup for our <a href="https://t.me/coworkprogressbar">coworking in Bratislava</a>
@@ -54,7 +54,7 @@
   <div class="container">
     <div class="columns">
       <div class="column is-6">
-        <small><a href="https://github.com/Progressbar/progressbar-coweb" target="_blank">/src</a> (Feel free to help ❤️)</small>
+        <small><a href="https://github.com/Progressbar/progressbar-coweb" target="_blank" rel="noopener">/src</a> (Feel free to help ❤️)</small>
       </div>
       <div class="column is-6 has-text-right">
         <small aria-label="copyright">2010 - {{currentYear}} © Progressbar</small>

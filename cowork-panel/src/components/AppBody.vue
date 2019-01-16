@@ -18,7 +18,7 @@
                   <a
                     class="button is-black is-large is-uppercase has-text-weight-bold"
                     href="https://t.me/coworkprogressbar"
-                    target="_blank">Join our cowork 👩‍🚀</a>
+                    target="_blank" rel="noopener">Join our cowork 👩‍🚀</a>
                 </p>
                 <p>
                   <router-link
@@ -31,7 +31,7 @@
                   <a
                     class="button is-black is-large"
                     href="https://www.facebook.com/progressbar/events"
-                    target="_blank"
+                    target="_blank" rel="noopener"
                   >Upcoming events 📅</a>
                 </p>
               </div>
