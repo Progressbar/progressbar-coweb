@@ -10,7 +10,7 @@
               <h1 class="title">
                 <progressbar-logo-refresh />
               </h1>
-              <h2 class="subtitle">Your new favourite cowork, hackerspace and hangout zone in downtown Bratislava.</h2>
+              <h2 class="subtitle">Your new favourite cowork, hackerspace and hangout zone in <a href="https://goo.gl/maps/gtmznEkBVGG2">downtown Bratislava</a></h2>
             </div>
             <div class="column">
               <div class="content has-text-centered">
@@ -91,6 +91,10 @@ a.button, a.button:hover {
   border-color: white;
 }
 
+a {
+  color: white;
+  text-decoration: underline;
+}
 .section-body {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
