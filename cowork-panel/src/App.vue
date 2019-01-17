@@ -22,6 +22,7 @@ export default {
 </script>
 
 <style>
+/* @import url('https://fonts.googleapis.com/css?family=Exo+2'); */
 @import '~bulma/css/bulma.css';
 @import '~font-awesome/css/font-awesome.css';
 
@@ -36,7 +37,6 @@ html {
 
 html,
 body {
-  /* font-family: "Open Sans", sans-serif; */
   font-family: "Exo 2", sans-serif;
 }
 
