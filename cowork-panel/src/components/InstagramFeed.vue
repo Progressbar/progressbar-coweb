@@ -24,6 +24,7 @@
         url
       })
         .then(response => {
+          console.log('res',response);
           this.images = response.data.data;
         })
         .catch(e => {
