@@ -4,10 +4,9 @@
     <div class="columns is-centered">
       <div class="column is-12 content">
         <h2 class="has-text-white">
-          We are located over Black King Bar on the first floor. <br />
-          You can access our space through doors next to Black King Bar. <br />
-          During event, ring 🛎 bell (on the left side) Progressbar and probably somebody will open to you.<br />
-          If you plan visit us during day, contact us ahead 🤗 Thanks
+          We are located over Pub14 Bar on the first floor. <br />
+          You can access our space through doors next to Pub14. <br />
+          If you plan visit us during day, <a href="https://t.me/coworkprogressbar">contact us ahead</a> 🤗 Thanks
         </h2>
         <h3 class="has-text-white">
           Address <br />

@@ -12,24 +12,24 @@
     </div>
     <div class="column is-parent is-4">
       <article class="tile is-child notification is-black is-size-4">
-          <p class="title is-size-1">🧬 Cowork</p>
-          <div class="content">
+        <p class="title is-size-1">🏕 Cowork 🧚‍♂️</p>
+        <div class="content">
           <p>📍 <a href="https://goo.gl/maps/njvuE4mwmpz" alt="location of cowork">Downtown, Bratislava</a></p>
           <p>🤝 <router-link to="meeting-room-cowork-bratislava">Conferencing room for brainstorming and meeting clients</router-link> </p>
           <p>🔐 Private call room</p>
           <!-- <p>👀 Your <router-link to="/view">view</router-link></p> -->
-          <p>⚡️  <a href="https://www.speedtest.net/result/7179888517" target="_blank">We have ultra-fast internet</a></p>
+          <!-- <p>⚡️  <a href="https://www.speedtest.net/result/7179888517" target="_blank" rel="noopener">We have ultra-fast internet</a></p> -->
+          <p>⚡️ Ultra-fast Internet</a></p>
           <p>🖥 Shared monitors</p>
           <p>👷‍♀️ Standing desks</p>
           <p>🚴‍♀️ Bicycle parking U-rack</p>
+          <p>📦 Postal and Package Handling</a></p>
           <p>❤️ Special offers for minorities</p>
           <p>💁‍♀️ On-site support </p>
           <!-- <p>📦 <a href="#" alt="Expecting a delivery while you're out? Don't worry. We can handover package to your table 🥰" > Postal and Package Handling</a></p> -->
-          <p>📦 Postal and Package Handling</a></p>
-          <p>🎶 Chromecast for projector and music</p>
           <p>🔧 Makerspace</p>
-          <p>🏋️‍♂️ <a href="https://www.instagram.com/p/Bn5zmzJAa01/" target="_blank">Pull-up bar for you</a></p>
-          <p>💰 We accept Bitcoin & Ethereum</p>
+          <p>🏋️‍♂️ <a href="https://www.instagram.com/p/Bn5zmzJAa01/" target="_blank" rel="noopener" >Pull-up bar for you</a></p>
+          <p>⛓ Bitcoin & Ethereum positive</p>
         </div>
       </article>
     </div>
@@ -151,25 +151,13 @@
   <div class="columns">
     <div class="column is-parent is-8">
       <div class="columns">
-        <div class="column is-4">
-          <a href="https://loomx.io/"><img src="/static/img/partners/loom_rgb-text-transparent-bg-square@4x.png" alt="loomx network sidechain"></a>
-        </div>
-        <div class="column is-4">
-          <a href="https://ethereum.org"><img src="/static/img/partners/ethereum-logo.png" alt="ethereum blockchain"></a>
-        </div>
-        <div class="column is-4">
-          <a href="https://ipfs.io"><img src="/static/img/partners/ipfs_2016-05-09-ipfs-3d-ice-text.png" alt="ipfs logo"></a>
+        <div class="column is-4" v-for="ambssador in techAmbassadors.slice(0,3)">
+          <a :href="ambssador.url"><img :src="ambssador.src" :alt="ambssador.alt"></a>
         </div>
       </div>
       <div class="columns">
-        <div class="column is-4">
-          <a href="https://nem.io"><img src="/static/img/partners/NEM-OFFICIAL-LOGO-white.png" alt="NEM foundation blockchain"></a>
-        </div>
-        <div class="column is-4">
-          <a href="https://www.decent.ch"><img src="/static/img/partners/DECENT_logo_vertical_color.png" alt="decent blockchain"></a>
-        </div>
-        <div class="column is-4">
-          <a href="https://www.scuttlebutt.nz"><img src="/static/img/partners/scuttlebutt.png" alt="scuttlebutt decentralized protocol"></a>
+        <div class="column is-4" v-for="ambssador in techAmbassadors.slice(3)">
+          <a :href="ambssador.url"><img :src="ambssador.src" :alt="ambssador.alt"></a>
         </div>
       </div>
     </div>
@@ -194,7 +182,7 @@
   <cookie-law
     transitionName="fade"
     position="bottom"
-    theme="dark-lime"
+    theme="royal"
     buttonText="I understand"
   />
 </div>
@@ -209,6 +197,12 @@ import ImageFrame from './ImageFrame';
 
 export default {
   name: "subscribe",
+  components: {
+    ImageFrame,
+    InstagramFeed,
+    Offer,
+    CookieLaw
+  },
   data() {
     return {
       seats: {
@@ -237,32 +231,23 @@ export default {
       isUser: false,
       config: {
         baseWebUrl: "https://progressbar.sk/",
-        orderPrices: {
-          day: 8,
-          month: 100,
-          fix: 180,
-          locker: 10,
-          nonstop: 20
-        },
-        openHours: {
-          monthPass: {
-            start: 6,
-            end: 18
-          },
-          dayPass: {
-            start: 9,
-            end: 18
-          }
-        },
         coworkLogin: false,
         coworkSubscribe: false
       },
       href: {
         iframes: [
-          "https://www.google.com/maps/embed?pb=!4v1546547834133!6m8!1m7!1sCAoSLEFGMVFpcFBGblRPNWdUbS1ZV1pLbjZzcE1HM3dFV0puVktQTVJNdWt0SmJn!2m2!1d48.14473611111111!2d17.11536666666667!3f1.0207673756391027!4f-13.53252497058756!5f0.7820865974627469",
-          "https://www.google.com/maps/embed?pb=!4v1546547760126!6m8!1m7!1sCAoSLEFGMVFpcE9WZ1JUNXhuUUx3NnV0SzFnR3IzWlFpcldQaGNhS3hmaEdpc1Zt!2m2!1d48.14473611111111!2d17.11536388888889!3f322.7183538152532!4f-11.882300608251754!5f0.7820865974627469"
+          "https://www.google.com/maps/embed?pb=!4v1547309751764!6m8!1m7!1sCAoSLEFGMVFpcE9acVB5aEZUVmhySGZIUlFvbkNOSHVDcUlmRzVRWEhfbzR1ZmNo!2m2!1d48.14464166666667!2d17.11531388888889!3f330.8906939338204!4f-0.14140127506290412!5f0.4000000000000002",
+          "https://www.google.com/maps/embed?pb=!4v1547309683887!6m8!1m7!1sCAoSLEFGMVFpcFBfRDIwTE9WUk4zRGNxN3F4Y1hjQXhFbTFQelByZjM3N0ZHdkJx!2m2!1d48.14464166666667!2d17.11531666666667!3f233.42399438900938!4f-2.3943692114223722!5f0.4000000000000002"
         ],
       },
+      techAmbassadors: [
+        { url: 'https://loomx.io/', src: '/static/img/partners/loom_white.svg', alt: 'loomx network sidechain' },
+        { url: 'https://ethereum.org', src: '/static/img/partners/ethereum-logo.png', alt: 'ethereum blockchain' },
+        { url: 'https://www.scuttlebutt.nz', src: '/static/img/partners/secure_scuttlebutt.png', alt: 'secure scuttlebutt decentralized protocol' },
+        { url: 'https://nem.io', src: '/static/img/partners/NEM-OFFICIAL-LOGO-white.png', alt: 'NEM foundation blockchain' },
+        { url: 'https://www.decent.ch', src: '/static/img/partners/DECENT_logo_vertical_color.png', alt: 'decent blockchain' },
+        { url: 'https://ipfs.io', src: '/static/img/partners/ipfs_2016-05-09-ipfs-3d-ice-text.png', alt: 'ipfs logo' }
+      ],
       isShowingCookieLaw: !CookieLaw.methods.getVisited() === true,
     };
   },
@@ -274,7 +259,7 @@ export default {
   },
   created() {
     this.alreadyUser();
-    this.getConfig();
+    // this.getConfig();
   },
   methods: {
     alreadyUser() {
@@ -370,8 +355,13 @@ h2#blackh2 {
   margin-top: 1.5rem;
 }
 
-.Cookie--dark-lime {
-  background: #0a0a0a;
+.notification {
+  padding: 0;
+}
+
+.Cookie--royal {
+  color: #fff;
+  background: #000;
   padding: 0 1.250em 0 1.250em;
 }
 

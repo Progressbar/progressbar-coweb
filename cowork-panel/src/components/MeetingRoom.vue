@@ -24,17 +24,17 @@
   <div class="tile is-parent is-size-4">
     <article class="tile is-child notification is-black">
         <div class="content">
-          <p class="title">🤝 Meeting room</p>
+          <p class="title">Meeting room 🤝</p>
           <div class="content">
             <p>Perfect for brainstorming and meeting clients</p>
             <p>Glass sealed</p>
-            <p>10 chairs</p>
-            <p>Whiteboard</p>
+            <p>10 seats</p>
             <p>Projector</p>
+            <p>Whiteboard</p>
             <p>By renting our meeting room you are supporting community 💞</p>
           </div>
           <div class="btn-container">
-            <router-link class="button is-black is-block is-large meeting" to="/membership">{{ orderPrices.meetingRoom }}€ / hour</router-link>
+            <a class="button is-black is-block is-large meeting" href="https://t.me/coworkprogressbar">{{ orderPrices.meetingRoom }}€ / hour</a>
           </div>
         </div>
       </article>
@@ -48,6 +48,11 @@
       </figure>
     </article>
   </div>
+</div>
+<div class="columns is-centered">
+    <div class="column is-12 contains-iframe-to-center" v-for="frame in href.iframes">
+      <ImageFrame v-bind:url="frame" :key="frame"></ImageFrame>
+    </div>
 </div>
 <div class="tile is-ancestor">
   <div class="tile is-vertical is-12">
@@ -70,57 +75,22 @@
 </div>
 </template>
 <script>
+import ImageFrame from './ImageFrame';
+
 export default {
+  components: {
+    ImageFrame
+  },
   name: 'meetingroom',
   data() {
     return {
+      href: {
+        iframes: [
+          "https://www.google.com/maps/embed?pb=!4v1547309949111!6m8!1m7!1sCAoSLEFGMVFpcFBxUjZDTVN1Ml95TENfQ29taDFIeWwwT1BBU3k5M3dkLUplWUEz!2m2!1d48.14465277777778!2d17.11530555555556!3f246.4!4f-13.89!5f0.4000000000000002"
+        ],
+      },
       orderPrices: {
-        day: 8,
-        month: 100,
-        fixdesk: 180,
-        locker: 10,
-        nonstop: 20,
-        meetingRoom: 10,
-      },
-      seats: {
-        subscribers: 0,
-        capacity: 0
-      },
-      credited: 0,
-      orderSum: {},
-      newSubscriber: {
-        email: ''
-      },
-      button: {
-        subscribe: 'Register for cowork',
-        verify: '__',
-        login: 'Send login link',
-        order: 'Go to Dashboard'
-      },
-      daysBooked: 0,
-      subEmail: '',
-      isUser: false,
-      config: {
-        baseWebUrl: 'https://progressbar.sk/',
-        orderPrices: {
-          day: 4,
-          month: 80,
-          fix: 160,
-          locker: 10,
-          nonstop: 20
-        },
-        openHours: {
-          monthPass: {
-            start: 6,
-            end: 18
-          },
-          dayPass: {
-            start: 9,
-            end: 18
-          }
-        },
-        coworkLogin: false,
-        coworkSubscribe: false
+        meetingRoom: 10
       }
     }
   }
@@ -130,5 +100,9 @@ export default {
 <style>
   .button.is-black.is-block.is-large.meeting {
     background-image: linear-gradient(to right top, #b60cf6, #9316e5, #711ad4, #4c1ac1, #1e19ae);
+  }
+
+  .notification {
+  padding: 0;
   }
 </style>

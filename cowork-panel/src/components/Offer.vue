@@ -1,71 +1,23 @@
 <template>
 <div class="offer">
   <div class="tile is-ancestor">
-    <div class="tile is-parent is-size-4">
-      <article class="tile is-child notification is-black">
+    <div class="tile is-parent is-size-4" v-for="plan in plans">
+      <article :class="{'is-highlighted': plan.highlight }" class="tile is-child notification is-black">
         <div class="content">
-          <p class="title is-size-3">Weekpass</p>
+          <p v-if="plan.url" class="title is-size-3"><router-link :to='plan.url'>
+            {{plan.name}}</router-link></p>
+          <p v-else class="title is-size-3">{{plan.name}}</p>
           <div class="content">
-            <p>⏰  {{ openHours.dayPass.start }} - {{ openHours.dayPass.end }}</p>
-            <p>Hotdesk ♨️</p>
-            <p>Great for try out</p>
-            <p>Enjoy insider view</p>
+            <p>{{plan.time}}</p>
+            <p>{{plan.description[0]}}</p>
+            <p>{{plan.description[1]}}</p>
+            <p>{{plan.description[2]}}</p>
           </div>
         </div>
-          <div class="">
-            <a class="button is-black is-block is-large" :href="href.coworkGroup">{{ orderPrices.week }}€ / week</a>
-          </div>
-      </article>
-    </div>
-    <div class="tile is-parent is-size-4">
-      <article class="tile is-child notification is-black">
-        <div class="content">
-          <p class="title is-size-3">Flex</p>
-          <div class="content">
-            <p>⏰  {{ openHours.monthPass.start }} - {{ openHours.monthPass.end }}</p>
-            <p>Hotdesk ♨️</p>
-            <p>Any available desk in Flexi area</p>
-            <p>Support us remotely 💞</p>
-          </div>
+        <div class="">
+          <a class="button is-black is-block is-large"
+            :href="href.coworkGroup">{{ plan.price }}€ / {{plan.period}}</a>
         </div>
-          <div class="">
-            <a class="button is-black is-block is-large" :href="href.coworkGroup">{{ orderPrices.month }}€ / month</a>
-          </div>
-      </article>
-    </div>
-    <div class="tile is-parent is-size-4">
-      <article class="tile is-child notification is-highlighted is-black">
-        <div class="content">
-          <p class="title is-size-3">Fixdesk</p>
-          <div class="content">
-            <p>🌃 24/7</p>
-            <p>Dedicated desk & chair</p>
-            <p>Unlimited meeting room hours</p>
-            <p>180cm long desk</p>
-            <!-- <p>⏰ {{ openHours.fixdesk.start }} - {{ openHours.fixdesk.end }}</p> -->
-            <!-- <p>Enjoy window <router-link to="/view">view</router-link>!</p> -->
-          </div>
-        </div>
-          <div class="">
-            <a class="button is-black is-block is-large" :href="href.coworkGroup">{{ orderPrices.fixdesk }}€ / month</a>
-          </div>
-
-      </article>
-    </div>
-    <div class="tile is-parent is-size-4">
-      <article class="tile is-child notification is-black">
-        <div class="content">
-          <p class="title is-size-3">🤝 Meeting room</p>
-          <div class="content">
-            <p>10 chairs</p>
-            <p>Acoustically isolated</p>
-            <p>📽 Projector</p>
-            <p>Whiteboard</p>
-          </div>
-        </div>
-          <div class="btn-container">
-            <a class="button is-black is-block is-large" :href="href.coworkGroup">{{ orderPrices.meetingRoom }}€ / hour</a>
-          </div>
       </article>
     </div>
   </div>
@@ -80,26 +32,21 @@ export default {
       href: {
         coworkGroup: 'https://t.me/coworkprogressbar',
       },
-      orderPrices: {
-        week: 50,
-        month: 120,
-        fixdesk: 200,
-        meetingRoom: 10,
-      },
-      openHours: {
-        monthPass: {
-          start: '06:00',
-          end: '18:00'
-        },
-        dayPass: {
-          start: '09:00',
-          end: '18:00'
-        },
-        fixdesk: {
-          start: '06:00',
-          end: '18:00'
-        }
-      },
+      plans: [
+        { name: 'Weekpass', time: '9 am ~ 6 pm ⏰', description:
+          ['Available desk in space', 'Great for try out', 'Enjoy insider view'],
+          price: '50', period: 'week' },
+        { name: 'Flex', time: '6 am ~ 6 pm ⏰', description:
+          ['Available desk in space', 'Great for longer stays 🏡', 'You are supporting community 💞'],
+          price: '150',  period: 'month' },
+        { name: 'Fixdesk', time: '24/7 🌃', description:
+          ['Dedicated desk & chair', '♾ meeting room hours', '180cm long desk'],
+          price: '200', period: 'month', highlight: 'true',
+          url: '/fixdesk-cowork-bratislava' },
+        { name: 'Meeting Room 🤝', time: 'Acoustically isolated', description:
+          ['10 seats','Whiteboard', 'Projector 📽 '], price: '10', period: 'hour',
+          url: '/meeting-room-cowork-bratislava' }
+      ],
     }
   }
 }

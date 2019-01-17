@@ -6,13 +6,13 @@
   <div class="container is-fluid">
     <div class="columns is-centered">
       <div class="column is-8 content">
-        <h1 class="title has-text-grey-light">
+        <h1 class="title has-text-grey-light is-size-1">
           Running costs
         </h1>
         <img src="/static/img/tribune.jpg" alt="tribune" />
-        <p class="has-text-grey-light" v-for="line of content">{{line}}</p>
-        <h2 class="has-text-grey-light is-uppercase">Our running costs are following:</h2>
-        <h4 class="has-text-grey-light" v-for="line of costs">{{line}}</h4>
+        <p class="has-text-grey-light is-size-3" v-for="line of content">{{line}}</p>
+        <h1 class="has-text-grey-light is-uppercase">Our running costs are following:</h1>
+        <h4 class="has-text-grey-light is-size-4" v-for="line of costs">{{line}}</h4>
         </p>
         <img src="/static/img/meeting_room.jpg" alt="meeting room" />
       </div>
@@ -41,16 +41,14 @@ export default {
       .split('\n')
       .map((line) => line.trim()),
       costs: `
-        Space Rent & Maintenance ~ 3600€ / mo
-        Lemonades & Drinks ~ 900€ /mo
-        Planned Hosts payroll ~ 800€ /mo
+        Space Rent & Maintenance ~ 3800€ / mo
+        Lemonades & Drinks ~ 600€ /mo
+        Planned Hosts payroll ~ 1300€ /mo
 
-        One time costs:
-        Glass Meeting Room (for 12 people) will costs us ~ 5000€.
+        One time investments:
+        Glass Meeting Room (for 12 people) costed us ~ 6000€.
         Cinema-seating (cover over stairs) will cost us ~ 7000€.
-        New tables will cost us ~ 4000€.
-        Kitchen will costs us ~ 2000€.
-        Shower will costs us ~ 1000€.
+        Kitchen will costs us ~ 1000€.
       `
       .trim()
       .split('\n')

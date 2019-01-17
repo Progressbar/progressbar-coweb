@@ -10,7 +10,7 @@
               <h1 class="title">
                 <progressbar-logo-refresh />
               </h1>
-              <h2 class="subtitle">Your new favourite cowork, hackerspace and hangout zone in downtown Bratislava.</h2>
+              <h2 class="subtitle">Your ✨ favourite blockchain cowork, hackerspace and hangout zone in <a href="https://goo.gl/maps/gtmznEkBVGG2">downtown Bratislava</a></h2>
             </div>
             <div class="column">
               <div class="content has-text-centered">
@@ -18,7 +18,7 @@
                   <a
                     class="button is-black is-large is-uppercase has-text-weight-bold"
                     href="https://t.me/coworkprogressbar"
-                    target="_blank">Join our cowork 👩‍🚀</a>
+                    target="_blank" rel="noopener">Join our cowork 👩‍🚀</a>
                 </p>
                 <p>
                   <router-link
@@ -31,7 +31,7 @@
                   <a
                     class="button is-black is-large"
                     href="https://www.facebook.com/progressbar/events"
-                    target="_blank"
+                    target="_blank" rel="noopener"
                   >Upcoming events 📅</a>
                 </p>
               </div>
@@ -91,6 +91,10 @@ a.button, a.button:hover {
   border-color: white;
 }
 
+a {
+  color: white;
+  text-decoration: underline;
+}
 .section-body {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;

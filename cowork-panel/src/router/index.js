@@ -7,17 +7,18 @@ import Login from '@/components/Login'
 import Credit from '@/components/Credit'
 import Photos from '@/components/Photos'
 import MeetingRoom from '@/components/MeetingRoom'
+import FixDesk from '@/components/FixDesk'
 import CallForTheSponsors from '@/components/CallForTheSponsors'
 import SpaceForRent from '@/components/SpaceForRent'
+import GiveUsReviewBooking from '@/components/GiveUsReviewBooking'
+import GiveUsReviewAfterVisit from '@/components/GiveUsReviewAfterVisit'
 import RunningCosts from '@/components/RunningCosts'
 import Sponsors from '@/components/Sponsors'
 import D14 from '@/components/D14'
-import WorkInProgress from '@/components/WorkInProgress'
 import Venue from '@/components/Venue'
 import CallForHost from '@/components/CallForHost'
 import ContactPage from '@/components/ContactPage'
 import Page404 from '@/components/Page404'
-import MembershipPage from '@/components/MembershipPage'
 import VueLocalStorage from 'vue-ls'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
@@ -66,6 +67,10 @@ export default new Router({
       component: MeetingRoom
     },
     {
+      path: '/fixdesk-cowork-bratislava',
+      component: FixDesk
+    },
+    {
       path: '/coworking-progressbar-bratislava-photos',
       component: Photos
     },
@@ -82,12 +87,20 @@ export default new Router({
       component: RunningCosts
     },
     {
-      path: '/sponsors',
-      component: Sponsors
+      path: '/give-us-review-thanks',
+      component: GiveUsReviewAfterVisit
     },
     {
-      path: '/work-in-progress',
-      component: WorkInProgress
+      path: '/give-us-review-thanks/:coworkerName',
+      component: GiveUsReviewAfterVisit
+    },
+    {
+      path: '/free-daypass-thanks/:coworkerName',
+      component: GiveUsReviewBooking
+    },
+    {
+      path: '/sponsors',
+      component: Sponsors
     },
     {
       path: '/venue',
@@ -104,10 +117,6 @@ export default new Router({
     {
       path: '/contact',
       component: ContactPage
-    },
-    {
-      path: '/membership',
-      component: MembershipPage
     },
     {
       path: '*',

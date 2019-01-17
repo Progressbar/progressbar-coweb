@@ -59,23 +59,22 @@
                 Others
               </a>
               <div class="navbar-dropdown is-right">
-                <a class="dropdown-item is-size-4" :href="href.donate" target="_blank">💰 Donate to Progressbar</a>
-                <router-link class="dropdown-item is-size-4" to="/running-costs" @click.native="toggleNav()">📒 Running
+                <a class="dropdown-item is-size-5" :href="href.donate" target="_blank" rel="noopener">💸 Donate to Progressbar</a>
+                <router-link class="dropdown-item is-size-5" to="/running-costs" @click.native="toggleNav()">📒 Running
                   costs
                 </router-link>
-                <router-link class="dropdown-item is-size-4" to="/venue" @click.native="toggleNav()">👽 Venue
+                <router-link class="dropdown-item is-size-5" to="/venue" @click.native="toggleNav()">🛸 Venue
                 </router-link>
-                <router-link class="dropdown-item is-size-4" to="/sponsors" @click.native="toggleNav()">😇 Sponsors
+                <router-link class="dropdown-item is-size-5" to="/sponsors" @click.native="toggleNav()">🛰 Sponsors
                 </router-link>
-                <router-link class="dropdown-item is-size-4" to="/call-for-the-sponsors" @click.native="toggleNav()">🌈
+                <router-link class="dropdown-item is-size-5" to="/call-for-the-sponsors" @click.native="toggleNav()">🌈
                   Call for the Sponsors
                 </router-link>
-                <router-link class="dropdown-item is-size-4" to="/call-for-a-host" @click.native="toggleNav()">💜 Call
-                  for an Angel
+                <!-- <router-link class="dropdown-item is-size-5" to="/call-for-a-host" @click.native="toggleNav()">💜 Call
+                  for an Angel -->
                 </router-link>
                 <hr class="navbar-divider">
-                <a class="dropdown-item is-size-4" :href="href.fixdesk" target="_blank">👀 360 Fixdesk</a>
-                <a class="dropdown-item is-size-4" :href="href.eventspace" target="_blank">👀 360 Eventspace</a>
+                <router-link class="dropdown-item is-size-5" to="/give-us-review-thanks" @click.native="toggleNav()">👼 Give us Review</router-link>
               </div>
             </div>
           </div>
@@ -102,8 +101,8 @@
     data() {
       return {
         href: {
-          fixdesk: 'https://goo.gl/maps/SRwzooMfwjM2',
-          eventspace: 'https://goo.gl/maps/aPZ3zwTLC4t',
+          fixdesk: 'https://goo.gl/maps/sYsSt6e1uBE2',
+          eventspace: 'https://goo.gl/maps/SghsZJzVPNs',
           donate: 'https://donate.progressbar.sk',
           coworkgroup: 'https://t.me/coworkprogressbar',
           eventsfb: 'https://www.facebook.com/progressbar/events',
