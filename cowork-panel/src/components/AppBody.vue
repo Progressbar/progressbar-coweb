@@ -23,8 +23,8 @@
                 <p>
                   <router-link
                     class="button is-black is-large"
-                    to="/space-for-rent">
-                    Rent our space 🌈
+                    to="/meeting-room-cowork-bratislava">
+                    Rent meeting room 🤝
                   </router-link>
                 </p>
                 <p>
