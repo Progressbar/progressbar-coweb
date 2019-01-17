@@ -34,22 +34,26 @@
               tag="div"
               class="navbar-item is-size-4"
               exact-active-class="is-active"
-              to="/space-for-rent"
-              v-on:click.native="toggleNav()"
-            >
-              Rent our space
-            </router-link>
-            <router-link
-              tag="div"
-              class="navbar-item is-size-4"
-              exact-active-class="is-active"
               to="/meeting-room-cowork-bratislava"
               v-on:click.native="toggleNav()"
             >
               Meeting Room
             </router-link>
+            <router-link
+              tag="div"
+              class="navbar-item is-size-4"
+              exact-active-class="is-active"
+              to="/space-for-rent"
+              v-on:click.native="toggleNav()"
+            >
+              Rent our space
+            </router-link>
             <div class="navbar-item is-size-4" @click="redirectToUrl(href.coworkgroup)">
-              Telegram
+              <span class="social-icons" v-for="item in socials" :key="item.url">
+                <a :href="item.url" target="_blank" rel="noopener" class="social-icon" aria-hidden="true">
+                  <font-awesome-icon v-if="item.icon" :icon="item.icon" />
+                </a>
+              </span>
             </div>
             <div v-bind:class="{ 'is-active': MiscButtonIsActive }" class="navbar-item has-dropdown">
               <a
@@ -86,7 +90,9 @@
 
 <script>
   import ProgressbarLogoRefresh from '@/components/ProgressbarLogoRefresh.vue'
-
+  import {
+  faTelegram
+  } from '@fortawesome/free-brands-svg-icons'
   export default {
     name: 'app-header',
     components: {
@@ -100,6 +106,9 @@
     },
     data() {
       return {
+        socials: [
+        { url: 'https://t.me/coworkprogressbar', title: 'Telegram', icon: faTelegram }
+      ],
         href: {
           fixdesk: 'https://goo.gl/maps/sYsSt6e1uBE2',
           eventspace: 'https://goo.gl/maps/SghsZJzVPNs',

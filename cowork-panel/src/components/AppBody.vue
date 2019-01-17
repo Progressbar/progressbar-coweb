@@ -10,15 +10,15 @@
               <h1 class="title">
                 <progressbar-logo-refresh />
               </h1>
-              <h2 class="subtitle">Your ✨ favourite blockchain cowork, hackerspace and hangout zone in <a href="https://goo.gl/maps/gtmznEkBVGG2">downtown Bratislava</a></h2>
+              <h2 class="subtitle">Your ✨ favourite blockchain cowork, hackerspace and hangout zone in <a href="https://goo.gl/maps/gtmznEkBVGG2">downtown, Bratislava</a></h2>
             </div>
             <div class="column">
               <div class="content has-text-centered">
                 <p>
                   <a
-                    class="button is-black is-large is-uppercase has-text-weight-bold"
+                    class="button is-black is-large"
                     href="https://t.me/coworkprogressbar"
-                    target="_blank" rel="noopener">Join our cowork 👩‍🚀</a>
+                    target="_blank" rel="noopener">Join Cowork 👩‍🚀</a>
                 </p>
                 <p>
                   <router-link
