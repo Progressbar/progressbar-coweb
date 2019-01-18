@@ -27,9 +27,9 @@
           <p class="title">Meeting room 🤝</p>
           <div class="content">
             <p>Perfect for brainstorming and meeting clients</p>
-            <p>Glass sealed</p>
-            <p>10 seats</p>
+            <p>Capacity 10 seats</p>
             <p>Projector</p>
+            <p>Chromecast</p>
             <p>Whiteboard</p>
             <p>By renting our meeting room you are supporting community 💞</p>
           </div>
