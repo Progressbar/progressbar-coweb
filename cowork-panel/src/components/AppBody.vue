@@ -62,7 +62,7 @@ export default {
 
 <style scoped>
 .hero-bg {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url('/static/img/PANO_20180324_103055.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url('/static/img/IMG_20190118_234746.jpg');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
