@@ -11,6 +11,8 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin')
 var OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
 var SWPrecacheWebpackPlugin = require('sw-precache-webpack-plugin')
 const PrerenderSPAPlugin = require('prerender-spa-plugin')
+var ImageminPlugin = require('imagemin-webpack-plugin').default
+var imageminMozjpeg = require('imagemin-mozjpeg')
 var loadMinified = require('./load-minified')
 
 var env = config.build.env
@@ -97,6 +99,15 @@ var webpackConfig = merge(baseWebpackConfig, {
         ignore: ['.*']
       }
     ]),
+    new ImageminPlugin({ 
+      test: /\.(jpe?g|png|gif|svg)$/i,
+      plugins: [
+        imageminMozjpeg({
+          quality: 75,
+          progressive: true
+        })
+      ]
+    }),
     // service worker caching
     new SWPrecacheWebpackPlugin({
       cacheId: 'my-vue-app',
