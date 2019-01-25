@@ -165,7 +165,12 @@
           </div>
         </div>
         <div class="columns">
-          <div class="column is-4" v-for="ambssador in techAmbassadors.slice(3)">
+          <div class="column is-4" v-for="ambssador in techAmbassadors.slice(3,6)">
+            <a :href="ambssador.url"><img :src="ambssador.src" :alt="ambssador.alt"></a>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column is-4" v-for="ambssador in techAmbassadors.slice(6,9)">
             <a :href="ambssador.url"><img :src="ambssador.src" :alt="ambssador.alt"></a>
           </div>
         </div>
@@ -250,24 +255,51 @@
           ],
         },
         techAmbassadors: [
-          {url: 'https://loomx.io/', src: '/static/img/partners/loom_white.svg', alt: 'loomx network sidechain'},
-          {url: 'https://ethereum.org', src: '/static/img/partners/ethereum-logo.png', alt: 'ethereum blockchain'},
+          {
+            url: 'https://loomx.io/',
+            src: '/static/img/partners/loom_white.svg',
+            alt: 'loomx network sidechain logo'
+          },
+          {
+            url: 'https://ethereum.org',
+            src: '/static/img/partners/ethereum-logo.png',
+            alt: 'ethereum blockchain logo'
+          },
           {
             url: 'https://www.scuttlebutt.nz',
             src: '/static/img/partners/secure_scuttlebutt.png',
-            alt: 'secure scuttlebutt decentralized protocol'
+            alt: 'secure scuttlebutt decentralized protocol logo'
           },
           {
             url: 'https://nem.io',
             src: '/static/img/partners/NEM-OFFICIAL-LOGO-white.png',
-            alt: 'NEM foundation blockchain'
+            alt: 'NEM foundation blockchain logo'
           },
           {
             url: 'https://www.decent.ch',
             src: '/static/img/partners/DECENT_logo_vertical_color.png',
-            alt: 'decent blockchain'
+            alt: 'decent blockchain logo'
           },
-          {url: 'https://ipfs.io', src: '/static/img/partners/ipfs_2016-05-09-ipfs-3d-ice-text.png', alt: 'ipfs logo'}
+          {
+            url: 'https://ipfs.io',
+            src: '/static/img/partners/ipfs_2016-05-09-ipfs-3d-ice-text.png',
+            alt: 'ipfs logo'
+          },
+          {
+            url: 'https://makerdao.com',
+            src: '/static/img/partners/maker.svg',
+            alt: 'maker logo'
+          },
+          {
+            url: 'https://aragaon.org',
+            src: '/static/img/partners/aragon_vertical@2x.webp',
+            alt: 'aragon logo'
+          },
+          {
+            url: 'https:///colony.io',
+            src: '/static/img/partners/colony_logo_vertical_navy_medium.png',
+            alt: 'colony logo'
+          }
         ],
         isShowingCookieLaw: !CookieLaw.methods.getVisited() === true,
       };
