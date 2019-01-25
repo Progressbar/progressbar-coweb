@@ -40,7 +40,7 @@
     </div>
     <div class="columns">
       <div class="column is-parent is-8">
-        <img src="/static/img/IMG_1957.jpg" alt="progressbar cowork bratislava blockchain streetview">
+        <img src="/static/img/IMG_20190125_005932.jpg" alt="progressbar cowork bratislava blockchain streetview">
       </div>
       <div class="column is-parent is-4">
         <article class="tile is-child notification is-black is-size-4">
