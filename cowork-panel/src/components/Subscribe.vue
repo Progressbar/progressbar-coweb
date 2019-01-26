@@ -29,6 +29,7 @@
             <p>📦 Postal and Package Handling</a></p>
             <p>❤️ Special offers for minorities</p>
             <p>💁‍♀️ On-site support </p>
+            <p>🌱 Lot of plants
             <!-- <p>📦 <a href="#" alt="Expecting a delivery while you're out? Don't worry. We can handover package to your table 🥰" > Postal and Package Handling</a></p> -->
             <p>🔧 Makerspace</p>
             <p>🏋️‍♂️ <a href="https://www.instagram.com/p/Bn5zmzJAa01/" target="_blank" rel="noopener">Pull-up bar for
@@ -114,6 +115,41 @@
         </article>
       </div>
     </div>
+        <div class="columns">
+      <div class="column is-parent is-8">
+        <div class="columns">
+          <div class="column is-4" v-for="ambssador in techAmbassadors.slice(0,3)">
+            <a :href="ambssador.url"><img :src="ambssador.src" :alt="ambssador.alt"></a>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column is-4" v-for="ambssador in techAmbassadors.slice(3,6)">
+            <a :href="ambssador.url"><img :src="ambssador.src" :alt="ambssador.alt"></a>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column is-4" v-for="ambssador in techAmbassadors.slice(6,9)">
+            <a :href="ambssador.url"><img :src="ambssador.src" :alt="ambssador.alt"></a>
+          </div>
+        </div>
+      </div>
+      <div class="column is-parent is-4">
+        <article class="tile is-child notification is-black is-size-5">
+          <div class="content">
+            <p class="title">🦄 Tech Ambassadors</p>
+            <div class="content">
+              <p>
+                We endorse various blockchain a decentralization projects.
+                We care about their community and trying to do best for their growth.
+              </p>
+              <p>We organize workshops and onboarding new people to use their tech.
+                Want to be part of it? Contact us 💞
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
     <div class="columns">
       <div class="column is-parent is-8">
         <img src="/static/img/IMG_1951.jpg" alt="progressbar cowork bratislava blockchain meetup">
@@ -151,41 +187,6 @@
                 Drop us a line, we can discuss what you want to achieve and may be able to put together a proposal for
                 how Progressbar can get you there.
                 Consider us an A-team of tech wizards and innovation pirates.
-              </p>
-            </div>
-          </div>
-        </article>
-      </div>
-    </div>
-    <div class="columns">
-      <div class="column is-parent is-8">
-        <div class="columns">
-          <div class="column is-4" v-for="ambssador in techAmbassadors.slice(0,3)">
-            <a :href="ambssador.url"><img :src="ambssador.src" :alt="ambssador.alt"></a>
-          </div>
-        </div>
-        <div class="columns">
-          <div class="column is-4" v-for="ambssador in techAmbassadors.slice(3,6)">
-            <a :href="ambssador.url"><img :src="ambssador.src" :alt="ambssador.alt"></a>
-          </div>
-        </div>
-        <div class="columns">
-          <div class="column is-4" v-for="ambssador in techAmbassadors.slice(6,9)">
-            <a :href="ambssador.url"><img :src="ambssador.src" :alt="ambssador.alt"></a>
-          </div>
-        </div>
-      </div>
-      <div class="column is-parent is-4">
-        <article class="tile is-child notification is-black is-size-5">
-          <div class="content">
-            <p class="title">🦄 Tech Ambassadors</p>
-            <div class="content">
-              <p>
-                We endorse various blockchain a decentralization projects.
-                We care about their community and trying to do best for their growth.
-              </p>
-              <p>We organize workshops and onboarding new people to use their tech.
-                Want to be part of it? Contact us 💞
               </p>
             </div>
           </div>
