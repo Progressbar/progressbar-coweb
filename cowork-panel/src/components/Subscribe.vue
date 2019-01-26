@@ -20,21 +20,22 @@
               </router-link>
             </p>
             <p>🔐 Private call room</p>
+            <p>💬 Hangout areas</p>
             <!-- <p>👀 Your <router-link to="/view">view</router-link></p> -->
             <!-- <p>⚡️  <a href="https://www.speedtest.net/result/7179888517" target="_blank" rel="noopener">We have ultra-fast internet</a></p> -->
             <p>⚡️ Ultra-fast Internet</a></p>
+            <p>🌱 Lot of plants</p>
             <p>🖥 Shared monitors</p>
             <p>👷‍♀️ Standing desks</p>
-            <p>🚴‍♀️ Bicycle parking U-rack</p>
-            <p>📦 Postal and Package Handling</a></p>
-            <p>❤️ Special offers for minorities</p>
+            <p>📦 Package Handling</p>
             <p>💁‍♀️ On-site support </p>
-            <p>🌱 Lot of plants
             <!-- <p>📦 <a href="#" alt="Expecting a delivery while you're out? Don't worry. We can handover package to your table 🥰" > Postal and Package Handling</a></p> -->
-            <p>🔧 Makerspace</p>
             <p>🏋️‍♂️ <a href="https://www.instagram.com/p/Bn5zmzJAa01/" target="_blank" rel="noopener">Pull-up bar for
               you</a></p>
+            <p>🚴‍♀️ Bicycle parking U-rack</p>
             <p>⛓ Bitcoin & Ethereum positive</p>
+            <p>❤️ Special offers for minorities</p>
+            <p>🔧 Makerspace</p>
           </div>
         </article>
       </div>
@@ -106,8 +107,8 @@
               <p>👩‍🔬 Cryptocurrency techies & fanatics</p>
               <p>👩‍🎤 Backend & Frontend developers</p>
               <p>👩‍🎨 Machine learning developers</p>
-              <p>🛰 Opensource developers</p>
               <p>👾 Cyberpunks & Cypherpunks</p>
+              <p>🛰 Opensource developers</p>
               <p>🧝‍♀ Teachers, educators</p>
               <p>🧬 DIYBio supporters</p>
             </div>
@@ -139,7 +140,7 @@
             <p class="title">🦄 Tech Ambassadors</p>
             <div class="content">
               <p>
-                We endorse various blockchain a decentralization projects.
+                We endorse various blockchain and decentralization projects.
                 We care about their community and trying to do best for their growth.
               </p>
               <p>We organize workshops and onboarding new people to use their tech.

@@ -27,13 +27,13 @@
                     Rent meeting room 🤝
                   </router-link>
                 </p>
-                <p>
+                <!-- <p>
                   <a
                     class="button is-black is-large"
                     href="https://www.facebook.com/progressbar/events"
                     target="_blank" rel="noopener"
                   >Upcoming events 📅</a>
-                </p>
+                </p> -->
               </div>
             </div>
           </div>
