@@ -7,7 +7,7 @@
     </div>
     <div class="columns">
       <div class="column is-parent is-8">
-        <img src="/static/img/meetingroom/IMG_0963.jpg" alt="tech cowork bratislava meeting room">
+        <img src="/static/img/meetingroom/waomeeting-03.jpg" alt="tech cowork bratislava meeting room">
         <img src="/static/img/IMG_1939.jpg" alt="progressbar cowork bratislava blockchain">
       </div>
       <div class="column is-parent is-4">
@@ -175,7 +175,7 @@
     </div>
     <div class="columns">
       <div class="column is-parent is-8">
-        <img src="/static/img/meetingroom/IMG_0966.jpg" alt="meeting room cowork bratislava blockchain">
+        <img src="/static/img/meetingroom/waomeeting-01-4.jpg" alt="meeting room cowork bratislava blockchain">
       </div>
       <div class="column is-parent is-4">
         <article class="tile is-child notification is-black is-size-5">
@@ -293,7 +293,7 @@
             alt: 'maker logo'
           },
           {
-            url: 'https://aragaon.org',
+            url: 'https://aragon.org',
             src: '/static/img/partners/aragon_vertical@2x.webp',
             alt: 'aragon logo'
           },

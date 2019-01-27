@@ -4,7 +4,7 @@
   <div class="tile is-parent is-12">
     <article class="tile is-child">
       <figure class="image">
-        <img src="/static/img/meetingroom/IMG_0963.jpg" alt="meeting room bratislava cowork"/>
+        <img src="/static/img/meetingroom/waomeeting-03.jpg" alt="meeting room bratislava cowork"/>
       </figure>
     </article>
   </div>
@@ -15,7 +15,7 @@
       <div class="tile is-parent is-vertical">
         <article class="tile is-child">
           <figure class="image">
-            <img src="/static/img/meetingroom/IMG_0984.jpg" alt="meeting room bratislava cowork"/>
+            <img src="/static/img/meetingroom/waomeeting-01.jpg" alt="meeting room bratislava cowork"/>
           </figure>
         </article>
       </div>
@@ -44,7 +44,7 @@
   <div class="tile is-parent">
     <article class="tile is-child">
       <figure class="image">
-        <img src="/static/img/meetingroom/IMG_0970.jpg" alt="meeting room bratislava cowork"/>
+        <img src="/static/img/meetingroom/waomeeting-05.jpg" alt="meeting room bratislava cowork"/>
       </figure>
     </article>
   </div>
@@ -59,14 +59,7 @@
     <div class="tile is-parent">
       <article class="tile is-child">
         <figure class="image">
-          <img src="/static/img/meetingroom/IMG_0966.jpg" alt="meeting room bratislava cowork"/>
-        </figure>
-      </article>
-    </div>
-    <div class="tile is-parent">
-      <article class="tile is-child">
-        <figure class="image">
-          <img src="/static/img/meetingroom/IMG_1026.jpg" alt="meeting room bratislava cowork"/>
+          <img src="/static/img/meetingroom/waomeeting-01-4.jpg" alt="meeting room bratislava cowork"/>
         </figure>
       </article>
     </div>
