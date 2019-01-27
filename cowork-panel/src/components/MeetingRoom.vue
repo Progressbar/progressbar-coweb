@@ -86,7 +86,7 @@ export default {
     return {
       href: {
         iframes: [
-          "https://www.google.com/maps/embed?pb=!4v1547309949111!6m8!1m7!1sCAoSLEFGMVFpcFBxUjZDTVN1Ml95TENfQ29taDFIeWwwT1BBU3k5M3dkLUplWUEz!2m2!1d48.14465277777778!2d17.11530555555556!3f246.4!4f-13.89!5f0.4000000000000002"
+          "https://www.google.com/maps/embed?pb=!4v1548615947594!6m8!1m7!1sCAoSLEFGMVFpcE1uOUhxclBDNFJtN0VsaDRfYnZzbFRKaldSdGlJZER3cTR6Tkcz!2m2!1d48.14466111111111!2d17.1154!3f272.452135499486!4f-1.9685896130948208!5f0.4000000000000002"
         ],
       },
       orderPrices: {
