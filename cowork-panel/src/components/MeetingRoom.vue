@@ -4,7 +4,7 @@
   <div class="tile is-parent is-12">
     <article class="tile is-child">
       <figure class="image">
-        <img src="/static/img/meetingroom/waomeeting-03.jpg" alt="meeting room bratislava cowork"/>
+        <img src="/static/img/meetingroom/waomeeting-01-4.jpg" alt="meeting room bratislava cowork"/>
       </figure>
     </article>
   </div>
@@ -31,6 +31,7 @@
             <p>Projector</p>
             <p>Chromecast</p>
             <p>Whiteboard</p>
+            <p>Downtown location</p>
             <p>By renting our meeting room you are supporting community 💞</p>
           </div>
           <div class="btn-container">
@@ -53,17 +54,6 @@
     <div class="column is-12 contains-iframe-to-center" v-for="frame in href.iframes">
       <ImageFrame v-bind:url="frame" :key="frame"></ImageFrame>
     </div>
-</div>
-<div class="tile is-ancestor">
-  <div class="tile is-vertical is-12">
-    <div class="tile is-parent">
-      <article class="tile is-child">
-        <figure class="image">
-          <img src="/static/img/meetingroom/waomeeting-01-4.jpg" alt="meeting room bratislava cowork"/>
-        </figure>
-      </article>
-    </div>
-  </div>
 </div>
 </div>
 </template>
