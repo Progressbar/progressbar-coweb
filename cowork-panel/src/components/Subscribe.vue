@@ -7,7 +7,7 @@
     </div>
     <div class="columns">
       <div class="column is-parent is-8">
-        <img src="/static/img/meetingroom/waomeeting-03.jpg" alt="tech cowork bratislava meeting room">
+        <img src="/static/img/meetingroom/waomeeting-01-4.jpg" alt="blockchain cowork bratislava meeting room">
         <img src="/static/img/IMG_1939.jpg" alt="progressbar cowork bratislava blockchain">
       </div>
       <div class="column is-parent is-4">
@@ -130,6 +130,11 @@
         </div>
         <div class="columns">
           <div class="column is-4" v-for="ambssador in techAmbassadors.slice(6,9)">
+            <a :href="ambssador.url"><img :src="ambssador.src" :alt="ambssador.alt"></a>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column is-4" v-for="ambssador in techAmbassadors.slice(9,12)">
             <a :href="ambssador.url"><img :src="ambssador.src" :alt="ambssador.alt"></a>
           </div>
         </div>
@@ -301,6 +306,21 @@
             url: 'https:///colony.io',
             src: '/static/img/partners/colony_logo_vertical_navy_medium.png',
             alt: 'colony logo'
+          },
+          {
+            url: 'https://tezos.com/',
+            src: '/static/img/partners/tezos_logo_white.png',
+            alt: 'Tezos Foundation logo'
+          },
+          {
+            url: 'https://cosmos.network',
+            src: '/static/img/partners/cosmosnetwork.png',
+            alt: 'Cosmos Network logo'
+          },
+          {
+            url: 'https:///polkadot.network',
+            src: '/static/img/partners/polkadotnetwork.svg',
+            alt: 'Polkadot network logo'
           }
         ],
         isShowingCookieLaw: !CookieLaw.methods.getVisited() === true,
