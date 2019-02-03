@@ -3,7 +3,7 @@
     <div class="columns is-centered">
       <div class="column is-8 content">
         <p class="has-text-white is-size-4">
-          Hey {{$route.params.coworkerName}},
+          Hey {{$route.params.coworkerName}}
         </p><p class="has-text-white is-size-4">
           Hope you enjoyed a day in our coworking space.
         </p><p class="has-text-white is-size-4">
