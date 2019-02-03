@@ -5,10 +5,10 @@
         <p class="has-text-white is-size-4">
           Hey {{$route.params.coworkerName}},
         </p><p class="has-text-white is-size-4">
-          Hope you enjoyed day in our coworking space.
+          Hope you enjoyed a day in our coworking space.
         </p><p class="has-text-white is-size-4">
-          We would love to ask you for a few minutes to write review on
-          on <a :href="href.googleMapsProgressbar">Google Maps</a>,
+          We would love to ask you for a few minutes to write a review on
+          <a :href="href.googleMapsProgressbar">Google Maps</a>,
           <a :href="href.coworkerProgressbar">Coworker.com</a>
           and our <a :href="href.facebookPageProgressbar">Facebook Page</a>.
         </p><p class="has-text-white is-size-4">
@@ -16,9 +16,9 @@
         </p><p class="has-text-white is-size-4">
           If you would like to support us you can give us donation <a :href="href.donate">donate.progressbar.sk</a>.
         </p><p class="has-text-white is-size-4">
-          Hope you enjoyed day in our space.
+          Hope you enjoyed a day in our space.
         </p><p class="has-text-white is-size-4">
-          Don’t forget - sharing is caring .
+          Don’t forget - sharing is caring.
         </p><p class="has-text-white is-size-4">
           Thank you for your time.
         </p>
