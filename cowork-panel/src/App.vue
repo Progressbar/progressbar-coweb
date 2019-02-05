@@ -43,4 +43,8 @@ body {
 .Cookie--royal .Cookie__button {
   background: #423DDB !important;
 }
+
+.Cookie--royal .Cookie__buttons {
+  margin-top: 0;
+}
 </style>

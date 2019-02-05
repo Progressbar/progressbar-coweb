@@ -1,5 +1,5 @@
 <template>
-<div class="meetingroom">
+<div class="fixdesk">
   <div class="tile is-ancestor">
     <div class="tile is-parent is-12">
       <article class="tile is-child">

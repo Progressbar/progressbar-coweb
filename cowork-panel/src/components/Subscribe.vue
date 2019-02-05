@@ -7,7 +7,7 @@
     </div>
     <div class="columns">
       <div class="column is-parent is-8">
-        <img src="/static/img/meetingroom/IMG_0963.jpg" alt="tech cowork bratislava meeting room">
+        <img src="/static/img/meetingroom/waomeeting-01-4.jpg" alt="blockchain cowork bratislava meeting room">
         <img src="/static/img/IMG_1939.jpg" alt="progressbar cowork bratislava blockchain">
       </div>
       <div class="column is-parent is-4">
@@ -20,27 +20,29 @@
               </router-link>
             </p>
             <p>🔐 Private call room</p>
+            <p>💬 Hangout areas</p>
             <!-- <p>👀 Your <router-link to="/view">view</router-link></p> -->
             <!-- <p>⚡️  <a href="https://www.speedtest.net/result/7179888517" target="_blank" rel="noopener">We have ultra-fast internet</a></p> -->
             <p>⚡️ Ultra-fast Internet</a></p>
+            <p>🌱 Lot of plants</p>
             <p>🖥 Shared monitors</p>
             <p>👷‍♀️ Standing desks</p>
-            <p>🚴‍♀️ Bicycle parking U-rack</p>
-            <p>📦 Postal and Package Handling</a></p>
-            <p>❤️ Special offers for minorities</p>
+            <p>📦 Package Handling</p>
             <p>💁‍♀️ On-site support </p>
             <!-- <p>📦 <a href="#" alt="Expecting a delivery while you're out? Don't worry. We can handover package to your table 🥰" > Postal and Package Handling</a></p> -->
-            <p>🔧 Makerspace</p>
             <p>🏋️‍♂️ <a href="https://www.instagram.com/p/Bn5zmzJAa01/" target="_blank" rel="noopener">Pull-up bar for
               you</a></p>
+            <p>🚴‍♀️ Bicycle parking U-rack</p>
             <p>⛓ Bitcoin & Ethereum positive</p>
+            <p>❤️ Special offers for minorities</p>
+            <p>🔧 Makerspace</p>
           </div>
         </article>
       </div>
     </div>
     <div class="columns">
       <div class="column is-parent is-8">
-        <img src="/static/img/IMG_1957.jpg" alt="progressbar cowork bratislava blockchain streetview">
+        <img src="/static/img/IMG_20190125_005932.jpg" alt="progressbar cowork bratislava blockchain streetview">
       </div>
       <div class="column is-parent is-4">
         <article class="tile is-child notification is-black is-size-4">
@@ -105,10 +107,50 @@
               <p>👩‍🔬 Cryptocurrency techies & fanatics</p>
               <p>👩‍🎤 Backend & Frontend developers</p>
               <p>👩‍🎨 Machine learning developers</p>
-              <p>🛰 Opensource developers</p>
               <p>👾 Cyberpunks & Cypherpunks</p>
+              <p>🛰 Opensource developers</p>
               <p>🧝‍♀ Teachers, educators</p>
               <p>🧬 DIYBio supporters</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+        <div class="columns">
+      <div class="column is-parent is-8">
+        <div class="columns">
+          <div class="column is-4" v-for="ambssador in techAmbassadors.slice(0,3)">
+            <a :href="ambssador.url"><img :src="ambssador.src" :alt="ambssador.alt"></a>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column is-4" v-for="ambssador in techAmbassadors.slice(3,6)">
+            <a :href="ambssador.url"><img :src="ambssador.src" :alt="ambssador.alt"></a>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column is-4" v-for="ambssador in techAmbassadors.slice(6,9)">
+            <a :href="ambssador.url"><img :src="ambssador.src" :alt="ambssador.alt"></a>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column is-4" v-for="ambssador in techAmbassadors.slice(9,12)">
+            <a :href="ambssador.url"><img :src="ambssador.src" :alt="ambssador.alt"></a>
+          </div>
+        </div>
+      </div>
+      <div class="column is-parent is-4">
+        <article class="tile is-child notification is-black is-size-5">
+          <div class="content">
+            <p class="title">🦄 Tech Ambassadors</p>
+            <div class="content">
+              <p>
+                We endorse various blockchain and decentralization projects.
+                We care about their community and trying to do best for their growth.
+              </p>
+              <p>We organize workshops and onboarding new people to use their tech.
+                Want to be part of it? Contact us 💞
+              </p>
             </div>
           </div>
         </article>
@@ -138,7 +180,7 @@
     </div>
     <div class="columns">
       <div class="column is-parent is-8">
-        <img src="/static/img/meetingroom/IMG_0966.jpg" alt="meeting room cowork bratislava blockchain">
+        <img src="/static/img/meetingroom/waomeeting-01-4.jpg" alt="meeting room cowork bratislava blockchain">
       </div>
       <div class="column is-parent is-4">
         <article class="tile is-child notification is-black is-size-5">
@@ -151,36 +193,6 @@
                 Drop us a line, we can discuss what you want to achieve and may be able to put together a proposal for
                 how Progressbar can get you there.
                 Consider us an A-team of tech wizards and innovation pirates.
-              </p>
-            </div>
-          </div>
-        </article>
-      </div>
-    </div>
-    <div class="columns">
-      <div class="column is-parent is-8">
-        <div class="columns">
-          <div class="column is-4" v-for="ambssador in techAmbassadors.slice(0,3)">
-            <a :href="ambssador.url"><img :src="ambssador.src" :alt="ambssador.alt"></a>
-          </div>
-        </div>
-        <div class="columns">
-          <div class="column is-4" v-for="ambssador in techAmbassadors.slice(3)">
-            <a :href="ambssador.url"><img :src="ambssador.src" :alt="ambssador.alt"></a>
-          </div>
-        </div>
-      </div>
-      <div class="column is-parent is-4">
-        <article class="tile is-child notification is-black is-size-5">
-          <div class="content">
-            <p class="title">🦄 Tech Ambassadors</p>
-            <div class="content">
-              <p>
-                We endorse various blockchain a decentralization projects.
-                We care about their community and trying to do best for their growth.
-              </p>
-              <p>We organize workshops and onboarding new people to use their tech.
-                Want to be part of it? Contact us 💞
               </p>
             </div>
           </div>
@@ -250,24 +262,66 @@
           ],
         },
         techAmbassadors: [
-          {url: 'https://loomx.io/', src: '/static/img/partners/loom_white.svg', alt: 'loomx network sidechain'},
-          {url: 'https://ethereum.org', src: '/static/img/partners/ethereum-logo.png', alt: 'ethereum blockchain'},
+          {
+            url: 'https://loomx.io/',
+            src: '/static/img/partners/loom_white.svg',
+            alt: 'loomx network sidechain logo'
+          },
+          {
+            url: 'https://ethereum.org',
+            src: '/static/img/partners/ethereum-logo.png',
+            alt: 'ethereum blockchain logo'
+          },
           {
             url: 'https://www.scuttlebutt.nz',
             src: '/static/img/partners/secure_scuttlebutt.png',
-            alt: 'secure scuttlebutt decentralized protocol'
+            alt: 'secure scuttlebutt decentralized protocol logo'
           },
           {
             url: 'https://nem.io',
             src: '/static/img/partners/NEM-OFFICIAL-LOGO-white.png',
-            alt: 'NEM foundation blockchain'
+            alt: 'NEM foundation blockchain logo'
           },
           {
             url: 'https://www.decent.ch',
             src: '/static/img/partners/DECENT_logo_vertical_color.png',
-            alt: 'decent blockchain'
+            alt: 'decent blockchain logo'
           },
-          {url: 'https://ipfs.io', src: '/static/img/partners/ipfs_2016-05-09-ipfs-3d-ice-text.png', alt: 'ipfs logo'}
+          {
+            url: 'https://ipfs.io',
+            src: '/static/img/partners/ipfs_2016-05-09-ipfs-3d-ice-text.png',
+            alt: 'ipfs logo'
+          },
+          {
+            url: 'https://makerdao.com',
+            src: '/static/img/partners/maker.svg',
+            alt: 'maker logo'
+          },
+          {
+            url: 'https://aragon.org',
+            src: '/static/img/partners/aragon_vertical@2x.webp',
+            alt: 'aragon logo'
+          },
+          {
+            url: 'https:///colony.io',
+            src: '/static/img/partners/colony_logo_vertical_navy_medium.png',
+            alt: 'colony logo'
+          },
+          {
+            url: 'https://tezos.com/',
+            src: '/static/img/partners/tezos_logo_white.png',
+            alt: 'Tezos Foundation logo'
+          },
+          {
+            url: 'https://cosmos.network',
+            src: '/static/img/partners/cosmosnetwork.png',
+            alt: 'Cosmos Network logo'
+          },
+          {
+            url: 'https:///polkadot.network',
+            src: '/static/img/partners/polkadotnetwork.svg',
+            alt: 'Polkadot network logo'
+          }
         ],
         isShowingCookieLaw: !CookieLaw.methods.getVisited() === true,
       };
@@ -394,6 +448,15 @@
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
+  }
+
+  @media only screen and (max-width: 768px) {
+    a > img {
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+    }
   }
 
 </style>

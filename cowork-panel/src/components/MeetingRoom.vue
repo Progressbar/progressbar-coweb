@@ -4,7 +4,7 @@
   <div class="tile is-parent is-12">
     <article class="tile is-child">
       <figure class="image">
-        <img src="/static/img/meetingroom/IMG_0963.jpg" alt="meeting room bratislava cowork"/>
+        <img src="/static/img/meetingroom/waomeeting-01-4.jpg" alt="meeting room bratislava cowork"/>
       </figure>
     </article>
   </div>
@@ -15,7 +15,7 @@
       <div class="tile is-parent is-vertical">
         <article class="tile is-child">
           <figure class="image">
-            <img src="/static/img/meetingroom/IMG_0984.jpg" alt="meeting room bratislava cowork"/>
+            <img src="/static/img/meetingroom/waomeeting-01.jpg" alt="meeting room bratislava cowork"/>
           </figure>
         </article>
       </div>
@@ -27,10 +27,11 @@
           <p class="title">Meeting room 🤝</p>
           <div class="content">
             <p>Perfect for brainstorming and meeting clients</p>
-            <p>Glass sealed</p>
-            <p>10 seats</p>
+            <p>Capacity 10 seats</p>
             <p>Projector</p>
+            <p>Chromecast</p>
             <p>Whiteboard</p>
+            <p>Downtown location</p>
             <p>By renting our meeting room you are supporting community 💞</p>
           </div>
           <div class="btn-container">
@@ -44,7 +45,7 @@
   <div class="tile is-parent">
     <article class="tile is-child">
       <figure class="image">
-        <img src="/static/img/meetingroom/IMG_0970.jpg" alt="meeting room bratislava cowork"/>
+        <img src="/static/img/meetingroom/waomeeting-05.jpg" alt="meeting room bratislava cowork"/>
       </figure>
     </article>
   </div>
@@ -53,24 +54,6 @@
     <div class="column is-12 contains-iframe-to-center" v-for="frame in href.iframes">
       <ImageFrame v-bind:url="frame" :key="frame"></ImageFrame>
     </div>
-</div>
-<div class="tile is-ancestor">
-  <div class="tile is-vertical is-12">
-    <div class="tile is-parent">
-      <article class="tile is-child">
-        <figure class="image">
-          <img src="/static/img/meetingroom/IMG_0966.jpg" alt="meeting room bratislava cowork"/>
-        </figure>
-      </article>
-    </div>
-    <div class="tile is-parent">
-      <article class="tile is-child">
-        <figure class="image">
-          <img src="/static/img/meetingroom/IMG_1026.jpg" alt="meeting room bratislava cowork"/>
-        </figure>
-      </article>
-    </div>
-  </div>
 </div>
 </div>
 </template>
@@ -86,7 +69,7 @@ export default {
     return {
       href: {
         iframes: [
-          "https://www.google.com/maps/embed?pb=!4v1547309949111!6m8!1m7!1sCAoSLEFGMVFpcFBxUjZDTVN1Ml95TENfQ29taDFIeWwwT1BBU3k5M3dkLUplWUEz!2m2!1d48.14465277777778!2d17.11530555555556!3f246.4!4f-13.89!5f0.4000000000000002"
+          "https://www.google.com/maps/embed?pb=!4v1548615947594!6m8!1m7!1sCAoSLEFGMVFpcE1uOUhxclBDNFJtN0VsaDRfYnZzbFRKaldSdGlJZER3cTR6Tkcz!2m2!1d48.14466111111111!2d17.1154!3f272.452135499486!4f-1.9685896130948208!5f0.4000000000000002"
         ],
       },
       orderPrices: {
