@@ -166,13 +166,12 @@
             <p class="title">⏳ Voyage Facilitation</p>
             <div class="content">
               <p></p>
-              <p>Voyages are what we're about and we're ready to sail. If you have a team that would like to spend some
-                time on our ship working towards your goals, please get in touch.
-                We will demonstrate benchmark our success and clearly demonstrate the benefits of teams working on
-                Progressbar.
-                For now we really need to prove ourselves and are ready to offer heavily discounted rates.
-                While your working on a voyage it's really easy to add some media coverage and document your work, or go
-                on team building excursions for very little extra cost.</p>
+              <p>Join us, meet interesting people and gain new information.
+                Progressbar will give you space where you can work and learn by attending workshops and talks.
+                You can rent a table and help create something big. We will be happy to help you with building your project.
+                All it takes for you is to come and show what’s inside of you.
+                Contact us for more information.
+              </p>
             </div>
           </div>
         </article>
@@ -188,10 +187,11 @@
             <p class="title">👽 Solutions Consultancy</p>
             <div class="content">
               <p>
-                We have lot of experience of running software and technology projects, and are happy to work with you to
-                put together a team for almost anything.
-                Drop us a line, we can discuss what you want to achieve and may be able to put together a proposal for
-                how Progressbar can get you there.
+                We are happy to help. We’ve got a lot of experience with software and technology projects.
+                We can help you with almost anything.
+                All it takes is to come and we can discuss or start working on your projects right away.
+                Progressbar will help you get exactly where you want to be, or even further.
+                We can build you a team of people you need to achieve your goals.
                 Consider us an A-team of tech wizards and innovation pirates.
               </p>
             </div>
