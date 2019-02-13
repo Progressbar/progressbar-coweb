@@ -7,8 +7,10 @@
     </div>
     <div class="columns">
       <div class="column is-parent is-8">
+        <img src="/static/img/cowork/pb-08.jpg" alt="progressbar cowork bratislava blockchain">
         <img src="/static/img/meetingroom/waomeeting-01-4.jpg" alt="blockchain cowork bratislava meeting room">
-        <img src="/static/img/IMG_1939.jpg" alt="progressbar cowork bratislava blockchain">
+        <!-- <img src="/static/img/cowork/pb-07.jpg" alt="blockchain cowork bratislava meeting room"> -->
+
       </div>
       <div class="column is-parent is-4">
         <article class="tile is-child notification is-black is-size-4">
@@ -158,7 +160,7 @@
     </div>
     <div class="columns">
       <div class="column is-parent is-8">
-        <img src="/static/img/IMG_1951.jpg" alt="progressbar cowork bratislava blockchain meetup">
+        <img src="/static/img/cowork/pb-07.jpg" alt="progressbar cowork bratislava blockchain meetup">
       </div>
       <div class="column is-parent is-4">
         <article class="tile is-child notification is-black is-size-5">

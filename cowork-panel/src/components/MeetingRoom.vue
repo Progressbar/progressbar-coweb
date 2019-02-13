@@ -45,6 +45,15 @@
   <div class="tile is-parent">
     <article class="tile is-child">
       <figure class="image">
+        <img src="/static/img/meetingroom/pb-02.jpg" alt="meeting room bratislava cowork"/>
+      </figure>
+    </article>
+  </div>
+</div>
+<div class="tile is-ancestor">
+  <div class="tile is-parent">
+    <article class="tile is-child">
+      <figure class="image">
         <img src="/static/img/meetingroom/waomeeting-05.jpg" alt="meeting room bratislava cowork"/>
       </figure>
     </article>
