@@ -7,8 +7,9 @@
     >
       <div class="container">
         <div class="navbar-brand">
-          <router-link class="navbar-item progressbar-logo-container" to="/">
-            <progressbar-logo-refresh/>
+          <router-link class="progressbar-logo-container" to="/">
+            <!-- <progressbar-logo-refresh/> -->
+            <progressbar-logo-icon/>
           </router-link>
           <div
             role="button"
@@ -90,6 +91,8 @@
 
 <script>
   import ProgressbarLogoRefresh from '@/components/ProgressbarLogoRefresh.vue'
+  import ProgressbarLogoIcon from '@/components/ProgressbarLogoIcon.vue'
+
   import {
   faTelegram
   } from '@fortawesome/free-brands-svg-icons'
@@ -97,6 +100,7 @@
     name: 'app-header',
     components: {
       ProgressbarLogoRefresh,
+      ProgressbarLogoIcon
     },
     props: {
       showLogo: {
@@ -141,8 +145,10 @@
     color: white;
   }
 
-  .progressbar-logo-container svg {
-    width: 115px;
+  .progressbar-logo-container img {
+    height: 50px;
+    padding: 5px 0px 0px 20px;
+    /* width: auto; */
   }
 
   .navbar-item {
