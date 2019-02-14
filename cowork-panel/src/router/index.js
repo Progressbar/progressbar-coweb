@@ -13,7 +13,6 @@ import GiveUsReviewBooking from '@/components/GiveUsReviewBooking'
 import GiveUsReviewAfterVisit from '@/components/GiveUsReviewAfterVisit'
 import RunningCosts from '@/components/RunningCosts'
 import Sponsors from '@/components/Sponsors'
-import D14 from '@/components/D14'
 import Venue from '@/components/Venue'
 import CallForHost from '@/components/CallForHost'
 import ContactPage from '@/components/ContactPage'
@@ -104,10 +103,6 @@ export default new Router({
     {
       path: '/call-for-a-host',
       component: CallForHost
-    },
-    {
-      path: '/d14',
-      component: D14
     },
     {
       path: '/contact',
