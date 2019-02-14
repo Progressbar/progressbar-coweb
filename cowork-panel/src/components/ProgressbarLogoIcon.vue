@@ -1,5 +1,5 @@
 <template>
-<img src="/static/img/icons/android-launchericon-144-144.png">
+<img src="/static/img/icons/android-launchericon-144-144.png" alt="progressbar logo blockchain cowork bratislava">
 </template>
 
 <script>
