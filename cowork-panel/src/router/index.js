@@ -5,7 +5,6 @@ import EmailVerify from '@/components/EmailVerify'
 import Order from '@/components/Order'
 import Login from '@/components/Login'
 import Credit from '@/components/Credit'
-import Photos from '@/components/Photos'
 import MeetingRoom from '@/components/MeetingRoom'
 import FixDesk from '@/components/FixDesk'
 import CallForTheSponsors from '@/components/CallForTheSponsors'
@@ -69,10 +68,6 @@ export default new Router({
     {
       path: '/fixdesk-cowork-bratislava',
       component: FixDesk
-    },
-    {
-      path: '/coworking-progressbar-bratislava-photos',
-      component: Photos
     },
     {
       path: '/call-for-the-sponsors',

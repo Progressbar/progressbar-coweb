@@ -5,8 +5,8 @@
       <h1 class="title has-text-grey-light is-size-1">
         Space for Rent & Events
       </h1>
-      <img src="/static/img/IMG_1023.jpg" alt="meetup space in bratislava downtown" />
-      <img src="/static/img/IMG_1012.jpg" alt="meetup space in bratislava downtown" />
+      <img src="/static/img/eventspace/IMG_1023.jpg" alt="meetup space in bratislava downtown" />
+      <img src="/static/img/eventspace/IMG_1012.jpg" alt="meetup space in bratislava downtown" />
     </div>
   </div>
   <div class="columns is-centered">
@@ -21,8 +21,8 @@
   </div>
   <div class="columns is-centered">
     <div class="column is-10 content">
-      <img src="/static/img/PANO_20180324_103055.jpg" alt="nodeschool bratislava women edition" />
-      <img src="/static/img/IMG_20180324_092514_HDR.jpg" alt="nodeschool bratislava women edition" />
+      <img src="/static/img/eventspace/PANO_20180324_103055.jpg" alt="nodeschool bratislava women edition" />
+      <img src="/static/img/eventspace/IMG_20180324_092514_HDR.jpg" alt="nodeschool bratislava women edition" />
     </div>
   </div>
   <div class="columns is-centered">

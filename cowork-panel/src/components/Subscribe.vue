@@ -25,9 +25,9 @@
             <p>💬 Hangout areas</p>
             <!-- <p>👀 Your <router-link to="/view">view</router-link></p> -->
             <!-- <p>⚡️  <a href="https://www.speedtest.net/result/7179888517" target="_blank" rel="noopener">We have ultra-fast internet</a></p> -->
-            <p>⚡️ Ultra-fast Internet</a></p>
             <p>🌱 Lot of plants</p>
             <p>🖥 Shared monitors</p>
+            <p>⚡️ Ultra-fast Internet</a></p>
             <p>👷‍♀️ Standing desks</p>
             <p>📦 Package Handling</p>
             <p>💁‍♀️ On-site support </p>
@@ -44,7 +44,7 @@
     </div>
     <div class="columns">
       <div class="column is-parent is-8">
-        <img src="/static/img/IMG_20190125_005932.jpg" alt="progressbar cowork bratislava blockchain streetview">
+        <img src="/static/img/cowork/IMG_20190125_005932.jpg" alt="progressbar cowork bratislava blockchain streetview">
       </div>
       <div class="column is-parent is-4">
         <article class="tile is-child notification is-black is-size-4">
@@ -97,7 +97,7 @@
     </div>
     <div class="columns">
       <div class="column is-parent is-8">
-        <img src="/static/img/wide.jpg" alt="progressbar technology blockchain cowork bratislava">
+        <img src="/static/img/cowork/wide.jpg" alt="progressbar technology blockchain cowork bratislava">
       </div>
       <div class="column is-parent is-4">
         <article class="tile is-child notification is-black is-size-5">
@@ -306,7 +306,7 @@
           },
           {
             url: 'https:///colony.io',
-            src: '/static/img/partners/colony_logo_vertical_navy_medium.png',
+            src: '/static/img/partners/POA-Network-Logo.png',
             alt: 'colony logo'
           },
           {

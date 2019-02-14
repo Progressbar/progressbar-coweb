@@ -3,7 +3,7 @@
   <div class="container">
     <div class="columns">
       <div class="column is-3">
-        <h1>🥥 Add us on socials 🦠</h1>
+        <h1>🥥 Socials 🦠</h1>
         <span class="social-icons" v-for="item in socials" :key="item.url">
           <a :href="item.url" target="_blank" rel="noopener" class="social-icon" aria-hidden="true">
             <font-awesome-icon v-if="item.icon" :icon="item.icon" />
@@ -11,7 +11,7 @@
         </span>
       </div>
       <div class="column is-3">
-        <h1>You can find us on</h1>
+        <h1>📍You can find us on</h1>
         <p>Dunajská 7495/14</p>
         <p>811 08, Bratislava</p>
         <p>Slovakia 🇸🇰</p>
@@ -29,7 +29,7 @@
           </li>
           <li>
             In September 2017 we considered to keep up our 💸 cashflow & our existence and started thinking about daily utilization.
-            We came up with idea to open <a href="https://t.me/coworkprogressbar">coworking</a> in our hackerspace Progressbar in Bratislava.
+            <br> We came up with idea to open <a href="https://t.me/coworkprogressbar">coworking</a> in our hackerspace Progressbar in Bratislava.
           </li>
           <li>
             If you think we are doing great thing

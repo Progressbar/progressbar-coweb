@@ -42,7 +42,7 @@
           We can donate you by 💶 cash or ⛓💰 crypto, whatever works for you.<br /><br />
           Contact us via <a href="https://t.me/coworkprogressbar" target="_blank">Telegram channel</a>  or <a href="https://facebook.com/progressbar" target="_blank">facebook.com/progressbar</a> if you are interested 🤙.
         </h3>
-        <img src="/static/img/wide.jpg" alt="progressbar technology cowork bratislava">
+        <img src="/static/img/cowork/wide.jpg" alt="progressbar technology cowork bratislava">
       </div>
     </div>
   </div>
