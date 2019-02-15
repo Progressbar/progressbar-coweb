@@ -32,7 +32,7 @@
               Events
             </div>
             <router-link
-              tag="div"
+
               class="navbar-item is-size-4"
               exact-active-class="is-active"
               to="/meeting-room-cowork-bratislava"
@@ -41,7 +41,6 @@
               Meeting Room
             </router-link>
             <router-link
-              tag="div"
               class="navbar-item is-size-4"
               exact-active-class="is-active"
               to="/space-for-rent"

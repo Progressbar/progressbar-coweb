@@ -1,39 +1,36 @@
 <template>
-<div class="meetingroom">
+<div class="residents">
   <div class="tile is-ancestor">
     <div class="tile is-parent is-12">
       <article class="tile is-child">
         <figure class="image">
-          <img src="/static/img/cowork/wide.jpg" alt="fixdesk bratislava cowork"/>
+          <img src="/static/img/cowork/pb-08.jpg" alt="progressbar cowork bratislava blockchain">
         </figure>
       </article>
     </div>
   </div>
-  <div class="tile is-ancestor">
-    <div class="tile is-vertical is-8">
-      <div class="column contains-iframe-to-center" v-for="frame in href.iframes">
-        <ImageFrame v-bind:url="frame" :key="frame"></ImageFrame>
-      </div>
+  <div class="columns">
+    <div class="column is-12">
+      <article class="tile is-child notification is-black is-size-4">
+        <p>Selected Residents at Progressbar Family Office
+        <div class="columns">
+          <div class="column is-4" v-for="r in residents.slice(0,3)">
+            <a :href="r.url"><img :src="r.src" :alt="r.alt">{{r.name}} </a>
+          </div>
+        </div>
+        <p>Social Impact</p>
+        <div class="columns">
+          <div class="column is-4" v-for="r in ngoResidents.slice(0,3)">
+            <a :href="r.url"><img :src="r.src" :alt="r.alt">{{r.name}} </a>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column is-4" v-for="r in ngoResidents.slice(3,6)">
+            <a :href="r.url"><img :src="r.src" :alt="r.alt">{{r.name}} </a>
+          </div>
+        </div>
+      </article>
     </div>
-      <div class="tile is-parent is-size-4" v-for="plan in plans.slice(2,3)">
-        <article :class="{'is-highlighted': plan.highlight }" class="tile is-child notification is-black">
-          <div class="content">
-            <p v-if="plan.url" class="title is-size-3"><router-link :to='plan.url'>
-              {{plan.name}}</router-link></p>
-            <p v-else class="title is-size-3">{{plan.name}}</p>
-            <div class="content">
-              <p>{{plan.time}}</p>
-              <p>{{plan.description[0]}}</p>
-              <p>{{plan.description[1]}}</p>
-              <p>{{plan.description[2]}}</p>
-            </div>
-          </div>
-          <div class="btn-container">
-            <a class="button is-black is-block is-large meeting"
-              :href="href.coworkGroup">{{ plan.price }}€ / {{plan.period}}</a>
-          </div>
-        </article>
-      </div>
   </div>
 </div>
 </template>
@@ -44,7 +41,7 @@ export default {
   components: {
     ImageFrame
   },
-  name: 'fixdesk',
+  name: 'residents',
   data() {
     return {
       href: {
@@ -53,23 +50,52 @@ export default {
         ],
         coworkGroup: 'https://t.me/coworkprogressbar'
       },
-      plans: [
-        { name: 'Weekpass', time: '9 am ~ 6 pm ⏰', description:
-          ['Available desk in space', 'Great for try out', 'Enjoy insider view'],
-          price: '50', period: 'week' },
-        { name: 'Flex', time: '6 am ~ 6 pm ⏰', description:
-          ['Available desk in space', 'Great for longer stays 🏡', 'Support us remotely 💞'],
-          price: '120',  period: 'month' },
-        { name: 'Fixdesk', time: '24/7 🌃', description:
-          ['Dedicated desk & chair', '♾ meeting room hours', '180cm long desk'],
-          price: '200', period: 'month', highlight: 'true'},
-        { name: 'Meeting Room 🤝', time: 'Acoustically isolated', description:
-          ['10 seats','Whiteboard', 'Projector 📽 '], price: '10', period: 'hour',
-          url: '/meeting-room-cowork-bratislava' }
+      residents: [
+        {
+          name: 'CrypKit',
+          src: '',
+          url: 'https://www.crypkit.com/',
+          desc: ''
+        },
+        {
+          name: 'BlockUnison',
+          src: '',
+          url: 'https://blockunison.com/',
+          desc: ''
+        },
+        {
+          name: 'NKB Group',
+          src: '',
+          url: 'http://www.nkbgroup.io/',
+          desc: ''
+        }
       ],
-      orderPrices: {
-        fixdesk: 200
-      }
+      ngoResidents: [
+        {
+          name: 'RmBrK',
+          src: '',
+          url: 'http://rmbrk.sk',
+          desc: ''
+        },
+        {
+          name: 'Cyklokoalicia',
+          src: '',
+          url: 'https://cyklokoalicia.sk/',
+          desc: ''
+        },
+        {
+          name: 'Whitebikes',
+          src: '',
+          url: 'https://whitebikes.info/',
+          desc: ''
+        },
+        {
+          name: 'Pre Stredoskolakov',
+          src: '',
+          url: 'http://prestredoskolakov.sk/',
+          desc: ''
+        }
+      ]
     }
   }
 }

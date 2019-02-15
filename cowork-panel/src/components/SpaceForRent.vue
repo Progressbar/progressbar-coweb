@@ -81,12 +81,12 @@ export default {
         ]
       },
       equipment: [
+        'We can scale up to 80 sitting spots',
         'We have for you fullHD (1080p) 📽 projector w/ HDMI and Chromecast',
         'We have 🗣🎤 head microphone and 🎤 hand microphone with mixpult (Bluetooh input)',
-        'We have video recording equipment for livestream',
+        'We have video 📹 recording equipment for livestream',
         'We have 2x 1000W speakers 🔊💥🙉',
         'For music we have ChromeCast Audio (play directly your Spotify playlist)',
-        'We have 30 IKEA wooden foldable chairs, 25 office chairs, 10 other various chairs. We can scale up to 80 sitting spots'
       ],
       content: `
         Our venue is 231 m² in Dunajska 14, at the heart of Bratislava. The space can comfortably accomodate 80 people, but it can be expanded to up to 160 thanks to the bar right below.
