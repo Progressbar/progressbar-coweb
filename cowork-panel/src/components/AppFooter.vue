@@ -19,7 +19,7 @@
           <a :href="item.url" target="_blank" rel="noopener">{{item.title}}</a>
         </div>
       </div>
-      <div class="column is-6">
+      <div class="column is-4">
         <div class="content">
         <p class="title has-text-white">🐚 Progressbar story</p>
         <ul>
@@ -48,7 +48,27 @@
         </ul>
         </div>
       </div>
-      <!-- TODO: ADD GOOGLE MAP LIKE MAP :D -->
+      <div class="column is-3">
+        <h1>👩‍💼 Our Services</h1>
+        <p>
+          <router-link
+              to="/fixdesk-cowork-bratislava">
+              Rent Desk in Cowork
+            </router-link>
+        </p>
+        <p>
+          <router-link
+              to="/meeting-room-cowork-bratislava">
+              Rent Meeting Room
+            </router-link>
+        </p>
+        <p>
+          <router-link
+              to="/space-for-rent">
+              Rent Space
+          </router-link>
+        </p>
+      </div>
     </div>
   </div>
   <div class="container">
