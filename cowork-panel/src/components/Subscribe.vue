@@ -18,7 +18,7 @@
           <div class="content">
             <p>📍 <a href="https://goo.gl/maps/njvuE4mwmpz" alt="location of cowork">Downtown, Bratislava</a></p>
             <p>🤝
-              <router-link to="meeting-room-cowork-bratislava">Conferencing room for brainstorming and meeting clients
+              <router-link to="meeting-room-cowork-bratislava">Meeting rooms
               </router-link>
             </p>
             <p>🔐 Private call room</p>
@@ -118,7 +118,7 @@
         </article>
       </div>
     </div>
-        <div class="columns">
+    <div class="columns">
       <div class="column is-parent is-8">
         <div class="columns">
           <div class="column is-4" v-for="ambssador in techAmbassadors.slice(0,3)">
