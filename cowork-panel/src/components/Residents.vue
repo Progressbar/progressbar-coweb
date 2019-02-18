@@ -12,13 +12,15 @@
   <div class="columns">
     <div class="column is-12">
       <article class="tile is-child notification is-black is-size-4">
-        <p>Selected Residents at Progressbar Family Office
+        <p class="title">Selected Residents at Progressbar Family Office
+        <p class="title">Crypto Startups</p>
+
         <div class="columns">
           <div class="column is-4" v-for="r in residents.slice(0,3)">
             <a :href="r.url"><img :src="r.src" :alt="r.alt">{{r.name}} </a>
           </div>
         </div>
-        <p>Social Impact</p>
+        <p class="title">Social Impact</p>
         <div class="columns">
           <div class="column is-4" v-for="r in ngoResidents.slice(0,3)">
             <a :href="r.url"><img :src="r.src" :alt="r.alt">{{r.name}} </a>
