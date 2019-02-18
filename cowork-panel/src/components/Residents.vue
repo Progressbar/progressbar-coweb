@@ -53,13 +53,13 @@ export default {
       residents: [
         {
           name: 'CrypKit',
-          src: '',
+          src: '/static/img/residents/crypkit-transparent.png',
           url: 'https://www.crypkit.com/',
           desc: ''
         },
         {
           name: 'BlockUnison',
-          src: '',
+          src: '/static/img/residents/blockunison.svg',
           url: 'https://blockunison.com/',
           desc: ''
         },
@@ -73,13 +73,13 @@ export default {
       ngoResidents: [
         {
           name: 'RmBrK',
-          src: '',
+          src: '/static/img/residents/rmbrk.png',
           url: 'http://rmbrk.sk',
           desc: ''
         },
         {
           name: 'Cyklokoalicia',
-          src: '',
+          src: '/static/img/residents/cyklokoalicia_logo.svg',
           url: 'https://cyklokoalicia.sk/',
           desc: ''
         },
@@ -91,7 +91,7 @@ export default {
         },
         {
           name: 'Pre Stredoskolakov',
-          src: '',
+          src: '/static/img/residents/pre_stredoskolakov.jpg',
           url: 'http://prestredoskolakov.sk/',
           desc: ''
         }
