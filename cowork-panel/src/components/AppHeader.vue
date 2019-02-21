@@ -150,6 +150,9 @@
     /* width: auto; */
   }
 
+  .navbar.is-black {
+    background-color: rgba(0,0,0,0.8)
+  }
   .navbar-item {
     color: white;
     cursor: pointer;
