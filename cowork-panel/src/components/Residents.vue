@@ -87,7 +87,7 @@ export default {
         },
         {
           name: 'Whitebikes',
-          src: '',
+          src: '/static/img/residents/WhiteBikes_Logo.svg',
           url: 'https://whitebikes.info/',
           desc: ''
         },
