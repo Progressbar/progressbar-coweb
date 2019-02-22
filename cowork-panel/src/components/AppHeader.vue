@@ -151,8 +151,9 @@
   }
 
   .navbar.is-black {
-    background-color: rgba(0,0,0,0.8)
+    background-color: rgba(0,0,0,0.7)
   }
+
   .navbar-item {
     color: white;
     cursor: pointer;

@@ -25,7 +25,7 @@
             <p>💬 Hangout areas</p>
             <!-- <p>👀 Your <router-link to="/view">view</router-link></p> -->
             <!-- <p>⚡️  <a href="https://www.speedtest.net/result/7179888517" target="_blank" rel="noopener">We have ultra-fast internet</a></p> -->
-            <p>🌱 Lot of plants</p>
+            <p>🌿 Lot of plants</p>
             <p>🖥 Shared monitors</p>
             <p>⚡️ Ultra-fast Internet</a></p>
             <p>👷‍♀️ Standing desks</p>
@@ -236,7 +236,9 @@
           {name: 'Club-Mate,', image: '', url: ''},
           {name: 'Fritz-kola,', image: '', url: ''},
           {name: 'Mate-Mate,', image: '', url: ''},
-          {name: 'Pragomost', image: '', url: ''},
+          {name: 'Pragomost,', image: '', url: ''},
+          {name: 'Ultichá-Mate,', image: '', url: ''},
+          {name: 'Matcha', image: '', url: ''},
         ],
         credited: 0,
         orderSum: {},

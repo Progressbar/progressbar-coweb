@@ -3,7 +3,7 @@
   <div class="container">
     <div class="columns">
       <div class="column is-3">
-        <h1>🥥 Socials 🦠</h1>
+        <p class="title has-text-white">🥥 Socials 🦠</p>
         <span class="social-icons" v-for="item in socials" :key="item.url">
           <a :href="item.url" target="_blank" rel="noopener" class="social-icon" aria-hidden="true">
             <font-awesome-icon v-if="item.icon" :icon="item.icon" />
@@ -11,7 +11,8 @@
         </span>
       </div>
       <div class="column is-3">
-        <h1>📍You can find us on</h1>
+        <p class="title has-text-white">📍You can find us on</p>
+        <p>Progressbar Cowork & Hackerspace</p>
         <p>Dunajská 7495/14</p>
         <p>811 08, Bratislava</p>
         <p>Slovakia 🇸🇰</p>
@@ -19,7 +20,33 @@
           <a :href="item.url" target="_blank" rel="noopener">{{item.title}}</a>
         </div>
       </div>
-      <div class="column is-4">
+      <div class="column is-3">
+        <p class="title has-text-white">👩‍💼 Our Services</p>
+        <div class="content">
+
+        <ul>
+          <li>
+            <router-link
+              to="/fixdesk-cowork-bratislava">
+              Rent Desk in Cowork
+            </router-link>
+          </li>
+          <li>
+            <router-link
+              to="/meeting-room-cowork-bratislava">
+              Rent Meeting Room
+          </router-link>
+          </li>
+          <li>
+            <router-link
+              to="/space-for-rent">
+              Rent Space
+            </router-link>
+          </li>
+        </ul>
+        </div>
+      </div>
+      <div class="column is-3">
         <div class="content">
         <p class="title has-text-white">🐚 Progressbar story</p>
         <ul>
@@ -47,27 +74,6 @@
           </li>
         </ul>
         </div>
-      </div>
-      <div class="column is-3">
-        <h1>👩‍💼 Our Services</h1>
-        <p>
-          <router-link
-              to="/fixdesk-cowork-bratislava">
-              Rent Desk in Cowork
-            </router-link>
-        </p>
-        <p>
-          <router-link
-              to="/meeting-room-cowork-bratislava">
-              Rent Meeting Room
-            </router-link>
-        </p>
-        <p>
-          <router-link
-              to="/space-for-rent">
-              Rent Space
-          </router-link>
-        </p>
       </div>
     </div>
   </div>
