@@ -34,7 +34,7 @@ export default {
       },
       plans: [
         { name: 'Weekpass', time: '9 am ~ 6 pm ⏰', description:
-          ['Available desk in space', 'Great for try out', 'Enjoy insider view'],
+          ['Available desk in space', 'Great for try out', 'Enjoy insider experience'],
           price: '50', period: 'week' },
         { name: 'Flex', time: '6 am ~ 6 pm ⏰', description:
           ['Available desk in space', 'Great for longer stays 🏡', 'You are supporting community 💞'],

@@ -98,6 +98,8 @@ import {
   faTelegram,
   faFacebookMessenger,
 faGit,
+faTwitterSquare,
+faYoutubeSquare,
 } from '@fortawesome/free-brands-svg-icons'
 export default {
   name: 'app-footer',
@@ -115,7 +117,8 @@ export default {
       socials: [
         { url: 'https://www.facebook.com/progressbar', title: 'Facebook', icon: faFacebook },
         { url: 'https://www.instagram.com/progressbar_sk', title: 'Instagram', icon: faInstagram },
-        { url: 'https://github.com/Progressbar', title: 'Github', icon: faGithub },
+        { url: 'https://twitter.com/progressbarsk', title: 'Twitter', icon: faTwitterSquare },
+        { url: 'https://www.youtube.com/channel/UCpun3Ro3aUJPoFVZwgqd98A', title: 'Youtube', icon: faYoutubeSquare },        { url: 'https://github.com/Progressbar', title: 'Github', icon: faGithub },
         { url: 'https://t.me/coworkprogressbar', title: 'Telegram', icon: faTelegram },
         { url: 'https://m.me/progressbar', title: 'Messenger', icon: faFacebookMessenger }
       ],
