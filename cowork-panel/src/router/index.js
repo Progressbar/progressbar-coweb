@@ -13,6 +13,7 @@ import Residents from '@/components/Residents'
 import GiveUsReviewBooking from '@/components/GiveUsReviewBooking'
 import GiveUsReviewAfterVisit from '@/components/GiveUsReviewAfterVisit'
 import RunningCosts from '@/components/RunningCosts'
+import Podcast from '@/components/Podcast'
 import Sponsors from '@/components/Sponsors'
 import Venue from '@/components/Venue'
 import CallForHost from '@/components/CallForHost'
@@ -100,6 +101,10 @@ export default new Router({
     {
       path: '/our-residents',
       component: Residents
+    },
+    {
+      path: '/podcast',
+      component: Podcast
     },
     {
       path: '/venue',
