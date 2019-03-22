@@ -63,7 +63,7 @@
                 Others
               </a>
               <div class="navbar-dropdown is-right">
-                <router-link class="dropdown-item is-size-5" to="/podcast" target="_blank" rel="noopener">🎥 Podcast</router-link>
+                <router-link class="dropdown-item is-size-5" to="/podcast" @click.native="toggleNav()">🎥 Podcast</router-link>
                 <a class="dropdown-item is-size-5" :href="href.donate" target="_blank" rel="noopener">💸 Donate to Progressbar</a>
                 <router-link class="dropdown-item is-size-5" to="/running-costs" @click.native="toggleNav()">📒 Running
                   costs
