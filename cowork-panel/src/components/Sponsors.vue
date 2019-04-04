@@ -11,7 +11,7 @@
               {{r.desc}}
             </div>
           </div>
-          <p class="title">Medial Partners</p>
+          <p class="title">Media Partners</p>
           <div class="columns">
             <div class="column is-4" v-for="r in mediaPartners.slice(0,3)">
               <a :href="r.url"><img :src="r.src" :alt="r.alt"><br>{{r.name}}</a>

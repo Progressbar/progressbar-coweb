@@ -6,7 +6,7 @@
         Space for Rent & Events
       </h1>
       <img src="/static/img/eventspace/event_space_chairs.jpg" alt="meetup space in bratislava downtown" />
-      <img src="/static/img/eventspace/IMG_20190327_190708_vedatour.jpg" alt="meetup space in bratislava downtown" />
+      <img src="/static/img/eventspace/IMG_20190404_172145_ps.jpg" alt="meetup space in bratislava downtown" />
     </div>
   </div>
   <div class="columns is-centered">
@@ -22,7 +22,7 @@
   <div class="columns is-centered">
     <div class="column is-10 content">
       <img src="/static/img/eventspace/mlmu_april.jpg" alt="machine learning bratislava meetup" />
-      <img src="/static/img/eventspace/IMG_20190404_172145_ps.jpg" alt="workshop for students" />
+      <img src="/static/img/eventspace/IMG_20190327_190708_vedatour.jpg" alt="workshop for students" />
     </div>
   </div>
   <div class="columns is-centered">
