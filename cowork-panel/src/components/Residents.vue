@@ -75,7 +75,7 @@ export default {
           name: 'NKB Group',
           src: '/static/img/residents/nkb_group.png',
           url: 'http://www.nkbgroup.io/',
-          desc: 'Investment banking for the digital world. NKB operates as a full-service investment bank focused on blockchain technology. We are a one-stop solution for our clients - opening the new world of crypto assets and delivering it via the best practices of traditional finance.'
+          desc: 'Investment banking for the digital world. NKB operates as a full-service investment bank focused on blockchain technology.'
         }
       ],
       ngoResidents: [
@@ -83,19 +83,19 @@ export default {
           name: 'Pre Stredoskolakov',
           src: '/static/img/residents/pre_stredoskolakov.jpg',
           url: 'http://prestredoskolakov.sk/',
-          desc: 'Vznikli sme v roku 2012 na Gymnáziu C. S. Lewisa v Bratislave; dnes sme tím zo škôl po celom Slovensku. Zbierame ponuky a informácie o eventoch či štipendiách a zhromažďujeme ich na našej platforme. Organizujeme rôzne eventy či vzdelávacie programy pre stredoškolákov a podnecujeme ich k aktívnemu prístupu v spoločnosti. Veríme, že cez účasť na týchto eventoch a počas štúdia v zahraničí študenti naberú skúsenosti, ktoré budú môcť aplikovať na Slovensku.'
+          desc: 'a nonprofit organization operating in Slovakia run by students. We provide information for Slovak students on opportunities that are available and relevant for them. That is why we also organize a Leadership Programme, a Buddy programme and most importantly, are not scared of  big projects like the nation-wide Student Elections.'
         },
         {
           name: 'Cyklokoalicia',
           src: '/static/img/residents/cyklokoalicia_logo.svg',
           url: 'https://cyklokoalicia.sk/',
-          desc: 'Rozvoj cyklistickej a pešej dopravy'
+          desc: 'is a non-profit advocacy expert group that aims to improve bicycle infrastructure in Bratislava and all over Slovakia. We also cover needs of pedestrians and support quality public spaces.'
         },
         {
           name: 'Rada mládeže Bratislavského kraja',
           src: '/static/img/residents/rmbrk.png',
           url: 'http://rmbrk.sk',
-          desc: 'Rada mládeže Bratislavského kraja...aby každý mladý človek mal hlas'
+          desc: 'The Youth Council (YC) platform connects children- and youth organizations, self-governing student councils, youth leaders, youth workers, youth researchers and other professionals in the field of youth work in the Bratislava Region.'
         },
         {
           name: 'Whitebikes',

@@ -2,11 +2,12 @@
 <div class="Venue">
   <div class="container is-fluid">
     <div class="columns is-centered">
-      <div class="column is-12 content">
+      <div class="column is-10 content">
         <h2 class="has-text-white">
-          We are located over Pub14 Bar on the first floor. <br />
-          You can access our space through doors next to Pub14. <br />
-          If you plan visit us during day, <a href="https://t.me/coworkprogressbar">contact us ahead</a> 🤗 Thanks
+          We are located on the first floor. <br />
+          You can access our space through grey doors next to bike stand.<br />
+          If you plan visit us during day, <a href="https://t.me/coworkprogressbar">join our public telegram channel </a><br />
+          🤗 Thanks
         </h2>
         <h3 class="has-text-white">
           Address <br />

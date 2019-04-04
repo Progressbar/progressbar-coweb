@@ -2,7 +2,12 @@
 <div class="sponsors">
   <div class="container is-fluid">
     <div class="columns is-centered">
-      <div class="column is-8">
+      <div class="column is-10">
+        <img src="/static/img/eventspace/IMG_20190327_190708_vedatour.jpg" alt="progressbar cowork bratislava meetup">
+      </div>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-10">
         <article class="tile is-child notification is-black is-size-5">
           <p class="title">Beloved & Brave Sponsors of our <a href="https://cowork.progressbar.sk"> hackerspace Progressbar</a> & <a href="https://cowork.progressbar.sk"> Cowork Progressbar</a><p/>
           <div class="columns">
