@@ -12,7 +12,7 @@
   <div class="columns">
     <div class="column is-12">
       <article class="tile is-child notification is-black is-size-4">
-        <p class="title">Selected Residents at Progressbar Family Office
+        <p class="title">Selected Residents at Progressbar Family Office<p/>
         <p class="title">Crypto Startups</p>
 
         <div class="columns">

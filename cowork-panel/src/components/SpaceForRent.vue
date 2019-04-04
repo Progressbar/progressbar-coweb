@@ -1,12 +1,12 @@
 <template>
 <div class="SpaceForRent">
   <div class="columns is-centered">
-    <div class="column is-12 content">
+    <div class="column is-10 content">
       <h1 class="title has-text-grey-light is-size-1">
         Space for Rent & Events
       </h1>
-      <img src="/static/img/eventspace/IMG_1023.jpg" alt="meetup space in bratislava downtown" />
-      <img src="/static/img/eventspace/IMG_1012.jpg" alt="meetup space in bratislava downtown" />
+      <img src="/static/img/eventspace/event_space_chairs.jpg" alt="meetup space in bratislava downtown" />
+      <img src="/static/img/eventspace/IMG_20190327_190708_vedatour.jpg" alt="meetup space in bratislava downtown" />
     </div>
   </div>
   <div class="columns is-centered">
@@ -15,14 +15,14 @@
     </div>
   </div>
   <div class="columns is-centered">
-    <div class="column is-10 contains-iframe-to-center" v-for="frame in href.iframes">
+    <div class="column is-8 contains-iframe-to-center" v-for="frame in href.iframes">
       <ImageFrame v-bind:url="frame" :key="frame"></ImageFrame>
     </div>
   </div>
   <div class="columns is-centered">
     <div class="column is-10 content">
-      <img src="/static/img/eventspace/PANO_20180324_103055.jpg" alt="nodeschool bratislava women edition" />
-      <img src="/static/img/eventspace/IMG_20180324_092514_HDR.jpg" alt="nodeschool bratislava women edition" />
+      <img src="/static/img/eventspace/mlmu_april.jpg" alt="machine learning bratislava meetup" />
+      <img src="/static/img/eventspace/IMG_20190404_172145_ps.jpg" alt="workshop for students" />
     </div>
   </div>
   <div class="columns is-centered">
@@ -50,7 +50,8 @@
           <p>
             <blockquote class="quote-to-include-in-event has-text-grey-light">
               🌈 You can support Progressbar through <a class="quote-link" href="https://donate.progressbar.sk" target="_blank">https://donate.progressbar.sk</a>
-              and check their cowork in downtown <a class="quote-link" href="https://cowork.progressbar.sk">https://cowork.progressbar.sk</a>
+              and check their cowork in downtown <a class="quote-link" href="https://cowork.progressbar.sk">https://cowork.progressbar.sk</a>.
+              Don't forget to join public cowork channel <a class="quote-link" href="https://t.me/coworkprogressbar">https://t.me/coworkprogressbar</a>
             </blockquote>
           </p>
         </li>

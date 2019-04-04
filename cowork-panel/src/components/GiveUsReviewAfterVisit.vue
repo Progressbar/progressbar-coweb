@@ -47,9 +47,9 @@
               donate: 'https://donate.progressbar.sk'
             },
             QrCodes: {
-              googleMapsProgressbar: '/static/img/review/google_maps_progressbar.svg',
-              facebookPage: '/static/img/review/facebook_review_progressbar.svg',
-              instagramProgressbar: '/static/img/review/instagram_progressbar.svg'
+              googleMapsProgressbar: '/static/img/review/google_maps_progressbar.jpg',
+              facebookPage: '/static/img/review/facebook_review_progressbar.jpg',
+              instagramProgressbar: '/static/img/review/instagram_progressbar.jpg'
             }
         }
       }
