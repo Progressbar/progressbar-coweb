@@ -14,30 +14,29 @@
       <article class="tile is-child notification is-black is-size-4">
         <p class="title">Selected Residents at Progressbar Family Office<p/>
         <p class="title">Crypto Startups</p>
-
         <div class="columns">
           <div class="column is-4" v-for="r in residents.slice(0,3)">
-            <a :href="r.url"><img :src="r.src" :alt="r.alt"><br>{{r.name}}</a>
+            <a :href="r.url"><img :src="r.src" :alt="r.name"><br>{{r.name}}</a>
             {{r.desc}}
           </div>
         </div>
         <p class="title">Technology Meetups</p>
         <div class="columns">
           <div class="column is-4" v-for="r in meetups.slice(0,3)">
-            <a :href="r.url"><img :src="r.src" :alt="r.alt"><br>{{r.name}}</a>
+            <a :href="r.url"><img :src="r.src" :alt="r.name"><br>{{r.name}}</a>
             {{r.desc}}
           </div>
         </div>
         <div class="columns">
           <div class="column is-4" v-for="r in meetups.slice(3,6)">
-            <a :href="r.url"><img :src="r.src" :alt="r.alt"><br>{{r.name}}</a>
+            <a :href="r.url"><img :src="r.src" :alt="r.name"><br>{{r.name}}</a>
             {{r.desc}}
           </div>
         </div>
         <p class="title">Social Impact</p>
         <div class="columns">
           <div class="column is-4" v-for="r in ngoResidents.slice(0,3)">
-            <a :href="r.url"><img :src="r.src" :alt="r.alt"><br>{{r.name}}</a>
+            <a :href="r.url"><img :src="r.src" :alt="r.name"><br>{{r.name}}</a>
             {{r.desc}}
           </div>
         </div>
