@@ -2,7 +2,7 @@
 <div class="SpaceForRent">
   <div class="columns is-centered">
     <div class="column is-10 content">
-      <h1 class="title has-text-grey-light is-size-1">
+      <h1 class="title has-text-white is-size-1">
         Space for Rent & Events
       </h1>
       <img src="/static/img/eventspace/event_space_chairs.jpg" alt="meetup space in bratislava downtown" />
@@ -10,8 +10,8 @@
     </div>
   </div>
   <div class="columns is-centered">
-    <div class="column is-6 content">
-      <p class="has-text-grey-light is-size-4" v-for="line of content">{{line}}</p>
+    <div class="column is-8 content">
+      <p class="has-text-white is-size-3" v-for="line of content">{{line}}</p>
     </div>
   </div>
   <div class="columns is-centered">
@@ -26,11 +26,11 @@
     </div>
   </div>
   <div class="columns is-centered">
-    <div class="column is-6 content">
-      <h1 class="title has-text-grey-light">
+    <div class="column is-8 content">
+      <h1 class="title has-text-white">
         Equipment in our space for your event
       </h1>
-      <ul class="has-text-grey-light is-size-4" v-for="eq in equipment">
+      <ul class="has-text-white is-size-4" v-for="eq in equipment">
         <li>
           <p>{{eq}}</p>
         </li>
@@ -39,27 +39,34 @@
   </div>
   <div class="columns is-centered">
     <div class="column is-6 content">
-      <h1 class="title has-text-grey-light">
+      <h1 class="title has-text-white">
+        <p>Interested hosting event in our venue? Contact us at <a href="mailto:info@progressbar.sk?Subject=Looking%20for%20venue%20for%20my%20event">info@progressbar.sk</a></p>
+      </h1>
+    </div>
+  </div>
+  <div class="columns is-centered">
+    <div class="column is-6 content">
+      <h1 class="title has-text-white">
         If you're organizing an event in our space
       </h1>
-      <ul class="has-text-grey-light is-size-6">
-        <li>
-          <p>
-            consider including this text in the description of your event:
-          </p>
-          <p>
-            <blockquote class="quote-to-include-in-event has-text-grey-light">
-              🌈 You can support Progressbar through <a class="quote-link" href="https://donate.progressbar.sk" target="_blank">https://donate.progressbar.sk</a>
-              and check their cowork in downtown <a class="quote-link" href="https://cowork.progressbar.sk">https://cowork.progressbar.sk</a>.
-              Don't forget to join public cowork channel <a class="quote-link" href="https://t.me/coworkprogressbar">https://t.me/coworkprogressbar</a>
-            </blockquote>
-          </p>
-        </li>
-        <li>
-          <p>
-          if your event is on Facebook, send a "co-host" request to <a href="https://www.facebook.com/progressbar/" target="_blank">Progressbar</a> for greater pull and easier administration 🤗
-          </p>
-        </li>
+      <ul class="has-text-white is-size-6">
+      <li>
+        <p>
+          consider including this text in the description of your event:
+        </p>
+        <p>
+          <blockquote class="quote-to-include-in-event has-text-white">
+            🌈 You can support Progressbar through <a class="quote-link" href="https://donate.progressbar.sk" target="_blank">https://donate.progressbar.sk</a>
+            and check their cowork in downtown <a class="quote-link" href="https://cowork.progressbar.sk">https://cowork.progressbar.sk</a>.
+            Don't forget to join public cowork channel <a class="quote-link" href="https://t.me/coworkprogressbar">https://t.me/coworkprogressbar</a>
+          </blockquote>
+        </p>
+      </li>
+      <li>
+        <p>
+        if your event is on Facebook, send a "co-host" request to <a href="https://www.facebook.com/progressbar/" target="_blank">Progressbar</a> for greater pull and easier administration 🤗
+        </p>
+      </li>
       </ul>
     </div>
   </div>
@@ -83,9 +90,12 @@ export default {
       },
       equipment: [
         'We can scale up to 80 sitting spots',
-        'We have for you fullHD (1080p) 📽 projector w/ HDMI and Chromecast',
+        'We have for you fullHD (1080p) 📽 projector w/ Chromecast',
         'We have 🗣🎤 head microphone and 🎤 hand microphone with mixpult (Bluetooh input)',
         'We have video 📹 recording equipment for livestream',
+        'We have high quality filtered water 🚰⛲️ for audience (UV lamp, carbon filter, antibacterial, reverse osmosis)',
+        'We have A/C ❄️ for your event',
+        'We have silent space for your event',
         'We have 2x 1000W speakers 🔊💥🙉',
         'For music we have ChromeCast Audio (play directly your Spotify playlist)',
       ],

@@ -18,7 +18,7 @@
                   <a
                     class="button is-black is-large"
                     href="https://t.me/coworkprogressbar"
-                    target="_blank" rel="noopener">Join Cowork 👩‍🚀</a>
+                    target="_blank" rel="noopener">Join Cowork 👩‍🔬</a>
                 </p>
                 <p>
                   <router-link
@@ -62,7 +62,7 @@ export default {
 
 <style scoped>
 .hero-bg {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url('/static/img/cowork/IMG_20190211_014546.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url('/static/img/cowork/cowork_bratislava_IMG_20190404_222127.jpg');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
