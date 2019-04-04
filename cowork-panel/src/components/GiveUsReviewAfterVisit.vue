@@ -2,22 +2,22 @@
   <div class="GiveUsReviewBooking">
     <div class="columns is-centered">
       <div class="column is-7 content">
-        <p class="has-text-white is-size-1">
+        <p class="has-text-white is-size-2">
           Hey {{$route.params.coworkerName}}
-        </p><p class="has-text-white is-size-1">
+        </p><p class="has-text-white is-size-2">
           Hope you enjoyed a day in our coworking space.
-        </p><p class="has-text-white is-size-1">
+        </p><p class="has-text-white is-size-2">
           We would love to ask you for a few minutes to write a review on
           <a :href="href.googleMapsProgressbar">Google Maps</a>,
           <a :href="href.coworkerProgressbar">Coworker.com</a>
           and our <a :href="href.facebookPageProgressbar">Facebook Page</a>.
-        </p><p class="has-text-white is-size-1">
+        </p><p class="has-text-white is-size-2">
           If you like what we are doing follow us on <a :href="href.instagram">Instagram @progressbar_sk</a>
-        </p><p class="has-text-white is-size-1">
-          If you would like to support us you can give us donation <a :href="href.donate">donate.progressbar.sk</a>.
-        </p><p class="has-text-white is-size-1">
+        </p><p class="has-text-white is-size-2">
+          If you would like to support us you can <a :href="href.donate">give us donation</a>.
+        </p><p class="has-text-white is-size-2">
           Don’t forget - sharing is caring.
-        </p><p class="has-text-white is-size-1">
+        </p><p class="has-text-white is-size-2">
           Thank you for your time.
         </p>
       </div>
