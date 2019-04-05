@@ -1,6 +1,6 @@
 <template>
 
-    <iframe rel="dns-prefetch" :src="this.url" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <iframe rel="dns-prefetch" :src="this.url" title="cowork360" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
 
 </template>
 
