@@ -120,7 +120,7 @@
           eventspace: 'https://goo.gl/maps/SghsZJzVPNs',
           donate: 'https://donate.progressbar.sk',
           coworkgroup: 'https://t.me/coworkprogressbar',
-          eventsfb: 'https://www.facebook.com/progressbar/events',
+          eventsfb: 'https://www.facebook.com/pg/progressbar/events/',
           homesite: 'https://cowork.progressbar.sk'
         },
         showNav: false,
