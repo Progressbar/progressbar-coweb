@@ -10,7 +10,7 @@
           🤗 Thanks
         </h2>
       </div>
-      <div class="column is-3 content">
+      <div class="column is-4 content">
         <h1 class="has-text-white">
           Address (postal) <br />
         </h1>
@@ -21,7 +21,7 @@
           Slovakia<br>
         </h3>
       </div>
-      <div class="column is-3 content">
+      <div class="column is-4 content">
         <h1 class="has-text-white">
           Billing details
         </h1>
@@ -38,7 +38,7 @@
       </div>
     </div>
     <div class="columns is-centered">
-      <div class="column is-10 content">
+      <div class="column is-12 content">
         <p>
           <a href="https://www.openstreetmap.org/node/1096120193" target="_blank">Progressbar at Openstreetmap</a>
           ||

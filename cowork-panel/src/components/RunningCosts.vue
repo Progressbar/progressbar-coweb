@@ -6,15 +6,15 @@
   <div class="container is-fluid">
     <div class="columns is-centered">
       <div class="column is-8 content">
-        <h1 class="title has-text-grey-light is-size-1">
+        <h1 class="title has-text-white is-size-1">
           Running costs
         </h1>
-        <img src="/static/img/tribune.jpg" alt="tribune" />
-        <p class="has-text-grey-light is-size-3" v-for="line of content">{{line}}</p>
-        <h1 class="has-text-grey-light is-uppercase">Our running costs are following:</h1>
-        <h4 class="has-text-grey-light is-size-4" v-for="line of costs">{{line}}</h4>
+        <img src="/static/img/eventspace/mlmu_april.jpg" alt="machine learning" />
+        <p class="has-text-white is-size-3" v-for="line of content">{{line}}</p>
+        <h1 class="has-text-white is-uppercase">Our running costs are following:</h1>
+        <h4 class="has-text-white is-size-4" v-for="line of costs">{{line}}</h4>
         </p>
-        <img src="/static/img/meeting_room.jpg" alt="meeting room" />
+        <img src="/static/img/meetingroom/waomeeting-01-4.jpg" alt="blockchain cowork bratislava meeting room">
       </div>
     </div>
   </div>
@@ -41,13 +41,13 @@ export default {
       .split('\n')
       .map((line) => line.trim()),
       costs: `
-        Space Rent & Maintenance ~ 3800€ / mo
+        Space Rent & Maintenance ~ 4000€ / mo
         Lemonades & Drinks ~ 600€ /mo
         Planned Hosts payroll ~ 1300€ /mo
 
         One time investments:
         Glass Meeting Room (for 12 people) costed us ~ 6000€.
-        Cinema-seating (cover over stairs) will cost us ~ 7000€.
+        Accoustic panels over another meeting room will cost us ~ 2000€.
         Kitchen will costs us ~ 1000€.
       `
       .trim()
