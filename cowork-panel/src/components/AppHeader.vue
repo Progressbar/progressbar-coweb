@@ -68,7 +68,7 @@
                 <router-link class="dropdown-item is-size-5" to="/running-costs" @click.native="toggleNav()">📒 Running
                   costs
                 </router-link>
-                <router-link class="dropdown-item is-size-5" to="/venue" @click.native="toggleNav()">🛸 Venue
+                <router-link class="dropdown-item is-size-5" to="/contact" @click.native="toggleNav()">🛸 Contact
                 </router-link>
                 <router-link class="dropdown-item is-size-5" to="/sponsors" @click.native="toggleNav()">🛰 Sponsors
                 </router-link>

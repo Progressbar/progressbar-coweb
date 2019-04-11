@@ -111,6 +111,10 @@ export default new Router({
       component: Venue
     },
     {
+      path: '/contact',
+      component: Venue
+    },
+    {
       path: '/call-for-a-host',
       component: CallForHost
     },
