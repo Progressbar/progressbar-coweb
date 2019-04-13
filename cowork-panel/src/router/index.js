@@ -19,6 +19,7 @@ import Venue from '@/components/Venue'
 import CallForHost from '@/components/CallForHost'
 import ContactPage from '@/components/ContactPage'
 import Page404 from '@/components/Page404'
+import Team from '@/components/Team'
 import VueLocalStorage from 'vue-ls'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
@@ -119,8 +120,8 @@ export default new Router({
       component: CallForHost
     },
     {
-      path: '/contact',
-      component: ContactPage
+      path: '/team',
+      component: Team
     },
     {
       path: '*',

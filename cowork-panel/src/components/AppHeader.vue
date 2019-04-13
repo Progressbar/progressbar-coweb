@@ -84,6 +84,9 @@
                 <router-link class="dropdown-item is-size-5" to="/call-for-the-sponsors" @click.native="toggleNav()">
                 🌈 Call for the Sponsors
                 </router-link>
+                <router-link class="dropdown-item is-size-5" to="/team" @click.native="toggleNav()">
+                🙏 Team
+                </router-link>
                 <!-- <router-link class="dropdown-item is-size-5" to="/call-for-a-host" @click.native="toggleNav()">💜 Call
                   for an Angel -->
                 <!-- </router-link> -->

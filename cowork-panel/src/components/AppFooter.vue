@@ -174,10 +174,10 @@ a.social-icon:hover {
   font-size: 1.3rem;
 }
 
-  .social-icons {
-    font-size: 2.6em;
-    padding: 0.1em;
-  }
+.social-icons {
+  font-size: 2.6em;
+  padding: 0.1em;
+}
 
 .social-icons:hover {
   cursor: pointer;
