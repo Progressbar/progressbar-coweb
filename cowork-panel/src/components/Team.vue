@@ -2,6 +2,7 @@
   <div class="Team">
     <div class="columns is-centered">
       <div class="column is-4 content has-text-white">
+        <img width="180px" src="/static/img/team/matej_nemcek.jpg">
         <h3 class="has-text-white">
           Matej Nemček
         </h3>
@@ -15,6 +16,7 @@
         </span>
       </div>
       <div class="column is-4 content has-text-white">
+        <img width="180px" src="/static/img/team/anett_rolikova.jpg">
         <h3 class="has-text-white">
           Anett Rolikova
         </h3>
