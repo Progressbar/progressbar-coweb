@@ -39,7 +39,8 @@ import {
   faFacebook,
   faTelegram,
   faFacebookMessenger,
-  faTwitterSquare
+  faTwitterSquare,
+  faLinkedin
 } from '@fortawesome/free-brands-svg-icons'
 export default {
     name: 'Team',
@@ -55,6 +56,7 @@ export default {
         },
         socialsYangwao: [
           { url: 'https://www.instagram.com/yangwao', title: 'Instagram', icon: faInstagram },
+          { url: 'https://www.linkedin.com/in/mnemcek/', title: 'Linkedin', icon: faLinkedin },
           { url: 'https://www.facebook.com/matej.wao.nemcek', title: 'Facebook', icon: faFacebook },
           { url: 'https://twitter.com/yangwao', title: 'Twitter', icon: faTwitterSquare },
           { url: 'https://t.me/yangwao', title: 'Telegram', icon: faTelegram },
@@ -62,10 +64,12 @@ export default {
         ],
         socialsAnett: [
           { url: 'https://www.instagram.com/anett.rolikova', title: 'Instagram', icon: faInstagram },
+          { url: 'https://www.linkedin.com/in/anette-rolikova', title: 'Linkedin', icon: faLinkedin },
           { url: 'https://www.facebook.com/anett.rolikova', title: 'Facebook', icon: faFacebook },
           { url: 'https://twitter.com/anettrolikova', title: 'Twitter', icon: faTwitterSquare },
           { url: 'https://t.me/anettrolikova', title: 'Telegram', icon: faTelegram },
           { url: 'https://m.me/anett.rolikova', title: 'Messenger', icon: faFacebookMessenger }
+
         ]
     }
   }
