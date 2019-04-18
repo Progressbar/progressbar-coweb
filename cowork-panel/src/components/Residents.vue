@@ -15,29 +15,29 @@
         <p class="title">Selected Residents at Progressbar Family Office<p/>
         <p class="title">Crypto Startups</p>
         <div class="columns">
-          <div class="column is-4" v-for="r in residents.slice(0,3)">
+          <div class="column is-3" v-for="r in residents.slice(0,4)">
             <a :href="r.url"><img :src="r.src" :alt="r.name"><br>{{r.name}}</a>
-            {{r.desc}}
+            <br>{{r.desc}}
           </div>
         </div>
         <p class="title">Technology Meetups</p>
         <div class="columns">
           <div class="column is-4" v-for="r in meetups.slice(0,3)">
             <a :href="r.url"><img :src="r.src" :alt="r.name"><br>{{r.name}}</a>
-            {{r.desc}}
+            <br>{{r.desc}}
           </div>
         </div>
         <div class="columns">
           <div class="column is-4" v-for="r in meetups.slice(3,6)">
             <a :href="r.url"><img :src="r.src" :alt="r.name"><br>{{r.name}}</a>
-            {{r.desc}}
+            <br>{{r.desc}}
           </div>
         </div>
         <p class="title">Social Impact</p>
         <div class="columns">
           <div class="column is-4" v-for="r in ngoResidents.slice(0,3)">
             <a :href="r.url"><img :src="r.src" :alt="r.name"><br>{{r.name}}</a>
-            {{r.desc}}
+            <br>{{r.desc}}
           </div>
         </div>
       </article>
@@ -60,10 +60,10 @@ export default {
       },
       residents: [
         {
-          name: 'CrypKit',
-          src: '/static/img/residents/crypkit-transparent.png',
-          url: 'https://www.crypkit.com/',
-          desc: 'Portfolio tracking and analytics web app for crypto markets. Focus on making better investment decisions. We take care of the rest.'
+          name: 'Zee Prime',
+          src: '/static/img/residents/zeeprime_capital.png',
+          url: 'https://zeeprime.capital/',
+          desc: 'Investment firm. Crypto. Collaborative intelligence. Coordination games. You name it.'
         },
         {
           name: 'BlockUnison',
@@ -76,7 +76,13 @@ export default {
           src: '/static/img/residents/nkb_group.png',
           url: 'http://www.nkbgroup.io/',
           desc: 'Investment banking for the digital world. NKB operates as a full-service investment bank focused on blockchain technology.'
-        }
+        },
+        {
+          name: 'CrypKit',
+          src: '/static/img/residents/crypkit-transparent.png',
+          url: 'https://www.crypkit.com/',
+          desc: 'Portfolio tracking and analytics web app for crypto markets. Focus on making better investment decisions. We take care of the rest.'
+        },
       ],
       ngoResidents: [
         {
