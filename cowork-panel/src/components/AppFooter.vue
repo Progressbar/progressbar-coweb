@@ -11,7 +11,7 @@
         </span>
       </div>
       <div class="column is-3">
-        <p class="title has-text-white">📍You can find us on</p>
+        <p class="title has-text-white">📍Find us on</p>
         <p>Progressbar Cowork & Hackerspace</p>
         <p>Dunajská 7495/14</p>
         <p>811 08, Bratislava</p>
@@ -48,7 +48,7 @@
       </div>
       <div class="column is-3">
         <div class="content">
-        <p class="title has-text-white">🐚 Progressbar story</p>
+        <p class="title has-text-white">🐚 History</p>
         <ul>
           <li>
             We started as <a href="https://progressbar.sk">first Slovak hackerspace</a> back in June 2010,

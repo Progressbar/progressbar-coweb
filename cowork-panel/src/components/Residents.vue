@@ -60,7 +60,7 @@ export default {
       },
       residents: [
         {
-          name: 'Zee Prime',
+          name: 'Zee Prime Capital',
           src: '/static/img/residents/zeeprime_capital.png',
           url: 'https://zeeprime.capital/',
           desc: 'Investment firm. Crypto. Collaborative intelligence. Coordination games. You name it.'

@@ -46,7 +46,7 @@
               to="/space-for-rent"
               v-on:click.native="toggleNav()"
             >
-              Rent our space
+              Rent Venue
             </router-link>
             <div class="navbar-item is-size-4" @click="redirectToUrl(href.coworkgroup)">
               <span class="social-icons" v-for="item in socials" :key="item.url">

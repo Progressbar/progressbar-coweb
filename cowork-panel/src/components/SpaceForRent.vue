@@ -3,7 +3,7 @@
   <div class="columns is-centered">
     <div class="column is-10 content">
       <h1 class="title has-text-white is-size-1">
-        Space for Rent & Events
+        Venue for Rent & Your Events
       </h1>
       <img src="/static/img/eventspace/event_space_chairs.jpg" alt="meetup space in bratislava downtown" />
       <img src="/static/img/eventspace/IMG_20190404_172145_ps.jpg" alt="meetup space in bratislava downtown" />
@@ -38,14 +38,14 @@
     </div>
   </div>
   <div class="columns is-centered">
-    <div class="column is-6 content">
+    <div class="column is-8 content">
       <h1 class="title has-text-white">
         <p>Interested hosting event in our venue? Contact us at <a href="mailto:info@progressbar.sk?Subject=Looking%20for%20venue%20for%20my%20event">info@progressbar.sk</a></p>
       </h1>
     </div>
   </div>
   <div class="columns is-centered">
-    <div class="column is-6 content">
+    <div class="column is-8 content">
       <h1 class="title has-text-white">
         If you're organizing an event in our space
       </h1>
@@ -57,8 +57,8 @@
         <p>
           <blockquote class="quote-to-include-in-event has-text-white">
             🌈 You can support Progressbar through <a class="quote-link" href="https://donate.progressbar.sk" target="_blank">https://donate.progressbar.sk</a>
-            and check their cowork in downtown <a class="quote-link" href="https://cowork.progressbar.sk">https://cowork.progressbar.sk</a>.
-            Don't forget to join public cowork channel <a class="quote-link" href="https://t.me/coworkprogressbar">https://t.me/coworkprogressbar</a>
+            and check Progressbar Cowork in Downtown <a class="quote-link" href="https://cowork.progressbar.sk">https://cowork.progressbar.sk</a>.
+            Join Our Cowork Channel <a class="quote-link" href="https://t.me/coworkprogressbar">https://t.me/coworkprogressbar</a>
           </blockquote>
         </p>
       </li>
