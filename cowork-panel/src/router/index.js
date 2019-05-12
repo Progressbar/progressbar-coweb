@@ -80,6 +80,10 @@ export default new Router({
       component: SpaceForRent
     },
     {
+      path: '/venue',
+      component: SpaceForRent
+    },
+    {
       path: '/running-costs',
       component: RunningCosts
     },
@@ -106,10 +110,6 @@ export default new Router({
     {
       path: '/podcast',
       component: Podcast
-    },
-    {
-      path: '/venue',
-      component: Venue
     },
     {
       path: '/contact',
