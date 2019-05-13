@@ -1,17 +1,25 @@
 <template>
 <footer class="footer">
   <div class="container">
-    <div class="columns">
-      <div class="column is-3">
+    <div class="tile is-vertical is-12">
+    <div class="tile">
+      <div class="tile is-parent is-vertical">
+        <article class="tile is-child">
         <p class="title has-text-white">🥥 Socials 🦠</p>
         <span class="social-icons" v-for="item in socials" :key="item.url">
           <a :href="item.url" target="_blank" rel="noopener" class="social-icon" aria-hidden="true">
             <font-awesome-icon v-if="item.icon" :icon="item.icon" />
           </a>
         </span>
+        </article>
+        <article class="tile is-child">
+          <p class="title has-text-white">🌐 Network</p>
+            <a href="https://starfish.network/"><img src="/static/img/partners/Starfish_Logo_Horizontal Mission@4x.png" alt="starfish mission san francisco blockchain space"></a>
+        </article>
       </div>
-      <div class="column is-3">
-        <p class="title has-text-white">📍Find us on</p>
+      <div class="tile is-parent is-vertical">
+        <article class="tile is-child">
+          <p class="title has-text-white">📍Find us on</p>
         <p>Progressbar Cowork & Hackerspace</p>
         <p>Dunajská 7495/14</p>
         <p>811 08, Bratislava</p>
@@ -19,11 +27,10 @@
         <div v-for="item in mapUrls" :key="item.url">
           <a :href="item.url" target="_blank" rel="noopener">{{item.title}}</a>
         </div>
-      </div>
-      <div class="column is-3">
-        <p class="title has-text-white">👩‍💼 Our Services</p>
+        </article>
+        <article class="tile is-child">
+        <p class="title has-text-white">👩‍💼 Services</p>
         <div class="content">
-
         <ul>
           <li>
             <router-link
@@ -40,14 +47,16 @@
           <li>
             <router-link
               to="/space-for-rent">
-              Rent Space
+              Rent Venue Space
             </router-link>
           </li>
         </ul>
         </div>
+        </article>
       </div>
-      <div class="column is-3">
-        <div class="content">
+      <div class="tile is-parent">
+        <article class="tile is-child">
+          <div class="content">
         <p class="title has-text-white">🐚 History</p>
         <ul>
           <li>
@@ -74,7 +83,9 @@
           </li>
         </ul>
         </div>
+        </article>
       </div>
+    </div>
     </div>
   </div>
   <div class="container">

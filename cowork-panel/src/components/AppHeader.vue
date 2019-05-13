@@ -76,7 +76,7 @@
                 🏡 Residents
                 </router-link>
                 <router-link class="dropdown-item is-size-5" to="/sponsors" @click.native="toggleNav()">
-                🛰 Sponsors
+                🛰 Network
                 </router-link>
                 <router-link class="dropdown-item is-size-5" to="/running-costs" @click.native="toggleNav()">
                 📒 Running costs

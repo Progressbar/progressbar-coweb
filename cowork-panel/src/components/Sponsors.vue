@@ -2,21 +2,21 @@
 <div class="sponsors">
   <div class="container is-fluid">
     <div class="columns is-centered">
-      <div class="column is-8">
+      <div class="column is-10">
         <img src="/static/img/eventspace/IMG_20190327_190708_vedatour.jpg" alt="progressbar cowork bratislava meetup">
       </div>
     </div>
     <div class="columns is-centered">
-      <div class="column is-8">
+      <div class="column is-10">
         <article class="tile is-child notification is-black is-size-5">
-          <p class="title">Beloved & Brave Sponsors of our <a href="https://cowork.progressbar.sk"> hackerspace Progressbar</a> & <a href="https://cowork.progressbar.sk"> Cowork Progressbar</a><p/>
+          <p class="title">Beloved & Brave Sponsors of <a href="https://cowork.progressbar.sk"> Cowork Progressbar</a> & <a href="https://cowork.progressbar.sk"> hackerspace</a><p/>
           <div class="columns">
             <div class="column is-4" v-for="r in sponsors.slice(0,3)">
               <a :href="r.url"><img :src="r.src" :alt="r.name"><br>{{r.name}}</a>
               {{r.desc}}
             </div>
           </div>
-          <p class="title">Media Partners</p>
+          <p class="title">Media & Network Partners</p>
           <div class="columns">
             <div class="column is-4" v-for="r in mediaPartners.slice(0,3)">
               <a :href="r.url"><img :src="r.src" :alt="r.name"><br>{{r.name}}</a>
@@ -24,7 +24,7 @@
             </div>
           </div>
           <p class="has-text-grey-light is-size-4">
-            Want to sponsor us? Your name will be known in our hackerspace & cowork. We hosted 700+ technical and technological events so far.
+            Want to sponsor us? Your name will be known in our hackerspace & cowork. We hosted 1000+ technical and technological events so far.
             We can give you huge marketing push or find you geeks, engineers, software developers you are searching for.
             We are their daily place, where their come hangout on evenings or work during day.
           </p>
@@ -65,6 +65,13 @@ export default {
           src: '/static/img/sponsors/robime_it.jpg',
           url: 'https://robime.it',
           desc: 'Robime.it je portál pre IT ľudí, ale aj pre tých, ktorí s IT úzko spolupracujú – konzultanti, finančníci, obchodníci, personalisti, marketéri, apod. Nájdete u nás pracovné ponuky, tipy a rady ako sa ďalej posunúť v kariére a pohľad do sveta informačných technológii.'
+        },
+        {
+          name: 'Starfish.mission',
+          src: '/static/img/partners/Starfish_Logo_Horizontal Mission@4x.png',
+          url: 'https://starfish.network/',
+          desc: 'Starfish Mission is a co-working space and community hub for blockchain, Web 3.0, and AI pioneers to connect, collaborate and build.'
+
         }
       ]
     }
