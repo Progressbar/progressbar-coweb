@@ -100,7 +100,7 @@ export default new Router({
       component: GiveUsReviewBooking
     },
     {
-      path: '/sponsors',
+      path: '/network',
       component: Sponsors
     },
     {

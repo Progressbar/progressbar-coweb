@@ -75,7 +75,7 @@
                 <router-link class="dropdown-item is-size-5" to="/our-residents" @click.native="toggleNav()">
                 🏡 Residents
                 </router-link>
-                <router-link class="dropdown-item is-size-5" to="/sponsors" @click.native="toggleNav()">
+                <router-link class="dropdown-item is-size-5" to="/network" @click.native="toggleNav()">
                 🛰 Network
                 </router-link>
                 <router-link class="dropdown-item is-size-5" to="/running-costs" @click.native="toggleNav()">
