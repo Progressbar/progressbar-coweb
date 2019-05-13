@@ -77,7 +77,7 @@
                   signup for our <a href="https://t.me/coworkprogressbar">coworking in Bratislava</a>
               </li>
               <li>
-                <router-link to="/sponsors">be our proud sponsor</router-link>
+                <router-link to="/network">be our proud sponsor</router-link>
               </li>
             </ul>
           </li>
