@@ -112,18 +112,6 @@ export default {
       ],
       meetups: [
         {
-          name: 'Nodeschool Bratislava',
-          src: '/static/img/residents/nodeschool-bratislava-sticker.svg',
-          url: 'https://www.meetup.com/nodejsbratislava/',
-          desc: 'Nodejs and learning meetup in Bratislava'
-        },
-        {
-          name: 'Bratislava Python Meetup',
-          src: '/static/img/residents/bratislava_python_meetup.jpeg',
-          url: 'https://spy.pycon.sk/sk/',
-          desc: 'Python Meetups & Pycon.sk organisers'
-        },
-        {
           name: 'Machine Learning Meetup Bratislava',
           src: '/static/img/residents/machine_learning_meetup_bratislava.jpeg',
           url: 'https://www.meetup.com/Machine-Learning-Bratislava-Meetups/',
@@ -136,16 +124,28 @@ export default {
           desc: 'Blockchain meetups in Bratislava, recently focused on Ethereum and other blockchains'
         },
         {
-          name: 'PyLadies Bratislava',
-          src: '/static/img/residents/pyladies_bratislava.jpg',
-          url: 'https://www.facebook.com/events/384459445719332/',
-          desc: 'Learning ladies to understand Python'
-        },
-        {
           name: 'Unreal User group Slovakia',
           src: '/static/img/residents/unreal_user_group_slovakia.jpeg',
           url: 'https://www.meetup.com/Unreal-User-Group-Slovakia/',
           desc: 'This group is for Unreal Engine users in Slovakia and surrounding countries. We plan to meet 6x per year in Bratislava and talk about all aspects related to developing games, apps, visualisations, VR in Unreal Engine 4.x'
+        },
+                {
+          name: 'Nodeschool Bratislava',
+          src: '/static/img/residents/nodeschool-bratislava-sticker.svg',
+          url: 'https://www.meetup.com/nodejsbratislava/',
+          desc: 'Nodejs and learning meetup in Bratislava'
+        },
+        {
+          name: 'Bratislava Python Meetup',
+          src: '/static/img/residents/bratislava_python_meetup.jpeg',
+          url: 'https://spy.pycon.sk/sk/',
+          desc: 'Python Meetups & Pycon.sk organisers'
+        },
+        {
+          name: 'PyLadies Bratislava',
+          src: '/static/img/residents/pyladies_bratislava.jpg',
+          url: 'https://www.facebook.com/events/384459445719332/',
+          desc: 'Learning ladies to understand Python'
         }
       ]
     }
