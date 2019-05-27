@@ -3,10 +3,16 @@
    <div class="columns">
      <div class="column is-12">
        <p class="title has-text-white">Support operational costs of Progressbar</p>
-       <vue-qr logoSrc="/static/img/icons/android-launchericon-144-144.png"
-        :text="`ethereum: ${donations.ethereum.to}?value=${donations.ethereum.value}`"
+       <p class="title has-text-white">Ethereum or DAI</p>
+       <p class="title has-text-white">{{donations.ethereum.to}}</p>
+       <vue-qr
+        logoSrc="/static/img/icons/android-launchericon-144-144.png"
+        :correctLevel="3"
+        :logoScale="0.5"
+        :text="`ethereum:${donations.ethereum.to}?value=${donations.ethereum.value}`"
         :size="300"
-        :dotScale="1"></vue-qr>
+        :dotScale="1"
+        ></vue-qr>
      </div>
    </div>
    <div class="columns">
@@ -26,7 +32,7 @@
           donations: {
             ethereum: {
               to: '0x2a49d8d6dd59b35d613d8d569cd048bb3113e42e',
-              value: 0.01
+              value: '1.00e16'
             }
           },
           href: {

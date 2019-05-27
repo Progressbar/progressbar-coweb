@@ -66,9 +66,9 @@
                 <router-link class="dropdown-item is-size-5" to="/podcast" @click.native="toggleNav()">
                 🎥 Podcast
                 </router-link>
-                <a class="dropdown-item is-size-5" :href="href.donate" target="_blank" rel="noopener">
-                  💸 Donate to Progressbar
-                </a>
+                <router-link class="dropdown-item is-size-5" to="/pay" @click.native="toggleNav()">
+                🤑 Support operational costs
+                </router-link>
                 <router-link class="dropdown-item is-size-5" to="/contact" @click.native="toggleNav()">
                 🛸 Contact
                 </router-link>
@@ -81,6 +81,9 @@
                 <router-link class="dropdown-item is-size-5" to="/running-costs" @click.native="toggleNav()">
                 📒 Running costs
                 </router-link>
+                <a class="dropdown-item is-size-5" :href="href.donate" target="_blank" rel="noopener">
+                💸 Donate to Progressbar
+                </a>
                 <router-link class="dropdown-item is-size-5" to="/call-for-the-sponsors" @click.native="toggleNav()">
                 🌈 Call for the Sponsors
                 </router-link>
