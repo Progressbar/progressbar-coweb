@@ -17,14 +17,11 @@ import Podcast from '@/components/Podcast'
 import Sponsors from '@/components/Sponsors'
 import Venue from '@/components/Venue'
 import CallForHost from '@/components/CallForHost'
-import ContactPage from '@/components/ContactPage'
 import Page404 from '@/components/Page404'
 import Team from '@/components/Team'
 import Pay from '@/components/Pay'
 import VueLocalStorage from 'vue-ls'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import Web3 from 'web3'
-import VueWeb3 from 'vue-web3'
 import VueQr from 'vue-qr'
 
 var options = {
@@ -33,7 +30,6 @@ var options = {
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 Vue.use(VueLocalStorage, options)
-Vue.use(VueWeb3, { web3: new Web3(web3.currentProvider) })
 Vue.use(VueQr)
 Vue.use(Router)
 
