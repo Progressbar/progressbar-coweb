@@ -47,8 +47,8 @@
               to: '0x2a49d8d6dd59b35d613d8d569cd048bb3113e42e',
               value: '1.00e16'
             },
-            kyber: 'https://widget.kyber.network/v0.6.4/?type=pay&mode=tab&receiveAddr=0x2a49d8d6dd59b35d613d8d569cd048bb3113e42e&receiveToken=ETH&paramForwarding=false&network=ropsten&pinnedTokens=ETH_DAI&theme=theme-dark',
-            kyber001: 'https://widget.kyber.network/v0.6.4/?type=pay&mode=tab&receiveAddr=0x2a49d8d6dd59b35d613d8d569cd048bb3113e42e&receiveToken=ETH&receiveAmount=0.01&paramForwarding=false&network=ropsten&pinnedTokens=ETH_DAI&theme=theme-dark',
+            kyber: 'https://widget.kyber.network/v0.6.4/?type=pay&mode=tab&receiveAddr=0x2a49d8d6dd59b35d613d8d569cd048bb3113e42e&receiveToken=ETH&paramForwarding=false&network=mainnet&pinnedTokens=ETH_DAI&theme=theme-dark',
+            kyber001: 'https://widget.kyber.network/v0.6.4/?type=pay&mode=tab&receiveAddr=0x2a49d8d6dd59b35d613d8d569cd048bb3113e42e&receiveToken=ETH&receiveAmount=0.01&paramForwarding=false&network=mainnet&pinnedTokens=ETH_DAI&theme=theme-dark',
             daicard: 'https://daicard.io/send?amountToken=10&recipient=0x0f86cf3aeb74be7e8da0dddb077b211c5dc2e1b9'
           },
           href: {
