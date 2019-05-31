@@ -16,17 +16,19 @@
      </div>
    </div>
    <div class="columns">
-     <div class="column is-12">
+     <div class="column is-6">
        <a :href='donations.kyber'
-        class='kyber-widget-button theme-dark theme-supported'
+        class='button is-black is-block is-large meeting'
         name='KyberWidget - Powered by KyberNetwork'
         title='Pay with tokens'
         target='_blank'>Pay with tokens</a>
+     </div>
+     <div class="column is-6">
       <a :href='donations.kyber001'
-        class='kyber-widget-button theme-dark theme-supported'
+        class='button is-black is-block is-large meeting'
         name='KyberWidget - Powered by KyberNetwork'
         title='Pay with tokens'
-        target='_blank'>Pay 0.01 ETH w/ tokens</a>
+        target='_blank'>Pay 0.01 ETH with tokens</a>
      </div>
    </div>
    <div class="columns">
@@ -68,5 +70,8 @@
 <style>
   a {
     color: hotpink;
+  }
+  .button.is-black.is-block.is-large.meeting {
+    background-image: linear-gradient(to right top, #b60cf6, #9316e5, #711ad4, #4c1ac1, #1e19ae);
   }
 </style>
