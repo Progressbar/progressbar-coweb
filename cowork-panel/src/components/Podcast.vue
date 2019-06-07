@@ -11,8 +11,8 @@
         <a href="https://cowork.progressbar.sk/podcast">Prvý Pokusný Podcast Progressbaru - PPPP - ⛓ links</a><br><br>
         💬 <a href="https://t.me/progressbarpodcast">Telegram Channel</a><br>
         🎥 <a href="https://www.youtube.com/playlist?list=PLfCtn83lMV3CzkXkGdkdUnNZvD5c4hBbC">Youtube Playlist</a><br>
-        🎧 <a href="https://open.spotify.com/show/2arFgMfH8p27iEpwJmFv23">Spotify</a><br>
         🎧 <a href="https://podcasts.apple.com/us/podcast/id1465903607">Apple Podcasts</a><br>
+        🎧 <a href="https://open.spotify.com/show/2arFgMfH8p27iEpwJmFv23">Spotify</a><br>
         🐬 <a href="https://api.substack.com/feed/podcast/10023.rss">RSS</a><br>
         📧 <a href="https://pppp.substack.com/">Newsletter</a>
         </h1>

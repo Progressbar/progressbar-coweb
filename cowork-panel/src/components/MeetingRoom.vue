@@ -27,10 +27,10 @@
           <p class="title">Meeting room 🤝</p>
           <div class="content">
             <p>Perfect for brainstorming and meeting clients</p>
-            <p>Capacity 10 seats</p>
-            <p>Projector</p>
-            <p>Chromecast</p>
+            <p>Capacity 10 seats </p>
+            <p>Projector with Chromecast</p>
             <p>Whiteboard</p>
+            <p>Good for Podcasts</p>
             <p>Downtown location</p>
             <p>By renting our meeting room you are supporting community 💞</p>
           </div>
