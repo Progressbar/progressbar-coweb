@@ -1,10 +1,12 @@
 <template>
   <div class="Pay">
    <div class="columns">
-     <div class="column is-12">
+     <div class="column is-4 is-offset-3">
        <p class="title has-text-white">Support operational costs of Progressbar</p>
-       <p class="title has-text-white">Ethereum or DAI</p>
+       <p class="title has-text-white">Ethereum, DAI, ⚡️ LN</p>
        <p class="title has-text-white">{{donations.ethereum.to}}</p>
+     </div>
+     <div class="column is-4">
        <vue-qr
         logoSrc="/static/img/icons/android-launchericon-144-144.png"
         :correctLevel="3"
@@ -16,26 +18,37 @@
      </div>
    </div>
    <div class="columns">
-     <div class="column is-6">
+     <div class="column is-4">
        <a :href='donations.kyber'
         class='button is-black is-block is-large meeting'
         name='KyberWidget - Powered by KyberNetwork'
         title='Pay with tokens'
         target='_blank'>Pay with tokens</a>
      </div>
-     <div class="column is-6">
+     <div class="column is-4">
       <a :href='donations.kyber001'
         class='button is-black is-block is-large meeting'
         name='KyberWidget - Powered by KyberNetwork'
         title='Pay with tokens'
         target='_blank'>Pay 0.01 ETH with tokens</a>
      </div>
+     <div class="column is-4 content">
+       <h1>
+        <a :href='donations.daicard'
+          class='button is-black is-block is-large meeting'
+        >$10 DAI via 💳DAICARD</a>
+       </h1>
+     </div>
    </div>
    <div class="columns">
-     <div class="column is-12">
-       <a :href='donations.daicard'>Donate $10 DAI through DAICARD</a>
-     </div>
-  </div>
+     <div class="column is-4 is-offset-4">
+        <p class="title has-text-white">You are ⚡️Lightning Network fan? <a href="https://tippin.me/@progressbarsk">We are supporting LN too 😍</a></p>
+        <div id="tippin-button" data-dest="progressbarsk"></div>
+        <a :href='donations.tippinme'
+        class='button is-black is-block is-large meeting'
+        target='_blank'>Support with ⚡️LN</a>
+      </div>
+   </div>
   </div>
 </template>
 
@@ -51,7 +64,8 @@
             },
             kyber: 'https://widget.kyber.network/v0.6.4/?type=pay&mode=tab&receiveAddr=0x2a49d8d6dd59b35d613d8d569cd048bb3113e42e&receiveToken=ETH&paramForwarding=false&network=mainnet&pinnedTokens=ETH_DAI&theme=theme-dark',
             kyber001: 'https://widget.kyber.network/v0.6.4/?type=pay&mode=tab&receiveAddr=0x2a49d8d6dd59b35d613d8d569cd048bb3113e42e&receiveToken=ETH&receiveAmount=0.01&paramForwarding=false&network=mainnet&pinnedTokens=ETH_DAI&theme=theme-dark',
-            daicard: 'https://daicard.io/send?amountToken=10&recipient=0x0f86cf3aeb74be7e8da0dddb077b211c5dc2e1b9'
+            daicard: 'https://daicard.io/send?amountToken=10&recipient=0x0f86cf3aeb74be7e8da0dddb077b211c5dc2e1b9',
+            tippinme: 'https://tippin.me/@progressbarsk'
           },
           href: {
             coworkGroup: 'https://t.me/coworkprogressbar',
