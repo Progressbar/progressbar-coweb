@@ -20,6 +20,7 @@ import CallForHost from '@/components/CallForHost'
 import Page404 from '@/components/Page404'
 import Team from '@/components/Team'
 import Pay from '@/components/Pay'
+import Calendar from '@/components/Calendar'
 import VueLocalStorage from 'vue-ls'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import VueQr from 'vue-qr'
@@ -104,6 +105,10 @@ export default new Router({
     {
       path: '/pay',
       component: Pay
+    },
+    {
+      path: '/calendar',
+      component: Calendar
     },
     {
       path: '/network',

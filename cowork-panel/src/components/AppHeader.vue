@@ -75,6 +75,9 @@
                 <router-link class="dropdown-item is-size-5" to="/network" @click.native="toggleNav()">
                 🛰 Network
                 </router-link>
+                <router-link class="dropdown-item is-size-5" to="/calendar" @click.native="toggleNav()">
+                🍻 Events
+                </router-link>
                 <router-link class="dropdown-item is-size-5" to="/running-costs" @click.native="toggleNav()">
                 📒 Running costs
                 </router-link>
