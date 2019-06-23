@@ -3,7 +3,10 @@
    <div class="columns">
      <div class="column is-4">
        <p class="title has-text-white">Support operational costs of Progressbar</p>
-
+       <p class="title has-text-white">Our monthly rent is <a href="#">{{ funds.monthlyRentTax }}€</a>.
+        Our account balance is <a href="#">{{ funds.balance }}€</a> at the moment.
+        We are missing <a href="#">{{ funds.missingFunds }}€</a> for another month.
+        If you like what we do, you can support our operations by donating 👇</p>
      </div>
      <div class="column is-4">
        <p class="title has-text-white">Ethereum, DAI</p>
@@ -87,6 +90,7 @@
 </template>
 
 <script>
+  import axios from 'axios'
   export default {
       name: 'Pay',
       data () {
@@ -113,9 +117,33 @@
             instagram: 'https://www.instagram.com/progressbar_sk/',
             donate: 'https://donate.progressbar.sk'
           },
-          donationAddress: '0x2a49d8d6dd59b35d613d8d569cd048bb3113e42e'
+          donationAddress: '0x2a49d8d6dd59b35d613d8d569cd048bb3113e42e',
+          funds: {
+            monthlyRentTax: 3768,
+            missingFunds: 2431,
+            balance: 1337
+          }
+      }
+    },
+    created() {
+      this.getFunds();
+    },
+    methods: {
+      getFunds() {
+        axios({
+          method: 'get',
+          url: 'https://yangwao.api.stdlib.com/progressbar-cashflow@dev/'
+        })
+          .then(response => {
+            // console.log(response)
+            this.funds = response.data;
+          })
+          .catch(e => {
+            console.log(e);
+          });
       }
     }
+
   }
 </script>
 
