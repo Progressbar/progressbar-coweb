@@ -6,7 +6,7 @@
         <h2 class="has-text-white">
           📍We are located on the first floor. <br />
           You can access our space through grey doors next to bike stand. <br />
-          <br> 🚪If you plan visit us during day, <a href="https://t.me/coworkprogressbar">join our public telegram channel </a><br /> or <a href="mailto:info@progressbar.sk">contact us via email</a>
+          <br> 🚪If you plan visit us during day, <a href="https://t.me/coworkprogressbar">join our public telegram channel ahead </a><br /> or <a href="mailto:info@progressbar.sk">contact us via email</a>
           🤗 Thanks
         </h2>
       </div>

@@ -9,23 +9,23 @@
         If you like what we do, you can support our operations by donating 👇</p>
      </div>
      <div class="column is-4">
-       <p class="title has-text-white">Ethereum, DAI</p>
-       <p class="title has-text-white">{{donations.ethereum.to}}</p>
-       <vue-qr
-        logoSrc="/static/img/partners/ethereum-1-logo-svg-vector.svg"
-        :correctLevel="3"
-        :logoScale="0.2"
-        :text="`ethereum:${donations.ethereum.to}?value=${donations.ethereum.value}`"
+        <p class="title has-text-white">IBAN (€)</p>
+        <p class="title has-text-white">{{donations.IBAN}}</p>
+        <vue-qr
+        :correctLevel="1"
+        :text="`${donations.payBySquareIBAN}`"
         :size="300"
         :dotScale="1"
         ></vue-qr>
-     </div>
-     <div class="column is-4">
-        <p class="title has-text-white">IBAN</p>
-        <p class="title has-text-white">{{donations.IBAN}}</p>
-        <vue-qr
-        :correctLevel="3"
-        :text="`${donations.payBySquareIBAN}`"
+      </div>
+      <div class="column is-4">
+       <p class="title has-text-white">Ethereum, DAI</p>
+       <p class="title has-text-white"><a :href='`ethereum:${donations.ethereum.to}`'>{{donations.ethereum.to}}</a></p>
+       <vue-qr
+        logoSrc="/static/img/partners/ethereum-1-logo-svg-vector.svg"
+        :correctLevel="1"
+        :logoScale="0.1"
+        :text="`ethereum:${donations.ethereum.to}?value=${donations.ethereum.value}`"
         :size="300"
         :dotScale="1"
         ></vue-qr>
@@ -56,7 +56,15 @@
    </div>
    <div class="columns">
       <div class="column is-4">
-        <p class="title has-text-white">₿itcoin {{donations.bitcoin}}</p>
+        <p class="title has-text-white">⚡️Lightning Network fan? <br>
+          <a :href='donations.tippinme'>We are supporting LN too 😍</a></p>
+        <div id="tippin-button" data-dest="progressbarsk"></div>
+        <a :href='donations.tippinme'
+        class='button is-black is-block is-large meeting'
+        target='_blank'>Support with ⚡️LN</a>
+      </div>
+      <div class="column is-4">
+        <p class="title has-text-white">₿itcoin <a :href='`bitcoin:${donations.bitcoin}`'>{{donations.bitcoin}}</a></p>
         <vue-qr
         logoSrc="/static/img/partners/Bitcoin.svg"
         :correctLevel="3"
@@ -67,15 +75,7 @@
         ></vue-qr>
       </div>
       <div class="column is-4">
-        <p class="title has-text-white">⚡️Lightning Network fan? <br>
-          <a href="https://tippin.me/@progressbarsk">We are supporting LN too 😍</a></p>
-        <div id="tippin-button" data-dest="progressbarsk"></div>
-        <a :href='donations.tippinme'
-        class='button is-black is-block is-large meeting'
-        target='_blank'>Support with ⚡️LN</a>
-      </div>
-      <div class="column is-4">
-        <p class="title has-text-white">Łitecoin {{donations.litecoin}}</p>
+        <p class="title has-text-white">Łitecoin <a :href='`litecoin:${donations.litecoin}`'>{{donations.litecoin}}</a></p>
         <vue-qr
         logoSrc="/static/img/partners/Litecoin.svg"
         :correctLevel="3"
