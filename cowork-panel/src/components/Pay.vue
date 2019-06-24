@@ -127,8 +127,23 @@
     },
     created() {
       this.getFunds();
+      this.getFundsStorage();
     },
     methods: {
+      getFundsStorage() {
+        axios({
+          method: 'get',
+          url: 'https://yangwao.api.stdlib.com/progressbar-cashflowStorage@dev/'
+        })
+          .then(response => {
+            // console.log(response)
+            this.funds = response.data;
+          })
+          .catch(e => {
+            console.log(e);
+          });
+      },
+      // cronjob by audience
       getFunds() {
         axios({
           method: 'get',
@@ -136,7 +151,7 @@
         })
           .then(response => {
             // console.log(response)
-            this.funds = response.data;
+            // this.funds = response.data;
           })
           .catch(e => {
             console.log(e);
