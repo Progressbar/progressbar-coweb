@@ -15,7 +15,7 @@
         <p class="title">Selected Residents at Progressbar Family Office<p/>
         <p class="title">Crypto Startups</p>
         <div class="columns">
-          <div class="column is-3" v-for="r in residents.slice(0,4)">
+          <div class="column" v-for="r in residents.slice(0,5)">
             <a :href="r.url"><img :src="r.src" :alt="r.name"><br>{{r.name}}</a>
             <br>{{r.desc}}
           </div>
@@ -60,17 +60,24 @@ export default {
       },
       residents: [
         {
-          name: 'Zee Prime Capital',
-          src: '/static/img/residents/zeeprime_capital.png',
-          url: 'https://zeeprime.capital/',
-          desc: 'Investment firm. Crypto. Collaborative intelligence. Coordination games. You name it.'
-        },
-        {
           name: 'BlockUnison',
           src: '/static/img/residents/blockunison.svg',
           url: 'https://blockunison.com/',
           desc: 'DEVELOPERS AND PIONEERS IN BLOCKCHAIN. We are a gateway for startups and larger enterprises that need Solidity Smart Contracts and crypto expertise'
         },
+        {
+          name: 'FullnodeTECH',
+          src: '/static/img/residents/fullnodetech.jpg',
+          url: 'https://www.fullnode.tech/',
+          desc: 'provides asset agnostic blockchain infrastructure operation of Proof of Work, Proof of Stake, Delegated Proof of Stake and hybrid blockchain consensus protocols'
+        },
+        {
+          name: 'Zee Prime Capital',
+          src: '/static/img/residents/zeeprime_capital.png',
+          url: 'https://zeeprime.capital/',
+          desc: 'Investment firm. Crypto. Collaborative intelligence. Coordination games. You name it.'
+        },
+
         {
           name: 'NKB Group',
           src: '/static/img/residents/nkb_group.png',
