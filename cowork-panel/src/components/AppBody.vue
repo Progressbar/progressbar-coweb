@@ -10,7 +10,7 @@
               <h1 class="title">
                 <progressbar-logo-refresh />
               </h1>
-              <h2 class="subtitle">✨Your favourite blockchain cowork, hackerspace and hangout zone in <a href="https://goo.gl/maps/gtmznEkBVGG2">downtown, Bratislava</a> 👾</h2>
+              <h2 class="subtitle">✨Your favourite blockchain cowork, community space and hangout zone in <a href="https://goo.gl/maps/gtmznEkBVGG2">downtown, Bratislava</a> 👾</h2>
             </div>
             <div class="column">
               <div class="content has-text-centered">
