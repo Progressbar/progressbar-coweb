@@ -71,10 +71,10 @@
             If you think we are doing great thing
             <ul>
               <li>
-                you can support us at <a href="https://donate.progressbar.sk" target="_blank" rel="noopener">donate.progressbar.sk</a>
+                signup for our <a href="https://t.me/coworkprogressbar">coworking in Bratislava</a>
               </li>
               <li>
-                  signup for our <a href="https://t.me/coworkprogressbar">coworking in Bratislava</a>
+                <router-link to="/pay">you can support us</router-link>
               </li>
               <li>
                 <router-link to="/network">be our proud sponsor</router-link>
@@ -101,7 +101,6 @@
 </footer>
 </template>
 <script>
-import SupportUs from '@/components/SupportUs'
 import {
   faInstagram,
   faGithub,
@@ -114,9 +113,6 @@ faYoutubeSquare,
 } from '@fortawesome/free-brands-svg-icons'
 export default {
   name: 'app-footer',
-  components: {
-    SupportUs
-  },
   data () {
     return {
       currentYear: new Date().getFullYear(),

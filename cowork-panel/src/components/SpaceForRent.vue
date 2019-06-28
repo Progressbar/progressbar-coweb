@@ -56,9 +56,9 @@
         </p>
         <p>
           <blockquote class="quote-to-include-in-event has-text-white">
-            🌈 You can support Progressbar through <a class="quote-link" href="https://donate.progressbar.sk" target="_blank">https://donate.progressbar.sk</a>
-            and check Progressbar Cowork in Downtown <a class="quote-link" href="https://cowork.progressbar.sk">https://cowork.progressbar.sk</a>.
-            Join Our Cowork Channel <a class="quote-link" href="https://t.me/coworkprogressbar">https://t.me/coworkprogressbar</a>
+            🌈 You can support Progressbar through 👉 <router-link class="quote-link" to="/pay">https://cowork.progressbar.sk/pay</router-link><br>
+            🌈 Check Progressbar Cowork in Downtown 👉 <a class="quote-link" href="https://cowork.progressbar.sk">https://cowork.progressbar.sk</a><br>
+            🌈 Join Our Cowork Channel on Telegram 👉 <a class="quote-link" href="https://t.me/coworkprogressbar">https://t.me/coworkprogressbar</a>
           </blockquote>
         </p>
       </li>
@@ -125,5 +125,9 @@ export default {
 }
 .quote-link {
   text-decoration: underline;
+}
+
+a {
+  color: hotpink;
 }
 </style>

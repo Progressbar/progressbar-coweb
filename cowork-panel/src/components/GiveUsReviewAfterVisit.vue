@@ -14,7 +14,7 @@
         </p><p class="has-text-white is-size-2">
           If you like what we are doing follow us on <a :href="href.instagram">Instagram @progressbar_sk</a>
         </p><p class="has-text-white is-size-2">
-          If you would like to support us you can <a :href="href.donate">give us donation</a>.
+          If you would like to support us you can <router-link to="/pay">give us donation</router-link>
         </p><p class="has-text-white is-size-2">
           Don’t forget - sharing is caring.
         </p><p class="has-text-white is-size-2">
@@ -43,8 +43,7 @@
               googleMapsProgressbar: 'https://goo.gl/maps/5Vgh7SUAL6N2',
               coworkerProgressbar: 'https://www.coworker.com/slovakia/bratislava/cowork-progressbar',
               facebookPageProgressbar: 'https://www.facebook.com/pg/progressbar/reviews/',
-              instagram: 'https://www.instagram.com/progressbar_sk/',
-              donate: 'https://donate.progressbar.sk'
+              instagram: 'https://www.instagram.com/progressbar_sk/'
             },
             QrCodes: {
               googleMapsProgressbar: '/static/img/review/google_maps_progressbar.jpg',

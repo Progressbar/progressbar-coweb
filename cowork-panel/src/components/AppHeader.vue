@@ -133,7 +133,6 @@
         href: {
           fixdesk: 'https://goo.gl/maps/sYsSt6e1uBE2',
           eventspace: 'https://goo.gl/maps/SghsZJzVPNs',
-          donate: 'https://donate.progressbar.sk',
           coworkgroup: 'https://t.me/coworkprogressbar',
           eventsfb: 'https://www.facebook.com/pg/progressbar/events/',
           homesite: 'https://cowork.progressbar.sk'

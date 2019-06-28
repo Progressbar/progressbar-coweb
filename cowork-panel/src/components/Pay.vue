@@ -114,8 +114,7 @@
             googleMapsProgressbar: 'https://goo.gl/maps/5Vgh7SUAL6N2',
             coworkerProgressbar: 'https://www.coworker.com/slovakia/bratislava/cowork-progressbar',
             facebookPageProgressbar: 'https://www.facebook.com/pg/progressbar/reviews/',
-            instagram: 'https://www.instagram.com/progressbar_sk/',
-            donate: 'https://donate.progressbar.sk'
+            instagram: 'https://www.instagram.com/progressbar_sk/'
           },
           donationAddress: '0x2a49d8d6dd59b35d613d8d569cd048bb3113e42e',
           funds: {

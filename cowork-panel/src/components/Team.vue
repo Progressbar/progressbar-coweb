@@ -51,8 +51,7 @@ export default {
           googleMapsProgressbar: 'https://goo.gl/maps/5Vgh7SUAL6N2',
           coworkerProgressbar: 'https://www.coworker.com/slovakia/bratislava/cowork-progressbar',
           facebookPageProgressbar: 'https://www.facebook.com/pg/progressbar/reviews/',
-          instagram: 'https://www.instagram.com/progressbar_sk/',
-          donate: 'https://donate.progressbar.sk'
+          instagram: 'https://www.instagram.com/progressbar_sk/'
         },
         socialsYangwao: [
           { url: 'https://www.instagram.com/yangwao', title: 'Instagram', icon: faInstagram },

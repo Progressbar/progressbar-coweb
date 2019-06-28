@@ -14,7 +14,8 @@
         🎧 <a href="https://podcasts.apple.com/us/podcast/id1465903607">Apple Podcasts</a><br>
         🎧 <a href="https://open.spotify.com/show/2arFgMfH8p27iEpwJmFv23">Spotify</a><br>
         🐬 <a href="https://api.substack.com/feed/podcast/10023.rss">RSS</a><br>
-        📧 <a href="https://pppp.substack.com/">Newsletter</a>
+        📧 <a href="https://pppp.substack.com/">Newsletter</a><br>
+        🤑 <router-link to="/pay">Support us</router-link>
         </h1>
       </div>
     </div>
@@ -31,8 +32,7 @@
               googleMapsProgressbar: 'https://goo.gl/maps/5Vgh7SUAL6N2',
               coworkerProgressbar: 'https://www.coworker.com/slovakia/bratislava/cowork-progressbar',
               facebookPageProgressbar: 'https://www.facebook.com/pg/progressbar/reviews/',
-              instagram: 'https://www.instagram.com/progressbar_sk/',
-              donate: 'https://donate.progressbar.sk'
+              instagram: 'https://www.instagram.com/progressbar_sk/'
             }
         }
       }
