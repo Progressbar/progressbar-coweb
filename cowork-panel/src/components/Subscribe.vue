@@ -201,7 +201,7 @@
         </article>
       </div>
     </div>
-    <InstagramFeed/>
+    <!-- <InstagramFeed/> -->
     <cookie-law
       transitionName="fade"
       position="bottom"
@@ -215,14 +215,14 @@
   import axios from 'axios';
   import CookieLaw from 'vue-cookie-law';
   import Offer from './Offer.vue';
-  import InstagramFeed from './InstagramFeed';
+  // import InstagramFeed from './InstagramFeed';
   import ImageFrame from './ImageFrame';
 
   export default {
     name: 'subscribe',
     components: {
       ImageFrame,
-      InstagramFeed,
+      // InstagramFeed,
       Offer,
       CookieLaw
     },
@@ -330,12 +330,6 @@
         ],
         isShowingCookieLaw: !CookieLaw.methods.getVisited() === true,
       };
-    },
-    components: {
-      ImageFrame,
-      InstagramFeed,
-      Offer,
-      CookieLaw
     },
     created() {
       this.alreadyUser();
