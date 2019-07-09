@@ -6,7 +6,12 @@
       <div class="tile is-parent is-vertical">
         <article class="tile is-child">
         <p class="title has-text-white">🥥 Socials 🦠</p>
-        <span class="social-icons" v-for="item in socials" :key="item.url">
+        <span class="social-icons" v-for="item in socials.slice(0,4)" :key="item.url">
+          <a :href="item.url" target="_blank" rel="noopener" class="social-icon" aria-hidden="true">
+            <font-awesome-icon v-if="item.icon" :icon="item.icon" />
+          </a>
+        </span><br>
+        <span class="social-icons" v-for="item in socials.slice(4,9)" :key="item.url">
           <a :href="item.url" target="_blank" rel="noopener" class="social-icon" aria-hidden="true">
             <font-awesome-icon v-if="item.icon" :icon="item.icon" />
           </a>
