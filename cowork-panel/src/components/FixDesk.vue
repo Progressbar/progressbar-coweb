@@ -4,7 +4,7 @@
     <div class="tile is-parent is-12">
       <article class="tile is-child">
         <figure class="image">
-          <img src="/static/img/cowork/wide.jpg" alt="fixdesk bratislava cowork"/>
+          <img src="/static/img/cowork/fixdesk.jpg" alt="fixdesk bratislava cowork downtown"/>
         </figure>
       </article>
     </div>
