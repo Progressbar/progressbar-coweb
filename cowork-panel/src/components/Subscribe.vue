@@ -23,15 +23,13 @@
             </p>
             <p>🔐 Private call room</p>
             <p>💬 Hangout areas</p>
-            <!-- <p>👀 Your <router-link to="/view">view</router-link></p> -->
-            <!-- <p>⚡️  <a href="https://www.speedtest.net/result/7179888517" target="_blank" rel="noopener">We have ultra-fast internet</a></p> -->
             <p>🌿 Lot of plants</p>
             <p>🖥 Shared monitors</p>
             <p>⚡️ Ultra-fast Internet</a></p>
             <p>👷‍♀️ Standing desks</p>
-            <p>📦 Package Handling</p>
+            <p>📦 <a href="#" title="Expecting a delivery while you're out?
+              Don't worry. We can handover package to your table 🥰" > Package Handling</a></p>
             <p>💁‍♀️ On-site support </p>
-            <!-- <p>📦 <a href="#" alt="Expecting a delivery while you're out? Don't worry. We can handover package to your table 🥰" > Postal and Package Handling</a></p> -->
             <p>🏋️‍♂️ <a href="https://www.instagram.com/p/Bn5zmzJAa01/" target="_blank" rel="noopener">Pull-up bar for
               you</a></p>
             <p>🚴‍♀️ Bicycle parking U-rack</p>
@@ -97,7 +95,7 @@
     </div>
     <div class="columns">
       <div class="column is-parent is-8">
-        <img src="/static/img/cowork/wide.jpg" alt="progressbar technology blockchain cowork bratislava">
+        <img src="/static/img/cowork/fixdesk.jpg" alt="progressbar technology blockchain cowork bratislava fixdesk">
       </div>
       <div class="column is-parent is-4">
         <article class="tile is-child notification is-black is-size-5">
@@ -336,71 +334,71 @@
       // this.getConfig();
     },
     methods: {
-      alreadyUser() {
-        if (this.$ls.get('user')) {
-          this.isUser = true;
-        }
-      },
-      getConfig() {
-        axios({
-          method: 'get',
-          url: this.$api.base + this.$api.pubConfig
-        })
-          .then(response => {
-            // console.log(response)
-            this.config = response.data;
-            this.seats.capacity = response.data.seatCapacity;
-          })
-          .catch(e => {
-            console.log(e);
-          });
-      },
-      getSubscribers() {
-        axios({
-          method: 'get',
-          url: this.$api.base + this.$api.subscribers
-        })
-          .then(response => {
-            // console.log(response)
-            this.seats = response.data.seats;
-            this.orderSum = response.data.orderSum;
-            this.daysBooked = response.data.daysBooked;
-            this.config = response.data.config;
-          })
-          .catch(e => {
-            console.log(e);
-          });
-      },
-      async subscribeMe(email) {
-        try {
-          const {data} = await axios({
-            method: 'get',
-            url: `${this.$api.base}${this.$api.newSubscriber}`,
-            params: {
-              email
-            }
-          });
-          this.button.subscribe = data.code;
-        } catch (e) {
-          console.error(e)
-        }
-      },
-      sendLoginLink(email) {
-        axios({
-          method: 'get',
-          url: this.$api.base + this.$api.login,
-          params: {
-            email
-          }
-        })
-          .then(response => {
-            // console.log(response)
-            this.button.subscribe = response.data.code;
-          })
-          .catch(e => {
-            console.log(e);
-          });
-      }
+      // alreadyUser() {
+      //   if (this.$ls.get('user')) {
+      //     this.isUser = true;
+      //   }
+      // },
+      // getConfig() {
+      //   axios({
+      //     method: 'get',
+      //     url: this.$api.base + this.$api.pubConfig
+      //   })
+      //     .then(response => {
+      //       // console.log(response)
+      //       this.config = response.data;
+      //       this.seats.capacity = response.data.seatCapacity;
+      //     })
+      //     .catch(e => {
+      //       console.log(e);
+      //     });
+      // },
+      // getSubscribers() {
+      //   axios({
+      //     method: 'get',
+      //     url: this.$api.base + this.$api.subscribers
+      //   })
+      //     .then(response => {
+      //       // console.log(response)
+      //       this.seats = response.data.seats;
+      //       this.orderSum = response.data.orderSum;
+      //       this.daysBooked = response.data.daysBooked;
+      //       this.config = response.data.config;
+      //     })
+      //     .catch(e => {
+      //       console.log(e);
+      //     });
+      // },
+      // async subscribeMe(email) {
+      //   try {
+      //     const {data} = await axios({
+      //       method: 'get',
+      //       url: `${this.$api.base}${this.$api.newSubscriber}`,
+      //       params: {
+      //         email
+      //       }
+      //     });
+      //     this.button.subscribe = data.code;
+      //   } catch (e) {
+      //     console.error(e)
+      //   }
+      // },
+      // sendLoginLink(email) {
+      //   axios({
+      //     method: 'get',
+      //     url: this.$api.base + this.$api.login,
+      //     params: {
+      //       email
+      //     }
+      //   })
+      //     .then(response => {
+      //       // console.log(response)
+      //       this.button.subscribe = response.data.code;
+      //     })
+      //     .catch(e => {
+      //       console.log(e);
+      //     });
+      // }
     }
   };
 </script>
