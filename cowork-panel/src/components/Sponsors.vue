@@ -18,7 +18,7 @@
           </div>
           <p class="title">Media & Network Partners</p>
           <div class="columns">
-            <div class="column is-4" v-for="r in mediaPartners.slice(0,3)">
+            <div class="column" v-for="r in mediaPartners.slice(0,4)">
               <a :href="r.url"><img :src="r.src" :alt="r.name"><br>{{r.name}}</a>
               {{r.desc}}
             </div>
@@ -77,6 +77,12 @@ export default {
           src: '/static/img/sponsors/robime_it.jpg',
           url: 'https://robime.it',
           desc: 'je portál pre IT ľudí, ale aj pre tých, ktorí s IT úzko spolupracujú – konzultanti, finančníci, obchodníci, personalisti, marketéri, apod. Nájdete u nás pracovné ponuky, tipy a rady ako sa ďalej posunúť v kariére a pohľad do sveta informačných technológii.'
+        },
+        {
+          name: 'OneCoworking',
+          src: '/static/img/partners/oneCoworking.png',
+          url: 'https://onecoworking.com/',
+          desc: 'Get access to the best coworking spaces around the world with one app and one membership!'
         }
       ]
     }
