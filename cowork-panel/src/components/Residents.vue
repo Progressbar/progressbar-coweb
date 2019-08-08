@@ -75,7 +75,7 @@ export default {
           name: 'FullnodeTECH',
           src: '/static/img/residents/fullnodetech.jpg',
           url: 'https://www.fullnode.tech/',
-          desc: 'provides asset agnostic blockchain infrastructure operation of Proof of Work, Proof of Stake, Delegated Proof of Stake and hybrid blockchain consensus protocols'
+          desc: 'Provides asset agnostic blockchain infrastructure operation of Proof of Work, Proof of Stake, Delegated Proof of Stake and hybrid blockchain consensus protocols'
         },
         {
           name: 'Zee Prime Capital',
@@ -99,7 +99,7 @@ export default {
           name: 'Fellowship of Ethereum Magicians',
           src: '/static//img/residents/ethereum-magicians.png',
           url: 'https://ethereum-magicians.org/',
-          desc: 'is a community of individuals who are collaborating to make to make Ethereum the best it can be.'
+          desc: 'Is a community of individuals who are collaborating to make to make Ethereum the best it can be.'
         },
 
       ],
