@@ -9,7 +9,7 @@
     <div class="columns is-centered">
       <div class="column is-10">
         <article class="tile is-child notification is-black is-size-5">
-          <p class="title">Beloved & Brave Sponsors of <a href="https://cowork.progressbar.sk"> Cowork Progressbar</a> & <a href="https://cowork.progressbar.sk"> hackerspace</a><p/>
+          <p class="title">Beloved & Brave Sponsors of <a href="https://cowork.progressbar.sk"> Progressbar Cowork</a><p/>
           <div class="columns">
             <div class="column is-4" v-for="r in sponsors.slice(0,3)">
               <a :href="r.url"><img :src="r.src" :alt="r.name"><br>{{r.name}}</a>
@@ -61,17 +61,22 @@ export default {
       ],
       mediaPartners: [
         {
-          name: 'Robime.it',
-          src: '/static/img/sponsors/robime_it.jpg',
-          url: 'https://robime.it',
-          desc: 'Robime.it je portál pre IT ľudí, ale aj pre tých, ktorí s IT úzko spolupracujú – konzultanti, finančníci, obchodníci, personalisti, marketéri, apod. Nájdete u nás pracovné ponuky, tipy a rady ako sa ďalej posunúť v kariére a pohľad do sveta informačných technológii.'
-        },
-        {
           name: 'Starfish.mission',
           src: '/static/img/partners/Starfish_Logo_Horizontal Mission@4x.png',
           url: 'https://starfish.network/',
           desc: 'Starfish Mission is a co-working space and community hub for blockchain, Web 3.0, and AI pioneers to connect, collaborate and build.'
-
+        },
+        {
+          name: 'Startitup',
+          src: '/static/img/partners/siu_new_logo_white.svg',
+          url: 'https://www.startitup.sk/',
+          desc: 'je startupový komunitný portál. Je štartovacou čiarou pre množstvo mladých ľudí. Takých, ktorí chcú zatriasť týmto svetom a ukázať že aj na Slovensku a v Čechách sú šikovní ľudia. Startitup je taktiež výnimočný tým, že je tu všetko zadarmo.'
+        },
+        {
+          name: 'Robime.it',
+          src: '/static/img/sponsors/robime_it.jpg',
+          url: 'https://robime.it',
+          desc: 'je portál pre IT ľudí, ale aj pre tých, ktorí s IT úzko spolupracujú – konzultanti, finančníci, obchodníci, personalisti, marketéri, apod. Nájdete u nás pracovné ponuky, tipy a rady ako sa ďalej posunúť v kariére a pohľad do sveta informačných technológii.'
         }
       ]
     }
