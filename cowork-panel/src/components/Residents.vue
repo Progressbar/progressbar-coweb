@@ -15,7 +15,13 @@
         <p class="title">Selected Residents at Progressbar Family Office<p/>
         <p class="title">Crypto Startups</p>
         <div class="columns">
-          <div class="column" v-for="r in residents.slice(0,5)">
+          <div class="column" v-for="r in residents.slice(0,3)">
+            <a :href="r.url"><img :src="r.src" :alt="r.name"><br>{{r.name}}</a>
+            <br>{{r.desc}}
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column" v-for="r in residents.slice(3,6)">
             <a :href="r.url"><img :src="r.src" :alt="r.name"><br>{{r.name}}</a>
             <br>{{r.desc}}
           </div>
@@ -77,7 +83,6 @@ export default {
           url: 'https://zeeprime.capital/',
           desc: 'Investment firm. Crypto. Collaborative intelligence. Coordination games. You name it.'
         },
-
         {
           name: 'NKB Group',
           src: '/static/img/residents/nkb_group.png',
@@ -90,6 +95,13 @@ export default {
           url: 'https://www.crypkit.com/',
           desc: 'Portfolio tracking and analytics web app for crypto markets. Focus on making better investment decisions. We take care of the rest.'
         },
+        {
+          name: 'Fellowship of Ethereum Magicians',
+          src: '/static//img/residents/ethereum-magicians.png',
+          url: 'https://ethereum-magicians.org/',
+          desc: 'is a community of individuals who are collaborating to make to make Ethereum the best it can be.'
+        },
+
       ],
       ngoResidents: [
         {
