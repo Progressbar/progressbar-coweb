@@ -64,7 +64,7 @@ export default {
           name: 'Starfish.mission',
           src: '/static/img/partners/Starfish_Logo_Horizontal Mission@4x.png',
           url: 'https://starfish.network/',
-          desc: 'Starfish Mission is a co-working space and community hub for blockchain, Web 3.0, and AI pioneers to connect, collaborate and build.'
+          desc: 'is a co-working space and community hub for blockchain, Web 3.0, and AI pioneers to connect, collaborate and build.'
         },
         {
           name: 'Startitup',
