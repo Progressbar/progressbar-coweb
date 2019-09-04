@@ -84,10 +84,10 @@ export default {
           desc: 'Investment firm. Crypto. Collaborative intelligence. Coordination games. You name it.'
         },
         {
-          name: 'NKB Group',
-          src: '/static/img/residents/nkb_group.png',
-          url: 'http://www.nkbgroup.io/',
-          desc: 'Investment banking for the digital world. NKB operates as a full-service investment bank focused on blockchain technology.'
+          name: 'vue-polkadot.js.org',
+          src: '/static/img/residents/polkadot_vuejs.png',
+          url: 'https://vue-polkadot.js.org/',
+          desc: 'VueJS utilities, libraries and Vue components in use across @polkadot projects'
         },
         {
           name: 'CrypKit',
