@@ -27,7 +27,9 @@
           <p class="title">Private Office Dunajska 🤝</p>
           <div class="content">
             <p>🌃 24/7 access</p>
-            <p>🔑 Private office with all basic equipment (tables, chairs)</p>
+            <p>🔑 Dedicated office with all basic equipment (tables, chairs)</p>
+            <p>⚡️ Ultra-fast Internet</p>
+            <p>🚴‍♀️ Bicycle parking U-rack</p>
             <p>📍 Downtown location, Dunajska 14, Bratislava</p>
             <p>💞 By renting our private office you are supporting community</p>
             <p>🕰 Available on Q1 2020</p>
