@@ -51,6 +51,12 @@
           </li>
           <li>
             <router-link
+              to="/rent-private-office-bratislava">
+              Rent Private Office
+            </router-link>
+          </li>
+           <li>
+            <router-link
               to="/space-for-rent">
               Rent Venue Space
             </router-link>

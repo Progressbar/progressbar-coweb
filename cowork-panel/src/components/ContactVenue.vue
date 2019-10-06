@@ -12,7 +12,7 @@
       </div>
       <div class="column is-4 content">
         <h1 class="has-text-white">
-          📯Address (postal) <br />
+          📯Address - postal <br />
         </h1>
         <h3 class="has-text-white">
           Progressbar cowork & hackerspace,<br>
@@ -27,7 +27,8 @@
         </h1>
         <h4 class="has-text-white">
           Progressbar o.z.<br>
-          Lazaretská 12, 81108 Bratislava,<br>
+          Dunajská 7495/14,<br>
+          81108 Bratislava,<br>
           Slovenská republika<br>
 
           IČO: 42180023<br>
@@ -71,4 +72,7 @@ export default {
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
+a {
+  color: hotpink;
+}
 </style>

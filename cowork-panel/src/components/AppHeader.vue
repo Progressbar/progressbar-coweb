@@ -32,13 +32,20 @@
               Events
             </div>
             <router-link
-
               class="navbar-item is-size-4"
               exact-active-class="is-active"
               to="/meeting-room-cowork-bratislava"
               v-on:click.native="toggleNav()"
             >
               Meeting Room
+            </router-link>
+            <router-link
+              class="navbar-item is-size-4"
+              exact-active-class="is-active"
+              to="/rent-private-office-bratislava"
+              v-on:click.native="toggleNav()"
+            >
+              Private Office
             </router-link>
             <router-link
               class="navbar-item is-size-4"
@@ -63,7 +70,7 @@
                 Others
               </a>
               <div class="navbar-dropdown is-right">
-                <router-link class="dropdown-item is-size-5" to="/contact" @click.native="toggleNav()">
+                <router-link class="dropdown-item is-size-5" to="/contact-venue" @click.native="toggleNav()">
                 🛸 Contact
                 </router-link>
                 <router-link class="dropdown-item is-size-5" to="/calendar" @click.native="toggleNav()">

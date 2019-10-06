@@ -14,11 +14,11 @@
       <p class="has-text-white is-size-3" v-for="line of content">{{line}}</p>
     </div>
   </div>
-  <div class="columns is-centered">
+  <!-- <div class="columns is-centered">
     <div class="column is-8 contains-iframe-to-center" v-for="frame in href.iframes">
       <ImageFrame v-bind:url="frame" :key="frame"></ImageFrame>
     </div>
-  </div>
+  </div> -->
   <div class="columns is-centered">
     <div class="column is-10 content">
       <img src="/static/img/eventspace/mlmu_april.jpg" alt="machine learning bratislava meetup" />
@@ -90,14 +90,16 @@ export default {
       },
       equipment: [
         'We can scale up to 80 sitting spots',
-        'We have for you fullHD (1080p) 📽 projector w/ Chromecast',
-        'We have 🗣🎤 head microphone and 🎤 hand microphone with mixpult (Bluetooh input)',
+        'We have for you fullHD (1080p) 📽 projector w/ Chromecast & HDMI',
+        'We have 🗣🎤 head microphone & 🎤 hand microphone with mixpult (Bluetooh input)',
         'We have video 📹 recording equipment for livestream',
         'We have high quality filtered water 🚰⛲️ for audience (UV lamp, carbon filter, antibacterial, reverse osmosis)',
         'We have A/C ❄️ for your event',
         'We have silent space for your event',
-        'We have 2x 1000W speakers 🔊💥🙉',
+        'We have 2x 1000W speakers 🔊',
         'For music we have ChromeCast Audio (play directly your Spotify playlist)',
+        'Extra Service - catering',
+        'Available setups - theatre, learning session, custom'
       ],
       content: `
         Our venue is 231 m² in Dunajska 14, at the heart of Bratislava. The space can comfortably accomodate 80 people.
@@ -106,7 +108,7 @@ export default {
         As a non-profit that needs to pay rent and bills, we also need funding! Any donations are welcome. Without donations, we won't be able too keep the familiar hackerspace spirit a lot of people in Bratislava are seeking, and offer these kinds of services
 
         Our suggestion is a voluntary donation of 200€-400€ for every evening, depending on what you/your community can afford and how much you'll be using the space
-        Thanks for the help! 👽🛰
+        Thanks for the help! 🥰🙏
       `
       .trim()
       .split('\n')

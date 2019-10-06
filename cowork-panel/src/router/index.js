@@ -15,12 +15,13 @@ import GiveUsReviewAfterVisit from '@/components/GiveUsReviewAfterVisit'
 import RunningCosts from '@/components/RunningCosts'
 import Podcast from '@/components/Podcast'
 import Sponsors from '@/components/Sponsors'
-import Venue from '@/components/Venue'
+import ContactVenue from '@/components/ContactVenue'
 import CallForHost from '@/components/CallForHost'
 import Page404 from '@/components/Page404'
 import Team from '@/components/Team'
 import Pay from '@/components/Pay'
 import Calendar from '@/components/Calendar'
+import PrivateOffice from '@/components/PrivateOffice'
 import VueLocalStorage from 'vue-ls'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import VueQr from 'vue-qr'
@@ -123,8 +124,8 @@ export default new Router({
       component: Podcast
     },
     {
-      path: '/contact',
-      component: Venue
+      path: '/contact-venue',
+      component: ContactVenue
     },
     {
       path: '/call-for-a-host',
@@ -133,6 +134,10 @@ export default new Router({
     {
       path: '/team',
       component: Team
+    },
+    {
+      path: '/rent-private-office-bratislava',
+      component: PrivateOffice
     },
     {
       path: '*',

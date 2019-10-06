@@ -24,18 +24,17 @@
   <div class="tile is-parent is-size-4">
     <article class="tile is-child notification is-black">
         <div class="content">
-          <p class="title">Meeting room 🤝</p>
+          <p class="title">Private Office Dunajska 🤝</p>
           <div class="content">
-            <p>🧠Perfect for brainstorming and meeting clients</p>
-            <p>💺Capacity 10 seats </p>
-            <p>📽Projector with Chromecast</p>
-            <p>🎨Whiteboard</p>
-            <p>🎧Good for Podcasts</p>
-            <p>📍Downtown location</p>
-            <p>💞By renting our meeting room you are supporting community </p>
+            <p>🌃 24/7 access</p>
+            <p>🔑 Private office with all basic equipment (tables, chairs)</p>
+            <p>📍 Downtown location, Dunajska 14, Bratislava</p>
+            <p>💞 By renting our private office you are supporting community</p>
+            <p>🕰 Available on Q1 2020</p>
           </div>
           <div class="btn-container">
-            <a class="button is-black is-block is-large meeting" href="https://t.me/coworkprogressbar">{{ orderPrices.meetingRoom }}€ / hour</a>
+            <a class="button is-black is-block is-large meeting" href="https://docs.google.com/forms/d/e/1FAIpQLSd1WbCPxlLyeKyDHNMLFCHCyjOnz946WjCIlDPAq4XIE_8eKQ/viewform">
+              Submit your interest</a>
           </div>
         </div>
       </article>
@@ -49,20 +48,6 @@
       </figure>
     </article>
   </div>
-</div>
-<div class="tile is-ancestor">
-  <div class="tile is-parent">
-    <article class="tile is-child">
-      <figure class="image">
-        <img src="/static/img/meetingroom/waomeeting-05.jpg" alt="meeting room bratislava cowork"/>
-      </figure>
-    </article>
-  </div>
-</div>
-<div class="columns is-centered">
-    <div class="column is-12 contains-iframe-to-center" v-for="frame in href.iframes">
-      <ImageFrame v-bind:url="frame" :key="frame"></ImageFrame>
-    </div>
 </div>
 </div>
 </template>
