@@ -40,7 +40,8 @@
   <div class="columns is-centered">
     <div class="column is-8 content">
       <h1 class="title has-text-white">
-        <p>Interested hosting event in our venue? Contact us at <a href="mailto:info@progressbar.sk?Subject=Looking%20for%20venue%20for%20my%20event">info@progressbar.sk</a></p>
+        <p>For faster co-operation, <a hrref="https://docs.google.com/forms/d/e/1FAIpQLSeLgsx_pcVX_1KAFYENLmHk5pCJi-G-cTbdUsDQvsE5eSmHBw/viewform">please fill up form and tell us more about your event.</a></p>
+        <p>Any other questions about our venue? Contact us at <a href="mailto:info@progressbar.sk?Subject=Looking%20for%20venue%20for%20my%20event">info@progressbar.sk</a></p>
       </h1>
     </div>
   </div>
