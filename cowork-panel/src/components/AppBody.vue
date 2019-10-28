@@ -17,23 +17,23 @@
                 <p>
                   <a
                     class="button is-black is-large"
-                    href="https://t.me/coworkprogressbar"
-                    target="_blank" rel="noopener">Join Cowork 👩‍🔬</a>
+                    href="mailto:info@progressbar.sk?subject=I want to try Progressbar Cowork!"
+                    target="_blank" rel="noopener">👩‍🔬 Join Cowork</a>
                 </p>
                 <p>
                   <router-link
                     class="button is-black is-large"
                     to="/meeting-room-cowork-bratislava">
-                    Rent meeting room 🤝
+                    🤝 Meeting Room
                   </router-link>
                 </p>
-                <!-- <p>
-                  <a
+                <p>
+                  <router-link
                     class="button is-black is-large"
-                    href="https://www.facebook.com/progressbar/events"
-                    target="_blank" rel="noopener"
-                  >Upcoming events 📅</a>
-                </p> -->
+                    to="/rent-private-office-bratislava"
+                  >👩‍💼 Private Office
+                  </router-link>
+                </p>
               </div>
             </div>
           </div>
