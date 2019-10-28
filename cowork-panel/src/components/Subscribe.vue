@@ -33,8 +33,9 @@
             <p>🏋️‍♂️ <a href="https://www.instagram.com/p/Bn5zmzJAa01/" target="_blank" rel="noopener">Pull-up bar for
               you</a></p>
             <p>🚴‍♀️ Bicycle parking U-rack</p>
-            <p>⛓ Bitcoin & Ethereum positive</p>
+            <p>⛓ Crypto (BTC,ETH,..) positive</p>
             <p>❤️ Special offers for minorities</p>
+            <p>❄️ Air conditioning</p>
             <p>🔧 Makerspace</p>
           </div>
         </article>
@@ -64,23 +65,6 @@
         </article>
       </div>
     </div>
-    <!-- wao will rework this logic, soon™️ -->
-    <!-- <div v-if="!this.isUser" class="columns is-centered">
-      <div class="column is-narrow">
-        <div class="control has-icons-left">
-          <input v-model="subEmail" class="input is-medium is-white" type="email" placeholder="Enter your email">
-          <span class="icon is-medium is-left">
-            <i class="fa fa-envelope"></i>
-          </span>
-        </div>
-      </div>
-      <div class="column is-narrow">
-        <a v-if="this.config.coworkSubscribe" @click="subscribeMe(subEmail)" class="button is-warning is-medium is-outlined">{{ this.button.subscribe }}</a>
-        <a v-if="!this.config.coworkSubscribe" @click="subscribeMe(subEmail)" class="button is-warning is-medium is-outlined" disabled>{{ this.button.subscribe }}</a>
-        <a v-if="this.config.coworkLogin" @click="sendLoginLink(subEmail)" class="button is-primary is-medium is-outlined">{{ this.button.login }}</a>
-        <a v-if="!this.config.coworkLogin" @click="sendLoginLink(subEmail)" class="button is-primary is-medium is-outlined" disabled>{{ this.button.login }}</a>
-      </div>
-    </div> -->
 
     <h1 class="section-title title has-text-white has-text-centered">👩‍💻Membership👨‍💻</h1>
 
@@ -177,28 +161,6 @@
         </article>
       </div>
     </div>
-    <div class="columns">
-      <div class="column is-parent is-8">
-        <img src="/static/img/meetingroom/waomeeting-01-4.jpg" alt="meeting room cowork bratislava blockchain">
-      </div>
-      <div class="column is-parent is-4">
-        <article class="tile is-child notification is-black is-size-5">
-          <div class="content">
-            <p class="title">👽 Solutions Consultancy</p>
-            <div class="content">
-              <p>
-                We are happy to help. We’ve got a lot of experience with software and technology projects.
-                We can help you with almost anything.
-                All it takes is to come and we can discuss or start working on your projects right away.
-                Progressbar will help you get exactly where you want to be, or even further.
-                We can build you a team of people you need to achieve your goals.
-                Consider us an A-team of tech wizards and innovation pirates.
-              </p>
-            </div>
-          </div>
-        </article>
-      </div>
-    </div>
     <!-- <InstagramFeed/> -->
     <cookie-law
       transitionName="fade"
@@ -232,9 +194,8 @@
         },
         bottledDrinks: [
           {name: 'Club-Mate,', image: '', url: ''},
-          {name: 'Fritz-kola,', image: '', url: ''},
-          {name: 'Mate-Mate,', image: '', url: ''},
-          {name: 'Pragomost,', image: '', url: ''},
+          // {name: 'Fritz-kola,', image: '', url: ''},
+          // {name: 'Pragomost,', image: '', url: ''},
           {name: 'Ultichá-Mate,', image: '', url: ''},
           {name: 'Matcha', image: '', url: ''},
         ],
@@ -280,16 +241,11 @@
             src: '/static/img/partners/secure_scuttlebutt.png',
             alt: 'secure scuttlebutt decentralized protocol logo'
           },
-          {
-            url: 'https://nem.io',
-            src: '/static/img/partners/NEM-OFFICIAL-LOGO-white.png',
-            alt: 'NEM foundation blockchain logo'
-          },
-          {
-            url: 'https://www.decent.ch',
-            src: '/static/img/partners/DECENT_logo_vertical_color.png',
-            alt: 'decent blockchain logo'
-          },
+          // {
+          //   url: 'https://www.decent.ch',
+          //   src: '/static/img/partners/DECENT_logo_vertical_color.png',
+          //   alt: 'decent blockchain logo'
+          // },
           {
             url: 'https://ipfs.io',
             src: '/static/img/partners/ipfs_2016-05-09-ipfs-3d-ice-text.png',
@@ -304,11 +260,6 @@
             url: 'https://aragon.org',
             src: '/static/img/partners/aragon_vertical@2x.webp',
             alt: 'aragon logo'
-          },
-          {
-            url: 'https:///colony.io',
-            src: '/static/img/partners/POA-Network-Logo.png',
-            alt: 'colony logo'
           },
           {
             url: 'https://tezos.com/',
