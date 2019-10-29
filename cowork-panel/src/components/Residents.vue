@@ -15,13 +15,13 @@
         <p class="title">Selected Residents at Progressbar Family Office<p/>
         <p class="title">Crypto Startups</p>
         <div class="columns">
-          <div class="column" v-for="r in residents.slice(0,3)">
+          <div class="column" v-for="r in residents.slice(0,4)">
             <a :href="r.url"><img :src="r.src" :alt="r.name"><br>{{r.name}}</a>
             <br>{{r.desc}}
           </div>
         </div>
         <div class="columns">
-          <div class="column" v-for="r in residents.slice(3,6)">
+          <div class="column" v-for="r in residents.slice(4,8)">
             <a :href="r.url"><img :src="r.src" :alt="r.name"><br>{{r.name}}</a>
             <br>{{r.desc}}
           </div>
@@ -84,6 +84,12 @@ export default {
           desc: 'Investment firm. Crypto. Collaborative intelligence. Coordination games. You name it.'
         },
         {
+          name: 'Substrate Marketplace',
+          src: '/static/img/residents/substratemarketplace.svg',
+          url: 'https://substratemarketplace.com/',
+          desc: 'Market of Substrate modules for building any blockchain',
+        },
+        {
           name: 'vue-polkadot.js.org',
           src: '/static/img/residents/polkadot_vuejs.png',
           url: 'https://vue-polkadot.js.org/',
@@ -100,6 +106,12 @@ export default {
           src: '/static//img/residents/ethereum-magicians.png',
           url: 'https://ethereum-magicians.org/',
           desc: 'Is a community of individuals who are collaborating to make to make Ethereum the best it can be.'
+        },
+        {
+          name: 'PolkAlert',
+          src: '/static/img/residents/polkalert.svg',
+          url: 'https://polkalert.com/',
+          desc: 'Node monitoring for Validators of Polkadot network'
         },
 
       ],
