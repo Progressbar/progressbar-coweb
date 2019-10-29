@@ -10,12 +10,17 @@
   </div>
 </div>
 <div class="tile is-ancestor">
-  <div class="tile is-vertical is-8">
+  <div class="tile is-vertical is-6">
     <div class="tile">
       <div class="tile is-parent is-vertical">
         <article class="tile is-child">
           <figure class="image">
-            <img src="/static/img/meetingroom/waomeeting-01.jpg" alt="meeting room bratislava cowork"/>
+            <img src="/static/img/cowork/pb-08.jpg" alt="private office room bratislava cowork"/>
+          </figure>
+        </article>
+        <article class="tile is-child">
+          <figure class="image">
+            <img src="/static/img/cowork/IMG_20190125_005932.jpg" alt="street view bratislava cowork"/>
           </figure>
         </article>
       </div>
@@ -24,13 +29,17 @@
   <div class="tile is-parent is-size-4">
     <article class="tile is-child notification is-black">
         <div class="content">
-          <p class="title">Private Office Dunajska 🤝</p>
+          <p class="title">💼 Private Office Dunajska</p>
           <div class="content">
             <p>🌃 24/7 access</p>
             <p>🔑 Dedicated office with all basic equipment (tables, chairs)</p>
             <p>⚡️ Ultra-fast Internet</p>
+            <p>🔇 Accoustically insulated</p>
             <p>🚴‍♀️ Bicycle parking U-rack</p>
+            <p>🤝 Meeting Rooms</p>
             <p>📍 Downtown location, Dunajska 14, Bratislava</p>
+            <p>🚗 Parking available (paid extra)</p>
+            <p>📬 Company address and postal service (paid extra)</p>
             <p>💞 By renting our private office you are supporting community</p>
             <p>🕰 Available on Q1 2020</p>
           </div>
