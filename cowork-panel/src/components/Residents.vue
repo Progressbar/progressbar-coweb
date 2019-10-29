@@ -69,7 +69,7 @@ export default {
           name: 'BlockUnison',
           src: '/static/img/residents/blockunison.svg',
           url: 'https://blockunison.com/',
-          desc: 'DEVELOPERS AND PIONEERS IN BLOCKCHAIN. We are a gateway for startups and larger enterprises that need Solidity Smart Contracts and crypto expertise'
+          desc: 'NEXT LEVEL BLOCKCHAIN DEVELOPMENT. Deliver blockchain solutions with Substrate framework and Solidity smart contracts'
         },
         {
           name: 'FullnodeTECH',
