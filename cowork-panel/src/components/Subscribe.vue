@@ -30,6 +30,7 @@
             <p>📦 <a href="#" title="Expecting a delivery while you're out?
               Don't worry. We can handover package to your table 🥰" > Package Handling</a></p>
             <p>💁‍♀️ On-site support </p>
+            <p>🥗 Lot of food options around</p>
             <p>🏋️‍♂️ <a href="https://www.instagram.com/p/Bn5zmzJAa01/" target="_blank" rel="noopener">Pull-up bar for
               you</a></p>
             <p>🚴‍♀️ Bicycle parking U-rack</p>

@@ -38,6 +38,7 @@
             <p>🚴‍♀️ Bicycle parking U-rack</p>
             <p>🤝 Meeting Rooms</p>
             <p>📍 Downtown location, Dunajska 14, Bratislava</p>
+            <p>🥗 Lot of food options around</p>
             <p>🚗 Parking available (paid extra)</p>
             <p>📬 Company address and postal service (paid extra)</p>
             <p>💞 By renting our private office you are supporting community</p>
