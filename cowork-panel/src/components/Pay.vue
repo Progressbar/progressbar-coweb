@@ -93,6 +93,11 @@
   import axios from 'axios'
   export default {
       name: 'Pay',
+      metaInfo: {
+        title: 'Support Progressbar operations and sustainability',
+        // override the parent template and just use the above title only
+        titleTemplate: null
+      },
       data () {
         return {
           donations: {
@@ -121,7 +126,7 @@
             monthlyRentTax: 3768,
             missingFunds: 2431,
             balance: 1337
-          }
+          },
       }
     },
     created() {
@@ -157,7 +162,6 @@
           });
       }
     }
-
   }
 </script>
 

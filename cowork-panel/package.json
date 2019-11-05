@@ -24,6 +24,7 @@
     "vue-cookie-law": "^1.8.0",
     "vue-flatpickr-component": "^4.0.0",
     "vue-ls": "^2.3.3",
+    "vue-meta": "^2.3.1",
     "vue-qr": "^2.1.0",
     "vue-router": "^2.3.1"
   },

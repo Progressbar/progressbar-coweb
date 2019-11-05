@@ -25,6 +25,7 @@ import PrivateOffice from '@/components/PrivateOffice'
 import VueLocalStorage from 'vue-ls'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import VueQr from 'vue-qr'
+import VueMeta from 'vue-meta'
 
 var options = {
   namespace: 'pgbcowork_'
@@ -33,6 +34,7 @@ var options = {
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 Vue.use(VueLocalStorage, options)
 Vue.use(VueQr)
+Vue.use(VueMeta)
 Vue.use(Router)
 
 export default new Router({

@@ -74,7 +74,7 @@
                 🛸 Contact
                 </router-link>
                 <router-link class="dropdown-item is-size-5" to="/calendar" @click.native="toggleNav()">
-                🍻 Events
+                🍻 Calendar
                 </router-link>
                 <router-link class="dropdown-item is-size-5" to="/podcast" @click.native="toggleNav()">
                 🎥 Podcast

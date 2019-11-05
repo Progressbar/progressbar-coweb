@@ -82,6 +82,11 @@ export default {
   components: {
     ImageFrame
   },
+  metaInfo: {
+    title: 'Rent venue space in downtown of Bratislava',
+    // override the parent template and just use the above title only
+    titleTemplate: null
+  },
   data() {
     return {
       href: {

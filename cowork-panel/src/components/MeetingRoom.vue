@@ -74,6 +74,11 @@ export default {
     ImageFrame
   },
   name: 'meetingroom',
+  metaInfo: {
+    title: 'Meeting room for 10 in downtown of Bratislava | Blockchains',
+    // override the parent template and just use the above title only
+    titleTemplate: null
+  },
   data() {
     return {
       href: {

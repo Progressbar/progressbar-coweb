@@ -35,6 +35,9 @@
 <script>
     export default {
         name: 'GiveUsReviewBooking',
+        metaInfo: {
+          title: 'Free day pass in cowork for review',
+        },
         data () {
           return {
             href: {

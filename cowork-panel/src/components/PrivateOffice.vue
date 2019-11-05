@@ -71,6 +71,11 @@ export default {
     ImageFrame
   },
   name: 'meetingroom',
+  metaInfo: {
+    title: 'Private and shared office in downtown of Bratislava',
+    // override the parent template and just use the above title only
+    titleTemplate: null
+  },
   data() {
     return {
       href: {
