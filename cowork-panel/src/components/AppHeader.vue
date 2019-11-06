@@ -85,8 +85,8 @@
                 <router-link class="dropdown-item is-size-5" to="/our-residents" @click.native="toggleNav()">
                 🏡 Residents
                 </router-link>
-                <router-link class="dropdown-item is-size-5" to="/running-costs" @click.native="toggleNav()">
-                📒 Running costs
+                <router-link class="dropdown-item is-size-5" to="/crowdfunding" @click.native="toggleNav()">
+                💰 Crowdfunding
                 </router-link>
                 <router-link class="dropdown-item is-size-5" to="/pay" @click.native="toggleNav()">
                 🤑 Support operational costs
@@ -96,6 +96,9 @@
                 </router-link>
                 <router-link class="dropdown-item is-size-5" to="/team" @click.native="toggleNav()">
                 🙏 Team
+                </router-link>
+                <router-link class="dropdown-item is-size-5" to="/running-costs" @click.native="toggleNav()">
+                📒 Running costs
                 </router-link>
                 <!-- <router-link class="dropdown-item is-size-5" to="/call-for-a-host" @click.native="toggleNav()">💜 Call
                   for an Angel -->

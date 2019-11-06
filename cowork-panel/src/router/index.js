@@ -22,6 +22,7 @@ import Team from '@/components/Team'
 import Pay from '@/components/Pay'
 import Calendar from '@/components/Calendar'
 import PrivateOffice from '@/components/PrivateOffice'
+import Crowdfunding from '@/components/Crowdfunding'
 import VueLocalStorage from 'vue-ls'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import VueQr from 'vue-qr'
@@ -136,6 +137,10 @@ export default new Router({
     {
       path: '/team',
       component: Team
+    },
+    {
+      path: '/crowdfunding',
+      component: Crowdfunding
     },
     {
       path: '/rent-private-office-bratislava',
