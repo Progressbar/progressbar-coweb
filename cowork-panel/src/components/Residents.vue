@@ -126,7 +126,7 @@ export default {
           name: 'Filamentum | addi(c)tive polymers',
           src: '/static/img/residents/filamentum.png',
           url: 'https://fillamentum.com/',
-          desc: 'Our development is powered by real experts with more than 15 years of experience in the plastics industry.  We are focusing on guaranteed Fillamentum quality and bringing new trends and materials.'
+          desc: 'Fillamentum is a brand name of TOP quality filaments for 3D printing. Our development is powered by real experts with more than 15 years of experience in the plastics industry.  We are focusing on guaranteed Fillamentum quality and bringing new trends and materials.'
         }
       ],
       ngoResidents: [
