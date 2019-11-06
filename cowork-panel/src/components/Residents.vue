@@ -26,6 +26,13 @@
             <br>{{r.desc}}
           </div>
         </div>
+        <p class="title">Exponential Technologies</p>
+        <div class="columns">
+          <div class="column" v-for="r in exponentialResidents.slice(0,4)">
+            <a :href="r.url"><img :src="r.src" :alt="r.name"><br>{{r.name}}</a>
+            <br>{{r.desc}}
+          </div>
+        </div>
         <p class="title">Technology Meetups</p>
         <div class="columns">
           <div class="column is-4" v-for="r in meetups.slice(0,3)">
@@ -113,7 +120,14 @@ export default {
           url: 'https://polkalert.com/',
           desc: 'Node monitoring for Validators of Polkadot network'
         },
-
+      ],
+      exponentialResidents: [
+        {
+          name: 'Filamentum | addi(c)tive polymers',
+          src: '/static/img/residents/filamentum.png',
+          url: 'https://fillamentum.com/',
+          desc: 'Our development is powered by real experts with more than 15 years of experience in the plastics industry.  We are focusing on guaranteed Fillamentum quality and bringing new trends and materials.'
+        }
       ],
       ngoResidents: [
         {
