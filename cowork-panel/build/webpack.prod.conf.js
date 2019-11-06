@@ -125,8 +125,8 @@ var webpackConfig = merge(baseWebpackConfig, {
         // Required - The path to the webpack-outputted app to prerender.
         staticDir: config.build.assetsRoot,
         // Required - Routes to render.
-        routes: [ '/venue', '/space-for-rent', '/sponsors',
-          '/call-for-the-sponsors', '/call-for-a-host' ]
+      routes: ['/venue', '/rent-a-space', '/our-residents',
+        '/pay', '/meeting-room-cowork-bratislava' ]
       })
   ]
 })

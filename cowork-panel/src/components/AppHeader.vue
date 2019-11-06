@@ -50,7 +50,7 @@
             <router-link
               class="navbar-item is-size-4"
               exact-active-class="is-active"
-              to="/space-for-rent"
+              to="/rent-a-space"
               v-on:click.native="toggleNav()"
             >
               Rent Venue

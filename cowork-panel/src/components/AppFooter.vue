@@ -39,7 +39,7 @@
         <ul>
           <li>
             <router-link
-              to="/fixdesk-cowork-bratislava">
+              to="/rent-fixdesk-cowork-bratislava">
               Rent Desk in Cowork
             </router-link>
           </li>
@@ -55,9 +55,9 @@
               Rent Private Office
             </router-link>
           </li>
-           <li>
+          <li>
             <router-link
-              to="/space-for-rent">
+              to="/rent-a-space">
               Rent Venue Space
             </router-link>
           </li>

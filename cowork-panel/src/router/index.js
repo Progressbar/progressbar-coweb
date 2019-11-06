@@ -82,7 +82,7 @@ export default new Router({
       component: CallForTheSponsors
     },
     {
-      path: '/space-for-rent',
+      path: '/rent-a-space',
       component: SpaceForRent
     },
     {

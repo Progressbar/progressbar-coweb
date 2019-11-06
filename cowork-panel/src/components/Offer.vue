@@ -42,7 +42,7 @@ export default {
         { name: 'Fixdesk', time: '24/7 🌃', description:
           ['Dedicated desk & chair', '♾ meeting room hours', '180cm long desk'],
           price: '200', period: 'month', highlight: 'true',
-          url: '/fixdesk-cowork-bratislava' },
+          url: '/rent-fixdesk-cowork-bratislava' },
         { name: 'Meeting Room 🤝', time: 'Acoustically isolated', description:
           ['10 seats','Whiteboard', 'Projector 📽 '], price: '10', period: 'hour',
           url: '/meeting-room-cowork-bratislava' }
