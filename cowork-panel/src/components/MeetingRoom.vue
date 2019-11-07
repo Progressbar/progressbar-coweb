@@ -77,13 +77,6 @@ export default {
   metaInfo: {
     title: 'Meeting room in downtown of Bratislava | Blockchains',
     titleTemplate: null,
-    meta: [
-      { charset: 'utf-8' },
-      { vmid: 'description', name: 'description', content: 'foo' }
-      // { name: 'description',
-      //   content: 'Meeting room for brainstorming and meeting powerful clients in downtown Bratislava'
-      // }
-    ]
   },
   data() {
     return {
