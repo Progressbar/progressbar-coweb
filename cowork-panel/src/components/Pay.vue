@@ -92,41 +92,39 @@
 <script>
   import axios from 'axios'
   export default {
-      name: 'Pay',
-      metaInfo: {
-        title: 'Support Progressbar operations and sustainability',
-        // override the parent template and just use the above title only
-        titleTemplate: null
-      },
-      data () {
-        return {
-          donations: {
-            ethereum: {
-              to: '0x2a49d8d6dd59b35d613d8d569cd048bb3113e42e',
-              value: '1.00e16'
-            },
-            litecoin: 'LSDNJopkWAgEuhrD1ucKiFD6ybhoEeTRWH',
-            bitcoin: '1Eyo5FqY8pw5cWz97CZiozQAkZpznC2PCL',
-            kyber: 'https://widget.kyber.network/v0.6.4/?type=pay&mode=tab&receiveAddr=0x2a49d8d6dd59b35d613d8d569cd048bb3113e42e&receiveToken=ETH&paramForwarding=false&network=mainnet&pinnedTokens=ETH_DAI&theme=theme-dark',
-            kyber001: 'https://widget.kyber.network/v0.6.4/?type=pay&mode=tab&receiveAddr=0x2a49d8d6dd59b35d613d8d569cd048bb3113e42e&receiveToken=ETH&receiveAmount=0.01&paramForwarding=false&network=mainnet&pinnedTokens=ETH_DAI&theme=theme-dark',
-            daicard: 'https://daicard.io/send?amountToken=10&recipient=0x0f86cf3aeb74be7e8da0dddb077b211c5dc2e1b9',
-            tippinme: 'https://tippin.me/@progressbarsk',
-            payBySquareIBAN: '000480008CJTMRAMA3I6P6R4KVN7ATUUAK74O98I8LDHC01G3FD9482M011LGCK2CVB619K969OBKGL8CSHPPKT60B5LL1FI0000',
-            IBAN: 'SK1583300000002600121198'
+    name: 'Pay',
+    metaInfo: {
+      title: 'Support Progressbar operations and sustainability',
+    },
+    data () {
+      return {
+        donations: {
+          ethereum: {
+            to: '0x2a49d8d6dd59b35d613d8d569cd048bb3113e42e',
+            value: '1.00e16'
           },
-          href: {
-            coworkGroup: 'https://t.me/coworkprogressbar',
-            googleMapsProgressbar: 'https://goo.gl/maps/5Vgh7SUAL6N2',
-            coworkerProgressbar: 'https://www.coworker.com/slovakia/bratislava/cowork-progressbar',
-            facebookPageProgressbar: 'https://www.facebook.com/pg/progressbar/reviews/',
-            instagram: 'https://www.instagram.com/progressbar_sk/'
-          },
-          donationAddress: '0x2a49d8d6dd59b35d613d8d569cd048bb3113e42e',
-          funds: {
-            monthlyRentTax: 3768,
-            missingFunds: 2431,
-            balance: 1337
-          },
+          litecoin: 'LSDNJopkWAgEuhrD1ucKiFD6ybhoEeTRWH',
+          bitcoin: '1Eyo5FqY8pw5cWz97CZiozQAkZpznC2PCL',
+          kyber: 'https://widget.kyber.network/v0.6.4/?type=pay&mode=tab&receiveAddr=0x2a49d8d6dd59b35d613d8d569cd048bb3113e42e&receiveToken=ETH&paramForwarding=false&network=mainnet&pinnedTokens=ETH_DAI&theme=theme-dark',
+          kyber001: 'https://widget.kyber.network/v0.6.4/?type=pay&mode=tab&receiveAddr=0x2a49d8d6dd59b35d613d8d569cd048bb3113e42e&receiveToken=ETH&receiveAmount=0.01&paramForwarding=false&network=mainnet&pinnedTokens=ETH_DAI&theme=theme-dark',
+          daicard: 'https://daicard.io/send?amountToken=10&recipient=0x0f86cf3aeb74be7e8da0dddb077b211c5dc2e1b9',
+          tippinme: 'https://tippin.me/@progressbarsk',
+          payBySquareIBAN: '000480008CJTMRAMA3I6P6R4KVN7ATUUAK74O98I8LDHC01G3FD9482M011LGCK2CVB619K969OBKGL8CSHPPKT60B5LL1FI0000',
+          IBAN: 'SK1583300000002600121198'
+        },
+        href: {
+          coworkGroup: 'https://t.me/coworkprogressbar',
+          googleMapsProgressbar: 'https://goo.gl/maps/5Vgh7SUAL6N2',
+          coworkerProgressbar: 'https://www.coworker.com/slovakia/bratislava/cowork-progressbar',
+          facebookPageProgressbar: 'https://www.facebook.com/pg/progressbar/reviews/',
+          instagram: 'https://www.instagram.com/progressbar_sk/'
+        },
+        donationAddress: '0x2a49d8d6dd59b35d613d8d569cd048bb3113e42e',
+        funds: {
+          monthlyRentTax: 3768,
+          missingFunds: 2431,
+          balance: 1337
+        },
       }
     },
     created() {

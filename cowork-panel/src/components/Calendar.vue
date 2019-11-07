@@ -22,6 +22,9 @@ export default {
     ImageFrame
   },
   name: 'Calendar',
+  metaInfo: {
+    title: 'Calendar Events & Meeting room | Progressbar'
+  },
   data () {
     return {
       href: {

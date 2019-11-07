@@ -187,6 +187,9 @@
       Offer,
       CookieLaw
     },
+    metaInfo: {
+      title: 'Tech Cowork Progressbar | Bratislava | Ethereum accepted'
+    },
     data() {
       return {
         seats: {

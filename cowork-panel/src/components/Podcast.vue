@@ -23,20 +23,23 @@
 </template>
 
 <script>
-    export default {
-        name: 'Podcast',
-        data () {
-          return {
-            href: {
-              coworkGroup: 'https://t.me/coworkprogressbar',
-              googleMapsProgressbar: 'https://goo.gl/maps/5Vgh7SUAL6N2',
-              coworkerProgressbar: 'https://www.coworker.com/slovakia/bratislava/cowork-progressbar',
-              facebookPageProgressbar: 'https://www.facebook.com/pg/progressbar/reviews/',
-              instagram: 'https://www.instagram.com/progressbar_sk/'
-            }
+  export default {
+    name: 'Podcast',
+    metaInfo: {
+      title: 'Podcast Progressbar | PPPP'
+    },
+    data () {
+      return {
+        href: {
+          coworkGroup: 'https://t.me/coworkprogressbar',
+          googleMapsProgressbar: 'https://goo.gl/maps/5Vgh7SUAL6N2',
+          coworkerProgressbar: 'https://www.coworker.com/slovakia/bratislava/cowork-progressbar',
+          facebookPageProgressbar: 'https://www.facebook.com/pg/progressbar/reviews/',
+          instagram: 'https://www.instagram.com/progressbar_sk/'
         }
       }
     }
+  }
 </script>
 
 <style scoped>

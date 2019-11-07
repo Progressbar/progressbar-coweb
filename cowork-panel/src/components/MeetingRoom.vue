@@ -23,22 +23,22 @@
   </div>
   <div class="tile is-parent is-size-4">
     <article class="tile is-child notification is-black">
+      <div class="content">
+        <p class="title">Meeting room 🤝</p>
         <div class="content">
-          <p class="title">Meeting room 🤝</p>
-          <div class="content">
-            <p>🧠Perfect for brainstorming and meeting clients</p>
-            <p>💺Capacity 10 seats </p>
-            <p>📽Projector with Chromecast</p>
-            <p>🎨Whiteboard</p>
-            <p>🎧Good for Podcasts</p>
-            <p>📍Downtown location</p>
-            <p>💞By renting our meeting room you are supporting community </p>
-          </div>
-          <div class="btn-container">
-            <a class="button is-black is-block is-large meeting" href="https://t.me/coworkprogressbar">{{ orderPrices.meetingRoom }}€ / hour</a>
-          </div>
+          <p>🧠Perfect for brainstorming and meeting clients</p>
+          <p>💺Capacity 10 seats </p>
+          <p>📽Projector with Chromecast</p>
+          <p>🎨Whiteboard</p>
+          <p>🎧Good for Podcasts</p>
+          <p>📍Downtown location</p>
+          <p>💞By renting our meeting room you are supporting community </p>
         </div>
-      </article>
+        <div class="btn-container">
+          <a class="button is-black is-block is-large meeting" href="https://t.me/coworkprogressbar">{{ orderPrices.meetingRoom }}€ / hour</a>
+        </div>
+      </div>
+    </article>
   </div>
 </div>
 <div class="tile is-ancestor">
@@ -75,9 +75,15 @@ export default {
   },
   name: 'meetingroom',
   metaInfo: {
-    title: 'Meeting room for 10 in downtown of Bratislava | Blockchains',
-    // override the parent template and just use the above title only
-    titleTemplate: null
+    title: 'Meeting room in downtown of Bratislava | Blockchains',
+    titleTemplate: null,
+    meta: [
+      { charset: 'utf-8' },
+      { vmid: 'description', name: 'description', content: 'foo' }
+      // { name: 'description',
+      //   content: 'Meeting room for brainstorming and meeting powerful clients in downtown Bratislava'
+      // }
+    ]
   },
   data() {
     return {

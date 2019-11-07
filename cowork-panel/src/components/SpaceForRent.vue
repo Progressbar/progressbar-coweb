@@ -3,7 +3,7 @@
   <div class="columns is-centered">
     <div class="column is-10 content">
       <h1 class="title has-text-white is-size-1">
-        Venue for Rent & Your Events
+        Rent A Space & Your Events
       </h1>
       <img src="/static/img/eventspace/event_space_chairs.jpg" alt="meetup space in bratislava downtown" />
       <img src="/static/img/eventspace/IMG_20190404_172145_ps.jpg" alt="meetup space in bratislava downtown" />
@@ -41,7 +41,10 @@
     <div class="column is-8 content">
       <h1 class="title has-text-white">
         <p>For faster co-operation, <a hrref="https://docs.google.com/forms/d/e/1FAIpQLSeLgsx_pcVX_1KAFYENLmHk5pCJi-G-cTbdUsDQvsE5eSmHBw/viewform">please fill up form and tell us more about your event.</a></p>
-        <p>Do you have any other questions about our venue? Contact us at <a href="mailto:info@progressbar.sk?Subject=Looking%20for%20venue%20for%20my%20event">info@progressbar.sk</a></p>
+        <p>Do you have any other questions about our venue? Contact us at
+          <a href="mailto:info@progressbar.sk?Subject=Looking%20for%20venue%20for%20my%20event">info@progressbar.sk</a>,
+          directly through <a href="https://m.me/progressbar">Facebook Messenger</a> or
+          through our <a href="https://t.me/coworkprogressbar">Telegram channel</a></p>
       </h1>
     </div>
   </div>
@@ -84,8 +87,6 @@ export default {
   },
   metaInfo: {
     title: 'Rent venue space in downtown of Bratislava',
-    // override the parent template and just use the above title only
-    titleTemplate: null
   },
   data() {
     return {
@@ -97,7 +98,7 @@ export default {
       equipment: [
         'We can scale up to 80 sitting spots',
         'We have for you fullHD (1080p) 📽 projector w/ Chromecast & HDMI',
-        'We have 🗣🎤 head microphone & 🎤 hand microphone with mixpult (Bluetooh input)',
+        'We have 🗣🎤 head microphone & 🤚🎤 hand microphone with mixpult (Bluetooth input)',
         'We have video 📹 recording equipment for livestream',
         'We have high quality filtered water 🚰⛲️ for audience (UV lamp, carbon filter, antibacterial, reverse osmosis)',
         'We have A/C ❄️ for your event',
@@ -111,7 +112,9 @@ export default {
         Our venue is 231 m² in Dunajska 14, at the heart of Bratislava. The space can comfortably accomodate 80 people.
 
         As a non-profit that cares about technology, we try to incentivize tech communities in Bratislava, by allowing them to use the venue for free for their events.
-        As a non-profit that needs to pay rent and bills, we also need funding! Any donations are welcome. Without donations, we won't be able too keep the familiar hackerspace spirit a lot of people in Bratislava are seeking, and offer these kinds of services
+        As a non-profit that needs to pay rent and bills, we also need funding! Any donations are welcome. Without donations, we won't be able too keep the familiar hackerspace spirit a lot of people in Bratislava are seeking, and offer these kinds of services.
+
+        We average hold 150+ meetups or workshops yearly.
 
         Our suggestion is a voluntary donation of 200€-400€ for every evening, depending on what you/your community can afford and how much you'll be using the space
         Thanks for the help! 🥰🙏

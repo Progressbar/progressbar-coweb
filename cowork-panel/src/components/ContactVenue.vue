@@ -63,14 +63,11 @@
 <script>
 export default {
   name: 'Venue',
-  data() {
-    return {
-      dummy: ''
-    }
-  }
+  metaInfo: {
+    title: 'Contact & Address | Progressbar'
+  },
 }
 </script>
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
 a {
   color: hotpink;

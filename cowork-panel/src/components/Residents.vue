@@ -66,6 +66,9 @@ export default {
     ImageFrame
   },
   name: 'residents',
+  metaInfo: {
+    title: 'Coworkers and Residents at Progressbar'
+  },
   data() {
     return {
       href: {
