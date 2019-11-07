@@ -5,7 +5,7 @@
     <div class="tile">
       <div class="tile is-parent is-vertical">
         <article class="tile is-child">
-        <p class="title has-text-white">🥥 Socials 🦠</p>
+        <p class="title has-text-white">🥥🦠 Social</p>
         <span class="social-icons" v-for="item in socials.slice(0,4)" :key="item.url">
           <a :href="item.url" target="_blank" rel="noopener" class="social-icon" aria-hidden="true">
             <font-awesome-icon v-if="item.icon" :icon="item.icon" />
@@ -72,23 +72,23 @@
         <ul>
           <li>
             We started as <a href="https://progressbar.sk">first Slovak hackerspace</a> back in June 2010,
-            this is our 4th place as we went through expansion and <a href="https://progressbar.sk/calendar">held more than 1000 meetups</a>.
+            this is our 4th place as we went through expansion and <a href="https://progressbar.sk/calendar">held more than 1200 meetups</a>.
           </li>
           <li>
-            In September 2017 we considered to keep up our 💸 cashflow & our existence and started thinking about daily utilization.
+            In September 2017 we've considered to keep up our 💸 cashflow & our existence. We've started thinking about daily utilization.
             <br> We came up with idea to open <a href="https://t.me/coworkprogressbar">coworking</a> in our hackerspace Progressbar in Bratislava.
           </li>
           <li>
             If you think we are doing great thing
             <ul>
               <li>
-                signup for our <a href="https://t.me/coworkprogressbar">coworking in Bratislava</a>
+                Join Our <router-link to="/contact-venue">Coworking</router-link>
               </li>
               <li>
-                <router-link to="/pay">you can support us</router-link>
+                <router-link to="/pay">You Can Support Us!</router-link>
               </li>
               <li>
-                <router-link to="/network">be our proud sponsor</router-link>
+                <router-link to="/network">Be Our Proud Sponsor!</router-link>
               </li>
             </ul>
           </li>
@@ -105,7 +105,7 @@
         <small><a href="https://github.com/Progressbar/progressbar-coweb" target="_blank" rel="noopener">/src</a> (Feel free to help ❤️)</small>
       </div>
       <div class="column is-6 has-text-right">
-        <small aria-label="copyright">2010 - {{currentYear}} © Progressbar</small>
+        <small aria-label="copyright">2010 - {{currentYear}} © Progressbar Cowork</small>
       </div>
     </div>
   </div>
@@ -134,9 +134,10 @@ export default {
       ],
       socials: [
         { url: 'https://www.facebook.com/progressbar', title: 'Facebook', icon: faFacebook },
-        { url: 'https://www.instagram.com/progressbar_sk', title: 'Instagram', icon: faInstagram },
         { url: 'https://twitter.com/progressbarsk', title: 'Twitter', icon: faTwitterSquare },
-        { url: 'https://www.youtube.com/channel/UCpun3Ro3aUJPoFVZwgqd98A', title: 'Youtube', icon: faYoutubeSquare },        { url: 'https://github.com/Progressbar', title: 'Github', icon: faGithub },
+        { url: 'https://www.youtube.com/channel/UCpun3Ro3aUJPoFVZwgqd98A', title: 'Youtube', icon: faYoutubeSquare },
+        { url: 'https://www.instagram.com/progressbar_sk', title: 'Instagram', icon: faInstagram },
+        { url: 'https://github.com/Progressbar', title: 'Github', icon: faGithub },
         { url: 'https://t.me/coworkprogressbar', title: 'Telegram', icon: faTelegram },
         { url: 'https://m.me/progressbar', title: 'Messenger', icon: faFacebookMessenger }
       ],
