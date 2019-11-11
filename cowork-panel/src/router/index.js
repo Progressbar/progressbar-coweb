@@ -87,6 +87,10 @@ export default new Router({
       component: SpaceForRent
     },
     {
+      path: '/space-for-rent',
+      component: SpaceForRent
+    },
+    {
       path: '/venue',
       component: SpaceForRent
     },
