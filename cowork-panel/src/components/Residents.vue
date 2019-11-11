@@ -130,6 +130,12 @@ export default {
           src: '/static/img/residents/filamentum.png',
           url: 'https://fillamentum.com/',
           desc: 'Fillamentum is a brand name of TOP quality filaments for 3D printing. Our development is powered by real experts with more than 15 years of experience in the plastics industry.  We are focusing on guaranteed Fillamentum quality and bringing new trends and materials.'
+        },
+        {
+          name: 'Represent',
+          src: '/static/img/residents/repesent_wordmark_white.png',
+          url: 'https://represent.com/',
+          desc: 'Represent is a crowd-selling platform that enables anyone to create and sell custom merchandise with no upfront costs.'
         }
       ],
       ngoResidents: [
