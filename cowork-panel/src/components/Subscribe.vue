@@ -1,22 +1,15 @@
 <template>
   <div class="subscribe">
-    <div v-if="this.isUser" class="columns is-mobile is-centered">
-      <div class="column is-narrow">
-        <a href="./#/order" class="button is-warning is-large is-outlined">{{ this.button.order }}</a>
-      </div>
-    </div>
     <div class="columns">
       <div class="column is-parent is-8">
         <img src="/static/img/cowork/pb-08.jpg" alt="progressbar cowork bratislava blockchain">
         <img src="/static/img/meetingroom/waomeeting-01-4.jpg" alt="blockchain cowork bratislava meeting room">
-        <!-- <img src="/static/img/cowork/pb-07.jpg" alt="blockchain cowork bratislava meeting room"> -->
-
       </div>
       <div class="column is-parent is-4">
         <article class="tile is-child notification is-black is-size-4">
           <p class="title is-size-1">🏕 Cowork 🧚‍♂️</p>
           <div class="content">
-            <p>📍 <a href="https://goo.gl/maps/njvuE4mwmpz" alt="location of cowork">Downtown, Bratislava</a></p>
+            <p>📍 <a href="https://goo.gl/maps/njvuE4mwmpz" alt="location of cowork in Bratislava">Downtown, Bratislava</a></p>
             <p>🤝
               <router-link to="meeting-room-cowork-bratislava">Meeting rooms
               </router-link>
@@ -44,7 +37,7 @@
     </div>
     <div class="columns">
       <div class="column is-parent is-8">
-        <img src="/static/img/cowork/IMG_20190125_005932.jpg" alt="progressbar cowork bratislava blockchain streetview">
+        <img src="/static/img/cowork/cowork_bratislava_desk_20191114.jpg" alt="progressbar cowork bratislava blockchain area">
       </div>
       <div class="column is-parent is-4">
         <article class="tile is-child notification is-black is-size-4">
@@ -66,13 +59,9 @@
         </article>
       </div>
     </div>
-
     <h1 class="section-title title has-text-white has-text-centered">👩‍💻Membership👨‍💻</h1>
-
     <Offer/>
-
     <h1 class="section-title title has-text-white has-text-centered">📸 Look inside</h1>
-
     <div class="columns is-centered">
       <div class="column is-6 contains-iframe-to-center" v-for="frame in href.iframes">
         <ImageFrame v-bind:url="frame" :key="frame"></ImageFrame>
@@ -223,10 +212,9 @@
           coworkSubscribe: false
         },
         href: {
-
           iframes: [
-            'https://www.google.com/maps/embed?pb=!4v1554902478405!6m8!1m7!1sCAoSLEFGMVFpcE1hdExZSUdQSDQyazJCRmpxU2lqdzVSak9kMnpfNXpERWlkX0lK!2m2!1d48.14460277777778!2d17.11545!3f117.82572902255863!4f-10.815697028043104!5f0.4000000000000002',
-            'https://www.google.com/maps/embed?pb=!4v1554904059707!6m8!1m7!1sCAoSLEFGMVFpcFBrZjRMYkEyVmVlc3dFejVQTmo5SVVEM3BBWXE3LXdPT3EzMDdF!2m2!1d48.14460555555556!2d17.11545277777778!3f64.4619496828845!4f-16.166758599579396!5f0.4000000000000002'
+            'https://www.google.com/maps/embed?pb=!4v1573724301670!6m8!1m7!1sCAoSLEFGMVFpcE95LWZyQ3dfMHBJNnZGUzcwbHQ4dUZCSV9sd2FLTkEtaUZ3WTFO!2m2!1d48.1448919!2d17.1154158!3f114.32652478817094!4f-18.771614443283426!5f0.4000000000000002',
+            'https://www.google.com/maps/embed?pb=!4v1547309683887!6m8!1m7!1sCAoSLEFGMVFpcFBfRDIwTE9WUk4zRGNxN3F4Y1hjQXhFbTFQelByZjM3N0ZHdkJx!2m2!1d48.14464166666667!2d17.11531666666667!3f233.42399438900938!4f-2.3943692114223722!5f0.4000000000000002'
           ],
         },
         techAmbassadors: [
