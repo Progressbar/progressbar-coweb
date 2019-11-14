@@ -97,16 +97,18 @@
                 <!-- <router-link class="dropdown-item is-size-5" to="/running-costs" @click.native="toggleNav()">
                 📒 Running costs
                 </router-link> -->
+                <router-link class="dropdown-item is-size-5" to="/give-us-review-thanks" @click.native="toggleNav()">
+                🥰 Give us Review
+                </router-link>
+                <hr class="navbar-divider">
                 <router-link class="dropdown-item is-size-5" to="/team" @click.native="toggleNav()">
                 🙏 Team
                 </router-link>
                 <!-- <router-link class="dropdown-item is-size-5" to="/call-for-a-host" @click.native="toggleNav()">💜 Call
                   for an Angel -->
                 <!-- </router-link> -->
-                <hr class="navbar-divider">
-                <router-link class="dropdown-item is-size-5" to="/give-us-review-thanks" @click.native="toggleNav()">
-                🥰 Give us Review
-                </router-link>
+
+
               </div>
             </div>
           </div>

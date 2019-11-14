@@ -20,7 +20,7 @@ export default {
   },
   metaInfo: {
   title: 'Tech Cowork Progressbar Bratislava | Blockchains',
-  titleTemplate: '%s | Place to work',
+  titleTemplate: '%s | Place to work 🙌',
   },
 }
 </script>

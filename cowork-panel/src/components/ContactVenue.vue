@@ -5,7 +5,7 @@
       <div class="column is-4 content">
         <h2 class="has-text-white">
           📍We are located on the first floor. <br />
-          You can access our space through grey doors next to bike stand. <br />
+          🚶‍♀️You can access our space through grey doors next to the bike stand.<br />
           <br> 🚪If you plan visit us during day, <a href="https://t.me/coworkprogressbar">join our public telegram channel ahead </a><br /> or <a href="mailto:info@progressbar.sk">contact us via email</a>
           🤗 Thanks
         </h2>
@@ -40,13 +40,10 @@
     </div>
     <div class="columns is-centered">
       <div class="column is-12 content">
-        <p>
-          <a href="https://www.openstreetmap.org/node/1096120193" target="_blank">Progressbar at Openstreetmap</a>
-          ||
-          <a href="https://www.google.com/maps/place/Progressbar+hackerspace/@48.144557,17.1133019,17z/data=!3m1!4b1!4m5!3m4!1s0x476c8946152ff129:0x72ac0b6fccaf66fd!8m2!3d48.144557!4d17.1154906" target="_blank">Progressbar at Google Maps</a>
-        </p>
+          <a href="https://www.openstreetmap.org/node/1096120193" target="_blank">Open Street Map</a>
+          <a href="https://www.google.com/maps/place/Progressbar+hackerspace/@48.144557,17.1133019,17z/data=!3m1!4b1!4m5!3m4!1s0x476c8946152ff129:0x72ac0b6fccaf66fd!8m2!3d48.144557!4d17.1154906" target="_blank">Google Maps</a>
         <iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=17.113958001136783%2C48.143727459609195%2C17.116854786872867%2C48.14537578584775&amp;layer=mapnik&amp;marker=48.14455162934517%2C17.115406394004822"
-          style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=48.14455&amp;mlon=17.11541#map=19/48.14455/17.11541&amp;layers=N">View Larger Map</a></small>
+          style="border: 1px solid black"></iframe><br/>
         <div class="columns">
           <div class="column is-6">
             <img src="/static/img/outdoor/IMG_20180403_185456_HDR.jpg" alt="dunajska 14 progressbar" />

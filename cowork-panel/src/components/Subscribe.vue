@@ -61,7 +61,7 @@
     </div>
     <h1 class="section-title title has-text-white has-text-centered">👩‍💻Membership👨‍💻</h1>
     <Offer/>
-    <h1 class="section-title title has-text-white has-text-centered">📸 Look inside</h1>
+    <h1 class="section-title title has-text-white has-text-centered">🕵️‍♀️ Look inside</h1>
     <div class="columns is-centered">
       <div class="column is-6 contains-iframe-to-center" v-for="frame in href.iframes">
         <ImageFrame v-bind:url="frame" :key="frame"></ImageFrame>
@@ -177,7 +177,7 @@
       CookieLaw
     },
     metaInfo: {
-      title: 'Tech Cowork Progressbar | Bratislava | Ethereum accepted'
+      title: 'Tech Cowork Progressbar Bratislava'
     },
     data() {
       return {
@@ -214,7 +214,7 @@
         href: {
           iframes: [
             'https://www.google.com/maps/embed?pb=!4v1573724301670!6m8!1m7!1sCAoSLEFGMVFpcE95LWZyQ3dfMHBJNnZGUzcwbHQ4dUZCSV9sd2FLTkEtaUZ3WTFO!2m2!1d48.1448919!2d17.1154158!3f114.32652478817094!4f-18.771614443283426!5f0.4000000000000002',
-            'https://www.google.com/maps/embed?pb=!4v1547309683887!6m8!1m7!1sCAoSLEFGMVFpcFBfRDIwTE9WUk4zRGNxN3F4Y1hjQXhFbTFQelByZjM3N0ZHdkJx!2m2!1d48.14464166666667!2d17.11531666666667!3f233.42399438900938!4f-2.3943692114223722!5f0.4000000000000002'
+            'https://www.google.com/maps/embed?pb=!4v1573755351347!6m8!1m7!1sCAoSLEFGMVFpcE4ySGpmX0RNUzg1WUJCZWNHMTBpd1lZSWRueXhNcnduVG9ZTVJl!2m2!1d48.1468639!2d17.1156119!3f12.82337781398069!4f-6.010588169657851!5f0.4000000000000002'
           ],
         },
         techAmbassadors: [

@@ -75,8 +75,7 @@ export default {
   },
   name: 'meetingroom',
   metaInfo: {
-    title: 'Meeting room in downtown of Bratislava | Blockchains',
-    titleTemplate: null,
+    title: 'Meeting room in downtown of Bratislava'
   },
   data() {
     return {

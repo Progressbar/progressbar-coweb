@@ -26,7 +26,7 @@
   export default {
     name: 'Podcast',
     metaInfo: {
-      title: 'Podcast Progressbar | PPPP'
+      title: 'Crypto Podcast Progressbar | PPPP'
     },
     data () {
       return {

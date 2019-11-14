@@ -51,8 +51,6 @@
       name: 'Pay',
       metaInfo: {
         title: 'Crowdfunding Progressbar | DAO 🙌',
-        // override the parent template and just use the above title only
-        titleTemplate: null
       },
       data () {
         return {}

@@ -73,8 +73,6 @@ export default {
   name: 'meetingroom',
   metaInfo: {
     title: 'Private and shared office in downtown of Bratislava',
-    // override the parent template and just use the above title only
-    titleTemplate: null
   },
   data() {
     return {
@@ -83,9 +81,6 @@ export default {
           "https://www.google.com/maps/embed?pb=!4v1548615947594!6m8!1m7!1sCAoSLEFGMVFpcE1uOUhxclBDNFJtN0VsaDRfYnZzbFRKaldSdGlJZER3cTR6Tkcz!2m2!1d48.14466111111111!2d17.1154!3f272.452135499486!4f-1.9685896130948208!5f0.4000000000000002"
         ],
       },
-      orderPrices: {
-        meetingRoom: 10
-      }
     }
   }
 }
