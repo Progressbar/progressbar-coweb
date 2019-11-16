@@ -30,7 +30,7 @@ export default {
   data() {
     return {
       href: {
-        coworkGroup: 'https://t.me/coworkprogressbar',
+        coworkGroup: 'mailto:info@progressbar.sk?subject=I want to try Progressbar Cowork',
       },
       plans: [
         { name: 'Weekpass', time: '9 am ~ 6 pm ⏰', description:

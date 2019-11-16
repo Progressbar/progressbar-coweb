@@ -7,7 +7,7 @@
       </div>
       <div class="column is-parent is-4">
         <article class="tile is-child notification is-black is-size-4">
-          <p class="title is-size-1">🏕 Cowork 🧚‍♂️</p>
+          <h1 class="title is-size-1">🏕 Tech Cowork 🧚‍♂️</h1>
           <div class="content">
             <p>📍 <a href="https://goo.gl/maps/njvuE4mwmpz" alt="location of cowork in Bratislava">Downtown, Bratislava</a></p>
             <p>🤝
@@ -139,13 +139,17 @@
           <div class="content">
             <p class="title">⏳ Voyage Facilitation</p>
             <div class="content">
-              <p></p>
               <p>Join us, meet interesting people and gain new information.
                 Progressbar will give you space where you can work and learn by attending workshops and talks.
                 You can rent a table and help create something big. We will be happy to help you with building your project.
                 All it takes for you is to come and show what’s inside of you.
                 Contact us for more information.
               </p>
+              <h2 class="pink">
+                <a href="mailto:info@progressbar.sk?subject=I want to try Progressbar Cowork!"
+                target="_blank" rel="noopener">
+                Join Tech Cowork Progressbar in Bratislava</a>
+              </h2>
             </div>
           </div>
         </article>
@@ -282,6 +286,10 @@
 
   h2#blackh2 {
     color: black;
+  }
+
+  .pink {
+    color: hotpink;
   }
 
   .contains-iframe-to-center {

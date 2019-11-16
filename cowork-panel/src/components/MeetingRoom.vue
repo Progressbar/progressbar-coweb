@@ -35,7 +35,9 @@
           <p>💞By renting our meeting room you are supporting community </p>
         </div>
         <div class="btn-container">
-          <a class="button is-black is-block is-large meeting" href="https://t.me/coworkprogressbar">{{ orderPrices.meetingRoom }}€ / hour</a>
+          <a class="button is-black is-block is-large meeting"
+            href="mailto:info@progressbar.sk?subject=I want to try Progressbar Cowork!">
+            {{ orderPrices.meetingRoom }}€ / hour</a>
         </div>
       </div>
     </article>
