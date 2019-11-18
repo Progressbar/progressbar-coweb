@@ -40,12 +40,12 @@ export default {
   data() {
     return {
       sponsors: [
-        {
-          name: 'Decent Dcore | Advanced Blockchain Ecosystem',
-          src: '/static/img/partners/DECENT_logo_vertical_color.png',
-          url: 'https://decent.ch/dcore/',
-          desc: 'Founded in 2015, DECENT is one of the first blockchain companies. DECENT has developed their own blockchain protocol; DCore, a platform that empowers users to create or migrate applications into a blockchain environment. Cooperating closely with top investment funds and incubators, DECENT is dedicated to building an ecosystem upon its proprietary blockchain technology to help developers and businesses adapt to a decentralized future, especially within the media and entertainment industries.'
-        },
+        // {
+        //   name: 'Decent Dcore | Advanced Blockchain Ecosystem',
+        //   src: '/static/img/partners/DECENT_logo_vertical_color.png',
+        //   url: 'https://decent.ch/dcore/',
+        //   desc: 'Founded in 2015, DECENT is one of the first blockchain companies. DECENT has developed their own blockchain protocol; DCore, a platform that empowers users to create or migrate applications into a blockchain environment. Cooperating closely with top investment funds and incubators, DECENT is dedicated to building an ecosystem upon its proprietary blockchain technology to help developers and businesses adapt to a decentralized future, especially within the media and entertainment industries.'
+        // },
         {
           name: 'HOSU | office solutions',
           src: '/static/img/sponsors/hosu.png',
