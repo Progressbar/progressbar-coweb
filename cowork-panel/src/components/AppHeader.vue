@@ -70,17 +70,17 @@
                 Others
               </a>
               <div class="navbar-dropdown is-right">
+                <router-link class="dropdown-item is-size-5" to="/calendar" @click.native="toggleNav()">
+                📅 Calendar
+                </router-link>
                 <router-link class="dropdown-item is-size-5" to="/contact-venue" @click.native="toggleNav()">
                 🛸 Contact
                 </router-link>
-                <router-link class="dropdown-item is-size-5" to="/calendar" @click.native="toggleNav()">
-                🍻 Calendar
+                <router-link class="dropdown-item is-size-5" to="/network" @click.native="toggleNav()">
+                🛰 Network
                 </router-link>
                 <router-link class="dropdown-item is-size-5" to="/podcast" @click.native="toggleNav()">
                 🎥 Podcast
-                </router-link>
-                <router-link class="dropdown-item is-size-5" to="/network" @click.native="toggleNav()">
-                🛰 Network
                 </router-link>
                 <router-link class="dropdown-item is-size-5" to="/our-residents" @click.native="toggleNav()">
                 🏡 Residents
