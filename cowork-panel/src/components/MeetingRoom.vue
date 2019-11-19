@@ -36,7 +36,7 @@
         </div>
         <div class="btn-container">
           <a class="button is-black is-block is-large meeting"
-            href="mailto:info@progressbar.sk?subject=I want to try Progressbar Cowork!">
+            href="mailto:info@progressbar.sk?subject=I want to try Progressbar Meeting Room!">
             {{ orderPrices.meetingRoom }}€ / hour</a>
         </div>
       </div>
