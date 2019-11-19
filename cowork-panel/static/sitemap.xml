@@ -31,4 +31,19 @@
   <url>
     <loc>https://cowork.progressbar.sk/venue</loc>
   </url>
+  <url>
+    <loc>https://cowork.progressbar.sk/pay</loc>
+  </url>
+  <url>
+    <loc>https://cowork.progressbar.sk/call-for-the-sponsors</loc>
+  </url>
+  <url>
+    <loc>https://cowork.progressbar.sk/crowdfunding</loc>
+  </url>
+  <url>
+    <loc>https://cowork.progressbar.sk/calendar</loc>
+  </url>
+  <url>
+    <loc>https://cowork.progressbar.sk/team</loc>
+  </url>
 </urlset>
