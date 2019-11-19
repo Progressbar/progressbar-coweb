@@ -92,6 +92,10 @@ const paths = [
     component: Podcast
   },
   {
+    path: '/contact',
+    component: ContactVenue
+  },
+  {
     path: '/contact-venue',
     component: ContactVenue
   },

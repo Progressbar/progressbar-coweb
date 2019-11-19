@@ -32,6 +32,7 @@ const routerPaths = [
   '/network',
   '/our-residents',
   '/podcast',
+  '/contact',
   '/contact-venue',
   '/team',
   '/crowdfunding',
