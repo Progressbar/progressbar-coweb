@@ -14,6 +14,34 @@ const PrerenderSPAPlugin = require('prerender-spa-plugin')
 var ImageminPlugin = require('imagemin-webpack-plugin').default
 var imageminMozjpeg = require('imagemin-mozjpeg')
 var loadMinified = require('./load-minified')
+const prettydata = require('pretty-data');
+const SitemapPlugin = require('sitemap-webpack-plugin').default
+// const { routerPaths } = require('../src/router/paths').default.map(r => r.path).filter(p => !p.match(/\*/))
+const routerPaths = [
+  '/',
+  '/coworking-bratislava',
+  '/meeting-room-cowork-bratislava',
+  '/fixdesk-cowork-bratislava',
+  '/call-for-the-sponsors',
+  '/rent-a-space',
+  '/space-for-rent',
+  '/venue',
+  '/give-us-review-thanks',
+  '/pay',
+  '/calendar',
+  '/network',
+  '/our-residents',
+  '/podcast',
+  '/contact-venue',
+  '/team',
+  '/crowdfunding',
+  '/rent-private-office-bratislava'
+]
+
+const prettyPrint = xml => {
+  const result = prettydata.pd.xml(xml);
+  return result;
+};
 
 var env = config.build.env
 
@@ -113,6 +141,13 @@ var webpackConfig = merge(baseWebpackConfig, {
         })
       ]
     }),
+    // sitemap Generator
+    new SitemapPlugin('https://cowork.progressbar.sk', routerPaths, {
+      fileName: 'sitemap.xml',
+      lastMod: true,
+      changeFreq: 'monthly',
+      formatter: prettyPrint,
+    }),
     // service worker caching
     new SWPrecacheWebpackPlugin({
       cacheId: 'my-vue-app',
@@ -122,9 +157,9 @@ var webpackConfig = merge(baseWebpackConfig, {
       stripPrefix: 'dist/'
     }),
     new PrerenderSPAPlugin({
-        // Required - The path to the webpack-outputted app to prerender.
-        staticDir: config.build.assetsRoot,
-        // Required - Routes to render.
+      // Required - The path to the webpack-outputted app to prerender.
+      staticDir: config.build.assetsRoot,
+      // Required - Routes to render.
       routes: ['/venue', '/rent-a-space', '/our-residents',
         '/pay', '/meeting-room-cowork-bratislava' ]
       })
