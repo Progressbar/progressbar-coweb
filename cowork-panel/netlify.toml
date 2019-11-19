@@ -1,6 +1,6 @@
 [[redirects]]
-  from = "/robots.txt"
-  to = "/static/robots.txt"
+  from = "https://cowork.progressbar.sk/robots.txt"
+  to = "https://cowork.progressbar.sk/static/robots.txt"
   status = 200
   force = true
 
