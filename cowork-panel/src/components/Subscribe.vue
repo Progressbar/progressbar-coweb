@@ -15,14 +15,19 @@
               </router-link>
             </p>
             <p>🔐 Private call room</p>
+            <p>💺 Ergonomic quality chairs</p>
             <p>💬 Hangout areas</p>
             <p>🌿 Lot of plants</p>
             <p>🖥 Shared monitors</p>
-            <p>⚡️ Ultra-fast Internet</a></p>
+            <p>⚡️ Ultra-fast Internet</p>
             <p>👷‍♀️ Standing desks</p>
             <p>📦 <a href="#" title="Expecting a delivery while you're out?
               Don't worry. We can handover package to your table 🥰" > Package Handling</a></p>
-            <p>💁‍♀️ On-site support </p>
+            <p>🎯 Space for focused work</p>
+            <p>🙌 Space for collaborative work</p>
+            <p>🛋 Space for relaxtion</p>
+            <p>🍷 Community Social Events</p>
+            <p>💁‍♀️ On-site support</p>
             <p>🥗 Lot of food options around</p>
             <p>🏋️‍♂️ <a href="https://www.instagram.com/p/Bn5zmzJAa01/" target="_blank" rel="noopener">Pull-up bar for
               you</a></p>

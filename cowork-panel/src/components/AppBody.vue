@@ -62,7 +62,7 @@ export default {
 
 <style scoped>
 .hero-bg {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url('/static/img/cowork/cowork_bratislava_IMG_20190404_222127.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url('/static/img/cowork/cowork_neons_IMG_20191111_191609.jpg');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
