@@ -5,6 +5,7 @@ import Login from '@/components/Login'
 import Credit from '@/components/Credit'
 import MeetingRoom from '@/components/MeetingRoom'
 import FixDesk from '@/components/FixDesk'
+import FlexDesk from '@/components/FlexDesk'
 import CallForTheSponsors from '@/components/CallForTheSponsors'
 import SpaceForRent from '@/components/SpaceForRent'
 import Residents from '@/components/Residents'
@@ -36,7 +37,23 @@ const paths = [
     component: MeetingRoom
   },
   {
+    path: '/rent-meeting-room-cowork-bratislava',
+    component: MeetingRoom
+  },
+  {
+    path: '/rent-flexdesk-cowork-bratislava',
+    component: FlexDesk
+  },
+  {
+    path: '/rent-fixdesk-cowork-bratislava',
+    component: FixDesk
+  },
+  {
     path: '/fixdesk-cowork-bratislava',
+    component: FixDesk
+  },
+  {
+    path: '/rent-desk-cowork-bratislava',
     component: FixDesk
   },
   {

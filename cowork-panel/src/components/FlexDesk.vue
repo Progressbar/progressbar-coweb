@@ -15,7 +15,7 @@
         <ImageFrame v-bind:url="frame" :key="frame"></ImageFrame>
       </div>
     </div>
-      <div class="tile is-parent is-size-4" v-for="plan in plans.slice(2,3)">
+      <div class="tile is-parent is-size-4" v-for="plan in plans.slice(1,2)">
         <article :class="{'is-highlighted': plan.highlight }" class="tile is-child notification is-black">
           <div class="content">
             <p v-if="plan.url" class="title is-size-3"><router-link :to='plan.url'>
@@ -49,9 +49,9 @@ export default {
     return {
       href: {
         iframes: [
-          'https://www.google.com/maps/embed?pb=!4v1573724301670!6m8!1m7!1sCAoSLEFGMVFpcE95LWZyQ3dfMHBJNnZGUzcwbHQ4dUZCSV9sd2FLTkEtaUZ3WTFO!2m2!1d48.1448919!2d17.1154158!3f114.32652478817094!4f-18.771614443283426!5f0.4000000000000002'
+          'https://www.google.com/maps/embed?pb=!4v1573755351347!6m8!1m7!1sCAoSLEFGMVFpcE4ySGpmX0RNUzg1WUJCZWNHMTBpd1lZSWRueXhNcnduVG9ZTVJl!2m2!1d48.1468639!2d17.1156119!3f12.82337781398069!4f-6.010588169657851!5f0.4000000000000002'
         ],
-        coworkGroup: 'mailto:info@progressbar.sk?subject=I want to try Progressbar Cowork Fixdesk!'
+        coworkGroup: 'mailto:info@progressbar.sk?subject=I want to try Progressbar Cowork Flexdesk!'
       },
       plans: [
         { name: 'Weekpass', time: '9 am ~ 6 pm ⏰', description:

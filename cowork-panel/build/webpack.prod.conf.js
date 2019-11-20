@@ -21,9 +21,14 @@ const routerPaths = [
   '/',
   '/coworking-bratislava',
   '/meeting-room-cowork-bratislava',
+  '/rent-meeting-room-cowork-bratislava',
+  '/rent-private-office-bratislava',
+  '/rent-a-space',
+  '/rent-flexdesk-cowork-bratislava',
+  '/rent-fixdesk-cowork-bratislava',
+  '/rent-desk-cowork-bratislava',
   '/fixdesk-cowork-bratislava',
   '/call-for-the-sponsors',
-  '/rent-a-space',
   '/space-for-rent',
   '/venue',
   '/give-us-review-thanks',
@@ -36,7 +41,6 @@ const routerPaths = [
   '/contact-venue',
   '/team',
   '/crowdfunding',
-  '/rent-private-office-bratislava'
 ]
 
 const prettyPrint = xml => {

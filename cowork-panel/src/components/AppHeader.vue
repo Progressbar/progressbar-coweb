@@ -34,7 +34,7 @@
             <router-link
               class="navbar-item is-size-4"
               exact-active-class="is-active"
-              to="/meeting-room-cowork-bratislava"
+              to="/rent-meeting-room-cowork-bratislava"
               v-on:click.native="toggleNav()"
             >
               Meeting Room
