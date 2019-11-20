@@ -25,7 +25,7 @@
               Don't worry. We can handover package to your table 🥰" > Package Handling</a></p>
             <p>🎯 Space for focused work</p>
             <p>🙌 Space for collaborative work</p>
-            <p>🛋 Space for relaxtion</p>
+            <p>🛋 Space for relaxation</p>
             <p>🍷 Community Social Events</p>
             <p>💁‍♀️ On-site support</p>
             <p>🥗 Lot of food options around</p>
