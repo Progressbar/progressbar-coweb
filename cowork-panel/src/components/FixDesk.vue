@@ -54,13 +54,13 @@ export default {
         coworkGroup: 'mailto:info@progressbar.sk?subject=I want to try Progressbar Cowork Fixdesk!'
       },
       plans: [
-        { name: 'Weekpass', time: '9 am ~ 6 pm ⏰', description:
+        { name: 'Week pass', time: '9 am ~ 6 pm ⏰', description:
           ['Available desk in space', 'Great for try out', 'Enjoy insider view'],
           price: '50', period: 'week' },
         { name: 'Flex', time: '6 am ~ 6 pm ⏰', description:
           ['Available desk in space', 'Great for longer stays 🏡', 'Support us remotely 💞'],
           price: '150',  period: 'month' },
-        { name: 'Fixdesk', time: '24/7 🌃', description:
+        { name: 'Fix desk', time: '24/7 🌃', description:
           ['Dedicated desk & chair', '♾ meeting room hours', '180cm long desk'],
           price: '200', period: 'month', highlight: 'true'},
         { name: 'Meeting Room 🤝', time: 'Acoustically isolated', description:
