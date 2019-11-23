@@ -2,40 +2,46 @@
 <div class="Venue">
   <div class="container is-fluid">
     <div class="columns is-centered">
-      <div class="column is-4 content">
+      <div class="column is-5 content">
         <h2 class="has-text-white">
-          📍We are located on the first floor. <br />
-          🚶‍♀️You can access our space through grey doors next to the bike stand.<br />
-          <br> 🚪If you plan visit us during day, <a href="https://t.me/coworkprogressbar">join our public telegram channel ahead </a><br /> or <a href="mailto:info@progressbar.sk">contact us via email</a>
-          🤗 Thanks
+          📍 We are located on the first floor. <br />
+          🚶‍♀️ You can access our space through grey doors next to the bike stand.<br />
+          <br> 🚪 If you plan visit us during day, <a href="https://t.me/coworkprogressbar">join our public telegram channel ahead </a> or <a href="mailto:info@progressbar.sk">contact us via email</a>.<br>
+          See you soon 👋
         </h2>
       </div>
-      <div class="column is-4 content">
-        <h1 class="has-text-white">
-          📯Address - postal <br />
-        </h1>
-        <h3 class="has-text-white">
-          Progressbar cowork & hackerspace,<br>
-          Dunajská 7495/14,<br>
-          811 08 Bratislava<br>
-          Slovakia<br>
-        </h3>
-      </div>
-      <div class="column is-4 content">
-        <h1 class="has-text-white">
-          🧾 Billing details
-        </h1>
-        <h4 class="has-text-white">
-          Progressbar o.z.<br>
-          Dunajská 7495/14,<br>
-          81108 Bratislava,<br>
-          Slovenská republika<br>
+      <div class="column is-4 is-offset-2 content">
+        <div class="columns">
+          <div class="column is-12 content">
+          <h1 class="has-text-white">
+            📯Address - postal <br />
+          </h1>
+          <h3 class="has-text-white">
+            Progressbar cowork & hackerspace,<br>
+            Dunajská 7495/14,<br>
+            811 08 Bratislava<br>
+            Slovakia<br>
+          </h3>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column is-12 content">
+          <h1 class="has-text-white">
+            🧾 Billing details
+          </h1>
+          <h4 class="has-text-white">
+            Progressbar o.z.<br>
+            Dunajská 7495/14,<br>
+            81108 Bratislava,<br>
+            Slovenská republika<br>
 
-          IČO: 42180023<br>
-          DIČ: 2023612074<br>
+            IČO: 42180023<br>
+            DIČ: 2023612074<br>
 
-          Registrované na MVSR zo dňa 15.7.2010 číslo spisu VVS/1-900/90-35964
-        </h4>
+            Registrované na MVSR zo dňa 15.7.2010 číslo spisu VVS/1-900/90-35964
+          </h4>
+          </div>
+        </div>
       </div>
     </div>
     <div class="columns is-centered">
