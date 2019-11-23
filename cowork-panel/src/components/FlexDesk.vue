@@ -1,75 +1,37 @@
 <template>
-<div class="fixdesk">
-  <div class="tile is-ancestor">
-    <div class="tile is-parent is-12">
-      <article class="tile is-child">
-        <figure class="image">
-          <img src="/static/img/cowork/fixdesk.jpg" alt="fixdesk bratislava cowork downtown"/>
-        </figure>
-      </article>
-    </div>
-  </div>
+<div class="flexdesk">
   <div class="tile is-ancestor">
     <div class="tile is-vertical is-8">
       <div class="column contains-iframe-to-center" v-for="frame in href.iframes">
         <ImageFrame v-bind:url="frame" :key="frame"></ImageFrame>
       </div>
     </div>
-      <div class="tile is-parent is-size-4" v-for="plan in plans.slice(1,2)">
-        <article :class="{'is-highlighted': plan.highlight }" class="tile is-child notification is-black">
-          <div class="content">
-            <p v-if="plan.url" class="title is-size-3"><router-link :to='plan.url'>
-              {{plan.name}}</router-link></p>
-            <p v-else class="title is-size-3">{{plan.name}}</p>
-            <div class="content">
-              <p>{{plan.time}}</p>
-              <p>{{plan.description[0]}}</p>
-              <p>{{plan.description[1]}}</p>
-              <p>{{plan.description[2]}}</p>
-            </div>
-          </div>
-          <div class="btn-container">
-            <a class="button is-black is-block is-large meeting"
-              :href="href.coworkGroup">{{ plan.price }}€ / {{plan.period}}</a>
-          </div>
-        </article>
-      </div>
+      <div class="tile is-child is-parent">
+      <Offer rangeStart=1 rangeEnd=2 />
+    </div>
   </div>
 </div>
 </template>
 <script>
 import ImageFrame from './ImageFrame';
+import Offer from './Offer';
 
 export default {
   components: {
-    ImageFrame
+    ImageFrame,
+    Offer
   },
-  name: 'fixdesk',
+  name: 'flexdesk',
+  metaInfo: {
+    title: 'Rent Flex Desk in Bratislava'
+  },
   data() {
     return {
       href: {
         iframes: [
           'https://www.google.com/maps/embed?pb=!4v1573755351347!6m8!1m7!1sCAoSLEFGMVFpcE4ySGpmX0RNUzg1WUJCZWNHMTBpd1lZSWRueXhNcnduVG9ZTVJl!2m2!1d48.1468639!2d17.1156119!3f12.82337781398069!4f-6.010588169657851!5f0.4000000000000002'
         ],
-        coworkGroup: 'mailto:info@progressbar.sk?subject=I want to try Progressbar Cowork Flexdesk!'
       },
-      plans: [
-        { name: 'Week pass', time: '9 am ~ 6 pm ⏰', description:
-          ['Available desk in space', 'Great for try out', 'Enjoy insider view'],
-          price: '50', period: 'week' },
-        { name: 'Flex', time: '6 am ~ 6 pm ⏰', description:
-          ['Available desk in space', 'Great for longer stays 🏡', 'Support us remotely 💞'],
-          price: '150',  period: 'month' },
-        { name: 'Fix desk', time: '24/7 🌃', description:
-          ['Dedicated desk & chair', '♾ meeting room hours', '180cm long desk'],
-          price: '200', period: 'month', highlight: 'true'},
-        { name: 'Meeting Room 🤝', time: 'Acoustically isolated', description:
-          ['10 seats','Whiteboard', 'Projector 📽 '], price: '10', period: 'hour',
-          url: '/meeting-room-cowork-bratislava' }
-      ],
-      orderPrices: {
-        fixdesk: 200
-      }
     }
   }
 }

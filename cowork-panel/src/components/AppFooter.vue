@@ -39,8 +39,14 @@
         <ul>
           <li>
             <router-link
-              to="/rent-fixdesk-cowork-bratislava">
-              Rent Desk in Cowork
+              to="/rent-flex-desk-coworking-bratislava">
+              Rent Flex Desk in Cowork
+            </router-link>
+          </li>
+          <li>
+            <router-link
+              to="/rent-fix-desk-coworking-bratislava">
+              Rent Fix Desk in Cowork
             </router-link>
           </li>
           <li>

@@ -26,13 +26,13 @@
       <div class="content">
         <p class="title">Meeting room 🤝</p>
         <div class="content">
-          <p>🧠Perfect for brainstorming and meeting clients</p>
-          <p>💺Capacity 10 seats </p>
-          <p>📽Projector with Chromecast</p>
-          <p>🎨Whiteboard</p>
-          <p>🎧Good for Podcasts</p>
-          <p>📍Downtown location</p>
-          <p>💞By renting our meeting room you are supporting community </p>
+          <p>🧠 Perfect for brainstorming and meeting clients</p>
+          <p>💺 Capacity 10 seats </p>
+          <p>📽 Projector with Chromecast</p>
+          <p>🎨 Whiteboard</p>
+          <p>🎧 Good for Podcasts</p>
+          <p>📍 Downtown location</p>
+          <p>💞 By renting our meeting room you are supporting community </p>
         </div>
         <div class="btn-container">
           <a class="button is-black is-block is-large meeting"

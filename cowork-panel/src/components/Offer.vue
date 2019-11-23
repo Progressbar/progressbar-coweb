@@ -1,7 +1,7 @@
 <template>
 <div class="offer">
   <div class="tile is-ancestor">
-    <div class="tile is-parent is-size-4" v-for="plan in plans">
+    <div class="tile is-parent is-size-4" v-for="plan in plans.slice(rangeStart,rangeEnd)">
       <article :class="{'is-highlighted': plan.highlight }" class="tile is-child notification is-black">
         <div class="content">
           <p v-if="plan.url" class="title is-size-3"><router-link :to='plan.url'>
@@ -16,7 +16,7 @@
         </div>
         <div class="">
           <a class="button is-black is-block is-large"
-            :href="href.coworkGroup">{{ plan.price }}€ / {{plan.period}}</a>
+            :href="plan.cta">{{ plan.price }}€ / {{plan.period}}</a>
         </div>
       </article>
     </div>
@@ -27,6 +27,10 @@
 <script>
 export default {
   name: 'offer',
+  props: {
+    rangeStart: Number,
+    rangeEnd: Number,
+  },
   data() {
     return {
       href: {
@@ -35,18 +39,22 @@ export default {
       plans: [
         { name: 'Week pass', time: '9 am ~ 6 pm ⏰', description:
           ['Available desk in space', 'Great for try out', 'Enjoy insider experience'],
-          price: '50', period: 'week' },
-        { name: 'Flex', time: '6 am ~ 6 pm ⏰', description:
+          price: '50', period: 'week', url: '/day-week-pass-coworking-bratislava',
+          cta: 'mailto:info@progressbar.sk?subject=I want to try Progressbar Cowork Week Pass' },
+        { name: 'Flex Desk', time: '9 am ~ 6 pm ⏰', description:
           ['Available desk in space', 'Great for longer stays 🏡', 'You are supporting community 💞'],
           price: '150',  period: 'month',
-          url: '/rent-flexdesk-cowork-bratislava' },
+          url: '/rent-flex-desk-coworking-bratislava',
+          cta: 'mailto:info@progressbar.sk?subject=I want to try Progressbar Cowork Flex Desk' },
         { name: 'Fix desk', time: '24/7 🌃', description:
           ['Dedicated desk & chair', '♾ meeting room hours', '180cm long desk'],
           price: '200', period: 'month', highlight: 'true',
-          url: '/rent-fixdesk-cowork-bratislava' },
+          url: '/rent-fix-desk-coworking-bratislava',
+          cta: 'mailto:info@progressbar.sk?subject=I want to try Progressbar Cowork Fix Desk' },
         { name: 'Meeting Room 🤝', time: 'Acoustically isolated', description:
           ['10 seats','Whiteboard', 'Projector 📽 '], price: '10', period: 'hour',
-          url: '/meeting-room-cowork-bratislava' }
+          url: '/meeting-room-cowork-bratislava',
+          cta: 'mailto:info@progressbar.sk?subject=I want to try Progressbar Cowork Meeting Room' }
       ],
     }
   }

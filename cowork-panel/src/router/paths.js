@@ -6,6 +6,7 @@ import Credit from '@/components/Credit'
 import MeetingRoom from '@/components/MeetingRoom'
 import FixDesk from '@/components/FixDesk'
 import FlexDesk from '@/components/FlexDesk'
+import WeekPass from '@/components/WeekPass'
 import CallForTheSponsors from '@/components/CallForTheSponsors'
 import SpaceForRent from '@/components/SpaceForRent'
 import Residents from '@/components/Residents'
@@ -45,7 +46,15 @@ const paths = [
     component: FlexDesk
   },
   {
+    path: '/rent-flex-desk-coworking-bratislava',
+    component: FlexDesk
+  },
+  {
     path: '/rent-fixdesk-cowork-bratislava',
+    component: FixDesk
+  },
+  {
+    path: '/rent-fix-desk-coworking-bratislava',
     component: FixDesk
   },
   {
@@ -53,8 +62,16 @@ const paths = [
     component: FixDesk
   },
   {
+    path: '/fix-desk-cowork-bratislava',
+    component: FixDesk
+  },
+  {
     path: '/rent-desk-cowork-bratislava',
     component: FixDesk
+  },
+  {
+    path: '/day-week-pass-coworking-bratislava',
+    component: WeekPass
   },
   {
     path: '/call-for-the-sponsors',

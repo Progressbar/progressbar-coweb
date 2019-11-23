@@ -2,7 +2,10 @@
   <div class="Calendar">
     <div class="columns">
       <div class="column is-12">
-        <h1>Meeting Room - <a href="mailto:info@progressbar.sk?subject=I want to try Progressbar Meeting Room!">Book meeting room</a></h1>
+        <h1>
+          <router-link to="rent-meeting-room-cowork-bratislava">
+            Meeting Room</router-link> -
+          <a href="mailto:info@progressbar.sk?subject=I want to try Progressbar Meeting Room!">Book meeting room</a></h1>
         <iframe src="https://calendar.google.com/calendar/b/2/embed?height=600&amp;wkst=2&amp;bgcolor=%23ffffff&amp;ctz=Europe%2FPrague&amp;src=cHJvZ3Jlc3NiYXIuc2tfaXQ1OGc1NTB0cXN0aG8wZjE2cjFydDM1ZGNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%234285F4&amp;showTitle=0&amp;title=Main%20Meeting%20Room&amp;showTz=0&amp;showCalendars=0&amp;showNav=1&amp;showDate=1" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
       </div>
     </div>
