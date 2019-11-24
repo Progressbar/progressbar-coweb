@@ -2,14 +2,15 @@
   <div class="subscribe">
     <div class="columns">
       <div class="column is-parent is-8">
-        <img src="/static/img/cowork/pb-08.jpg" alt="progressbar cowork bratislava blockchain">
-        <img src="/static/img/meetingroom/waomeeting-01-4.jpg" alt="blockchain cowork bratislava meeting room">
+        <img src="/static/img/cowork/making_movie_cowork.jpg" alt="coworking bratislava making movie">
+        <img src="/static/img/cowork/pb-08.jpg" alt="progressbar coworking bratislava blockchain">
+        <img src="/static/img/meetingroom/waomeeting-01-4.jpg" alt="blockchain coworking bratislava meeting room">
       </div>
       <div class="column is-parent is-4">
         <article class="tile is-child notification is-black is-size-4">
           <h1 class="title is-size-1">🏕 Tech Cowork</h1>
           <div class="content">
-            <p>📍 <a href="https://goo.gl/maps/njvuE4mwmpz" alt="location of cowork in Bratislava">Downtown, Bratislava</a></p>
+            <p>📍 <a href="https://goo.gl/maps/njvuE4mwmpz" alt="location of coworking in Bratislava">Downtown, Bratislava</a></p>
             <p>🤝
               <router-link to="meeting-room-cowork-bratislava">Meeting rooms
               </router-link>
@@ -54,7 +55,7 @@
     </div>
     <div class="columns">
       <div class="column is-parent is-8">
-        <img src="/static/img/cowork/cowork_bratislava_desk_20191114.jpg" alt="progressbar cowork bratislava blockchain area">
+        <img src="/static/img/cowork/cowork_bratislava_desk_20191114.jpg" alt="progressbar coworking bratislava blockchain area">
       </div>
       <div class="column is-parent is-4">
         <article class="tile is-child notification is-black is-size-4">
@@ -110,7 +111,7 @@
     <techAmbassadors/>
     <div class="columns">
       <div class="column is-parent is-8">
-        <img src="/static/img/cowork/pb-07.jpg" alt="progressbar cowork bratislava blockchain meetup">
+        <img src="/static/img/cowork/focus_room_coworking_bratislava.jpg" alt="progressbar coworking bratislava blockchain meetup">
       </div>
       <div class="column is-parent is-4">
         <article class="tile is-child notification is-black is-size-5">

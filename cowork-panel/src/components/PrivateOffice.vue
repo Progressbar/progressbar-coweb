@@ -20,7 +20,7 @@
         </article>
         <article class="tile is-child">
           <figure class="image">
-            <img src="/static/img/cowork/IMG_20190125_005932.jpg" alt="street view bratislava cowork"/>
+            <img src="/static/img/cowork/focus_room_coworking_bratislava.jpg" alt="street view bratislava cowork"/>
           </figure>
         </article>
       </div>
