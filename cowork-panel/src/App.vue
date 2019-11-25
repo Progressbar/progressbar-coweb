@@ -19,7 +19,7 @@ export default {
     AppHeader,
   },
   metaInfo: {
-  title: 'Tech Cowork Progressbar Bratislava | Blockchains',
+  title: 'Tech Cowork Progressbar Bratislava | Blockchain',
   titleTemplate: '%s | Place to work 🙌',
   },
 }
