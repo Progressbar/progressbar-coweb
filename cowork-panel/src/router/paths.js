@@ -8,7 +8,7 @@ import FixDesk from '@/components/FixDesk'
 import FlexDesk from '@/components/FlexDesk'
 import WeekPass from '@/components/WeekPass'
 import CallForTheSponsors from '@/components/CallForTheSponsors'
-import SpaceForRent from '@/components/SpaceForRent'
+import RentASpace from '@/components/RentASpace'
 import Residents from '@/components/Residents'
 import GiveUsReviewBooking from '@/components/GiveUsReviewBooking'
 import GiveUsReviewAfterVisit from '@/components/GiveUsReviewAfterVisit'
@@ -79,15 +79,15 @@ const paths = [
   },
   {
     path: '/rent-a-space',
-    component: SpaceForRent
+    component: RentASpace
   },
   {
     path: '/space-for-rent',
-    component: SpaceForRent
+    component: RentASpace
   },
   {
     path: '/venue',
-    component: SpaceForRent
+    component: RentASpace
   },
   {
     path: '/running-costs',

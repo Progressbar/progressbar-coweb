@@ -1,5 +1,5 @@
 <template>
-<div class="SpaceForRent">
+<div class="RentASpace">
   <div class="columns is-centered">
     <div class="column is-10 content">
       <h1 class="title has-text-white is-size-1">
@@ -14,11 +14,6 @@
       <p class="has-text-white is-size-3" v-for="line of content">{{line}}</p>
     </div>
   </div>
-  <!-- <div class="columns is-centered">
-    <div class="column is-8 contains-iframe-to-center" v-for="frame in href.iframes">
-      <ImageFrame v-bind:url="frame" :key="frame"></ImageFrame>
-    </div>
-  </div> -->
   <div class="columns is-centered">
     <div class="column is-10 content">
       <img src="/static/img/eventspace/mlmu_april.jpg" alt="machine learning bratislava meetup" />
@@ -47,6 +42,11 @@
           through our <a href="https://t.me/coworkprogressbar">Telegram channel</a></p>
       </h1>
     </div>
+  </div>
+  <div class="columns is-centered">
+      <div class="column is-6 contains-iframe-to-center" v-for="frame in href.iframes">
+        <ImageFrame v-bind:url="frame" :key="frame"></ImageFrame>
+      </div>
   </div>
   <div class="columns is-centered">
     <div class="column is-8 content">
@@ -81,7 +81,7 @@ import axios from 'axios'
 import ImageFrame from './ImageFrame'
 
 export default {
-  name: 'SpaceForRent',
+  name: 'RentASpace',
   components: {
     ImageFrame
   },
@@ -92,7 +92,8 @@ export default {
     return {
       href: {
         iframes: [
-          "https://www.google.com/maps/embed?pb=!4v1547477269492!6m8!1m7!1sCAoSLEFGMVFpcFBfRDIwTE9WUk4zRGNxN3F4Y1hjQXhFbTFQelByZjM3N0ZHdkJx!2m2!1d48.14464166666667!2d17.11531666666667!3f325.65868068001004!4f-12.108018640358523!5f0.4000000000000002"
+          'https://www.google.com/maps/embed?pb=!4v1574673143863!6m8!1m7!1sCAoSLEFGMVFpcE82aGZTenBSUW9SV1JWTTc3Y3hYcDRFZTFaZ2d4NmFfZExZUjY4!2m2!1d48.1446417!2d17.1154389!3f83.27917026806618!4f-23.661244286869305!5f0.4000000000000002',
+          'https://www.google.com/maps/embed?pb=!4v1574673759505!6m8!1m7!1sCAoSLEFGMVFpcE44RG5nZHR2dW5sd2JQZno3VW5fSGtYak1qd2puZ1VWd1l5ek9v!2m2!1d48.1446333!2d17.1154417!3f293.600027123172!4f-19.87749764891886!5f0.4000000000000002'
         ]
       },
       equipment: [
