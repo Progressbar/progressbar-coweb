@@ -26,7 +26,7 @@ export default {
   },
   name: 'Calendar',
   metaInfo: {
-    title: 'Calendar Events & Meeting room | Progressbar'
+    title: 'Calendar of Events & Meeting room'
   },
   data () {
     return {

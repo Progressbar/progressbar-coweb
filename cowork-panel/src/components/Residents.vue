@@ -67,7 +67,7 @@ export default {
   },
   name: 'residents',
   metaInfo: {
-    title: 'Coworkers and Residents at Progressbar | Blockchain'
+    title: 'Coworkers and Residents | Blockchain'
   },
   data() {
     return {

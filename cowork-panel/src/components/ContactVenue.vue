@@ -67,7 +67,7 @@
 export default {
   name: 'Venue',
   metaInfo: {
-    title: 'Contact & Address | Progressbar'
+    title: 'Contact & Address'
   },
 }
 </script>

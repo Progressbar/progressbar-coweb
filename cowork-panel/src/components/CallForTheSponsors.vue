@@ -41,7 +41,7 @@ import axios from 'axios'
 export default {
   name: 'CallForTheSponsors',
   metaInfo: {
-    title: 'Support Progressbar operations costs and sustainability',
+    title: 'Sponsor Operations Costs and Sustainability',
   },
 }
 </script>

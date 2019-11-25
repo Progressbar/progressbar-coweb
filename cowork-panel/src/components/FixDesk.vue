@@ -33,7 +33,7 @@ export default {
   },
   name: 'fixdesk',
   metaInfo: {
-    title: 'Rent Fix Desk in Bratislava'
+    title: 'Rent Fix Desk in Coworking Bratislava'
   },
   data() {
     return {

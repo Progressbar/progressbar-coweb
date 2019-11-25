@@ -50,7 +50,7 @@
   export default {
       name: 'Pay',
       metaInfo: {
-        title: 'Crowdfunding Progressbar | DAO 🙌',
+        title: 'Crowdfunding | DAO 🙌',
       },
       data () {
         return {}

@@ -23,7 +23,7 @@ export default {
   },
   name: 'flexdesk',
   metaInfo: {
-    title: 'Rent Flex Desk in Bratislava'
+    title: 'Rent Flex Desk in Coworking Bratislava'
   },
   data() {
     return {

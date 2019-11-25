@@ -94,7 +94,7 @@
   export default {
     name: 'Pay',
     metaInfo: {
-      title: 'Support Progressbar operations costs and sustainability',
+      title: 'Support Operations Costs and Sustainability',
     },
     data () {
       return {

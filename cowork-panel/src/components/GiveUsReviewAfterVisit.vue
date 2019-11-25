@@ -37,7 +37,7 @@
     export default {
         name: 'GiveUsReviewBooking',
         metaInfo: {
-          title: 'Free day pass in cowork for review',
+          title: 'Free Day Pass in Cowork For Review',
         },
         data () {
           return {
