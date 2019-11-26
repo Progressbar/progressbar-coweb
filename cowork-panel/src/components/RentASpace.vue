@@ -6,7 +6,7 @@
         Rent A Space & Your Events
       </h1>
       <img src="/static/img/eventspace/event_space_chairs.jpg" alt="meetup space in bratislava downtown" />
-      <img src="/static/img/eventspace/IMG_20190404_172145_ps.jpg" alt="meetup space in bratislava downtown" />
+      <img src="/static/img/eventspace/codebeer.jpg" alt="meetup space in bratislava downtown" />
     </div>
   </div>
   <div class="columns is-centered">
@@ -115,7 +115,7 @@ export default {
         As a non-profit that cares about technology, we try to incentivize tech communities in Bratislava, by allowing them to use the venue for free for their events.
         As a non-profit that needs to pay rent and bills, we also need funding! Any donations are welcome. Without donations, we won't be able too keep the familiar hackerspace spirit a lot of people in Bratislava are seeking, and offer these kinds of services.
 
-        We average hold 150+ meetups or workshops yearly.
+        We average hold 150+ events, meetups and workshops yearly.
 
         Our suggestion is a voluntary donation of 200€-400€ for every evening, depending on what you/your community can afford and how much you'll be using the space
         Thanks for the help! 🥰🙏

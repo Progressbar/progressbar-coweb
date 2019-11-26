@@ -29,12 +29,12 @@
         >
           <div class="navbar-end">
             <div class="navbar-item is-size-4" @click="redirectToUrl(href.eventsfb)">
-              Events
+              Events & Meetups
             </div>
             <router-link
               class="navbar-item is-size-4"
               exact-active-class="is-active"
-              to="/rent-meeting-room-cowork-bratislava"
+              to="/rent-meeting-room-coworking-bratislava"
               v-on:click.native="toggleNav()"
             >
               Meeting Room

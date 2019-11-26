@@ -53,7 +53,7 @@ export default {
           cta: 'mailto:info@progressbar.sk?subject=I want to try Progressbar Cowork Fix Desk' },
         { name: 'Meeting Room 🤝', time: 'Acoustically isolated', description:
           ['10 seats','Whiteboard', 'Projector 📽 '], price: '10', period: 'hour',
-          url: '/meeting-room-cowork-bratislava',
+          url: '/rent-meeting-room-coworking-bratislava',
           cta: 'mailto:info@progressbar.sk?subject=I want to try Progressbar Cowork Meeting Room' }
       ],
     }

@@ -1,8 +1,4 @@
 import Subscribe from '@/components/Subscribe'
-import EmailVerify from '@/components/EmailVerify'
-import Order from '@/components/Order'
-import Login from '@/components/Login'
-import Credit from '@/components/Credit'
 import MeetingRoom from '@/components/MeetingRoom'
 import FixDesk from '@/components/FixDesk'
 import FlexDesk from '@/components/FlexDesk'
@@ -39,6 +35,10 @@ const paths = [
   },
   {
     path: '/rent-meeting-room-cowork-bratislava',
+    component: MeetingRoom
+  },
+  {
+    path: '/rent-meeting-room-coworking-bratislava',
     component: MeetingRoom
   },
   {
@@ -148,26 +148,6 @@ const paths = [
   {
     path: '/rent-private-office-bratislava',
     component: PrivateOffice
-  },
-  {
-    path: '/email/:verificationCode',
-    component: EmailVerify
-  },
-  {
-    path: '/order',
-    component: Order
-  },
-  {
-    path: '/login',
-    component: Login
-  },
-  {
-    path: '/login/:loginCode',
-    component: Login
-  },
-  {
-    path: '/credit',
-    component: Credit
   },
   {
     path: '*',
