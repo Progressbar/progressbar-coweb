@@ -25,6 +25,7 @@
             <p>Things we'd like get funds for:</p>
             <p>📽 .8k€ - New projector 1080p to have vivid colours and better picture during meetups</p>
             <p>🧼 .1k€ - Hygienic dispensor to toilet - less unwanted bacteries on your hands</p>
+            <p>🪑 .4k€ - New chairs to meeting room - our actuall chairs getting wonky</p>
             <p>♨️ .2k€ - Water heater to the kitchen - sometimes we wash things manually in hands</p>
             <p>🍛 .3k€ - Dishwasher - we have daily over 40 dirty 🥛</p>
             <p>🔇 1k3€ - Soundproofing of space for comfort during day stay</p>

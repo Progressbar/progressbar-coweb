@@ -1,7 +1,7 @@
 <template>
 <div class="RentASpace">
   <div class="columns is-centered">
-    <div class="column is-10 content">
+    <div class="column is-9 content">
       <h1 class="title has-text-white is-size-1">
         Rent A Space & Your Events
       </h1>
@@ -15,7 +15,7 @@
     </div>
   </div>
   <div class="columns is-centered">
-    <div class="column is-10 content">
+    <div class="column is-9 content">
       <img src="/static/img/eventspace/mlmu_april.jpg" alt="machine learning bratislava meetup" />
       <img src="/static/img/eventspace/IMG_20190327_190708_vedatour.jpg" alt="workshop for students" />
     </div>
@@ -60,8 +60,8 @@
         </p>
         <p>
           <blockquote class="quote-to-include-in-event has-text-white">
-            🌈 You can support Progressbar through 👉 <router-link class="quote-link" to="/pay">https://cowork.progressbar.sk/pay</router-link><br>
-            🌈 Check Progressbar Cowork in Downtown 👉 <a class="quote-link" href="https://cowork.progressbar.sk">https://cowork.progressbar.sk</a><br>
+            🌈 You can support Progressbar 👉 <router-link class="quote-link" to="/pay">https://cowork.progressbar.sk/pay</router-link><br>
+            🌈 Progressbar Coworking in Downtown 👉 <a class="quote-link" href="https://cowork.progressbar.sk">https://cowork.progressbar.sk</a><br>
             🌈 Join Our Cowork Channel on Telegram 👉 <a class="quote-link" href="https://t.me/coworkprogressbar">https://t.me/coworkprogressbar</a>
           </blockquote>
         </p>
