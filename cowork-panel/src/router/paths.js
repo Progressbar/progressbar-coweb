@@ -16,6 +16,7 @@ import CallForHost from '@/components/CallForHost'
 import Page404 from '@/components/Page404'
 import Team from '@/components/Team'
 import Pay from '@/components/Pay'
+import SilentPlace from '@/components/SilentPlace'
 import Calendar from '@/components/Calendar'
 import PrivateOffice from '@/components/PrivateOffice'
 import Crowdfunding from '@/components/Crowdfunding'
@@ -140,6 +141,10 @@ const paths = [
   {
     path: '/team',
     component: Team
+  },
+  {
+    path: '/silent-place-to-work-in-bratislava',
+    component: SilentPlace
   },
   {
     path: '/crowdfunding',

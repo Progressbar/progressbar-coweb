@@ -38,7 +38,7 @@ export default {
       },
       plans: [
         { name: 'Week pass', time: '9 am ~ 6 pm ⏰', description:
-          ['Available desk in space', 'Great for try out', 'Enjoy insider experience'],
+          ['Available desk in space', 'Great for try out 👀', 'Enjoy insider experience'],
           price: '50', period: 'week', url: '/day-week-pass-coworking-bratislava',
           cta: 'mailto:info@progressbar.sk?subject=I want to try Progressbar Cowork Week Pass' },
         { name: 'Flex Desk', time: '9 am ~ 6 pm ⏰', description:

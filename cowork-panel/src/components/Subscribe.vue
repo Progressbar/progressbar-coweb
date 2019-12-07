@@ -32,7 +32,11 @@
             <p>👷‍♀️ Standing desks</p>
             <p>📦 <a href="#" title="Expecting a delivery while you're out?
               Don't worry. We can handover package to your table 🥰" > Package Handling</a></p>
-            <p>🎯 Space for focused work</p>
+            <p>🎯
+              <router-link to="silent-place-to-work-in-bratislava">
+              Space for focused work
+              </router-link>
+            </p>
             <p>🙌
               <router-link to="rent-flex-desk-coworking-bratislava">
               Space for collaborative work
