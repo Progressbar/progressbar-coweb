@@ -32,7 +32,7 @@
         <div class="btn-container">
           <a class="button is-black is-block is-large meeting"
             href="mailto:info@progressbar.sk?subject=I want to try Progressbar Cowork!">
-            I want to try Progressbar Cowork
+            I want to try Cowork
           </a>
         </div>
       </div>
