@@ -17,6 +17,7 @@ import Page404 from '@/components/Page404'
 import Team from '@/components/Team'
 import Pay from '@/components/Pay'
 import SilentPlace from '@/components/SilentPlace'
+import Community from '@/components/Community'
 import Calendar from '@/components/Calendar'
 import PrivateOffice from '@/components/PrivateOffice'
 import Crowdfunding from '@/components/Crowdfunding'
@@ -145,6 +146,10 @@ const paths = [
   {
     path: '/silent-place-to-work-in-bratislava',
     component: SilentPlace
+  },
+  {
+    path: '/place-for-your-community-meetup-in-bratislava',
+    component: Community
   },
   {
     path: '/crowdfunding',

@@ -6,7 +6,7 @@
         <h1 class="title has-text-white">
           Call for Sponsors & Partners
         </h1>
-        <img src="/static/img/eventspace/mlmu_april.jpg" alt="machine learning" />
+        <img src="/static/img/eventspace/mlmu_december.jpg" alt="machine learning meetup bratislava in coworking" />
         <h2 class="subtitle has-text-white">
           <br />
           Progressbar hackerspace is looking for sponsors & partners to help us with the space.

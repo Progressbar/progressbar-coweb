@@ -9,7 +9,6 @@
         <h1 class="title has-text-white is-size-1">
           Running costs
         </h1>
-        <img src="/static/img/eventspace/mlmu_april.jpg" alt="machine learning" />
         <p class="has-text-white is-size-3" v-for="line of content">{{line}}</p>
         <h1 class="has-text-white is-uppercase">Our running costs are following:</h1>
         <h4 class="has-text-white is-size-4" v-for="line of costs">{{line}}</h4>

@@ -28,9 +28,14 @@
           v-bind:class="{ 'is-active': showNav }"
         >
           <div class="navbar-end">
-            <div class="navbar-item is-size-4" @click="redirectToUrl(href.eventsfb)">
-              Events & Meetups
-            </div>
+            <router-link
+              class="navbar-item is-size-4"
+              exact-active-class="is-active"
+              to="/place-for-your-community-meetup-in-bratislava"
+              v-on:click.native="toggleNav()"
+            >
+              Community Meetups
+            </router-link>
             <router-link
               class="navbar-item is-size-4"
               exact-active-class="is-active"

@@ -17,27 +17,34 @@
         <div class="content">
           <p class="title">💰 Crowdfunding</p>
           <div class="content">
-            <p>Through crowdfunding we would like to do Progressbar Improvement Fund</p>
-            <p>Progressbar is giving space to numerous meetups for free (150+meetups/year), but we need to pay for rent.
+            <p>🤔 Through crowdfunding we would like to do Progressbar Improvement Fund</p>
+            <p>🥰 Progressbar is giving space to numerous meetups for free (150+meetups/year), but we need to pay for rent.
               Our cashflow now covers ⅔ of rent from cowork, rest is from meetups.</p>
-            <p>We are missing resources for improvements in space to have quality space.</p>
-            <p>For continuous improvements we need continuous funding to have better place and fix broken things.</p>
+            <p>😱 We are missing resources for improvements in space to have quality space.</p>
+            <p>💪 For continuous improvements we need continuous funding to have better place and fix broken things.</p>
+            <p>🙄 We often miss money for daily maintenance.</p>
+
             <p>Things we'd like get funds for:</p>
             <p>📽 .8k€ - New projector 1080p to have vivid colours and better picture during meetups</p>
-            <p>🧼 .1k€ - Hygienic dispensor to toilet - less unwanted bacteries on your hands</p>
-            <p>🪑 .4k€ - New chairs to meeting room - our actuall chairs getting wonky</p>
-            <p>♨️ .2k€ - Water heater to the kitchen - sometimes we wash things manually in hands</p>
+            <p>🌬 .5€ - Air ventilation in meeting room</p>
             <p>🍛 .3k€ - Dishwasher - we have daily over 40 dirty 🥛</p>
+            <p>🪑 .4k€ - New chairs to meeting room - our actuall chairs getting wonky</p>
+            <p>🎥 1k€+ - Livestreaming equipment (Mevo, Capture card)</p>
+            <p>🎤 .6k€ - Mixpult and 4 channel microphones - quality sound input on livestreams</p>
+            <p>🧼 .1k€ - Hygienic dispensor to toilet - less unwanted bacteries on your hands</p>
+            <p>♨️ .2k€ - Water heater to the kitchen - sometimes we wash things manually in hands</p>
             <p>🔇 1k3€ - Soundproofing of space for comfort during day stay</p>
             <p>📺 1k€ - Television on wheel for workshops</p>
             <p>📱 .3k€ - Phone for showing bookings on meeting room</p>
-            <p>🌬 .5€ - Air ventilation in meeting room</p>
             <p>💬 5k€ - Another meeting room</p>
             <h1>
               <router-link to="/pay">
                 To support our case, you can directly support us via donations
               </router-link>
             </h1>
+            <h3>
+              <a href="https://www.alza.sk/nakupni-seznamy.htm?sharelist=7665686D676E697F7">List to Alza.sk (local Amazon) for things we need</a>
+            </h3>
           </div>
         </div>
       </article>
@@ -61,6 +68,9 @@
 
 <style>
   .content h1 {
+    color: hotpink;
+  }
+    .content h3 {
     color: hotpink;
   }
   a {

@@ -16,7 +16,7 @@
   </div>
   <div class="columns is-centered">
     <div class="column is-9 content">
-      <img src="/static/img/eventspace/mlmu_april.jpg" alt="machine learning bratislava meetup" />
+      <img src="/static/img/eventspace/mlmu_december.jpg" alt="machine learning bratislava meetup in coworking" />
       <img src="/static/img/eventspace/IMG_20190327_190708_vedatour.jpg" alt="workshop for students" />
     </div>
   </div>
