@@ -13,7 +13,6 @@
         <h1 class="has-text-white is-uppercase">Our running costs are following:</h1>
         <h4 class="has-text-white is-size-4" v-for="line of costs">{{line}}</h4>
         </p>
-        <img src="/static/img/meetingroom/waomeeting-01-4.jpg" alt="blockchain cowork bratislava meeting room">
       </div>
     </div>
   </div>

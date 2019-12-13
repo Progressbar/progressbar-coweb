@@ -1,23 +1,16 @@
 import Subscribe from '@/components/Subscribe'
-import WeekPass from '@/components/WeekPass'
-import CallForTheSponsors from '@/components/CallForTheSponsors'
-import GiveUsReviewBooking from '@/components/GiveUsReviewBooking'
-import GiveUsReviewAfterVisit from '@/components/GiveUsReviewAfterVisit'
 import RunningCosts from '@/components/RunningCosts'
 import Podcast from '@/components/Podcast'
 import CallForHost from '@/components/CallForHost'
 import Page404 from '@/components/Page404'
-import Calendar from '@/components/Calendar'
-import PrivateOffice from '@/components/PrivateOffice'
-import Crowdfunding from '@/components/Crowdfunding'
-// import FlexDesk from '@/components/FlexDesk'
-// import FixDesk from '@/components/FixDesk'
-// import Pay from '@/components/Pay'
-// import ContactVenue from '@/components/ContactVenue'
-// import SilentPlace from '@/components/SilentPlace'
-// import Community from '@/components/Community'
-// import RentASpace from '@/components/RentASpace'
-// import MeetingRoom from '@/components/MeetingRoom'
+
+const WeekPass = () => import('@/components/WeekPass')
+const CallForTheSponsors = () => import('@/components/CallForTheSponsors')
+const GiveUsReviewBooking = () => import('@/components/GiveUsReviewBooking')
+const GiveUsReviewAfterVisit = () => import('@/components/GiveUsReviewAfterVisit')
+const Calendar = () => import()
+const PrivateOffice = () => import('@/components/PrivateOffice')
+const Crowdfunding = () => import('@/components/Crowdfunding')
 const FlexDesk = () => import('@/components/FlexDesk')
 const FixDesk = () => import('@/components/FixDesk')
 const Team = () => import('@/components/Team')
