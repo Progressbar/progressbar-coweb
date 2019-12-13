@@ -37,6 +37,7 @@ const routerPaths = [
   '/rent-fix-desk-coworking-bratislava',
   '/pay',
   '/podcast',
+  '/place-for-your-community-meetup-in-bratislava',
   '/silent-place-to-work-in-bratislava',
   '/venue',
   '/team',
