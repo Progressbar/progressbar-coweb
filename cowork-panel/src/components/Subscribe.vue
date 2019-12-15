@@ -131,7 +131,7 @@
               <h2 id="pinklink">
                 <a href="mailto:info@progressbar.sk?subject=I want to try Progressbar Cowork!"
                 target="_blank" rel="noopener">
-                Join Tech Cowork Progressbar in Bratislava</a>
+                Join Tech Coworking Progressbar in Bratislava</a>
               </h2>
             </div>
           </div>
@@ -166,7 +166,7 @@
       techAmbassadors
     },
     metaInfo: {
-      title: 'Tech Cowork Progressbar Bratislava'
+      title: 'Tech Coworking Progressbar in Bratislava'
     },
     data() {
       return {
