@@ -8,7 +8,7 @@
       </div>
       <div class="column is-parent is-4">
         <article class="tile is-child notification is-black is-size-4">
-          <h1 class="title is-size-1">🏕 Tech Cowork</h1>
+          <h1 class="title is-size-1">🏕 Tech Coworking</h1>
           <div class="content">
             <p>📍 <a href="https://goo.gl/maps/njvuE4mwmpz" alt="location of coworking in Bratislava">Downtown, Bratislava</a></p>
             <p>🤝
@@ -91,7 +91,7 @@
     </div>
     <div class="columns">
       <div class="column is-parent is-8">
-        <img src="/static/img/cowork/fixdesk.jpg" alt="progressbar technology blockchain cowork bratislava fixdesk">
+        <img src="/static/img/cowork/fixdesk.jpg" alt="coworking bratislava fixdesk progressbar technology blockchain">
       </div>
       <div class="column is-parent is-4">
         <article class="tile is-child notification is-black is-size-5">
@@ -131,7 +131,7 @@
               <h2 id="pinklink">
                 <a href="mailto:info@progressbar.sk?subject=I want to try Progressbar Cowork!"
                 target="_blank" rel="noopener">
-                Join Tech Coworking Progressbar in Bratislava</a>
+                Join Progressbar, Tech Coworking in Bratislava</a>
               </h2>
             </div>
           </div>

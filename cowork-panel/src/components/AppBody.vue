@@ -10,7 +10,7 @@
               <h1 class="title">
                 <progressbar-logo-refresh />
               </h1>
-              <h2 class="subtitle">✨Your favourite blockchain cowork, community space and hangout zone in <a href="https://goo.gl/maps/gtmznEkBVGG2">downtown, Bratislava</a> 👾</h2>
+              <h2 class="subtitle">✨Your favourite blockchain coworking, community space and hangout zone in <a href="https://goo.gl/maps/gtmznEkBVGG2">downtown, Bratislava</a> 🪐</h2>
             </div>
             <div class="column">
               <div class="content has-text-centered">
@@ -18,7 +18,7 @@
                   <a
                     class="button is-black is-large"
                     href="mailto:info@progressbar.sk?subject=I want to try Progressbar Cowork!"
-                    target="_blank" rel="noopener">👩‍🔬 Join Cowork</a>
+                    target="_blank" rel="noopener">👩‍🔬 Join Coworking</a>
                 </p>
                 <p>
                   <router-link

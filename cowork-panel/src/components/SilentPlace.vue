@@ -4,14 +4,14 @@
   <div class="tile is-parent is-4">
     <article class="tile is-child">
       <figure class="image">
-        <img src="/static/img/cowork/focus_room_cat_view.jpg" alt="focus room cowork bratislava"/>
+        <img src="/static/img/cowork/focus_room_cat_view.jpg" alt="focus room coworking bratislava"/>
       </figure>
     </article>
   </div>
   <div class="tile is-parent is-4">
     <article class="tile is-child">
       <figure class="image">
-        <img src="/static/img/cowork/focus_room_corner_call_room.jpg" alt="focus room cowork bratislava"/>
+        <img src="/static/img/cowork/focus_room_corner_call_room.jpg" alt="focus room coworking bratislava"/>
       </figure>
     </article>
   </div>

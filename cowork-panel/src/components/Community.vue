@@ -1,50 +1,45 @@
 <template>
 <div class="community_space">
-<div class="columns">
-  <div class="column is-6">
-    <img src="/static/img/eventspace/mlmu_december.jpg" alt="coworking bratislava technical machine learning meetup">
-  </div>
-  <div class="column is-6">
-    <article class="tile is-child notification is-black">
-      <div class="content">
-        <p class="title">🙌 Best place for your community meetup in Bratislava 🥰🙏</p>
+  <div class="columns">
+    <div class="column is-6">
+      <img src="/static/img/eventspace/mlmu_december.jpg" alt="coworking bratislava technical machine learning meetup">
+    </div>
+    <div class="column is-6">
+      <article class="tile is-child notification is-black">
         <div class="content">
-          <p>📍 Downtown location</p>
-          <p>👼 Safe Heaven for your community</p>
-          <p>👪 <router-link to="/our-residents">Join our family of meetups</router-link></p>
-          <p>👩‍🎨 Looking for adapter? We have it for you!</p>
-          <p>📚 Knowledge rich community</p>
-          <p>🧠 Perfect for brainstorming</p>
-          <p>🎧 Accoustic insulated space</p>
-          <p>🙏 Perfect for Team Collaborations</p>
-          <p>💞 By renting our cowork you are supporting our community </p>
+          <p class="title">🙌 Best place for your community meetup in Bratislava 🥰🙏</p>
+          <div class="content">
+            <p>📍 Downtown location</p>
+            <p>👼 Safe Heaven for your community</p>
+            <p>👪 <router-link to="/our-residents">Join our family of meetups</router-link></p>
+            <p>👩‍🎨 Looking for adapter? We have it for you!</p>
+            <p>📚 Knowledge rich community</p>
+            <p>🧠 Perfect for brainstorming</p>
+            <p>🎧 Accoustic insulated space</p>
+            <p>🙏 Perfect for Team Collaborations</p>
+            <p>💞 By renting our coworking you are supporting our community </p>
+          </div>
+          <div class="btn-container">
+            <a class="button is-black is-block is-large meeting"
+              href="mailto:info@progressbar.sk?subject=I want to host meetup!">
+              I want to host meetup
+            </a>
+          </div>
         </div>
-        <div class="btn-container">
-          <a class="button is-black is-block is-large meeting"
-            href="mailto:info@progressbar.sk?subject=I want to host meetup!">
-            I want to host meetup
-          </a>
-        </div>
-      </div>
-    </article>
+      </article>
+    </div>
   </div>
-</div>
-<div v-for="m in Math.ceil(meetups.length / 2)" class="columns">
-  <div v-for="pic in meetups.slice((m-1) * 2, m * 2)" class="column is-6">
-    <img :src="`/static/img/community/${pic}.jpg`" alt="coworking bratislava technical meetup">
+  <div v-for="m in Math.ceil(meetups.length / 2)" class="columns">
+    <div v-for="pic in meetups.slice((m-1) * 2, m * 2)" class="column is-6">
+      <img :src="`/static/img/community/${pic}.jpg`" alt="coworking bratislava technical meetup">
+    </div>
   </div>
-</div>
-<!-- <div class="columns">
-  <div class="column is-6" v-for="r in meetups.slice(2,4)">
-    <img :src="`/static/img/community/${r}.jpg`">
-  </div>
-</div> -->
 </div>
 </template>
 <script>
 
 export default {
-  name: 'community_space',
+  name: 'community space',
   metaInfo: {
     title: 'Place for your community meetup in downtown of Bratislava'
   },

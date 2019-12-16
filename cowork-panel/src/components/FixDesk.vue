@@ -1,23 +1,38 @@
 <template>
 <div class="fixdesk">
-  <div class="tile is-ancestor">
-    <div class="tile is-parent is-12">
+  <div class="tile is-parent">
+    <div class="tile is-vertical is-12">
       <article class="tile is-child">
         <figure class="image">
-          <img src="/static/img/cowork/fixdesk.jpg" alt="fixdesk bratislava cowork downtown"/>
+          <img src="/static/img/cowork/fixdesk.jpg" alt="coworking bratislava fix desk"/>
         </figure>
       </article>
     </div>
   </div>
-  <div class="tile is-ancestor">
-    <div class="tile is-vertical is-8">
+  <div class="tile is-parent">
+    <div class="tile is-4">
+      <article class="tile">
+        <figure class="image">
+          <img src="/static/img/cowork/cowork_team_collaboration.jpg" alt="coworking bratislava team collaboration room"/>
+        </figure>
+      </article>
+    </div>
+    <div class="tile is-parent">
+      <article class="tile">
+        <figure class="image">
+          <img src="/static/img/community/IMG_20191023_182308.jpg" alt="coworking bratislava team meeting room"/>
+        </figure>
+      </article>
+    </div>
+    <div class="tile is-child is-parent is-4">
+      <Offer rangeStart=2 rangeEnd=3 />
+    </div>
+  </div>
+  <div class="columns">
+    <div class="tile is-vertical is-12">
       <div class="column contains-iframe-to-center" v-for="frame in href.iframes">
         <ImageFrame v-bind:url="frame" :key="frame"></ImageFrame>
       </div>
-    </div>
-    <div class="tile is-child is-parent">
-      <Offer rangeStart=2
-      rangeEnd=3 />
     </div>
   </div>
 </div>

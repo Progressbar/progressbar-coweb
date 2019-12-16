@@ -3,7 +3,7 @@
   <div class="container is-fluid">
     <div class="columns is-centered">
       <div class="column is-10">
-        <img src="/static/img/eventspace/IMG_20190327_190708_vedatour.jpg" alt="progressbar cowork bratislava meetup">
+        <img src="/static/img/eventspace/IMG_20190327_190708_vedatour.jpg" alt="progressbar coworking bratislava meetup">
       </div>
     </div>
     <div class="columns is-centered">
