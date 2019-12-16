@@ -3,10 +3,12 @@
    <div class="columns">
      <div class="column is-4">
        <p class="title has-text-white">Support operational costs of Progressbar</p>
+       <progress class="progress is-large is-pink" :value="percentage()" max="100"></progress>
        <p class="title has-text-white">Our monthly rent is <a href="#">{{ funds.monthlyRentTax }}€</a>.
         Our account balance is <a href="#">{{ funds.balance }}€</a> at the moment.
         We are missing <a href="#">{{ funds.missingFunds }}€</a> for another month.
         If you like what we do, you can support our operations by donating 👇</p>
+        <progress class="progress is-large is-pink" :value="percentage()" max="100"></progress>
      </div>
      <div class="column is-4">
         <p class="title has-text-white">IBAN (€)</p>
@@ -158,6 +160,10 @@
           .catch(e => {
             console.log(e);
           });
+      },
+      // count % from monthly balance for progressbar
+      percentage() {
+        return (this.funds.balance * 100 ) / this.funds.monthlyRentTax
       }
     }
   }
@@ -167,7 +173,20 @@
   a {
     color: hotpink;
   }
+
   .button.is-black.is-block.is-large.meeting {
     background-image: linear-gradient(to right top, #b60cf6, #9316e5, #711ad4, #4c1ac1, #1e19ae);
+  }
+
+  .progress.is-pink::-webkit-progress-value {
+  background-color: hotpink;
+  }
+
+  .progress.is-warning::-moz-progress-bar {
+  background-color: hotpink;
+  }
+
+  .progress.is-warning::-ms-fill {
+    background-color: hotpink;
   }
 </style>
