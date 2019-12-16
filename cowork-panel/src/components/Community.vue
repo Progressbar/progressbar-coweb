@@ -2,15 +2,16 @@
 <div class="community_space">
 <div class="columns">
   <div class="column is-6">
-    <img src="/static/img/eventspace/mlmu_december.jpg">
+    <img src="/static/img/eventspace/mlmu_december.jpg" alt="coworking bratislava technical machine learning meetup">
   </div>
   <div class="column is-6">
     <article class="tile is-child notification is-black">
       <div class="content">
-        <p class="title">🙌🥰🙏 Best place for your community meetup in Bratislava</p>
+        <p class="title">🙌 Best place for your community meetup in Bratislava 🥰🙏</p>
         <div class="content">
           <p>📍 Downtown location</p>
           <p>👼 Safe Heaven for your community</p>
+          <p>👪 <router-link to="/our-residents">Join our family of meetups</router-link></p>
           <p>👩‍🎨 Looking for adapter? We have it for you!</p>
           <p>📚 Knowledge rich community</p>
           <p>🧠 Perfect for brainstorming</p>
@@ -30,7 +31,7 @@
 </div>
 <div v-for="m in Math.ceil(meetups.length / 2)" class="columns">
   <div v-for="pic in meetups.slice((m-1) * 2, m * 2)" class="column is-6">
-    <img :src="`/static/img/community/${pic}.jpg`">
+    <img :src="`/static/img/community/${pic}.jpg`" alt="coworking bratislava technical meetup">
   </div>
 </div>
 <!-- <div class="columns">
