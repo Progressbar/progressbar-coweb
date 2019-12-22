@@ -123,8 +123,8 @@
         },
         donationAddress: '0x2a49d8d6dd59b35d613d8d569cd048bb3113e42e',
         funds: {
-          monthlyRentTax: 3768,
-          missingFunds: 2431,
+          monthlyRentTax: 3828,
+          missingFunds: 2491,
           balance: 1337
         },
       }

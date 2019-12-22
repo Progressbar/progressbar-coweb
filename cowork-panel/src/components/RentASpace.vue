@@ -16,8 +16,8 @@
   </div>
   <div class="columns is-centered">
     <div class="column is-9 content">
-      <img src="/static/img/eventspace/mlmu_december.jpg" alt="machine learning bratislava meetup in coworking" />
-      <img src="/static/img/eventspace/IMG_20190327_190708_vedatour.jpg" alt="workshop for students" />
+      <img src="/static/img/eventspace/mlmu_december.jpg" alt="machine learning bratislava meetup in coworking space" />
+      <img src="/static/img/community/IMG_20191017_190905.jpg" alt="study group in coworking" />
     </div>
   </div>
   <div class="columns is-centered">
@@ -93,7 +93,7 @@ export default {
       href: {
         iframes: [
           'https://www.google.com/maps/embed?pb=!4v1574673143863!6m8!1m7!1sCAoSLEFGMVFpcE82aGZTenBSUW9SV1JWTTc3Y3hYcDRFZTFaZ2d4NmFfZExZUjY4!2m2!1d48.1446417!2d17.1154389!3f83.27917026806618!4f-23.661244286869305!5f0.4000000000000002',
-          'https://www.google.com/maps/embed?pb=!4v1574673759505!6m8!1m7!1sCAoSLEFGMVFpcE44RG5nZHR2dW5sd2JQZno3VW5fSGtYak1qd2puZ1VWd1l5ek9v!2m2!1d48.1446333!2d17.1154417!3f293.600027123172!4f-19.87749764891886!5f0.4000000000000002'
+          'https://www.google.com/maps/embed?pb=!4v1577004145072!6m8!1m7!1sCAoSLEFGMVFpcE83SkstZk5iTlFBMGpkeUxPTUdOV3RQWVJWU2U4OGxXLThfYnZv!2m2!1d48.1446028!2d17.11545!3f113.59398601677866!4f-14.131454593482772!5f0.7820865974627469',
         ]
       },
       equipment: [
