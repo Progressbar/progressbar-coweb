@@ -15,7 +15,7 @@
       <div class="tile is-parent is-vertical">
         <article class="tile is-child">
           <figure class="image">
-            <img src="/static/img/cowork/pb-08.jpg" alt="private office room bratislava cowork"/>
+            <img src="/static/img/cowork/women_coworkers.jpg" alt="private office room bratislava cowork"/>
           </figure>
         </article>
         <article class="tile is-child">

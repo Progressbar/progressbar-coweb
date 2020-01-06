@@ -3,7 +3,7 @@
     <div class="columns">
       <div class="column is-parent is-8">
         <img src="/static/img/cowork/making_movie_cowork.jpg" alt="coworking bratislava making movie">
-        <img src="/static/img/cowork/pb-08.jpg" alt="progressbar coworking bratislava blockchain">
+        <img src="/static/img/cowork/women_coworkers.jpg" alt="progressbar women coworking bratislava blockchain">
         <img src="/static/img/meetingroom/waomeeting-01-4.jpg" alt="blockchain coworking bratislava meeting room">
       </div>
       <div class="column is-parent is-4">
