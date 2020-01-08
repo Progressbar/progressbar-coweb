@@ -46,7 +46,7 @@ export default {
           price: '150',  period: 'month',
           url: '/rent-flex-desk-coworking-bratislava',
           cta: 'mailto:info@progressbar.sk?subject=I want to try Progressbar Cowork Flex Desk' },
-        { name: 'Fix desk', time: '24/7 🌃', description:
+        { name: 'Fix Desk', time: '24/7 🌃', description:
           ['Dedicated desk & chair', '♾ meeting room hours', '180cm long desk'],
           price: '200', period: 'month', highlight: 'true',
           url: '/rent-fix-desk-coworking-bratislava',

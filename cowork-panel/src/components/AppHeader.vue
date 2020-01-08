@@ -47,10 +47,10 @@
             <router-link
               class="navbar-item is-size-4"
               exact-active-class="is-active"
-              to="/rent-private-office-bratislava"
+              to="/rent-flex-desk-coworking-bratislava"
               v-on:click.native="toggleNav()"
             >
-              Private Office
+              Rent Desk
             </router-link>
             <router-link
               class="navbar-item is-size-4"
