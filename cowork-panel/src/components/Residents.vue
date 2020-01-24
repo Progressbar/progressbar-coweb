@@ -112,12 +112,6 @@ export default {
           desc: 'Portfolio tracking and analytics web app for crypto markets. Focus on making better investment decisions. We take care of the rest.'
         },
         {
-          name: 'FullnodeTECH',
-          src: 'fullnodetech.jpg',
-          url: 'https://www.fullnode.tech/',
-          desc: 'Provides asset agnostic blockchain infrastructure operation of Proof of Work, Proof of Stake, Delegated Proof of Stake and hybrid blockchain consensus protocols'
-        },
-        {
           name: 'PolkAlert',
           src: 'polkalert.svg',
           url: 'https://polkalert.com/',
@@ -128,6 +122,12 @@ export default {
           src: 'substratemarketplace.svg',
           url: 'https://substratemarketplace.com/',
           desc: 'Market of Substrate modules for building any blockchain',
+        },
+        {
+          name: 'StarMesh',
+          src: 'starmesh_hexlogo.png',
+          url: 'https://starmesh.xyz/',
+          desc: '🛰🌍 Earth Observation meta-vehicle. Cryptographically verifiable and distributed data layer. Rich spatial data from various sources, all from one convenient location.'
         },
       ],
       exponentialResidents: [

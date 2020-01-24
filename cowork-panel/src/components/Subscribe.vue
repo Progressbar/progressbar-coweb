@@ -81,8 +81,10 @@
         </article>
       </div>
     </div>
-    <h1 class="section-title title has-text-white has-text-centered">👩‍💻Membership👨‍💻</h1>
+    <h1 class="section-title title has-text-white has-text-centered">👩‍💻 Membership 👨‍💻</h1>
+    <br>
     <Offer/>
+    <br>
     <h1 class="section-title title has-text-white has-text-centered">🕵️‍♀️ Look inside</h1>
     <div class="columns is-centered">
       <div class="column is-6 contains-iframe-to-center" v-for="frame in href.iframes">
