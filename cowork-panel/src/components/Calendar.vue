@@ -2,24 +2,25 @@
   <div class="Calendar">
     <div class="columns">
       <div class="column is-12">
-        <h1>
-          <router-link to="rent-meeting-room-coworking-bratislava">
-            Meeting Room</router-link> -
-          <a href="mailto:info@progressbar.sk?subject=I want to try Progressbar Meeting Room!">Book meeting room</a></h1>
-        <iframe src="https://calendar.google.com/calendar/embed?src=progressbar.sk_3238323439303131393037%40resource.calendar.google.com&ctz=Europe%2FPrague&amp;showTitle=0&amp;wkst=2" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        <h1><router-link to="/rent-a-space">Venue Event Space</router-link> -
+        <a href="mailto:info@progressbar.sk?subject=I want to book Progressbar Event Space!">Book Event Space</a></h1>
+        <iframe src="https://calendar.google.com/calendar/embed?src=progressbar.sk_3835313939343335353737%40resource.calendar.google.com&ctz=Europe%2FPrague&amp;showTitle=0&amp;wkst=2&amp;showPrint=0&amp;showCalendars=0" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
       </div>
     </div>
     <div class="columns">
       <div class="column is-12">
-        <h1><router-link to="/rent-a-space">Venue Event Space</router-link> -
-        <a href="mailto:info@progressbar.sk?subject=I want to try Progressbar Event Space!">Book Event Space</a></h1>
-        <iframe src="https://calendar.google.com/calendar/embed?src=progressbar.sk_3835313939343335353737%40resource.calendar.google.com&ctz=Europe%2FPrague&amp;showTitle=0&amp;wkst=2" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        <h1>
+          <router-link to="rent-meeting-room-coworking-bratislava">
+            Meeting Room</router-link> -
+          <a href="mailto:info@progressbar.sk?subject=I want to book Progressbar Meeting Room!">Book meeting room</a>
+        </h1>
+        <iframe src="https://calendar.google.com/calendar/embed?src=progressbar.sk_3238323439303131393037%40resource.calendar.google.com&ctz=Europe%2FPrague&amp;showTitle=0&amp;wkst=2&amp;showPrint=0&amp;showCalendars=0&amp;mode=WEEK" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
       </div>
     </div>
     <div class="columns">
       <div class="column is-12">
         <h1>Boxik Room</h1>
-        <iframe src="https://calendar.google.com/calendar/embed?src=progressbar.sk_32303436333937303934%40resource.calendar.google.com&ctz=Europe%2FPrague&amp;showTitle=0&amp;wkst=2" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        <iframe src="https://calendar.google.com/calendar/embed?src=progressbar.sk_32303436333937303934%40resource.calendar.google.com&ctz=Europe%2FPrague&amp;showTitle=0&amp;wkst=2&amp;showPrint=0&amp;showCalendars=0&amp;mode=WEEK" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
       </div>
     </div>
   </div>
