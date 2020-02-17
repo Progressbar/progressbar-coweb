@@ -1,5 +1,5 @@
 <template>
-<div class="community_space">
+<div class="communitySpace">
   <div class="columns">
     <div class="column is-6">
       <img src="/static/img/eventspace/mlmu_december.jpg" alt="coworking bratislava technical machine learning meetup">
@@ -39,7 +39,7 @@
 <script>
 
 export default {
-  name: 'community space',
+  name: 'communitySpace',
   metaInfo: {
     title: 'Place for your community meetup in downtown of Bratislava'
   },

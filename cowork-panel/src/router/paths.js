@@ -22,6 +22,7 @@ const SilentPlace = () => import('@/components/SilentPlace')
 const MeetingRoom = () => import('@/components/MeetingRoom')
 const RentASpace = () => import('@/components/RentASpace')
 const Community = () => import('@/components/Community')
+const Video = () => import('@/components/Video')
 
 const paths = [
   {
@@ -151,6 +152,10 @@ const paths = [
   {
     path: '/place-for-your-community-meetup-in-bratislava',
     component: Community
+  },
+  {
+    path: '/video',
+    component: Video
   },
   {
     path: '/crowdfunding',
