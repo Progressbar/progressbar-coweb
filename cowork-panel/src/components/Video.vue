@@ -2,7 +2,8 @@
 <div class="video">
   <div class="columns">
     <div class="column is-12 content">
-    <p><h1><a href="https://www.youtube.com/playlist?list=PLfCtn83lMV3BqBe45jgaNw4LqPNnhq6IG">Playlist of archived streams</a> | | <a href="https://www.youtube.com/channel/UCpun3Ro3aUJPoFVZwgqd98A">Progressbar channel</a></h1></p>
+    <p>
+      <h1><a href="https://www.youtube.com/playlist?list=PLfCtn83lMV3BqBe45jgaNw4LqPNnhq6IG">Playlist of archived streams</a> | | <a href="https://www.youtube.com/channel/UCpun3Ro3aUJPoFVZwgqd98A">Progressbar channel</a></h1>
     <iframe height="800"
       src="https://www.youtube-nocookie.com/embed/videoseries?list=PLfCtn83lMV3BqBe45jgaNw4LqPNnhq6IG"
       frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -32,19 +33,28 @@
         </div>
       </article>
     </div>
-    <div class="column is-4">
-      <iframe height="360"
-      src="https://www.youtube-nocookie.com/embed/videoseries?list=PLfCtn83lMV3CzkXkGdkdUnNZvD5c4hBbC"
-      frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen>
-      </iframe>
-    </div>
-    <div class="column is-5">
-      <iframe height="360"
-      src="https://www.youtube.com/embed/Vn0n7ZWtAsQ"
-      frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen>
-      </iframe>
+    <div class="column is-9">
+        <div class="columns">
+          <div class="column is-12 content">
+            <h1><a href="#">Also recorded in Progressbar:</a></h1>
+          </div>
+        </div>
+        <div class="columns">
+            <div class="column is-6">
+            <iframe height="360"
+            src="https://www.youtube-nocookie.com/embed/videoseries?list=PLfCtn83lMV3CzkXkGdkdUnNZvD5c4hBbC"
+            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+            </iframe>
+          </div>
+          <div class="column is-6">
+            <iframe height="360"
+            src="https://www.youtube.com/embed/videoseries?list=PL7Q4UCybIXBG5SkXQX0CqLBQbaCVWYjvF"
+            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+            </iframe>
+          </div>
+        </div>
     </div>
   </div>
 </div>
@@ -70,7 +80,9 @@ export default {
   .notification {
   padding: 0;
   }
-
+  /* .content h1 {
+    color:blue;
+  } */
   @media only screen and (max-width: 768px) {
     iframe {
       width: 85vw;
