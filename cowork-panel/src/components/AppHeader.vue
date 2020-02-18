@@ -94,10 +94,13 @@
                 🛰 Network
                 </router-link>
                 <router-link class="dropdown-item is-size-5" to="/podcast" @click.native="toggleNav()">
-                🎥 Podcast
+                🎙 Podcast
                 </router-link>
                 <router-link class="dropdown-item is-size-5" to="/our-residents" @click.native="toggleNav()">
                 🏡 Residents
+                </router-link>
+                <router-link class="dropdown-item is-size-5" to="/video" @click.native="toggleNav()">
+                🎥 Video
                 </router-link>
                 <router-link class="dropdown-item is-size-5" to="/pay" @click.native="toggleNav()">
                 🤑 Support operational costs
