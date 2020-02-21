@@ -45,7 +45,6 @@
 <script>
 
 export default {
-  components: {},
   name: 'techAmbasadors',
   data() {
     return {

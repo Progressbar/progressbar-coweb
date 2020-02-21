@@ -114,7 +114,7 @@
         </article>
       </div>
     </div>
-    <techAmbassadors/>
+    <cherryResidents/>
     <div class="columns">
       <div class="column is-parent is-8">
         <img src="/static/img/cowork/focus_room_coworking_bratislava.jpg" alt="progressbar coworking bratislava blockchain meetup">
@@ -156,7 +156,7 @@
   import Offer from './Offer.vue';
   // import InstagramFeed from './InstagramFeed';
   import ImageFrame from './ImageFrame';
-  import techAmbassadors from './techAmbassadors';
+  import cherryResidents from './CherryPickResidents';
 
   export default {
     name: 'subscribe',
@@ -165,7 +165,7 @@
       // InstagramFeed,
       Offer,
       CookieLaw,
-      techAmbassadors
+      cherryResidents
     },
     metaInfo: {
       title: 'Tech Coworking Progressbar in Bratislava'

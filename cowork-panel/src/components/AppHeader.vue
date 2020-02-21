@@ -60,6 +60,14 @@
             >
               Rent Venue
             </router-link>
+            <router-link
+              class="navbar-item is-size-4"
+              exact-active-class="is-active"
+              to="/video"
+              v-on:click.native="toggleNav()"
+            >
+              Recordings
+            </router-link>
             <div class="navbar-item is-size-4" @click="redirectToUrl(href.coworkgroup)">
               <span class="social-icons" v-for="item in socials" :key="item.url">
                 <a :href="item.url" target="_blank" rel="noopener" class="social-icon" aria-hidden="true">
