@@ -3,8 +3,9 @@
   <div class="columns">
     <div class="column is-12 content">
     <p>
-      <h1><a href="https://www.youtube.com/playlist?list=PLfCtn83lMV3BqBe45jgaNw4LqPNnhq6IG">Playlist of archived streams</a> | | <a href="https://www.youtube.com/channel/UCpun3Ro3aUJPoFVZwgqd98A">Progressbar channel</a></h1>
-    <iframe height="800"
+      <h1><a href="https://www.youtube.com/playlist?list=PLfCtn83lMV3BqBe45jgaNw4LqPNnhq6IG">Playlist of archived streams</a>
+      | | <a href="https://www.youtube.com/channel/UCpun3Ro3aUJPoFVZwgqd98A">Progressbar channel</a></h1>
+    <iframe class="mainiframe" height="800"
       src="https://www.youtube-nocookie.com/embed/videoseries?list=PLfCtn83lMV3BqBe45jgaNw4LqPNnhq6IG"
       frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
       allowfullscreen>
@@ -86,6 +87,7 @@ export default {
   @media only screen and (max-width: 768px) {
     iframe {
       width: 85vw;
+      height: 15em;
     }
   }
 

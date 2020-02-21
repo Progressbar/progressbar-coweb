@@ -30,7 +30,7 @@
                 <p>
                   <router-link
                     class="button is-black is-large"
-                    to="/rent-private-office-bratislava"
+                    to="/video"
                   >🎥 Recordings
                   </router-link>
                 </p>
