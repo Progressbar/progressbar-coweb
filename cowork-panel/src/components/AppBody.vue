@@ -10,7 +10,7 @@
               <h1 class="title">
                 <progressbar-logo-refresh />
               </h1>
-              <h2 class="subtitle">✨Your favourite blockchain coworking, community space and hangout zone in <a href="https://goo.gl/maps/gtmznEkBVGG2">downtown, Bratislava</a> 🪐</h2>
+              <h2 class="subtitle">✨Your favourite tech coworking, community space and hangout zone in <a href="https://goo.gl/maps/gtmznEkBVGG2">downtown, Bratislava</a> 🪐</h2>
             </div>
             <div class="column">
               <div class="content has-text-centered">
@@ -31,7 +31,7 @@
                   <router-link
                     class="button is-black is-large"
                     to="/rent-private-office-bratislava"
-                  >👩‍💼 Private Office
+                  >🎥 Recordings
                   </router-link>
                 </p>
               </div>

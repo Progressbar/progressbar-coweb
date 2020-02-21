@@ -41,6 +41,7 @@ const routerPaths = [
   '/silent-place-to-work-in-bratislava',
   '/venue',
   '/team',
+  '/video'
 ]
 
 const prettyPrint = xml => {

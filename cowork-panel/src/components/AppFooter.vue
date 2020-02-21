@@ -24,6 +24,11 @@
         </article>
       </div>
       <div class="tile is-parent is-vertical">
+        <a class="twitter-timeline"
+          data-theme="dark" data-height="900"
+          href="https://twitter.com/progressbarsk?ref_src=twsrc%5Etfw">Tweets by @progressbarsk</a>
+      </div>
+      <div class="tile is-parent is-vertical">
         <article class="tile is-child">
           <p class="title has-text-white">📍Find us on</p>
         <p>Progressbar Cowork & Hackerspace</p>

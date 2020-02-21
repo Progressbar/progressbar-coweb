@@ -202,6 +202,12 @@ export default {
           desc: 'Meetups around various programming languages with newcomers and experienced developers looking to chat and exchange knowledge'
         },
         {
+          name: '.NET Bratislava Meetup',
+          src: 'dotnet_bratislava_meetup.jpeg',
+          url: 'https://www.meetup.com/NET-Bratislava-Meetup',
+          desc: 'The monthly meetup for .NET enthusiasts in Bratislava. Find more at https://net-ba.github.io'
+        },
+        {
           name: 'Open Blockchain Bratislava',
           src: 'open_blockchain_bratislava.jpeg',
           url: 'https://www.meetup.com/openblockchainbratislava/',
