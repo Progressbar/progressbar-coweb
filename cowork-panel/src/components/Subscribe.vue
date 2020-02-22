@@ -8,7 +8,7 @@
       </div>
       <div class="column is-parent is-4">
         <article class="tile is-child notification is-black is-size-4">
-          <h1 class="title is-size-1">🏕 Tech Coworking</h1>
+          <h1 class="title is-size-1">🏕 What's inside?</h1>
           <div class="content">
             <p>📍 <a href="https://goo.gl/maps/njvuE4mwmpz" alt="location of coworking in Bratislava">Downtown, Bratislava</a></p>
             <p>🤝
@@ -21,6 +21,7 @@
                Ergonomic quality chairs
               </router-link>
             </p>
+            <p> 🎧 Accoustic insulated space</p>
             <p>💬 Hangout areas</p>
             <p>🌿
               <router-link to="rent-fix-desk-coworking-bratislava">
@@ -28,10 +29,11 @@
               </router-link>
             </p>
             <p>🖥 Shared monitors</p>
-            <p>⚡️ Ultra-fast Internet</p>
+
             <p>👷‍♀️ Standing desks</p>
             <p>📦 <a href="#" title="Expecting a delivery while you're out?
               Don't worry. We can handover package to your table 🥰" > Package Handling</a></p>
+            <p>⚡️ Ultra-fast Internet</p>
             <p>🎯
               <router-link to="silent-place-to-work-in-bratislava">
               Space for focused work
@@ -83,7 +85,9 @@
     </div>
     <h1 class="section-title title has-text-white has-text-centered">👩‍💻 Membership 👨‍💻</h1>
     <br>
-    <Offer/>
+    <div id="membership">
+      <Offer/>
+    </div>
     <br>
     <h1 class="section-title title has-text-white has-text-centered">🕵️‍♀️ Look inside</h1>
     <div class="columns is-centered">
@@ -96,7 +100,7 @@
         <img src="/static/img/cowork/fixdesk.jpg" alt="coworking bratislava fixdesk progressbar technology blockchain">
       </div>
       <div class="column is-parent is-4">
-        <article class="tile is-child notification is-black is-size-5">
+        <article class="tile is-child notification is-black is-size-4">
           <div class="content">
             <p class="title">👨‍👩‍👧‍👧 Family Members</p>
             <div class="content">

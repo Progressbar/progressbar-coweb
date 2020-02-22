@@ -151,7 +151,8 @@ const paths = [
   },
   {
     path: '/place-for-your-community-meetup-in-bratislava',
-    component: Community
+    component: Community,
+    name: Community
   },
   {
     path: '/video',

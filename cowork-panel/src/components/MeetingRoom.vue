@@ -30,7 +30,7 @@
           <p>💺 Capacity 10 seats </p>
           <p>📽 Projector with Chromecast</p>
           <p>🎨 Whiteboard</p>
-          <p>🎧 Good for Podcasts</p>
+          <p>🎧 Great for Podcasts!</p>
           <p>📍 Downtown location</p>
           <p>💞 By renting our meeting room you are supporting community </p>
         </div>

@@ -1,17 +1,20 @@
 <template>
 <div class="communitySpace">
   <div class="columns">
-    <div class="column is-6">
-      <img src="/static/img/eventspace/mlmu_december.jpg" alt="coworking bratislava technical machine learning meetup">
+    <div class="column is-8">
+      <div class="content">
+        <img src="/static/img/eventspace/mlmu_december.jpg"
+          alt="coworking bratislava technical machine learning meetup">
+      </div>
     </div>
-    <div class="column is-6">
+    <div class="column is-4 is-size-4">
       <article class="tile is-child notification is-black">
         <div class="content">
           <p class="title">🙌 Best place for your community meetup in Bratislava 🥰🙏</p>
           <div class="content">
             <p>📍 Downtown location</p>
             <p>👼 Safe Heaven for your community</p>
-            <p>👪 <router-link to="/our-residents">Join our family of meetups</router-link></p>
+            <p>👪 <router-link to="/our-residents#meetups">Join our family of meetups</router-link></p>
             <p>👩‍🎨 Looking for adapter? We have it for you!</p>
             <p>📚 Knowledge rich community</p>
             <p>🧠 Perfect for brainstorming</p>
@@ -70,5 +73,8 @@ export default {
 
   .notification {
   padding: 0;
+  }
+  .content img {
+    padding-top: 4em;
   }
 </style>

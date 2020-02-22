@@ -10,7 +10,10 @@
               <h1 class="title">
                 <progressbar-logo-refresh />
               </h1>
-              <h2 class="subtitle">✨Your favourite tech coworking, community space and hangout zone in <a href="https://goo.gl/maps/gtmznEkBVGG2">downtown, Bratislava</a> 🪐</h2>
+              <h2 class="subtitle">
+                🌿 Your favourite tech coworking, 🍦 community space in
+                <a href="https://goo.gl/maps/gtmznEkBVGG2" title="location of progressbar">
+                downtown, Bratislava</a> 🪐</h2>
             </div>
             <div class="column">
               <div class="content has-text-centered">
@@ -79,8 +82,8 @@ export default {
 }
 
 .subtitle {
-  font-size: 1.5rem;
-  /* font-weight: bold; */
+  padding-top: 2em;
+  font-size: 2em;
 }
 
 .hero-body .title, .subtitle {

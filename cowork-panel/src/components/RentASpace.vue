@@ -11,7 +11,9 @@
   </div>
   <div class="columns is-centered">
     <div class="column is-8 content">
-      <p class="has-text-white is-size-3" v-for="line of content">{{line}}</p>
+      <p class="has-text-white is-size-3" v-for="line of content">
+        <span v-html="line"></span>
+      </p>
     </div>
   </div>
   <div class="columns is-centered">
@@ -27,7 +29,7 @@
       </h1>
       <ul class="has-text-white is-size-4" v-for="eq in equipment">
         <li>
-          <p>{{eq}}</p>
+          <p><span v-html="eq"></span></p>
         </li>
       </ul>
     </div>
@@ -98,14 +100,14 @@ export default {
       },
       equipment: [
         'We can scale up to 80 sitting spots',
-        'We have for you fullHD (1080p) 📽 projector w/ Chromecast & HDMI',
-        'We have 🗣🎤 head microphone & 🤚🎤 hand microphone with mixpult (Bluetooth input)',
-        'We have video 📹 recording equipment for livestream',
+        'We have for you fullHD (1080p) projector w/ Chromecast & HDMI 📽',
+        'We have head microphone & hand microphone with mixpult 🎤',
+        'We have video recording equipment for livestream. 📹 <a href="/video">Check our recordings.</a>',
         'We have high quality filtered water 🚰⛲️ for audience (UV lamp, carbon filter, antibacterial, reverse osmosis)',
         'We have A/C ❄️ for your event',
         'We have silent space for your event',
         'We have 2x 1000W speakers 🔊',
-        'For music we have ChromeCast Audio (play directly your Spotify playlist)',
+        'For music we have <b>ChromeCast Audio</b> (play directly your Spotify playlist)',
         'Extra Service - catering',
         'Available setups - theatre, learning session, custom'
       ],
@@ -113,11 +115,12 @@ export default {
         Our venue is 231 m² in Dunajska 14, at the heart of Bratislava. The space can comfortably accomodate 80 people.
 
         As a non-profit that cares about technology, we try to incentivize tech communities in Bratislava, by allowing them to use the venue for free for their events.
-        As a non-profit that needs to pay rent and bills, we also need funding! Any donations are welcome. Without donations, we won't be able too keep the familiar hackerspace spirit a lot of people in Bratislava are seeking, and offer these kinds of services.
+        As a non-profit that needs to pay rent and bills, we also need funding!
+        Any <b>donations are welcome.</b> Without donations, we won't be able too keep the familiar hackerspace spirit a lot of people in Bratislava are seeking, and offer these kinds of services.
 
-        We average hold 150+ events, meetups and workshops yearly.
+        We average hold <b><a href="/place-for-your-community-meetup-in-bratislava">150+ events, meetups and workshops yearly.</a></b>
 
-        Our suggestion is a voluntary donation of 200€-400€ for every evening, depending on what you/your community can afford and how much you'll be using the space
+        Our suggestion is a voluntary donation of <b>200€-400€</b> for every evening, depending on what you/your community can afford and how much you'll be using the space.
         Thanks for the help! 🥰🙏
       `
       .trim()

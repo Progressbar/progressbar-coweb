@@ -34,7 +34,7 @@
           </div>
         </div>
         <p class="title">Technology Meetups</p>
-        <div class="columns">
+        <div class="columns" id="meetups">
           <div class="column is-4" v-for="r in meetups.slice(0,3)">
             <a :href="r.url"><img :src="`/static/img/residents/${r.src}`" :alt="r.name"><br>{{r.name}}</a>
             <br>{{r.desc}}
