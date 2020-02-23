@@ -7,7 +7,10 @@
     >
       <div class="container">
         <div class="navbar-brand">
-          <router-link class="progressbar-logo-container" to="/">
+          <router-link
+            class="progressbar-logo-container"
+            to="/"
+            @click.native="toggleNav()">
             <!-- <progressbar-logo-refresh/> -->
             <progressbar-logo-icon/>
           </router-link>
@@ -26,13 +29,13 @@
         <div
           class="navbar-menu"
           v-bind:class="{ 'is-active': showNav }"
+          @click="toggleNav()"
         >
           <div class="navbar-end">
             <router-link
               class="navbar-item is-size-4"
               exact-active-class="is-active"
               to="/place-for-your-community-meetup-in-bratislava"
-              v-on:click.native="toggleNav()"
             >
               Community Meetups
             </router-link>
@@ -40,7 +43,6 @@
               class="navbar-item is-size-4"
               exact-active-class="is-active"
               to="/rent-meeting-room-coworking-bratislava"
-              v-on:click.native="toggleNav()"
             >
               Meeting Room
             </router-link>
@@ -48,7 +50,6 @@
               class="navbar-item is-size-4"
               exact-active-class="is-active"
               to="/rent-flex-desk-coworking-bratislava"
-              v-on:click.native="toggleNav()"
             >
               Rent Desk
             </router-link>
@@ -56,7 +57,6 @@
               class="navbar-item is-size-4"
               exact-active-class="is-active"
               to="/rent-a-space"
-              v-on:click.native="toggleNav()"
             >
               Rent Venue
             </router-link>
@@ -64,7 +64,6 @@
               class="navbar-item is-size-4"
               exact-active-class="is-active"
               to="/video"
-              v-on:click.native="toggleNav()"
             >
               Recordings
             </router-link>
@@ -75,11 +74,10 @@
                 </a>
               </span>
             </div>
-            <div v-bind:class="{ 'is-active': MiscButtonIsActive }" class="navbar-item has-dropdown">
+            <div v-bind:class="{ 'is-active': showNav }" class="navbar-item has-dropdown" @click="toggleNav()">
               <a
-                @click='MiscButtonToggle()'
-                class="navbar-link is-size-4"
-              >
+                @click="toggleNav()"
+                class="navbar-link is-size-4">
                 Others
               </a>
               <div class="navbar-dropdown is-right">
@@ -104,11 +102,11 @@
                 <router-link class="dropdown-item is-size-5" to="/podcast" @click.native="toggleNav()">
                 🎙 Podcast
                 </router-link>
+                <router-link class="dropdown-item is-size-5" to="/video" @click.native="toggleNav()">
+                🎥 Recordings
+                </router-link>
                 <router-link class="dropdown-item is-size-5" to="/our-residents" @click.native="toggleNav()">
                 🏡 Residents
-                </router-link>
-                <router-link class="dropdown-item is-size-5" to="/video" @click.native="toggleNav()">
-                🎥 Video
                 </router-link>
                 <router-link class="dropdown-item is-size-5" to="/pay" @click.native="toggleNav()">
                 🤑 Support operational costs
@@ -168,9 +166,6 @@
       }
     },
     methods: {
-      MiscButtonToggle: function () {
-        this.MiscButtonIsActive = !this.MiscButtonIsActive
-      },
       toggleNav: function () {
         this.showNav = !this.showNav
       },
