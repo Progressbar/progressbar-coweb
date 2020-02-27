@@ -3,19 +3,19 @@
   <div class="container">
     <div class="tile is-vertical is-12">
     <div class="tile">
-      <div class="tile is-parent is-vertical">
+      <div class="tile is-parent is-vertical is-3">
         <article class="tile is-child">
-        <p class="title has-text-white">🥥🦠 Social</p>
-        <span class="social-icons" v-for="item in socials.slice(0,4)" :key="item.url">
+        <p class="title has-text-white">🦠 Social</p>
+        <span class="social-icons" v-for="item in socials" :key="item.url">
           <a :href="item.url" target="_blank" rel="noopener" class="social-icon" aria-hidden="true">
             <font-awesome-icon v-if="item.icon" :icon="item.icon" />
           </a>
         </span><br>
-        <span class="social-icons" v-for="item in socials.slice(4,9)" :key="item.url">
+        <!-- <span class="social-icons" v-for="item in socials.slice(4,9)" :key="item.url">
           <a :href="item.url" target="_blank" rel="noopener" class="social-icon" aria-hidden="true">
             <font-awesome-icon v-if="item.icon" :icon="item.icon" />
           </a>
-        </span>
+        </span> -->
         </article>
         <article class="tile is-child">
           <p class="title has-text-white">🌐 Network</p>
@@ -28,7 +28,7 @@
           data-theme="dark" data-height="900"
           href="https://twitter.com/progressbarsk?ref_src=twsrc%5Etfw">Tweets by @progressbarsk</a>
       </div>
-      <div class="tile is-parent is-vertical">
+      <div class="tile is-parent is-vertical is-3">
         <article class="tile is-child">
           <p class="title has-text-white">📍Find us on</p>
         <p>Progressbar Cowork & Hackerspace</p>
@@ -76,8 +76,6 @@
         </ul>
         </div>
         </article>
-      </div>
-      <div class="tile is-parent">
         <article class="tile is-child">
           <div class="content">
         <p class="title has-text-white">🐚 History</p>
@@ -108,6 +106,9 @@
         </div>
         </article>
       </div>
+      <!-- <div class="tile is-parent">
+
+      </div> -->
     </div>
     </div>
   </div>
@@ -206,7 +207,7 @@ a.social-icon:hover {
 }
 
 .social-icons {
-  font-size: 2.6em;
+  font-size: 4.0em;
   padding: 0.1em;
 }
 

@@ -4,7 +4,7 @@
       <div class="column is-parent is-8">
         <img src="/static/img/cowork/making_movie_cowork.jpg" alt="coworking bratislava making movie">
         <img src="/static/img/cowork/women_coworkers.jpg" alt="progressbar women coworking bratislava blockchain">
-        <img src="/static/img/meetingroom/waomeeting-01-4.jpg" alt="blockchain coworking bratislava meeting room">
+        <img src="/static/img/meetingroom/spoznajkandidata.jpg" alt="blockchain coworking bratislava meeting room">
       </div>
       <div class="column is-parent is-4">
         <article class="tile is-child notification is-black is-size-4">
@@ -55,6 +55,8 @@
             <p>💝 Special offers for minorities</p>
             <p>❄️ Air conditioning</p>
             <p>🔧 Makerspace</p>
+            <p>📸 <a href="https://www.google.com/maps/place/Progressbar+Cowork+%26+Hackerspace/@48.1446824,17.115444,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipMuwdWZFx-u2mWru0Oxj18w_r8GnbXJ5hxLKECP!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipMuwdWZFx-u2mWru0Oxj18w_r8GnbXJ5hxLKECP%3Dw203-h203-k-no!7i2736!8i2736!4m5!3m4!1s0x476c8946152ff129:0x72ac0b6fccaf66fd!8m2!3d48.1445559!4d17.1154906">
+              More photos</a></p>
           </div>
         </article>
       </div>
@@ -83,7 +85,7 @@
         </article>
       </div>
     </div>
-    <h1 class="section-title title has-text-white has-text-centered">👩‍💻 Membership 👨‍💻</h1>
+    <h1 class="title has-text-centered"><router-link to="/#membership">👩‍💻 Membership 👨‍💻</router-link></h1>
     <br>
     <div id="membership">
       <Offer/>
@@ -121,7 +123,7 @@
     <cherryResidents/>
     <div class="columns">
       <div class="column is-parent is-8">
-        <img src="/static/img/cowork/focus_room_coworking_bratislava.jpg" alt="progressbar coworking bratislava blockchain meetup">
+        <img src="/static/img/community/pyladies_meetup.jpg" alt="progressbar coworking bratislava python pyladies meetup">
       </div>
       <div class="column is-parent is-4">
         <article class="tile is-child notification is-black is-size-5">
@@ -189,9 +191,10 @@
         },
         href: {
           iframes: [
-            'https://www.google.com/maps/embed?pb=!4v1573724301670!6m8!1m7!1sCAoSLEFGMVFpcE95LWZyQ3dfMHBJNnZGUzcwbHQ4dUZCSV9sd2FLTkEtaUZ3WTFO!2m2!1d48.1448919!2d17.1154158!3f114.32652478817094!4f-18.771614443283426!5f0.4000000000000002',
+            'https://www.google.com/maps/embed?pb=!4v1582794420833!6m8!1m7!1sCAoSLEFGMVFpcE0tQUthMUxyX0VpZFFiZDZXNWw1TWFsVnF6OXZWdURIZ2VQSjRO!2m2!1d48.1446!2d17.1155194!3f185.57885664003612!4f-14.516559923713345!5f0.4000000000000002',
             'https://www.google.com/maps/embed?pb=!4v1574673143863!6m8!1m7!1sCAoSLEFGMVFpcE82aGZTenBSUW9SV1JWTTc3Y3hYcDRFZTFaZ2d4NmFfZExZUjY4!2m2!1d48.1446417!2d17.1154389!3f83.27917026806618!4f-23.661244286869305!5f0.4000000000000002'
           ],
+
         },
         isShowingCookieLaw: !CookieLaw.methods.getVisited() === true,
       };
@@ -215,27 +218,10 @@
   .pink {
     color: hotpink;
   }
-/*
-  .contains-iframe-to-center {
-    text-align: center;
-  }
 
-  .card-content {
-    padding: 1rem;
+  .title a {
+    color: hotpink;
   }
-
-  .content ul {
-    list-style-type: square;
-    margin-top: 0;
-  }
-
-  .section-title {
-    margin-top: 1.5rem;
-  }
-
-  .notification {
-    padding: 0;
-  } */
 
   .Cookie--royal {
     color: #fff;

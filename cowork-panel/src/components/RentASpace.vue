@@ -37,11 +37,12 @@
   <div class="columns is-centered">
     <div class="column is-8 content">
       <h1 class="title has-text-white">
-        <p>For faster co-operation, <a hrref="https://docs.google.com/forms/d/e/1FAIpQLSeLgsx_pcVX_1KAFYENLmHk5pCJi-G-cTbdUsDQvsE5eSmHBw/viewform">please fill up form and tell us more about your event.</a></p>
-        <p>Do you have any other questions about our venue? Contact us at
+        <!-- <p>For faster co-operation, <a hrref="https://docs.google.com/forms/d/e/1FAIpQLSeLgsx_pcVX_1KAFYENLmHk5pCJi-G-cTbdUsDQvsE5eSmHBw/viewform">please fill up form and tell us more about your event.</a></p> -->
+        <p>Do you have any other questions about our venue?
+          <br>Contact us at
           <a href="mailto:info@progressbar.sk?Subject=Looking%20for%20venue%20for%20my%20event">info@progressbar.sk</a>,
           directly through <a href="https://m.me/progressbar">Facebook Messenger</a> or
-          through our <a href="https://t.me/coworkprogressbar">Telegram channel</a></p>
+          through our <a href="https://t.me/coworkprogressbar">Telegram channel.</a></p>
       </h1>
     </div>
   </div>
@@ -112,15 +113,15 @@ export default {
         'Available setups - theatre, learning session, custom'
       ],
       content: `
-        Our venue is 231 m² in Dunajska 14, at the heart of Bratislava. The space can comfortably accomodate 80 people.
+        Our venue is 231 m² in Dunajska 14, at the heart of Bratislava. The space can comfortably accommodate 80 people.
 
         As a non-profit that cares about technology, we try to incentivize tech communities in Bratislava, by allowing them to use the venue for free for their events.
         As a non-profit that needs to pay rent and bills, we also need funding!
-        Any <b>donations are welcome.</b> Without donations, we won't be able too keep the familiar hackerspace spirit a lot of people in Bratislava are seeking, and offer these kinds of services.
+        Any <b>donations are welcome.</b> Without donations, we won't be able to keep the familiar hackerspace spirit a lot of people in Bratislava are seeking, and offer these kinds of services.
 
-        We average hold <b><a href="/place-for-your-community-meetup-in-bratislava">150+ events, meetups and workshops yearly.</a></b>
+        We hold <b><a href="/place-for-your-community-meetup-in-bratislava">150+ events, meetups and workshops yearly.</a></b>
 
-        Our suggestion is a voluntary donation of <b>200€-400€</b> for every evening, depending on what you/your community can afford and how much you'll be using the space.
+        Our suggestion is a voluntary donation of <b>200€-400€</b> for every evening, depending on what you or your community can afford and how much you'll be using the space.
         Thanks for the help! 🥰🙏
       `
       .trim()

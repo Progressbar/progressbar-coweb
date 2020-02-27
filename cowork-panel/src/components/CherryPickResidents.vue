@@ -7,13 +7,13 @@
         <div class="columns">
           <div class="column is-4" v-for="r in meetups.slice(0,3)">
             <a :href="r.url"><img :src="`/static/img/residents/${r.src}`" :alt="r.name"><br>{{r.name}}</a>
-            <br>{{r.desc}}
+            <br><span v-html="r.desc"></span>
           </div>
         </div>
         <div class="columns">
           <div class="column is-3" v-for="r in meetups.slice(3,7)">
             <a :href="r.url"><img :src="`/static/img/residents/${r.src}`" :alt="r.name"><br>{{r.name}}</a>
-            <br>{{r.desc}}
+            <br><span v-html="r.desc"></span>
           </div>
         </div>
       </article>
@@ -50,7 +50,7 @@ export default {
           name: '.NET Bratislava Meetup',
           src: 'dotnet_bratislava_meetup.jpeg',
           url: 'https://www.meetup.com/NET-Bratislava-Meetup',
-          desc: 'The monthly meetup for .NET enthusiasts in Bratislava. Find more at https://net-ba.github.io'
+          desc: 'The monthly meetup for .NET enthusiasts in Bratislava. Find more at <a href="https://net-ba.github.io">net-ba.github.io</a>'
         },
         {
           name: 'Open Blockchain Bratislava',

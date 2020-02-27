@@ -17,46 +17,46 @@
         <div class="columns">
           <div class="column" v-for="r in residents.slice(0,4)">
             <a :href="r.url"><img :src="`/static/img/residents/${r.src}`" :alt="r.name"><br>{{r.name}}</a>
-            <br>{{r.desc}}
+            <br><span v-html="r.desc"></span>
           </div>
         </div>
         <div class="columns">
           <div class="column" v-for="r in residents.slice(4,8)">
             <a :href="r.url"><img :src="`/static/img/residents/${r.src}`" :alt="r.name"><br>{{r.name}}</a>
-            <br>{{r.desc}}
+            <br><span v-html="r.desc"></span>
           </div>
         </div>
         <p class="title">Exponential Technologies</p>
         <div class="columns">
           <div class="column" v-for="r in exponentialResidents.slice(0,4)">
             <a :href="r.url"><img :src="`/static/img/residents/${r.src}`" :alt="r.name"><br>{{r.name}}</a>
-            <br>{{r.desc}}
+            <br><span v-html="r.desc"></span>
           </div>
         </div>
         <p class="title">Technology Meetups</p>
         <div class="columns" id="meetups">
           <div class="column is-4" v-for="r in meetups.slice(0,3)">
             <a :href="r.url"><img :src="`/static/img/residents/${r.src}`" :alt="r.name"><br>{{r.name}}</a>
-            <br>{{r.desc}}
+            <br><span v-html="r.desc"></span>
           </div>
         </div>
         <div class="columns">
           <div class="column is-3" v-for="r in meetups.slice(3,7)">
             <a :href="r.url"><img :src="`/static/img/residents/${r.src}`" :alt="r.name"><br>{{r.name}}</a>
-            <br>{{r.desc}}
+            <br><span v-html="r.desc"></span>
           </div>
         </div>
         <p class="title">Social Impact</p>
         <div class="columns">
           <div class="column is-4" v-for="r in ngoResidents.slice(0,3)">
             <a :href="r.url"><img :src="`/static/img/residents/${r.src}`" :alt="r.name"><br>{{r.name}}</a>
-            <br>{{r.desc}}
+            <br><span v-html="r.desc"></span>
           </div>
         </div>
         <div class="columns">
           <div class="column is-3" v-for="r in ngoResidents.slice(3,7)">
             <a :href="r.url"><img :src="`/static/img/residents/${r.src}`" :alt="r.name"><br>{{r.name}}</a>
-            <br>{{r.desc}}
+            <br><span v-html="r.desc"></span>
           </div>
         </div>
       </article>
@@ -146,6 +146,12 @@ export default {
       ],
       ngoResidents: [
         {
+          name: 'Slovak Vegan Society',
+          src: 'SlovakVeganSociety.png',
+          url: 'https://veganskaspolocnost.sk/',
+          desc: 'Slovak Vegan Society (SVS) is an NGO that aims to promote veganism as a sustainable, ethical and healthy lifestyle. SVS produces various info materials, helps establish a vegan menu at universities and organizes events not only for vegans but also for open-minded omnivores, pointing at a sustainable future. In Progressbar Cowork, SVS organizes "Vegan Dinners" on a regular monthly basis. The dinners are open meet-ups where sharing vegan meals and recipes provide the opportunity to get to know new people. Of course, everybody is welcome!'
+        },
+        {
           name: 'Pre Stredoskolakov',
           src: 'pre_stredoskolakov.jpg',
           url: 'http://prestredoskolakov.sk/',
@@ -205,7 +211,7 @@ export default {
           name: '.NET Bratislava Meetup',
           src: 'dotnet_bratislava_meetup.jpeg',
           url: 'https://www.meetup.com/NET-Bratislava-Meetup',
-          desc: 'The monthly meetup for .NET enthusiasts in Bratislava. Find more at https://net-ba.github.io'
+          desc: 'The monthly meetup for .NET enthusiasts in Bratislava. Find more at <a href="https://net-ba.github.io">net-ba.github.io</a>'
         },
         {
           name: 'Open Blockchain Bratislava',

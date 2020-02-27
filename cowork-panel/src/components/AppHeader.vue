@@ -84,9 +84,6 @@
                 <router-link class="dropdown-item is-size-5" to="/calendar" @click.native="toggleNav()">
                 📅 Calendar
                 </router-link>
-                <router-link class="dropdown-item is-size-5" to="/call-for-the-sponsors" @click.native="toggleNav()">
-                🌈 Call for the Sponsors
-                </router-link>
                 <router-link class="dropdown-item is-size-5" to="/contact-venue" @click.native="toggleNav()">
                 🛸 Contact
                 </router-link>
@@ -115,6 +112,9 @@
                 📒 Running costs
                 </router-link> -->
                 <hr class="navbar-divider">
+                <router-link class="dropdown-item is-size-5" to="/call-for-the-sponsors" @click.native="toggleNav()">
+                🌈 Call for the Sponsors
+                </router-link>
                 <router-link class="dropdown-item is-size-5" to="/team" @click.native="toggleNav()">
                 🙏 Team
                 </router-link>

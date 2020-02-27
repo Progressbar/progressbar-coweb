@@ -9,17 +9,20 @@
         <img src="/static/img/eventspace/mlmu_december.jpg" alt="machine learning meetup bratislava in coworking" />
         <h2 class="subtitle has-text-white">
           <br />
-          Progressbar hackerspace is looking for sponsors & partners to help us with the space.
+          Progressbar Cowork & hackerspace is looking for sponsors & partners to help us with the space.
           We can offer to give our sponsors marketing push.<br>
           <br>
           We are in need to cover the costs of coworking equipment.<br>
-          The lab will be kept as hackerspace component.<br>
           <br>
           The space capacity is about 80 people for meetups. Meetup organizators, contact us.<br>
           Technical meetups are preferred.<br>
           <br>
+          We held 150+ meetups previous year with 5000+ attendees<br>
+          <br>
           We can offer you to place your banner/rollup in our space.<br>
           We can put your company logo on our page.<br>
+          <br>
+          We have also <router-link to="/crowdfunding">campaign running</router-link><br>
           <br>
           We have sponsor tiers<br>
           <ol>

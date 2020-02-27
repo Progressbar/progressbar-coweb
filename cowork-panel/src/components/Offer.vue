@@ -38,21 +38,21 @@ export default {
       },
       plans: [
         { name: 'Week pass', time: '9 am ~ 6 pm ⏰', description:
-          ['Available desk in space', 'Great for try out 👀', 'Enjoy insider experience'],
+          ['Available desk in space', '👌 for try out 👀', 'Enjoy insider experience 🙏'],
           price: '50', period: 'week', url: '/day-week-pass-coworking-bratislava',
           cta: 'mailto:info@progressbar.sk?subject=I want to try Progressbar Cowork Week Pass' },
         { name: 'Flex Desk', time: '9 am ~ 6 pm ⏰', description:
-          ['Available desk in space', 'Great for longer stays 🏡', 'You are supporting community 💞'],
+          ['Available desk in space', '👌 for longer stay 🏡', 'You are supporting community 💞'],
           price: '150',  period: 'month',
           url: '/rent-flex-desk-coworking-bratislava',
           cta: 'mailto:info@progressbar.sk?subject=I want to try Progressbar Cowork Flex Desk' },
         { name: 'Fix Desk', time: '24/7 🌃', description:
-          ['Dedicated desk & chair', '♾ meeting room hours', '180cm long desk'],
+          ['Dedicated desk', 'Own Plant 🌿', '180cm long desk 📏'],
           price: '200', period: 'month', highlight: 'true',
           url: '/rent-fix-desk-coworking-bratislava',
           cta: 'mailto:info@progressbar.sk?subject=I want to try Progressbar Cowork Fix Desk' },
         { name: 'Meeting Room 🤝', time: 'Acoustically isolated', description:
-          ['10 seats','Whiteboard', 'Projector 📽 '], price: '10', period: 'hour',
+          ['10 seats 💺','Whiteboard', 'Projector 📽 '], price: '10', period: 'hour',
           url: '/rent-meeting-room-coworking-bratislava',
           cta: 'mailto:info@progressbar.sk?subject=I want to try Progressbar Cowork Meeting Room' }
       ],
