@@ -3,8 +3,6 @@
     <div class="columns">
       <div class="column is-parent is-8">
         <img src="/static/img/cowork/making_movie_cowork.jpg" alt="coworking bratislava making movie">
-        <img src="/static/img/cowork/women_coworkers.jpg" alt="progressbar women coworking bratislava blockchain">
-        <img src="/static/img/meetingroom/spoznajkandidata.jpg" alt="blockchain coworking bratislava meeting room">
       </div>
       <div class="column is-parent is-4">
         <article class="tile is-child notification is-black is-size-4">
@@ -29,9 +27,21 @@
               </router-link>
             </p>
             <p>🖥 Shared monitors</p>
-            <p>👷‍♀️ Standing desks</p>
-            <p>📦 <a href="#" title="Expecting a delivery while you're out?
-              Don't worry. We can handover package to your table 🥰" > Package Handling</a></p>
+          </div>
+        </article>
+      </div>
+    </div>
+    <div class="columns">
+      <div class="column is-parent is-8">
+        <img src="/static/img/cowork/women_coworkers.jpg" alt="progressbar women coworking bratislava blockchain">
+      </div>
+      <div class="column is-parent is-4">
+        <article class="tile is-child notification is-black is-size-4">
+          <h1 class="title is-size-1">⛳ Friendly feelings</h1>
+          <div class="content">
+             <p>📦 <a href="#" title="Expecting a delivery while you're out?
+              Don't worry. We can handover package to your table 🥰" > Package Handling</a>
+              </p>
             <p>⚡️ <a href="#" title="500/30 should be enough for your 4k video :)">
               Ultra-fast Internet</a>
               </p>
@@ -51,20 +61,35 @@
                 Community Social Events
               </router-link>
             </p>
-            <p>💁‍♀️ On-site support</p>
+
             <p>🥗 <a href="https://www.google.com/maps/search/bratislava+restaurants/@48.145325,17.1097426,16z">
                 Lot of food options around
                 </a>
             </p>
             <p>🏋️‍♂️ <a href="https://www.instagram.com/p/Bn5zmzJAa01/" target="_blank" rel="noopener">Pull-up bar for
               you</a></p>
+          </div>
+        </article>
+      </div>
+    </div>
+    <div class="columns">
+      <div class="column is-parent is-8">
+        <img src="/static/img/meetingroom/spoznajkandidata.jpg" alt="blockchain coworking bratislava meeting room">
+      </div>
+      <div class="column is-parent is-4">
+        <article class="tile is-child notification is-black is-size-4">
+          <h1 class="title is-size-1">🏄‍♂️ Flexible </h1>
+          <div class="content">
+            <p>💁‍♀️ On-site support</p>
             <p>🚴‍♀️ Bicycle parking U-rack</p>
             <p>⛓ Crypto (BTC,ETH,..) 🥰</p>
             <p>💝 Special offers for minorities</p>
+            <p>👷‍♀️ Standing desks</p>
             <p>❄️ Air conditioning</p>
             <p>🔧 Makerspace</p>
             <p>📸 <a href="https://www.google.com/maps/place/Progressbar+Cowork+%26+Hackerspace/@48.1446824,17.115444,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipMuwdWZFx-u2mWru0Oxj18w_r8GnbXJ5hxLKECP!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipMuwdWZFx-u2mWru0Oxj18w_r8GnbXJ5hxLKECP%3Dw203-h203-k-no!7i2736!8i2736!4m5!3m4!1s0x476c8946152ff129:0x72ac0b6fccaf66fd!8m2!3d48.1445559!4d17.1154906">
-              More photos</a></p>
+              More photos</a>
+            </p>
           </div>
         </article>
       </div>
@@ -76,18 +101,9 @@
       <div class="column is-parent is-4">
         <article class="tile is-child notification is-black is-size-4">
           <p class="title is-size-1">🥤 Drinks</p>
-          <div class="content">
+          <div class="content" v-for="item in bottledDrinks" :key="item.name">
             <p>
-              🍻 Bottled and cooled drinks such as
-              <span v-for="item in bottledDrinks" :key="item.name">
               {{item.name}}
-            </span>
-            </p>
-            <p>
-              ☕️ Specialty Coffee and frenchpress
-            </p>
-            <p>
-              🍵 Tea, Matcha
             </p>
           </div>
         </article>
@@ -140,6 +156,7 @@
       </div>
     </div>
     <cherryResidents/>
+    <br>
     <div class="columns">
       <div class="column is-parent is-8">
         <img src="/static/img/community/pyladies_meetup.jpg" alt="progressbar coworking bratislava python pyladies meetup">
@@ -201,9 +218,11 @@
     data() {
       return {
         bottledDrinks: [
-          {name: 'Club-Mate, Ulticha-Mate', image: '', url: ''},
-          {name: '🍺 Pilsner, Svijany', image: '', url: ''},
-          {name: '🍷 Wine', image: '', url: ''},
+          {name: '🧉 Club-Mate, Ulticha-Mate'},
+          {name: '🍺 Pilsner, Svijany'},
+          {name: '🍷 Wine'},
+          {name: '☕️ Specialty Coffee and frenchpress'},
+          {name: '🍵 Tea, Matcha'}
         ],
         isUser: false,
         config: {

@@ -5,13 +5,13 @@
       <article class="tile is-child notification is-black is-size-4">
         <p class="title">Technology Meetups</p>
         <div class="columns">
-          <div class="column is-4" v-for="r in meetups.slice(0,3)">
+          <div class="column is-3" v-for="r in meetups.slice(0,4)">
             <a :href="r.url"><img :src="`/static/img/residents/${r.src}`" :alt="r.name"><br>{{r.name}}</a>
             <br><span v-html="r.desc"></span>
           </div>
         </div>
         <div class="columns">
-          <div class="column is-3" v-for="r in meetups.slice(3,7)">
+          <div class="column is-3" v-for="r in meetups.slice(4,8)">
             <a :href="r.url"><img :src="`/static/img/residents/${r.src}`" :alt="r.name"><br>{{r.name}}</a>
             <br><span v-html="r.desc"></span>
           </div>
@@ -38,10 +38,10 @@ export default {
           desc: 'Machine Learning Meetups Bratislava is a meetup for people interested in machine learning and related topics like AI, data mining, computer vision, information retrieval, natural language processing.'
         },
         {
-          name: 'CodeBeer Bratislava',
-          src: 'code_beer_meetups.png',
-          url: 'https://www.facebook.com/codebeer.sk/',
-          desc: 'Meetups around various programming languages with newcomers and experienced developers looking to chat and exchange knowledge'
+          name: 'Open Blockchain Bratislava',
+          src: 'open_blockchain_bratislava.jpeg',
+          url: 'https://www.meetup.com/openblockchainbratislava/',
+          desc: 'Blockchain meetups in Bratislava, recently focused on Ethereum and other blockchains'
         },
         {
           name: '.NET Bratislava Meetup',
@@ -50,16 +50,28 @@ export default {
           desc: 'The monthly meetup for .NET enthusiasts in Bratislava. Find more at <a href="https://net-ba.github.io">net-ba.github.io</a>'
         },
         {
-          name: 'Open Blockchain Bratislava',
-          src: 'open_blockchain_bratislava.jpeg',
-          url: 'https://www.meetup.com/openblockchainbratislava/',
-          desc: 'Blockchain meetups in Bratislava, recently focused on Ethereum and other blockchains'
+          name: 'CodeBeer Bratislava',
+          src: 'code_beer_meetups.png',
+          url: 'https://www.facebook.com/codebeer.sk/',
+          desc: 'Meetups around various programming languages with newcomers and experienced developers looking to chat and exchange knowledge'
         },
         {
           name: 'Unreal User group Slovakia',
           src: 'unreal_user_group_slovakia.jpeg',
           url: 'https://www.meetup.com/Unreal-User-Group-Slovakia/',
-          desc: 'This group is for Unreal Engine users in Slovakia and surrounding countries. We plan to meet 6x per year in Bratislava and talk about all aspects related to developing games, apps, visualisations, VR in Unreal Engine 4.x'
+          desc: 'This group is for Unreal Engine users in Slovakia and surrounding countries.'
+        },
+        {
+          name: 'PyLadies Bratislava',
+          src: 'pyladies_bratislava.jpg',
+          url: 'https://www.facebook.com/events/384459445719332/',
+          desc: 'Learning ladies to understand Python. <a href="https://github.com/pyladies-bratislava">Repo</a>'
+        },
+        {
+          name: 'Bratislava Python Meetup',
+          src: 'bratislava_python_meetup.jpeg',
+          url: 'https://spy.pycon.sk/sk/',
+          desc: 'Python Meetups & <a href="https://pycon.sk">Pycon.sk</a> organisers'
         },
         {
           name: 'Nodeschool Bratislava',
@@ -67,18 +79,6 @@ export default {
           url: 'https://www.meetup.com/nodejsbratislava/',
           desc: 'Nodejs and learning meetup in Bratislava'
         },
-        {
-          name: 'Bratislava Python Meetup',
-          src: 'bratislava_python_meetup.jpeg',
-          url: 'https://spy.pycon.sk/sk/',
-          desc: 'Python Meetups & Pycon.sk organisers'
-        },
-        {
-          name: 'PyLadies Bratislava',
-          src: 'pyladies_bratislava.jpg',
-          url: 'https://www.facebook.com/events/384459445719332/',
-          desc: 'Learning ladies to understand Python'
-        }
       ]
     }
   }
