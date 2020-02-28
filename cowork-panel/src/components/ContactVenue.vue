@@ -6,7 +6,9 @@
         <h2 class="has-text-white">
           📍 We are located on the first floor. <br />
           🚶‍♀️ You can access our space through grey doors next to the bike stand.<br />
-          <br> 🚪 If you plan visit us during day, <a href="https://t.me/coworkprogressbar">join our public telegram channel ahead </a> or <a href="mailto:info@progressbar.sk">contact us via email</a>.<br>
+          <br> 🚪 If you plan visit us during day, let us know in advance, so we can count on you.
+          <br>
+          <br> Before visit, <a href="https://t.me/coworkprogressbar">join our public telegram channel ahead </a> or <a href="mailto:info@progressbar.sk">contact us via email</a>.<br>
           See you soon 👋
         </h2>
       </div>
@@ -51,11 +53,10 @@
         <iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=17.113958001136783%2C48.143727459609195%2C17.116854786872867%2C48.14537578584775&amp;layer=mapnik&amp;marker=48.14455162934517%2C17.115406394004822"
           style="border: 1px solid black"></iframe><br/>
         <div class="columns">
-          <div class="column is-6">
-            <img src="/static/img/outdoor/IMG_20180403_185456_HDR.jpg" alt="dunajska 14 progressbar" />
-          </div>
-          <div class="column is-3">
-            <img src="/static/img/outdoor/IMG_20180403_185405_1.jpg" alt="dunajska 14 progressbar" />
+          <div class="tile is-vertical is-12">
+            <div class="column contains-iframe-to-center" v-for="frame in href.iframes">
+              <ImageFrame v-bind:url="frame" :key="frame"></ImageFrame>
+            </div>
           </div>
         </div>
       </div>
@@ -64,11 +65,24 @@
 </div>
 </template>
 <script>
+import ImageFrame from './ImageFrame';
 export default {
+  components: {
+    ImageFrame,
+  },
   name: 'Venue',
   metaInfo: {
     title: 'Contact & Address'
   },
+  data() {
+    return {
+      href: {
+        iframes: [
+          'https://www.google.com/maps/embed?pb=!4v1582901663306!6m8!1m7!1s-gKR6kPv7nCGjQnZA3YY1w!2m2!1d48.1446918639937!2d17.11542692379906!3f165.52516117951566!4f-7.062132056435175!5f1.3653623366680616',
+        ],
+      }
+    }
+  }
 }
 </script>
 <style>

@@ -29,11 +29,12 @@
               </router-link>
             </p>
             <p>🖥 Shared monitors</p>
-
             <p>👷‍♀️ Standing desks</p>
             <p>📦 <a href="#" title="Expecting a delivery while you're out?
               Don't worry. We can handover package to your table 🥰" > Package Handling</a></p>
-            <p>⚡️ Ultra-fast Internet</p>
+            <p>⚡️ <a href="#" title="500/30 should be enough for your 4k video :)">
+              Ultra-fast Internet</a>
+              </p>
             <p>🎯
               <router-link to="silent-place-to-work-in-bratislava">
               Space for focused work
@@ -45,9 +46,16 @@
               </router-link>
             </p>
             <p>🛋 Space for relaxation</p>
-            <p>🍷 Community Social Events</p>
+            <p>🍷
+              <router-link to="place-for-your-community-meetup-in-bratislava">
+                Community Social Events
+              </router-link>
+            </p>
             <p>💁‍♀️ On-site support</p>
-            <p>🥗 Lot of food options around</p>
+            <p>🥗 <a href="https://www.google.com/maps/search/bratislava+restaurants/@48.145325,17.1097426,16z">
+                Lot of food options around
+                </a>
+            </p>
             <p>🏋️‍♂️ <a href="https://www.instagram.com/p/Bn5zmzJAa01/" target="_blank" rel="noopener">Pull-up bar for
               you</a></p>
             <p>🚴‍♀️ Bicycle parking U-rack</p>
@@ -85,9 +93,12 @@
         </article>
       </div>
     </div>
+    <div id="membership">
+    </div>
+    <br>
     <h1 class="title has-text-centered"><router-link to="/#membership">👩‍💻 Membership 👨‍💻</router-link></h1>
     <br>
-    <div id="membership">
+    <div>
       <Offer/>
     </div>
     <br>
@@ -179,8 +190,8 @@
     data() {
       return {
         bottledDrinks: [
-          {name: 'Club-Mate,', image: '', url: ''},
-          {name: '🍺 Pilsner,', image: '', url: ''},
+          {name: 'Club-Mate, Ulticha-Mate', image: '', url: ''},
+          {name: '🍺 Pilsner, Svijany', image: '', url: ''},
           {name: '🍷 Wine', image: '', url: ''},
         ],
         isUser: false,
@@ -220,7 +231,8 @@
   }
 
   .title a {
-    color: hotpink;
+    color: whitesmoke;
+    text-decoration: underline;
   }
 
   .Cookie--royal {

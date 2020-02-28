@@ -9,8 +9,7 @@
         <div class="navbar-brand">
           <router-link
             class="progressbar-logo-container"
-            to="/"
-            @click.native="toggleNav()">
+            to="/">
             <!-- <progressbar-logo-refresh/> -->
             <progressbar-logo-icon/>
           </router-link>
@@ -29,13 +28,14 @@
         <div
           class="navbar-menu"
           v-bind:class="{ 'is-active': showNav }"
-          @click="toggleNav()"
+
         >
           <div class="navbar-end">
             <router-link
               class="navbar-item is-size-4"
               exact-active-class="is-active"
               to="/place-for-your-community-meetup-in-bratislava"
+              @click.native="showNav && toggleNav()"
             >
               Community Meetups
             </router-link>
@@ -43,6 +43,7 @@
               class="navbar-item is-size-4"
               exact-active-class="is-active"
               to="/rent-meeting-room-coworking-bratislava"
+              @click.native="showNav && toggleNav()"
             >
               Meeting Room
             </router-link>
@@ -50,6 +51,7 @@
               class="navbar-item is-size-4"
               exact-active-class="is-active"
               to="/rent-flex-desk-coworking-bratislava"
+              @click.native="showNav && toggleNav()"
             >
               Rent Desk
             </router-link>
@@ -57,6 +59,7 @@
               class="navbar-item is-size-4"
               exact-active-class="is-active"
               to="/rent-a-space"
+              @click.native="showNav && toggleNav()"
             >
               Rent Venue
             </router-link>
@@ -64,10 +67,11 @@
               class="navbar-item is-size-4"
               exact-active-class="is-active"
               to="/video"
+              @click.native="showNav && toggleNav()"
             >
               Recordings
             </router-link>
-            <div v-bind:class="{ 'is-active': showNav }" class="navbar-item has-dropdown" @click="toggleNav()">
+            <div v-bind:class="{ 'is-active': showNav }" class="navbar-item has-dropdown">
               <a
                 @click="toggleNav()"
                 class="navbar-link is-size-4">
