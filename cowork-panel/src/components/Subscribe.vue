@@ -21,7 +21,7 @@
                Ergonomic quality chairs
               </router-link>
             </p>
-            <p> 🎧 Accoustic insulated space</p>
+            <p> 🎧 Acoustically insulated space</p>
             <p>💬 Hangout areas</p>
             <p>🌿
               <router-link to="rent-fix-desk-coworking-bratislava">
@@ -103,11 +103,19 @@
     </div>
     <br>
     <h1 class="section-title title has-text-white has-text-centered">🕵️‍♀️ Look inside</h1>
+    <br>
     <div class="columns is-centered">
       <div class="column is-6 contains-iframe-to-center" v-for="frame in href.iframes">
         <ImageFrame v-bind:url="frame" :key="frame"></ImageFrame>
       </div>
     </div>
+    <div id="testimonials">
+    </div>
+    <br>
+    <div>
+      <testimonials />
+    </div>
+    <br>
     <div class="columns">
       <div class="column is-parent is-8">
         <img src="/static/img/cowork/fixdesk.jpg" alt="coworking bratislava fixdesk progressbar technology blockchain">
@@ -174,6 +182,7 @@
   // import InstagramFeed from './InstagramFeed';
   import ImageFrame from './ImageFrame';
   import cherryResidents from './CherryPickResidents';
+  import testimonials from './Testimonials';
 
   export default {
     name: 'subscribe',
@@ -182,7 +191,9 @@
       // InstagramFeed,
       Offer,
       CookieLaw,
-      cherryResidents
+      testimonials,
+      cherryResidents,
+
     },
     metaInfo: {
       title: 'Tech Coworking Progressbar in Bratislava'

@@ -168,7 +168,8 @@
     }
   }
 </script>
-
+<script src="https://googlereviews.cws.net/google-reviews.js"></script><br />
+            <script>load_google_reviews("ChIJKfEvFUaJbEcR_WavzG8LrHI");</script>
 <style>
   a {
     color: hotpink;
