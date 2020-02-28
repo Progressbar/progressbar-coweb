@@ -67,13 +67,6 @@
             >
               Recordings
             </router-link>
-            <div class="navbar-item is-size-4" @click="redirectToUrl(href.coworkgroup)">
-              <span class="social-icons" v-for="item in socials" :key="item.url">
-                <a :href="item.url" target="_blank" rel="noopener" class="social-icon" aria-hidden="true">
-                  <font-awesome-icon v-if="item.icon" :icon="item.icon" />
-                </a>
-              </span>
-            </div>
             <div v-bind:class="{ 'is-active': showNav }" class="navbar-item has-dropdown" @click="toggleNav()">
               <a
                 @click="toggleNav()"
