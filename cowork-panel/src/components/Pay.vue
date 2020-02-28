@@ -2,7 +2,7 @@
   <div class="Pay">
    <div class="columns">
      <div class="column is-4">
-       <p class="title has-text-white">Support operational costs of Progressbar</p>
+       <p class="title has-text-white">Support operational costs</p>
        <progress class="progress is-large is-pink" :value="percentage()" max="100"></progress>
        <p class="title has-text-white">Our monthly rent is <a href="#">{{ funds.monthlyRentTax }}€</a>.
         Our account balance is <a href="#">{{ funds.balance }}€</a> at the moment.
@@ -178,15 +178,18 @@
     background-image: linear-gradient(to right top, #b60cf6, #9316e5, #711ad4, #4c1ac1, #1e19ae);
   }
 
+  .progress.is-large {
+    height: 2.5em;
+  }
   .progress.is-pink::-webkit-progress-value {
   background-color: hotpink;
   }
 
-  .progress.is-warning::-moz-progress-bar {
+  .progress.is-pink::-moz-progress-bar {
   background-color: hotpink;
   }
 
-  .progress.is-warning::-ms-fill {
+  .progress.is-pink::-ms-fill {
     background-color: hotpink;
   }
 </style>
