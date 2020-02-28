@@ -15,7 +15,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.4.1",
     "@fortawesome/vue-fontawesome": "^0.1.1",
     "axios": "^0.16.2",
-    "bulma": "^0.6.2",
+    "bulma": "0.8.0",
     "font-awesome": "^4.7.0",
     "i": "^0.3.6",
     "npm": "^6.4.1",
