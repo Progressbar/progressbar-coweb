@@ -11,7 +11,7 @@
                 <progressbar-logo-refresh />
               </h1>
               <h2 class="subtitle">
-                🌿 Your favourite tech coworking, 🍦 community space in
+                🌿 Your favourite coworking, 🍦 community space in
                 <a href="https://goo.gl/maps/gtmznEkBVGG2" title="location of progressbar">
                 downtown, Bratislava</a> 🪐</h2>
             </div>

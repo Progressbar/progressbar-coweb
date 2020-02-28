@@ -20,9 +20,6 @@
 
 export default {
   name: 'Testimonials',
-  metaInfo: {
-    title: 'Reviews of Coworking |'
-  },
   data() {
     return {
       testimonials: [

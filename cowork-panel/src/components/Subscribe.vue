@@ -196,7 +196,7 @@
 
     },
     metaInfo: {
-      title: 'Tech Coworking Progressbar in Bratislava'
+      title: 'Coworking Progressbar in Bratislava'
     },
     data() {
       return {

@@ -25,9 +25,6 @@
 
 export default {
   name: 'CherryResidents',
-  metaInfo: {
-    title: 'Coworkers and Residents | Blockchain'
-  },
   data() {
     return {
       href: {
