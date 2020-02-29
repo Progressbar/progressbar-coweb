@@ -118,7 +118,7 @@
       <Offer/>
     </div>
     <br>
-    <h1 class="section-title title has-text-white has-text-centered">🕵️‍♀️ Look inside</h1>
+    <h1 class="section-title title has-text-white has-text-centered">👀 Look inside</h1>
     <br>
     <div class="columns is-centered">
       <div class="column is-6 contains-iframe-to-center" v-for="frame in href.iframes">
@@ -175,7 +175,7 @@
               <h2 id="pinklink">
                 <a href="mailto:info@progressbar.sk?subject=I want to try Progressbar Cowork!"
                 target="_blank" rel="noopener">
-                Join Progressbar, Tech Coworking in Bratislava</a>
+                Join Progressbar, Coworking in Bratislava</a>
               </h2>
             </div>
           </div>
@@ -233,7 +233,7 @@
         href: {
           iframes: [
             'https://www.google.com/maps/embed?pb=!4v1582794420833!6m8!1m7!1sCAoSLEFGMVFpcE0tQUthMUxyX0VpZFFiZDZXNWw1TWFsVnF6OXZWdURIZ2VQSjRO!2m2!1d48.1446!2d17.1155194!3f185.57885664003612!4f-14.516559923713345!5f0.4000000000000002',
-            'https://www.google.com/maps/embed?pb=!4v1574673143863!6m8!1m7!1sCAoSLEFGMVFpcE82aGZTenBSUW9SV1JWTTc3Y3hYcDRFZTFaZ2d4NmFfZExZUjY4!2m2!1d48.1446417!2d17.1154389!3f83.27917026806618!4f-23.661244286869305!5f0.4000000000000002'
+            'https://www.google.com/maps/embed?pb=!4v1582979219907!6m8!1m7!1sCAoSLEFGMVFpcE0yQ19oVmQwM0xnSVZjNTl5Tlp0b281bkxGRDBVZ290SVJiMTlG!2m2!1d48.144575!2d17.1155611!3f30.29505709799235!4f-29.003301094089764!5f0.7820865974627469'
           ],
 
         },

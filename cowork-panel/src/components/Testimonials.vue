@@ -38,7 +38,7 @@ export default {
         {
           name:"- Jakub B.",
           review: "Great co-working and event space for all futuristic entrepreneur kids! Definitely give this place a shot, you will be immediately impressed by the progressive mindset, nice people and aesthetic venue.",
-          time: "3months ago",
+          time: "3 months ago",
           link: "https://goo.gl/maps/TdabFhspuex8XYnG6"
         }
       ]

@@ -4,7 +4,7 @@
   <div class="tile is-parent is-12">
     <article class="tile is-child">
       <figure class="image">
-        <img src="/static/img/meetingroom/waomeeting-01-4.jpg" alt="meeting room bratislava cowork"/>
+        <img src="/static/img/meetingroom/waomeeting-01-4.jpg" alt="meeting room bratislava coworking"/>
       </figure>
     </article>
   </div>
@@ -15,7 +15,7 @@
       <div class="tile is-parent is-vertical">
         <article class="tile is-child">
           <figure class="image">
-            <img src="/static/img/meetingroom/recording_podcast.jpg" alt="meeting room bratislava cowork"/>
+            <img src="/static/img/meetingroom/recording_podcast.jpg" alt="meeting room bratislava coworking"/>
           </figure>
         </article>
       </div>
@@ -37,8 +37,9 @@
         </div>
         <div class="btn-container">
           <a class="button is-black is-block is-large meeting"
-            href="mailto:info@progressbar.sk?subject=I want to try Progressbar Meeting Room!">
-            {{ orderPrices.meetingRoom }}€ / hour</a>
+            href="mailto:info@progressbar.sk?subject=I want to book Progressbar Meeting Room!">
+            <!-- {{ orderPrices.meetingRoom }}€ / hour</a> -->
+            Book meeting room</a>
         </div>
       </div>
     </article>
@@ -48,7 +49,7 @@
   <div class="tile is-parent">
     <article class="tile is-child">
       <figure class="image">
-        <img src="/static/img/meetingroom/spoznajkandidata.jpg" alt="meeting room bratislava cowork"/>
+        <img src="/static/img/meetingroom/spoznajkandidata.jpg" alt="meeting room bratislava coworking"/>
       </figure>
     </article>
   </div>
@@ -57,25 +58,25 @@
   <div class="tile is-parent">
     <article class="tile is-child">
       <figure class="image">
-        <img src="/static/img/meetingroom/pb-02.jpg" alt="meeting room bratislava cowork"/>
+        <img src="/static/img/meetingroom/meeting_room_february_2020.jpg" alt="meeting room bratislava coworking"/>
       </figure>
     </article>
   </div>
 </div>
-<div class="columns is-centered">
-    <div class="column is-12 contains-iframe-to-center" v-for="frame in href.iframes">
-      <ImageFrame v-bind:url="frame" :key="frame"></ImageFrame>
-    </div>
+<div class="tile is-ancestor">
+  <div class="tile is-parent">
+    <article class="tile is-child">
+      <figure class="image">
+        <img src="/static/img/meetingroom/pb-02.jpg" alt="meeting room bratislava coworking"/>
+      </figure>
+    </article>
+  </div>
 </div>
 </div>
 </template>
 <script>
-import ImageFrame from './ImageFrame';
 
 export default {
-  components: {
-    ImageFrame
-  },
   name: 'meetingroom',
   metaInfo: {
     title: 'Meeting room in downtown of Bratislava'
@@ -94,7 +95,6 @@ export default {
   }
 }
 </script>
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
   .button.is-black.is-block.is-large.meeting {
     background-image: linear-gradient(to right top, #b60cf6, #9316e5, #711ad4, #4c1ac1, #1e19ae);
