@@ -99,9 +99,6 @@
                 <router-link class="dropdown-item is-size-5" to="/pay" @click.native="toggleNav()">
                 🤑 Support operational costs
                 </router-link>
-                <!-- <router-link class="dropdown-item is-size-5" to="/running-costs" @click.native="toggleNav()">
-                📒 Running costs
-                </router-link> -->
                 <hr class="navbar-divider">
                 <router-link class="dropdown-item is-size-5" to="/call-for-the-sponsors" @click.native="toggleNav()">
                 🌈 Call for the Sponsors
@@ -115,9 +112,6 @@
                 <router-link class="dropdown-item is-size-5" to="/team" @click.native="toggleNav()">
                 🙏 Team
                 </router-link>
-                <!-- <router-link class="dropdown-item is-size-5" to="/call-for-a-host" @click.native="toggleNav()">💜 Call
-                  for an Angel -->
-                <!-- </router-link> -->
               </div>
             </div>
           </div>

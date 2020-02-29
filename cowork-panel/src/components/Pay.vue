@@ -10,7 +10,8 @@
         If you like what we do, you can support our operations by donating 👇</p>
         <progress class="progress is-large is-pink" :value="percentage()" max="100"></progress>
      </div>
-     <div class="column is-4">
+
+     <!-- <div class="column is-4">
         <p class="title has-text-white">IBAN (€)</p>
         <p class="title has-text-white">{{donations.IBAN}}</p>
         <vue-qr
@@ -19,6 +20,10 @@
         :size="300"
         :dotScale="1"
         ></vue-qr>
+      </div> -->
+      <div class="column is-4">
+        <iframe src="https://progressbar.darujme.sk/3448/" frameborder="0" scrolling="no" width="300" height="550" id="darujme-widget">
+        </iframe>
       </div>
       <div class="column is-4">
        <p class="title has-text-white">Ethereum, DAI</p>
@@ -168,8 +173,6 @@
     }
   }
 </script>
-<script src="https://googlereviews.cws.net/google-reviews.js"></script><br />
-            <script>load_google_reviews("ChIJKfEvFUaJbEcR_WavzG8LrHI");</script>
 <style>
   a {
     color: hotpink;

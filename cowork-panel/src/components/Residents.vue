@@ -65,12 +65,8 @@
 </div>
 </template>
 <script>
-import ImageFrame from './ImageFrame';
 
 export default {
-  components: {
-    ImageFrame
-  },
   name: 'residents',
   metaInfo: {
     title: 'Coworkers and Residents | Blockchain'
