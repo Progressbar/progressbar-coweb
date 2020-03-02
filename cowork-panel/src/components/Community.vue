@@ -3,7 +3,7 @@
   <div class="columns">
     <div class="column is-8">
       <div class="content">
-        <img src="/static/img/eventspace/mlmu_december.jpg"
+        <img src="/static/img/eventspace/mlmu_december.jpg" loading="lazy"
           alt="coworking bratislava technical machine learning meetup">
       </div>
     </div>
@@ -34,7 +34,7 @@
   </div>
   <div v-for="m in Math.ceil(meetups.length / 2)" class="columns">
     <div v-for="pic in meetups.slice((m-1) * 2, m * 2)" class="column is-6">
-      <img :src="`/static/img/community/${pic}.jpg`" alt="coworking bratislava technical meetup">
+      <img :src="`/static/img/community/${pic}.jpg`" loading="lazy" alt="coworking bratislava technical meetup">
     </div>
   </div>
 </div>
