@@ -58,7 +58,7 @@
             <router-link
               class="navbar-item is-size-4"
               exact-active-class="is-active"
-              to="/rent-a-space"
+              to="/rent-a-space-in-bratislava"
               @click.native="showNav && toggleNav()"
             >
               Rent Venue

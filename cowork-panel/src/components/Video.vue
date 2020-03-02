@@ -3,10 +3,12 @@
   <div class="columns">
     <div class="column is-12 content">
     <p>
-      <h1><a href="https://www.youtube.com/playlist?list=PLfCtn83lMV3BqBe45jgaNw4LqPNnhq6IG">Playlist of Archived Streams</a>
-      <a href="https://www.youtube.com/channel/UCpun3Ro3aUJPoFVZwgqd98A">📥 Subscribe to Progressbar Channel</a></h1>
+      <h1><a href="https://www.youtube.com/playlist?list=PLfCtn83lMV3BqBe45jgaNw4LqPNnhq6IG">Playlist of Archived Streams
+      </a>
+      <a href="https://www.youtube.com/channel/UCpun3Ro3aUJPoFVZwgqd98A">📥 Subscribe to Progressbar Channel
+      </a></h1>
     <iframe class="mainiframe" height="800"
-      src="https://www.youtube-nocookie.com/embed/videoseries?list=PLfCtn83lMV3BqBe45jgaNw4LqPNnhq6IG"
+      src="https://www.youtube-nocookie.com/embed/videoseries?list=PLfCtn83lMV3BqBe45jgaNw4LqPNnhq6IG" loading="lazy"
       frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
       allowfullscreen>
     </iframe>
@@ -43,14 +45,14 @@
         <div class="columns">
             <div class="column is-6">
             <iframe height="360"
-            src="https://www.youtube-nocookie.com/embed/videoseries?list=PLfCtn83lMV3CzkXkGdkdUnNZvD5c4hBbC"
+            src="https://www.youtube-nocookie.com/embed/videoseries?list=PLfCtn83lMV3CzkXkGdkdUnNZvD5c4hBbC" loading="lazy"
             frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen>
             </iframe>
           </div>
           <div class="column is-6">
             <iframe height="360"
-            src="https://www.youtube.com/embed/videoseries?list=PL7Q4UCybIXBG5SkXQX0CqLBQbaCVWYjvF"
+            src="https://www.youtube.com/embed/videoseries?list=PL7Q4UCybIXBG5SkXQX0CqLBQbaCVWYjvF" loading="lazy"
             frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen>
             </iframe>
@@ -65,10 +67,7 @@
 export default {
   name: 'video',
   metaInfo: {
-    title: 'Video recordings from meetups in Progressbar'
-  },
-  data() {
-    return {}
+    title: 'Video recordings from events in Progressbar'
   }
 }
 </script>
@@ -81,9 +80,6 @@ export default {
   .notification {
   padding: 0;
   }
-  /* .content h1 {
-    color:blue;
-  } */
   @media only screen and (max-width: 768px) {
     iframe {
       width: 85vw;

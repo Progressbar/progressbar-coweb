@@ -4,7 +4,7 @@
     <div class="tile is-vertical is-12">
       <article class="tile is-child">
         <figure class="image">
-          <img src="/static/img/cowork/fixdesk.jpg" alt="coworking bratislava fix desk"/>
+          <img src="/static/img/cowork/fixdesk.jpg" loading="lazy" alt="coworking bratislava fix desk"/>
         </figure>
       </article>
     </div>
@@ -13,14 +13,14 @@
     <div class="tile is-4">
       <article class="tile">
         <figure class="image">
-          <img src="/static/img/cowork/cowork_team_collaboration.jpg" alt="coworking bratislava team collaboration room"/>
+          <img src="/static/img/cowork/cowork_team_collaboration.jpg" loading="lazy" alt="coworking bratislava team collaboration room"/>
         </figure>
       </article>
     </div>
     <div class="tile is-parent">
       <article class="tile">
         <figure class="image">
-          <img src="/static/img/community/IMG_20191023_182308.jpg" alt="coworking bratislava team meeting room"/>
+          <img src="/static/img/community/IMG_20191023_182308.jpg" loading="lazy" alt="coworking bratislava team meeting room"/>
         </figure>
       </article>
     </div>

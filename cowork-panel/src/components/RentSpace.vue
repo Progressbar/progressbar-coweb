@@ -1,12 +1,12 @@
 <template>
-<div class="RentASpace">
+<div class="RentSpace">
   <div class="columns is-centered">
     <div class="column is-9 content">
       <h1 class="title has-text-white is-size-1">
-        Rent A Space & Your Events
+        Rent a Space for Your Events
       </h1>
-      <img src="/static/img/eventspace/event_space_chairs.jpg" alt="meetup space in bratislava downtown" />
-      <img src="/static/img/eventspace/codebeer.jpg" alt="meetup space in bratislava downtown" />
+      <img src="/static/img/eventspace/event_space_chairs.jpg" loading="lazy" alt="meetup space in bratislava downtown" />
+      <img src="/static/img/eventspace/codebeer.jpg" loading="lazy" alt="meetup space in bratislava downtown" />
     </div>
   </div>
   <div class="columns is-centered">
@@ -18,8 +18,8 @@
   </div>
   <div class="columns is-centered">
     <div class="column is-9 content">
-      <img src="/static/img/eventspace/mlmu_december.jpg" alt="machine learning bratislava meetup in coworking space" />
-      <img src="/static/img/community/IMG_20191017_190905.jpg" alt="study group in coworking" />
+      <img src="/static/img/eventspace/mlmu_december.jpg" loading="lazy" alt="machine learning bratislava meetup in coworking space" />
+      <img src="/static/img/community/IMG_20191017_190905.jpg" loading="lazy" alt="study group in coworking" />
     </div>
   </div>
   <div class="columns is-centered">
@@ -84,18 +84,18 @@ import axios from 'axios'
 import ImageFrame from './ImageFrame'
 
 export default {
-  name: 'RentASpace',
+  name: 'RentSpace',
   components: {
     ImageFrame
   },
   metaInfo: {
-    title: 'Rent venue space in downtown of Bratislava',
+    title: 'Rent Venue Space in city centre of Bratislava',
   },
   data() {
     return {
       href: {
         iframes: [
-          'https://www.google.com/maps/embed?pb=!4v1574673143863!6m8!1m7!1sCAoSLEFGMVFpcE82aGZTenBSUW9SV1JWTTc3Y3hYcDRFZTFaZ2d4NmFfZExZUjY4!2m2!1d48.1446417!2d17.1154389!3f83.27917026806618!4f-23.661244286869305!5f0.4000000000000002',
+          'https://www.google.com/maps/embed?pb=!4v1582979219907!6m8!1m7!1sCAoSLEFGMVFpcE0yQ19oVmQwM0xnSVZjNTl5Tlp0b281bkxGRDBVZ290SVJiMTlG!2m2!1d48.144575!2d17.1155611!3f30.29505709799235!4f-29.003301094089764!5f0.7820865974627469',
           'https://www.google.com/maps/embed?pb=!4v1577004145072!6m8!1m7!1sCAoSLEFGMVFpcE83SkstZk5iTlFBMGpkeUxPTUdOV3RQWVJWU2U4OGxXLThfYnZv!2m2!1d48.1446028!2d17.11545!3f113.59398601677866!4f-14.131454593482772!5f0.7820865974627469',
         ]
       },

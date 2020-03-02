@@ -1,7 +1,5 @@
 <template>
-
-    <iframe rel="dns-prefetch" :src="this.url" title="cowork360" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
-
+    <iframe rel="dns-prefetch" :src="this.url" loading="lazy" title="coworking bratislava 360" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
 </template>
 
 <script>

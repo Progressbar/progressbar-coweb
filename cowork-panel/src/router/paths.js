@@ -17,7 +17,7 @@ const Residents = () => import('@/components/Residents')
 const ContactVenue = () => import('@/components/ContactVenue')
 const SilentPlace = () => import('@/components/SilentPlace')
 const MeetingRoom = () => import('@/components/MeetingRoom')
-const RentASpace = () => import('@/components/RentASpace')
+const RentSpace = () => import('@/components/RentSpace')
 const Community = () => import('@/components/Community')
 const Video = () => import('@/components/Video')
 
@@ -79,16 +79,20 @@ const paths = [
     component: CallForTheSponsors
   },
   {
+    path: '/rent-a-space-in-bratislava',
+    component: RentSpace
+  },
+  {
     path: '/rent-a-space',
-    component: RentASpace
+    component: RentSpace
   },
   {
     path: '/space-for-rent',
-    component: RentASpace
+    component: RentSpace
   },
   {
     path: '/venue',
-    component: RentASpace
+    component: RentSpace
   },
   {
     path: '/give-us-review-thanks',

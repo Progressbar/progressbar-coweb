@@ -19,14 +19,15 @@
         </article>
         <article class="tile is-child">
           <p class="title has-text-white">🌐 Network</p>
-            <a href="https://www.bitfwd.com/"><img src="/static/img/partners/bitfwd.png" alt="community driven venture network"></a>
-            <a href="https://starfish.network/"><img src="/static/img/partners/Starfish_Logo_Horizontal Mission@4x.png" alt="starfish mission san francisco blockchain space"></a>
+            <a href="https://www.bitfwd.com/"><img src="/static/img/partners/bitfwd.png" loading="lazy" alt="community driven venture network"></a>
+            <a href="https://starfish.network/"><img src="/static/img/partners/Starfish_Logo_Horizontal Mission@4x.png" loading="lazy" alt="starfish mission san francisco blockchain space"></a>
         </article>
       </div>
       <div class="tile is-parent is-vertical">
         <a class="twitter-timeline"
           data-theme="dark" data-height="900"
-          href="https://twitter.com/progressbarsk?ref_src=twsrc%5Etfw">Tweets by @progressbarsk</a>
+          href="https://twitter.com/progressbarsk?ref_src=twsrc%5Etfw">Tweets by @progressbarsk
+        </a>
       </div>
       <div class="tile is-parent is-vertical is-3">
         <article class="tile is-child">

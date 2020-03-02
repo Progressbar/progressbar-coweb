@@ -6,13 +6,13 @@
         <p class="title">Technology Meetups</p>
         <div class="columns">
           <div class="column is-3" v-for="r in meetups.slice(0,4)">
-            <a :href="r.url"><img :src="`/static/img/residents/${r.src}`" :alt="r.name"><br>{{r.name}}</a>
+            <a :href="r.url"><img :src="`/static/img/residents/${r.src}`" loading="lazy" :alt="r.name"><br>{{r.name}}</a>
             <br><span v-html="r.desc"></span>
           </div>
         </div>
         <div class="columns">
           <div class="column is-3" v-for="r in meetups.slice(4,8)">
-            <a :href="r.url"><img :src="`/static/img/residents/${r.src}`" :alt="r.name"><br>{{r.name}}</a>
+            <a :href="r.url"><img :src="`/static/img/residents/${r.src}`" loading="lazy" :alt="r.name"><br>{{r.name}}</a>
             <br><span v-html="r.desc"></span>
           </div>
         </div>

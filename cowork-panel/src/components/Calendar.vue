@@ -4,7 +4,9 @@
       <div class="column is-12">
         <h1><router-link to="/rent-a-space">Venue Event Space</router-link> -
         <a href="mailto:info@progressbar.sk?subject=I want to book Progressbar Event Space!">Book Event Space</a></h1>
-        <iframe src="https://calendar.google.com/calendar/embed?src=progressbar.sk_3835313939343335353737%40resource.calendar.google.com&ctz=Europe%2FPrague&amp;showTitle=0&amp;wkst=2&amp;showPrint=0&amp;showCalendars=0" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        <iframe src="https://calendar.google.com/calendar/embed?src=progressbar.sk_3835313939343335353737%40resource.calendar.google.com&ctz=Europe%2FPrague&amp;showTitle=0&amp;wkst=2&amp;showPrint=0&amp;showCalendars=0"
+         loading="lazy" style="border: 0" width="800" height="600" frameborder="0" scrolling="no">
+        </iframe>
       </div>
     </div>
     <div class="columns">
@@ -14,13 +16,17 @@
             Meeting Room</router-link> -
           <a href="mailto:info@progressbar.sk?subject=I want to book Progressbar Meeting Room!">Book meeting room</a>
         </h1>
-        <iframe src="https://calendar.google.com/calendar/embed?src=progressbar.sk_3238323439303131393037%40resource.calendar.google.com&ctz=Europe%2FPrague&amp;showTitle=0&amp;wkst=2&amp;showPrint=0&amp;showCalendars=0&amp;mode=WEEK" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        <iframe src="https://calendar.google.com/calendar/embed?src=progressbar.sk_3238323439303131393037%40resource.calendar.google.com&ctz=Europe%2FPrague&amp;showTitle=0&amp;wkst=2&amp;showPrint=0&amp;showCalendars=0&amp;mode=WEEK"
+         loading="lazy" style="border: 0" width="800" height="600" frameborder="0" scrolling="no">
+        </iframe>
       </div>
     </div>
     <div class="columns">
       <div class="column is-12">
         <h1>Boxik Room</h1>
-        <iframe src="https://calendar.google.com/calendar/embed?src=progressbar.sk_32303436333937303934%40resource.calendar.google.com&ctz=Europe%2FPrague&amp;showTitle=0&amp;wkst=2&amp;showPrint=0&amp;showCalendars=0&amp;mode=WEEK" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        <iframe src="https://calendar.google.com/calendar/embed?src=progressbar.sk_32303436333937303934%40resource.calendar.google.com&ctz=Europe%2FPrague&amp;showTitle=0&amp;wkst=2&amp;showPrint=0&amp;showCalendars=0&amp;mode=WEEK"
+          loading="lazy" style="border: 0" width="800" height="600" frameborder="0" scrolling="no">
+         </iframe>
       </div>
     </div>
   </div>
@@ -36,15 +42,6 @@ export default {
   metaInfo: {
     title: 'Calendar of Events & Meeting room'
   },
-  data () {
-    return {
-      href: {
-        iframes: [
-          'https://calendar.google.com/calendar/b/2/embed?height=600&amp;wkst=2&amp;bgcolor=%23ffffff&amp;ctz=Europe%2FPrague&amp;src=cHJvZ3Jlc3NiYXIuc2tfdXQxcmQ4YjNwZ2VqMWk1MDc5NGEycmY4c29AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%234285F4&amp;title=Progressbar%20Events&amp;mode=MONTH'
-        ]
-      }
-    }
-  }
   }
 </script>
 
