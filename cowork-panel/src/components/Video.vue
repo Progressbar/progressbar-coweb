@@ -65,7 +65,7 @@
 export default {
   name: 'video',
   metaInfo: {
-    title: 'Video recordings Progressbar'
+    title: 'Video recordings from meetups in Progressbar'
   },
   data() {
     return {}
@@ -89,6 +89,10 @@ export default {
       width: 85vw;
       height: 15em;
     }
+  }
+
+  h1 a {
+    color:hotpink;
   }
 
   iframe {

@@ -7,16 +7,16 @@
 </template>
 
 <script>
-import AppFooter from '@/components/AppFooter'
 import AppHeader from '@/components/AppHeader'
 import AppBody from '@/components/AppBody'
+import AppFooter from '@/components/AppFooter'
 
 export default {
   name: 'app',
   components: {
-    AppFooter,
-    AppBody,
     AppHeader,
+    AppBody,
+    AppFooter,
   },
   metaInfo: {
   title: 'Coworking Progressbar in Bratislava',

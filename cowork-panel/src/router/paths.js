@@ -1,9 +1,6 @@
-import Subscribe from '@/components/Subscribe'
-import RunningCosts from '@/components/RunningCosts'
-import Podcast from '@/components/Podcast'
-import CallForHost from '@/components/CallForHost'
-import Page404 from '@/components/Page404'
-
+const Page404 = () => import('@/components/Page404')
+const Podcast = () => import('@/components/Podcast')
+const Subscribe = () => import('@/components/Subscribe')
 const WeekPass = () => import('@/components/WeekPass')
 const CallForTheSponsors = () => import('@/components/CallForTheSponsors')
 const GiveUsReviewBooking = () => import('@/components/GiveUsReviewBooking')
@@ -94,10 +91,6 @@ const paths = [
     component: RentASpace
   },
   {
-    path: '/running-costs',
-    component: RunningCosts
-  },
-  {
     path: '/give-us-review-thanks',
     component: GiveUsReviewAfterVisit
   },
@@ -136,10 +129,6 @@ const paths = [
   {
     path: '/contact-venue',
     component: ContactVenue
-  },
-  {
-    path: '/call-for-a-host',
-    component: CallForHost
   },
   {
     path: '/team',

@@ -33,7 +33,7 @@
     </div>
     <div class="columns">
       <div class="column is-parent is-8">
-        <img src="/static/img/cowork/women_coworkers.jpg" alt="progressbar women coworking bratislava blockchain">
+        <img src="/static/img/cowork/women_coworkers.jpg" alt="women in coworking bratislava">
       </div>
       <div class="column is-parent is-4">
         <article class="tile is-child notification is-black is-size-4">
@@ -74,7 +74,7 @@
     </div>
     <div class="columns">
       <div class="column is-parent is-8">
-        <img src="/static/img/meetingroom/spoznajkandidata.jpg" alt="blockchain coworking bratislava meeting room">
+        <img src="/static/img/meetingroom/spoznajkandidata.jpg" alt="recording in meeting room coworking bratislava">
       </div>
       <div class="column is-parent is-4">
         <article class="tile is-child notification is-black is-size-4">
@@ -182,7 +182,6 @@
         </article>
       </div>
     </div>
-    <!-- <InstagramFeed/> -->
     <cookie-law
       transitionName="fade"
       position="bottom"
@@ -196,7 +195,6 @@
   import axios from 'axios';
   import CookieLaw from 'vue-cookie-law';
   import Offer from './Offer.vue';
-  // import InstagramFeed from './InstagramFeed';
   import ImageFrame from './ImageFrame';
   import cherryResidents from './CherryPickResidents';
   import testimonials from './Testimonials';
@@ -205,7 +203,6 @@
     name: 'subscribe',
     components: {
       ImageFrame,
-      // InstagramFeed,
       Offer,
       CookieLaw,
       testimonials,
@@ -224,15 +221,9 @@
           {name: '☕️ Specialty Coffee and frenchpress'},
           {name: '🍵 Tea, Matcha'}
         ],
-        isUser: false,
-        config: {
-          baseWebUrl: 'https://progressbar.sk/',
-          coworkLogin: false,
-          coworkSubscribe: false
-        },
         href: {
           iframes: [
-            'https://www.google.com/maps/embed?pb=!4v1582794420833!6m8!1m7!1sCAoSLEFGMVFpcE0tQUthMUxyX0VpZFFiZDZXNWw1TWFsVnF6OXZWdURIZ2VQSjRO!2m2!1d48.1446!2d17.1155194!3f185.57885664003612!4f-14.516559923713345!5f0.4000000000000002',
+            'https://www.google.com/maps/embed?pb=!4v1583148030906!6m8!1m7!1sCAoSLEFGMVFpcE0tQUthMUxyX0VpZFFiZDZXNWw1TWFsVnF6OXZWdURIZ2VQSjRO!2m2!1d48.1446!2d17.1155194!3f204.44129001871872!4f-21.339529962365816!5f0.7820865974627469',
             'https://www.google.com/maps/embed?pb=!4v1582979219907!6m8!1m7!1sCAoSLEFGMVFpcE0yQ19oVmQwM0xnSVZjNTl5Tlp0b281bkxGRDBVZ290SVJiMTlG!2m2!1d48.144575!2d17.1155611!3f30.29505709799235!4f-29.003301094089764!5f0.7820865974627469'
           ],
 
