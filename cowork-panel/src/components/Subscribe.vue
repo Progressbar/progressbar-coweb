@@ -1,8 +1,8 @@
 <template>
   <div class="subscribe">
-    <div class="columns">
+    <div class="columns is-vcentered">
       <div class="column is-parent is-8">
-        <img src="/static/img/cowork/making_movie_cowork.jpg" loading="lazy" alt="coworking bratislava making movie">
+        <img src="/static/img/cowork/fixdesk_coworking_progressbar.jpg" loading="lazy" alt="coworking bratislava place for remote job">
       </div>
       <div class="column is-parent is-4">
         <article class="tile is-child notification is-black is-size-4">
@@ -31,9 +31,9 @@
         </article>
       </div>
     </div>
-    <div class="columns">
+    <div class="columns is-vcentered">
       <div class="column is-parent is-8">
-        <img src="/static/img/cowork/women_coworkers.jpg" loading="lazy" alt="women in coworking bratislava">
+        <img src="/static/img/cowork/making_movie_cowork.jpg" loading="lazy" alt="coworking bratislava making movie">
       </div>
       <div class="column is-parent is-4">
         <article class="tile is-child notification is-black is-size-4">
@@ -72,9 +72,9 @@
         </article>
       </div>
     </div>
-    <div class="columns">
+    <div class="columns is-vcentered">
       <div class="column is-parent is-8">
-        <img src="/static/img/meetingroom/spoznajkandidata.jpg" loading="lazy" alt="recording in meeting room coworking bratislava">
+        <img src="/static/img/cowork/women_coworkers.jpg" loading="lazy" alt="women in coworking bratislava">
       </div>
       <div class="column is-parent is-4">
         <article class="tile is-child notification is-black is-size-4">
@@ -94,9 +94,9 @@
         </article>
       </div>
     </div>
-    <div class="columns">
+    <div class="columns is-vcentered">
       <div class="column is-parent is-8">
-        <img src="/static/img/cowork/fixdesk_coworking_progressbar.jpg" loading="lazy" alt="progressbar coworking bratislava blockchain area">
+        <img src="/static/img/meetingroom/spoznajkandidata.jpg" loading="lazy" alt="recording in meeting room coworking bratislava">
       </div>
       <div class="column is-parent is-4">
         <article class="tile is-child notification is-black is-size-4">
@@ -109,14 +109,7 @@
         </article>
       </div>
     </div>
-    <div id="membership">
-    </div>
-    <br>
-    <h1 class="title has-text-centered"><router-link to="/#membership">👩‍💻 Membership 👨‍💻</router-link></h1>
-    <br>
-    <div>
-      <Offer/>
-    </div>
+
     <br>
     <h1 class="section-title title has-text-white has-text-centered">👀 Look inside</h1>
     <br>
@@ -125,6 +118,14 @@
         <ImageFrame v-bind:url="frame" :key="frame"></ImageFrame>
       </div>
     </div>
+    <div id="membership">
+    </div>
+    <br>
+    <h1 class="title has-text-centered"><router-link to="/#membership">👩‍💻 Membership 👨‍💻</router-link></h1>
+    <br>
+    <div>
+      <Offer/>
+    </div>
     <div id="testimonials">
     </div>
     <br>
@@ -132,7 +133,7 @@
       <testimonials />
     </div>
     <br>
-    <div class="columns">
+    <div class="columns is-vcentered">
       <div class="column is-parent is-8">
         <img src="/static/img/cowork/fixdesk.jpg" loading="lazy" alt="coworking bratislava fixdesk progressbar technology blockchain">
       </div>
@@ -157,7 +158,7 @@
     </div>
     <cherryResidents/>
     <br>
-    <div class="columns">
+    <div class="columns is-vcentered">
       <div class="column is-parent is-8">
         <img src="/static/img/community/pyladies_meetup.jpg" loading="lazy" alt="progressbar coworking bratislava python pyladies meetup">
       </div>

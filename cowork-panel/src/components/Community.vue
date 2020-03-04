@@ -32,7 +32,7 @@
       </article>
     </div>
   </div>
-  <div v-for="m in Math.ceil(meetups.length / 2)" class="columns">
+  <div v-for="m in Math.ceil(meetups.length / 2)" class="columns is-vcentered">
     <div v-for="pic in meetups.slice((m-1) * 2, m * 2)" class="column is-6">
       <img :src="`/static/img/community/${pic}.jpg`" loading="lazy" alt="coworking bratislava technical meetup">
     </div>

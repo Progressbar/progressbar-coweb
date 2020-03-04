@@ -1,6 +1,6 @@
 <template>
   <div class="Pay">
-   <div class="columns">
+   <div class="columns is-vcentered is-centered">
      <div class="column is-4">
        <p class="title has-text-white">Support operational costs</p>
        <progress class="progress is-large is-pink" :value="percentage()" max="100"></progress>
@@ -26,19 +26,15 @@
         </iframe>
       </div>
       <div class="column is-4">
-       <p class="title has-text-white">Ethereum, DAI</p>
-       <p class="title has-text-white"><a :href='`ethereum:${donations.ethereum.to}`'>{{donations.ethereum.to}}</a></p>
-       <vue-qr
-        logoSrc="/static/img/partners/ethereum-1-logo-svg-vector.svg"
-        :correctLevel="1"
-        :logoScale="0.1"
-        :text="`ethereum:${donations.ethereum.to}?value=${donations.ethereum.value}`"
-        :size="300"
-        :dotScale="1"
-        ></vue-qr>
+        <p class="title has-text-white">⚡️Lightning Network fan? <br>
+          <a :href='donations.tippinme'>We are supporting LN too 😍</a></p>
+        <div id="tippin-button" data-dest="progressbarsk"></div>
+        <a :href='donations.tippinme'
+        class='button is-black is-block is-large meeting'
+        target='_blank'>Support with ⚡️LN</a>
       </div>
    </div>
-   <div class="columns">
+   <div class="columns is-vcentered">
      <div class="column is-4">
        <a :href='donations.kyber'
         class='button is-black is-block is-large meeting'
@@ -61,14 +57,18 @@
        </h1>
      </div>
    </div>
-   <div class="columns">
-      <div class="column is-4">
-        <p class="title has-text-white">⚡️Lightning Network fan? <br>
-          <a :href='donations.tippinme'>We are supporting LN too 😍</a></p>
-        <div id="tippin-button" data-dest="progressbarsk"></div>
-        <a :href='donations.tippinme'
-        class='button is-black is-block is-large meeting'
-        target='_blank'>Support with ⚡️LN</a>
+   <div class="columns is-vcentered">
+     <div class="column is-4">
+       <p class="title has-text-white">Ethereum, DAI</p>
+       <p class="title has-text-white"><a :href='`ethereum:${donations.ethereum.to}`'>{{donations.ethereum.to}}</a></p>
+       <vue-qr
+        logoSrc="/static/img/partners/ethereum-1-logo-svg-vector.svg"
+        :correctLevel="1"
+        :logoScale="0.1"
+        :text="`ethereum:${donations.ethereum.to}?value=${donations.ethereum.value}`"
+        :size="300"
+        :dotScale="1"
+        ></vue-qr>
       </div>
       <div class="column is-4">
         <p class="title has-text-white">₿itcoin <a :href='`bitcoin:${donations.bitcoin}`'>{{donations.bitcoin}}</a></p>

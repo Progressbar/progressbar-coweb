@@ -14,20 +14,20 @@
       <article class="tile is-child notification is-black is-size-4">
         <p class="title">Selected Residents at Progressbar Family Office<p/>
         <p class="title">Crypto Startups</p>
-        <div class="columns">
+        <div class="columns is-vcentered">
           <div class="column" v-for="r in residents.slice(0,4)">
             <a :href="r.url"><img :src="`/static/img/residents/${r.src}`" loading="lazy" :alt="r.name"><br>{{r.name}}</a>
             <br><span v-html="r.desc"></span>
           </div>
         </div>
-        <div class="columns">
+        <div class="columns is-vcentered">
           <div class="column" v-for="r in residents.slice(4,8)">
             <a :href="r.url"><img :src="`/static/img/residents/${r.src}`" loading="lazy" :alt="r.name"><br>{{r.name}}</a>
             <br><span v-html="r.desc"></span>
           </div>
         </div>
         <p class="title">Exponential Technologies</p>
-        <div class="columns">
+        <div class="columns is-vcentered">
           <div class="column" v-for="r in exponentialResidents.slice(0,4)">
             <a :href="r.url"><img :src="`/static/img/residents/${r.src}`" loading="lazy" :alt="r.name"><br>{{r.name}}</a>
             <br><span v-html="r.desc"></span>
@@ -47,13 +47,13 @@
           </div>
         </div>
         <p class="title">Social Impact</p>
-        <div class="columns">
+        <div class="columns is-vcentered">
           <div class="column is-4" v-for="r in ngoResidents.slice(0,3)">
             <a :href="r.url"><img :src="`/static/img/residents/${r.src}`" loading="lazy" :alt="r.name"><br>{{r.name}}</a>
             <br><span v-html="r.desc"></span>
           </div>
         </div>
-        <div class="columns">
+        <div class="columns is-vcentered">
           <div class="column is-3" v-for="r in ngoResidents.slice(3,7)">
             <a :href="r.url"><img :src="`/static/img/residents/${r.src}`" loading="lazy" :alt="r.name"><br>{{r.name}}</a>
             <br><span v-html="r.desc"></span>
@@ -225,7 +225,7 @@ export default {
           name: 'PyLadies Bratislava',
           src: 'pyladies_bratislava.jpg',
           url: 'https://www.facebook.com/events/384459445719332/',
-          desc: 'Learning ladies to understand Python. <a href="https://github.com/pyladies-bratislava">Repo</a>'
+          desc: 'Python learning meetups for women. They will help you with everyhting pythonise, from total beginner to advanced skills. Learn more <a href="https://www.pyladies.com/">pyladies.com</a>'
         },
         {
           name: 'Bratislava Python Meetup',

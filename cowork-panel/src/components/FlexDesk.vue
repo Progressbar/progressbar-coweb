@@ -54,7 +54,7 @@ export default {
     return {
       href: {
         iframes: [
-          'https://www.google.com/maps/embed?pb=!4v1574673143863!6m8!1m7!1sCAoSLEFGMVFpcE82aGZTenBSUW9SV1JWTTc3Y3hYcDRFZTFaZ2d4NmFfZExZUjY4!2m2!1d48.1446417!2d17.1154389!3f83.27917026806618!4f-23.661244286869305!5f0.4000000000000002'
+          'https://www.google.com/maps/embed?pb=!4v1582979219907!6m8!1m7!1sCAoSLEFGMVFpcE0yQ19oVmQwM0xnSVZjNTl5Tlp0b281bkxGRDBVZ290SVJiMTlG!2m2!1d48.144575!2d17.1155611!3f30.29505709799235!4f-29.003301094089764!5f0.7820865974627469'
         ],
       },
     }

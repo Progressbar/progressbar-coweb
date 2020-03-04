@@ -64,8 +64,8 @@ export default {
         {
           name: 'PyLadies Bratislava',
           src: 'pyladies_bratislava.jpg',
-          url: 'https://www.facebook.com/events/384459445719332/',
-          desc: 'Learning ladies to understand Python. <a href="https://github.com/pyladies-bratislava">Repo</a>'
+          url: 'https://www.pyladies.com/',
+          desc: 'Python learning meetups for women. They will help you with everyhting pythonise, from total beginner to advanced skills. Learn more <a href="https://www.pyladies.com/">pyladies.com</a>'
         },
         {
           name: 'Bratislava Python Meetup',
