@@ -97,7 +97,7 @@
                 🏡 Residents
                 </router-link>
                 <router-link class="dropdown-item is-size-5" to="/pay" @click.native="toggleNav()">
-                🤑 Support operational costs
+                💸 Support operations
                 </router-link>
                 <hr class="navbar-divider">
                 <router-link class="dropdown-item is-size-5" to="/call-for-the-sponsors" @click.native="toggleNav()">
