@@ -1,6 +1,6 @@
 <template>
 <div class="dvepercenta">
-  <div class="columns">
+  <div class="columns is-vcentered">
     <div class="column is-8">
       <img :src="`/static/img/community/IMG_20191005_190549.jpg`" loading="lazy" alt="coworking bratislava technical meetup">
     </div>
@@ -23,7 +23,7 @@
     </div>
   </div>
 
-  <div class="columns">
+  <div class="columns is-vcentered">
     <div class="column is-4">
       <article class="tile is-child notification is-black is-size-4">
         <div class="content">
@@ -45,7 +45,7 @@
     </div>
   </div>
 
-  <div class="columns">
+  <div class="columns is-vcentered">
     <div class="column is-8">
       <img :src="`/static/img/community/IMG_20191030_181118.jpg`" loading="lazy" alt="coworking bratislava technical meetup">
     </div>
