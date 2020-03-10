@@ -20,6 +20,7 @@ const MeetingRoom = () => import('@/components/MeetingRoom')
 const RentSpace = () => import('@/components/RentSpace')
 const Community = () => import('@/components/Community')
 const Video = () => import('@/components/Video')
+const DvePercenta = () => import('@/components/DvePercenta')
 
 const paths = [
   {
@@ -150,6 +151,10 @@ const paths = [
   {
     path: '/video',
     component: Video
+  },
+  {
+    path: '/dvepercenta',
+    component: DvePercenta
   },
   {
     path: '/crowdfunding',
