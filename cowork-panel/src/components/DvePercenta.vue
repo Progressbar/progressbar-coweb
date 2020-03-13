@@ -26,11 +26,7 @@
   </div>
 
   <div class="columns is-vcentered">
-    <div class="column is-7">
-      <img :src="`/static/img/community/IMG_20191005_190549.jpg`" loading="lazy" alt="coworking bratislava technical meetup">
-      <img :src="`/static/img/community/IMG_20191118_203804.jpg`" loading="lazy" alt="coworking bratislava technical meetup">
-    </div>
-    <div class="column is-4 is-offset-1">
+    <div class="column is-4">
       <article class="tile is-child notification is-black is-size-4">
         <div class="content">
           <p class="title">2019 @ Progressbar:</p>
@@ -45,6 +41,10 @@
           </div>
         </div>
       </article>
+    </div>
+    <div class="column is-7 is-offset-1">
+      <img :src="`/static/img/community/IMG_20191005_190549.jpg`" loading="lazy" alt="coworking bratislava technical meetup">
+      <img :src="`/static/img/community/IMG_20191118_203804.jpg`" loading="lazy" alt="coworking bratislava technical meetup">
     </div>
   </div>
 
