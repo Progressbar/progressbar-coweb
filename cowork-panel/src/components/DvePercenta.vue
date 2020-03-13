@@ -1,11 +1,15 @@
 <template>
 <div class="dvepercenta">
   <div class="columns is-vcentered">
-    <div class="column is-4">
+    <div class="column is-7">
+      <img :src="`/static/img/dvepercenta/vedatour-03.jpg`" loading="lazy" alt="coworking bratislava technical meetup">
+      <img :src="`/static/img/dvepercenta/pyladies.jpg`" loading="lazy" alt="coworking bratislava technical meetup">
+    </div>
+    <div class="column is-4 is-offset-1">
       <article class="tile is-child notification is-black is-size-4">
         <div class="content">
           <p class="title">Čo robíme:</p>
-          <div class="content">
+          <div class="content has-text-justified">
             <p>👼 V Progressbare už 10 rokov spájame komunity ľudí s nadšením. Od prednášok o nových technológiách cez vzdelávaco-pracovné skupiny až po vegánske večere. Naše priestory aj vďaka vašim príspevkom robíme dostupnejšími pre tých, ktorí chcú vedieť viac. </p>
             <p>🧠 Za posledný rok Progressbar navštívilo vyše 5000 ľudí, ktorí sa zúčastnili vyše 150 podujatí.  Medzi inými aj Vedatour, Machine Learning meetupy či pravidelné lekcie programovania v komunite PyLadies.</p>
             <p>Neustále sa snažíme, aby naše priestory a podujatia v nich boli kvalitnejšie, krajšie, a lepšie...</p>
@@ -13,34 +17,30 @@
           <div class="btn-container">
             <router-link class="button is-black is-block is-large meeting"
               to="/pay">
-              Podporím Vás!
+              Pomôžte nám.
             </router-link>
           </div>
         </div>
       </article>
     </div>
-    <div class="column is-8">
-      <img :src="`/static/img/dvepercenta/vedatour-03.jpg`" loading="lazy" alt="coworking bratislava technical meetup">
-      <img :src="`/static/img/dvepercenta/pyladies.jpg`" loading="lazy" alt="coworking bratislava technical meetup">
-    </div>
   </div>
 
   <div class="columns is-vcentered">
-    <div class="column is-8">
+    <div class="column is-7">
       <img :src="`/static/img/community/IMG_20191005_190549.jpg`" loading="lazy" alt="coworking bratislava technical meetup">
       <img :src="`/static/img/community/IMG_20191118_203804.jpg`" loading="lazy" alt="coworking bratislava technical meetup">
     </div>
-    <div class="column is-4">
+    <div class="column is-4 is-offset-1">
       <article class="tile is-child notification is-black is-size-4">
         <div class="content">
           <p class="title">2019 @ Progressbar:</p>
-          <div class="content" v-for="achievment in pastYear">
+          <div class="content has-text-justified" v-for="achievment in pastYear">
             <li>{{achievment}}</li>
           </div>
           <div class="btn-container">
             <router-link class="button is-black is-block is-large meeting"
               to="/pay">
-              Podporím Vás!
+              Podporte nás v tom ďalšom.
             </router-link>
           </div>
         </div>
@@ -49,15 +49,14 @@
   </div>
 
   <div class="columns is-vcentered">
-    <div class="column is-8">
-
+    <div class="column is-7">
       <img :src="`/static/img/dvepercenta/future-1.jpg`" loading="lazy" alt="coworking bratislava technical meetup">
       <img :src="`/static/img/dvepercenta/future-2.jpg`" loading="lazy" alt="coworking bratislava technical meetup">
       <img :src="`/static/img/dvepercenta/future-3.jpg`" loading="lazy" alt="coworking bratislava technical meetup">
     </div>
-    <div class="column is-4">
+    <div class="column is-4 is-offset-1">
       <article class="tile is-child notification is-black is-size-4">
-        <div class="content">
+        <div class="content has-text-justified">
           <p class="title">Budúcnosť Progressbaru:</p>
           <div class="content" v-for="future in futureYear">
             <li><span v-html="future"></span></li>
@@ -65,7 +64,7 @@
           <div class="btn-container">
             <router-link class="button is-black is-block is-large meeting"
               to="/pay">
-              Podporím Vás!
+              Poukážte nám 2% z dane.
             </router-link>
           </div>
         </div>

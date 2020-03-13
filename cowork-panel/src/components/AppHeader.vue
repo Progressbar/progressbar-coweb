@@ -100,6 +100,9 @@
                 💸 Support operations
                 </router-link>
                 <hr class="navbar-divider">
+                <router-link class="dropdown-item is-size-5" to="/dvepercenta" @click.native="toggleNav()">
+                📿 Donate 2 % of your taxes
+                </router-link>
                 <router-link class="dropdown-item is-size-5" to="/call-for-the-sponsors" @click.native="toggleNav()">
                 🌈 Call for the Sponsors
                 </router-link>
