@@ -1,6 +1,7 @@
 <template>
 <div id="app">
   <app-header />
+  <close-modal />
   <app-body />
   <app-footer />
 </div>
@@ -10,6 +11,7 @@
 import AppHeader from '@/components/AppHeader'
 import AppBody from '@/components/AppBody'
 import AppFooter from '@/components/AppFooter'
+import CloseModal from '@/components/CloseModal'
 
 export default {
   name: 'app',
@@ -17,6 +19,7 @@ export default {
     AppHeader,
     AppBody,
     AppFooter,
+    CloseModal
   },
   metaInfo: {
   title: 'Coworking Progressbar in Bratislava',
